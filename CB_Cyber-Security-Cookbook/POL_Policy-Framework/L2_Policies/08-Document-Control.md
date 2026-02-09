@@ -1,0 +1,186 @@
+> **Document ID:** CB_POL_L2_08-Document-Control
+> **Version:** 00.04.008
+> **Classification:** Internal
+> **Author:** skr
+> **ISO reference:** Clause 7.5
+> **Last modified:** 2026-02-09
+> **Approval:** —
+> **Review cycle:** Annual
+
+---
+
+# Document Control Policy
+
+## Summary
+
+Without uniform document control, ISMS documents lose their evidentiary value. This policy governs the entire lifecycle — from creation and identification through review and approval to retention and protection. It forms the backbone of ISMS documentation and ensures that every document is uniquely identifiable, current, and protected against unauthorized access. Without consistent document control, audit evidence is incomplete or contradictory.
+
+## Objective and Scope
+
+**Guideline reference:** P2, P5
+**Operationalized by:** —
+
+**Objective:** ISMS documents lose their evidentiary value when versioning, identification, and access protection are not uniformly governed. Without consistent document control, audit evidence is incomplete or contradictory.
+
+This policy governs the entire document lifecycle — from creation and identification through review and approval to retention and protection (addresses Clause 7.5.2 a-c, 7.5.3 a-f). It establishes metadata format, standard document structure, versioning scheme, and access rules as binding requirements.
+
+The policy implements the principles P2 (Compliance) and P5 (Continual improvement) of the IS guideline. It serves as the SSOT for all document formats and conventions in the ISMS and is not operationalized through a downstream L3 document.
+
+**Scope:** All content documents in the Cookbook (CB) and ISMS Handbook (HB). Excluded are REF extracts (external standards without internal versioning) and control documents (CLAUDE.md, INDEX.md).
+
+## Creation and Identification
+
+Every ISMS content document begins with a **uniform metadata block** (8 fields). This fulfills the requirements of ISO 27001 Clause 7.5.2 a-c for identification, description, and review evidence.
+
+| Field | Content | ISO source |
+|---|---|---|
+| Document ID | Path-based ID from folder prefixes + filename | 7.5.2 a |
+| Version | Padded `00.01.000`: Major.Minor.Update (see Version control) | 7.5.3 e |
+| Classification | Confidential / Internal / Public | A.5.12 |
+| Author | Abbreviation of the document owner | 7.5.2 a |
+| ISO reference | Associated clause or Annex A controls | Best practice |
+| Last modified | Date of last content change (ISO 8601) | 7.5.2 a |
+| Approval | Name + date (or `—` until approved) | 7.5.2 c |
+| Review cycle | Planned review interval | A.5.1 |
+
+**Template:** CB_TPL_02-Document-Metadata (in the Templates folder).
+
+**ID scheme:** The document ID is derived from the folder prefixes in the path. Example: `CB_Cyber-Security-Cookbook/POL_Policy-Framework/L2_Policies/01-Access-and-Identity.md` yields the ID `CB_POL_L2_01-Access-and-Identity`. Separators: `_` between tiers, `-` within names (addresses A.5.1).
+
+### Standard Document Structure
+
+Every content document follows this structure:
+
+| Position | Element | Rule |
+|---|---|---|
+| File start | Metadata block | 8 mandatory fields as blockquote, followed by `---` separator |
+| After separator | `# [Document name]` | Type + topic in natural language (see H1 convention) |
+| 1st H2 | `## Summary` | 3-5 sentences: context, orientation, ISMS contribution, consequence |
+| 2nd H2 | `## Objective and Scope` | Purpose of the document and for whom/what it applies |
+| Middle | Subject chapters | Document type-specific (clause numbers, process steps, register data) |
+| Before See also | Allocation matrix (if applicable) | Only in POL documents. Mapping to the parent tier |
+| Before See also | `## Responsibilities` (REG only) | Register maintenance information (see below) |
+| Penultimate H2 | `## See also` | Cross-references to related documents |
+| Final H2 | `## Changelog` | Table: Version, Date, Author, Change — newest first |
+
+**Governance sections:** L1, L2, L3, and CLS do not carry standalone sections on responsibilities, approval, or review. ISMS roles, the responsibility matrix, and process RACI are centrally defined in HB_CLS_5.3-Roles-and-Responsibilities (SSOT). The review and approval process is governed in this document (section Review and Approval). Process documents (PRC) may optionally carry a `### RACI` subsection referencing CLS_5.3. Registers (REG) contain a `## Responsibilities` section for maintenance, triggers, and process reference.
+
+### H1 Convention
+
+The document name (H1) integrates the document type in natural language. No technical prefix, no clause numbers.
+
+| Document type | H1 pattern | Example |
+|---|---|---|
+| CLS | Topic only | `# Risks and Opportunities` |
+| PRC | [Topic] Process | `# Incident Management Process` |
+| REG | Type in the word | `# Risk Register` |
+| L1 | Information Security Guideline | `# Information Security Guideline` |
+| L2 | [Topic] Policy | `# Access and Identity Policy` |
+| L3 | [Topic] Handbook | `# User Handbook` |
+| AWR | Free descriptive | `# Awareness Fundamentals` |
+| CB Root | Free descriptive | `# Getting Started` |
+
+### Exceptions
+
+- **REF extracts** (REF_Referenzen/): No metadata block, no standard document structure — external sources are not versioned.
+- **Templates** (TPL_Templates/): Fill-in templates with their own structure, not bound by the standard document structure.
+
+## Review and Approval
+
+Every document undergoes a review and approval before initial publication (addresses 7.5.2 c).
+
+| Document tier | Review | Approval |
+|---|---|---|
+| L1 (Guideline) | Information Security Officer ([ISB]) | CEO ([CEO]) |
+| L2 (Policies) | Information Security Officer ([ISB]) | CEO ([CEO]) or CTO ([CTO]) |
+| L3, PRC, REG, CLS | Information Security Officer ([ISB]) | ISMS Coordinator ([ISMS-Coordinator]) |
+
+- **Review criteria:** Content is factually correct, ISO reference verified, consistency with parent documents ensured.
+- **Approval:** Major version increment (e.g., `00.02.003` > `01.00.000`) and approval field in the metadata block populated with name and date.
+- **Review cycle:** As specified in the metadata field (default: annual). Additional review upon significant changes to the ISMS or referenced standards.
+
+## Distribution and Access
+
+ISMS documentation is provided through two channels (addresses 7.5.3 a, c):
+
+| Channel | Content | Target audience |
+|---|---|---|
+| Wiki | Cookbook (CB) + ISMS Handbook (HB) | Employees or ISMS team |
+| File server | References (REF) — norm extracts, PDF originals | ISMS team |
+
+- **Access by classification:**
+  - *Internal* (CB): All employees via the wiki
+  - *Confidential* (HB): ISMS team only (Information Security Officer, ISMS Coordinator, executive management)
+- **Findability:** INDEX.md serves as the central table of contents. Document IDs are stable references for cross-referencing.
+- Controlled versions are exclusively those published on the wiki or file server. Local copies or printouts are not considered controlled.
+
+## Version Control
+
+Every content change is documented traceably (addresses 7.5.3 e).
+
+### Version Format
+
+Padded format `Major.Minor.Update` (`00.00.000`):
+
+| Segment | Format | Responsible | Prerequisite | Reset |
+|---|---|---|---|---|
+| **Major** | 2-digit | Approval authority per RACI (HB_CLS_5.3) | Formal approval by the responsible authority | Minor + Update > 00.000 |
+| **Minor** | 2-digit | Information Security Officer on explicit request | Deliberate draft milestone decision | Update > 000 |
+| **Update** | 3-digit | Agent automatically | Any content change to the file | — |
+
+Example: `00.01.000` > `00.01.001` > `00.01.002` > (minor milestone) > `00.02.000` > (approval by CEO) > `01.00.000`
+
+### Change Documentation
+
+- **Changelog table** at document end: Every change is captured with version, date, author, and description.
+- **Metadata field** "Last modified": Updated with every content change.
+- Older versions remain traceable through the version history.
+
+## Retention and Disposition
+
+Retention ensures availability and traceability throughout the entire lifecycle (addresses 7.5.3 d, f).
+
+- **Retention:** All document versions are permanently retained in the version history.
+- **Readability:** Markdown as document format ensures long-term readability (no proprietary format).
+- **Disposition:** Documents that are no longer valid are marked as "withdrawn" (changelog entry + version increment). Documents are not deleted.
+- **Retention period:** At least until the next recertification audit (3 years).
+
+## Protection
+
+Protection of documented information covers confidentiality, integrity, and availability (addresses 7.5.3 b).
+
+- **Confidentiality:** Access rights to wiki and file server are granted according to classification (see Distribution and Access).
+- **Integrity:** Changes to approved documents go through the review and approval process. Unauthorized changes are prevented through access controls.
+- **Availability:** Regular backups of the wiki and file server (see CB_POL_L3_05-Data-Backup).
+
+## External Documents
+
+Documented information of external origin is appropriately identified and controlled (addresses 7.5.3 final paragraph).
+
+- **Storage:** REF_Referenzen/LIB_Library/ on the file server (Markdown extracts + PDF originals).
+- **Identification:** Filename with sequential number and short title (e.g., `01-ISO-27001-Extract`). No metadata block, as external sources are not versioned internally.
+- **Currency:** When standards are updated or new editions are released, check whether extracts are still valid and update as needed.
+
+## See also
+
+- HB_CLS_5.3-Roles-and-Responsibilities — RACI for document review and approval
+- HB_CLS_7.5-Documented-Information — ISO requirement for documented information
+- CB_POL_L2_07-Organisation — Governance, policy compliance
+- CB_TPL_02-Document-Metadata — Metadata block template
+
+## Changelog
+
+| Version | Date | Author | Change |
+|---|---|---|---|
+| 00.04.008 | 2026-02-09 | skr | Objective and scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
+| 00.04.007 | 2026-02-08 | skr | Summary: 4-element pattern (context, orientation, ISMS contribution, consequence) |
+| 00.04.006 | 2026-02-08 | skr | Document structure table repaired (broken table cell See-also/Changelog) and missing allocation matrix row added |
+| 00.04.005 | 2026-02-08 | skr | Document structure: ## Roles (PRC) removed — RACI centralized in CLS_5.3 (follow-up from 2026-02-07 decision) |
+| 00.04.004 | 2026-02-08 | skr | References: HB_TPL->CB_TPL (TPL relocation) |
+| 00.04.003 | 2026-02-07 | skr | Library storage updated to REF_Referenzen/LIB_Library/ |
+| 00.04.002 | 2026-02-07 | skr | AGENTS.md reference replaced with CLAUDE.md |
+| 00.04.001 | 2026-02-07 | skr | See-also section added |
+| 00.04.000 | 2026-02-07 | skr | Version control migrated to Major.Minor.Update scheme |
+| 00.03.000 | 2026-02-07 | skr | Governance convention: roles/responsibilities in standard document structure, reference to CLS_5.3 |
+| 00.02.000 | 2026-02-07 | skr | Content populated for all sections, document structure convention integrated |
+| 00.01.000 | 2026-02-06 | skr | Initial version |

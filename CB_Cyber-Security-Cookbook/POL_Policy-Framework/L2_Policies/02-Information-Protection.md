@@ -1,0 +1,117 @@
+> **Document ID:** CB_POL_L2_02-Information-Protection
+> **Version:** 00.01.004
+> **Classification:** Internal
+> **Author:** skr
+> **ISO reference:** A.5.12-5.14, A.8.10-8.12, A.8.24
+> **Last modified:** 2026-02-09
+> **Approval:** —
+> **Review cycle:** Annual
+
+---
+
+# Information Protection Policy
+
+## Summary
+
+Information is the central object of protection of the ISMS and must be appropriately protected throughout its entire lifecycle. This policy governs classification, labelling, transfer, and cryptographic protection of information according to protection requirements. It ensures that sensitive data is handled consistently and protected against unauthorized disclosure, alteration, or loss. Without uniform classification and handling rules, information protection remains incomplete and non-auditable.
+
+## Objective and Scope
+
+**Guideline reference:** P1, P2
+**Operationalized by:** CB_POL_L3_01-User-Handbook, CB_POL_L3_04-Cryptography, CB_POL_L3_05-Data-Backup
+
+**Objective:** Information is the central object of protection of the ISMS. Without uniform rules for classification, labelling, and handling, appropriate protection of information throughout its lifecycle cannot be ensured.
+
+This policy defines the normative requirements for information classification, labelling, transfer, and cryptographic protection (addresses A.5.12-5.14, A.8.10-8.12). It establishes criteria for handling information according to protection requirements.
+
+The policy implements the principles P1 (Protection) and P2 (Compliance) of the IS guideline. Operational implementation is provided through CB_POL_L3_01 (User Handbook), CB_POL_L3_04 (Cryptography), and CB_POL_L3_05 (Data Backup).
+
+**Scope:** All employees who create, process, or transfer information. Covers all information within the ISMS scope regardless of storage medium.
+
+## Classification
+
+All information within the organization must be assessed by its respective owner according to protection requirements and assigned to a classification scheme (addresses A.5.12). The classification determines the required protection level and the permissible handling rules.
+
+**Classification scheme:**
+
+| Level | Class | Description |
+|---|---|---|
+| 0 | Public | Information intended for publication |
+| 1 | Internal | Information for internal use within the organization; default for unlabelled information |
+| 2 | Confidential | Business-critical information with a restricted recipient group |
+| 3 | Strictly confidential | Highly sensitive information whose disclosure can cause significant damage |
+
+**Labelling:** Information at levels 2 and 3 must be clearly labelled with its classification level (addresses A.5.13). Labelling is applied on the respective information carrier (file name, metadata, header, physical label). Unlabelled information is treated as level 1 (Internal).
+
+**Responsibility:** The responsibility for classification and labelling rests with the information owner. Classifications must be reviewed regularly and adjusted when protection requirements change [REF:DG25-MA, Kap. 3].
+
+## Transfer
+
+Rules, procedures, and agreements must be established for the transfer of information within and outside the organization (addresses A.5.14).
+
+**Requirements:**
+
+| # | Requirement |
+|---|---|
+| 1 | Only communication means provided by the organization shall be used for business communication |
+| 2 | Transfer of confidential and strictly confidential information requires encryption (see Cryptography) |
+| 3 | Prior to exchanging sensitive information with external parties, a written agreement (NDA or contractual clause) must be concluded |
+| 4 | During transfer, the identity of the recipient, access authorizations, and non-repudiation must be ensured |
+| 5 | Confidential information must not be transferred over insecure channels (public WiFi without VPN, unencrypted email) |
+| 6 | Messages from the organization are to be treated as official communications and must include signature information |
+
+Agreements with external parties must govern technical standards, incident handling, and intellectual property rights (see CB_POL_L2_05, Supplier Management) [REF:DG25-MA, Kap. 4].
+
+## Cryptography
+
+Cryptographic controls must be employed to protect confidentiality, authenticity, and integrity of information (addresses A.8.24).
+
+**Requirements:**
+
+| # | Requirement |
+|---|---|
+| 1 | Type and strength of encryption must be adapted to the classification and protection requirements of the information |
+| 2 | Data at rest (hard drives, databases, backups) must be fully encrypted on systems containing confidential information |
+| 3 | Data in transit must be protected through recognized protocols (TLS, VPN, encrypted email) |
+| 4 | A documented key management process must be established: generation, distribution, storage, rotation, and destruction of cryptographic keys |
+| 5 | Applicable laws and regulations regarding the use of cryptographic techniques must be observed, particularly for cross-border transfers |
+
+Concrete algorithms, key lengths, and procedures are defined in CB_POL_L3_04 (Cryptography Handbook) [REF:ISO22-27002, Control 8.24].
+
+## Data Protection Lifecycle
+
+Information must be appropriately protected throughout its entire lifecycle — from creation through use to destruction.
+
+**Data masking:** Personal and business-critical data in non-production environments (test, development, training) must be protected through suitable masking or pseudonymization techniques (addresses A.8.11).
+
+**Data loss prevention:** Controls for detecting and preventing unauthorized disclosure of information must be deployed on systems and networks processing sensitive information (addresses A.8.12).
+
+**Retention and deletion:**
+
+| # | Requirement | Control |
+|---|---|---|
+| 1 | Retention periods for different information types must be established based on legal requirements and business needs | A.8.10 |
+| 2 | Information must be securely deleted or destroyed upon expiry of the retention period | A.8.10 |
+| 3 | Devices with data storage must be securely sanitized through verified procedures before disposal or reuse | A.7.14 |
+| 4 | Physical documents and storage media must be destroyed by shredding or equivalent procedures | A.7.14 |
+
+Information owners are responsible for identifying information no longer required for deletion and informing the responsible units [REF:DG25-MA, Kap. 5].
+
+## See also
+
+- CB_POL_L2_01-Access-and-Identity — Access control based on classification
+- CB_POL_L2_03-System-and-Network — DLP and monitoring
+- CB_POL_L3_01-User-Handbook — Classification rules for end users
+- CB_POL_L3_04-Cryptography — Encryption standards
+- CB_POL_L3_05-Data-Backup — Backup of classified data
+- HB_REG_03-Asset-Register — Asset classification
+
+## Changelog
+
+| Version | Date | Author | Change |
+|---|---|---|---|
+| 00.01.004 | 2026-02-09 | skr | Classification (A.5.12-13), transfer (A.5.14), cryptography (A.8.24), data protection lifecycle (A.8.10-12) populated (Batch-D) |
+| 00.01.003 | 2026-02-09 | skr | Summary: 4-element pattern |
+| 00.01.002 | 2026-02-09 | skr | Objective and scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
+| 00.01.001 | 2026-02-07 | skr | See-also section added |
+| 00.01.000 | 2026-02-06 | skr | Initial version |

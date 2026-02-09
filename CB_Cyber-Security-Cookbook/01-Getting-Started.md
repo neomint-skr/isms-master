@@ -1,0 +1,54 @@
+> **Document ID:** CB_01-Getting-Started
+> **Version:** 00.01.003
+> **Classification:** Internal
+> **Author:** [ISB]
+> **ISO Reference:** Clause 7.3, A.6.3
+> **Last modified:** 2026-02-09
+> **Approval:** —
+> **Review cycle:** annually
+
+---
+
+# Getting Started
+
+## Summary
+
+<!-- TODO -->
+
+## Objective and Scope
+
+**Objective:** Employees need a quick entry point into the information security documentation. Without orientation, it remains unclear why the Cookbook exists, how it is structured, and what is expected of each individual.
+
+This getting-started page explains the purpose of the Cyber Security Cookbook, describes its structure, and highlights the most important starting points. It answers the question "Where do I begin?" in under two minutes.
+
+The page is the recommended starting point for all employees and links to CB_AWR_01 (Awareness), CB_02 (Emergency Card), and CB_03 (FAQ) as next steps.
+
+**Scope:** All employees and external personnel. Entry document for the Cyber Security Cookbook.
+
+## Why this Cookbook?
+
+<!-- TODO -->
+
+## How is it structured?
+
+<!-- TODO -->
+
+## What do you need to do?
+
+<!-- TODO -->
+
+## Key contact points
+
+<!-- TODO -->
+
+## See also
+
+
+## Changelog
+
+| Version | Date | Author | Change |
+|---|---|---|---|
+| 00.01.003 | 2026-02-09 | [ISB] | Objective and scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
+| 00.01.002 | 2026-02-09 | [ISB] | Objective and scope: bold-label pattern |
+| 00.01.001 | 2026-02-07 | [ISB] | See-also section added |
+| 00.01.000 | 2026-02-06 | [ISB] | Initial version |
