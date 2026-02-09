@@ -1,0 +1,36 @@
+# Claude Code - persoenliche Einstellungen (nicht einchecken)
+.claude/settings.local.json
+CLAUDE.local.md
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+nul
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# Temp/Build-Artefakte
+*.tmp
+*.bak
+*.log
+__pycache__/
+*.pyc
+*.pyo
+node_modules/
+
+# Temp-Verzeichnis (Einmal-Skripte, Zwischenergebnisse)
+.temp/
