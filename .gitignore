@@ -34,3 +34,9 @@ node_modules/
 
 # Temp-Verzeichnis (Einmal-Skripte, Zwischenergebnisse)
 .temp/
+
+# Basic Memory - SQLite-Index lokal (wird aus MD-Dateien rebuilt)
+.memory/.basic-memory/
+*.db
+*.db-shm
+*.db-wal

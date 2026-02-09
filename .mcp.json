@@ -8,6 +8,24 @@
         "@modelcontextprotocol/server-sequential-thinking"
       ],
       "env": {}
+    },
+    "basic-memory": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "basic-memory",
+        "mcp"
+      ],
+      "env": {}
+    },
+    "context7": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@upstash/context7-mcp@latest"
+      ],
+      "env": {}
     }
   }
 }

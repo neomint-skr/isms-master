@@ -16,7 +16,7 @@ Globale Regeln und User-Profil werden von `claude-code-master` (`gitlab.com/neom
 
 `.mcp.json` im Repo-Root definiert die aktiven MCP-Server.
 
-Aktive Server: sequential-thinking.
+Aktive Server: sequential-thinking, basic-memory, context7.
 
 ### Sprache
 

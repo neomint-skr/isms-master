@@ -3,7 +3,10 @@
   "permissions": {
     "deny": [
       "Read(./.env)",
-      "Read(./.env.*)"
+      "Read(./.env.*)",
+      "Read(./.memory/**)",
+      "Edit(./.memory/**)",
+      "Write(./.memory/**)"
     ]
   },
   "hooks": {
@@ -15,6 +18,12 @@
             "command": "node scripts/hooks/global-sync.mjs",
             "timeout": 30,
             "statusMessage": "Globale Config pruefen..."
+          },
+          {
+            "type": "command",
+            "command": "node scripts/hooks/ensure-prerequisites.mjs",
+            "timeout": 30,
+            "statusMessage": "Prerequisites pruefen..."
           },
           {
             "type": "command",
