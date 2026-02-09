@@ -1,0 +1,272 @@
+# INDEX
+
+> Structural data of the [Organization] ISMS. 86 Markdown files, 93 Annex A controls.
+> For working instructions see CLAUDE.md.
+> ID schema: folder prefixes + filename. Separator: `_` between levels, `-` within names.
+
+## Files and Headings
+
+### HB -- HB_ISMS-Handbook / CLS_Definitions
+
+**C4_Context/** -- Organizational context
+`4.1-Organization-and-Context.md`, `4.2-Interested-Parties.md`, `4.3-Scope.md`, `4.4-ISMS.md`
+
+**C5_Leadership/** -- Leadership
+`5.1-Leadership-and-Commitment.md`, `5.2-Policy.md`, `5.3-Roles-and-Responsibilities.md`
+
+**C6_Planning/** -- Planning
+`6.1-Risks-and-Opportunities.md` (incl. 6.1.2, 6.1.3, SoA), `6.2-IS-Objectives.md`, `6.3-Planning-of-Changes.md`
+
+**C7_Support/** -- Support
+`7.1-Resources.md`, `7.2-Competence.md`, `7.3-Awareness.md`, `7.4-Communication.md`, `7.5-Documented-Information.md`
+
+**C8_Operation/** -- Operation
+`8.1-Operational-Planning.md`, `8.2-Risk-Assessment.md`, `8.3-Risk-Treatment.md`
+
+**C9_Performance/** -- Performance evaluation
+`9.1-Monitoring-and-Measurement.md`, `9.2-Internal-Audit.md`, `9.3-Management-Review.md`
+
+**C10_Improvement/** -- Improvement
+`10.1-Continual-Improvement.md`, `10.2-Nonconformity.md`
+
+### HB -- HB_ISMS-Handbook / REG_Registers
+
+**01-IS-Objectives-Register.md** -- IS objectives with KPIs and monitoring results
+**02-Statement-of-Applicability.md** -- 93 controls, SSOT for applicability
+**03-Asset-Register.md** -- 8 asset inventories, 6 cross-reference tables, data model
+**04-Supplier-Register.md** -- Supplier + cloud services tables
+**05-Nonconformity-Register.md** -- NC tracking with effectiveness review
+**06-Risk-Register.md** -- 4x4 matrix, risk entries, acceptance
+**07-Risk-Treatment-Plan.md** -- Controls per risk, owners, deadlines, effectiveness
+**08-Interested-Parties-Register.md** -- Stakeholders + IS requirements
+**09-Context-Register.md** -- Organizational profile, external/internal issues
+
+### CB -- CB_Cyber-Security-Cookbook / Root
+
+**01-Getting-Started.md** -- Introduction to the topic, structure and navigation of the Cookbook
+H2: Why this Cookbook?, How is it structured?, What do you need to do?, Key contact points
+
+**02-Emergency-Card.md** -- Immediate help for security incidents
+H2: Security incident -- what to do?, Who to contact?, Common incidents, What NOT to do
+
+**03-FAQ.md** -- Frequently asked questions about information security in daily work
+
+### CB -- CB_Cyber-Security-Cookbook / POL_Policy-Framework / L1_Guideline
+
+**01-Guideline.md** -- Management commitment, objectives, scope, principles, responsibilities, approval
+
+### CB -- CB_Cyber-Security-Cookbook / POL_Policy-Framework / L2_Policies
+
+**01-Access-and-Identity.md** -- Access control, identities, authentication, access rights lifecycle
+**02-Information-Protection.md** -- Classification, transfer, cryptography, data protection lifecycle
+**03-System-and-Network.md** -- Endpoints/systems, vulnerabilities, network, logging, capacity
+**04-Secure-Development.md** -- SDLC, secure coding, testing, change management, projects/external
+**05-Supplier-and-Cloud.md** -- Assessment, agreements, monitoring, cloud
+**06-Business-Continuity.md** -- ICT readiness, backup/recovery
+**07-Organisation.md** -- Incidents, compliance, assets, governance
+**08-Document-Control.md** -- Creation, identification, approval, distribution, version control, retention
+**09-Physical-Security.md** -- Entry controls, workplace, infrastructure, monitoring
+**10-Human-Resources.md** -- Screening, employment terms, awareness, disciplinary, termination, remote, reporting
+**11-Risk-Management.md** -- Risk criteria, risk matrix, protection requirement categories, treatment options, roles, acceptance criteria
+**12-AI-Usage.md** -- GenAI approval, input rules, output usage (BEYOND-ISO)
+
+### CB -- CB_Cyber-Security-Cookbook / POL_Policy-Framework / L3_Handbooks
+
+**01-User-Handbook.md** -- Acceptable use, remote working, classification, clear desk, incident reporting
+**02-Admin-Handbook.md** -- Access control, hardening, vulnerability management, logging, backup
+**03-Developer-Handbook.md** -- Secure coding, security testing, SDLC, change/deployment
+**04-Cryptography.md** -- Standards, authentication, key management
+**05-Data-Backup.md** -- Backup strategy, recovery, deletion
+**06-Network-Security.md** -- Architecture, segmentation, services
+**07-Supplier-Management.md** -- Assessment, agreements, supply chain, monitoring, cloud
+
+### CB -- CB_Cyber-Security-Cookbook / PRC_Processes
+
+**01-Incident-Management.md** -- Classification, reporting, escalation, response, lessons learned, evidence collection
+**02-Access-Control.md** -- Provisioning, privileges, revocation, recertification
+**03-Backup-and-Recovery.md** -- Strategy (types/cycles), recovery (RTO/RPO), tests
+**04-Vulnerability-Management.md** -- Identification, evaluation, patching
+**05-Change-Management.md** -- Request, impact, approval, implementation/rollback
+**06-Supplier-Management.md** -- Assessment, agreements, monitoring
+**07-Risk-Management.md** -- Risk assessment, risk treatment, SoA maintenance, cycles/triggers
+**08-Internal-Audit.md** -- Audit programme, planning, execution, report, follow-up
+**09-Management-Review.md** -- Scheduling, inputs (9.3.2), execution, outputs (9.3.3)
+**10-Nonconformity-Management.md** -- Detection, analysis, corrective action, effectiveness review
+**11-Performance-Monitoring.md** -- KPI definition, data collection, evaluation, escalation
+**12-Asset-Management.md** -- Identification, ID assignment, registration, relationships, maintenance
+
+### CB -- CB_Cyber-Security-Cookbook / AWR_Awareness-Training
+
+**01-Awareness-Fundamentals.md** -- Top risks, phishing, password hygiene, incident reporting
+**02-Onboarding-Checklist.md** -- Onboarding table
+
+### CB -- CB_Cyber-Security-Cookbook / TPL_Templates
+
+**01-Management-Review.md** -- Management review template (inputs 9.3.2, outputs 9.3.3, actions)
+**02-Document-Metadata.md** -- Metadata block template (8 fields, field descriptions, rules)
+
+### REF -- REF_References / LIB_Library / Standards
+
+**Standards/ISO_2022_27001-Extract.md** ``[ISO22-27001]`` -- Lean extract ISO/IEC 27001:2022 (Clauses 0-10, Annex A, 93 controls)
+**Standards/ISO_2022_27002-Extract.md** ``[ISO22-27002]`` -- Lean extract ISO/IEC 27002:2022 (93 controls, 8-column tables)
+**Standards/ISACA_2022_Implementierungsleitfaden-Extract.md** ``[ISACA22]`` -- Lean extract ISACA implementation guide (14 building blocks, mapping, BCS)
+**Standards/BSI_2017_200-2-Extract.md** ``[BSI17]`` -- Lean extract BSI Standard 200-2 IT-Grundschutz methodology (12 chapters, 3 approaches)
+
+> PDFs (originals) with matching base name in folder. Bibliography with citation keys: `BIBLIOGRAPHY.md`.
+
+### REF -- REF_References / LIB_Library / Policy Templates
+
+**Policy Templates/DataGuard_2025_ISMS-Handbuch-Extract.md** ``[DG25-HB]`` -- ISMS handbook template (structure, scope, context, risk approach)
+**Policy Templates/DataGuard_2025_Leitlinie-IS-Extract.md** ``[DG25-LL]`` -- IS guideline template (objectives, principles, roles)
+**Policy Templates/DataGuard_2025_Mitarbeiterhandbuch-IS-Extract.md** ``[DG25-MA]`` -- Employee IS handbook (security rules, usage, behaviour)
+**Policy Templates/DataGuard_2025_Schulung-Compliance-Extract.md** ``[DG25-SC]`` -- Personnel security, training and compliance (HR security, awareness)
+**Policy Templates/DataGuard_2024_Lieferanten-Lieferkette-Extract.md** ``[DG24-LK]`` -- Suppliers and supply chains (assessment, agreements, monitoring)
+**Policy Templates/DataGuard_2024_Entwicklung-Testen-Extract.md** ``[DG24-ET]`` -- Projects, development and testing (secure SDLC, change, test)
+**Policy Templates/DataGuard_2024_Awareness-Vorfaelle-Extract.md** ``[DG24-AV]`` -- Security awareness and incident management (awareness, incident)
+**Policy Templates/DataGuard_2024_Identitaet-Zugriff-Extract.md** ``[DG24-IAM]`` -- Identity and access control (IAM, MFA, privileged access)
+**Policy Templates/DataGuard_2024_Physische-Sicherheit-Extract.md** ``[DG24-PS]`` -- Physical security (entry controls, perimeter, environment)
+**Policy Templates/DataGuard_2024_System-Netzwerk-Extract.md** ``[DG24-SN]`` -- System and network configuration (hardening, network, monitoring)
+**Policy Templates/DataGuard_2024_Geschaeftskontinuitaet-Extract.md** ``[DG24-BK]`` -- Business continuity (BIA, BCP, DRP, crisis management)
+**Policy Templates/DataGuard_oJ_GenKI-Nutzung-Extract.md** ``[DGoJ-KI1]`` -- Acceptable use of GenAI (AI policy, risk assessment, prohibitions)
+**Policy Templates/DataGuard_oJ_KI-Richtlinien-Extract.md** ``[DGoJ-KI2]`` -- AI policies (governance, model lifecycle, ethics)
+**Policy Templates/DataGuard_oJ_Datenschutzverletzungen-Extract.md** ``[DGoJ-DS]`` -- Data breaches (reporting obligations, documentation, controls)
+
+> PDFs (originals) with matching base name in folder. Bibliography with citation keys: `BIBLIOGRAPHY.md`.
+
+## Coverage Matrix (93 Controls)
+
+> Derived from HB_REG_02-Statement-of-Applicability (SSOT). Document assignment only, no applicability/status. Short-form IDs without descriptive part.
+
+### A.5 Organizational Controls (37)
+
+| # | Doc | Secondary |
+|---|---|---|
+| 5.1 | CB_POL_L1_01 | HB_CLS_5.2 |
+| 5.2 | HB_CLS_5.3 | CB_POL_L2_07 |
+| 5.3 | CB_POL_L2_07 | |
+| 5.4 | HB_CLS_5.1 | CB_POL_L2_07 |
+| 5.5 | CB_POL_L2_07 | |
+| 5.6 | CB_POL_L2_07 | |
+| 5.7 | CB_POL_L2_03 | CB_PRC_04 |
+| 5.8 | CB_POL_L2_04 | |
+| 5.9 | HB_REG_03 | CB_PRC_12, CB_POL_L2_07 |
+| 5.10 | CB_POL_L2_07 | CB_POL_L3_01 |
+| 5.11 | CB_POL_L2_07 | |
+| 5.12 | CB_POL_L2_02 | CB_POL_L3_01 |
+| 5.13 | CB_POL_L2_02 | CB_POL_L3_01 |
+| 5.14 | CB_POL_L2_02 | |
+| 5.15 | CB_POL_L2_01 | CB_POL_L3_02, CB_PRC_02 |
+| 5.16 | CB_POL_L2_01 | CB_PRC_02 |
+| 5.17 | CB_POL_L2_01 | CB_POL_L3_04 |
+| 5.18 | CB_POL_L2_01 | CB_PRC_02 |
+| 5.19 | CB_POL_L2_05 | CB_PRC_06 |
+| 5.20 | CB_POL_L2_05 | CB_POL_L3_07 |
+| 5.21 | CB_POL_L2_05 | CB_POL_L3_07 |
+| 5.22 | CB_POL_L2_05 | CB_PRC_06 |
+| 5.23 | CB_POL_L2_05 | CB_POL_L3_07 |
+| 5.24 | CB_POL_L2_07 | CB_PRC_01, CB_02 |
+| 5.25 | CB_POL_L2_07 | CB_PRC_01 |
+| 5.26 | CB_POL_L2_07 | CB_PRC_01 |
+| 5.27 | CB_POL_L2_07 | CB_PRC_01 |
+| 5.28 | CB_POL_L2_07 | CB_PRC_01 |
+| 5.29 | CB_POL_L2_06 | CB_POL_L3_05 |
+| 5.30 | CB_POL_L2_06 | CB_POL_L3_05 |
+| 5.31 | CB_POL_L2_07 | |
+| 5.32 | CB_POL_L2_07 | |
+| 5.33 | CB_POL_L2_07 | |
+| 5.34 | CB_POL_L2_07 | |
+| 5.35 | HB_CLS_9.2 | |
+| 5.36 | CB_POL_L2_07 | HB_CLS_9.1 |
+| 5.37 | CB_POL_L2_07 | CB_POL_L2_08 |
+
+### A.6 People Controls (8)
+
+| # | Doc | Secondary |
+|---|---|---|
+| 6.1 | CB_POL_L2_10 | |
+| 6.2 | CB_POL_L2_10 | CB_AWR_02 |
+| 6.3 | CB_POL_L2_10 | CB_AWR_01 |
+| 6.4 | CB_POL_L2_10 | |
+| 6.5 | CB_POL_L2_10 | CB_POL_L2_01 |
+| 6.6 | CB_POL_L2_10 | CB_AWR_02 |
+| 6.7 | CB_POL_L2_10 | CB_POL_L3_01 |
+| 6.8 | CB_POL_L2_10 | CB_POL_L3_01, CB_PRC_01, CB_02 |
+
+### A.7 Physical Controls (14)
+
+| # | Doc | Secondary |
+|---|---|---|
+| 7.1 | CB_POL_L2_09 | |
+| 7.2 | CB_POL_L2_09 | |
+| 7.3 | CB_POL_L2_09 | |
+| 7.4 | CB_POL_L2_09 | |
+| 7.5 | CB_POL_L2_09 | |
+| 7.6 | CB_POL_L2_09 | |
+| 7.7 | CB_POL_L2_09 | CB_POL_L3_01 |
+| 7.8 | CB_POL_L2_09 | |
+| 7.9 | CB_POL_L2_09 | |
+| 7.10 | CB_POL_L2_09 | |
+| 7.11 | CB_POL_L2_09 | |
+| 7.12 | CB_POL_L2_09 | |
+| 7.13 | CB_POL_L2_09 | |
+| 7.14 | CB_POL_L2_09 | |
+
+### A.8 Technological Controls (34)
+
+| # | Doc | Secondary |
+|---|---|---|
+| 8.1 | CB_POL_L2_03 | |
+| 8.2 | CB_POL_L2_01 | CB_POL_L3_02 |
+| 8.3 | CB_POL_L2_01 | |
+| 8.4 | CB_POL_L2_04 | |
+| 8.5 | CB_POL_L2_01 | CB_POL_L3_04 |
+| 8.6 | CB_POL_L2_03 | |
+| 8.7 | CB_POL_L2_03 | |
+| 8.8 | CB_POL_L2_03 | CB_POL_L3_02, CB_PRC_04 |
+| 8.9 | CB_POL_L2_03 | CB_POL_L3_02 |
+| 8.10 | CB_POL_L2_02 | CB_POL_L3_05 |
+| 8.11 | CB_POL_L2_02 | |
+| 8.12 | CB_POL_L2_02 | CB_POL_L2_03 |
+| 8.13 | CB_POL_L2_06 | CB_POL_L3_02, CB_PRC_03 |
+| 8.14 | CB_POL_L2_06 | CB_PRC_03 |
+| 8.15 | CB_POL_L2_03 | CB_POL_L3_02 |
+| 8.16 | CB_POL_L2_03 | CB_POL_L3_02 |
+| 8.17 | CB_POL_L2_03 | |
+| 8.18 | CB_POL_L2_03 | |
+| 8.19 | CB_POL_L2_03 | |
+| 8.20 | CB_POL_L2_03 | CB_POL_L3_06 |
+| 8.21 | CB_POL_L2_03 | CB_POL_L3_06 |
+| 8.22 | CB_POL_L2_03 | CB_POL_L3_06 |
+| 8.23 | CB_POL_L2_03 | |
+| 8.24 | CB_POL_L2_02 | CB_POL_L3_04 |
+| 8.25 | CB_POL_L2_04 | CB_POL_L3_03 |
+| 8.26 | CB_POL_L2_04 | CB_POL_L3_03 |
+| 8.27 | CB_POL_L2_04 | |
+| 8.28 | CB_POL_L2_04 | CB_POL_L3_03 |
+| 8.29 | CB_POL_L2_04 | CB_POL_L3_03 |
+| 8.30 | CB_POL_L2_04 | CB_POL_L2_05 |
+| 8.31 | CB_POL_L2_04 | CB_POL_L3_03 |
+| 8.32 | CB_POL_L2_04 | CB_POL_L3_03, CB_PRC_05 |
+| 8.33 | CB_POL_L2_04 | |
+| 8.34 | CB_POL_L2_04 | HB_CLS_9.2 |
+
+## Abbreviations
+
+| Abbr | Meaning | Path |
+|---|---|---|
+| CB | Cookbook | CB_Cyber-Security-Cookbook/ |
+| HB | Handbook | HB_ISMS-Handbook/ |
+| POL | Policy framework | POL_Policy-Framework/ |
+| L1 | Level 1 (Guideline) | L1_Guideline/ |
+| L2 | Level 2 (Policies) | L2_Policies/ |
+| L3 | Level 3 (Handbooks) | L3_Handbooks/ |
+| AWR | Awareness | AWR_Awareness-Training/ |
+| TPL | Template | TPL_Templates/ |
+| REF | References | REF_References/ |
+| LIB | Library (norm extracts) | LIB_Library/ |
+| CLS | Clause (definitions) | CLS_Definitions/ |
+| C4..C10 | Clause sorting | C4_Context/ .. C10_Improvement/ |
+| REG | Register | REG_Registers/ |
+| PRC | Process | PRC_Processes/ |
+| HB_CLS_C5 | (folder) | CLS_Definitions/C5_Leadership/ (3 files) |
+| HB_CLS_C9 | (folder) | CLS_Definitions/C9_Performance/ (3 files) |
