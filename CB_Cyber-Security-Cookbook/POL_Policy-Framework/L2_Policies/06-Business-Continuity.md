@@ -2,7 +2,7 @@
 > **Version:** 00.01.005
 > **Classification:** Internal
 > **Author:** skr
-> **ISO reference:** A.5.29-5.30, A.8.13-8.14
+> **ISO Reference:** A.5.29-5.30, A.8.13-8.14
 > **Last modified:** 2026-02-09
 > **Approval:** —
 > **Review cycle:** Annual

@@ -2,7 +2,7 @@
 > **Version:** 00.01.000
 > **Classification:** Internal
 > **Author:** skr
-> **ISO reference:** BEYOND-ISO
+> **ISO Reference:** BEYOND-ISO
 > **Last modified:** 2026-02-09
 > **Approval:** —
 > **Review cycle:** Annual

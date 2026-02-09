@@ -2,7 +2,7 @@
 > **Version:** 00.01.006
 > **Classification:** Internal
 > **Author:** skr
-> **ISO reference:** Clause 6.1, 8.2, 8.3
+> **ISO Reference:** Clause 6.1, 8.2, 8.3
 > **Last modified:** 2026-02-09
 > **Approval:** —
 > **Review cycle:** Annual

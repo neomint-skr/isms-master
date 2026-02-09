@@ -1,11 +1,11 @@
 > **Document ID:** CB_01-Getting-Started
 > **Version:** 00.01.003
 > **Classification:** Internal
-> **Author:** [ISB]
+> **Author:** skr
 > **ISO Reference:** Clause 7.3, A.6.3
 > **Last modified:** 2026-02-09
 > **Approval:** —
-> **Review cycle:** annually
+> **Review cycle:** Annual
 
 ---
 

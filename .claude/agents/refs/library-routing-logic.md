@@ -21,7 +21,7 @@ Each element from a library source is classified individually. A single source d
 
 | Signal in source text | Target level | Explanation |
 |---|---|---|
-| Strategic principles, vision, management commitment | L1 | Belongs in the guideline (only if extending G1-G6) |
+| Strategic principles, vision, management commitment | L1 | Belongs in the guideline (only if extending P1-P6) |
 | Requirements ("must", "shall"), normative rules | L2 | WHAT — policy |
 | Step-by-step instructions, checklists, tool references | L3 | HOW — handbook |
 | Workflow with trigger/RACI/steps/escalation | PRC | Process workflow |

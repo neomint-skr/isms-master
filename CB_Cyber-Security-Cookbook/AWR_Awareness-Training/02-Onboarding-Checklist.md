@@ -2,7 +2,7 @@
 > **Version:** 00.01.002
 > **Classification:** Internal
 > **Author:** skr
-> **ISO reference:** A.6.2, A.6.6
+> **ISO Reference:** A.6.2, A.6.6
 > **Last modified:** 2026-02-09
 > **Approval:** —
 > **Review cycle:** Annual

@@ -58,12 +58,12 @@ L2 headings = WHAT (requirements, nouns). L3 headings = HOW (guidance, verbs/imp
 
 ### 4. Principle coverage
 
-Each principle G1-G6 must be referenced by at least one L2.
+Each principle P1-P6 must be referenced by at least one L2.
 
 **Steps:**
 - Read the allocation matrix in L1 (section `## Policy framework`)
 - Grep all `Guideline reference` lines from L2 files
-- Count how often G1, G2, G3, G4, G5, G6 are referenced
+- Count how often P1, P2, P3, P4, P5, P6 are referenced
 - Warning if any principle has 0 references
 
 ### 5. CLS to PRC to REG chain

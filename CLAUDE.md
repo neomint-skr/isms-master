@@ -129,11 +129,11 @@ Each level references its predecessor level in the `## Objective and Scope` sect
 
 | Level | Required Field | Format | Example |
 |---|---|---|---|
-| L2 | Guideline reference | Principle IDs | `**Guideline reference:** G1, G3` |
+| L2 | Guideline reference | Principle IDs | `**Guideline reference:** P1, P3` |
 | L2 | Operationalized by | L3 short-form IDs | `**Operationalized by:** CB_POL_L3_04, CB_POL_L3_05` |
 | L3 | Policy reference | L2 short-form IDs | `**Policy reference:** CB_POL_L2_01, CB_POL_L2_02` |
 
-Principles G1-G6 are defined in the guideline (CB_POL_L1_01). L2 documents without L3 operationalization omit "Operationalized by".
+Principles P1-P6 are defined in the guideline (CB_POL_L1_01). L2 documents without L3 operationalization omit "Operationalized by".
 
 ### Reference Citation
 

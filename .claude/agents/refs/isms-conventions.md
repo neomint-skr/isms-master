@@ -30,7 +30,7 @@ Example: `CB_Cyber-Security-Cookbook/POL_Policy-Framework/L2_Policies/01-Access-
 > **Version:** 00.01.000
 > **Classification:** [Confidential|Internal|Public]
 > **Author:** skr
-> **ISO reference:** [Clause or Annex A controls]
+> **ISO Reference:** [Clause or Annex A controls]
 > **Last modified:** [YYYY-MM-DD]
 > **Approval:** —
 > **Review cycle:** annual
@@ -112,7 +112,7 @@ On change: update +1, update `Last modified`, add changelog row. New documents: 
 
 | Level | Character | Question |
 |---|---|---|
-| L1 | Guideline | WHY? Strategic principles (G1-G6) |
+| L1 | Guideline | WHY? Strategic principles (P1-P6) |
 | L2 | Policy | WHAT? Requirements and rules |
 | L3 | Handbook | HOW? Concrete guidance, checklists |
 
@@ -122,11 +122,11 @@ L2 and L3 strictly separated. PRC (processes) define workflow (RACI, trigger, st
 
 | Level | Mandatory field | Format |
 |---|---|---|
-| L2 | `Guideline reference` | Principle IDs (G1-G6) |
+| L2 | `Guideline reference` | Principle IDs (P1-P6) |
 | L2 | `Operationalized by` | L3 short-form IDs (or `—`) |
 | L3 | `Policy reference` | L2 short-form IDs |
 
-Principles G1-G6 defined in the guideline (CB_POL_L1_01). Allocation matrix L1 to L2 resides there.
+Principles P1-P6 defined in the guideline (CB_POL_L1_01). Allocation matrix L1 to L2 resides there.
 
 ## Three-layer model
 

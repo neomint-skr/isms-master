@@ -2,7 +2,7 @@
 > **Version:** 00.01.006
 > **Classification:** Internal
 > **Author:** skr
-> **ISO reference:** A.8.1, A.8.6-8.9, A.8.14-8.23
+> **ISO Reference:** A.8.1, A.8.6-8.9, A.8.14-8.23
 > **Last modified:** 2026-02-09
 > **Approval:** —
 > **Review cycle:** Annual
