@@ -1,17 +1,10 @@
 > **Document ID:** CB_AWR_01-Awareness-Fundamentals
-
 > **Version:** 00.01.003
-
 > **Classification:** Internal
-
 > **Author:** skr
-
 > **ISO Reference:** A.6.3, A.6.8
-
 > **Last modified:** 2026-02-09
-
 > **Approval:** —
-
 > **Review cycle:** Annual
 
 ---
