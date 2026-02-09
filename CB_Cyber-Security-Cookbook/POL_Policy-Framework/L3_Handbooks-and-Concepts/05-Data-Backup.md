@@ -1,7 +1,7 @@
 > **Document ID:** CB_POL_L3_05-Data-Backup
-> **Version:** 00.01.004
+> **Version:** 00.01.006
 > **Classification:** Internal
-> **Author:** skr
+> **Author:** CISO
 > **ISO Reference:** A.5.29-5.30, A.8.10, A.8.13
 > **Last modified:** 2026-02-09
 > **Approval:** —
@@ -17,7 +17,7 @@
 
 ## Objective and Scope
 
-**Policy reference:** CB_POL_L2_02-Information-Protection, CB_POL_L2_06-Business-Continuity
+**Standard reference:** CB_POL_L2_02-Information-Protection, CB_POL_L2_06-Business-Continuity
 
 **Objective:** Data loss jeopardizes business continuity and compliance with retention obligations. Without practical guidance for backup strategies, recovery procedures, and secure data deletion, RPO/RTO requirements cannot be met reliably.
 
@@ -62,8 +62,10 @@ Retention periods for backup data shall be defined based on statutory requiremen
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 00.01.004 | 2026-02-09 | skr | Backup strategy populated: backup plan, storage, cloud, retention (REC-505) |
-| 00.01.003 | 2026-02-09 | skr | Objective and scope: 3x2 pattern (WHY/FOR WHAT/WHERE) |
-| 00.01.002 | 2026-02-08 | skr | Subject chapter headings reformulated as calls to action |
-| 00.01.001 | 2026-02-07 | skr | See-also section added |
-| 00.01.000 | 2026-02-06 | skr | Initial version |
+| 00.01.006 | 2026-02-09 | CISO | Aligned role terminology |
+| 00.01.005 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |
+| 00.01.004 | 2026-02-09 | CISO | Backup strategy populated: backup plan, storage, cloud, retention (REC-505) |
+| 00.01.003 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/FOR WHAT/WHERE) |
+| 00.01.002 | 2026-02-08 | CISO | Subject chapter headings reformulated as calls to action |
+| 00.01.001 | 2026-02-07 | CISO | See-also section added |
+| 00.01.000 | 2026-02-06 | CISO | Initial version |

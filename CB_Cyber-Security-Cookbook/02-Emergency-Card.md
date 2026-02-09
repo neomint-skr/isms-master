@@ -1,7 +1,7 @@
 > **Document ID:** CB_02-Emergency-Card
-> **Version:** 00.01.003
+> **Version:** 00.01.004
 > **Classification:** Internal
-> **Author:** skr
+> **Author:** CISO
 > **ISO Reference:** A.5.24, A.6.8
 > **Last modified:** 2026-02-09
 > **Approval:** —
@@ -48,7 +48,8 @@ The emergency card complements the incident management process (CB_PRC_01) as a 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 00.01.003 | 2026-02-09 | skr | Objective and scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
-| 00.01.002 | 2026-02-09 | skr | Objective and scope: bold label pattern |
-| 00.01.001 | 2026-02-07 | skr | See-also section added |
-| 00.01.000 | 2026-02-06 | skr | Initial version |
+| 00.01.004 | 2026-02-09 | CISO | Aligned role terminology |
+| 00.01.003 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
+| 00.01.002 | 2026-02-09 | CISO | Objective and scope: bold label pattern |
+| 00.01.001 | 2026-02-07 | CISO | See-also section added |
+| 00.01.000 | 2026-02-06 | CISO | Initial version |

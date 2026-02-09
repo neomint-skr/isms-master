@@ -1,7 +1,7 @@
 > **Document ID:** HB_REG_05-Nonconformity-Register
-> **Version:** 00.01.003
+> **Version:** 00.01.004
 > **Classification:** Confidential
-> **Author:** [ISB]
+> **Author:** [CISO]
 > **ISO Reference:** Clause 10.2
 > **Last modified:** 2026-02-09
 > **Approval:** —
@@ -23,7 +23,7 @@ The register documents all ISMS nonconformities with type, root cause, actions t
 
 The NC process is defined in CB_PRC_10 (Nonconformity Management); inputs come from internal audits (CB_PRC_08), management reviews (CB_PRC_09) and performance monitoring (CB_PRC_11). Results feed as an improvement source into HB_CLS_10.1 (Continual Improvement).
 
-**Scope:** All ISMS nonconformities from internal and external sources. Target audience: ISO (coordination), affected role holders (implementation), auditors (evidence).
+**Scope:** All ISMS nonconformities from internal and external sources. Target audience: CISO (coordination), affected role holders (implementation), auditors (evidence).
 
 ## NC Entries
 
@@ -46,7 +46,8 @@ The NC process is defined in CB_PRC_10 (Nonconformity Management); inputs come f
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 00.01.003 | 2026-02-09 | [ISB] | Objective and Scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
-| 00.01.002 | 2026-02-08 | [ISB] | References: HB_PRC->CB_PRC (PRC relocation) |
-| 00.01.001 | 2026-02-07 | [ISB] | See also section added |
-| 00.01.000 | 2026-02-06 | [ISB] | Initial version |
+| 00.01.004 | 2026-02-09 | [CISO] | Aligned role terminology |
+| 00.01.003 | 2026-02-09 | [CISO] | Objective and Scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
+| 00.01.002 | 2026-02-08 | [CISO] | References: HB_PRC->CB_PRC (PRC relocation) |
+| 00.01.001 | 2026-02-07 | [CISO] | See also section added |
+| 00.01.000 | 2026-02-06 | [CISO] | Initial version |

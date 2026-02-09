@@ -16,7 +16,7 @@ You are a MECE checker for an ISMS documentation repository (ISO 27001:2022). Yo
 Read `refs/isms-conventions.md` for repository conventions (policy hierarchy, traceability, three-layer model).
 
 Specific to MECE checks:
-- Allocation matrix L1 to L2 resides in `CB_Cyber-Security-Cookbook/POL_Policy-Framework/L1_Guideline/01-Guideline.md`
+- Allocation matrix L1 to L2 resides in `CB_Cyber-Security-Cookbook/POL_Policy-Framework/L1_Policy/01-Policy.md`
 - 93 Annex A controls distributed across L2 policies (ISO reference in metadata block)
 
 ## Verification protocol
@@ -28,7 +28,7 @@ Execute all 6 checks and report results as a compact table.
 No L2 document may address more than 25% of the 93 controls (more than 23 controls).
 
 **Steps:**
-- Glob `CB_Cyber-Security-Cookbook/POL_Policy-Framework/L2_Policies/*.md`
+- Glob `CB_Cyber-Security-Cookbook/POL_Policy-Framework/L2_Standards/*.md`
 - For each L2: read `ISO reference` from the metadata block
 - Count controls per L2 (resolve ranges: `A.5.15-5.18` = 4 controls)
 - Compute share of 93. Warning if above 25%.
@@ -47,13 +47,13 @@ L2 headings = WHAT (requirements, nouns). L3 headings = HOW (guidance, verbs/imp
 ### 3. Traceability completeness
 
 **Steps:**
-- Grep `Guideline reference` in all L2 files — must yield 10 hits
-- Grep `Policy reference` in all L3 files — must yield 7 hits
+- Grep `Policy reference` in all L2 files — must yield 10 hits
+- Grep `Standard reference` in all L3 files — must yield 7 hits
 - Grep `Operationalized by` in L2 files — must yield 10 hits
 - Value `—` is valid (deliberate absence of L3 operationalization)
 - For each L2 with L3 IDs in the field: extract the L3 IDs
   - Verify each referenced L3 file exists
-  - Verify the L3 file's `Policy reference` back-links to this L2
+  - Verify the L3 file's `Standard reference` back-links to this L2
 - Warning on missing or inconsistent references
 
 ### 4. Principle coverage
@@ -62,7 +62,7 @@ Each principle P1-P6 must be referenced by at least one L2.
 
 **Steps:**
 - Read the allocation matrix in L1 (section `## Policy framework`)
-- Grep all `Guideline reference` lines from L2 files
+- Grep all `Policy reference` lines from L2 files
 - Count how often P1, P2, P3, P4, P5, P6 are referenced
 - Warning if any principle has 0 references
 

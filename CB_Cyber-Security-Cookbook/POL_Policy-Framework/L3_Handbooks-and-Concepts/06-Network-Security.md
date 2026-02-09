@@ -1,7 +1,7 @@
 > **Document ID:** CB_POL_L3_06-Network-Security
-> **Version:** 00.01.003
+> **Version:** 00.01.005
 > **Classification:** Internal
-> **Author:** skr
+> **Author:** CISO
 > **ISO Reference:** A.8.20-8.22
 > **Last modified:** 2026-02-09
 > **Approval:** —
@@ -17,7 +17,7 @@
 
 ## Objective and Scope
 
-**Policy reference:** CB_POL_L2_03-System-and-Network
+**Standard reference:** CB_POL_L2_03-System-and-Network
 
 **Objective:** Networks connect all IT systems and thus form the backbone of the organization — but they are also the primary attack vector for lateral movement. Without practical requirements for network architecture, segmentation, and service hardening, networks remain insecurely configured.
 
@@ -46,7 +46,9 @@ The requirements apply to all network components within the ISMS scope. Implemen
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 00.01.003 | 2026-02-09 | skr | Objective and scope: 3x2 pattern (WHY/FOR WHAT/WHERE) |
-| 00.01.002 | 2026-02-08 | skr | Subject chapter headings reformulated as calls to action |
-| 00.01.001 | 2026-02-07 | skr | See-also section added |
-| 00.01.000 | 2026-02-06 | skr | Initial version |
+| 00.01.005 | 2026-02-09 | CISO | Aligned role terminology |
+| 00.01.004 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |
+| 00.01.003 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/FOR WHAT/WHERE) |
+| 00.01.002 | 2026-02-08 | CISO | Subject chapter headings reformulated as calls to action |
+| 00.01.001 | 2026-02-07 | CISO | See-also section added |
+| 00.01.000 | 2026-02-06 | CISO | Initial version |

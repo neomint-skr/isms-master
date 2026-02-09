@@ -1,7 +1,7 @@
 > **Document ID:** HB_REG_09-Context-Register
-> **Version:** 00.01.005
+> **Version:** 00.01.006
 > **Classification:** Confidential
-> **Author:** [ISB]
+> **Author:** [CISO]
 > **ISO Reference:** Clause 4.1
 > **Last modified:** 2026-02-09
 > **Approval:** —
@@ -26,7 +26,7 @@ The register records the organizational profile (basic data, organizational unit
 
 The identification criteria are defined by HB_CLS_4.1 (Organization and Context); annual review takes place during the management review (CB_PRC_09). Changed context factors trigger a reassessment of the risk posture and, if necessary, an adjustment of the ISMS scope.
 
-**Scope:** All IS-relevant context factors of the organization. Target audience: ISO (maintenance), top management (validation), auditors (evidence).
+**Scope:** All IS-relevant context factors of the organization. Target audience: CISO (maintenance), top management (validation), auditors (evidence).
 
 ## Organizational Profile
 
@@ -66,7 +66,7 @@ The organizational profile describes the context in which the ISMS operates. It 
 
 ## Responsibilities
 
-- **Maintenance:** ISO ([ISB])
+- **Maintenance:** CISO ([CISO])
 - **Trigger:** Annually (CB_PRC_09) or upon significant changes
 - **Process:** CB_PRC_09-Management-Review
 
@@ -79,9 +79,10 @@ The organizational profile describes the context in which the ISMS operates. It 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 00.01.005 | 2026-02-09 | [ISB] | Organizational profile: context introduction with Clause 4.1 reference (REC-403) |
-| 00.01.004 | 2026-02-09 | [ISB] | Context architecture: CLS/REG perspective differentiation, data redundancy eliminated |
-| 00.01.003 | 2026-02-09 | [ISB] | Objective and Scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
-| 00.01.002 | 2026-02-09 | [ISB] | Objective and Scope: bold-label pattern added |
-| 00.01.001 | 2026-02-08 | [ISB] | Summary: 4-element pattern (context, orientation, ISMS contribution, consequence) |
-| 00.01.000 | 2026-02-08 | [ISB] | Initial version: context data extracted from CLS 4.1 |
+| 00.01.006 | 2026-02-09 | [CISO] | Aligned role terminology |
+| 00.01.005 | 2026-02-09 | [CISO] | Organizational profile: context introduction with Clause 4.1 reference (REC-403) |
+| 00.01.004 | 2026-02-09 | [CISO] | Context architecture: CLS/REG perspective differentiation, data redundancy eliminated |
+| 00.01.003 | 2026-02-09 | [CISO] | Objective and Scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
+| 00.01.002 | 2026-02-09 | [CISO] | Objective and Scope: bold-label pattern added |
+| 00.01.001 | 2026-02-08 | [CISO] | Summary: 4-element pattern (context, orientation, ISMS contribution, consequence) |
+| 00.01.000 | 2026-02-08 | [CISO] | Initial version: context data extracted from CLS 4.1 |

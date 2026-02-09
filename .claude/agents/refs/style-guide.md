@@ -32,9 +32,9 @@ Every `## Summary` consists of 3-5 sentences containing four elements. No refere
 | Type | Context | Orientation | ISMS contribution | Consequence |
 |---|---|---|---|---|
 | CLS | Why ISMS-relevant? | Which structures/criteria? | Which ISMS function? | Audit risk? |
-| L1 | Why does the org need this? | Which principles? | What does the guideline anchor? | What is missing without strategic basis? |
+| L1 | Why does the org need this? | Which principles? | What does the policy anchor? | What is missing without strategic basis? |
 | L2 | Which risk is addressed? | Which requirements? | Which controls covered? | What happens on non-compliance? |
-| L3 | Which task is described? | Which steps/tools? | Which policies operationalized? | What goes wrong without guidance? |
+| L3 | Which task is described? | Which steps/tools? | Which standards operationalized? | What goes wrong without guidance? |
 | PRC | When is the process triggered? | Which core steps? | Which CLS requirement implemented? | What happens without the process? |
 | REG | Why is this data maintained? | Which information captured? | Which decisions supported? | What is missing without documentation? |
 | AWR | Why relevant in daily work? | What do I learn here? | How does knowledge protect the org? | What happens without awareness? |

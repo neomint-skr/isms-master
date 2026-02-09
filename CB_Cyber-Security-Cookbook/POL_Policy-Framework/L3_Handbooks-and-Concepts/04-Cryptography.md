@@ -1,7 +1,7 @@
 > **Document ID:** CB_POL_L3_04-Cryptography
-> **Version:** 00.01.003
+> **Version:** 00.01.005
 > **Classification:** Internal
-> **Author:** skr
+> **Author:** CISO
 > **ISO Reference:** A.5.17, A.8.5, A.8.24
 > **Last modified:** 2026-02-09
 > **Approval:** —
@@ -17,7 +17,7 @@
 
 ## Objective and Scope
 
-**Policy reference:** CB_POL_L2_01-Access-and-Identity, CB_POL_L2_02-Information-Protection
+**Standard reference:** CB_POL_L2_01-Access-and-Identity, CB_POL_L2_02-Information-Protection
 
 **Objective:** Weak or improperly applied cryptography compromises the protection of confidential information. Without practical requirements for algorithms, key lengths, and key management, heterogeneous and insecure implementations arise.
 
@@ -46,7 +46,9 @@ The requirements apply to all IT systems and applications that use cryptographic
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 00.01.003 | 2026-02-09 | skr | Objective and scope: 3x2 pattern (WHY/FOR WHAT/WHERE) |
-| 00.01.002 | 2026-02-08 | skr | Subject chapter headings reformulated as calls to action |
-| 00.01.001 | 2026-02-07 | skr | See-also section added |
-| 00.01.000 | 2026-02-06 | skr | Initial version |
+| 00.01.005 | 2026-02-09 | CISO | Aligned role terminology |
+| 00.01.004 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |
+| 00.01.003 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/FOR WHAT/WHERE) |
+| 00.01.002 | 2026-02-08 | CISO | Subject chapter headings reformulated as calls to action |
+| 00.01.001 | 2026-02-07 | CISO | See-also section added |
+| 00.01.000 | 2026-02-06 | CISO | Initial version |

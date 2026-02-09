@@ -25,7 +25,7 @@
 | Document ID | Folder prefixes concatenated + filename without .md | CB_POL_L2_01-Access-and-Identity |
 | Version | Semver: 0.x.0 = draft, 1.x.0 = approved | 00.01.000 |
 | Classification | Confidential (HB), Internal (CB), Public | Internal |
-| Author | Initials: skr, [ISMS-Coordinator], [CEO], [CTO] | skr |
+| Author | Initials: CISO, [IS-Coordinator], [CEO], [CTO] | CISO |
 | ISO Reference | Associated clause or Annex A controls | A.5.15-5.18 |
 | Last modified | Date of last substantive change (ISO 8601) | 2026-02-06 |
 | Approval | Name + date after review, until then `—` | [CEO] 2026-03-15 |

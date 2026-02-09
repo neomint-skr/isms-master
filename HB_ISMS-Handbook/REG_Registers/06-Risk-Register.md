@@ -1,7 +1,7 @@
 > **Document ID:** HB_REG_06-Risk-Register
-> **Version:** 00.01.003
+> **Version:** 00.01.004
 > **Classification:** Confidential
-> **Author:** [ISB]
+> **Author:** [CISO]
 > **ISO Reference:** Clause 6.1, 8.2, 8.3
 > **Last modified:** 2026-02-09
 > **Approval:** —
@@ -23,7 +23,7 @@ The register documents all identified IS risks with asset reference, threat, vul
 
 Risk evaluation follows the criteria in CB_POL_L2_11 (Risk Management) and the workflow in CB_PRC_07 (Risk Management). Risks above the acceptance threshold are addressed in the risk treatment plan (HB_REG_07) and tracked through the management review (CB_PRC_09).
 
-**Scope:** All IS risks within the ISMS scope. Target audience: Risk owners (evaluation), ISO (analysis), top management (acceptance decision), auditors (evidence).
+**Scope:** All IS risks within the ISMS scope. Target audience: Risk owners (evaluation), CISO (analysis), top management (acceptance decision), auditors (evidence).
 
 ## Risk Matrix
 
@@ -50,7 +50,8 @@ Risk evaluation follows the criteria in CB_POL_L2_11 (Risk Management) and the w
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 00.01.003 | 2026-02-09 | [ISB] | Objective and Scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
-| 00.01.002 | 2026-02-08 | [ISB] | References: HB_PRC->CB_PRC (PRC relocation) |
-| 00.01.001 | 2026-02-07 | [ISB] | See also section added |
-| 00.01.000 | 2026-02-06 | [ISB] | Initial version |
+| 00.01.004 | 2026-02-09 | [CISO] | Aligned role terminology |
+| 00.01.003 | 2026-02-09 | [CISO] | Objective and Scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
+| 00.01.002 | 2026-02-08 | [CISO] | References: HB_PRC->CB_PRC (PRC relocation) |
+| 00.01.001 | 2026-02-07 | [CISO] | See also section added |
+| 00.01.000 | 2026-02-06 | [CISO] | Initial version |

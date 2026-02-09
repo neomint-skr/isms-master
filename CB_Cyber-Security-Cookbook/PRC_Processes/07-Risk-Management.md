@@ -1,7 +1,7 @@
 > **Document ID:** CB_PRC_07-Risk-Management
-> **Version:** 00.01.007
+> **Version:** 00.01.008
 > **Classification:** Internal
-> **Author:** skr
+> **Author:** CISO
 > **ISO Reference:** Clause 6.1, 8.2, 8.3
 > **Last modified:** 2026-02-09
 > **Approval:** —
@@ -23,7 +23,7 @@ This process describes the operational workflow from asset-based risk identifica
 
 Results are documented in HB_REG_06 (Risk Register) and HB_REG_07 (Risk Treatment Plan). The process is triggered annually before the management review (CB_PRC_09) and on an event-driven basis.
 
-**Scope:** All IS risks within the ISMS scope. Coordinated by the Information Security Officer with risk owners. Triggered annually (before management review) or event-driven.
+**Scope:** All IS risks within the ISMS scope. Coordinated by the Chief Information Security Officer with risk owners. Triggered annually (before management review) or event-driven.
 
 ## Risk assessment
 
@@ -31,7 +31,7 @@ The risk assessment comprises three steps (Clause 8.2).
 
 ### Risk identification
 
-The Information Security Officer identifies IS risks systematically. Sources include:
+The Chief Information Security Officer identifies IS risks systematically. Sources include:
 
 - Asset register (HB_REG_03) with protection requirements analysis
 - Security incidents (CB_PRC_01-Incident-Management)
@@ -43,7 +43,7 @@ For each identified risk, the following are determined: risk title, description 
 
 ### Risk analysis
 
-For each identified risk, the Information Security Officer assesses the likelihood and impact together with the risk owner, using the scales defined in CB_POL_L2_11-Risk-Management. The risk level is derived from the risk matrix (CB_POL_L2_11). The assessment distinguishes:
+For each identified risk, the Chief Information Security Officer assesses the likelihood and impact together with the risk owner, using the scales defined in CB_POL_L2_11-Risk-Management. The risk level is derived from the risk matrix (CB_POL_L2_11). The assessment distinguishes:
 
 - **Gross risk:** Risk level without considering implemented controls
 - **Net risk:** Risk level after considering already implemented controls
@@ -62,7 +62,7 @@ The risk owner selects a treatment option for each unacceptable risk from the fo
 
 ### Determine controls and reconcile with Annex A
 
-For selected mitigation controls, the Information Security Officer identifies appropriate controls. These are reconciled with Annex A (ISO 27001) to ensure that no relevant controls have been overlooked (Clause 6.1.3 b, c). New or changed control assignments are updated in the SoA (HB_REG_02).
+For selected mitigation controls, the Chief Information Security Officer identifies appropriate controls. These are reconciled with Annex A (ISO 27001) to ensure that no relevant controls have been overlooked (Clause 6.1.3 b, c). New or changed control assignments are updated in the SoA (HB_REG_02).
 
 ### Create risk treatment plan
 
@@ -74,7 +74,7 @@ The risk treatment plan is submitted to top management (CEO/CTO) for approval (C
 
 ## SoA maintenance
 
-The Statement of Applicability (HB_REG_02-Statement-of-Applicability) is updated as a result of risk treatment (Clause 6.1.3 d). With every risk treatment, the Information Security Officer checks whether new controls need to be added or existing justifications adjusted.
+The Statement of Applicability (HB_REG_02-Statement-of-Applicability) is updated as a result of risk treatment (Clause 6.1.3 d). With every risk treatment, the Chief Information Security Officer checks whether new controls need to be added or existing justifications adjusted.
 
 The SoA is the SSOT for control applicability. Direction of change: risk treatment -> SoA (HB_REG_02) -> coverage matrix (INDEX.md). Never the reverse.
 
@@ -96,7 +96,7 @@ An unscheduled risk assessment is triggered by:
 
 ### RACI
 
-The complete RACI assignment for PRC_07 is maintained in HB_CLS_5.3-Roles-and-Responsibilities (process RACI table). Summary: Information Security Officer ([ISB]) = Responsible for coordination and execution. ISMS Coordinator ([ISMS-Coordinator]) = Consulted. CEO ([CEO]) = Accountable for risk treatment plan approval. CTO ([CTO]) = Consulted. Risk owners = Responsible for assessment and acceptance of their risks.
+The complete RACI assignment for PRC_07 is maintained in HB_CLS_5.3-Roles-and-Responsibilities (process RACI table). Summary: Chief Information Security Officer ([CISO]) = Responsible for coordination and execution. IS-Coordinator ([IS-Coordinator]) = Consulted. CEO ([CEO]) = Accountable for risk treatment plan approval. CTO ([CTO]) = Consulted. Risk owners = Responsible for assessment and acceptance of their risks.
 
 ## See also
 
@@ -113,11 +113,12 @@ The complete RACI assignment for PRC_07 is maintained in HB_CLS_5.3-Roles-and-Re
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 00.01.007 | 2026-02-09 | skr | Objective and scope: 3x2 pattern (WHY/FOR WHAT/WHERE) |
-| 00.01.006 | 2026-02-09 | skr | Objective and scope: bold-label pattern (Objective + Scope) |
-| 00.01.005 | 2026-02-08 | skr | Summary: 4-element pattern (context, orientation, ISMS contribution, consequence) |
-| 00.01.004 | 2026-02-08 | skr | Moved HB->CB, classification Confidential->Internal |
-| 00.01.003 | 2026-02-08 | skr | Content: risk assessment, risk treatment, SoA maintenance, cycles/triggers |
-| 00.01.002 | 2026-02-07 | skr | Roles section removed, centralized in CLS_5.3 |
-| 00.01.001 | 2026-02-07 | skr | See-also section added |
-| 00.01.000 | 2026-02-07 | skr | Initial version |
+| 00.01.008 | 2026-02-09 | CISO | Aligned role terminology |
+| 00.01.007 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/FOR WHAT/WHERE) |
+| 00.01.006 | 2026-02-09 | CISO | Objective and scope: bold-label pattern (Objective + Scope) |
+| 00.01.005 | 2026-02-08 | CISO | Summary: 4-element pattern (context, orientation, ISMS contribution, consequence) |
+| 00.01.004 | 2026-02-08 | CISO | Moved HB->CB, classification Confidential->Internal |
+| 00.01.003 | 2026-02-08 | CISO | Content: risk assessment, risk treatment, SoA maintenance, cycles/triggers |
+| 00.01.002 | 2026-02-07 | CISO | Roles section removed, centralized in CLS_5.3 |
+| 00.01.001 | 2026-02-07 | CISO | See-also section added |
+| 00.01.000 | 2026-02-07 | CISO | Initial version |

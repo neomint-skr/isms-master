@@ -1,7 +1,7 @@
 > **Document ID:** HB_REG_03-Asset-Register
-> **Version:** 00.02.006
+> **Version:** 00.02.007
 > **Classification:** Confidential
-> **Author:** [ISB]
+> **Author:** [CISO]
 > **ISO Reference:** A.5.9
 > **Last modified:** 2026-02-09
 > **Approval:** —
@@ -26,7 +26,7 @@ The register documents all ISMS-relevant assets in 8 categories with cross-refer
 
 Protection requirement values are populated through the risk management process (CB_PRC_07) and feed into the risk register (HB_REG_06). The management review (CB_PRC_09) uses the asset inventory as input for the ISMS adequacy assessment.
 
-**Scope:** All organizational units, processes, applications, IT systems, communication links as well as rooms and buildings within the ISMS scope. Target audience: Asset owners (reporting), ISMS Coordinator (maintenance), ISO (analysis).
+**Scope:** All organizational units, processes, applications, IT systems, communication links as well as rooms and buildings within the ISMS scope. Target audience: Asset owners (reporting), IS-Coordinator (maintenance), CISO (analysis).
 
 ## Data Model
 
@@ -158,7 +158,7 @@ The following tables map relationships between assets. They are the SSOT — in 
 
 ## Responsibilities
 
-- **Maintenance:** ISMS Coordinator ([ISMS-Coordinator]) with support from domain departments
+- **Maintenance:** IS-Coordinator ([IS-Coordinator]) with support from domain departments
 - **Trigger:** New assets, significant changes to existing assets, annual review during management review
 - **Process:** CB_PRC_12-Asset-Management
 
@@ -169,11 +169,12 @@ The following tables map relationships between assets. They are the SSOT — in 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 00.02.006 | 2026-02-09 | [ISB] | Inventory fields: 14 mandatory fields + 5 optional BIA fields (REC-410) |
-| 00.02.005 | 2026-02-09 | [ISB] | Objective and Scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
-| 00.02.004 | 2026-02-09 | [ISB] | Objective and Scope: bold-label pattern (Objective + Scope) |
-| 00.02.003 | 2026-02-08 | [ISB] | Summary: 4-element pattern (context, orientation, ISMS contribution, consequence) |
-| 00.02.002 | 2026-02-08 | [ISB] | References: HB_PRC->CB_PRC (PRC relocation) |
-| 00.02.001 | 2026-02-07 | [ISB] | See also section added |
-| 00.02.000 | 2026-02-07 | [ISB] | Complete rebuild: 8 asset types, 6 cross-reference tables, data model note |
-| 00.01.000 | 2026-02-06 | [ISB] | Initial version |
+| 00.02.007 | 2026-02-09 | [CISO] | Aligned role terminology |
+| 00.02.006 | 2026-02-09 | [CISO] | Inventory fields: 14 mandatory fields + 5 optional BIA fields (REC-410) |
+| 00.02.005 | 2026-02-09 | [CISO] | Objective and Scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
+| 00.02.004 | 2026-02-09 | [CISO] | Objective and Scope: bold-label pattern (Objective + Scope) |
+| 00.02.003 | 2026-02-08 | [CISO] | Summary: 4-element pattern (context, orientation, ISMS contribution, consequence) |
+| 00.02.002 | 2026-02-08 | [CISO] | References: HB_PRC->CB_PRC (PRC relocation) |
+| 00.02.001 | 2026-02-07 | [CISO] | See also section added |
+| 00.02.000 | 2026-02-07 | [CISO] | Complete rebuild: 8 asset types, 6 cross-reference tables, data model note |
+| 00.01.000 | 2026-02-06 | [CISO] | Initial version |

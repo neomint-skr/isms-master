@@ -17,7 +17,7 @@ Text derivable from ISO standards, BSI standards or general best practices is wr
 | Decision required | `[Option A \| Option B — criterion]` | `[annually \| semi-annually — depending on risk posture]` |
 | Tool/product | `[Tool category, e.g. product]` | `[Password manager, e.g. Bitwarden/1Password]` |
 | Threshold/deadline | `[Value — context]` | `[24-72h — for critical vulnerabilities]` |
-| Known roles | Direct text | "ISO (skr)" |
+| Known roles | Direct text | "CISO (CISO)" |
 | Unknown roles | `[Role — context]` | `[IT service provider/internal admin]` |
 | Process details (internal) | `[Description]` | `[Approval workflow for access requests]` |
 
@@ -27,7 +27,7 @@ Text derivable from ISO standards, BSI standards or general best practices is wr
 |---|---|
 | 1 | Annex A controls always directly as `(addresses A.x.x)` in running text — never as variable |
 | 2 | Citation keys always inserted directly: `[REF:key]` or `[REF:key, Cl. X]` |
-| 3 | Internal cross-references (See also, Policy reference) directly as short-form IDs |
+| 3 | Internal cross-references (See also, Standard reference) directly as short-form IDs |
 | 4 | Metadata block fully populated — no variables in metadata |
 | 5 | Variable description short but unambiguous: what goes in, not how |
 | 6 | Style level of the target document type must be observed (see `refs/style-guide.md`) |

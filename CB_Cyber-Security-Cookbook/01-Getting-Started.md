@@ -1,7 +1,7 @@
 > **Document ID:** CB_01-Getting-Started
-> **Version:** 00.01.003
+> **Version:** 00.01.004
 > **Classification:** Internal
-> **Author:** skr
+> **Author:** CISO
 > **ISO Reference:** Clause 7.3, A.6.3
 > **Last modified:** 2026-02-09
 > **Approval:** —
@@ -48,7 +48,8 @@ The page is the recommended starting point for all employees and links to CB_AWR
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 00.01.003 | 2026-02-09 | [ISB] | Objective and scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
-| 00.01.002 | 2026-02-09 | [ISB] | Objective and scope: bold-label pattern |
-| 00.01.001 | 2026-02-07 | [ISB] | See-also section added |
-| 00.01.000 | 2026-02-06 | [ISB] | Initial version |
+| 00.01.004 | 2026-02-09 | CISO | Aligned role terminology |
+| 00.01.003 | 2026-02-09 | [CISO] | Objective and scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
+| 00.01.002 | 2026-02-09 | [CISO] | Objective and scope: bold-label pattern |
+| 00.01.001 | 2026-02-07 | [CISO] | See-also section added |
+| 00.01.000 | 2026-02-06 | [CISO] | Initial version |

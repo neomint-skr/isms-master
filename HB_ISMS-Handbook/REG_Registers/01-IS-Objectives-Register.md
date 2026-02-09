@@ -1,7 +1,7 @@
 > **Document ID:** HB_REG_01-IS-Objectives-Register
-> **Version:** 00.01.004
+> **Version:** 00.01.006
 > **Classification:** Confidential
-> **Author:** [ISB]
+> **Author:** [CISO]
 > **ISO Reference:** Clause 6.2
 > **Last modified:** 2026-02-09
 > **Approval:** —
@@ -23,7 +23,7 @@ The register records IS objectives with metrics, responsibilities, deadlines and
 
 Objectives are derived from HB_CLS_6.2 (IS Objectives) and monitored through CB_PRC_11 (Performance Monitoring). Results feed as input into the management review (CB_PRC_09).
 
-**Scope:** All IS objectives within the ISMS scope. Target audience: ISO (maintenance and monitoring), top management (objective achievement), auditors (evidence).
+**Scope:** All IS objectives within the ISMS scope. Target audience: CISO (maintenance and monitoring), top management (objective achievement), auditors (evidence).
 
 ## IS Objectives
 
@@ -31,7 +31,7 @@ The organization's IS objectives are structured at three levels:
 
 | Level | Character | Defined by | Example |
 |---|---|---|---|
-| Strategic | Formally documented in IS guideline | Top management | "Protect critical business processes against IS risks" |
+| Strategic | Formally documented in IS policy | Top management | "Protect critical business processes against IS risks" |
 | Tactical | Derived from continual improvement | ISMS team | "Reduce vulnerability backlog by 30% p.a." |
 | Operational | Concrete expectations for IS controls | Domain leads | [Measurable operational objectives, e.g. "RTO for core systems < 4 hours"] |
 
@@ -54,8 +54,10 @@ Objectives cascade: strategic objectives are translated into tactical objectives
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 00.01.004 | 2026-02-09 | [ISB] | Objective hierarchy: three-level model strategic/tactical/operational (REC-402) |
-| 00.01.003 | 2026-02-09 | [ISB] | Objective and Scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
-| 00.01.002 | 2026-02-08 | [ISB] | References: HB_PRC->CB_PRC (PRC relocation) |
-| 00.01.001 | 2026-02-07 | [ISB] | See also section added |
-| 00.01.000 | 2026-02-06 | [ISB] | Initial version |
+| 00.01.006 | 2026-02-09 | [CISO] | Aligned role terminology |
+| 00.01.005 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |
+| 00.01.004 | 2026-02-09 | [CISO] | Objective hierarchy: three-level model strategic/tactical/operational (REC-402) |
+| 00.01.003 | 2026-02-09 | [CISO] | Objective and Scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
+| 00.01.002 | 2026-02-08 | [CISO] | References: HB_PRC->CB_PRC (PRC relocation) |
+| 00.01.001 | 2026-02-07 | [CISO] | See also section added |
+| 00.01.000 | 2026-02-06 | [CISO] | Initial version |

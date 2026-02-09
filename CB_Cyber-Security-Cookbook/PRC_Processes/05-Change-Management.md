@@ -1,7 +1,7 @@
 > **Document ID:** CB_PRC_05-Change-Management
-> **Version:** 00.01.005
+> **Version:** 00.01.006
 > **Classification:** Internal
-> **Author:** skr
+> **Author:** CISO
 > **ISO Reference:** A.8.32
 > **Last modified:** 2026-02-09
 > **Approval:** —
@@ -50,9 +50,10 @@ The process operationalizes the requirements from CB_POL_L2_04-Secure-Developmen
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 00.01.005 | 2026-02-09 | skr | Objective and scope: 3x2 pattern (WHY/FOR WHAT/WHERE) |
-| 00.01.004 | 2026-02-09 | skr | Objective and scope: bold-label pattern, orphan text removed |
-| 00.01.003 | 2026-02-08 | skr | Moved HB->CB, classification Confidential->Internal |
-| 00.01.002 | 2026-02-07 | skr | Roles section removed, centralized in CLS_5.3 |
-| 00.01.001 | 2026-02-07 | skr | See-also section added |
-| 00.01.000 | 2026-02-06 | skr | Initial version |
+| 00.01.006 | 2026-02-09 | CISO | Aligned role terminology |
+| 00.01.005 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/FOR WHAT/WHERE) |
+| 00.01.004 | 2026-02-09 | CISO | Objective and scope: bold-label pattern, orphan text removed |
+| 00.01.003 | 2026-02-08 | CISO | Moved HB->CB, classification Confidential->Internal |
+| 00.01.002 | 2026-02-07 | CISO | Roles section removed, centralized in CLS_5.3 |
+| 00.01.001 | 2026-02-07 | CISO | See-also section added |
+| 00.01.000 | 2026-02-06 | CISO | Initial version |

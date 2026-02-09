@@ -1,7 +1,7 @@
 > **Document ID:** CB_POL_L2_01-Access-and-Identity
-> **Version:** 00.01.006
+> **Version:** 00.01.008
 > **Classification:** Internal
-> **Author:** skr
+> **Author:** CISO
 > **ISO Reference:** A.5.15-5.18, A.8.2-8.5, A.8.18
 > **Last modified:** 2026-02-09
 > **Approval:** —
@@ -9,7 +9,7 @@
 
 ---
 
-# Access and Identity Policy
+# Access and Identity Standard
 
 ## Summary
 
@@ -17,14 +17,14 @@ Uncontrolled access is among the most common causes of security incidents. This 
 
 ## Objective and Scope
 
-**Guideline reference:** P1, P2
+**Policy reference:** P1, P2
 **Operationalized by:** CB_POL_L3_01-User-Handbook, CB_POL_L3_02-Admin-Handbook, CB_POL_L3_04-Cryptography
 
 **Objective:** Uncontrolled access is one of the most common causes of security incidents. Without binding rules for identity management and access rights provisioning, the foundation for the principle of least privilege is missing.
 
 This policy defines the normative requirements for access control, identity management, and authentication (addresses A.5.15-5.18, A.8.2-8.5). It establishes criteria for granting, reviewing, and revoking access rights.
 
-The policy implements the principles P1 (Protection) and P2 (Compliance) of the IS guideline. Operational implementation is provided through CB_POL_L3_01 (User Handbook), CB_POL_L3_02 (Admin Handbook), and CB_POL_L3_04 (Cryptography); the access control process through CB_PRC_02 (Access Control).
+The standard implements the principles P1 (Protection) and P2 (Compliance) of the IS policy. Operational implementation is provided through CB_POL_L3_01 (User Handbook), CB_POL_L3_02 (Admin Handbook), and CB_POL_L3_04 (Cryptography); the access control process through CB_PRC_02 (Access Control).
 
 **Scope:** All employees and external personnel with access rights. Covers physical and logical access to all IT systems and information within the ISMS scope.
 
@@ -119,10 +119,12 @@ Segregation of duties must be ensured: approval and technical implementation of 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 00.01.006 | 2026-02-09 | skr | Access control (A.5.15), access rights lifecycle (A.5.18) populated (Batch-D) |
-| 00.01.005 | 2026-02-09 | skr | Summary: 4-element pattern |
-| 00.01.004 | 2026-02-09 | skr | Password requirements added, L2-WHAT without concrete values (REC-302) |
-| 00.01.003 | 2026-02-09 | skr | Identities, authentication/MFA, privileged access rights populated (REC-301, 303, 304) |
-| 00.01.002 | 2026-02-09 | skr | Objective and scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
-| 00.01.001 | 2026-02-07 | skr | See-also section added |
-| 00.01.000 | 2026-02-06 | skr | Initial version |
+| 00.01.008 | 2026-02-09 | CISO | Aligned role terminology |
+| 00.01.007 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |
+| 00.01.006 | 2026-02-09 | CISO | Access control (A.5.15), access rights lifecycle (A.5.18) populated (Batch-D) |
+| 00.01.005 | 2026-02-09 | CISO | Summary: 4-element pattern |
+| 00.01.004 | 2026-02-09 | CISO | Password requirements added, L2-WHAT without concrete values (REC-302) |
+| 00.01.003 | 2026-02-09 | CISO | Identities, authentication/MFA, privileged access rights populated (REC-301, 303, 304) |
+| 00.01.002 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
+| 00.01.001 | 2026-02-07 | CISO | See-also section added |
+| 00.01.000 | 2026-02-06 | CISO | Initial version |

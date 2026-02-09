@@ -1,7 +1,7 @@
 > **Document ID:** CB_POL_L2_08-Document-Control
-> **Version:** 00.04.008
+> **Version:** 00.04.010
 > **Classification:** Internal
-> **Author:** skr
+> **Author:** CISO
 > **ISO Reference:** Clause 7.5
 > **Last modified:** 2026-02-09
 > **Approval:** —
@@ -9,7 +9,7 @@
 
 ---
 
-# Document Control Policy
+# Document Control Standard
 
 ## Summary
 
@@ -17,14 +17,14 @@ Without uniform document control, ISMS documents lose their evidentiary value. T
 
 ## Objective and Scope
 
-**Guideline reference:** P2, P5
+**Policy reference:** P2, P5
 **Operationalized by:** —
 
 **Objective:** ISMS documents lose their evidentiary value when versioning, identification, and access protection are not uniformly governed. Without consistent document control, audit evidence is incomplete or contradictory.
 
 This policy governs the entire document lifecycle — from creation and identification through review and approval to retention and protection (addresses Clause 7.5.2 a-c, 7.5.3 a-f). It establishes metadata format, standard document structure, versioning scheme, and access rules as binding requirements.
 
-The policy implements the principles P2 (Compliance) and P5 (Continual improvement) of the IS guideline. It serves as the SSOT for all document formats and conventions in the ISMS and is not operationalized through a downstream L3 document.
+The standard implements the principles P2 (Compliance) and P5 (Continual improvement) of the IS policy. It serves as the SSOT for all document formats and conventions in the ISMS and is not operationalized through a downstream L3 document.
 
 **Scope:** All content documents in the Cookbook (CB) and ISMS Handbook (HB). Excluded are REF extracts (external standards without internal versioning) and control documents (CLAUDE.md, INDEX.md).
 
@@ -45,7 +45,7 @@ Every ISMS content document begins with a **uniform metadata block** (8 fields).
 
 **Template:** CB_TPL_02-Document-Metadata (in the Templates folder).
 
-**ID scheme:** The document ID is derived from the folder prefixes in the path. Example: `CB_Cyber-Security-Cookbook/POL_Policy-Framework/L2_Policies/01-Access-and-Identity.md` yields the ID `CB_POL_L2_01-Access-and-Identity`. Separators: `_` between tiers, `-` within names (addresses A.5.1).
+**ID scheme:** The document ID is derived from the folder prefixes in the path. Example: `CB_Cyber-Security-Cookbook/POL_Policy-Framework/L2_Standards/01-Access-and-Identity.md` yields the ID `CB_POL_L2_01-Access-and-Identity`. Separators: `_` between tiers, `-` within names (addresses A.5.1).
 
 ### Standard Document Structure
 
@@ -74,8 +74,8 @@ The document name (H1) integrates the document type in natural language. No tech
 | CLS | Topic only | `# Risks and Opportunities` |
 | PRC | [Topic] Process | `# Incident Management Process` |
 | REG | Type in the word | `# Risk Register` |
-| L1 | Information Security Guideline | `# Information Security Guideline` |
-| L2 | [Topic] Policy | `# Access and Identity Policy` |
+| L1 | Information Security Policy | `# Information Security Policy` |
+| L2 | [Topic] Standard | `# Access and Identity Standard` |
 | L3 | [Topic] Handbook | `# User Handbook` |
 | AWR | Free descriptive | `# Awareness Fundamentals` |
 | CB Root | Free descriptive | `# Getting Started` |
@@ -91,9 +91,9 @@ Every document undergoes a review and approval before initial publication (addre
 
 | Document tier | Review | Approval |
 |---|---|---|
-| L1 (Guideline) | Information Security Officer ([ISB]) | CEO ([CEO]) |
-| L2 (Policies) | Information Security Officer ([ISB]) | CEO ([CEO]) or CTO ([CTO]) |
-| L3, PRC, REG, CLS | Information Security Officer ([ISB]) | ISMS Coordinator ([ISMS-Coordinator]) |
+| L1 (Policy) | Chief Information Security Officer ([CISO]) | CEO ([CEO]) |
+| L2 (Standards) | Chief Information Security Officer ([CISO]) | CEO ([CEO]) or CTO ([CTO]) |
+| L3, PRC, REG, CLS | Chief Information Security Officer ([CISO]) | IS-Coordinator ([IS-Coordinator]) |
 
 - **Review criteria:** Content is factually correct, ISO reference verified, consistency with parent documents ensured.
 - **Approval:** Major version increment (e.g., `00.02.003` > `01.00.000`) and approval field in the metadata block populated with name and date.
@@ -110,7 +110,7 @@ ISMS documentation is provided through two channels (addresses 7.5.3 a, c):
 
 - **Access by classification:**
   - *Internal* (CB): All employees via the wiki
-  - *Confidential* (HB): ISMS team only (Information Security Officer, ISMS Coordinator, executive management)
+  - *Confidential* (HB): ISMS team only (Chief Information Security Officer, IS-Coordinator, executive management)
 - **Findability:** INDEX.md serves as the central table of contents. Document IDs are stable references for cross-referencing.
 - Controlled versions are exclusively those published on the wiki or file server. Local copies or printouts are not considered controlled.
 
@@ -125,7 +125,7 @@ Padded format `Major.Minor.Update` (`00.00.000`):
 | Segment | Format | Responsible | Prerequisite | Reset |
 |---|---|---|---|---|
 | **Major** | 2-digit | Approval authority per RACI (HB_CLS_5.3) | Formal approval by the responsible authority | Minor + Update > 00.000 |
-| **Minor** | 2-digit | Information Security Officer on explicit request | Deliberate draft milestone decision | Update > 000 |
+| **Minor** | 2-digit | Chief Information Security Officer on explicit request | Deliberate draft milestone decision | Update > 000 |
 | **Update** | 3-digit | Agent automatically | Any content change to the file | — |
 
 Example: `00.01.000` > `00.01.001` > `00.01.002` > (minor milestone) > `00.02.000` > (approval by CEO) > `01.00.000`
@@ -172,15 +172,17 @@ Documented information of external origin is appropriately identified and contro
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 00.04.008 | 2026-02-09 | skr | Objective and scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
-| 00.04.007 | 2026-02-08 | skr | Summary: 4-element pattern (context, orientation, ISMS contribution, consequence) |
-| 00.04.006 | 2026-02-08 | skr | Document structure table repaired (broken table cell See-also/Changelog) and missing allocation matrix row added |
-| 00.04.005 | 2026-02-08 | skr | Document structure: ## Roles (PRC) removed — RACI centralized in CLS_5.3 (follow-up from 2026-02-07 decision) |
-| 00.04.004 | 2026-02-08 | skr | References: HB_TPL->CB_TPL (TPL relocation) |
-| 00.04.003 | 2026-02-07 | skr | Library storage updated to REF_Referenzen/LIB_Library/ |
-| 00.04.002 | 2026-02-07 | skr | AGENTS.md reference replaced with CLAUDE.md |
-| 00.04.001 | 2026-02-07 | skr | See-also section added |
-| 00.04.000 | 2026-02-07 | skr | Version control migrated to Major.Minor.Update scheme |
-| 00.03.000 | 2026-02-07 | skr | Governance convention: roles/responsibilities in standard document structure, reference to CLS_5.3 |
-| 00.02.000 | 2026-02-07 | skr | Content populated for all sections, document structure convention integrated |
-| 00.01.000 | 2026-02-06 | skr | Initial version |
+| 00.04.010 | 2026-02-09 | CISO | Aligned role terminology |
+| 00.04.009 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |
+| 00.04.008 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
+| 00.04.007 | 2026-02-08 | CISO | Summary: 4-element pattern (context, orientation, ISMS contribution, consequence) |
+| 00.04.006 | 2026-02-08 | CISO | Document structure table repaired (broken table cell See-also/Changelog) and missing allocation matrix row added |
+| 00.04.005 | 2026-02-08 | CISO | Document structure: ## Roles (PRC) removed — RACI centralized in CLS_5.3 (follow-up from 2026-02-07 decision) |
+| 00.04.004 | 2026-02-08 | CISO | References: HB_TPL->CB_TPL (TPL relocation) |
+| 00.04.003 | 2026-02-07 | CISO | Library storage updated to REF_Referenzen/LIB_Library/ |
+| 00.04.002 | 2026-02-07 | CISO | AGENTS.md reference replaced with CLAUDE.md |
+| 00.04.001 | 2026-02-07 | CISO | See-also section added |
+| 00.04.000 | 2026-02-07 | CISO | Version control migrated to Major.Minor.Update scheme |
+| 00.03.000 | 2026-02-07 | CISO | Governance convention: roles/responsibilities in standard document structure, reference to CLS_5.3 |
+| 00.02.000 | 2026-02-07 | CISO | Content populated for all sections, document structure convention integrated |
+| 00.01.000 | 2026-02-06 | CISO | Initial version |

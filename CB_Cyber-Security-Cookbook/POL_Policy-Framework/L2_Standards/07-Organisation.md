@@ -1,7 +1,7 @@
 > **Document ID:** CB_POL_L2_07-Organisation
-> **Version:** 00.03.007
+> **Version:** 00.03.009
 > **Classification:** Internal
-> **Author:** skr
+> **Author:** CISO
 > **ISO Reference:** A.5.2-5.7, A.5.9-5.11, A.5.24-5.28, A.5.31-5.37
 > **Last modified:** 2026-02-09
 > **Approval:** —
@@ -9,7 +9,7 @@
 
 ---
 
-# Organisation Policy
+# Organisation Standard
 
 ## Summary
 
@@ -17,14 +17,14 @@ Information security requires clear organizational frameworks across all discipl
 
 ## Objective and Scope
 
-**Guideline reference:** P1, P2, P3, P4, P5
+**Policy reference:** P1, P2, P3, P4, P5
 **Operationalized by:** CB_POL_L3_01-User-Handbook
 
 **Objective:** Information security requires clear organizational frameworks. Without uniform rules for roles, asset management, incident reporting, and compliance, IS responsibilities remain unclear and governance mechanisms incomplete.
 
 This policy consolidates the organizational requirements for security organization, asset management, incident reporting, compliance, and governance (addresses A.5.2-5.6, A.5.9-5.11, A.5.24-5.28, A.5.31-5.37). It establishes criteria for the overarching management and implementation of all IS disciplines.
 
-The policy implements the principles P1 (Protection), P2 (Compliance), P3 (Risk orientation), P4 (Awareness), and P5 (Continual improvement) of the IS guideline. Operational implementation is provided through CB_POL_L3_01 (User Handbook) and the topic-specific processes (CB_PRC_01, CB_PRC_12).
+The standard implements the principles P1 (Protection), P2 (Compliance), P3 (Risk orientation), P4 (Awareness), and P5 (Continual improvement) of the IS policy. Operational implementation is provided through CB_POL_L3_01 (User Handbook) and the topic-specific processes (CB_PRC_01, CB_PRC_12).
 
 **Scope:** All organizational units and employees within the ISMS scope. Covers organizational governance, asset management, incident management, and compliance monitoring.
 
@@ -60,7 +60,7 @@ The organization collects and analyzes information about potential or existing I
 - **External sources:** Contact with authorities (BSI, ENISA) and special interest groups (industry forums, vendor advisories)
 - **Internal sources:** Log data, vulnerability scans, incident reports
 
-The Information Security Officer analyzes collected information and uses the findings to improve security controls. Results feed into risk assessment (CB_POL_L2_11) and vulnerability management (CB_PRC_04) [REF:DG24-AV, Kap. 2.3.2].
+The Chief Information Security Officer analyzes collected information and uses the findings to improve security controls. Results feed into risk assessment (CB_POL_L2_11) and vulnerability management (CB_PRC_04) [REF:DG24-AV, Kap. 2.3.2].
 
 ## Compliance
 
@@ -125,7 +125,7 @@ Information security is governed through a clear organizational structure with d
 | 4 | Contacts with relevant authorities (BSI, data protection authority, law enforcement) are maintained | A.5.5 |
 | 5 | Contacts with special interest groups and security forums are maintained | A.5.6 |
 
-The role structure is organized into organizational roles, ISMS roles (Information Security Officer, steering committee), and control-specific roles. One person may hold multiple roles provided segregation of duties is maintained [REF:DG25-HB, Kap. 6]. The detailed role description is documented in HB_CLS_5.3-Roles.
+The role structure is organized into organizational roles, ISMS roles (Chief Information Security Officer, steering committee), and control-specific roles. One person may hold multiple roles provided segregation of duties is maintained [REF:DG25-HB, Kap. 6]. The detailed role description is documented in HB_CLS_5.3-Roles.
 
 ## See also
 
@@ -141,13 +141,15 @@ The role structure is organized into organizational roles, ISMS roles (Informati
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 00.03.007 | 2026-02-09 | skr | Incidents (A.5.24-28), compliance (A.5.31-33), governance (A.5.2-5.6) populated (Batch-D) |
-| 00.03.006 | 2026-02-09 | skr | Summary: 4-element pattern |
-| 00.03.005 | 2026-02-09 | skr | Threat intelligence (A.5.7) added under incidents (REC-419) |
-| 00.03.004 | 2026-02-09 | skr | Objective and scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
-| 00.03.003 | 2026-02-08 | skr | References: HB_PRC->CB_PRC (PRC relocation) |
-| 00.03.002 | 2026-02-08 | skr | Assets: cross-reference to L2_11-Risk-Management added |
-| 00.03.001 | 2026-02-07 | skr | See-also section added |
-| 00.03.000 | 2026-02-07 | skr | Asset management (A.5.9): types, modelling, references |
-| 00.02.000 | 2026-02-07 | skr | Split: HR -> L2_10, Physical -> L2_09 |
-| 00.01.000 | 2026-02-06 | skr | Initial version |
+| 00.03.009 | 2026-02-09 | CISO | Aligned role terminology |
+| 00.03.008 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |
+| 00.03.007 | 2026-02-09 | CISO | Incidents (A.5.24-28), compliance (A.5.31-33), governance (A.5.2-5.6) populated (Batch-D) |
+| 00.03.006 | 2026-02-09 | CISO | Summary: 4-element pattern |
+| 00.03.005 | 2026-02-09 | CISO | Threat intelligence (A.5.7) added under incidents (REC-419) |
+| 00.03.004 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
+| 00.03.003 | 2026-02-08 | CISO | References: HB_PRC->CB_PRC (PRC relocation) |
+| 00.03.002 | 2026-02-08 | CISO | Assets: cross-reference to L2_11-Risk-Management added |
+| 00.03.001 | 2026-02-07 | CISO | See-also section added |
+| 00.03.000 | 2026-02-07 | CISO | Asset management (A.5.9): types, modelling, references |
+| 00.02.000 | 2026-02-07 | CISO | Split: HR -> L2_10, Physical -> L2_09 |
+| 00.01.000 | 2026-02-06 | CISO | Initial version |

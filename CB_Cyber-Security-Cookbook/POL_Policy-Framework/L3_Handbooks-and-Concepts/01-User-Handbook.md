@@ -1,7 +1,7 @@
 > **Document ID:** CB_POL_L3_01-User-Handbook
-> **Version:** 00.01.005
+> **Version:** 00.01.007
 > **Classification:** Internal
-> **Author:** skr
+> **Author:** CISO
 > **ISO Reference:** A.5.10, A.5.12-5.13, A.6.7-6.8, A.7.7
 > **Last modified:** 2026-02-09
 > **Approval:** —
@@ -17,7 +17,7 @@ Policies only take effect when employees can translate requirements into daily p
 
 ## Objective and Scope
 
-**Policy reference:** CB_POL_L2_02, CB_POL_L2_07, CB_POL_L2_09, CB_POL_L2_10
+**Standard reference:** CB_POL_L2_02, CB_POL_L2_07, CB_POL_L2_09, CB_POL_L2_10
 
 **Objective:** Policies are only effective when employees know how to apply the requirements in their daily work. Without practical instructions, rules on IT usage, classification, and workplace conduct remain abstract and are not followed.
 
@@ -209,9 +209,11 @@ The organization protects persons who report security events in good faith. No d
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 00.01.005 | 2026-02-09 | skr | Subject sections populated, summary and see-also added (Batch-E) |
-| 00.01.004 | 2026-02-09 | skr | Information classification: cross-reference to L2_02 instead of redundancy (REC-421) |
-| 00.01.003 | 2026-02-09 | skr | Objective and scope: 3x2 pattern (WHY/FOR WHAT/WHERE) |
-| 00.01.002 | 2026-02-08 | skr | Subject chapter headings reformulated as calls to action |
-| 00.01.001 | 2026-02-07 | skr | See-also section added |
-| 00.01.000 | 2026-02-06 | skr | Initial version |
+| 00.01.007 | 2026-02-09 | CISO | Aligned role terminology |
+| 00.01.006 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |
+| 00.01.005 | 2026-02-09 | CISO | Subject sections populated, summary and see-also added (Batch-E) |
+| 00.01.004 | 2026-02-09 | CISO | Information classification: cross-reference to L2_02 instead of redundancy (REC-421) |
+| 00.01.003 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/FOR WHAT/WHERE) |
+| 00.01.002 | 2026-02-08 | CISO | Subject chapter headings reformulated as calls to action |
+| 00.01.001 | 2026-02-07 | CISO | See-also section added |
+| 00.01.000 | 2026-02-06 | CISO | Initial version |

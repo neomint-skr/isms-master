@@ -21,7 +21,7 @@ Document ID = folder prefixes concatenated with `_` + filename without `.md`.
 | Clauses | Dot notation (e.g. `HB_CLS_7.4-Communication`) |
 | Clause folders | C4..C10 are sort folders, not ID segments |
 
-Example: `CB_Cyber-Security-Cookbook/POL_Policy-Framework/L2_Policies/01-Access-and-Identity.md` > `CB_POL_L2_01-Access-and-Identity`
+Example: `CB_Cyber-Security-Cookbook/POL_Policy-Framework/L2_Standards/01-Access-and-Identity.md` > `CB_POL_L2_01-Access-and-Identity`
 
 ## Metadata block (8 mandatory fields, fixed order)
 
@@ -29,7 +29,7 @@ Example: `CB_Cyber-Security-Cookbook/POL_Policy-Framework/L2_Policies/01-Access-
 > **Document ID:** [Path-based]
 > **Version:** 00.01.000
 > **Classification:** [Confidential|Internal|Public]
-> **Author:** skr
+> **Author:** CISO
 > **ISO Reference:** [Clause or Annex A controls]
 > **Last modified:** [YYYY-MM-DD]
 > **Approval:** —
@@ -83,8 +83,8 @@ No technical prefix (Policy:, Process: etc.), no clause numbers in H1.
 | CLS | Topic only | `# Risks and Opportunities` |
 | PRC | [Topic] Process | `# Incident Management Process` |
 | REG | Type embedded in word | `# Risk Register` |
-| L1 | Information Security Guideline | `# Information Security Guideline` |
-| L2 | [Topic] Policy | `# Access and Identity Policy` |
+| L1 | Information Security Policy | `# Information Security Policy` |
+| L2 | [Topic] Standard | `# Access and Identity Standard` |
 | L3 | [Topic] Handbook/Concept | `# User Handbook` |
 | AWR | Free descriptive | `# Awareness Fundamentals` |
 | CB Root | Free descriptive | `# Getting Started`, `# Emergency Card` |
@@ -112,9 +112,9 @@ On change: update +1, update `Last modified`, add changelog row. New documents: 
 
 | Level | Character | Question |
 |---|---|---|
-| L1 | Guideline | WHY? Strategic principles (P1-P6) |
-| L2 | Policy | WHAT? Requirements and rules |
-| L3 | Handbook | HOW? Concrete guidance, checklists |
+| L1 | Policy | WHY? Strategic principles (P1-P6) |
+| L2 | Standard | WHAT? Requirements and rules |
+| L3 | Handbook and Concept | HOW? Concrete guidance, checklists |
 
 L2 and L3 strictly separated. PRC (processes) define workflow (RACI, trigger, steps) — complementary to L3.
 
@@ -122,11 +122,11 @@ L2 and L3 strictly separated. PRC (processes) define workflow (RACI, trigger, st
 
 | Level | Mandatory field | Format |
 |---|---|---|
-| L2 | `Guideline reference` | Principle IDs (P1-P6) |
+| L2 | `Policy reference` | Principle IDs (P1-P6) |
 | L2 | `Operationalized by` | L3 short-form IDs (or `—`) |
-| L3 | `Policy reference` | L2 short-form IDs |
+| L3 | `Standard reference` | L2 short-form IDs |
 
-Principles P1-P6 defined in the guideline (CB_POL_L1_01). Allocation matrix L1 to L2 resides there.
+Principles P1-P6 defined in the policy (CB_POL_L1_01). Allocation matrix L1 to L2 resides there.
 
 ## Three-layer model
 

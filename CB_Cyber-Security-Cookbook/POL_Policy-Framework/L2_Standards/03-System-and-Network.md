@@ -1,7 +1,7 @@
 > **Document ID:** CB_POL_L2_03-System-and-Network
-> **Version:** 00.01.006
+> **Version:** 00.01.008
 > **Classification:** Internal
-> **Author:** skr
+> **Author:** CISO
 > **ISO Reference:** A.8.1, A.8.6-8.9, A.8.14-8.23
 > **Last modified:** 2026-02-09
 > **Approval:** —
@@ -9,7 +9,7 @@
 
 ---
 
-# System and Network Security Policy
+# System and Network Security Standard
 
 ## Summary
 
@@ -17,14 +17,14 @@ IT systems and networks form the technical foundation of all business processes 
 
 ## Objective and Scope
 
-**Guideline reference:** P1, P3
+**Policy reference:** P1, P3
 **Operationalized by:** CB_POL_L3_02-Admin-Handbook, CB_POL_L3_06-Network-Security
 
 **Objective:** IT systems and networks form the technical foundation of all business processes. Without binding security requirements for configuration, hardening, and monitoring, technical vulnerabilities remain systematically undetected and untreated.
 
 This policy defines the normative requirements for endpoints, systems, networks, vulnerability management, and logging (addresses A.8.1, A.8.6-8.23). It establishes criteria for secure configuration, network segmentation, and logging.
 
-The policy implements the principles P1 (Protection) and P3 (Risk orientation) of the IS guideline. Operational implementation is provided through CB_POL_L3_02 (Admin Handbook) and CB_POL_L3_06 (Network Security); vulnerability management through CB_PRC_04 (Vulnerability Management).
+The standard implements the principles P1 (Protection) and P3 (Risk orientation) of the IS policy. Operational implementation is provided through CB_POL_L3_02 (Admin Handbook) and CB_POL_L3_06 (Network Security); vulnerability management through CB_PRC_04 (Vulnerability Management).
 
 **Scope:** IT administrators and system operators. Covers all IT systems, endpoints, and network components within the ISMS scope.
 
@@ -140,10 +140,12 @@ Redundancies must be provided for critical information processing facilities to 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 00.01.006 | 2026-02-09 | skr | Summary: 4-element pattern |
-| 00.01.005 | 2026-02-09 | skr | Capacity (A.8.6) and redundancy (A.8.14) populated (REC-502, REC-503) |
-| 00.01.004 | 2026-02-09 | skr | Configuration management (A.8.9) and network security (A.8.20-22) populated (REC-307, 309) |
-| 00.01.003 | 2026-02-09 | skr | Endpoints/malware, vulnerabilities, logging populated (REC-305, 306, 308) |
-| 00.01.002 | 2026-02-09 | skr | Objective and scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
-| 00.01.001 | 2026-02-07 | skr | See-also section added |
-| 00.01.000 | 2026-02-06 | skr | Initial version |
+| 00.01.008 | 2026-02-09 | CISO | Aligned role terminology |
+| 00.01.007 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |
+| 00.01.006 | 2026-02-09 | CISO | Summary: 4-element pattern |
+| 00.01.005 | 2026-02-09 | CISO | Capacity (A.8.6) and redundancy (A.8.14) populated (REC-502, REC-503) |
+| 00.01.004 | 2026-02-09 | CISO | Configuration management (A.8.9) and network security (A.8.20-22) populated (REC-307, 309) |
+| 00.01.003 | 2026-02-09 | CISO | Endpoints/malware, vulnerabilities, logging populated (REC-305, 306, 308) |
+| 00.01.002 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
+| 00.01.001 | 2026-02-07 | CISO | See-also section added |
+| 00.01.000 | 2026-02-06 | CISO | Initial version |

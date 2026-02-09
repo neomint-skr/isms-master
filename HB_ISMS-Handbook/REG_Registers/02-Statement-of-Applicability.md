@@ -1,7 +1,7 @@
 > **Document ID:** HB_REG_02-Statement-of-Applicability
-> **Version:** 00.04.005
+> **Version:** 00.04.006
 > **Classification:** Confidential
-> **Author:** [ISB]
+> **Author:** [CISO]
 > **ISO Reference:** Clause 6.1.3 d
 > **Last modified:** 2026-02-09
 > **Approval:** —
@@ -23,7 +23,7 @@ The SoA documents the applicability decision, justification and current implemen
 
 Control selection takes place during risk treatment (CB_PRC_07, HB_CLS_8.3) and is derived in the coverage matrix (INDEX.md) for navigation. The management review (CB_PRC_09) reviews the SoA status annually.
 
-**Scope:** All 93 Annex A controls. Target audience: ISO (maintenance), top management (approval), auditors (evidence).
+**Scope:** All 93 Annex A controls. Target audience: CISO (maintenance), top management (approval), auditors (evidence).
 
 ### Column Legend
 
@@ -152,7 +152,7 @@ Control selection takes place during risk treatment (CB_PRC_07, HB_CLS_8.3) and 
 
 ## Responsibilities
 
-- **Maintenance:** ISO ([ISB]) with support from ISMS Coordinator ([ISMS-Coordinator])
+- **Maintenance:** CISO ([CISO]) with support from IS-Coordinator ([IS-Coordinator])
 - **Trigger:** Changes to risk treatment, new/removed controls, annual review
 - **Process:** CB_PRC_07-Risk-Management
 
@@ -163,12 +163,13 @@ Control selection takes place during risk treatment (CB_PRC_07, HB_CLS_8.3) and 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 00.04.005 | 2026-02-09 | [ISB] | Objective and Scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
-| 00.04.004 | 2026-02-09 | [ISB] | Objective and Scope: bold-label pattern (Objective + Scope) |
-| 00.04.003 | 2026-02-08 | [ISB] | A.8.18 Doc L2_01->L2_03, A.8.12 secondary L2_03 added (MECE finding) |
-| 00.04.002 | 2026-02-08 | [ISB] | References: HB_PRC->CB_PRC (PRC relocation) |
-| 00.04.001 | 2026-02-07 | [ISB] | See also section added |
-| 00.04.000 | 2026-02-07 | [ISB] | Responsibilities section added (governance normalization) |
-| 00.03.000 | 2026-02-07 | [ISB] | A.5.9 Doc reference extended: CB_PRC_12 added |
-| 00.02.000 | 2026-02-06 | [ISB] | Doc references: short-form IDs instead of folder paths |
-| 00.01.000 | 2026-02-06 | [ISB] | Initial version |
+| 00.04.006 | 2026-02-09 | [CISO] | Aligned role terminology |
+| 00.04.005 | 2026-02-09 | [CISO] | Objective and Scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
+| 00.04.004 | 2026-02-09 | [CISO] | Objective and Scope: bold-label pattern (Objective + Scope) |
+| 00.04.003 | 2026-02-08 | [CISO] | A.8.18 Doc L2_01->L2_03, A.8.12 secondary L2_03 added (MECE finding) |
+| 00.04.002 | 2026-02-08 | [CISO] | References: HB_PRC->CB_PRC (PRC relocation) |
+| 00.04.001 | 2026-02-07 | [CISO] | See also section added |
+| 00.04.000 | 2026-02-07 | [CISO] | Responsibilities section added (governance normalization) |
+| 00.03.000 | 2026-02-07 | [CISO] | A.5.9 Doc reference extended: CB_PRC_12 added |
+| 00.02.000 | 2026-02-06 | [CISO] | Doc references: short-form IDs instead of folder paths |
+| 00.01.000 | 2026-02-06 | [CISO] | Initial version |

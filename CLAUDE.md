@@ -43,9 +43,9 @@ Active servers: sequential-thinking, basic-memory, context7.
 
 | Level | Type | Key Question | Example |
 |---|---|---|---|
-| L1 | Guideline | WHY? Strategic principles | "We protect our information assets" |
-| L2 | Policy | WHAT? Requirements and rules | "Access is granted based on least privilege" |
-| L3 | Handbook | HOW? Concrete instructions, checklists, tools | "How to set up MFA: Step 1..." |
+| L1 | Policy | WHY? Strategic principles | "We protect our information assets" |
+| L2 | Standard | WHAT? Requirements and rules | "Access is granted based on least privilege" |
+| L3 | Handbook and Concept | HOW? Concrete instructions, checklists, tools | "How to set up MFA: Step 1..." |
 
 L2 and L3 are strictly separated: L2 defines requirements, L3 operationalizes them. PRC (processes) define the workflow (RACI, triggers, steps) — complementary to L3.
 
@@ -61,7 +61,7 @@ Path-based: Each folder carries its own prefix. Document ID = concatenated folde
 |---|---|
 | Folders | `PREFIX_Descriptive-Name/` (underscore separates prefix) |
 | Files | `NN-Descriptive-Name.md` (number + hyphen + name) |
-| Document ID | Folder prefixes + `_` + filename (e.g. `CB_POL_L1_01-Guideline`) |
+| Document ID | Folder prefixes + `_` + filename (e.g. `CB_POL_L1_01-Policy`) |
 | Separator | `_` between levels, `-` within names |
 | Clauses | Dot notation instead of number (e.g. `HB_CLS_7.4-Communication`) |
 | Clause folders | C4..C10 are sort folders, not ID segments |
@@ -129,11 +129,11 @@ Each level references its predecessor level in the `## Objective and Scope` sect
 
 | Level | Required Field | Format | Example |
 |---|---|---|---|
-| L2 | Guideline reference | Principle IDs | `**Guideline reference:** P1, P3` |
+| L2 | Policy reference | Principle IDs | `**Policy reference:** P1, P3` |
 | L2 | Operationalized by | L3 short-form IDs | `**Operationalized by:** CB_POL_L3_04, CB_POL_L3_05` |
-| L3 | Policy reference | L2 short-form IDs | `**Policy reference:** CB_POL_L2_01, CB_POL_L2_02` |
+| L3 | Standard reference | L2 short-form IDs | `**Standard reference:** CB_POL_L2_01, CB_POL_L2_02` |
 
-Principles P1-P6 are defined in the guideline (CB_POL_L1_01). L2 documents without L3 operationalization omit "Operationalized by".
+Principles P1-P6 are defined in the policy (CB_POL_L1_01). L2 documents without L3 operationalization omit "Operationalized by".
 
 ### Reference Citation
 
@@ -151,7 +151,7 @@ External sources reside in `REF_References/LIB_Library/` as PDF originals + MD e
 
 ### Dependency Rules
 
-- **Vertical:** Guideline > Policies > Handbooks/Concepts > Processes. Changes propagate top-down.
+- **Vertical:** Policy > Standards > Handbooks/Concepts > Processes. Changes propagate top-down.
 - **Horizontal:** SoA (SSOT) > Coverage Matrix (INDEX.md) > Documents. Never the reverse.
 - **Control coverage:** Each of the 93 Annex A controls must be addressed in at least one document.
 - **Terminology:** Consistent terms across all files.
@@ -184,8 +184,8 @@ When populating skeleton documents with draft text: standard/best-practice conte
 
 | Role | Abbreviation | Responsibility |
 |---|---|---|
-| External Information Security Officer | skr | Conception, documentation, advisory |
-| ISMS Coordinator | [abbr] | Operational implementation |
+| Chief Information Security Officer (CISO) | CISO | Conception, documentation, advisory |
+| IS-Coordinator | [abbr] | Operational implementation |
 | CEO | [abbr] | Strategic approval |
 | CTO | [abbr] | Technical approval |
 

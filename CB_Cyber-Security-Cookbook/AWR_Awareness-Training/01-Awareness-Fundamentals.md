@@ -1,7 +1,7 @@
 > **Document ID:** CB_AWR_01-Awareness-Fundamentals
-> **Version:** 00.01.003
+> **Version:** 00.01.004
 > **Classification:** Internal
-> **Author:** skr
+> **Author:** CISO
 > **ISO Reference:** A.6.3, A.6.8
 > **Last modified:** 2026-02-09
 > **Approval:** —
@@ -71,7 +71,8 @@ The organization faces daily risks that may compromise confidentiality, availabi
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 00.01.003 | 2026-02-09 | skr | Awareness programme (A.6.3) and top risks/event types (A.6.8) populated (REC-414, 423) |
-| 00.01.002 | 2026-02-09 | skr | Objective and scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
-| 00.01.001 | 2026-02-07 | skr | See-also section added |
-| 00.01.000 | 2026-02-06 | skr | Initial version |
+| 00.01.004 | 2026-02-09 | CISO | Aligned role terminology |
+| 00.01.003 | 2026-02-09 | CISO | Awareness programme (A.6.3) and top risks/event types (A.6.8) populated (REC-414, 423) |
+| 00.01.002 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
+| 00.01.001 | 2026-02-07 | CISO | See-also section added |
+| 00.01.000 | 2026-02-06 | CISO | Initial version |

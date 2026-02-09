@@ -1,7 +1,7 @@
 > **Document ID:** HB_REG_08-Interested-Parties-Register
-> **Version:** 00.01.005
+> **Version:** 00.01.006
 > **Classification:** Confidential
-> **Author:** [ISB]
+> **Author:** [CISO]
 > **ISO Reference:** Clause 4.2, A.5.31
 > **Last modified:** 2026-02-09
 > **Approval:** —
@@ -26,7 +26,7 @@ The register records the relevant parties by category (top management, employees
 
 The identification criteria are defined by HB_CLS_4.2 (Interested Parties); annual review takes place during the management review (CB_PRC_09). Changes in the stakeholder landscape trigger a reassessment of the risk posture and, if necessary, an adjustment of the ISMS scope.
 
-**Scope:** All parties with IS requirements on the organization. Target audience: ISO (maintenance), top management (alignment), auditors (evidence).
+**Scope:** All parties with IS requirements on the organization. Target audience: CISO (maintenance), top management (alignment), auditors (evidence).
 
 ## Directory Structure
 
@@ -59,7 +59,7 @@ The interested parties directory lists all parties with a legitimate interest in
 
 ## Responsibilities
 
-- **Maintenance:** ISO ([ISB]) in coordination with top management
+- **Maintenance:** CISO ([CISO]) in coordination with top management
 - **Trigger:** Annually (CB_PRC_09) or upon significant changes to the business environment
 - **Process:** CB_PRC_09-Management-Review
 
@@ -72,9 +72,10 @@ The interested parties directory lists all parties with a legitimate interest in
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 00.01.005 | 2026-02-09 | [ISB] | Directory structure: 5-field schema for stakeholder documentation (REC-404) |
-| 00.01.004 | 2026-02-09 | [ISB] | Context architecture: CLS/REG perspective differentiation, data redundancy eliminated |
-| 00.01.003 | 2026-02-09 | [ISB] | Objective and Scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
-| 00.01.002 | 2026-02-09 | [ISB] | Objective and Scope: bold-label pattern added |
-| 00.01.001 | 2026-02-08 | [ISB] | Summary: 4-element pattern (context, orientation, ISMS contribution, consequence) |
-| 00.01.000 | 2026-02-08 | [ISB] | Initial version: stakeholder data extracted from CLS 4.2 |
+| 00.01.006 | 2026-02-09 | [CISO] | Aligned role terminology |
+| 00.01.005 | 2026-02-09 | [CISO] | Directory structure: 5-field schema for stakeholder documentation (REC-404) |
+| 00.01.004 | 2026-02-09 | [CISO] | Context architecture: CLS/REG perspective differentiation, data redundancy eliminated |
+| 00.01.003 | 2026-02-09 | [CISO] | Objective and Scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
+| 00.01.002 | 2026-02-09 | [CISO] | Objective and Scope: bold-label pattern added |
+| 00.01.001 | 2026-02-08 | [CISO] | Summary: 4-element pattern (context, orientation, ISMS contribution, consequence) |
+| 00.01.000 | 2026-02-08 | [CISO] | Initial version: stakeholder data extracted from CLS 4.2 |

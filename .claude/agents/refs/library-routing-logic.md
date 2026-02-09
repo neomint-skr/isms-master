@@ -21,9 +21,9 @@ Each element from a library source is classified individually. A single source d
 
 | Signal in source text | Target level | Explanation |
 |---|---|---|
-| Strategic principles, vision, management commitment | L1 | Belongs in the guideline (only if extending P1-P6) |
-| Requirements ("must", "shall"), normative rules | L2 | WHAT — policy |
-| Step-by-step instructions, checklists, tool references | L3 | HOW — handbook |
+| Strategic principles, vision, management commitment | L1 | Belongs in the policy (only if extending P1-P6) |
+| Requirements ("must", "shall"), normative rules | L2 | WHAT — standard |
+| Step-by-step instructions, checklists, tool references | L3 | HOW — handbook/concept |
 | Workflow with trigger/RACI/steps/escalation | PRC | Process workflow |
 | Term definitions, scales, metrics, assessment criteria | CLS | Clause definition |
 | Record template, table schemas, register fields | REG | Register structure |

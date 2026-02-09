@@ -1,7 +1,7 @@
 > **Document ID:** CB_POL_L2_04-Secure-Development
-> **Version:** 00.01.006
+> **Version:** 00.01.008
 > **Classification:** Internal
-> **Author:** skr
+> **Author:** CISO
 > **ISO Reference:** A.5.8, A.8.4, A.8.25-8.34
 > **Last modified:** 2026-02-09
 > **Approval:** —
@@ -9,7 +9,7 @@
 
 ---
 
-# Secure Development Policy
+# Secure Development Standard
 
 ## Summary
 
@@ -17,14 +17,14 @@ Software is a growing attack vector — vulnerabilities in internally developed 
 
 ## Objective and Scope
 
-**Guideline reference:** P1, P3
+**Policy reference:** P1, P3
 **Operationalized by:** CB_POL_L3_03-Developer-Handbook
 
 **Objective:** Software is a growing attack vector — vulnerabilities in internally developed or acquired code jeopardize confidentiality, integrity, and availability. Without binding security requirements in the development process, risks become visible only after production deployment.
 
 This policy defines the normative requirements for the secure development lifecycle, secure coding, testing procedures, and change management (addresses A.5.8, A.8.4, A.8.25-8.34). It establishes criteria for security reviews in every project phase.
 
-The policy implements the principles P1 (Protection) and P3 (Risk orientation) of the IS guideline. Operational implementation is provided through CB_POL_L3_03 (Developer Handbook); the change process through CB_PRC_05 (Change Management).
+The standard implements the principles P1 (Protection) and P3 (Risk orientation) of the IS policy. Operational implementation is provided through CB_POL_L3_03 (Developer Handbook); the change process through CB_PRC_05 (Change Management).
 
 **Scope:** Developers, project managers, and external development partners. Covers all in-house developments and acquired software with organization-specific customizations.
 
@@ -82,7 +82,7 @@ Security testing must be conducted throughout the entire development cycle (addr
 
 Information security requirements for applications must be identified, specified, and approved during development or acquisition (addresses A.8.26).
 
-**Risk assessment and requirements identification:** The risk owner identifies threats and vulnerabilities of the application and collaborates early with the Information Security Officer to define specific security requirements based on the risk assessment.
+**Risk assessment and requirements identification:** The risk owner identifies threats and vulnerabilities of the application and collaborates early with the Chief Information Security Officer to define specific security requirements based on the risk assessment.
 
 **Specification:** Security requirements must be documented based on identified risks and organizational policies. Requirements must cover authentication, data confidentiality, integrity, access control, and legal and regulatory requirements.
 
@@ -164,10 +164,12 @@ Outsourced system development must meet requirements for information security, m
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 00.01.006 | 2026-02-09 | skr | Change management (A.8.32) populated (Batch-D) |
-| 00.01.005 | 2026-02-09 | skr | Summary: 4-element pattern |
-| 00.01.004 | 2026-02-09 | skr | Application security requirements (A.8.26) and outsourced development (A.8.30) populated (REC-507, REC-509) |
-| 00.01.003 | 2026-02-09 | skr | SDLC, secure coding, testing, projects and external parties populated (REC-310, 311, 312, 313) |
-| 00.01.002 | 2026-02-09 | skr | Objective and scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
-| 00.01.001 | 2026-02-07 | skr | See-also section added |
-| 00.01.000 | 2026-02-06 | skr | Initial version |
+| 00.01.008 | 2026-02-09 | CISO | Aligned role terminology |
+| 00.01.007 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |
+| 00.01.006 | 2026-02-09 | CISO | Change management (A.8.32) populated (Batch-D) |
+| 00.01.005 | 2026-02-09 | CISO | Summary: 4-element pattern |
+| 00.01.004 | 2026-02-09 | CISO | Application security requirements (A.8.26) and outsourced development (A.8.30) populated (REC-507, REC-509) |
+| 00.01.003 | 2026-02-09 | CISO | SDLC, secure coding, testing, projects and external parties populated (REC-310, 311, 312, 313) |
+| 00.01.002 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
+| 00.01.001 | 2026-02-07 | CISO | See-also section added |
+| 00.01.000 | 2026-02-06 | CISO | Initial version |

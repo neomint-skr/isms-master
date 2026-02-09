@@ -1,7 +1,7 @@
 > **Document ID:** CB_POL_L2_02-Information-Protection
-> **Version:** 00.01.004
+> **Version:** 00.01.006
 > **Classification:** Internal
-> **Author:** skr
+> **Author:** CISO
 > **ISO Reference:** A.5.12-5.14, A.8.10-8.12, A.8.24
 > **Last modified:** 2026-02-09
 > **Approval:** —
@@ -9,7 +9,7 @@
 
 ---
 
-# Information Protection Policy
+# Information Protection Standard
 
 ## Summary
 
@@ -17,14 +17,14 @@ Information is the central object of protection of the ISMS and must be appropri
 
 ## Objective and Scope
 
-**Guideline reference:** P1, P2
+**Policy reference:** P1, P2
 **Operationalized by:** CB_POL_L3_01-User-Handbook, CB_POL_L3_04-Cryptography, CB_POL_L3_05-Data-Backup
 
 **Objective:** Information is the central object of protection of the ISMS. Without uniform rules for classification, labelling, and handling, appropriate protection of information throughout its lifecycle cannot be ensured.
 
 This policy defines the normative requirements for information classification, labelling, transfer, and cryptographic protection (addresses A.5.12-5.14, A.8.10-8.12). It establishes criteria for handling information according to protection requirements.
 
-The policy implements the principles P1 (Protection) and P2 (Compliance) of the IS guideline. Operational implementation is provided through CB_POL_L3_01 (User Handbook), CB_POL_L3_04 (Cryptography), and CB_POL_L3_05 (Data Backup).
+The standard implements the principles P1 (Protection) and P2 (Compliance) of the IS policy. Operational implementation is provided through CB_POL_L3_01 (User Handbook), CB_POL_L3_04 (Cryptography), and CB_POL_L3_05 (Data Backup).
 
 **Scope:** All employees who create, process, or transfer information. Covers all information within the ISMS scope regardless of storage medium.
 
@@ -110,8 +110,10 @@ Information owners are responsible for identifying information no longer require
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 00.01.004 | 2026-02-09 | skr | Classification (A.5.12-13), transfer (A.5.14), cryptography (A.8.24), data protection lifecycle (A.8.10-12) populated (Batch-D) |
-| 00.01.003 | 2026-02-09 | skr | Summary: 4-element pattern |
-| 00.01.002 | 2026-02-09 | skr | Objective and scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
-| 00.01.001 | 2026-02-07 | skr | See-also section added |
-| 00.01.000 | 2026-02-06 | skr | Initial version |
+| 00.01.006 | 2026-02-09 | CISO | Aligned role terminology |
+| 00.01.005 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |
+| 00.01.004 | 2026-02-09 | CISO | Classification (A.5.12-13), transfer (A.5.14), cryptography (A.8.24), data protection lifecycle (A.8.10-12) populated (Batch-D) |
+| 00.01.003 | 2026-02-09 | CISO | Summary: 4-element pattern |
+| 00.01.002 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
+| 00.01.001 | 2026-02-07 | CISO | See-also section added |
+| 00.01.000 | 2026-02-06 | CISO | Initial version |

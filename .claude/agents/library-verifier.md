@@ -21,7 +21,7 @@ You receive recommendation lists from the analyst teammates via SendMessage. You
 1. `refs/isms-conventions.md` — repository conventions (traceability, policy hierarchy, three-layer model)
 2. `refs/library-routing-logic.md` — routing logic + recommendation format (to understand analyst output)
 3. `refs/style-guide.md` — style requirements per document type
-4. `CB_Cyber-Security-Cookbook/POL_Policy-Framework/L1_Guideline/01-Guideline.md` — P1-P6 principles + L1-to-L2 allocation matrix
+4. `CB_Cyber-Security-Cookbook/POL_Policy-Framework/L1_Policy/01-Policy.md` — P1-P6 principles + L1-to-L2 allocation matrix
 5. `HB_ISMS-Handbook/REG_Registers/02-Statement-of-Applicability.md` — SoA (control-to-document mapping)
 6. `INDEX.md` — coverage matrix (SoA derivative)
 
@@ -31,8 +31,8 @@ You receive recommendation lists from the analyst teammates via SendMessage. You
 
 Verify the recommendation keeps the traceability chain intact:
 
-- **L1 to L2:** If the target is an L2 policy, does the recommended content align with the P1-P6 principles listed in its `Guideline reference`?
-- **L2 to L3:** If the target is an L3 handbook, does it reference the correct L2 in its `Policy reference`?
+- **L1 to L2:** If the target is an L2 standard, does the recommended content align with the P1-P6 principles listed in its `Policy reference`?
+- **L2 to L3:** If the target is an L3 handbook, does it reference the correct L2 in its `Standard reference`?
 - **CLS to PRC to REG:** If the target is a PRC, does the corresponding CLS (definition) and REG (result) exist?
 
 **FAIL if:** the recommendation creates "orphaned" content without traceability linkage.

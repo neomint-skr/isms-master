@@ -1,7 +1,7 @@
 > **Document ID:** CB_PRC_09-Management-Review
-> **Version:** 00.01.006
+> **Version:** 00.01.007
 > **Classification:** Internal
-> **Author:** skr
+> **Author:** CISO
 > **ISO Reference:** Clause 9.3
 > **Last modified:** 2026-02-09
 > **Approval:** —
@@ -53,10 +53,11 @@ The process operationalizes the requirements from HB_CLS_9.3 (Management Review)
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 00.01.006 | 2026-02-09 | skr | Objective and scope: 3x2 pattern (WHY/FOR WHAT/WHERE) |
-| 00.01.005 | 2026-02-08 | skr | See-also: cross-references to CLS_9.3, TPL_01, REG_01, PRC_11 added |
-| 00.01.004 | 2026-02-08 | skr | References: HB_TPL->CB_TPL (TPL relocation) |
-| 00.01.003 | 2026-02-08 | skr | Moved HB->CB, classification Confidential->Internal |
-| 00.01.002 | 2026-02-07 | skr | Roles section removed, centralized in CLS_5.3 |
-| 00.01.001 | 2026-02-07 | skr | See-also section added |
-| 00.01.000 | 2026-02-07 | skr | Initial version |
+| 00.01.007 | 2026-02-09 | CISO | Aligned role terminology |
+| 00.01.006 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/FOR WHAT/WHERE) |
+| 00.01.005 | 2026-02-08 | CISO | See-also: cross-references to CLS_9.3, TPL_01, REG_01, PRC_11 added |
+| 00.01.004 | 2026-02-08 | CISO | References: HB_TPL->CB_TPL (TPL relocation) |
+| 00.01.003 | 2026-02-08 | CISO | Moved HB->CB, classification Confidential->Internal |
+| 00.01.002 | 2026-02-07 | CISO | Roles section removed, centralized in CLS_5.3 |
+| 00.01.001 | 2026-02-07 | CISO | See-also section added |
+| 00.01.000 | 2026-02-07 | CISO | Initial version |

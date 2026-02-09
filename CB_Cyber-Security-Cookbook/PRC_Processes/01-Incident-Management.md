@@ -1,7 +1,7 @@
 > **Document ID:** CB_PRC_01-Incident-Management
-> **Version:** 00.01.005
+> **Version:** 00.01.006
 > **Classification:** Internal
-> **Author:** skr
+> **Author:** CISO
 > **ISO Reference:** A.5.24-5.28
 > **Last modified:** 2026-02-09
 > **Approval:** —
@@ -32,7 +32,7 @@ IS events are assessed and classified according to the following scheme (address
 | Classification | Action | Description |
 |---|---|---|
 | Informative events | No action required | Automatically closed, retained for a period per the retention policy. Creates an audit trail for subsequent investigations. |
-| Warning events | Action may be needed soon or immediately | Subject to additional review. Where action is required, the Information Security Officer or an ISMS team member decides on the appropriate course of action. |
+| Warning events | Action may be needed soon or immediately | Subject to additional review. Where action is required, the Chief Information Security Officer or an ISMS team member decides on the appropriate course of action. |
 | Exception events | Action must be taken | An impact analysis is performed and an incident is raised, then handled through the incident management procedure with diagnosis, investigation, and escalation. |
 
 **Criteria for incident classification (exception events):**
@@ -90,9 +90,10 @@ The organization establishes procedures for the identification, collection, acqu
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 00.01.005 | 2026-02-09 | skr | Classification (3-tier, A.5.25) and evidence collection (4 principles, A.5.28) populated (REC-418, 420) |
-| 00.01.004 | 2026-02-09 | skr | Objective and scope: 3x2 pattern (WHY/FOR WHAT/WHERE) |
-| 00.01.003 | 2026-02-08 | skr | Moved HB->CB, classification Confidential->Internal |
-| 00.01.002 | 2026-02-07 | skr | Roles section removed, centralized in CLS_5.3 |
-| 00.01.001 | 2026-02-07 | skr | See-also section added |
-| 00.01.000 | 2026-02-06 | skr | Initial version |
+| 00.01.006 | 2026-02-09 | CISO | Aligned role terminology |
+| 00.01.005 | 2026-02-09 | CISO | Classification (3-tier, A.5.25) and evidence collection (4 principles, A.5.28) populated (REC-418, 420) |
+| 00.01.004 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/FOR WHAT/WHERE) |
+| 00.01.003 | 2026-02-08 | CISO | Moved HB->CB, classification Confidential->Internal |
+| 00.01.002 | 2026-02-07 | CISO | Roles section removed, centralized in CLS_5.3 |
+| 00.01.001 | 2026-02-07 | CISO | See-also section added |
+| 00.01.000 | 2026-02-06 | CISO | Initial version |

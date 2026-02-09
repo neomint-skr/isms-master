@@ -1,7 +1,7 @@
 > **Document ID:** CB_POL_L2_09-Physical-Security
-> **Version:** 00.01.006
+> **Version:** 00.01.008
 > **Classification:** Internal
-> **Author:** skr
+> **Author:** CISO
 > **ISO Reference:** A.7.1-7.14
 > **Last modified:** 2026-02-09
 > **Approval:** —
@@ -9,7 +9,7 @@
 
 ---
 
-# Physical Security Policy
+# Physical Security Standard
 
 ## Summary
 
@@ -17,14 +17,14 @@ Physical access to premises housing IT infrastructure or confidential informatio
 
 ## Objective and Scope
 
-**Guideline reference:** P1, P3
+**Policy reference:** P1, P3
 **Operationalized by:** CB_POL_L3_01-User-Handbook
 
 **Objective:** Physical access to premises housing IT infrastructure or confidential information enables theft, manipulation, or destruction. Without binding entry rules and infrastructure protection requirements, the physical attack surface remains uncontrolled.
 
 This policy defines the normative requirements for physical entry controls, workplace environment, infrastructure protection, and physical monitoring (addresses A.7.1-7.14). It establishes criteria for security zones, clear desk rules, and protection of technical rooms.
 
-The policy implements the principles P1 (Protection) and P3 (Risk orientation) of the IS guideline. Operational implementation for workplace behavior is provided through CB_POL_L3_01 (User Handbook).
+The standard implements the principles P1 (Protection) and P3 (Risk orientation) of the IS policy. Operational implementation for workplace behavior is provided through CB_POL_L3_01 (User Handbook).
 
 **Scope:** Facility management, IT operations, and all employees with access to security zones. Covers all locations, buildings, and rooms within the ISMS scope.
 
@@ -118,10 +118,12 @@ When implementing monitoring controls, data protection requirements must be obse
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 00.01.006 | 2026-02-09 | skr | Infrastructure (A.7.3/5/8/11), monitoring (A.7.4) populated (Batch-D) |
-| 00.01.005 | 2026-02-09 | skr | Summary: 4-element pattern |
-| 00.01.004 | 2026-02-09 | skr | Physical access (A.7.2): personnel, visitors, delivery area, keys (REC-315) |
-| 00.01.003 | 2026-02-09 | skr | Entry (perimeter, A.7.1) and workplace (clear desk/screen, A.7.7) populated (REC-314, 316) |
-| 00.01.002 | 2026-02-09 | skr | Objective and scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
-| 00.01.001 | 2026-02-07 | skr | See-also section added |
-| 00.01.000 | 2026-02-07 | skr | Initial version (split from L2_07) |
+| 00.01.008 | 2026-02-09 | CISO | Aligned role terminology |
+| 00.01.007 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |
+| 00.01.006 | 2026-02-09 | CISO | Infrastructure (A.7.3/5/8/11), monitoring (A.7.4) populated (Batch-D) |
+| 00.01.005 | 2026-02-09 | CISO | Summary: 4-element pattern |
+| 00.01.004 | 2026-02-09 | CISO | Physical access (A.7.2): personnel, visitors, delivery area, keys (REC-315) |
+| 00.01.003 | 2026-02-09 | CISO | Entry (perimeter, A.7.1) and workplace (clear desk/screen, A.7.7) populated (REC-314, 316) |
+| 00.01.002 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
+| 00.01.001 | 2026-02-07 | CISO | See-also section added |
+| 00.01.000 | 2026-02-07 | CISO | Initial version (split from L2_07) |

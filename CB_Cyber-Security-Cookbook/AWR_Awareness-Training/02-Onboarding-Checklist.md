@@ -1,7 +1,7 @@
 > **Document ID:** CB_AWR_02-Onboarding-Checklist
-> **Version:** 00.01.002
+> **Version:** 00.01.003
 > **Classification:** Internal
-> **Author:** skr
+> **Author:** CISO
 > **ISO Reference:** A.6.2, A.6.6
 > **Last modified:** 2026-02-09
 > **Approval:** —
@@ -21,7 +21,7 @@
 
 This checklist defines the IS-relevant onboarding steps — from guideline acknowledgement and access provisioning to awareness training. It ensures that no step is missed and that acknowledgement is documented.
 
-The checklist is used by HR managers and the ISMS Coordinator during the onboarding process (CB_POL_L2_10, employment contract section). The awareness content is drawn from CB_AWR_01.
+The checklist is used by HR managers and the IS-Coordinator during the onboarding process (CB_POL_L2_10, employment contract section). The awareness content is drawn from CB_AWR_01.
 
 **Scope:** All new employees and external personnel at onboarding. Target audience: HR managers (execution), new employees (recipients).
 
@@ -36,6 +36,7 @@ The checklist is used by HR managers and the ISMS Coordinator during the onboard
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 00.01.002 | 2026-02-09 | skr | Objective and scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
-| 00.01.001 | 2026-02-07 | skr | See-also section added |
-| 00.01.000 | 2026-02-06 | skr | Initial version |
+| 00.01.003 | 2026-02-09 | CISO | Aligned role terminology |
+| 00.01.002 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
+| 00.01.001 | 2026-02-07 | CISO | See-also section added |
+| 00.01.000 | 2026-02-06 | CISO | Initial version |

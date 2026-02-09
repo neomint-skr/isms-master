@@ -1,7 +1,7 @@
 > **Document ID:** CB_POL_L2_10-Human-Resources
-> **Version:** 00.01.006
+> **Version:** 00.01.008
 > **Classification:** Internal
-> **Author:** skr
+> **Author:** CISO
 > **ISO Reference:** A.5.34, A.6.1-6.8
 > **Last modified:** 2026-02-09
 > **Approval:** —
@@ -9,7 +9,7 @@
 
 ---
 
-# Human Resources Policy
+# Human Resources Standard
 
 ## Summary
 
@@ -17,14 +17,14 @@ Employees are both the strongest line of defense and the most common cause of se
 
 ## Objective and Scope
 
-**Guideline reference:** P4
+**Policy reference:** P4
 **Operationalized by:** CB_POL_L3_01-User-Handbook
 
 **Objective:** Employees are both the strongest line of defense and the most common cause of security incidents. Without binding requirements for screening, awareness, and responsibilities across the entire employment lifecycle, the human factor remains the greatest uncontrolled risk.
 
 This policy defines the normative requirements for screening, employment terms, awareness, disciplinary procedures, offboarding, and remote working (addresses A.6.1-6.8). It establishes criteria for IS obligations before, during, and after employment.
 
-The policy implements principle P4 (Awareness) of the IS guideline. Operational implementation is provided through CB_POL_L3_01 (User Handbook) and the awareness programme (CB_AWR_01, CB_AWR_02).
+The standard implements principle P4 (Awareness) of the IS policy. Operational implementation is provided through CB_POL_L3_01 (User Handbook) and the awareness programme (CB_AWR_01, CB_AWR_02).
 
 **Scope:** HR managers, line managers, and all employees including external personnel. Covers the entire employment lifecycle from hiring to termination.
 
@@ -56,14 +56,14 @@ Employment contracts and agreements with contractors must include clauses on inf
 | 2 | Legal duties and rights, in particular copyright and data protection regulations |
 | 3 | Responsibilities for classification and management of information and information assets |
 | 4 | Measures for non-compliance with security requirements in accordance with the disciplinary process |
-| 5 | Reference to the IS guideline (CB_POL_L1_01) and all topic-specific L2 policies |
+| 5 | Reference to the IS policy (CB_POL_L1_01) and all topic-specific L2 standards |
 | 6 | Continuing obligations after termination of the relationship, in particular confidentiality for [post-employment period] |
 
 Duties and responsibilities in the area of information security must be clearly communicated before contract conclusion [REF:DG25-SC, Kap. 2.2]. Contractual terms must be reviewed regularly and updated when laws, regulations, or IS policies change.
 
 ## Awareness
 
-All employees and relevant external parties must receive appropriate IS awareness, education, and training (addresses A.6.3). The programme must be aligned with the IS guideline and topic-specific policies.
+All employees and relevant external parties must receive appropriate IS awareness, education, and training (addresses A.6.3). The programme must be aligned with the IS policy and topic-specific standards.
 
 **Programme requirements:**
 
@@ -159,10 +159,12 @@ Employees are obligated to report detected or suspected IS events and data prote
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 00.01.006 | 2026-02-09 | skr | Employment terms (A.6.2), awareness (A.6.3), offboarding (A.6.5) populated (Batch-D) |
-| 00.01.005 | 2026-02-09 | skr | Summary: 4-element pattern |
-| 00.01.004 | 2026-02-09 | skr | Remote working (A.6.7) and reporting obligation (A.6.8, A.5.34) populated (REC-416, 417) |
-| 00.01.003 | 2026-02-09 | skr | Screening (A.6.1) and disciplinary process (A.6.4) populated (REC-413, 415) |
-| 00.01.002 | 2026-02-09 | skr | Objective and scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
-| 00.01.001 | 2026-02-07 | skr | See-also section added |
-| 00.01.000 | 2026-02-07 | skr | Initial version (split from L2_07) |
+| 00.01.008 | 2026-02-09 | CISO | Aligned role terminology |
+| 00.01.007 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |
+| 00.01.006 | 2026-02-09 | CISO | Employment terms (A.6.2), awareness (A.6.3), offboarding (A.6.5) populated (Batch-D) |
+| 00.01.005 | 2026-02-09 | CISO | Summary: 4-element pattern |
+| 00.01.004 | 2026-02-09 | CISO | Remote working (A.6.7) and reporting obligation (A.6.8, A.5.34) populated (REC-416, 417) |
+| 00.01.003 | 2026-02-09 | CISO | Screening (A.6.1) and disciplinary process (A.6.4) populated (REC-413, 415) |
+| 00.01.002 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
+| 00.01.001 | 2026-02-07 | CISO | See-also section added |
+| 00.01.000 | 2026-02-07 | CISO | Initial version (split from L2_07) |

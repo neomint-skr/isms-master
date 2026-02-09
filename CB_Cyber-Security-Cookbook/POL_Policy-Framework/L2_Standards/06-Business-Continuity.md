@@ -1,7 +1,7 @@
 > **Document ID:** CB_POL_L2_06-Business-Continuity
-> **Version:** 00.01.005
+> **Version:** 00.01.007
 > **Classification:** Internal
-> **Author:** skr
+> **Author:** CISO
 > **ISO Reference:** A.5.29-5.30, A.8.13-8.14
 > **Last modified:** 2026-02-09
 > **Approval:** —
@@ -9,7 +9,7 @@
 
 ---
 
-# Business Continuity Policy
+# Business Continuity Standard
 
 ## Summary
 
@@ -17,16 +17,16 @@ Business disruptions caused by IT outages, cyberattacks, or natural events can b
 
 ## Objective and Scope
 
-**Guideline reference:** P3, P6
+**Policy reference:** P3, P6
 **Operationalized by:** CB_POL_L3_05-Data-Backup
 
 **Objective:** Business disruptions caused by IT outages, cyberattacks, or natural events can be existentially threatening. Without binding requirements for ICT readiness and data backup, the foundation for planned recovery of business operations is missing.
 
 This policy defines the normative requirements for ICT readiness for business continuity, backup strategies, and recovery objectives (addresses A.5.29-5.30, A.8.13-8.14). It establishes criteria for recovery times and backup intervals.
 
-The policy implements the principles P3 (Risk orientation) and P6 (Business continuity) of the IS guideline. Operational implementation is provided through CB_POL_L3_05 (Data Backup); the recovery process through CB_PRC_03 (Backup and Recovery).
+The standard implements the principles P3 (Risk orientation) and P6 (Business continuity) of the IS policy. Operational implementation is provided through CB_POL_L3_05 (Data Backup); the recovery process through CB_PRC_03 (Backup and Recovery).
 
-**Scope:** Top management, IT operations, and Information Security Officer. Covers all business-critical IT services and associated data backup procedures.
+**Scope:** Top management, IT operations, and Chief Information Security Officer. Covers all business-critical IT services and associated data backup procedures.
 
 ## Information Security during Disruptions
 
@@ -111,9 +111,11 @@ The operational backup process including procedures and responsibilities is desc
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 00.01.005 | 2026-02-09 | skr | Backup and recovery (A.8.13-14) populated (Batch-D) |
-| 00.01.004 | 2026-02-09 | skr | Summary: 4-element pattern |
-| 00.01.003 | 2026-02-09 | skr | IS during disruptions (A.5.29) and ICT readiness with BIA/RTO/RPO (A.5.30) populated (REC-504, REC-501) |
-| 00.01.002 | 2026-02-09 | skr | Objective and scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
-| 00.01.001 | 2026-02-07 | skr | See-also section added |
-| 00.01.000 | 2026-02-06 | skr | Initial version |
+| 00.01.007 | 2026-02-09 | CISO | Aligned role terminology |
+| 00.01.006 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |
+| 00.01.005 | 2026-02-09 | CISO | Backup and recovery (A.8.13-14) populated (Batch-D) |
+| 00.01.004 | 2026-02-09 | CISO | Summary: 4-element pattern |
+| 00.01.003 | 2026-02-09 | CISO | IS during disruptions (A.5.29) and ICT readiness with BIA/RTO/RPO (A.5.30) populated (REC-504, REC-501) |
+| 00.01.002 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
+| 00.01.001 | 2026-02-07 | CISO | See-also section added |
+| 00.01.000 | 2026-02-06 | CISO | Initial version |

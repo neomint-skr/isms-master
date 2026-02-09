@@ -51,11 +51,11 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 
 **03-FAQ.md** -- Frequently asked questions about information security in daily work
 
-### CB -- CB_Cyber-Security-Cookbook / POL_Policy-Framework / L1_Guideline
+### CB -- CB_Cyber-Security-Cookbook / POL_Policy-Framework / L1_Policy
 
-**01-Guideline.md** -- Management commitment, objectives, scope, principles, responsibilities, approval
+**01-Policy.md** -- Management commitment, objectives, scope, principles, responsibilities, approval
 
-### CB -- CB_Cyber-Security-Cookbook / POL_Policy-Framework / L2_Policies
+### CB -- CB_Cyber-Security-Cookbook / POL_Policy-Framework / L2_Standards
 
 **01-Access-and-Identity.md** -- Access control, identities, authentication, access rights lifecycle
 **02-Information-Protection.md** -- Classification, transfer, cryptography, data protection lifecycle
@@ -70,7 +70,7 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 **11-Risk-Management.md** -- Risk criteria, risk matrix, protection requirement categories, treatment options, roles, acceptance criteria
 **12-AI-Usage.md** -- GenAI approval, input rules, output usage (BEYOND-ISO)
 
-### CB -- CB_Cyber-Security-Cookbook / POL_Policy-Framework / L3_Handbooks
+### CB -- CB_Cyber-Security-Cookbook / POL_Policy-Framework / L3_Handbooks-and-Concepts
 
 **01-User-Handbook.md** -- Acceptable use, remote working, classification, clear desk, incident reporting
 **02-Admin-Handbook.md** -- Access control, hardening, vulnerability management, logging, backup
@@ -257,9 +257,9 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 | CB | Cookbook | CB_Cyber-Security-Cookbook/ |
 | HB | Handbook | HB_ISMS-Handbook/ |
 | POL | Policy framework | POL_Policy-Framework/ |
-| L1 | Level 1 (Guideline) | L1_Guideline/ |
-| L2 | Level 2 (Policies) | L2_Policies/ |
-| L3 | Level 3 (Handbooks) | L3_Handbooks/ |
+| L1 | Level 1 (Policy) | L1_Policy/ |
+| L2 | Level 2 (Standards) | L2_Standards/ |
+| L3 | Level 3 (Handbooks and Concepts) | L3_Handbooks-and-Concepts/ |
 | AWR | Awareness | AWR_Awareness-Training/ |
 | TPL | Template | TPL_Templates/ |
 | REF | References | REF_References/ |

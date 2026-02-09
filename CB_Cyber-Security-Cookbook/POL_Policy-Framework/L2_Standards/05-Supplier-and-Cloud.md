@@ -1,7 +1,7 @@
 > **Document ID:** CB_POL_L2_05-Supplier-and-Cloud
-> **Version:** 00.01.004
+> **Version:** 00.01.006
 > **Classification:** Internal
-> **Author:** skr
+> **Author:** CISO
 > **ISO Reference:** A.5.19-5.23, A.8.30
 > **Last modified:** 2026-02-09
 > **Approval:** —
@@ -9,7 +9,7 @@
 
 ---
 
-# Supplier and Cloud Policy
+# Supplier and Cloud Standard
 
 ## Summary
 
@@ -17,16 +17,16 @@ External service providers and cloud vendors process information outside the org
 
 ## Objective and Scope
 
-**Guideline reference:** P1, P2, P3
+**Policy reference:** P1, P2, P3
 **Operationalized by:** CB_POL_L3_07-Supplier-Management
 
 **Objective:** External service providers and cloud vendors process information outside the organization's direct control. Without binding requirements for assessment, contractual terms, and monitoring of third parties, supplier risk remains opaque and unmanaged.
 
 This policy defines the normative requirements for supplier assessment, contractual security requirements, ongoing monitoring, and cloud-specific controls (addresses A.5.19-5.23, A.8.30). It establishes criteria for managing third-party risks.
 
-The policy implements the principles P1 (Protection), P2 (Compliance), and P3 (Risk orientation) of the IS guideline. Operational implementation is provided through CB_POL_L3_07 (Supplier Management); the management process through CB_PRC_06 (Supplier Management).
+The standard implements the principles P1 (Protection), P2 (Compliance), and P3 (Risk orientation) of the IS policy. Operational implementation is provided through CB_POL_L3_07 (Supplier Management); the management process through CB_PRC_06 (Supplier Management).
 
-**Scope:** Information Security Officer, procurement, and business units with supplier contact. Covers all external service providers and cloud vendors processing information within the ISMS scope.
+**Scope:** Chief Information Security Officer, procurement, and business units with supplier contact. Covers all external service providers and cloud vendors processing information within the ISMS scope.
 
 ## Assessment
 
@@ -145,8 +145,10 @@ Cloud service agreements must cover the following aspects:
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 00.01.004 | 2026-02-09 | skr | Summary: 4-element pattern |
-| 00.01.003 | 2026-02-09 | skr | Assessment (A.5.19), agreements (A.5.20), monitoring (A.5.22), supply chain management (A.5.21), cloud (A.5.23) populated (REC-510, 511, 512, 508, 506) |
-| 00.01.002 | 2026-02-09 | skr | Objective and scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
-| 00.01.001 | 2026-02-07 | skr | See-also section added |
-| 00.01.000 | 2026-02-06 | skr | Initial version |
+| 00.01.006 | 2026-02-09 | CISO | Aligned role terminology |
+| 00.01.005 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |
+| 00.01.004 | 2026-02-09 | CISO | Summary: 4-element pattern |
+| 00.01.003 | 2026-02-09 | CISO | Assessment (A.5.19), agreements (A.5.20), monitoring (A.5.22), supply chain management (A.5.21), cloud (A.5.23) populated (REC-510, 511, 512, 508, 506) |
+| 00.01.002 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
+| 00.01.001 | 2026-02-07 | CISO | See-also section added |
+| 00.01.000 | 2026-02-06 | CISO | Initial version |

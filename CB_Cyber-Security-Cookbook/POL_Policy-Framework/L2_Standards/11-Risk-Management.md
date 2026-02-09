@@ -1,7 +1,7 @@
 > **Document ID:** CB_POL_L2_11-Risk-Management
-> **Version:** 00.01.006
+> **Version:** 00.01.008
 > **Classification:** Internal
-> **Author:** skr
+> **Author:** CISO
 > **ISO Reference:** Clause 6.1, 8.2, 8.3
 > **Last modified:** 2026-02-09
 > **Approval:** —
@@ -9,7 +9,7 @@
 
 ---
 
-# Risk Management Policy
+# Risk Management Standard
 
 ## Summary
 
@@ -17,16 +17,16 @@ Without clear criteria for likelihood, impact, and risk acceptance, risk assessm
 
 ## Objective and Scope
 
-**Guideline reference:** P3
+**Policy reference:** P3
 **Operationalized by:** —
 
 **Objective:** Without uniform criteria for likelihood, impact, and risk acceptance, risk assessments are not comparable. Subjective estimates lead to inconsistent controls — a serious audit finding.
 
 This policy establishes assessment scales, 4x4 risk matrix, protection requirement categories, acceptance criteria, and four treatment options as binding requirements (addresses Clause 6.1.2 a, 6.1.3 a). It creates the normative foundation for consistent and traceable risk decisions.
 
-The policy implements principle P3 (Risk orientation) of the IS guideline. The operational risk management process is defined in CB_PRC_07 (Risk Management); results are documented in HB_REG_06 (Risk Register) and HB_REG_07 (Risk Treatment Plan).
+The standard implements principle P3 (Risk orientation) of the IS policy. The operational risk management process is defined in CB_PRC_07 (Risk Management); results are documented in HB_REG_06 (Risk Register) and HB_REG_07 (Risk Treatment Plan).
 
-**Scope:** All IS risks within the ISMS scope (HB_CLS_4.3). Target audience: risk owners, asset owners, Information Security Officer, top management.
+**Scope:** All IS risks within the ISMS scope (HB_CLS_4.3). Target audience: risk owners, asset owners, Chief Information Security Officer, top management.
 
 ## Risk Criteria
 
@@ -120,7 +120,7 @@ For each identified risk, at least one of the following treatment options is sel
 | Transfer | The risk or its financial consequences are transferred to third parties. | Cyber insurance, outsourcing with SLA |
 | Accept | The residual risk is consciously and documentedly accepted. | Low risks with formal acceptance |
 
-The selection of the treatment option is made by the risk owner in coordination with the Information Security Officer. For "Mitigate," appropriate controls are determined and reconciled with Annex A of ISO 27001 (Clause 6.1.3 b, c). The selected controls are documented in the risk treatment plan (HB_REG_07) and their effectiveness verified within the risk management process (CB_PRC_07).
+The selection of the treatment option is made by the risk owner in coordination with the Chief Information Security Officer. For "Mitigate," appropriate controls are determined and reconciled with Annex A of ISO 27001 (Clause 6.1.3 b, c). The selected controls are documented in the risk treatment plan (HB_REG_07) and their effectiveness verified within the risk management process (CB_PRC_07).
 
 ## Risk Management Roles
 
@@ -129,13 +129,13 @@ The formal RACI assignments are documented in HB_CLS_5.3-Roles-and-Responsibilit
 | Role | Risk management responsibility |
 |---|---|
 | Risk owner | Bears responsibility for an identified risk. Decides on the treatment option and accepts residual risks within the acceptance criteria. Typically the process or asset owner. |
-| Information Security Officer ([ISB]) | Coordinates the risk management process, supports identification and analysis, maintains the risk register, reports to executive management. |
-| ISMS Coordinator ([ISMS-Coordinator]) | Supports operational implementation, maintains registers jointly with the Information Security Officer. |
+| Chief Information Security Officer ([CISO]) | Coordinates the risk management process, supports identification and analysis, maintains the risk register, reports to executive management. |
+| IS-Coordinator ([IS-Coordinator]) | Supports operational implementation, maintains registers jointly with the Chief Information Security Officer. |
 | Executive management ([CEO]/[CTO]) | Approves the risk treatment plan, accepts residual risks at high risk levels, provides resources. |
 
 ## See also
 
-- CB_POL_L1_01-Guideline — Principle P3 (Risk orientation)
+- CB_POL_L1_01-Policy — Principle P3 (Risk orientation)
 - CB_POL_L2_07-Organisation — Asset management as foundation for risk assessment
 - CB_PRC_07-Risk-Management — Operational risk management process
 - HB_REG_06-Risk-Register — Documented risk entries
@@ -147,10 +147,12 @@ The formal RACI assignments are documented in HB_CLS_5.3-Roles-and-Responsibilit
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 00.01.006 | 2026-02-09 | skr | Risk levels: colour coding and ALARP principle added (REC-411) |
-| 00.01.005 | 2026-02-09 | skr | Objective and scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
-| 00.01.004 | 2026-02-09 | skr | Objective and scope: bold label pattern (Objective + Scope) |
-| 00.01.003 | 2026-02-08 | skr | Summary: 4-element pattern (context, orientation, ISMS contribution, consequence) |
-| 00.01.002 | 2026-02-08 | skr | Traceability: operationalized-by field added |
-| 00.01.001 | 2026-02-08 | skr | References: HB_PRC->CB_PRC (PRC relocation) |
-| 00.01.000 | 2026-02-08 | skr | Initial version: risk criteria, matrix, protection requirements, acceptance, treatment, roles |
+| 00.01.008 | 2026-02-09 | CISO | Aligned role terminology |
+| 00.01.007 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |
+| 00.01.006 | 2026-02-09 | CISO | Risk levels: colour coding and ALARP principle added (REC-411) |
+| 00.01.005 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
+| 00.01.004 | 2026-02-09 | CISO | Objective and scope: bold label pattern (Objective + Scope) |
+| 00.01.003 | 2026-02-08 | CISO | Summary: 4-element pattern (context, orientation, ISMS contribution, consequence) |
+| 00.01.002 | 2026-02-08 | CISO | Traceability: operationalized-by field added |
+| 00.01.001 | 2026-02-08 | CISO | References: HB_PRC->CB_PRC (PRC relocation) |
+| 00.01.000 | 2026-02-08 | CISO | Initial version: risk criteria, matrix, protection requirements, acceptance, treatment, roles |

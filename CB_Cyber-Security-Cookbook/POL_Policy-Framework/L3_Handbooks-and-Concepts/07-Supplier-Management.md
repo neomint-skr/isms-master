@@ -1,7 +1,7 @@
 > **Document ID:** CB_POL_L3_07-Supplier-Management
-> **Version:** 00.01.003
+> **Version:** 00.01.005
 > **Classification:** Internal
-> **Author:** skr
+> **Author:** CISO
 > **ISO Reference:** A.5.19-5.23
 > **Last modified:** 2026-02-09
 > **Approval:** —
@@ -17,7 +17,7 @@ Suppliers and cloud providers frequently process sensitive organizational inform
 
 ## Objective and Scope
 
-**Policy reference:** CB_POL_L2_05-Suppliers-and-Cloud
+**Standard reference:** CB_POL_L2_05-Suppliers-and-Cloud
 
 **Objective:** Collaboration with suppliers and cloud providers requires practical tools for assessment, contract design, and monitoring. Without concrete instructions, the normative requirements of the policy are difficult to implement in day-to-day operations.
 
@@ -25,7 +25,7 @@ This handbook translates the requirements from CB_POL_L2_05 (Suppliers and Cloud
 
 The instructions are applied within the supplier management process (CB_PRC_06). Results are documented in HB_REG_04 (Supplier Register).
 
-**Scope:** Information Security Officer, procurement, and business units managing supplier relationships. Covers assessment, contract design, and ongoing monitoring of all third parties.
+**Scope:** Chief Information Security Officer, procurement, and business units managing supplier relationships. Covers assessment, contract design, and ongoing monitoring of all third parties.
 
 ## Perform supplier assessments
 
@@ -133,7 +133,7 @@ Supplier services shall be monitored and evaluated regularly to ensure complianc
 
 **Escalation:**
 
-- Escalate deficiencies to [risk management / Information Security Officer].
+- Escalate deficiencies to [risk management / Chief Information Security Officer].
 - Document material deviations in writing and agree on an action plan.
 - In case of persistent failure: activate contractual indemnification provisions or evaluate supplier replacement.
 
@@ -187,7 +187,9 @@ The procurement and use of cloud services requires a systematic security assessm
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 00.01.003 | 2026-02-09 | skr | Subject sections populated, summary and see-also added (Batch-E) |
-| 00.01.002 | 2026-02-09 | skr | Objective and scope: 3x2 pattern (WHY/FOR WHAT/WHERE) |
-| 00.01.001 | 2026-02-07 | skr | See-also section added |
-| 00.01.000 | 2026-02-06 | skr | Initial version |
+| 00.01.005 | 2026-02-09 | CISO | Aligned role terminology |
+| 00.01.004 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |
+| 00.01.003 | 2026-02-09 | CISO | Subject sections populated, summary and see-also added (Batch-E) |
+| 00.01.002 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/FOR WHAT/WHERE) |
+| 00.01.001 | 2026-02-07 | CISO | See-also section added |
+| 00.01.000 | 2026-02-06 | CISO | Initial version |

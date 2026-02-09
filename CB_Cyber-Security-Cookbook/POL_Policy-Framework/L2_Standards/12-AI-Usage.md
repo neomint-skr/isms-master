@@ -1,7 +1,7 @@
 > **Document ID:** CB_POL_L2_12-AI-Usage
-> **Version:** 00.01.000
+> **Version:** 00.01.002
 > **Classification:** Internal
-> **Author:** skr
+> **Author:** CISO
 > **ISO Reference:** BEYOND-ISO
 > **Last modified:** 2026-02-09
 > **Approval:** —
@@ -9,7 +9,7 @@
 
 ---
 
-# Acceptable Use of Generative AI Policy
+# Acceptable Use of Generative AI Standard
 
 ## Summary
 
@@ -17,7 +17,7 @@ Generative AI tools can increase productivity and efficiency, yet carry risks fo
 
 ## Objective and Scope
 
-**Guideline reference:** P1, P2
+**Policy reference:** P1, P2
 **Operationalized by:** CB_AWR_01-Awareness-Fundamentals
 
 **Objective:** Generative AI tools are increasingly used in daily work. Without clear rules, there is a risk that confidential information is disclosed to third-party providers, outputs are adopted without review, or unapproved tools are used.
@@ -32,7 +32,7 @@ GenAI tools include applications that generate text, images, code, or other cont
 
 ### Approval of GenAI Tools
 
-Employees may only use approved GenAI tools. Unapproved tools must not be used for business purposes without explicit prior authorization. [List of approved tools is maintained by the Information Security Officer.]
+Employees may only use approved GenAI tools. Unapproved tools must not be used for business purposes without explicit prior authorization. [List of approved tools is maintained by the Chief Information Security Officer.]
 
 ### Setup Rules
 
@@ -53,7 +53,7 @@ GenAI tools are not confidential. Every input is shared with the provider compan
 | 2 | Do not enter information that could lead to the indirect identification of individuals |
 | 3 | Do not enter customer or partner information of any kind |
 | 4 | Do not enter confidential or sensitive organizational information |
-| 5 | When in doubt, consult the Information Security Officer |
+| 5 | When in doubt, consult the Chief Information Security Officer |
 
 ## Use of Outputs
 
@@ -79,4 +79,6 @@ GenAI tools can produce inaccurate, biased, or legally problematic content. The 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 00.01.000 | 2026-02-09 | skr | Initial version based on DataGuard GenAI usage policy (REC-513) |
+| 00.01.002 | 2026-02-09 | CISO | Aligned role terminology |
+| 00.01.001 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |
+| 00.01.000 | 2026-02-09 | CISO | Initial version based on DataGuard GenAI usage policy (REC-513) |
