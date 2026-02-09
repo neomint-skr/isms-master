@@ -1,12 +1,12 @@
 ---
 name: mece
-description: MECE-Pruefung der ISMS-Architektur (6 Pruefungen)
+description: MECE verification of ISMS architecture (6 checks)
 ---
 
-Starte den `mece-checker` Agent als Subagent (sonnet). Er fuehrt 6 Pruefungen durch: Control-Verteilung, L2/L3-Trennung, Traceability, Grundsatz-Abdeckung, CLS-PRC-REG Kette, verwaiste Register.
+Launch the `mece-checker` agent as a subagent (sonnet). It performs 6 checks: control distribution, L2/L3 separation, traceability, principle coverage, CLS-PRC-REG chain, orphaned registers.
 
-Verwende das Task-Tool mit `subagent_type: "mece-checker"` und gib als Prompt:
+Use the Task tool with `subagent_type: "mece-checker"` and provide as prompt:
 
-"Fuehre das vollstaendige MECE-Pruefprotokoll (6 Pruefungen) durch und berichte die Ergebnistabelle."
+"Run the full MECE verification protocol (6 checks) and report the results table."
 
-Zeige dem User das Ergebnis als kompakte Tabelle.
+Display the result to the user as a compact table.

@@ -1,48 +1,48 @@
-# Formatregeln fuer Markdown-Extrakte
+# Format Rules for Markdown Extracts
 
-**SSOT-Status:** Primaere Quelle. Nicht abgeleitet.
+**SSOT status:** Primary source. Not derived.
 
-Diese Datei wird vom markdown-converter Agent in Phase 5 gelesen.
+This file is read by the markdown-converter agent in phase 5.
 
-## Header-Format
+## Header format
 
 ```markdown
-# [Dokumenttitel] Extrakt
+# [Document Title] Extract
 
-> Quelle: [Exakte Quellenangabe mit Ausgabe/Datum].
-> Vollstaendiger Lean-Extrakt fuer Agent-Verarbeitung.
-> Original: [Sprache]. Extrakt: [Sprache]. Bei Zweifeln gilt das Original.
-> PDFs bleiben als Originale erhalten (Audit-Nachweis).
+> Source: [Exact citation with edition/date].
+> Complete lean extract for agent processing.
+> Original: [Language]. Extract: [Language]. In case of doubt the original prevails.
+> PDFs are retained as originals (audit evidence).
 ```
 
-## Formatregeln
+## Format rules
 
-| Element | Format | Wann verwenden |
+| Element | Format | When to use |
 |---|---|---|
-| Strukturierte Anforderungslisten (a, b, c) | Tabelle `\| # \| Anforderung \|` | Immer wenn Quelle nummerierte/geletterte Punkte hat |
-| Narrative Abschnitte | Fliesstext | Einleitungen, Kontextbeschreibungen, Erlaeuterungen |
-| Informative Hinweise | `> NOTE: [Text]` | Nicht-normative Anmerkungen, Querverweise, Beispiele |
-| Dokumentationspflichten | `**[Marker]:** [Text]` | Stellen wo das Dokument dokumentierte Nachweise fordert |
-| Unterpunkte | Inline-Nummerierung `1) ... 2) ...` | Wenn Anforderungen verschachtelte Unterpunkte haben |
-| Abkuerzungen | Legende-Tabelle am Dateiende | Alle im Extrakt verwendeten Abkuerzungen |
+| Structured requirement lists (a, b, c) | Table `\| # \| Requirement \|` | Whenever the source has numbered/lettered items |
+| Narrative sections | Running text | Introductions, context descriptions, explanations |
+| Informative notes | `> NOTE: [Text]` | Non-normative remarks, cross-references, examples |
+| Documentation obligations | `**[Marker]:** [Text]` | Where the document requires documented evidence |
+| Sub-items | Inline numbering `1) ... 2) ...` | When requirements have nested sub-items |
+| Abbreviations | Legend table at end of file | All abbreviations used in the extract |
 
-## Vollstaendigkeitsregeln
+## Completeness rules
 
-- Jeder "shall/must/muss"-Satz → eigene Zeile oder Tabellenzeile
-- Jede NOTE/Anmerkung → als `> NOTE:` erfasst
-- Jeder Querverweis → mit Clause/Section-Nummer
-- Jeder Annex/Anhang → vollstaendig (nicht zusammenfassen!)
-- Nummerierte Unterpunkte (z.B. c) 1), c) 2)) → explizit ausschreiben
+- Every "shall/must" statement gets its own line or table row
+- Every NOTE/remark captured as `> NOTE:`
+- Every cross-reference with clause/section number
+- Every annex/appendix in full (do not summarize!)
+- Numbered sub-items (e.g. c) 1), c) 2)) written out explicitly
 
-## Bekannte Fallstricke
+## Known pitfalls
 
-Diese Fehler sind bei der ersten ISO-27001-Extraktion aufgetreten. Vermeide sie:
+These errors occurred during the initial ISO 27001 extraction. Avoid them:
 
-| Fehler | Vermeidung |
+| Error | Prevention |
 |---|---|
-| NOTEs uebersehen | Explizit nach "NOTE", "Anmerkung", "Hinweis" im Rohtext suchen |
-| Annexe/Anhaenge weglassen oder zusammenfassen | Annexe sind oft normativ — immer vollstaendig extrahieren |
-| Unterpunkte verschlucken | Bei verschachtelten Listen (a → 1, 2) jeden Unterpunkt einzeln |
-| Einleitende Clauses vergessen | Scope, Normative Verweise, Begriffe — gehoeren zum Extrakt |
-| DokI-Pflichten uebersehen | Nach "documented information", "dokumentierte Information", "retain", "aufbewahren" suchen |
-| Erst schreiben, dann lesen | IMMER zuerst das gesamte Dokument lesen (Phase 3) |
+| NOTEs overlooked | Explicitly search for "NOTE", "Anmerkung", "Hinweis" in raw text |
+| Annexes/appendices omitted or summarized | Annexes are often normative — always extract in full |
+| Sub-items swallowed | With nested lists (a > 1, 2) extract each sub-item individually |
+| Introductory clauses forgotten | Scope, normative references, terms — belong in the extract |
+| Documentation obligations missed | Search for "documented information", "retain", "maintain" |
+| Writing before reading | ALWAYS read the entire document first (phase 3) |

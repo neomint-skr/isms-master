@@ -1,105 +1,105 @@
-# Library-Routing-Logik (Agent-Referenz)
+# Library Routing Logic (Agent Reference)
 
-**SSOT-Status:** Primaere Quelle. Nicht abgeleitet.
+**SSOT status:** Primary source. Not derived.
 
-Geteiltes Wissen fuer library-analyst und library-verifier. Definiert Routing-Entscheidungen, Qualitaetskriterien und Empfehlungsformat.
+Shared knowledge for library-analyst and library-verifier. Defines routing decisions, quality criteria and recommendation format.
 
-## Organisationskontext
+## Organizational context
 
-[Kundenname], [Rechtsform/Groesse], ISMS im Aufbau nach ISO 27001:2022. Ziel: Zertifizierungsreife.
+[Organization name], [legal form/size], ISMS under construction per ISO 27001:2022. Goal: certification readiness.
 
-**Implikationen:**
-- Angemessenheit vor Maximalitaet — Enterprise-Konzepte (SOC, SIEM-Team) runterskalieren oder skippen
-- Pragmatische Schritte — lieber solide Grundlage als perfektes Gesamtwerk
-- ISO-Konformitaet ist Pflicht, darueber hinaus nach Risikolage
+**Implications:**
+- Appropriateness over maximalism — enterprise concepts (SOC, SIEM team) scale down or skip
+- Pragmatic steps — solid foundation over a perfect complete work
+- ISO conformity is mandatory, beyond that risk-driven
 
-## Routing-Entscheidungsbaum
+## Routing decision tree
 
-Jedes Element aus einer Library-Quelle wird einzeln klassifiziert. Ein Quelldokument erzeugt typischerweise Empfehlungen fuer mehrere Zieldokumente.
+Each element from a library source is classified individually. A single source document typically generates recommendations for multiple target documents.
 
-### Schritt 1: Policy-Ebene bestimmen
+### Step 1: Determine policy level
 
-| Signal im Quelltext | Ziel-Ebene | Erklaerung |
+| Signal in source text | Target level | Explanation |
 |---|---|---|
-| Strategische Grundsaetze, Vision, Management-Commitment | L1 | Gehoert in Leitlinie (nur wenn G1-G6 ergaenzt) |
-| Anforderungen ("muss", "soll"), normative Regeln | L2 | WAS — Richtlinie |
-| Schritt-fuer-Schritt-Anleitung, Checklisten, Tool-Referenzen | L3 | WIE — Handbuch |
-| Workflow mit Trigger/RACI/Schritte/Eskalation | PRC | Prozess-Ablauf |
-| Begriffsdefinitionen, Skalen, Metriken, Bewertungskriterien | CLS | Clause-Definition |
-| Aufzeichnungsvorlage, Tabellen-Schemata, Register-Felder | REG | Register-Struktur |
-| Mitarbeiter-orientierte Erklaerungen, Verhaltensregeln | AWR | Awareness |
+| Strategic principles, vision, management commitment | L1 | Belongs in the guideline (only if extending G1-G6) |
+| Requirements ("must", "shall"), normative rules | L2 | WHAT — policy |
+| Step-by-step instructions, checklists, tool references | L3 | HOW — handbook |
+| Workflow with trigger/RACI/steps/escalation | PRC | Process workflow |
+| Term definitions, scales, metrics, assessment criteria | CLS | Clause definition |
+| Record template, table schemas, register fields | REG | Register structure |
+| Employee-oriented explanations, behavioral rules | AWR | Awareness |
 
-### Schritt 2: Zieldokument bestimmen
+### Step 2: Determine target document
 
-1. **Annex-A-Controls pruefen:** Referenziert das Element spezifische Controls (A.x.x)? → Coverage-Matrix in INDEX.md bestimmt das primaere Zieldokument.
-2. **Thematische Zuordnung:** Kein Control-Bezug? → Thematisch zum passenden Dokument zuordnen (siehe INDEX.md Files-Abschnitt fuer Themen pro Datei).
-3. **Skeleton pruefen:** Ist der Ziel-Abschnitt noch `<!-- TODO -->`? → Hoehere Prioritaet (Lueckenfuellung).
+1. **Check Annex A controls:** Does the element reference specific controls (A.x.x)? The coverage matrix in INDEX.md determines the primary target document.
+2. **Thematic assignment:** No control reference? Assign thematically to the matching document (see INDEX.md files section for topics per file).
+3. **Check skeleton status:** Is the target section still `<!-- TODO -->`? Higher priority (gap filling).
 
-### Schritt 3: Ziel-Abschnitt bestimmen
+### Step 3: Determine target section
 
-- Bestehende H2/H3-Headings im Zieldokument lesen
-- Element unter passenden Heading einordnen
-- Falls kein passender Heading existiert: `NEW-SECTION` empfehlen mit Heading-Vorschlag
+- Read existing H2/H3 headings in the target document
+- Place element under matching heading
+- If no matching heading exists: recommend `NEW-SECTION` with heading proposal
 
-## Qualitaetskriterien
+## Quality criteria
 
-Jedes Element wird mit 0-5 Sternen bewertet. Die Bewertung bestimmt ADOPT/ADAPT/SKIP.
+Each element is rated 0-5 stars. The rating determines ADOPT/ADAPT/SKIP.
 
-| Kriterium | ADOPT (3-5) | ADAPT (2-3) | SKIP (0-1) |
+| Criterion | ADOPT (3-5) | ADAPT (2-3) | SKIP (0-1) |
 |---|---|---|---|
-| **Spezifitaet** | Konkret, messbar, umsetzbar | Gute Idee, zu generisch fuer direkte Uebernahme | Boilerplate, auf jede Organisation anwendbar |
-| **Lueckenfuellung** | Ziel-Abschnitt ist `<!-- TODO -->` | Ziel hat Content, Element bringt Mehrwert | Bereits ausreichend abgedeckt |
-| **ISO-Alignment** | Direkt auf Annex-A-Control oder Clause | Indirekt ISO-relevant | Kein erkennbarer ISO-Bezug |
-| **KMU-Fit** | Direkt passend fuer KMU | Enterprise-Konzept, aber skalierbar | Nur mit Enterprise-Ressourcen umsetzbar |
-| **Ebenen-Korrektheit** | Passt natuerlich in Ziel-Ebene | Umformulierung von WIE→WAS oder umgekehrt noetig | Fundamental falsche Ebene, nicht sinnvoll adaptierbar |
-| **Neuheit** | ISMS deckt diesen Aspekt gar nicht ab | Teilweise abgedeckt, aber Tiefe/Breite fehlt | Vollstaendig abgedeckt |
+| **Specificity** | Concrete, measurable, actionable | Good idea, too generic for direct adoption | Boilerplate, applicable to any organization |
+| **Gap filling** | Target section is `<!-- TODO -->` | Target has content, element adds value | Already sufficiently covered |
+| **ISO alignment** | Directly maps to Annex A control or clause | Indirectly ISO-relevant | No discernible ISO reference |
+| **SME fit** | Directly suitable for SME | Enterprise concept, but scalable | Only feasible with enterprise resources |
+| **Level correctness** | Naturally fits the target level | Needs reformulation from HOW to WHAT or vice versa | Fundamentally wrong level, not sensibly adaptable |
+| **Novelty** | ISMS does not cover this aspect at all | Partially covered, but depth/breadth missing | Fully covered |
 
-**Gesamtbewertung:** Durchschnitt der 6 Kriterien, gerundet.
+**Overall rating:** Average of 6 criteria, rounded.
 
-**Schwelle:**
-- ADOPT (3-5): Direkt uebernehmbar mit Anpassung an Sprachniveau
-- ADAPT (2-3): Kernidee wertvoll, braucht deutliche Umformulierung
-- SKIP (0-1): Nicht empfohlen — Begruendung im Skip-Protokoll dokumentieren
+**Threshold:**
+- ADOPT (3-5): directly adoptable with style adaptation
+- ADAPT (2-3): core idea valuable, needs significant reformulation
+- SKIP (0-1): not recommended — document rationale in skip log
 
-## Empfehlungsformat
+## Recommendation format
 
-Jede Empfehlung folgt diesem Template:
+Each recommendation follows this template:
 
 ```markdown
-### REC-NNN — [Kurztitel]
+### REC-NNN — [Short title]
 
-| Feld | Wert |
+| Field | Value |
 |---|---|
-| Quelle | [REF:key, Kap. X.Y] |
-| Quell-Ebene | [Was die Quelle es nennt: Richtlinie/Verfahren/etc.] |
-| Zieldokument | [ISMS-Dokument-ID, z.B. CB_POL_L2_01-Zugriff-und-Identitaet] |
-| Ziel-Abschnitt | [H2/H3-Heading im Zieldokument] |
-| Ziel-Ebene | [L2/L3/PRC/CLS/REG/AWR] |
-| Aktion | ADOPT / ADAPT / NEW-SECTION |
-| Bewertung | [N Sterne, z.B. 4/5] |
-| Controls | [A.x.x, A.y.y oder — falls kein Control-Bezug] |
+| Source | [REF:key, Ch. X.Y] |
+| Source level | [What the source calls it: policy/procedure/etc.] |
+| Target document | [ISMS document ID, e.g. CB_POL_L2_01-Access-and-Identity] |
+| Target section | [H2/H3 heading in target document] |
+| Target level | [L2/L3/PRC/CLS/REG/AWR] |
+| Action | ADOPT / ADAPT / NEW-SECTION |
+| Rating | [N stars, e.g. 4/5] |
+| Controls | [A.x.x, A.y.y or — if no control reference] |
 
-**Inhalt:** [2-4 Saetze: Was wird uebernommen, wie passt es ins Zieldokument, warum ist es wertvoll]
+**Content:** [2-4 sentences: what is adopted, how it fits the target document, why it is valuable]
 
-**Entwurfstext:**
+**Draft text:**
 
-> [Ausformulierter Text im Sprachniveau des Zieldokuments.
-> Direkt einfuegbar nach Review. Beachte refs/sprachniveau.md
-> fuer Anrede, Stimme, Fachsprache, Satzlaenge.]
+> [Fully formulated text at the style level of the target document.
+> Directly insertable after review. Observe refs/style-guide.md
+> for address form, voice, terminology, sentence length.]
 
-**Verifikation:** [Wird vom Verifier ausgefuellt]
-**Hinweise:** [Side Effects, z.B. SoA-Update noetig, Traceability-Anpassung, Querverweise]
-**Standards-Stuetzung:** [Wird vom Standards-Check ausgefuellt]
+**Verification:** [Filled by verifier]
+**Notes:** [Side effects, e.g. SoA update needed, traceability adjustment, cross-references]
+**Standards support:** [Filled by standards check]
 ```
 
-**Nummerierung:** REC-001 aufwaerts, pro Durchlauf fortlaufend.
+**Numbering:** REC-001 upward, sequential per run.
 
-## Skip-Protokoll
+## Skip log
 
-Fuer jedes SKIP-Element kurz dokumentieren:
+For each SKIP element, briefly document:
 
 ```markdown
-| # | Quelle | Quell-Abschnitt | Begruendung |
+| # | Source | Source section | Rationale |
 |---|---|---|---|
-| S-001 | [REF:key, Kap. X] | [Heading] | [z.B. "Boilerplate", "Enterprise-only", "Bereits in L2_03 abgedeckt"] |
+| S-001 | [REF:key, Ch. X] | [Heading] | [e.g. "Boilerplate", "Enterprise-only", "Already covered in L2_03"] |
 ```

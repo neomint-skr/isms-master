@@ -1,156 +1,156 @@
-# ISMS-Konventionen (Agent-Referenz)
+# ISMS Conventions (Agent Reference)
 
-**Derivat-Status:** Diese Datei ist ein Agent-optimierter Extrakt. Nicht eigenstaendig aendern.
+**Derivative status:** This file is an agent-optimized extract. Do not modify independently.
 
-| SSOT | Abgeleitete Inhalte |
+| SSOT | Derived content |
 |---|---|
-| Dokumentenlenkung (L2) | ID-Schema, Metadaten-Format, Dokumentaufbau, H1-Konvention, Versionierung, Klassifizierung |
-| `CLAUDE.md` | Traceability-Felder, Drei-Schicht-Modell, Referenz-Zitation, Annex-A-Markierung, Fachkapitel-Integration |
+| Document control (L2) | ID schema, metadata format, document structure, H1 convention, versioning, classification |
+| `CLAUDE.md` | Traceability fields, three-layer model, citation, Annex A marking, subject chapter integration |
 
-**Ableitungsregeln:** Nur strukturelle/technische Regeln extrahieren. Governance (RACI, Review-Workflow, Aufbewahrung) weglassen. Format: Kompakt/tabellarisch statt Prosa.
+**Derivation rules:** Extract only structural/technical rules. Omit governance (RACI, review workflow, retention). Format: compact/tabular over prose.
 
-## ID-Schema
+## ID schema
 
-Dokument-ID = Ordner-Praefixe verkettet mit `_` + Dateiname ohne `.md`.
+Document ID = folder prefixes concatenated with `_` + filename without `.md`.
 
-| Regel | Beschreibung |
+| Rule | Description |
 |---|---|
-| Ordner | `PRAEFIX_Sprechender-Name/` (Underscore trennt Praefix) |
-| Dateien | `NN-Sprechender-Name.md` (Nummer + Hyphen + Name) |
-| Separator | `_` zwischen Ebenen, `-` innerhalb Namen |
-| Clauses | Dot-Notation (z.B. `HB_CLS_7.4-Communication`) |
-| Clause-Ordner | C4..C10 sind Sortier-Ordner, kein ID-Segment |
+| Folders | `PREFIX_Descriptive-Name/` (underscore separates prefix) |
+| Files | `NN-Descriptive-Name.md` (number + hyphen + name) |
+| Separator | `_` between levels, `-` within names |
+| Clauses | Dot notation (e.g. `HB_CLS_7.4-Communication`) |
+| Clause folders | C4..C10 are sort folders, not ID segments |
 
-Beispiel: `CB_Cyber-Security-Cookbook/POL_Policy-Framework/L2_Policies/01-Zugriff-und-Identitaet.md` → `CB_POL_L2_01-Zugriff-und-Identitaet`
+Example: `CB_Cyber-Security-Cookbook/POL_Policy-Framework/L2_Policies/01-Access-and-Identity.md` > `CB_POL_L2_01-Access-and-Identity`
 
-## Metadaten-Block (8 Pflichtfelder, feste Reihenfolge)
+## Metadata block (8 mandatory fields, fixed order)
 
 ```markdown
-> **Dokumenten-ID:** [Pfadbasiert]
+> **Document ID:** [Path-based]
 > **Version:** 00.01.000
-> **Klassifizierung:** [Vertraulich|Intern|Oeffentlich]
-> **Autor:** skr
-> **ISO-Referenz:** [Clause oder Annex-A-Controls]
-> **Zuletzt geaendert:** [YYYY-MM-DD]
-> **Freigabe:** —
-> **Review-Zyklus:** jaehrlich
+> **Classification:** [Confidential|Internal|Public]
+> **Author:** skr
+> **ISO reference:** [Clause or Annex A controls]
+> **Last modified:** [YYYY-MM-DD]
+> **Approval:** —
+> **Review cycle:** annual
 
 ---
 ```
 
-Ausgenommen: REF-Extrakte (kein Metadaten-Block), TPL-Vorlagen (eigene Struktur).
+Exempt: REF extracts (no metadata block), TPL templates (own structure).
 
-## Standard-Dokumentaufbau
+## Standard document structure
 
-| Position | Element | Regel |
+| Position | Element | Rule |
 |---|---|---|
-| Nach Trenner | `# [Dokumentenname]` | Typ + Thema in natuerlicher Sprache |
-| 1. H2 | `## Zusammenfassung` | 3-5 Saetze: Kontext, Orientierung, ISMS-Beitrag, Konsequenz (Details: `refs/sprachniveau.md`) |
-| 2. H2 | `## Ziel und Geltungsbereich` | Bold-Labels: **Ziel:** + **Geltungsbereich:** (siehe Format unten) |
-| Mitte | Fachkapitel | Dokumenttyp-spezifisch |
-| Vor Siehe auch | Zuordnungsmatrix (falls vorhanden) | Nur in POL-Dokumenten |
-| Vor Siehe auch | `## Verantwortlichkeiten` (nur REG) | Register-Pflegeinformation |
-| Vorletztes H2 | `## Siehe auch` | Querverweise |
-| Letztes H2 | `## Changelog` | Tabelle: Version, Datum, Autor, Aenderung (neueste zuerst) |
+| After separator | `# [Document name]` | Type + topic in natural language |
+| 1st H2 | `## Summary` | 3-5 sentences: context, orientation, ISMS contribution, consequence (details: `refs/style-guide.md`) |
+| 2nd H2 | `## Objective and scope` | Bold labels: **Objective:** + **Scope:** (see format below) |
+| Middle | Subject chapters | Document-type-specific |
+| Before See also | Allocation matrix (if applicable) | Only in POL documents |
+| Before See also | `## Responsibilities` (REG only) | Register maintenance info |
+| Second-to-last H2 | `## See also` | Cross-references |
+| Last H2 | `## Changelog` | Table: version, date, author, change (newest first) |
 
-Verbotene Synonyme fuer `## Ziel und Geltungsbereich`: Zweck, Geltungsbereich, Scope, Purpose, Anwendungsbereich, Zielsetzung.
-Verbotenes Synonym fuer `## Siehe auch`: Verbundene Dokumente.
+Prohibited synonyms for `## Objective and scope`: Zweck, Geltungsbereich, Scope, Purpose, Anwendungsbereich, Zielsetzung.
+Prohibited synonym for `## See also`: Verbundene Dokumente.
 
-**Format "## Ziel und Geltungsbereich":**
+**Format "## Objective and scope":**
 
-1. Traceability-Felder vorangestellt (nur L2/L3)
-2. `**Ziel:**` — 3x2-Muster: 3 Absaetze a 2 Saetze (WARUM → WOZU → WO). Informativer als Zusammenfassung.
-3. `**Geltungsbereich:**` — 1-2 Saetze: WER (Rollen/Zielgruppe) + WAS (Scope-Grenzen)
+1. Traceability fields prepended (L2/L3 only)
+2. `**Objective:**` — 3x2 pattern: 3 paragraphs of 2 sentences (WHY > FOR WHAT > WHERE). More informative than Summary.
+3. `**Scope:**` — 1-2 sentences: WHO (roles/audience) + WHAT (scope boundaries)
 
-| Typ | Ziel-Inhalt | Geltungsbereich-Inhalt |
+| Type | Objective content | Scope content |
 |---|---|---|
-| CLS | Zuordnungs-Zweck (Clause → Dokumente) | ISMS-Bereich + Zielgruppe |
-| L2 | Normative Anforderungen/Kriterien | Rollen + Scope-Grenzen |
-| L3 | Konkrete Aufgaben/Taetigkeiten | Rollen + Systeme |
-| PRC | Prozessergebnis + Zieldokumente | Trigger + beteiligte Rollen |
-| REG | Datenstruktur + SSOT-Status | Datenumfang + Pflege/Nutzung |
+| CLS | Assignment purpose (clause > documents) | ISMS area + audience |
+| L2 | Normative requirements/criteria | Roles + scope boundaries |
+| L3 | Concrete tasks/activities | Roles + systems |
+| PRC | Process result + target documents | Trigger + participating roles |
+| REG | Data structure + SSOT status | Data scope + maintenance/usage |
 
-## Fachkapitel-Integration
+## Subject chapter integration
 
-Neue Inhalte in bestehende Fachkapitel integrieren, nicht am Ende anhaengen. Vor Einfuegung: Heading-Inventar (alle H2/H3) lesen, passenden Heading bestimmen. Neuer Heading nur wenn kein thematisch passender existiert. `<!-- TODO -->`-Marker signalisieren Einfuegepunkte. Bei thematischer Ueberlappung: zusammenfuehren, nicht duplizieren.
+Integrate new content into existing subject chapters, do not append at the end. Before insertion: read heading inventory (all H2/H3), identify matching heading. New heading only when no thematic match exists. `<!-- TODO -->` markers signal insertion points. On thematic overlap: merge, do not duplicate.
 
-## H1-Konvention
+## H1 convention
 
-Kein technisches Praefix (Policy:, Prozess: etc.), keine Clause-Nummern im H1.
+No technical prefix (Policy:, Process: etc.), no clause numbers in H1.
 
-| Dokumenttyp | H1-Muster | Beispiel |
+| Document type | H1 pattern | Example |
 |---|---|---|
-| CLS | Nur Thema | `# Risiken und Chancen` |
-| PRC | Prozess fuer [Thema] | `# Prozess fuer Vorfallmanagement` |
-| REG | Typ steckt im Wort | `# Risikoregister` |
-| L1 | Leitlinie fuer [Thema] | `# Leitlinie fuer Informationssicherheit` |
-| L2 | Richtlinie zu [Thema] | `# Richtlinie zu Zugriff und Identitaet` |
-| L3 | [Thema]-Handbuch/-Konzept | `# Benutzerhandbuch` |
-| AWR | Frei deskriptiv | `# Awareness-Grundlagen` |
-| CB Root | Frei deskriptiv | `# Einstieg`, `# Notfallkarte` |
+| CLS | Topic only | `# Risks and Opportunities` |
+| PRC | [Topic] Process | `# Incident Management Process` |
+| REG | Type embedded in word | `# Risk Register` |
+| L1 | Information Security Guideline | `# Information Security Guideline` |
+| L2 | [Topic] Policy | `# Access and Identity Policy` |
+| L3 | [Topic] Handbook/Concept | `# User Handbook` |
+| AWR | Free descriptive | `# Awareness Fundamentals` |
+| CB Root | Free descriptive | `# Getting Started`, `# Emergency Card` |
 
-## Versionierung
+## Versioning
 
-Format: `Major.Minor.Update` gepaddet auf `00.00.000`.
+Format: `Major.Minor.Update` padded to `00.00.000`.
 
-| Segment | Wer | Trigger |
+| Segment | Who | Trigger |
 |---|---|---|
-| Update (3-stellig) | Agent automatisch | Jede inhaltliche Aenderung |
-| Minor (2-stellig) | Nur auf User-Auftrag | Draft-Meilenstein |
-| Major (2-stellig) | Freigabeberechtigter | Formelle Freigabe |
+| Update (3-digit) | Agent automatically | Every content change |
+| Minor (2-digit) | Only on user request | Draft milestone |
+| Major (2-digit) | Approval authority | Formal approval |
 
-Bei Aenderung: Update +1, `Zuletzt geaendert` aktualisieren, Changelog-Zeile ergaenzen. Neue Dokumente: `00.01.000`.
+On change: update +1, update `Last modified`, add changelog row. New documents: `00.01.000`.
 
-## Klassifizierung
+## Classification
 
-| Tier | Standard |
+| Tier | Default |
 |---|---|
-| CB (Cookbook) | Intern |
-| HB (Handbook) | Vertraulich |
+| CB (Cookbook) | Internal |
+| HB (Handbook) | Confidential |
 
-## Policy-Hierarchie
+## Policy hierarchy
 
-| Ebene | Charakter | Fragestellung |
+| Level | Character | Question |
 |---|---|---|
-| L1 | Leitlinie | WARUM? Strategische Grundsaetze (G1-G6) |
-| L2 | Richtlinie | WAS? Anforderungen und Regeln |
-| L3 | Handbuch | WIE? Konkrete Anleitung, Checklisten |
+| L1 | Guideline | WHY? Strategic principles (G1-G6) |
+| L2 | Policy | WHAT? Requirements and rules |
+| L3 | Handbook | HOW? Concrete guidance, checklists |
 
-L2 und L3 strikt getrennt. PRC (Prozesse) definieren Ablauf (RACI, Trigger, Schritte) — komplementaer zu L3.
+L2 and L3 strictly separated. PRC (processes) define workflow (RACI, trigger, steps) — complementary to L3.
 
 ## Traceability
 
-| Ebene | Pflichtfeld | Format |
+| Level | Mandatory field | Format |
 |---|---|---|
-| L2 | `Leitlinien-Bezug` | Grundsatz-IDs (G1-G6) |
-| L2 | `Operationalisiert durch` | L3-Kurzform-IDs (oder `—`) |
-| L3 | `Richtlinien-Bezug` | L2-Kurzform-IDs |
+| L2 | `Guideline reference` | Principle IDs (G1-G6) |
+| L2 | `Operationalized by` | L3 short-form IDs (or `—`) |
+| L3 | `Policy reference` | L2 short-form IDs |
 
-Grundsaetze G1-G6 in der Leitlinie (CB_POL_L1_01). Zuordnungsmatrix L1→L2 steht dort.
+Principles G1-G6 defined in the guideline (CB_POL_L1_01). Allocation matrix L1 to L2 resides there.
 
-## Drei-Schicht-Modell
+## Three-layer model
 
-CLS (HB) definiert WAS → PRC (CB) definiert WIE → REG (HB) haelt Ergebnisse.
+CLS (HB) defines WHAT > PRC (CB) defines HOW > REG (HB) holds results.
 
-## Referenz-Zitation
+## Citation
 
-BIBLIOGRAPHY.md in `REF_Referenzen/LIB_Library/` ist SSOT fuer Citation Keys.
+BIBLIOGRAPHY.md in `REF_References/LIB_Library/` is SSOT for citation keys.
 
-| Ebene | Format | Beispiel |
+| Level | Format | Example |
 |---|---|---|
-| Dokument | `[REF:key]` | `[REF:ISO22-27001]` |
-| Abschnitt | `[REF:key, Cl. X]` / `[REF:key, Kap. X]` | `[REF:ISO22-27001, Cl. 6.1]` |
+| Document | `[REF:key]` | `[REF:ISO22-27001]` |
+| Section | `[REF:key, Cl. X]` / `[REF:key, Ch. X]` | `[REF:ISO22-27001, Cl. 6.1]` |
 
-`## Siehe auch`: Interne Kurzform-IDs zuerst, dann `[REF:key]` Eintraege.
+`## See also`: internal short-form IDs first, then `[REF:key]` entries.
 
-## Annex A Controls
+## Annex A controls
 
-93 Controls (A.5.1 bis A.8.34). SoA ist SSOT. Controls erscheinen als `(adressiert A.x.x)` im Fliesstext, NICHT als Headings.
+93 controls (A.5.1 through A.8.34). SoA is SSOT. Controls appear as `(addresses A.x.x)` in running text, NOT as headings.
 
-## Drei-Tier-Struktur
+## Three-tier structure
 
-| Tier | Pfad | Zweck |
+| Tier | Path | Purpose |
 |---|---|---|
-| CB | `CB_Cyber-Security-Cookbook/` | Mitarbeiter-Wiki |
-| HB | `HB_ISMS-Handbuch/` | Vertrauliche Managementdokumentation |
-| REF | `REF_Referenzen/` | Normenextrakte, Referenzmaterial |
+| CB | `CB_Cyber-Security-Cookbook/` | Employee-facing wiki |
+| HB | `HB_ISMS-Handbook/` | Confidential management documentation |
+| REF | `REF_References/` | Norm extracts, reference material |
