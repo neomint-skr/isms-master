@@ -18,6 +18,19 @@ Globale Regeln und User-Profil werden von `claude-code-master` (`gitlab.com/neom
 
 Aktive Server: sequential-thinking, basic-memory, context7.
 
+**Datenhoheit:** Wenn ein MCP-Server Zugriff auf Daten bietet, werden diese ausschliesslich ueber seine MCP-Tools zugegriffen — nie per Read, Edit, Write oder Grep direkt. Bei Server-Ausfall: Server reparieren, nicht Daten direkt lesen. Permission-Blocks in `settings.json` erzwingen dies fuer bekannte MCP-Datenpfade.
+
+| MCP-Server | Verwaltetes Verzeichnis | Gesperrt fuer |
+|---|---|---|
+| basic-memory | `.memory/` | Read, Edit, Write |
+
+**Nutzungspflicht:** Bestimmte MCP-Server muessen in definierten Kontexten aktiv genutzt werden.
+
+| MCP-Server | Pflichtkontext | Fallback bei Ausfall |
+|---|---|---|
+| sequential-thinking | Plan Mode (jede Planungsaktivitaet) | Server ueber `/mcp` neu starten |
+| context7 | Library-/Framework-Recherche | WebSearch/WebFetch |
+
 ### Sprache
 
 Dokumentinhalt: Deutsch. Steuerungsdokumente: Englisch/Deutsch gemischt.
