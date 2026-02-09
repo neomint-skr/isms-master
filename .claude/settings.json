@@ -6,7 +6,9 @@
       "Read(./.env.*)",
       "Read(./.memory/**)",
       "Edit(./.memory/**)",
-      "Write(./.memory/**)"
+      "Write(./.memory/**)",
+      "Edit(./INDEX.md)",
+      "Write(./INDEX.md)"
     ]
   },
   "hooks": {
