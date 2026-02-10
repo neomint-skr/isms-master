@@ -1,6 +1,6 @@
 # INDEX
 
-> Structural data of the [Organization] ISMS. 96 Markdown files, 93 Annex A controls.
+> Structural data of the [Organization] ISMS. 97 Markdown files, 93 Annex A controls.
 > For working instructions see CLAUDE.md.
 > ID schema: folder abbreviations (see table below) + filename. Separator: `_` between levels, `-` within names.
 
@@ -41,6 +41,7 @@
 **08-Interested-Parties-Register.md** -- Stakeholders + IS requirements
 **09-Context-Register.md** -- Organizational profile, external/internal issues
 **10-BIA-Register.md** -- BIA assessment, tier assignment, continuity plan tracking
+**11-Competence-Records.md** -- SOLL/IST competence matrix per ISMS role (20 dimensions)
 
 ### HB -- ISMS-Handbook / Management
 
