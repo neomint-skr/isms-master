@@ -1,9 +1,9 @@
 > **Document ID:** CB_POL_L1_01-Policy
-> **Version:** 00.01.007
+> **Version:** 00.01.008
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.1
-> **Last modified:** 2026-02-10
+> **Last modified:** 2026-02-11
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -74,8 +74,8 @@ Each L2 standard serves at least one principle. Each L3 handbook operationalizes
 
 | Principle | Standards (L2) |
 |---|---|
-| P1 Protection | L2_01 Access, L2_02 Information Protection, L2_03 System+Network, L2_04 Secure Development, L2_05 Suppliers, L2_07 Organisation, L2_09 Physical Security |
-| P2 Compliance | L2_01 Access, L2_02 Information Protection, L2_05 Suppliers, L2_07 Organisation, L2_08 Document Control |
+| P1 Protection | L2_01 Access, L2_02 Information Protection, L2_03 System+Network, L2_04 Secure Development, L2_05 Suppliers, L2_07 Organisation, L2_09 Physical Security, L2_12 AI-Usage |
+| P2 Compliance | L2_01 Access, L2_02 Information Protection, L2_05 Suppliers, L2_07 Organisation, L2_08 Document Control, L2_12 AI-Usage |
 | P3 Risk orientation | L2_11 Risk Management, L2_03 System+Network, L2_04 Secure Development, L2_05 Suppliers, L2_06 Business Continuity, L2_07 Organisation, L2_09 Physical Security |
 | P4 Awareness | L2_07 Organisation, L2_10 Human Resources |
 | P5 Continual improvement | L2_07 Organisation, L2_08 Document Control |
@@ -88,6 +88,7 @@ Each L2 standard serves at least one principle. Each L3 handbook operationalizes
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.008 | 2026-02-11 | CISO | Allocation matrix: L2_12 AI-Usage added to P1 and P2 |
 | 00.01.007 | 2026-02-10 | CISO | Extended policy framework from three to four tiers (L4 Cheat Sheets) |
 | 00.01.006 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.005 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |

@@ -1,9 +1,9 @@
 > **Document ID:** CB_POL_L2_08-Document-Control
-> **Version:** 00.04.012
+> **Version:** 00.04.013
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 7.5
-> **Last modified:** 2026-02-10
+> **Last modified:** 2026-02-11
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -76,6 +76,7 @@ The document name (H1) integrates the document type in natural language. No tech
 | L1 | Information Security Policy | `# Information Security Policy` |
 | L2 | [Topic] Standard | `# Access and Identity Standard` |
 | L3 | [Topic] Handbook | `# User Handbook` |
+| L4 | [Topic] Cheat Sheet | `# Password Security Cheat Sheet` |
 | AWR | Free descriptive | `# Awareness Fundamentals` |
 | CB Root | Free descriptive | `# Getting Started` |
 
@@ -171,6 +172,7 @@ Documented information of external origin is appropriately identified and contro
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.04.013 | 2026-02-11 | CISO | H1 convention table: added L4 Cheat Sheet pattern |
 | 00.04.012 | 2026-02-10 | Claude (AI) | Remove REG Responsibilities from document structure; consolidate governance in CLS 5.3 |
 | 00.04.011 | 2026-02-10 | CISO | Folder paths updated after prefix removal; pre-existing German path names corrected |
 | 00.04.010 | 2026-02-09 | CISO | Aligned role terminology |
