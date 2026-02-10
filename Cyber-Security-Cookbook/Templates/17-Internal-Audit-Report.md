@@ -12,7 +12,7 @@
 
 ## Scope and Criteria
 
-[Description of audit scope, boundaries, and criteria applied. Include reference to the audit programme (HB_AUD_01) and any specific focus areas.]
+[Description of audit scope, boundaries, and criteria applied. Include reference to the audit programme (HB_AUD_INT_01) and any specific focus areas.]
 
 ## Executive Summary
 
@@ -47,4 +47,4 @@
 - All findings are tracked in the Audit Findings Register (HB_REG_05-Nonconformity-Register)
 - Non-conformities require corrective action per PRC_08 Internal Audit process
 - Effectiveness review scheduled for: [date or reference to next audit cycle]
-- Next internal audit: [reference to HB_AUD_01-Audit-Programme]
+- Next internal audit: [reference to HB_AUD_INT_01-Audit-Programme]

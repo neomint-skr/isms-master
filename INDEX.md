@@ -1,6 +1,6 @@
 # INDEX
 
-> Structural data of the [Organization] ISMS. 97 Markdown files, 93 Annex A controls.
+> Structural data of the [Organization] ISMS. 99 Markdown files, 93 Annex A controls.
 > For working instructions see CLAUDE.md.
 > ID schema: folder abbreviations (see table below) + filename. Separator: `_` between levels, `-` within names.
 
@@ -51,11 +51,15 @@
 
 > Records: MR-YYYY-QN.md (minutes), IS-YYYY-MM.md (steering). Evidence files, no formal ISMS IDs.
 
-### HB -- ISMS-Handbook / Audit-Programme
+### HB -- ISMS-Handbook / Audit
 
-**01-Audit-Programme.md** -- Living audit programme (multi-year schedule, scope rotation, evidence overview)
+**Internal/01-Internal-Audit-Programme.md** -- Living audit programme (multi-year schedule, scope rotation, evidence overview)
 
-> Records: IA-YYYY-MM-Scope.md (internal), EA-YYYY-MM-Type.md (external). Evidence files, no formal ISMS IDs.
+> Internal Records: IA-YYYY-MM-Scope.md (internal), EA-YYYY-MM-Type.md (external). Evidence files, no formal ISMS IDs.
+
+**Supplier/01-Supplier-Review-Programme.md** -- Supplier review programme (multi-year schedule, review criteria)
+
+> Supplier Records: SR-YYYY-Supplier.md. Evidence files, no formal ISMS IDs.
 
 ### CB -- Cyber-Security-Cookbook / Root
 
@@ -126,6 +130,7 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 **01-Management-Review.md** -- Management review template (inputs 9.3.2, outputs 9.3.3, actions)
 **02-Document-Metadata.md** -- Metadata block template (8 fields, field descriptions, rules)
 **17-Internal-Audit-Report.md** -- MD template for CISO-led internal audits
+**18-Supplier-Review.md** -- Supplier review template (certification, SLA, assessment)
 
 ### REF -- References / Library / Standards
 
@@ -283,7 +288,9 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 | L2 | Level 2 (Standards) | L2_Standards/ |
 | L3 | Level 3 (Handbooks and Concepts) | L3_Handbooks-and-Concepts/ |
 | L4 | Level 4 (Cheat Sheets) | L4_Cheat-Sheets/ |
-| AUD | Audit programme | Audit-Programme/ |
+| AUD | Audit | Audit/ |
+| AUD_INT | Internal audit | Audit/Internal/ |
+| AUD_SUP | Supplier review | Audit/Supplier/ |
 | AWR | Awareness | Awareness-Training/ |
 | TPL | Template | Templates/ |
 | REF | References | References/ |

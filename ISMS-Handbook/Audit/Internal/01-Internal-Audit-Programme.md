@@ -1,15 +1,15 @@
-> **Document ID:** HB_AUD_01-Audit-Programme
-> **Version:** 00.00.001
+> **Document ID:** HB_AUD_INT_01-Internal-Audit-Programme
+> **Version:** 00.00.002
 > **Classification:** Confidential
 > **Author:** CISO
 > **ISO Reference:** ISO 27001:2022, 9.2
-> **Last modified:** 2026-02-10
+> **Last modified:** 2026-02-11
 > **Approval:** —
 > **Review cycle:** Annual
 
 ---
 
-# Audit Programme
+# Internal Audit Programme
 
 ## Summary
 
@@ -21,7 +21,7 @@ The audit programme is the living document that captures the multi-year audit sc
 
 The audit programme provides auditors and management with a single view of planned and completed audits, including scope rotation to ensure full ISMS coverage over the certification cycle. It links each audit to its evidence (reports, findings) for easy retrieval.
 
-The programme operationalizes the requirements of HB_CLS_9.2 (Internal Audit) and complements the CB_PRC_08 (Internal Audit) process. Findings are tracked in HB_REG_05 (Nonconformity Register) and evidence is stored in Audit-Programme/Records/.
+The programme operationalizes the requirements of HB_CLS_9.2 (Internal Audit) and complements the CB_PRC_08 (Internal Audit) process. Findings are tracked in HB_REG_05 (Nonconformity Register) and evidence is stored in Audit/Internal/Records/.
 
 **Scope:** All internal and external ISMS audits; maintained by CISO, reviewed annually.
 
@@ -46,10 +46,11 @@ The programme operationalizes the requirements of HB_CLS_9.2 (Internal Audit) an
 - HB_CLS_9.2-Internal-Audit — Clause requirements for internal audit
 - CB_PRC_08-Internal-Audit — Operational audit process
 - HB_REG_05-Nonconformity-Register — Audit findings tracking
-- Audit-Programme/Records/ — Audit reports and evidence
+- Audit/Internal/Records/ — Audit reports and evidence
 
 ## Changelog
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.00.002 | 2026-02-11 | CISO | Restructured: Audit-Programme → Audit/Internal, Document ID updated to HB_AUD_INT_01 |
 | 00.00.001 | 2026-02-10 | CISO | Initial skeleton |
