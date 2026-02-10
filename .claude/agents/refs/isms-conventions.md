@@ -51,7 +51,6 @@ Exempt: REF extracts (no metadata block), TPL templates (own structure).
 | 2nd H2 | `## Objective and scope` | Bold labels: **Objective:** + **Scope:** (see format below) |
 | Middle | Subject chapters | Document-type-specific |
 | Before See also | Allocation matrix (if applicable) | Only in POL documents |
-| Before See also | `## Responsibilities` (REG only) | Register maintenance info |
 | Second-to-last H2 | `## See also` | Cross-references |
 | Last H2 | `## Changelog` | Table: version, date, author, change (newest first) |
 

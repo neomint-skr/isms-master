@@ -1,5 +1,5 @@
 > **Document ID:** HB_REG_03-Asset-Register
-> **Version:** 00.02.008
+> **Version:** 00.02.009
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** A.5.9
@@ -152,12 +152,6 @@ The following tables map relationships between assets. They are the SSOT — in 
 | Room ID | Building ID |
 |---|---|
 
-## Responsibilities
-
-- **Maintenance:** IS-Coordinator ([IS-Coordinator]) with support from domain departments
-- **Trigger:** New assets, significant changes to existing assets, annual review during management review
-- **Process:** CB_PRC_12-Asset-Management
-
 ## See also
 
 - HB_REG_10-BIA-Register — BIA assessment and tier tracking
@@ -166,6 +160,7 @@ The following tables map relationships between assets. They are the SSOT — in 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.02.009 | 2026-02-10 | Claude (AI) | Remove Responsibilities section; roles consolidated in CLS 5.3 |
 | 00.02.008 | 2026-02-10 | [CISO] | BIA fields replaced by BIA Tier reference (REG_10 extraction) |
 | 00.02.007 | 2026-02-09 | [CISO] | Aligned role terminology |
 | 00.02.006 | 2026-02-09 | [CISO] | Inventory fields: 14 mandatory fields + 5 optional BIA fields (REC-410) |

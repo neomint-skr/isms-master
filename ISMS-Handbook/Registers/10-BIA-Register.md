@@ -1,5 +1,5 @@
 > **Document ID:** HB_REG_10-BIA-Register
-> **Version:** 00.01.001
+> **Version:** 00.01.002
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** A.5.29-5.30
@@ -66,12 +66,6 @@ The following table tracks IT continuity plans required by CB_POL_L2_06-Business
 |---|---|---|---|---|
 | [YYYY-MM-DD] | [System/component] | [Test type] | [Findings and observations] | [Tester name/role] |
 
-## Responsibilities
-
-- **Maintenance:** CISO with support from IT operations and asset owners
-- **Trigger:** New critical assets, organizational changes, annual review
-- **Process:** CB_POL_L3_08-Business-Continuity (BIA methodology)
-
 ## See also
 
 - CB_POL_L2_06-Business-Continuity — BCM requirements and tier model
@@ -85,5 +79,6 @@ The following table tracks IT continuity plans required by CB_POL_L2_06-Business
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.002 | 2026-02-10 | Claude (AI) | Remove Responsibilities section; roles consolidated in CLS 5.3 |
 | 00.01.001 | 2026-02-10 | [CISO] | Key table (MTPD, MBCO); Test Log section |
 | 00.01.000 | 2026-02-10 | [CISO] | Initial version |

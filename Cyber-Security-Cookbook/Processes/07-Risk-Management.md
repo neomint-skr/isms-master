@@ -1,9 +1,9 @@
 > **Document ID:** CB_PRC_07-Risk-Management
-> **Version:** 00.01.008
+> **Version:** 00.01.009
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1, 8.2, 8.3
-> **Last modified:** 2026-02-09
+> **Last modified:** 2026-02-10
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -94,10 +94,6 @@ An unscheduled risk assessment is triggered by:
 - New or changed regulatory requirements
 - Changes to the ISMS scope
 
-### RACI
-
-The complete RACI assignment for PRC_07 is maintained in HB_CLS_5.3-Roles-and-Responsibilities (process RACI table). Summary: Chief Information Security Officer ([CISO]) = Responsible for coordination and execution. IS-Coordinator ([IS-Coordinator]) = Consulted. CEO ([CEO]) = Accountable for risk treatment plan approval. CTO ([CTO]) = Consulted. Risk owners = Responsible for assessment and acceptance of their risks.
-
 ## See also
 
 - CB_POL_L2_11-Risk-Management — Normative requirements (scales, criteria, treatment options)
@@ -113,6 +109,7 @@ The complete RACI assignment for PRC_07 is maintained in HB_CLS_5.3-Roles-and-Re
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.009 | 2026-02-10 | Claude (AI) | Remove RACI subsection; roles consolidated in CLS 5.3 |
 | 00.01.008 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.007 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/FOR WHAT/WHERE) |
 | 00.01.006 | 2026-02-09 | CISO | Objective and scope: bold-label pattern (Objective + Scope) |

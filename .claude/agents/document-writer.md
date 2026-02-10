@@ -65,6 +65,7 @@ Steps:
 ### Key rules
 
 - **Preserve content:** Existing subject content, subchapters and placeholders are NEVER deleted. Only the structure is adjusted.
+- **No Responsibilities sections:** Do not create `## Responsibilities` sections. All role and responsibility definitions belong exclusively in HB_CLS_5.3.
 - **Do not edit INDEX.md:** Deny rule active. Instead emit a note that INDEX.md needs updating.
 - **Do not edit SoA:** Deny rule active.
 - **Post-edit note:** After creating or modifying an ISMS file: inform the user that `consistency-checker` should be run (deny rule prevents self-invocation).

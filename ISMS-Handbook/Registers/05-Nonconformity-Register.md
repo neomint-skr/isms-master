@@ -1,5 +1,5 @@
 > **Document ID:** HB_REG_05-Nonconformity-Register
-> **Version:** 00.01.006
+> **Version:** 00.01.007
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** Clause 10.2
@@ -68,12 +68,6 @@ The NC process is defined in CB_PRC_10 (Nonconformity Management); inputs come f
 |---|---|---|---|---|---|---|
 | [OBS-001] | [Finding description] | [ISO clause or Annex A reference] | [Response or implemented measure] | [Responsible person/role] | [YYYY-MM-DD] | [Open/In progress/Closed] |
 
-## Responsibilities
-
-- **Maintenance:** CISO with support from affected role holders
-- **Trigger:** New nonconformity, corrective action completion, effectiveness review due date
-- **Process:** CB_PRC_10-Nonconformity-Management
-
 ## See also
 
 - CB_PRC_10-Nonconformity-Management — NC management process
@@ -87,6 +81,7 @@ The NC process is defined in CB_PRC_10 (Nonconformity Management); inputs come f
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.007 | 2026-02-10 | Claude (AI) | Remove Responsibilities section; roles consolidated in CLS 5.3 |
 | 00.01.006 | 2026-02-10 | [CISO] | Per-audit chapter structure (H2 per audit, H3 per category); Key table; data breach escalation note; removed Effectiveness Review section |
 | 00.01.005 | 2026-02-10 | [CISO] | Populated register tables with structure and guidance |
 | 00.01.004 | 2026-02-09 | [CISO] | Aligned role terminology |

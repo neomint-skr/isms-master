@@ -83,10 +83,8 @@ No REG without documented maintenance responsibility.
 
 **Steps:**
 - Glob `ISMS-Handbook/Registers/*.md`
-- For each REG: check whether:
-  a) At least one PRC references this REG (Grep for REG ID in PRC files), OR
-  b) The REG itself has a `## Responsibilities` section with content (not just TODO)
-- Warning if neither a) nor b) is met
+- For each REG: check whether at least one PRC or CLS references this REG (Grep for REG ID in PRC and CLS files)
+- Warning if no PRC or CLS reference is found
 
 ## Output format
 

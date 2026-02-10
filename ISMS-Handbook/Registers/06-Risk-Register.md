@@ -1,5 +1,5 @@
 > **Document ID:** HB_REG_06-Risk-Register
-> **Version:** 00.01.006
+> **Version:** 00.01.007
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** Clause 6.1, 8.2, 8.3
@@ -59,12 +59,6 @@ Risk level = Likelihood × Impact. Acceptance thresholds are defined in CB_POL_L
 
 Acceptance criteria are defined in CB_POL_L2_11. Critical risks (risk level 12-16) are never acceptable and must be treated. Acceptance of high risks requires CEO approval. Medium risks may be accepted by CTO or risk owner with CISO review.
 
-## Responsibilities
-
-- **Maintenance:** CISO with support from risk owners
-- **Trigger:** Risk assessment cycle, significant change, incident, management review
-- **Process:** CB_PRC_07-Risk-Management
-
 ## See also
 
 - CB_POL_L2_11-Risk-Management — Risk criteria, matrix, acceptance thresholds
@@ -77,6 +71,7 @@ Acceptance criteria are defined in CB_POL_L2_11. Critical risks (risk level 12-1
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.007 | 2026-02-10 | Claude (AI) | Remove Responsibilities section; roles consolidated in CLS 5.3 |
 | 00.01.006 | 2026-02-10 | [CISO] | Key table; compact column headers (L, I); removed inline bold definitions |
 | 00.01.005 | 2026-02-10 | [CISO] | Populated Summary, Risk Matrix, Risk Entries, Risk Acceptance, Responsibilities, See also |
 | 00.01.004 | 2026-02-09 | [CISO] | Aligned role terminology |

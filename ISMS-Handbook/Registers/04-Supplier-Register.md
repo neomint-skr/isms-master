@@ -1,5 +1,5 @@
 > **Document ID:** HB_REG_04-Supplier-Register
-> **Version:** 00.01.005
+> **Version:** 00.01.006
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** A.5.19-5.23
@@ -53,12 +53,6 @@ Supplier assessment is governed through CB_PRC_06 (Supplier Management) and alig
 
 **Assessment criteria:** Supplier assessments are conducted in accordance with CB_POL_L2_05 requirements, addressing control A.5.19 (Information security in supplier relationships).
 
-## Responsibilities
-
-- **Maintenance:** IS-Coordinator ([IS-Coordinator]) with support from domain departments
-- **Trigger:** New suppliers, significant contract changes, annual review during management review
-- **Process:** CB_PRC_06-Supplier-Management
-
 ## See also
 
 - CB_POL_L2_05-Supplier-and-Cloud — Requirements for supplier assessment, agreements, monitoring
@@ -71,6 +65,7 @@ Supplier assessment is governed through CB_PRC_06 (Supplier Management) and alig
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.006 | 2026-02-10 | Claude (AI) | Remove Responsibilities section; roles consolidated in CLS 5.3 |
 | 00.01.005 | 2026-02-10 | [CISO] | Populated register tables with structure and guidance |
 | 00.01.004 | 2026-02-09 | [CISO] | Aligned role terminology |
 | 00.01.003 | 2026-02-09 | [CISO] | Objective and Scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |

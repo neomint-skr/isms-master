@@ -1,5 +1,5 @@
 > **Document ID:** HB_REG_01-IS-Objectives-Register
-> **Version:** 00.01.007
+> **Version:** 00.01.008
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** Clause 6.2
@@ -53,12 +53,6 @@ Objective achievement is measured against defined KPIs and tracked over time:
 
 Measurement frequency is defined per objective; results are reviewed quarterly and reported in the management review (CB_PRC_09).
 
-## Responsibilities
-
-- **Maintenance:** CISO with support from domain leads
-- **Trigger:** Quarterly measurement, annual review during management review
-- **Process:** CB_PRC_11-Performance-Monitoring
-
 ## See also
 
 - HB_CLS_6.2-IS-Objectives — Clause requirements for IS objectives
@@ -71,6 +65,7 @@ Measurement frequency is defined per objective; results are reviewed quarterly a
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.008 | 2026-02-10 | Claude (AI) | Remove Responsibilities section; roles consolidated in CLS 5.3 |
 | 00.01.007 | 2026-02-10 | [CISO] | Completed register structure: Summary, Monitoring Results table, Responsibilities, See also |
 | 00.01.006 | 2026-02-09 | [CISO] | Aligned role terminology |
 | 00.01.005 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |

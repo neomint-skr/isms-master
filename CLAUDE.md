@@ -85,7 +85,6 @@ Every content document (with metadata block) follows this layout:
 | 2nd H2 | `## Objective and Scope` | Bold labels: Objective + Scope (details below). REG documents include `### Key` table for register-specific terminology |
 | Middle | Subject chapters | Document-type specific (clause numbers, process steps, register data) |
 | Before See also | Allocation matrix (if applicable) | Only in POL documents. Mapping to parent level (e.g. L1 to L2) |
-| Before See also | `## Responsibilities` (REG only) | Register maintenance information |
 | Second-to-last H2 | `## See also` | Cross-references to related documents |
 | Last H2 | `## Changelog` | Table: Version, Date, Author, Change — newest version first |
 

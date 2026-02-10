@@ -1,9 +1,9 @@
 > **Document ID:** CB_POL_L2_11-Risk-Management
-> **Version:** 00.01.008
+> **Version:** 00.01.009
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1, 8.2, 8.3
-> **Last modified:** 2026-02-09
+> **Last modified:** 2026-02-10
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -122,17 +122,6 @@ For each identified risk, at least one of the following treatment options is sel
 
 The selection of the treatment option is made by the risk owner in coordination with the Chief Information Security Officer. For "Mitigate," appropriate controls are determined and reconciled with Annex A of ISO 27001 (Clause 6.1.3 b, c). The selected controls are documented in the risk treatment plan (HB_REG_07) and their effectiveness verified within the risk management process (CB_PRC_07).
 
-## Risk Management Roles
-
-The formal RACI assignments are documented in HB_CLS_5.3-Roles-and-Responsibilities.
-
-| Role | Risk management responsibility |
-|---|---|
-| Risk owner | Bears responsibility for an identified risk. Decides on the treatment option and accepts residual risks within the acceptance criteria. Typically the process or asset owner. |
-| Chief Information Security Officer ([CISO]) | Coordinates the risk management process, supports identification and analysis, maintains the risk register, reports to executive management. |
-| IS-Coordinator ([IS-Coordinator]) | Supports operational implementation, maintains registers jointly with the Chief Information Security Officer. |
-| Executive management ([CEO]/[CTO]) | Approves the risk treatment plan, accepts residual risks at high risk levels, provides resources. |
-
 ## See also
 
 - CB_POL_L1_01-Policy — Principle P3 (Risk orientation)
@@ -147,6 +136,7 @@ The formal RACI assignments are documented in HB_CLS_5.3-Roles-and-Responsibilit
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.009 | 2026-02-10 | Claude (AI) | Remove Risk Management Roles section; roles consolidated in CLS 5.3 |
 | 00.01.008 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.007 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |
 | 00.01.006 | 2026-02-09 | CISO | Risk levels: colour coding and ALARP principle added (REC-411) |

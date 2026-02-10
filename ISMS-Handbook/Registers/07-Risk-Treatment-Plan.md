@@ -1,5 +1,5 @@
 > **Document ID:** HB_REG_07-Risk-Treatment-Plan
-> **Version:** 00.01.006
+> **Version:** 00.01.007
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** Clause 6.1.3 e
@@ -47,12 +47,6 @@ Treatment decisions are derived from the risk register (HB_REG_06) and developed
 
 The risk treatment plan requires formal approval by top management (Clause 6.1.3 e). This approval confirms that the planned treatments are adequate, resources are allocated, and residual risks are consciously accepted. Approved residual risks are documented in HB_REG_06 (Risk Acceptance).
 
-## Responsibilities
-
-- **Maintenance:** CISO with support from risk owners
-- **Trigger:** New risks above acceptance threshold, annual review, management review
-- **Process:** CB_PRC_07-Risk-Management
-
 ## See also
 
 - CB_POL_L2_11-Risk-Management — Risk criteria and treatment options
@@ -65,6 +59,7 @@ The risk treatment plan requires formal approval by top management (Clause 6.1.3
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.007 | 2026-02-10 | Claude (AI) | Remove Responsibilities section; roles consolidated in CLS 5.3 |
 | 00.01.006 | 2026-02-10 | [CISO] | Key table; removed inline bold definitions |
 | 00.01.005 | 2026-02-10 | [CISO] | Populated Summary, Treatment Plan, Approval, Responsibilities, See also |
 | 00.01.004 | 2026-02-09 | [CISO] | Aligned role terminology |

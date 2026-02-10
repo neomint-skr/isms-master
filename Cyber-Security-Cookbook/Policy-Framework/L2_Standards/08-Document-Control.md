@@ -1,5 +1,5 @@
 > **Document ID:** CB_POL_L2_08-Document-Control
-> **Version:** 00.04.011
+> **Version:** 00.04.012
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 7.5
@@ -59,11 +59,10 @@ Every content document follows this structure:
 | 2nd H2 | `## Objective and Scope` | Purpose of the document and for whom/what it applies |
 | Middle | Subject chapters | Document type-specific (clause numbers, process steps, register data) |
 | Before See also | Allocation matrix (if applicable) | Only in POL documents. Mapping to the parent tier |
-| Before See also | `## Responsibilities` (REG only) | Register maintenance information (see below) |
 | Penultimate H2 | `## See also` | Cross-references to related documents |
 | Final H2 | `## Changelog` | Table: Version, Date, Author, Change — newest first |
 
-**Governance sections:** L1, L2, L3, and CLS do not carry standalone sections on responsibilities, approval, or review. ISMS roles, the responsibility matrix, and process RACI are centrally defined in HB_CLS_5.3-Roles-and-Responsibilities (SSOT). The review and approval process is governed in this document (section Review and Approval). Process documents (PRC) may optionally carry a `### RACI` subsection referencing CLS_5.3. Registers (REG) contain a `## Responsibilities` section for maintenance, triggers, and process reference.
+**Governance sections:** L1, L2, L3, CLS, and REG do not carry standalone sections on responsibilities, approval, or review. ISMS roles, the responsibility matrix, and process RACI are centrally defined in HB_CLS_5.3-Roles-and-Responsibilities (SSOT). The review and approval process is governed in this document (section Review and Approval).
 
 ### H1 Convention
 
@@ -172,6 +171,7 @@ Documented information of external origin is appropriately identified and contro
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.04.012 | 2026-02-10 | Claude (AI) | Remove REG Responsibilities from document structure; consolidate governance in CLS 5.3 |
 | 00.04.011 | 2026-02-10 | CISO | Folder paths updated after prefix removal; pre-existing German path names corrected |
 | 00.04.010 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.04.009 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |

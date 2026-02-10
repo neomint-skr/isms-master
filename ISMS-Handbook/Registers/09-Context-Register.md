@@ -1,9 +1,9 @@
 > **Document ID:** HB_REG_09-Context-Register
-> **Version:** 00.01.006
+> **Version:** 00.01.007
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** Clause 4.1
-> **Last modified:** 2026-02-09
+> **Last modified:** 2026-02-10
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -64,12 +64,6 @@ The organizational profile describes the context in which the ISMS operates. It 
 |---|---|---|---|
 | [YYYY-MM-DD] | [Initial capture / Annual / Event-driven] | [Result] | [Abbreviation] |
 
-## Responsibilities
-
-- **Maintenance:** CISO ([CISO])
-- **Trigger:** Annually (CB_PRC_09) or upon significant changes
-- **Process:** CB_PRC_09-Management-Review
-
 ## See also
 
 - HB_CLS_4.1-Organization-and-Context — Requirements definition
@@ -79,6 +73,7 @@ The organizational profile describes the context in which the ISMS operates. It 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.007 | 2026-02-10 | Claude (AI) | Remove Responsibilities section; roles consolidated in CLS 5.3 |
 | 00.01.006 | 2026-02-09 | [CISO] | Aligned role terminology |
 | 00.01.005 | 2026-02-09 | [CISO] | Organizational profile: context introduction with Clause 4.1 reference (REC-403) |
 | 00.01.004 | 2026-02-09 | [CISO] | Context architecture: CLS/REG perspective differentiation, data redundancy eliminated |
