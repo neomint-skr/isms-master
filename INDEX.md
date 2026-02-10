@@ -1,6 +1,6 @@
 # INDEX
 
-> Structural data of the [Organization] ISMS. 86 Markdown files, 93 Annex A controls.
+> Structural data of the [Organization] ISMS. 91 Markdown files, 93 Annex A controls.
 > For working instructions see CLAUDE.md.
 > ID schema: folder abbreviations (see table below) + filename. Separator: `_` between levels, `-` within names.
 
@@ -41,6 +41,20 @@
 **08-Interested-Parties-Register.md** -- Stakeholders + IS requirements
 **09-Context-Register.md** -- Organizational profile, external/internal issues
 **10-BIA-Register.md** -- BIA assessment, tier assignment, continuity plan tracking
+
+### HB -- ISMS-Handbook / Management
+
+**01-Improvement-Roadmap.md** -- Strategic improvement plan (themes, priorities, timeline, status)
+**02-Meeting-Log.md** -- Governance meeting log (MR, risk reviews, decisions, action references)
+**03-Open-Items.md** -- CISO-client open items (questions, clarifications, blockers)
+
+> Records: MR-YYYY-QN.md (minutes), IS-YYYY-MM.md (steering). Evidence files, no formal ISMS IDs.
+
+### HB -- ISMS-Handbook / Audit-Programme
+
+**01-Audit-Programme.md** -- Living audit programme (multi-year schedule, scope rotation, evidence overview)
+
+> Records: IA-YYYY-MM-Scope.md (internal), EA-YYYY-MM-Type.md (external). Evidence files, no formal ISMS IDs.
 
 ### CB -- Cyber-Security-Cookbook / Root
 
@@ -110,6 +124,7 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 
 **01-Management-Review.md** -- Management review template (inputs 9.3.2, outputs 9.3.3, actions)
 **02-Document-Metadata.md** -- Metadata block template (8 fields, field descriptions, rules)
+**17-Internal-Audit-Report.md** -- MD template for CISO-led internal audits
 
 ### REF -- References / Library / Standards
 
@@ -267,12 +282,14 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 | L2 | Level 2 (Standards) | L2_Standards/ |
 | L3 | Level 3 (Handbooks and Concepts) | L3_Handbooks-and-Concepts/ |
 | L4 | Level 4 (Cheat Sheets) | L4_Cheat-Sheets/ |
+| AUD | Audit programme | Audit-Programme/ |
 | AWR | Awareness | Awareness-Training/ |
 | TPL | Template | Templates/ |
 | REF | References | References/ |
 | LIB | Library (norm extracts) | Library/ |
 | CLS | Clause (definitions) | Definitions/ |
 | C04..C10 | Clause sorting | C04_Context/ .. C10_Improvement/ |
+| MGT | Management | Management/ |
 | REG | Register | Registers/ |
 | PRC | Process | Processes/ |
 | HB_CLS_C05 | (folder) | Definitions/C05_Leadership/ (3 files) |

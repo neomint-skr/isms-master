@@ -1,9 +1,9 @@
 > **Document ID:** CB_PRC_09-Management-Review
-> **Version:** 00.01.007
+> **Version:** 00.01.008
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 9.3
-> **Last modified:** 2026-02-09
+> **Last modified:** 2026-02-10
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -48,11 +48,13 @@ The process operationalizes the requirements from HB_CLS_9.3 (Management Review)
 - CB_TPL_01-Management-Review
 - HB_REG_01-IS-Objectives-Register
 - CB_PRC_11-Performance-Monitoring
+- HB_MGT_02-Meeting-Log — Governance meeting log
 
 ## Changelog
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.008 | 2026-02-10 | CISO | Cross-reference to HB_MGT_02-Meeting-Log |
 | 00.01.007 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.006 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/FOR WHAT/WHERE) |
 | 00.01.005 | 2026-02-08 | CISO | See-also: cross-references to CLS_9.3, TPL_01, REG_01, PRC_11 added |

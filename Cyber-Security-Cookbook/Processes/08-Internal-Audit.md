@@ -1,9 +1,9 @@
 > **Document ID:** CB_PRC_08-Internal-Audit
-> **Version:** 00.01.006
+> **Version:** 00.01.007
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 9.2
-> **Last modified:** 2026-02-09
+> **Last modified:** 2026-02-10
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -50,6 +50,7 @@ Audit findings are recorded as nonconformities in HB_REG_05-Nonconformity-Regist
 ## See also
 
 - HB_CLS_5.3-Roles-and-Responsibilities
+- HB_AUD_01-Audit-Programme — Audit programme and evidence overview
 
 <!-- TODO: CLS_9.2, PRC_10 (NC), CB_TPL_01 -->
 
@@ -57,6 +58,7 @@ Audit findings are recorded as nonconformities in HB_REG_05-Nonconformity-Regist
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.007 | 2026-02-10 | CISO | Cross-reference to HB_AUD_01-Audit-Programme |
 | 00.01.006 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.005 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/FOR WHAT/WHERE) |
 | 00.01.004 | 2026-02-08 | CISO | References: HB_TPL->CB_TPL (TPL relocation) |

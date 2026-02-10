@@ -36,7 +36,7 @@ Active servers: sequential-thinking, basic-memory, context7.
 | Tier | Path | Purpose |
 |---|---|---|
 | CB — Cookbook | `Cyber-Security-Cookbook/` | Employee wiki (onboarding, emergency card, FAQ, policy framework L1-L4, processes, awareness, templates) |
-| HB — Handbook | `ISMS-Handbook/` | Confidential management documentation (clauses, registers) |
+| HB — Handbook | `ISMS-Handbook/` | Confidential management documentation (clauses, registers, management documents, audit programme) |
 | REF — References | `References/` | Standard extracts, reference material (MD extracts + PDF originals) |
 
 ### Policy Hierarchy
@@ -52,7 +52,7 @@ L2 and L3 are strictly separated: L2 defines requirements, L3 operationalizes th
 
 ### Three-Layer Model
 
-CLS (HB) defines WHAT (criteria, scales), PRC (CB) defines HOW (workflow, RACI, triggers), REG (HB) holds results (records).
+CLS (HB) defines WHAT (criteria, scales), PRC (CB) defines HOW (workflow, RACI, triggers), REG (HB) holds results (records). MGT (HB) tracks governance activities (roadmap, meeting log, open items). AUD (HB) manages the audit programme and evidence.
 
 ### ID Schema
 
@@ -88,7 +88,7 @@ Every content document (with metadata block) follows this layout:
 | Second-to-last H2 | `## See also` | Cross-references to related documents |
 | Last H2 | `## Changelog` | Table: Version, Date, Author, Change — newest version first |
 
-Excluded: REF extracts (no metadata block) and TPL templates (fill-in documents).
+Excluded: REF extracts (no metadata block), TPL templates (fill-in documents), and Records (evidence files in Management/Records/ and Audit-Programme/Records/ — no metadata block).
 
 ### Objective and Scope (Layout)
 
