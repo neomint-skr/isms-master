@@ -188,9 +188,9 @@ When populating skeleton documents with draft text: standard/best-practice conte
 | Role | Abbreviation | Responsibility |
 |---|---|---|
 | Chief Information Security Officer (CISO) | CISO | Conception, documentation, advisory |
-| IS-Coordinator | [abbr] | Operational implementation |
-| CEO | [abbr] | Strategic approval |
-| CTO | [abbr] | Technical approval |
+| IS-Coordinator | ISC | Operational implementation |
+| CEO | CEO | Strategic approval |
+| CTO | CTO | Technical approval |
 
 ### Navigation
 

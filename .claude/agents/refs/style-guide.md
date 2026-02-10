@@ -67,5 +67,5 @@ Each section consists of `**Objective:**` (3x2 pattern: 3 paragraphs of 2 senten
 | Gendering | Neutral (Beschaeftigte, Fachverantwortliche). No Binnen-I/asterisk/colon. |
 | Anglicisms | ISO terms (control, asset) always permitted. Everyday anglicisms (login, phishing) only in CB Root/AWR. |
 | Subjunctive | Only L2/CLS (shall-formulations). Otherwise indicative. |
-| H2 style | CB Root/AWR: question ("Was tun?"). L3: imperative ("Schluessel verwalten"). Rest: noun phrase. |
+| H2 style | CB Root/AWR: question ("Was tun?"). L3: imperative ("Schluessel verwalten"). L4: imperative or question. Rest: noun phrase. |
 | Passive | CB Root/AWR: avoid. L1/L3/PRC: sparingly. L2/CLS/REG: permitted to preferred. |
