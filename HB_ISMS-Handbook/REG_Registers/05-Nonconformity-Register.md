@@ -1,5 +1,5 @@
 > **Document ID:** HB_REG_05-Nonconformity-Register
-> **Version:** 00.01.005
+> **Version:** 00.01.006
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** Clause 10.2
@@ -13,7 +13,7 @@
 
 ## Summary
 
-Nonconformities without systematic documentation and root cause analysis lead to recurring failures and erode ISMS effectiveness. The Nonconformity Register captures all ISMS deviations, including their root causes, corrective actions, and effectiveness reviews as required by Clause 10.2. It enables evidence-based continual improvement, provides the audit trail for certification, and transforms individual findings into traceable corrective measures. Without structured NC documentation, recurring issues remain unaddressed and mandatory audit evidence is missing.
+Nonconformities without systematic documentation and root cause analysis lead to recurring failures and erode ISMS effectiveness. The Nonconformity Register captures all ISMS deviations, including their root causes, corrective actions, and effectiveness reviews as required by Clause 10.2. The register is structured by audit source, with separate chapters for each audit cycle and per-category subsections for major nonconformities, minor nonconformities, opportunities for improvement, and observations. It enables evidence-based continual improvement, provides the audit trail for certification, and transforms individual findings into traceable corrective measures. Without structured NC documentation, recurring issues remain unaddressed and mandatory audit evidence is missing.
 
 ## Objective and Scope
 
@@ -25,23 +25,48 @@ The NC process is defined in CB_PRC_10 (Nonconformity Management); inputs come f
 
 **Scope:** All ISMS nonconformities from internal and external sources. Target audience: CISO (coordination), affected role holders (implementation), auditors (evidence).
 
-## NC Entries
+**Data breach incidents** are initially recorded in the incident management process (CB_PRC_01). Incidents that reveal ISMS nonconformities are escalated to this register for root cause analysis and corrective action tracking. The entry references the originating incident ID.
 
-| NC ID | Detection date | Source | Description | Root cause | Corrective action | Responsible | Target date | Status |
-|---|---|---|---|---|---|---|---|---|
-| [NC-001] | [YYYY-MM-DD] | [Internal audit/External audit/Incident/Management review/Performance monitoring] | [NC description] | [Root cause analysis result] | [Corrective action description] | [Responsible person/role] | [YYYY-MM-DD] | [Open/In progress/Closed] |
+### Key
 
-**Source:** Internal audit (findings from CB_PRC_08), External audit (certification body findings), Incident (security incidents or near-misses), Management review (findings from CB_PRC_09), Performance monitoring (KPI deviations from CB_PRC_11).
+| Term | Definition |
+|---|---|
+| Finding ID | Sequential identifier per category — OFI-xxx for opportunities for improvement, NC-xxx for nonconformities, OBS-xxx for observations |
+| OFI | Opportunity for improvement |
+| OBS | Observation |
+| Minor NC | Minor nonconformity |
+| Major NC | Major nonconformity |
+| Reference | ISO clause or Annex A control reference for OFIs; root cause analysis result for NCs |
+| Statement | Corrective action or implemented measure — describes what was done or what is planned, with ISMS document references |
+| Status | Open (not yet addressed), In progress (implementation ongoing), Closed (implemented and verified) |
 
-**Status:** Open (newly identified, not yet addressed), In progress (corrective action implementation ongoing), Closed (corrective action implemented and effectiveness verified).
+## [YYYY] — [Audit Body] [Audit Type]
 
-## Effectiveness Review
+[Audit type] by [audit body], [month] [year]. [N] findings identified.
 
-| NC ID | Review date | Effective | Evidence | Reviewer | Follow-up required |
-|---|---|---|---|---|---|
-| [NC-001] | [YYYY-MM-DD] | [Yes/No] | [Evidence description] | [Reviewer name/role] | [Yes — description / No] |
+### Major Nonconformities
 
-Effectiveness reviews are conducted after implementation of corrective actions to verify that the root cause has been addressed (Clause 10.2 d).
+| Finding ID | Description | Reference | Statement | Responsible | Target date | Status |
+|---|---|---|---|---|---|---|
+| [NC-001] | [Finding description] | [Root cause / Annex A reference] | [Corrective action or implemented measure] | [Responsible person/role] | [YYYY-MM-DD] | [Open/In progress/Closed] |
+
+### Minor Nonconformities
+
+| Finding ID | Description | Reference | Statement | Responsible | Target date | Status |
+|---|---|---|---|---|---|---|
+| [NC-001] | [Finding description] | [Root cause / Annex A reference] | [Corrective action or implemented measure] | [Responsible person/role] | [YYYY-MM-DD] | [Open/In progress/Closed] |
+
+### Opportunities for Improvement
+
+| Finding ID | Description | Reference | Statement | Responsible | Target date | Status |
+|---|---|---|---|---|---|---|
+| [OFI-001] | [Finding description] | [ISO clause or Annex A reference] | [Improvement measure or implemented change] | [Responsible person/role] | [YYYY-MM-DD] | [Open/In progress/Closed] |
+
+### Observations
+
+| Finding ID | Description | Reference | Statement | Responsible | Target date | Status |
+|---|---|---|---|---|---|---|
+| [OBS-001] | [Finding description] | [ISO clause or Annex A reference] | [Response or implemented measure] | [Responsible person/role] | [YYYY-MM-DD] | [Open/In progress/Closed] |
 
 ## Responsibilities
 
@@ -54,6 +79,7 @@ Effectiveness reviews are conducted after implementation of corrective actions t
 - CB_PRC_10-Nonconformity-Management — NC management process
 - CB_PRC_08-Internal-Audit — Audit findings as NC source
 - CB_PRC_09-Management-Review — Management review findings as NC source
+- CB_PRC_01-Incident-Management — Data breach incidents as potential NC source
 - HB_CLS_10.1-Continual-Improvement — Improvement framework
 
 
@@ -61,6 +87,7 @@ Effectiveness reviews are conducted after implementation of corrective actions t
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.006 | 2026-02-10 | [CISO] | Per-audit chapter structure (H2 per audit, H3 per category); Key table; data breach escalation note; removed Effectiveness Review section |
 | 00.01.005 | 2026-02-10 | [CISO] | Populated register tables with structure and guidance |
 | 00.01.004 | 2026-02-09 | [CISO] | Aligned role terminology |
 | 00.01.003 | 2026-02-09 | [CISO] | Objective and Scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |

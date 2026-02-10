@@ -1,5 +1,5 @@
 > **Document ID:** HB_REG_02-Statement-of-Applicability
-> **Version:** 00.04.007
+> **Version:** 00.04.008
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** Clause 6.1.3 d
@@ -25,7 +25,7 @@ Control selection takes place during risk treatment (CB_PRC_07, HB_CLS_8.3) and 
 
 **Scope:** All 93 Annex A controls. Target audience: CISO (maintenance), top management (approval), auditors (evidence).
 
-### Column Legend
+### Key
 
 | Column | Content |
 |---|---|
@@ -163,6 +163,7 @@ Control selection takes place during risk treatment (CB_PRC_07, HB_CLS_8.3) and 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.04.008 | 2026-02-10 | [CISO] | Renamed Column Legend to Key (register key convention) |
 | 00.04.007 | 2026-02-10 | [CISO] | A.5.29-30: added L3_08 and REG_10 as secondary documents |
 | 00.04.006 | 2026-02-09 | [CISO] | Aligned role terminology |
 | 00.04.005 | 2026-02-09 | [CISO] | Objective and Scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |

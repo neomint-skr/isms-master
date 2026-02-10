@@ -1,5 +1,5 @@
 > **Document ID:** HB_REG_10-BIA-Register
-> **Version:** 00.01.000
+> **Version:** 00.01.001
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** A.5.29-5.30
@@ -28,6 +28,13 @@ BIA results are derived from the asset inventory (HB_REG_03) and feed into risk 
 
 **Scope:** All business-critical IT services and processes within the ISMS scope. Target audience: CISO (analysis), IT operations (recovery planning), asset owners (impact assessment), auditors (evidence).
 
+### Key
+
+| Term | Definition |
+|---|---|
+| MTPD | Maximum Tolerable Period of Disruption — the longest time a business activity can be unavailable before causing unacceptable consequences |
+| MBCO | Minimum Business Continuity Objective — the minimum level of service that must be maintained during a disruption (expressed as percentage of normal capacity) |
+
 ## Tier Definitions
 
 The following tier model is derived from CB_POL_L2_06-Business-Continuity. It governs recovery objectives, backup frequency, and test requirements.
@@ -53,6 +60,12 @@ The following table tracks IT continuity plans required by CB_POL_L2_06-Business
 | Asset/Process | Plan reference | Responsible | Last review | Next review | Result |
 |---|---|---|---|---|---|
 
+## Test Log
+
+| Date | Component | Test | Remarks | Executed by |
+|---|---|---|---|---|
+| [YYYY-MM-DD] | [System/component] | [Test type] | [Findings and observations] | [Tester name/role] |
+
 ## Responsibilities
 
 - **Maintenance:** CISO with support from IT operations and asset owners
@@ -72,4 +85,5 @@ The following table tracks IT continuity plans required by CB_POL_L2_06-Business
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.001 | 2026-02-10 | [CISO] | Key table (MTPD, MBCO); Test Log section |
 | 00.01.000 | 2026-02-10 | [CISO] | Initial version |

@@ -1,5 +1,5 @@
 > **Document ID:** HB_REG_07-Risk-Treatment-Plan
-> **Version:** 00.01.005
+> **Version:** 00.01.006
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** Clause 6.1.3 e
@@ -25,17 +25,19 @@ Treatment decisions are derived from the risk register (HB_REG_06) and developed
 
 **Scope:** All risks above the acceptance threshold (CB_POL_L2_11). Target audience: Risk owners (implementation), CISO (tracking), top management (approval), auditors (evidence).
 
+### Key
+
+| Term | Definition |
+|---|---|
+| Treatment option | Avoid (eliminate the activity that creates the risk), Mitigate (implement controls to reduce likelihood or impact), Transfer (shift risk to third party through insurance or contract), Accept (conscious decision to retain risk). Defined in CB_POL_L2_11 |
+| Status | Planned (treatment decision made, implementation pending), In progress (control implementation active), Implemented (control operational, effectiveness not yet verified), Verified (control effective, residual risk confirmed) |
+| Expected residual risk | Anticipated risk level after full implementation of planned controls. Must be below acceptance threshold (CB_POL_L2_11) or formally accepted by top management |
+
 ## Treatment Plan
 
 | Risk ID | Risk description | Treatment option | Control(s) | Annex A ref | Responsible | Target date | Expected residual risk | Status |
 |---|---|---|---|---|---|---|---|---|
 | [R-001] | [Risk description] | [Avoid/Mitigate/Transfer/Accept] | [Control description] | [A.x.x] | [Responsible person/role] | [YYYY-MM-DD] | [Low/Medium/High] | [Planned/In progress/Implemented/Verified] |
-
-**Treatment option:** Avoid (eliminate the activity that creates the risk), Mitigate (implement controls to reduce likelihood or impact), Transfer (shift risk to third party through insurance or contract), Accept (conscious decision to retain risk). Options are defined in CB_POL_L2_11.
-
-**Status:** Planned (treatment decision made, implementation pending), In progress (control implementation active), Implemented (control operational, effectiveness not yet verified), Verified (control effective, residual risk confirmed).
-
-**Expected residual risk:** The anticipated risk level after full implementation of the planned control(s). Must be below the acceptance threshold defined in CB_POL_L2_11 or formally accepted by top management.
 
 ## Approval
 
@@ -63,6 +65,7 @@ The risk treatment plan requires formal approval by top management (Clause 6.1.3
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.006 | 2026-02-10 | [CISO] | Key table; removed inline bold definitions |
 | 00.01.005 | 2026-02-10 | [CISO] | Populated Summary, Treatment Plan, Approval, Responsibilities, See also |
 | 00.01.004 | 2026-02-09 | [CISO] | Aligned role terminology |
 | 00.01.003 | 2026-02-09 | [CISO] | Objective and Scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |

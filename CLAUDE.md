@@ -81,7 +81,7 @@ Every content document (with metadata block) follows this layout:
 |---|---|---|
 | After separator | `# [Document name]` | Type + topic in natural language (see H1 convention) |
 | 1st H2 | `## Summary` | 3-5 sentences: context, orientation, ISMS contribution, consequence (details in `refs/style-guide.md`) |
-| 2nd H2 | `## Objective and Scope` | Bold labels: Objective + Scope (details below) |
+| 2nd H2 | `## Objective and Scope` | Bold labels: Objective + Scope (details below). REG documents include `### Key` table for register-specific terminology |
 | Middle | Subject chapters | Document-type specific (clause numbers, process steps, register data) |
 | Before See also | Allocation matrix (if applicable) | Only in POL documents. Mapping to parent level (e.g. L1 to L2) |
 | Before See also | `## Responsibilities` (REG only) | Register maintenance information |
