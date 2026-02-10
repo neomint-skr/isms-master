@@ -37,8 +37,8 @@ try {
 
 appendFileSync(logFile, `${ts} CMD: ${command.slice(0, 200)}\n`);
 
-// Nur bei git commit pushen
-if (!command.startsWith('git commit')) {
+// Nur bei git commit pushen (command kann mit cd anfangen)
+if (!command.includes('git commit')) {
   appendFileSync(logFile, `${ts} SKIP (not git commit)\n`);
   process.exit(0);
 }

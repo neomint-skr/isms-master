@@ -24,8 +24,8 @@ try {
   process.exit(0);
 }
 
-// Nur bei git commit pruefen
-if (!command.startsWith('git commit')) {
+// Nur bei git commit pruefen (command kann mit cd anfangen)
+if (!command.includes('git commit')) {
   process.exit(0);
 }
 
