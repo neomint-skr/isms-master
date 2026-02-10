@@ -1,9 +1,9 @@
 > **Document ID:** HB_REG_01-IS-Objectives-Register
-> **Version:** 00.01.006
+> **Version:** 00.01.007
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** Clause 6.2
-> **Last modified:** 2026-02-09
+> **Last modified:** 2026-02-10
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -13,7 +13,7 @@
 
 ## Summary
 
-<!-- TODO -->
+IS objectives define measurable security outcomes required by Clause 6.2 and must be systematically tracked to demonstrate commitment and progress. This register records all strategic, tactical and operational IS objectives with their associated KPIs, target values, achievement status and responsible parties. It serves as the primary data source for performance monitoring (CB_PRC_11) and provides mandatory input for management reviews (CB_PRC_09), enabling evidence-based decision-making. Without this register, the organization lacks verifiable evidence of objective pursuit and achievement — a critical finding in certification audits.
 
 ## Objective and Scope
 
@@ -39,21 +39,39 @@ Objectives cascade: strategic objectives are translated into tactical objectives
 
 ## Monitoring Results
 
-<!-- TODO -->
+Objective achievement is measured against defined KPIs and tracked over time:
+
+| Objective ID | Objective | Level | KPI | Target | Actual | Status | Responsible | Measurement date |
+|---|---|---|---|---|---|---|---|---|
+| [OBJ-S01] | [Strategic objective] | Strategic | [KPI description] | [Target value] | [Actual value] | [On track/At risk/Not achieved/Achieved] | [Responsible role] | [YYYY-MM-DD] |
+
+**Status definitions:**
+- **On track:** Actual performance meets or exceeds target
+- **At risk:** Performance below target but corrective action in progress
+- **Not achieved:** Target missed; requires management attention
+- **Achieved:** Objective completed successfully
+
+Measurement frequency is defined per objective; results are reviewed quarterly and reported in the management review (CB_PRC_09).
 
 ## Responsibilities
 
-- **Maintenance:** <!-- TODO -->
-- **Trigger:** <!-- TODO -->
+- **Maintenance:** CISO with support from domain leads
+- **Trigger:** Quarterly measurement, annual review during management review
 - **Process:** CB_PRC_11-Performance-Monitoring
 
 ## See also
+
+- HB_CLS_6.2-IS-Objectives — Clause requirements for IS objectives
+- CB_PRC_11-Performance-Monitoring — Measurement and monitoring process
+- CB_PRC_09-Management-Review — Objectives as management review input
+- CB_POL_L1_01-Policy — IS policy principles as strategic basis
 
 
 ## Changelog
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.007 | 2026-02-10 | [CISO] | Completed register structure: Summary, Monitoring Results table, Responsibilities, See also |
 | 00.01.006 | 2026-02-09 | [CISO] | Aligned role terminology |
 | 00.01.005 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |
 | 00.01.004 | 2026-02-09 | [CISO] | Objective hierarchy: three-level model strategic/tactical/operational (REC-402) |
