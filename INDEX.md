@@ -1,6 +1,6 @@
 # INDEX
 
-> Structural data of the [Organization] ISMS. 91 Markdown files, 93 Annex A controls.
+> Structural data of the [Organization] ISMS. 96 Markdown files, 93 Annex A controls.
 > For working instructions see CLAUDE.md.
 > ID schema: folder abbreviations (see table below) + filename. Separator: `_` between levels, `-` within names.
 
