@@ -44,13 +44,13 @@
 
 ### CB -- CB_Cyber-Security-Cookbook / Root
 
-**01-Getting-Started.md** -- Introduction to the topic, structure and navigation of the Cookbook
+**Getting-Started.md** -- Introduction to the topic, structure and navigation of the Cookbook
 H2: Why this Cookbook?, How is it structured?, What do you need to do?, Key contact points
 
-**02-Emergency-Card.md** -- Immediate help for security incidents
+**Emergency-Card.md** -- Immediate help for security incidents
 H2: Security incident -- what to do?, Who to contact?, Common incidents, What NOT to do
 
-**03-FAQ.md** -- Frequently asked questions about information security in daily work
+**FAQ.md** -- Frequently asked questions about information security in daily work
 
 ### CB -- CB_Cyber-Security-Cookbook / POL_Policy-Framework / L1_Policy
 
@@ -166,7 +166,7 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 | 5.21 | CB_POL_L2_05 | CB_POL_L3_07 |
 | 5.22 | CB_POL_L2_05 | CB_PRC_06 |
 | 5.23 | CB_POL_L2_05 | CB_POL_L3_07 |
-| 5.24 | CB_POL_L2_07 | CB_PRC_01, CB_02 |
+| 5.24 | CB_POL_L2_07 | CB_PRC_01, CB_Emergency-Card |
 | 5.25 | CB_POL_L2_07 | CB_PRC_01 |
 | 5.26 | CB_POL_L2_07 | CB_PRC_01 |
 | 5.27 | CB_POL_L2_07 | CB_PRC_01 |
@@ -192,7 +192,7 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 | 6.5 | CB_POL_L2_10 | CB_POL_L2_01 |
 | 6.6 | CB_POL_L2_10 | CB_AWR_02 |
 | 6.7 | CB_POL_L2_10 | CB_POL_L3_01 |
-| 6.8 | CB_POL_L2_10 | CB_POL_L3_01, CB_PRC_01, CB_02 |
+| 6.8 | CB_POL_L2_10 | CB_POL_L3_01, CB_PRC_01, CB_Emergency-Card |
 
 ### A.7 Physical Controls (14)
 

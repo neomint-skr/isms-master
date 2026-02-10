@@ -1,4 +1,4 @@
-> **Document ID:** CB_01-Getting-Started
+> **Document ID:** CB_Getting-Started
 > **Version:** 00.01.004
 > **Classification:** Internal
 > **Author:** CISO
@@ -21,7 +21,7 @@
 
 This getting-started page explains the purpose of the Cyber Security Cookbook, describes its structure, and highlights the most important starting points. It answers the question "Where do I begin?" in under two minutes.
 
-The page is the recommended starting point for all employees and links to CB_AWR_01 (Awareness), CB_02 (Emergency Card), and CB_03 (FAQ) as next steps.
+The page is the recommended starting point for all employees and links to CB_AWR_01 (Awareness), CB_Emergency-Card (Emergency Card) and CB_FAQ (FAQ) as next steps.
 
 **Scope:** All employees and external personnel. Entry document for the Cyber Security Cookbook.
 

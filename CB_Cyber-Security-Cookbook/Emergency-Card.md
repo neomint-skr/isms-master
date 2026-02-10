@@ -1,4 +1,4 @@
-> **Document ID:** CB_02-Emergency-Card
+> **Document ID:** CB_Emergency-Card
 > **Version:** 00.01.004
 > **Classification:** Internal
 > **Author:** CISO

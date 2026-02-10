@@ -1,4 +1,4 @@
-> **Document ID:** CB_03-FAQ
+> **Document ID:** CB_FAQ
 > **Version:** 00.01.004
 > **Classification:** Internal
 > **Author:** CISO
@@ -21,7 +21,7 @@
 
 This FAQ answers the most frequent IS questions encountered in day-to-day work — from remote working rules and personal devices to incident reporting. It relieves the Chief Information Security Officer and ensures consistent, accurate answers.
 
-The FAQ forms part of the awareness programme and is provided as a complement to CB_01 (Getting Started) and CB_AWR_01 (Awareness Fundamentals). New questions are added on an as-needed basis.
+The FAQ forms part of the awareness programme and is provided as a complement to CB_Getting-Started (Getting Started) and CB_AWR_01 (Awareness Fundamentals). New questions are added on an as-needed basis.
 
 **Scope:** All employees. Self-service reference for everyday IS questions.
 
