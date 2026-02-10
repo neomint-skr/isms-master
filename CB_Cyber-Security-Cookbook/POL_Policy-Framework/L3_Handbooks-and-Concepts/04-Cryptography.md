@@ -1,9 +1,9 @@
 > **Document ID:** CB_POL_L3_04-Cryptography
-> **Version:** 00.01.005
+> **Version:** 00.01.006
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.17, A.8.5, A.8.24
-> **Last modified:** 2026-02-09
+> **Last modified:** 2026-02-10
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -18,6 +18,7 @@
 ## Objective and Scope
 
 **Standard reference:** CB_POL_L2_01-Access-and-Identity, CB_POL_L2_02-Information-Protection
+**Condensed by:** —
 
 **Objective:** Weak or improperly applied cryptography compromises the protection of confidential information. Without practical requirements for algorithms, key lengths, and key management, heterogeneous and insecure implementations arise.
 
@@ -46,6 +47,7 @@ The requirements apply to all IT systems and applications that use cryptographic
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.006 | 2026-02-10 | CISO | Added L4 traceability field (Condensed by) |
 | 00.01.005 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.004 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |
 | 00.01.003 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/FOR WHAT/WHERE) |

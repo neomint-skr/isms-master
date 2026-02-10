@@ -35,7 +35,7 @@ Active servers: sequential-thinking, basic-memory, context7.
 
 | Tier | Path | Purpose |
 |---|---|---|
-| CB — Cookbook | `CB_Cyber-Security-Cookbook/` | Employee wiki (onboarding, emergency card, FAQ, policy framework L1-L3, processes, awareness, templates) |
+| CB — Cookbook | `CB_Cyber-Security-Cookbook/` | Employee wiki (onboarding, emergency card, FAQ, policy framework L1-L4, processes, awareness, templates) |
 | HB — Handbook | `HB_ISMS-Handbook/` | Confidential management documentation (clauses, registers) |
 | REF — References | `REF_References/` | Standard extracts, reference material (MD extracts + PDF originals) |
 
@@ -46,8 +46,9 @@ Active servers: sequential-thinking, basic-memory, context7.
 | L1 | Policy | WHY? Strategic principles | "We protect our information assets" |
 | L2 | Standard | WHAT? Requirements and rules | "Access is granted based on least privilege" |
 | L3 | Handbook and Concept | HOW? Concrete instructions, checklists, tools | "How to set up MFA: Step 1..." |
+| L4 | Cheat Sheet | AT A GLANCE? Quick reference | "Password: min 12 chars, MFA mandatory, never share" |
 
-L2 and L3 are strictly separated: L2 defines requirements, L3 operationalizes them. PRC (processes) define the workflow (RACI, triggers, steps) — complementary to L3.
+L2 and L3 are strictly separated: L2 defines requirements, L3 operationalizes them. L4 condenses L3 into quick references — no new requirements, no control coverage. PRC (processes) define the workflow (RACI, triggers, steps) — complementary to L3.
 
 ### Three-Layer Model
 
@@ -93,7 +94,7 @@ Excluded: REF extracts (no metadata block) and TPL templates (fill-in documents)
 
 Every `## Objective and Scope` section follows this layout:
 
-1. Traceability fields (L2/L3/REG only, see Traceability section)
+1. Traceability fields (L2/L3/L4/REG only, see Traceability section)
 2. `**Objective:**` — 3x2 pattern: 3 paragraphs of 2 sentences each (WHY, WHAT FOR, WHERE)
 3. `**Scope:**` — 1-2 sentences: WHO (roles/audience) + WHAT (scope boundaries)
 
@@ -132,8 +133,10 @@ Each level references its predecessor level in the `## Objective and Scope` sect
 | L2 | Policy reference | Principle IDs | `**Policy reference:** P1, P3` |
 | L2 | Operationalized by | L3 short-form IDs | `**Operationalized by:** CB_POL_L3_04, CB_POL_L3_05` |
 | L3 | Standard reference | L2 short-form IDs | `**Standard reference:** CB_POL_L2_01, CB_POL_L2_02` |
+| L3 | Condensed by | L4 short-form IDs (or `—`) | `**Condensed by:** CB_POL_L4_01, CB_POL_L4_03` |
+| L4 | Handbook reference | L3 short-form IDs | `**Handbook reference:** CB_POL_L3_01, CB_POL_L3_02` |
 
-Principles P1-P6 are defined in the policy (CB_POL_L1_01). L2 documents without L3 operationalization omit "Operationalized by".
+Principles P1-P6 are defined in the policy (CB_POL_L1_01). L2 documents without L3 operationalization omit "Operationalized by". L3 documents without L4 condensation use `—`.
 
 ### Reference Citation
 
@@ -151,7 +154,7 @@ External sources reside in `REF_References/LIB_Library/` as PDF originals + MD e
 
 ### Dependency Rules
 
-- **Vertical:** Policy > Standards > Handbooks/Concepts > Processes. Changes propagate top-down.
+- **Vertical:** Policy > Standards > Handbooks/Concepts > Cheat Sheets > Processes. Changes propagate top-down.
 - **Horizontal:** SoA (SSOT) > Coverage Matrix (INDEX.md) > Documents. Never the reverse.
 - **Control coverage:** Each of the 93 Annex A controls must be addressed in at least one document.
 - **Terminology:** Consistent terms across all files.

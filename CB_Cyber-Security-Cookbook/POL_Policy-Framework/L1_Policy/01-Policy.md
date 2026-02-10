@@ -1,9 +1,9 @@
 > **Document ID:** CB_POL_L1_01-Policy
-> **Version:** 00.01.006
+> **Version:** 00.01.007
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.1
-> **Last modified:** 2026-02-09
+> **Last modified:** 2026-02-10
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -19,9 +19,9 @@
 
 **Objective:** Information constitutes a business-critical asset of [Organization]. Without a strategic commitment by top management to information security, the foundation for all further controls and the ISMS is missing.
 
-This policy defines six principles (P1-P6) that serve as the strategic framework for all IS decisions. It articulates top management commitment and establishes the three-tier policy framework (L1>L2>L3).
+This policy defines six principles (P1-P6) that serve as the strategic framework for all IS decisions. It articulates top management commitment and establishes the four-tier policy framework (L1>L2>L3>L4).
 
-The principles are translated into normative requirements through twelve L2 standards and operationalized into concrete instructions through seven L3 handbooks and concepts. The allocation matrix ensures traceability from the strategic level down to operational implementation.
+The principles are translated into normative requirements through twelve L2 standards, operationalized into concrete instructions through eight L3 handbooks and concepts, and condensed into quick references through L4 cheat sheets. The allocation matrix ensures traceability from the strategic level down to operational implementation.
 
 **Scope:** The entire organization of [Organization] — all employees, management, external personnel, and business processes within the ISMS scope.
 
@@ -59,15 +59,16 @@ Top management enables other management functions to demonstrate their leadershi
 
 ## Policy Framework
 
-This policy (L1) forms the top tier of the policy framework of [Organization]. The principles are cascaded through three tiers into the organization:
+This policy (L1) forms the top tier of the policy framework of [Organization]. The principles are cascaded through four tiers into the organization:
 
 | Tier | Character | Key question |
 |---|---|---|
 | L1 — Policy | Strategic | WHY is information security important? |
 | L2 — Standards | Normative | WHAT must be done to implement the principles? |
 | L3 — Handbooks and Concepts | Operational | HOW do different employee groups implement the standards in daily work? |
+| L4 — Cheat Sheets | Quick reference | AT A GLANCE — what are the key rules for daily work? |
 
-Each L2 standard serves at least one principle. Each L3 handbook operationalizes at least one L2 standard. This ensures that every operational requirement is traceable back to a strategic rationale.
+Each L2 standard serves at least one principle. Each L3 handbook operationalizes at least one L2 standard. L4 cheat sheets condense L3 handbooks into quick references for daily use. This ensures that every operational requirement is traceable back to a strategic rationale.
 
 ### Allocation Matrix L1 > L2
 
@@ -87,6 +88,7 @@ Each L2 standard serves at least one principle. Each L3 handbook operationalizes
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.007 | 2026-02-10 | CISO | Extended policy framework from three to four tiers (L4 Cheat Sheets) |
 | 00.01.006 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.005 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |
 | 00.01.004 | 2026-02-09 | CISO | Management commitment: seven obligations of top management (REC-412) |

@@ -1,5 +1,5 @@
 > **Document ID:** CB_POL_L3_05-Data-Backup
-> **Version:** 00.01.007
+> **Version:** 00.01.008
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.29-5.30, A.8.10, A.8.13
@@ -18,6 +18,7 @@
 ## Objective and Scope
 
 **Standard reference:** CB_POL_L2_02-Information-Protection, CB_POL_L2_06-Business-Continuity
+**Condensed by:** —
 
 **Objective:** Data loss jeopardizes business continuity and compliance with retention obligations. Without practical guidance for backup strategies, recovery procedures, and secure data deletion, RPO/RTO requirements cannot be met reliably.
 
@@ -64,6 +65,7 @@ Retention periods for backup data shall be defined based on statutory requiremen
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.008 | 2026-02-10 | CISO | Added L4 traceability field (Condensed by) |
 | 00.01.007 | 2026-02-10 | CISO | Added L3_08 and REG_10 cross-references |
 | 00.01.006 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.005 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |

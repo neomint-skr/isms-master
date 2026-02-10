@@ -13,6 +13,7 @@ Verbal overrides ("simpler", "more formal") shift style along the table values.
 | L1 | All + management | Formal (Sie) | Active, motivating | Moderate, defined at first use | Max 20 words |
 | L2 | Domain owners | Impersonal | Passive permitted | High, ISO-aligned | Max 25 words |
 | L3 | Admins, devs | Imperative (H2), impersonal (body) | Mixed | Moderately high | Max 20 words |
+| L4 | All employees | Imperative | Active, direct | Everyday language, no ISO terms | Max 15 words |
 | PRC | Process participants | Impersonal | Mixed | High | Max 25 words |
 | CLS, REG | Auditors, ISO | Impersonal | Passive preferred | Very high, ISO verbatim | Max 25 words |
 
@@ -35,6 +36,7 @@ Every `## Summary` consists of 3-5 sentences containing four elements. No refere
 | L1 | Why does the org need this? | Which principles? | What does the policy anchor? | What is missing without strategic basis? |
 | L2 | Which risk is addressed? | Which requirements? | Which controls covered? | What happens on non-compliance? |
 | L3 | Which task is described? | Which steps/tools? | Which standards operationalized? | What goes wrong without guidance? |
+| L4 | Which everyday situation? | What does the reader find? | Which L3 handbooks condensed? | What happens on non-compliance? |
 | PRC | When is the process triggered? | Which core steps? | Which CLS requirement implemented? | What happens without the process? |
 | REG | Why is this data maintained? | Which information captured? | Which decisions supported? | What is missing without documentation? |
 | AWR | Why relevant in daily work? | What do I learn here? | How does knowledge protect the org? | What happens without awareness? |
@@ -52,6 +54,7 @@ Each section consists of `**Objective:**` (3x2 pattern: 3 paragraphs of 2 senten
 | L1 | Strategic IS necessity | Principles + governance framework | Policy hierarchy (L1>L2>L3) | Who in the organization? |
 | L2 | Regulatory/operational gap | Normative requirements + controls | L1 upstream + L3/PRC downstream | Who + what is in scope? |
 | L3 | Practical implementation gap | Concrete guidance/checklists | L2 upstream + tools/systems | Which roles + systems? |
+| L4 | Everyday risk/behavioral gap | Target behavior/quick steps | L3 upstream + employee daily work | Which audience + usage context? |
 | PRC | Operational trigger/need | Process output | CLS requirement + register result | When triggered + who participates? |
 | REG | Information gap/evidence need | Data structure + decision basis | Input processes + usage | Data scope + who maintains/uses? |
 | AWR | Knowledge gap/behavioral risk | Target knowledge/behavior | Policy reference + training program | Which employee group? |

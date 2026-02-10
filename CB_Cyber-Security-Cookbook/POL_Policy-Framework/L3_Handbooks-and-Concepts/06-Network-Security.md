@@ -1,9 +1,9 @@
 > **Document ID:** CB_POL_L3_06-Network-Security
-> **Version:** 00.01.005
+> **Version:** 00.01.006
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.8.20-8.22
-> **Last modified:** 2026-02-09
+> **Last modified:** 2026-02-10
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -18,6 +18,7 @@
 ## Objective and Scope
 
 **Standard reference:** CB_POL_L2_03-System-and-Network
+**Condensed by:** —
 
 **Objective:** Networks connect all IT systems and thus form the backbone of the organization — but they are also the primary attack vector for lateral movement. Without practical requirements for network architecture, segmentation, and service hardening, networks remain insecurely configured.
 
@@ -46,6 +47,7 @@ The requirements apply to all network components within the ISMS scope. Implemen
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.006 | 2026-02-10 | CISO | Added L4 traceability field (Condensed by) |
 | 00.01.005 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.004 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |
 | 00.01.003 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/FOR WHAT/WHERE) |

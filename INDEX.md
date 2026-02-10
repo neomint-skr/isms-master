@@ -71,6 +71,10 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 **11-Risk-Management.md** -- Risk criteria, risk matrix, protection requirement categories, treatment options, roles, acceptance criteria
 **12-AI-Usage.md** -- GenAI approval, input rules, output usage (BEYOND-ISO)
 
+### CB -- CB_Cyber-Security-Cookbook / POL_Policy-Framework / L4_Cheat-Sheets
+
+(empty — to be populated)
+
 ### CB -- CB_Cyber-Security-Cookbook / POL_Policy-Framework / L3_Handbooks-and-Concepts
 
 **01-User-Handbook.md** -- Acceptable use, remote working, classification, clear desk, incident reporting
@@ -262,6 +266,7 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 | L1 | Level 1 (Policy) | L1_Policy/ |
 | L2 | Level 2 (Standards) | L2_Standards/ |
 | L3 | Level 3 (Handbooks and Concepts) | L3_Handbooks-and-Concepts/ |
+| L4 | Level 4 (Cheat Sheets) | L4_Cheat-Sheets/ |
 | AWR | Awareness | AWR_Awareness-Training/ |
 | TPL | Template | TPL_Templates/ |
 | REF | References | REF_References/ |

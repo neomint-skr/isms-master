@@ -1,9 +1,9 @@
 > **Document ID:** CB_POL_L3_02-Admin-Handbook
-> **Version:** 00.01.005
+> **Version:** 00.01.006
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.15, A.8.2, A.8.8-8.9, A.8.15-8.16
-> **Last modified:** 2026-02-09
+> **Last modified:** 2026-02-10
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -18,6 +18,7 @@
 ## Objective and Scope
 
 **Standard reference:** CB_POL_L2_01-Access-and-Identity, CB_POL_L2_03-System-and-Network
+**Condensed by:** —
 
 **Objective:** IT administrators implement the technical security requirements operationally. Without practical guidance for access management, system hardening, vulnerability handling, and logging, policies are implemented inconsistently.
 
@@ -54,6 +55,7 @@ The instructions reference the deployed IT systems and tools. The associated pro
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.006 | 2026-02-10 | CISO | Added L4 traceability field (Condensed by) |
 | 00.01.005 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.004 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |
 | 00.01.003 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/FOR WHAT/WHERE) |

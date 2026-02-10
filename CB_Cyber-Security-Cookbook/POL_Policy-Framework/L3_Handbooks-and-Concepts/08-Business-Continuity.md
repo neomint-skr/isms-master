@@ -1,5 +1,5 @@
 > **Document ID:** CB_POL_L3_08-Business-Continuity
-> **Version:** 00.01.000
+> **Version:** 00.01.001
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.29-5.30
@@ -18,6 +18,7 @@ Business disruptions from cyberattacks, infrastructure failures, or natural even
 ## Objective and Scope
 
 **Standard reference:** CB_POL_L2_06-Business-Continuity
+**Condensed by:** —
 
 **Objective:** Organizations face the risk of prolonged outages when business continuity measures lack practical implementation guidance. Without a structured methodology for impact analysis, plan development, and recovery coordination, normative requirements remain theoretical and unenforceable.
 
@@ -226,4 +227,5 @@ Document findings and corrective actions. Update the affected continuity plan ba
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.001 | 2026-02-10 | CISO | Added L4 traceability field (Condensed by) |
 | 00.01.000 | 2026-02-10 | CISO | Initial version |

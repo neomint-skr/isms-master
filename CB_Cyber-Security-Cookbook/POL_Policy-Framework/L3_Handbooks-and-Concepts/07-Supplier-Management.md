@@ -1,9 +1,9 @@
 > **Document ID:** CB_POL_L3_07-Supplier-Management
-> **Version:** 00.01.005
+> **Version:** 00.01.006
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.19-5.23
-> **Last modified:** 2026-02-09
+> **Last modified:** 2026-02-10
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -18,6 +18,7 @@ Suppliers and cloud providers frequently process sensitive organizational inform
 ## Objective and Scope
 
 **Standard reference:** CB_POL_L2_05-Suppliers-and-Cloud
+**Condensed by:** —
 
 **Objective:** Collaboration with suppliers and cloud providers requires practical tools for assessment, contract design, and monitoring. Without concrete instructions, the normative requirements of the policy are difficult to implement in day-to-day operations.
 
@@ -187,6 +188,7 @@ The procurement and use of cloud services requires a systematic security assessm
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.006 | 2026-02-10 | CISO | Added L4 traceability field (Condensed by) |
 | 00.01.005 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.004 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |
 | 00.01.003 | 2026-02-09 | CISO | Subject sections populated, summary and see-also added (Batch-E) |

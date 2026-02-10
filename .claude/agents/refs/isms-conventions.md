@@ -58,7 +58,7 @@ Prohibited synonym for `## See also`: Verbundene Dokumente.
 
 **Format "## Objective and scope":**
 
-1. Traceability fields prepended (L2/L3 only)
+1. Traceability fields prepended (L2/L3/L4 only)
 2. `**Objective:**` — 3x2 pattern: 3 paragraphs of 2 sentences (WHY > FOR WHAT > WHERE). More informative than Summary.
 3. `**Scope:**` — 1-2 sentences: WHO (roles/audience) + WHAT (scope boundaries)
 
@@ -67,6 +67,7 @@ Prohibited synonym for `## See also`: Verbundene Dokumente.
 | CLS | Assignment purpose (clause > documents) | ISMS area + audience |
 | L2 | Normative requirements/criteria | Roles + scope boundaries |
 | L3 | Concrete tasks/activities | Roles + systems |
+| L4 | Condensed quick reference | Target audience + usage context |
 | PRC | Process result + target documents | Trigger + participating roles |
 | REG | Data structure + SSOT status | Data scope + maintenance/usage |
 
@@ -86,6 +87,7 @@ No technical prefix (Policy:, Process: etc.), no clause numbers in H1.
 | L1 | Information Security Policy | `# Information Security Policy` |
 | L2 | [Topic] Standard | `# Access and Identity Standard` |
 | L3 | [Topic] Handbook/Concept | `# User Handbook` |
+| L4 | [Topic] Cheat Sheet | `# Password Security Cheat Sheet` |
 | AWR | Free descriptive | `# Awareness Fundamentals` |
 | CB Root | Free descriptive | `# Getting Started`, `# Emergency Card` |
 
@@ -115,8 +117,9 @@ On change: update +1, update `Last modified`, add changelog row. New documents: 
 | L1 | Policy | WHY? Strategic principles (P1-P6) |
 | L2 | Standard | WHAT? Requirements and rules |
 | L3 | Handbook and Concept | HOW? Concrete guidance, checklists |
+| L4 | Cheat Sheet | AT A GLANCE? Quick reference |
 
-L2 and L3 strictly separated. PRC (processes) define workflow (RACI, trigger, steps) — complementary to L3.
+L2 and L3 strictly separated. L4 condenses L3 into quick references — no new requirements, no control coverage. PRC (processes) define workflow (RACI, trigger, steps) — complementary to L3.
 
 ## Traceability
 
@@ -125,8 +128,10 @@ L2 and L3 strictly separated. PRC (processes) define workflow (RACI, trigger, st
 | L2 | `Policy reference` | Principle IDs (P1-P6) |
 | L2 | `Operationalized by` | L3 short-form IDs (or `—`) |
 | L3 | `Standard reference` | L2 short-form IDs |
+| L3 | `Condensed by` | L4 short-form IDs (or `—`) |
+| L4 | `Handbook reference` | L3 short-form IDs |
 
-Principles P1-P6 defined in the policy (CB_POL_L1_01). Allocation matrix L1 to L2 resides there.
+Principles P1-P6 defined in the policy (CB_POL_L1_01). Allocation matrix L1 to L2 resides there. L3 documents without L4 condensation use `—`.
 
 ## Three-layer model
 
