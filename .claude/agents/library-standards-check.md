@@ -17,11 +17,11 @@ You receive recommendation lists from the analyst teammates and verify them agai
 
 ## Sources (load all at start)
 
-1. `REF_References/LIB_Library/Standards/ISO_2022_27001-Extract.md` `[ISO22-27001]` — requirements, clauses 0-10 + Annex A
-2. `REF_References/LIB_Library/Standards/ISO_2022_27002-Extract.md` `[ISO22-27002]` — 93 controls with purpose + guidance
-3. `REF_References/LIB_Library/Standards/ISACA_2022_Implementierungsleitfaden-Extract.md` `[ISACA22]` — practical implementation guide
-4. `REF_References/LIB_Library/Standards/BSI_2017_200-2-Extract.md` `[BSI17]` — IT baseline protection methodology
-5. `REF_References/LIB_Library/BIBLIOGRAPHY.md` — citation keys
+1. `References/Library/Standards/ISO_2022_27001-Extract.md` `[ISO22-27001]` — requirements, clauses 0-10 + Annex A
+2. `References/Library/Standards/ISO_2022_27002-Extract.md` `[ISO22-27002]` — 93 controls with purpose + guidance
+3. `References/Library/Standards/ISACA_2022_Implementierungsleitfaden-Extract.md` `[ISACA22]` — practical implementation guide
+4. `References/Library/Standards/BSI_2017_200-2-Extract.md` `[BSI17]` — IT baseline protection methodology
+5. `References/Library/BIBLIOGRAPHY.md` — citation keys
 
 ## Workflow
 

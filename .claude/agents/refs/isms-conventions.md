@@ -11,17 +11,19 @@
 
 ## ID schema
 
-Document ID = folder prefixes concatenated with `_` + filename without `.md`.
+Document ID is constructed from folder abbreviations + filename (without .md). Abbreviations are defined in the INDEX.md abbreviation table.
 
 | Rule | Description |
 |---|---|
-| Folders | `PREFIX_Descriptive-Name/` (underscore separates prefix) |
+| Folders | `Descriptive-Name/` (abbreviation defined in INDEX.md) |
+| Folders (exception) | `LN_` (policy levels) and `CN_` (clause groups) retain prefix in folder name |
 | Files | `NN-Descriptive-Name.md` (number + hyphen + name) |
+| Document ID | Folder abbreviations + `_` + filename (e.g. `CB_POL_L1_01-Policy`) |
 | Separator | `_` between levels, `-` within names |
 | Clauses | Dot notation (e.g. `HB_CLS_7.4-Communication`) |
 | Clause folders | C4..C10 are sort folders, not ID segments |
 
-Example: `CB_Cyber-Security-Cookbook/POL_Policy-Framework/L2_Standards/01-Access-and-Identity.md` > `CB_POL_L2_01-Access-and-Identity`
+Example: `Cyber-Security-Cookbook/Policy-Framework/L2_Standards/01-Access-and-Identity.md` > `CB_POL_L2_01-Access-and-Identity`
 
 ## Metadata block (8 mandatory fields, fixed order)
 
@@ -139,7 +141,7 @@ CLS (HB) defines WHAT > PRC (CB) defines HOW > REG (HB) holds results.
 
 ## Citation
 
-BIBLIOGRAPHY.md in `REF_References/LIB_Library/` is SSOT for citation keys.
+BIBLIOGRAPHY.md in `References/Library/` is SSOT for citation keys.
 
 | Level | Format | Example |
 |---|---|---|
@@ -156,6 +158,6 @@ BIBLIOGRAPHY.md in `REF_References/LIB_Library/` is SSOT for citation keys.
 
 | Tier | Path | Purpose |
 |---|---|---|
-| CB | `CB_Cyber-Security-Cookbook/` | Employee-facing wiki |
-| HB | `HB_ISMS-Handbook/` | Confidential management documentation |
-| REF | `REF_References/` | Norm extracts, reference material |
+| CB | `Cyber-Security-Cookbook/` | Employee-facing wiki |
+| HB | `ISMS-Handbook/` | Confidential management documentation |
+| REF | `References/` | Norm extracts, reference material |

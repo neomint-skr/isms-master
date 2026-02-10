@@ -18,11 +18,11 @@ You receive recommendation lists from the analyst teammates via SendMessage. You
 
 ## References (read at start)
 
-1. `REF_References/LIB_Library/Standards/ISO_2022_27001-Extract.md` — complete ISO 27001 extract, especially:
+1. `References/Library/Standards/ISO_2022_27001-Extract.md` — complete ISO 27001 extract, especially:
    - Clauses 4-10 with documentation obligations (DokI requirement markers)
    - Annex A (93 controls)
-2. `REF_References/LIB_Library/Standards/ISO_2022_27002-Extract.md` — control guidance (guidance per control)
-3. `HB_ISMS-Handbook/REG_Registers/02-Statement-of-Applicability.md` — SoA
+2. `References/Library/Standards/ISO_2022_27002-Extract.md` — control guidance (guidance per control)
+3. `ISMS-Handbook/Registers/02-Statement-of-Applicability.md` — SoA
 4. `INDEX.md` — coverage matrix
 5. `refs/isms-conventions.md` — repository conventions
 

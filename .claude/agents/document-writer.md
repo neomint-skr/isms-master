@@ -74,7 +74,7 @@ Steps:
 ### Citation
 
 When creating or editing documents:
-1. Read `REF_References/LIB_Library/BIBLIOGRAPHY.md` to know the available sources
+1. Read `References/Library/BIBLIOGRAPHY.md` to know the available sources
 2. Use `[REF:key]` for document references, `[REF:key, Cl. X]` / `[REF:key, Ch. X]` for sections
 3. In `## See also`: internal short-form IDs first, then `[REF:key]` entries with dash description
 4. No free-form source references — only registered citation keys from BIBLIOGRAPHY.md

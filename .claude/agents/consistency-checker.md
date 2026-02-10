@@ -21,19 +21,19 @@ Execute all 10 checks and report results as a compact table.
 
 ### 1. Metadata ID
 
-Every `.md` file under `CB_*/` and `HB_*/` (except `REF_References/`) must contain a metadata block with `Document ID`.
+Every `.md` file under `Cyber-Security-Cookbook/` and `ISMS-Handbook/` (except `References/`) must contain a metadata block with `Document ID`.
 
 **Rule:** Document ID = folder prefixes concatenated with `_` + filename without `.md`
 
 **Steps:**
-- Glob all `.md` under `CB_*/` and `HB_*/`
+- Glob all `.md` under `Cyber-Security-Cookbook/` and `ISMS-Handbook/`
 - For each file: read the first 10 lines
 - Verify that `Document ID` is present and correctly computed
-- Reference extracts (`REF_References/`) are exempt (no metadata block)
+- Reference extracts (`References/`) are exempt (no metadata block)
 
 ### 2. INDEX.md files section
 
-Every `.md` file under `CB_*/` and `HB_*/` must be listed in the files section of `INDEX.md`.
+Every `.md` file under `Cyber-Security-Cookbook/` and `ISMS-Handbook/` must be listed in the files section of `INDEX.md`.
 
 **Steps:**
 - Compare glob results against files listed in INDEX.md
@@ -53,16 +53,14 @@ Every document ID that addresses Annex A controls must appear in the coverage ma
 No stale paths in governance documents.
 
 **Steps:**
-- Grep for outdated paths in CLAUDE.md, INDEX.md:
-  - `Cyber-Security-Cookbook/` (without `CB_` prefix)
-  - `ISMS-Handbook/` (without `HB_` prefix)
-  - `Nachweise/` (renamed to `REF_References/`)
-  - `Policy-Framework/` (without `POL_` prefix)
+- Grep for outdated folder paths in all `.md` files (exclude changelog entries):
+  - Old prefixed names: `CB_Cyber-Security-Cookbook/`, `HB_ISMS-Handbook/`, `REF_References/`, `POL_Policy-Framework/`, `PRC_Processes/`, `AWR_Awareness-Training/`, `TPL_Templates/`, `CLS_Definitions/`, `REG_Registers/`, `LIB_Library/`
+  - Old German names: `Nachweise/`, `REF_Referenzen/`
 - Report every match with file and line number
 
 ### 5. SoA consistency
 
-Verify that the SoA (HB_ISMS-Handbook/REG_Registers/02-Statement-of-Applicability.md) is complete and consistent.
+Verify that the SoA (ISMS-Handbook/Registers/02-Statement-of-Applicability.md) is complete and consistent.
 
 **Steps:**
 - Count controls in the SoA (should be 93, A.5.1 through A.8.34)
@@ -76,10 +74,10 @@ Verify that the SoA (HB_ISMS-Handbook/REG_Registers/02-Statement-of-Applicabilit
 
 ### 6. Document structure
 
-Every content file (except `REF_References/` and folders starting with `TPL_`) must conform to the standard document structure.
+Every content file (except `References/` and `Templates/`) must conform to the standard document structure.
 
 **Steps:**
-- Glob all `.md` under `CB_*/` and `HB_*/` (except `REF_References/` and `**/TPL_*/**`)
+- Glob all `.md` under `Cyber-Security-Cookbook/` and `ISMS-Handbook/` (except `References/` and `**/Templates/**`)
 - For each file: read the headings (lines starting with `#`)
 - Verify:
   a) H1 contains no technical prefix (`Policy:`, `Process:`, `Awareness:`, `Template:`)
@@ -96,7 +94,7 @@ Every content file (except `REF_References/` and folders starting with `TPL_`) m
 All versions must follow the padded format `00.00.000` (Major.Minor.Update).
 
 **Steps:**
-- Grep `**Version:**` in all files under `CB_*/` and `HB_*/`
+- Grep `**Version:**` in all files under `Cyber-Security-Cookbook/` and `ISMS-Handbook/`
 - Verify each value matches the pattern `\d{2}\.\d{2}\.\d{3}` (2-digit.2-digit.3-digit)
 - Report deviations with filename and current value
 - Verify that changelog entries are sorted descending (newest version first)
@@ -107,9 +105,9 @@ All versions must follow the padded format `00.00.000` (Major.Minor.Update).
 All `[REF:key]` references in ISMS documents must point to valid keys in BIBLIOGRAPHY.md.
 
 **Steps:**
-- Grep `\[REF:[A-Za-z0-9-]+` in all `.md` under `CB_*/` and `HB_*/`
+- Grep `\[REF:[A-Za-z0-9-]+` in all `.md` under `Cyber-Security-Cookbook/` and `ISMS-Handbook/`
 - Extract the key portion (between `REF:` and `]` or `,`)
-- Read `REF_References/LIB_Library/BIBLIOGRAPHY.md` and collect all keys (first column of tables)
+- Read `References/Library/BIBLIOGRAPHY.md` and collect all keys (first column of tables)
 - Verify each referenced key exists in BIBLIOGRAPHY.md
 - Verify that all extract files listed in BIBLIOGRAPHY.md actually exist
 - Verify that all extracts contain a `Citation Key:` line in their header
@@ -136,7 +134,7 @@ Verify the repository is free of runtime artifacts, unexpected file types and or
 - Glob `**/*` at the repo root and capture all tracked file types (extensions)
 - Allowed file types: `.md`, `.pdf`, `.json`, `.sh`, `.mjs`, `.gitkeep`, `.gitignore`, `.gitattributes`, `LICENSE` (no extension)
 - Report every file with an unexpected extension (e.g. `.tmp`, `.bak`, `.log`, `.pyc`, `.DS_Store`, `.docx`, `.xlsx`, binaries)
-- Verify that PDFs reside exclusively in `REF_References/LIB_Library/` — PDFs elsewhere are a finding
+- Verify that PDFs reside exclusively in `References/Library/` — PDFs elsewhere are a finding
 - Verify that `.gitkeep` files exist only in empty directories — if the directory contains other files, `.gitkeep` is a relic
 - Verify that no files reside in the repo root that do not belong (allowed at root: `INDEX.md`, `CLAUDE.md`, `LICENSE`, `.gitignore`, `.gitattributes`, `CHANGELOG.md`)
 - Verify that no empty `.md` files exist (only a metadata block with no content after H1 does not count as empty; completely empty files or whitespace-only files are a finding)

@@ -1,9 +1,9 @@
 > **Document ID:** CB_POL_L2_08-Document-Control
-> **Version:** 00.04.010
+> **Version:** 00.04.011
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 7.5
-> **Last modified:** 2026-02-09
+> **Last modified:** 2026-02-10
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -34,7 +34,7 @@ Every ISMS content document begins with a **uniform metadata block** (8 fields).
 
 | Field | Content | ISO source |
 |---|---|---|
-| Document ID | Path-based ID from folder prefixes + filename | 7.5.2 a |
+| Document ID | Convention-based ID from folder abbreviations (INDEX.md) + filename | 7.5.2 a |
 | Version | Padded `00.01.000`: Major.Minor.Update (see Version control) | 7.5.3 e |
 | Classification | Confidential / Internal / Public | A.5.12 |
 | Author | Abbreviation of the document owner | 7.5.2 a |
@@ -45,7 +45,7 @@ Every ISMS content document begins with a **uniform metadata block** (8 fields).
 
 **Template:** CB_TPL_02-Document-Metadata (in the Templates folder).
 
-**ID scheme:** The document ID is derived from the folder prefixes in the path. Example: `CB_Cyber-Security-Cookbook/POL_Policy-Framework/L2_Standards/01-Access-and-Identity.md` yields the ID `CB_POL_L2_01-Access-and-Identity`. Separators: `_` between tiers, `-` within names (addresses A.5.1).
+**ID scheme:** The document ID is derived from folder abbreviations defined in the INDEX.md abbreviation table. Example: `Cyber-Security-Cookbook/Policy-Framework/L2_Standards/01-Access-and-Identity.md` yields the ID `CB_POL_L2_01-Access-and-Identity`. Separators: `_` between tiers, `-` within names (addresses A.5.1).
 
 ### Standard Document Structure
 
@@ -82,8 +82,8 @@ The document name (H1) integrates the document type in natural language. No tech
 
 ### Exceptions
 
-- **REF extracts** (REF_Referenzen/): No metadata block, no standard document structure — external sources are not versioned.
-- **Templates** (TPL_Templates/): Fill-in templates with their own structure, not bound by the standard document structure.
+- **REF extracts** (References/): No metadata block, no standard document structure — external sources are not versioned.
+- **Templates** (Templates/): Fill-in templates with their own structure, not bound by the standard document structure.
 
 ## Review and Approval
 
@@ -157,7 +157,7 @@ Protection of documented information covers confidentiality, integrity, and avai
 
 Documented information of external origin is appropriately identified and controlled (addresses 7.5.3 final paragraph).
 
-- **Storage:** REF_Referenzen/LIB_Library/ on the file server (Markdown extracts + PDF originals).
+- **Storage:** References/Library/ on the file server (Markdown extracts + PDF originals).
 - **Identification:** Filename with sequential number and short title (e.g., `01-ISO-27001-Extract`). No metadata block, as external sources are not versioned internally.
 - **Currency:** When standards are updated or new editions are released, check whether extracts are still valid and update as needed.
 
@@ -172,6 +172,7 @@ Documented information of external origin is appropriately identified and contro
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.04.011 | 2026-02-10 | CISO | Folder paths updated after prefix removal; pre-existing German path names corrected |
 | 00.04.010 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.04.009 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |
 | 00.04.008 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |

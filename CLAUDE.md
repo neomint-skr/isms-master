@@ -35,9 +35,9 @@ Active servers: sequential-thinking, basic-memory, context7.
 
 | Tier | Path | Purpose |
 |---|---|---|
-| CB — Cookbook | `CB_Cyber-Security-Cookbook/` | Employee wiki (onboarding, emergency card, FAQ, policy framework L1-L4, processes, awareness, templates) |
-| HB — Handbook | `HB_ISMS-Handbook/` | Confidential management documentation (clauses, registers) |
-| REF — References | `REF_References/` | Standard extracts, reference material (MD extracts + PDF originals) |
+| CB — Cookbook | `Cyber-Security-Cookbook/` | Employee wiki (onboarding, emergency card, FAQ, policy framework L1-L4, processes, awareness, templates) |
+| HB — Handbook | `ISMS-Handbook/` | Confidential management documentation (clauses, registers) |
+| REF — References | `References/` | Standard extracts, reference material (MD extracts + PDF originals) |
 
 ### Policy Hierarchy
 
@@ -56,13 +56,14 @@ CLS (HB) defines WHAT (criteria, scales), PRC (CB) defines HOW (workflow, RACI, 
 
 ### ID Schema
 
-Path-based: Each folder carries its own prefix. Document ID = concatenated folder prefixes + filename (without .md).
+Convention-based: Document ID is constructed from folder abbreviations + filename (without .md). Abbreviations are defined in the INDEX.md abbreviation table.
 
 | Rule | Description |
 |---|---|
-| Folders | `PREFIX_Descriptive-Name/` (underscore separates prefix) |
+| Folders | `Descriptive-Name/` (abbreviation defined in INDEX.md) |
+| Folders (exception) | `LN_` (policy levels) and `CN_` (clause groups) retain prefix in folder name |
 | Files | `NN-Descriptive-Name.md` (number + hyphen + name) |
-| Document ID | Folder prefixes + `_` + filename (e.g. `CB_POL_L1_01-Policy`) |
+| Document ID | Folder abbreviations + `_` + filename (e.g. `CB_POL_L1_01-Policy`) |
 | Separator | `_` between levels, `-` within names |
 | Clauses | Dot notation instead of number (e.g. `HB_CLS_7.4-Communication`) |
 | Clause folders | C4..C10 are sort folders, not ID segments |
@@ -140,11 +141,11 @@ Principles P1-P6 are defined in the policy (CB_POL_L1_01). L2 documents without 
 
 ### Reference Citation
 
-External sources reside in `REF_References/LIB_Library/` as PDF originals + MD extracts.
+External sources reside in `References/Library/` as PDF originals + MD extracts.
 
 **Filenames:** `Author_Year_ShortTitle.ext` / `Author_Year_ShortTitle-Extract.md`. `nd` = no date.
 
-**BIBLIOGRAPHY.md** in `LIB_Library/` is SSOT for citation keys.
+**BIBLIOGRAPHY.md** in `Library/` is SSOT for citation keys.
 
 **Citation keys:** `[REF:key]` (document), `[REF:key, Cl. X]` (ISO/BSI), `[REF:key, Ch. X]` (templates/ISACA). Agent rules and examples: `refs/isms-conventions.md`.
 
@@ -168,7 +169,7 @@ Four layers, no duplication:
 | Session | Auto-Memory (`MEMORY.md`) | Current session: what am I working on | No |
 | Project memory | `.memory/*.md` (MCP) | Decisions, learnings, progress | Yes |
 | Agent knowledge | `.claude/agents/refs/` | SSOT derivatives, conventions | Yes |
-| ISMS content | `CB_*/`, `HB_*/`, `REF_*/` | Certification artifacts | Yes |
+| ISMS content | `Cyber-Security-Cookbook/`, `ISMS-Handbook/`, `References/` | Certification artifacts | Yes |
 
 **Routing:** Session = ephemeral (overwritten). Persistent knowledge goes to `.memory/`. Agent rules go to `refs/`. ISMS documents go to subject folders. When session content should persist, move it to `.memory/`.
 

@@ -1,7 +1,7 @@
 # Bibliothek
 
 > Literaturverzeichnis aller externen Quellen im ISMS. Jeder Eintrag hat einen stabilen Citation Key
-> fuer Inline-Referenzen: `[REF:key]`. Dateien liegen in `REF_Referenzen/LIB_Library/`.
+> fuer Inline-Referenzen: `[REF:key]`. Dateien liegen in `References/Library/`.
 > BIBLIOGRAPHY.md ist SSOT fuer Citation Keys — Aenderungen hier, nicht in den Extrakten.
 
 ## Legende

@@ -16,7 +16,7 @@ You are a MECE checker for an ISMS documentation repository (ISO 27001:2022). Yo
 Read `refs/isms-conventions.md` for repository conventions (policy hierarchy, traceability, three-layer model).
 
 Specific to MECE checks:
-- Allocation matrix L1 to L2 resides in `CB_Cyber-Security-Cookbook/POL_Policy-Framework/L1_Policy/01-Policy.md`
+- Allocation matrix L1 to L2 resides in `Cyber-Security-Cookbook/Policy-Framework/L1_Policy/01-Policy.md`
 - 93 Annex A controls distributed across L2 policies (ISO reference in metadata block)
 
 ## Verification protocol
@@ -28,7 +28,7 @@ Execute all 6 checks and report results as a compact table.
 No L2 document may address more than 25% of the 93 controls (more than 23 controls).
 
 **Steps:**
-- Glob `CB_Cyber-Security-Cookbook/POL_Policy-Framework/L2_Standards/*.md`
+- Glob `Cyber-Security-Cookbook/Policy-Framework/L2_Standards/*.md`
 - For each L2: read `ISO reference` from the metadata block
 - Count controls per L2 (resolve ranges: `A.5.15-5.18` = 4 controls)
 - Compute share of 93. Warning if above 25%.
@@ -71,7 +71,7 @@ Each principle P1-P6 must be referenced by at least one L2.
 Every PRC should have a driver (CLS or L2) and a results register (REG).
 
 **Steps:**
-- Glob `HB_ISMS-Handbook/PRC_Processes/*.md`
+- Glob `Cyber-Security-Cookbook/Processes/*.md`
 - For each PRC: read the full content
 - Search for references to `HB_CLS_` (driver) and `HB_REG_` (result)
 - Tool-based documentation counts as valid: sentences like "are documented/managed/captured in [tool] system"
@@ -82,7 +82,7 @@ Every PRC should have a driver (CLS or L2) and a results register (REG).
 No REG without documented maintenance responsibility.
 
 **Steps:**
-- Glob `HB_ISMS-Handbook/REG_Registers/*.md`
+- Glob `ISMS-Handbook/Registers/*.md`
 - For each REG: check whether:
   a) At least one PRC references this REG (Grep for REG ID in PRC files), OR
   b) The REG itself has a `## Responsibilities` section with content (not just TODO)

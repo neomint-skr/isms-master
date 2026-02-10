@@ -2,11 +2,11 @@
 
 > Structural data of the [Organization] ISMS. 86 Markdown files, 93 Annex A controls.
 > For working instructions see CLAUDE.md.
-> ID schema: folder prefixes + filename. Separator: `_` between levels, `-` within names.
+> ID schema: folder abbreviations (see table below) + filename. Separator: `_` between levels, `-` within names.
 
 ## Files and Headings
 
-### HB -- HB_ISMS-Handbook / CLS_Definitions
+### HB -- ISMS-Handbook / Definitions
 
 **C4_Context/** -- Organizational context
 `4.1-Organization-and-Context.md`, `4.2-Interested-Parties.md`, `4.3-Scope.md`, `4.4-ISMS.md`
@@ -29,7 +29,7 @@
 **C10_Improvement/** -- Improvement
 `10.1-Continual-Improvement.md`, `10.2-Nonconformity.md`
 
-### HB -- HB_ISMS-Handbook / REG_Registers
+### HB -- ISMS-Handbook / Registers
 
 **01-IS-Objectives-Register.md** -- IS objectives with KPIs and monitoring results
 **02-Statement-of-Applicability.md** -- 93 controls, SSOT for applicability
@@ -42,7 +42,7 @@
 **09-Context-Register.md** -- Organizational profile, external/internal issues
 **10-BIA-Register.md** -- BIA assessment, tier assignment, continuity plan tracking
 
-### CB -- CB_Cyber-Security-Cookbook / Root
+### CB -- Cyber-Security-Cookbook / Root
 
 **Getting-Started.md** -- Introduction to the topic, structure and navigation of the Cookbook
 H2: Why this Cookbook?, How is it structured?, What do you need to do?, Key contact points
@@ -52,11 +52,11 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 
 **FAQ.md** -- Frequently asked questions about information security in daily work
 
-### CB -- CB_Cyber-Security-Cookbook / POL_Policy-Framework / L1_Policy
+### CB -- Cyber-Security-Cookbook / Policy-Framework / L1_Policy
 
 **01-Policy.md** -- Management commitment, objectives, scope, principles, responsibilities, approval
 
-### CB -- CB_Cyber-Security-Cookbook / POL_Policy-Framework / L2_Standards
+### CB -- Cyber-Security-Cookbook / Policy-Framework / L2_Standards
 
 **01-Access-and-Identity.md** -- Access control, identities, authentication, access rights lifecycle
 **02-Information-Protection.md** -- Classification, transfer, cryptography, data protection lifecycle
@@ -71,11 +71,11 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 **11-Risk-Management.md** -- Risk criteria, risk matrix, protection requirement categories, treatment options, roles, acceptance criteria
 **12-AI-Usage.md** -- GenAI approval, input rules, output usage (BEYOND-ISO)
 
-### CB -- CB_Cyber-Security-Cookbook / POL_Policy-Framework / L4_Cheat-Sheets
+### CB -- Cyber-Security-Cookbook / Policy-Framework / L4_Cheat-Sheets
 
 (empty — to be populated)
 
-### CB -- CB_Cyber-Security-Cookbook / POL_Policy-Framework / L3_Handbooks-and-Concepts
+### CB -- Cyber-Security-Cookbook / Policy-Framework / L3_Handbooks-and-Concepts
 
 **01-User-Handbook.md** -- Acceptable use, remote working, classification, clear desk, incident reporting
 **02-Admin-Handbook.md** -- Access control, hardening, vulnerability management, logging, backup
@@ -86,7 +86,7 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 **07-Supplier-Management.md** -- Assessment, agreements, supply chain, monitoring, cloud
 **08-Business-Continuity.md** -- BIA methodology, continuity plans, test/maintenance, recovery coordination
 
-### CB -- CB_Cyber-Security-Cookbook / PRC_Processes
+### CB -- Cyber-Security-Cookbook / Processes
 
 **01-Incident-Management.md** -- Classification, reporting, escalation, response, lessons learned, evidence collection
 **02-Access-Control.md** -- Provisioning, privileges, revocation, recertification
@@ -101,17 +101,17 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 **11-Performance-Monitoring.md** -- KPI definition, data collection, evaluation, escalation
 **12-Asset-Management.md** -- Identification, ID assignment, registration, relationships, maintenance
 
-### CB -- CB_Cyber-Security-Cookbook / AWR_Awareness-Training
+### CB -- Cyber-Security-Cookbook / Awareness-Training
 
 **01-Awareness-Fundamentals.md** -- Top risks, phishing, password hygiene, incident reporting
 **02-Onboarding-Checklist.md** -- Onboarding table
 
-### CB -- CB_Cyber-Security-Cookbook / TPL_Templates
+### CB -- Cyber-Security-Cookbook / Templates
 
 **01-Management-Review.md** -- Management review template (inputs 9.3.2, outputs 9.3.3, actions)
 **02-Document-Metadata.md** -- Metadata block template (8 fields, field descriptions, rules)
 
-### REF -- REF_References / LIB_Library / Standards
+### REF -- References / Library / Standards
 
 **Standards/ISO_2022_27001-Extract.md** ``[ISO22-27001]`` -- Lean extract ISO/IEC 27001:2022 (Clauses 0-10, Annex A, 93 controls)
 **Standards/ISO_2022_27002-Extract.md** ``[ISO22-27002]`` -- Lean extract ISO/IEC 27002:2022 (93 controls, 8-column tables)
@@ -120,7 +120,7 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 
 > PDFs (originals) with matching base name in folder. Bibliography with citation keys: `BIBLIOGRAPHY.md`.
 
-### REF -- REF_References / LIB_Library / Policy Templates
+### REF -- References / Library / Policy Templates
 
 **Policy Templates/DataGuard_2025_ISMS-Handbuch-Extract.md** ``[DG25-HB]`` -- ISMS handbook template (structure, scope, context, risk approach)
 **Policy Templates/DataGuard_2025_Leitlinie-IS-Extract.md** ``[DG25-LL]`` -- IS guideline template (objectives, principles, roles)
@@ -260,20 +260,20 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 
 | Abbr | Meaning | Path |
 |---|---|---|
-| CB | Cookbook | CB_Cyber-Security-Cookbook/ |
-| HB | Handbook | HB_ISMS-Handbook/ |
-| POL | Policy framework | POL_Policy-Framework/ |
+| CB | Cookbook | Cyber-Security-Cookbook/ |
+| HB | Handbook | ISMS-Handbook/ |
+| POL | Policy framework | Policy-Framework/ |
 | L1 | Level 1 (Policy) | L1_Policy/ |
 | L2 | Level 2 (Standards) | L2_Standards/ |
 | L3 | Level 3 (Handbooks and Concepts) | L3_Handbooks-and-Concepts/ |
 | L4 | Level 4 (Cheat Sheets) | L4_Cheat-Sheets/ |
-| AWR | Awareness | AWR_Awareness-Training/ |
-| TPL | Template | TPL_Templates/ |
-| REF | References | REF_References/ |
-| LIB | Library (norm extracts) | LIB_Library/ |
-| CLS | Clause (definitions) | CLS_Definitions/ |
+| AWR | Awareness | Awareness-Training/ |
+| TPL | Template | Templates/ |
+| REF | References | References/ |
+| LIB | Library (norm extracts) | Library/ |
+| CLS | Clause (definitions) | Definitions/ |
 | C4..C10 | Clause sorting | C4_Context/ .. C10_Improvement/ |
-| REG | Register | REG_Registers/ |
-| PRC | Process | PRC_Processes/ |
-| HB_CLS_C5 | (folder) | CLS_Definitions/C5_Leadership/ (3 files) |
-| HB_CLS_C9 | (folder) | CLS_Definitions/C9_Performance/ (3 files) |
+| REG | Register | Registers/ |
+| PRC | Process | Processes/ |
+| HB_CLS_C5 | (folder) | Definitions/C5_Leadership/ (3 files) |
+| HB_CLS_C9 | (folder) | Definitions/C9_Performance/ (3 files) |
