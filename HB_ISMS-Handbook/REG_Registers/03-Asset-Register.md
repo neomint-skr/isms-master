@@ -1,9 +1,9 @@
 > **Document ID:** HB_REG_03-Asset-Register
-> **Version:** 00.02.007
+> **Version:** 00.02.008
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** A.5.9
-> **Last modified:** 2026-02-09
+> **Last modified:** 2026-02-10
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -32,7 +32,7 @@ Protection requirement values are populated through the risk management process 
 
 The cross-reference tables (section below) are the **SSOT for relationships** between assets. The relationship columns in the asset tables are denormalized quick references for a fast overview. In case of conflict, the cross-reference tables prevail.
 
-The Confidentiality (C), Integrity (I) and Availability (A) columns are structural placeholders. They are populated through the protection requirements analysis (CB_PRC_07-Risk-Management).
+The Confidentiality (C), Integrity (I) and Availability (A) columns are structural placeholders. They are populated through the protection requirements analysis (CB_PRC_07-Risk-Management). BCM-related recovery data (RTO, RPO, MTD, continuity plans) is maintained in the dedicated BIA Register (HB_REG_10).
 
 ## Asset Categories
 
@@ -70,15 +70,11 @@ The asset inventory maintains the following fields for each asset (addresses A.5
 | Date of last review | Date |
 | Date of next review | Date |
 
-**Optional fields (when Availability = High, for BIA/BCM):**
+**Optional field (for assets with availability requirements):**
 
 | Field | Description |
 |---|---|
-| RTO | Recovery Time Objective in hours |
-| RPO | Recovery Point Objective in hours |
-| MTD | Maximum tolerable downtime in hours |
-| Emergency recovery plan | Yes/No |
-| Backup interval | Frequency |
+| BIA Tier | Recovery tier (1-4) per BIA Register (HB_REG_10). Populated through BIA process (CB_POL_L3_08). |
 
 The mandatory fields are reflected in the category tables below. CIA values are populated through the protection requirements analysis (CB_PRC_07).
 
@@ -164,11 +160,13 @@ The following tables map relationships between assets. They are the SSOT — in 
 
 ## See also
 
+- HB_REG_10-BIA-Register — BIA assessment and tier tracking
 
 ## Changelog
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.02.008 | 2026-02-10 | [CISO] | BIA fields replaced by BIA Tier reference (REG_10 extraction) |
 | 00.02.007 | 2026-02-09 | [CISO] | Aligned role terminology |
 | 00.02.006 | 2026-02-09 | [CISO] | Inventory fields: 14 mandatory fields + 5 optional BIA fields (REC-410) |
 | 00.02.005 | 2026-02-09 | [CISO] | Objective and Scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |

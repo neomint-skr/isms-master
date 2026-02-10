@@ -40,6 +40,7 @@
 **07-Risk-Treatment-Plan.md** -- Controls per risk, owners, deadlines, effectiveness
 **08-Interested-Parties-Register.md** -- Stakeholders + IS requirements
 **09-Context-Register.md** -- Organizational profile, external/internal issues
+**10-BIA-Register.md** -- BIA assessment, tier assignment, continuity plan tracking
 
 ### CB -- CB_Cyber-Security-Cookbook / Root
 
@@ -79,6 +80,7 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 **05-Data-Backup.md** -- Backup strategy, recovery, deletion
 **06-Network-Security.md** -- Architecture, segmentation, services
 **07-Supplier-Management.md** -- Assessment, agreements, supply chain, monitoring, cloud
+**08-Business-Continuity.md** -- BIA methodology, continuity plans, test/maintenance, recovery coordination
 
 ### CB -- CB_Cyber-Security-Cookbook / PRC_Processes
 
@@ -169,8 +171,8 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 | 5.26 | CB_POL_L2_07 | CB_PRC_01 |
 | 5.27 | CB_POL_L2_07 | CB_PRC_01 |
 | 5.28 | CB_POL_L2_07 | CB_PRC_01 |
-| 5.29 | CB_POL_L2_06 | CB_POL_L3_05 |
-| 5.30 | CB_POL_L2_06 | CB_POL_L3_05 |
+| 5.29 | CB_POL_L2_06 | CB_POL_L3_05, CB_POL_L3_08, HB_REG_10 |
+| 5.30 | CB_POL_L2_06 | CB_POL_L3_05, CB_POL_L3_08, HB_REG_10 |
 | 5.31 | CB_POL_L2_07 | |
 | 5.32 | CB_POL_L2_07 | |
 | 5.33 | CB_POL_L2_07 | |

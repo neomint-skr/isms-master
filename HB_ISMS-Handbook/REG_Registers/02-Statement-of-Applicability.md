@@ -1,9 +1,9 @@
 > **Document ID:** HB_REG_02-Statement-of-Applicability
-> **Version:** 00.04.006
+> **Version:** 00.04.007
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** Clause 6.1.3 d
-> **Last modified:** 2026-02-09
+> **Last modified:** 2026-02-10
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -69,8 +69,8 @@ Control selection takes place during risk treatment (CB_PRC_07, HB_CLS_8.3) and 
 | 5.26 | Response to information security incidents | — | — | — | CB_POL_L2_07 | — |
 | 5.27 | Learning from information security incidents | — | — | — | CB_POL_L2_07 | — |
 | 5.28 | Collection of evidence | — | — | — | CB_POL_L2_07 | — |
-| 5.29 | Information security during disruption | — | — | — | CB_POL_L2_06 | — |
-| 5.30 | ICT readiness for business continuity | — | — | — | CB_POL_L2_06 | — |
+| 5.29 | Information security during disruption | — | — | — | CB_POL_L2_06 | CB_POL_L3_08, HB_REG_10 |
+| 5.30 | ICT readiness for business continuity | — | — | — | CB_POL_L2_06 | CB_POL_L3_08, HB_REG_10 |
 | 5.31 | Identification of applicable legislation and contractual requirements | — | — | — | CB_POL_L2_07 | — |
 | 5.32 | Intellectual property rights | — | — | — | CB_POL_L2_07 | — |
 | 5.33 | Protection of records | — | — | — | CB_POL_L2_07 | — |
@@ -163,6 +163,7 @@ Control selection takes place during risk treatment (CB_PRC_07, HB_CLS_8.3) and 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.04.007 | 2026-02-10 | [CISO] | A.5.29-30: added L3_08 and REG_10 as secondary documents |
 | 00.04.006 | 2026-02-09 | [CISO] | Aligned role terminology |
 | 00.04.005 | 2026-02-09 | [CISO] | Objective and Scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
 | 00.04.004 | 2026-02-09 | [CISO] | Objective and Scope: bold-label pattern (Objective + Scope) |

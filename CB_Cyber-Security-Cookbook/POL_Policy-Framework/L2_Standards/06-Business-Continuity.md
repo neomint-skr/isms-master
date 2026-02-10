@@ -1,9 +1,9 @@
 > **Document ID:** CB_POL_L2_06-Business-Continuity
-> **Version:** 00.01.007
+> **Version:** 00.01.008
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.29-5.30, A.8.13-8.14
-> **Last modified:** 2026-02-09
+> **Last modified:** 2026-02-10
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -18,7 +18,7 @@ Business disruptions caused by IT outages, cyberattacks, or natural events can b
 ## Objective and Scope
 
 **Policy reference:** P3, P6
-**Operationalized by:** CB_POL_L3_05-Data-Backup
+**Operationalized by:** CB_POL_L3_05-Data-Backup, CB_POL_L3_08-Business-Continuity
 
 **Objective:** Business disruptions caused by IT outages, cyberattacks, or natural events can be existentially threatening. Without binding requirements for ICT readiness and data backup, the foundation for planned recovery of business operations is missing.
 
@@ -106,11 +106,13 @@ The operational backup process including procedures and responsibilities is desc
 - CB_POL_L3_05-Data-Backup — Backup and recovery
 - CB_PRC_03-Backup-and-Recovery — Operational backup process
 - CB_PRC_01-Incident-Management — Transition from incident to emergency
+- HB_REG_10-BIA-Register — BIA assessment and tier tracking
 
 ## Changelog
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.008 | 2026-02-10 | CISO | Added L3_08 traceability and REG_10 cross-reference |
 | 00.01.007 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.006 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |
 | 00.01.005 | 2026-02-09 | CISO | Backup and recovery (A.8.13-14) populated (Batch-D) |
