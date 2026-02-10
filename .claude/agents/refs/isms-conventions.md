@@ -21,7 +21,7 @@ Document ID is constructed from folder abbreviations + filename (without .md). A
 | Document ID | Folder abbreviations + `_` + filename (e.g. `CB_POL_L1_01-Policy`) |
 | Separator | `_` between levels, `-` within names |
 | Clauses | Dot notation (e.g. `HB_CLS_7.4-Communication`) |
-| Clause folders | C4..C10 are sort folders, not ID segments |
+| Clause folders | C04..C10 are sort folders, not ID segments |
 
 Example: `Cyber-Security-Cookbook/Policy-Framework/L2_Standards/01-Access-and-Identity.md` > `CB_POL_L2_01-Access-and-Identity`
 

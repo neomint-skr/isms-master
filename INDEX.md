@@ -8,22 +8,22 @@
 
 ### HB -- ISMS-Handbook / Definitions
 
-**C4_Context/** -- Organizational context
+**C04_Context/** -- Organizational context
 `4.1-Organization-and-Context.md`, `4.2-Interested-Parties.md`, `4.3-Scope.md`, `4.4-ISMS.md`
 
-**C5_Leadership/** -- Leadership
+**C05_Leadership/** -- Leadership
 `5.1-Leadership-and-Commitment.md`, `5.2-Policy.md`, `5.3-Roles-and-Responsibilities.md`
 
-**C6_Planning/** -- Planning
+**C06_Planning/** -- Planning
 `6.1-Risks-and-Opportunities.md` (incl. 6.1.2, 6.1.3, SoA), `6.2-IS-Objectives.md`, `6.3-Planning-of-Changes.md`
 
-**C7_Support/** -- Support
+**C07_Support/** -- Support
 `7.1-Resources.md`, `7.2-Competence.md`, `7.3-Awareness.md`, `7.4-Communication.md`, `7.5-Documented-Information.md`
 
-**C8_Operation/** -- Operation
+**C08_Operation/** -- Operation
 `8.1-Operational-Planning.md`, `8.2-Risk-Assessment.md`, `8.3-Risk-Treatment.md`
 
-**C9_Performance/** -- Performance evaluation
+**C09_Performance/** -- Performance evaluation
 `9.1-Monitoring-and-Measurement.md`, `9.2-Internal-Audit.md`, `9.3-Management-Review.md`
 
 **C10_Improvement/** -- Improvement
@@ -272,8 +272,8 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 | REF | References | References/ |
 | LIB | Library (norm extracts) | Library/ |
 | CLS | Clause (definitions) | Definitions/ |
-| C4..C10 | Clause sorting | C4_Context/ .. C10_Improvement/ |
+| C04..C10 | Clause sorting | C04_Context/ .. C10_Improvement/ |
 | REG | Register | Registers/ |
 | PRC | Process | Processes/ |
-| HB_CLS_C5 | (folder) | Definitions/C5_Leadership/ (3 files) |
-| HB_CLS_C9 | (folder) | Definitions/C9_Performance/ (3 files) |
+| HB_CLS_C05 | (folder) | Definitions/C05_Leadership/ (3 files) |
+| HB_CLS_C09 | (folder) | Definitions/C09_Performance/ (3 files) |
