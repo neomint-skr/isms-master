@@ -1,5 +1,5 @@
 > **Document ID:** CB_POL_L2_11-Risk-Management
-> **Version:** 00.01.011
+> **Version:** 00.01.012
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1, 8.2, 8.3
@@ -18,7 +18,7 @@ Without clear criteria for likelihood, impact, and risk acceptance, risk assessm
 ## Objective and Scope
 
 **Policy reference:** P3
-**Operationalized by:** CB_PRC_13
+**Operationalized by:** CB_PRC_13, CB_PRC_07
 
 **Objective:** Without uniform criteria for likelihood, impact, and risk acceptance, risk assessments are not comparable. Subjective estimates lead to inconsistent controls — a serious audit finding.
 
@@ -50,58 +50,20 @@ Risk management follows an asset-based end-to-end approach. Each phase builds on
 |---|---|---|---|
 | 1 — Asset registration | CB_POL_L2_07 (Asset types, grouping) | CB_PRC_12 (Asset lifecycle) | HB_REG_03 (Asset register) |
 | 2 — Protection requirements | This standard (Protection Requirements Analysis) | CB_PRC_13 (Protection requirements) | HB_REG_03 (C/I/A columns) |
-| 3 — Risk identification and analysis | This standard (Risk Criteria, Risk Matrix) | CB_PRC_07 (Risk assessment) | HB_REG_06 (Risk register) |
-| 4 — Risk evaluation | This standard (Risk Appetite and Acceptance Criteria) | CB_PRC_07 (Risk evaluation) | HB_REG_06 (Risk register) |
-| 5 — Risk treatment | This standard (Treatment Options) | CB_PRC_07 (Risk treatment) | HB_REG_07 (Treatment plan), HB_REG_02 (SoA) |
-| 6 — Approval | This standard (Risk Appetite and Acceptance Criteria) | CB_PRC_07 (Approval) | HB_REG_06 (Acceptance records) |
+| 3 — Risk identification and analysis | This standard (Risk Analysis) | CB_PRC_07 (Risk assessment) | HB_REG_06 (Risk register) |
+| 4 — Risk evaluation | This standard (Risk Acceptance and Exceptions) | CB_PRC_07 (Risk evaluation) | HB_REG_06 (Risk register) |
+| 5 — Risk treatment | This standard (Risk Treatment) | CB_PRC_07 (Risk treatment) | HB_REG_07 (Treatment plan), HB_REG_02 (SoA) |
+| 6 — Approval | This standard (Risk Acceptance and Exceptions) | CB_PRC_07 (Approval) | HB_REG_06 (Acceptance records) |
 
-## Risk Criteria
+## Asset Input
 
-The following criteria ensure that IS risks are assessed consistently and comparably (Clause 6.1.2 a).
+Risk management requires a complete and current asset inventory as its foundation. Assets must be identified, categorised by type and registered in the asset register (HB_REG_03) before any protection requirements analysis or risk assessment can commence.
 
-### Likelihood
+The normative basis for asset types, grouping, and classification is defined in CB_POL_L2_07 (Asset Management). The operational lifecycle — from identification through disposal — is governed by CB_PRC_12 (Asset Management Process).
 
-| Level | Label | Description |
-|---|---|---|
-| 1 | Rare | Less than once in 3 years; theoretically possible, no known incidents |
-| 2 | Possible | Once in 1-3 years; incidents known in the industry |
-| 3 | Likely | Once per year; already occurred internally or regularly in the industry |
-| 4 | Frequent | Multiple times per year; repeated occurrence expected |
+Asset register entries must include cross-references documenting dependency chains (business processes → applications → IT systems → rooms/buildings → communication links). These cross-references are essential for protection requirements inheritance in Phase 2.
 
-### Impact
-
-Assessment is based on the highest damage across the dimensions: business process, financial damage, reputational damage, and compliance violation.
-
-| Level | Label | Description |
-|---|---|---|
-| 1 | Low | Short-term impairment, damage below 5,000 EUR, no external impact |
-| 2 | Moderate | Temporary disruption of a business process, damage 5,000-50,000 EUR, limited reputational loss |
-| 3 | High | Outage of a critical process >24h, damage 50,000-250,000 EUR, significant reputational damage or regulatory reporting obligation |
-| 4 | Critical | Existentially threatening impact, damage >250,000 EUR, lasting loss of trust or substantial penalties |
-
-The EUR thresholds are calibrated to the scale of [Organization] and are reviewed annually as part of the management review.
-
-## Risk Matrix
-
-The risk level results from multiplication of likelihood and impact.
-
-|  | Low (1) | Moderate (2) | High (3) | Critical (4) |
-|---|---|---|---|---|
-| **Frequent (4)** | 4 Medium | 8 High | 12 Critical | 16 Critical |
-| **Likely (3)** | 3 Low | 6 Medium | 9 High | 12 Critical |
-| **Possible (2)** | 2 Low | 4 Medium | 6 Medium | 8 High |
-| **Rare (1)** | 1 Low | 2 Low | 3 Low | 4 Medium |
-
-### Risk Levels
-
-| Risk level | Value range | Colour | Action required |
-|---|---|---|---|
-| Critical | 12-16 | Red | Immediate treatment required, escalation to executive management |
-| High | 8-9 | Red | Treatment within 30 days, risk owner decides |
-| Medium | 4-6 | Yellow | ALARP principle: reduce risk as far as reasonably practicable |
-| Low | 1-3 | Green | Acceptance possible, regular monitoring |
-
-Yellow risks (Medium) are subject to the ALARP principle (As Low As Reasonably Practicable): they are treated provided the cost of risk reduction is proportionate to the risk level.
+Without a complete asset inventory, neither protection requirements analysis nor risk identification can produce reliable results.
 
 ## Protection Requirements Analysis
 
@@ -195,20 +157,59 @@ The results of the protection requirements analysis determine the further course
 
 **Link to risk analysis.** Assets with a protection requirement of High or Very high in at least one core value require an individual risk analysis as defined in Phase 3 of this standard. Standard controls (IT-Grundschutz baseline) are generally sufficient for assets with Normal protection requirements.
 
-## Risk Appetite and Acceptance Criteria
+## Risk Analysis
 
-[Organization] pursues a conservative risk appetite in the area of information security.
+The risk analysis builds on the results of the protection requirements analysis. Assets assessed with a protection requirement of High or Very high in at least one core value (C, I, A) require an individual risk analysis as defined in Phase 3 of this standard (addresses Clause 6.1.2 a).
 
-| Risk level | Acceptance rule |
-|---|---|
-| Critical (12-16) | Never acceptable. Immediate treatment required. |
-| High (8-9) | Acceptance only in justified exceptional cases, with written approval from executive management (CEO/CTO). |
-| Medium (4-6) | Acceptance by risk owner possible, with documentation of rationale and deadline for reassessment. |
-| Low (1-3) | Acceptance by risk owner. Documentation in the risk register is sufficient. |
+Risks are identified as threat-vulnerability pairs affecting the assessed assets. Each risk is evaluated using a likelihood × impact assessment. The product determines the risk level via the risk matrix. The assessment distinguishes between gross risk (inherent risk without considering existing controls) and net risk (residual risk after considering existing controls in place).
 
-Every risk acceptance is documented in the risk register (HB_REG_06) with rationale, date, and approving person. Accepted risks are reassessed in the next regular risk assessment cycle.
+The following sections define the binding scales for likelihood and impact, the risk matrix, and the resulting risk levels.
 
-## Treatment Options
+### Likelihood
+
+| Level | Label | Description |
+|---|---|---|
+| 1 | Rare | Less than once in 3 years; theoretically possible, no known incidents |
+| 2 | Possible | Once in 1-3 years; incidents known in the industry |
+| 3 | Likely | Once per year; already occurred internally or regularly in the industry |
+| 4 | Frequent | Multiple times per year; repeated occurrence expected |
+
+### Impact
+
+Assessment is based on the highest damage across the dimensions: business process, financial damage, reputational damage, and compliance violation.
+
+| Level | Label | Description |
+|---|---|---|
+| 1 | Low | Short-term impairment, damage below 5,000 EUR, no external impact |
+| 2 | Moderate | Temporary disruption of a business process, damage 5,000-50,000 EUR, limited reputational loss |
+| 3 | High | Outage of a critical process >24h, damage 50,000-250,000 EUR, significant reputational damage or regulatory reporting obligation |
+| 4 | Critical | Existentially threatening impact, damage >250,000 EUR, lasting loss of trust or substantial penalties |
+
+The EUR thresholds are calibrated to the scale of [Organization] and are reviewed annually as part of the management review.
+
+### Risk Matrix
+
+The risk level results from multiplication of likelihood and impact.
+
+|  | Low (1) | Moderate (2) | High (3) | Critical (4) |
+|---|---|---|---|---|
+| **Frequent (4)** | 4 Medium | 8 High | 12 Critical | 16 Critical |
+| **Likely (3)** | 3 Low | 6 Medium | 9 High | 12 Critical |
+| **Possible (2)** | 2 Low | 4 Medium | 6 Medium | 8 High |
+| **Rare (1)** | 1 Low | 2 Low | 3 Low | 4 Medium |
+
+### Risk Levels
+
+| Risk level | Value range | Colour | Action required |
+|---|---|---|---|
+| Critical | 12-16 | Red | Immediate treatment required, escalation to executive management |
+| High | 8-9 | Red | Treatment within 30 days, risk owner decides |
+| Medium | 4-6 | Yellow | ALARP principle: reduce risk as far as reasonably practicable |
+| Low | 1-3 | Green | Acceptance possible, regular monitoring |
+
+Yellow risks (Medium) are subject to the ALARP principle (As Low As Reasonably Practicable): they are treated provided the cost of risk reduction is proportionate to the risk level.
+
+## Risk Treatment
 
 For each identified risk, at least one of the following treatment options is selected (Clause 6.1.3 a).
 
@@ -220,6 +221,19 @@ For each identified risk, at least one of the following treatment options is sel
 | Accept | The residual risk is consciously and documentedly accepted. | Low risks with formal acceptance |
 
 The selection of the treatment option is made by the risk owner in coordination with the Chief Information Security Officer. For "Mitigate," appropriate controls are determined and reconciled with Annex A of ISO 27001 (Clause 6.1.3 b, c). The selected controls are documented in the risk treatment plan (HB_REG_07) and their effectiveness verified within the risk management process (CB_PRC_07).
+
+## Risk Acceptance and Exceptions
+
+[Organization] pursues a conservative risk appetite in the area of information security.
+
+| Risk level | Acceptance rule |
+|---|---|
+| Critical (12-16) | Never acceptable. Immediate treatment required. |
+| High (8-9) | Acceptance only in justified exceptional cases, with written approval from executive management (CEO/CTO). |
+| Medium (4-6) | Acceptance by risk owner possible, with documentation of rationale and deadline for reassessment. |
+| Low (1-3) | Acceptance by risk owner. Documentation in the risk register is sufficient. |
+
+Every risk acceptance is documented in the risk register (HB_REG_06) with rationale, date, and approving person. Accepted risks are reassessed in the next regular risk assessment cycle.
 
 ## See also
 
@@ -236,6 +250,7 @@ The selection of the treatment option is made by the risk owner in coordination 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.012 | 2026-02-11 | Claude (AI) | Restructure sections to match process flow (asset input → protection requirements → risk analysis → risk treatment → exceptions) |
 | 00.01.011 | 2026-02-11 | Claude (AI) | Expand Protection Requirements Analysis: damage scenarios (BSI 200-2), assessment methodology, scope, conclusions; Phase-Document Matrix: Phase 2 → CB_PRC_13 |
 | 00.01.010 | 2026-02-11 | Claude (AI) | Add Risk Management Framework section with end-to-end phase model and document matrix |
 | 00.01.009 | 2026-02-10 | Claude (AI) | Remove Risk Management Roles section; roles consolidated in CLS 5.3 |
