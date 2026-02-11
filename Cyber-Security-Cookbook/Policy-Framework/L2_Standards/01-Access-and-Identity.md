@@ -1,9 +1,9 @@
 > **Document ID:** CB_POL_L2_01-Access-and-Identity
-> **Version:** 00.01.008
+> **Version:** 00.01.009
 > **Classification:** Internal
 > **Author:** CISO
-> **ISO Reference:** A.5.15-5.18, A.8.2-8.5, A.8.18
-> **Last modified:** 2026-02-09
+> **ISO Reference:** A.5.15-5.18, A.8.2-8.5, A.8.4, A.8.18
+> **Last modified:** 2026-02-11
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -88,6 +88,21 @@ Privileged access rights must be granted and monitored in a controlled manner to
 
 **Recertification:** Privileged rights are to be reviewed [annually | semi-annually — depending on risk classification], particularly after role changes or terminations.
 
+## Source Code Access
+
+Access to source code repositories must be restricted on a need-to-know basis and granted through role-based permissions (addresses A.8.4). Only personnel with a documented business requirement may receive access to code repositories.
+
+**Requirements:**
+
+| # | Requirement |
+|---|---|
+| 1 | Source code access is granted exclusively based on role-based authorisation and documented approval |
+| 2 | Branch protection rules must enforce mandatory code review before merging into protected branches |
+| 3 | All read and write access to source code repositories must be logged and auditable |
+| 4 | Source code must not be stored on personal devices or transferred to unapproved repositories |
+
+Concrete implementation of repository access controls and code review workflows is defined in CB_POL_L3_02-Admin-Handbook [REF:DG24-IAM, Kap. 3.4].
+
 ## Access Rights Lifecycle
 
 Access rights are subject to a defined lifecycle from request through to revocation (addresses A.5.18). Each phase requires documented controls.
@@ -119,6 +134,7 @@ Segregation of duties must be ensured: approval and technical implementation of 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.009 | 2026-02-11 | CISO | Source code access section added (A.8.4) |
 | 00.01.008 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.007 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |
 | 00.01.006 | 2026-02-09 | CISO | Access control (A.5.15), access rights lifecycle (A.5.18) populated (Batch-D) |

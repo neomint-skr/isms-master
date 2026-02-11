@@ -1,9 +1,9 @@
 > **Document ID:** CB_POL_L2_02-Information-Protection
-> **Version:** 00.01.006
+> **Version:** 00.01.007
 > **Classification:** Internal
 > **Author:** CISO
-> **ISO Reference:** A.5.12-5.14, A.8.10-8.12, A.8.24
-> **Last modified:** 2026-02-09
+> **ISO Reference:** A.5.12-5.14, A.5.32, A.8.10-8.12, A.8.24
+> **Last modified:** 2026-02-11
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -97,6 +97,20 @@ Information must be appropriately protected throughout its entire lifecycle — 
 
 Information owners are responsible for identifying information no longer required for deletion and informing the responsible units [REF:DG25-MA, Kap. 5].
 
+## Intellectual Property
+
+The organization's own intellectual property and that of third parties must be identified and protected against unauthorized disclosure, modification, or misuse (addresses A.5.32).
+
+**Requirements:**
+
+| # | Requirement |
+|---|---|
+| 1 | Intellectual property — including source code, product designs, and proprietary data — must be classified and protected according to this standard |
+| 2 | Software licences must be inventoried and compliance with licence terms monitored |
+| 3 | Open-source components must be assessed for licence compatibility before integration |
+| 4 | Employees and external personnel must be bound by non-disclosure agreements covering intellectual property (see CB_POL_L2_10) |
+| 5 | Violations of intellectual property rights must be reported through the incident management process |
+
 ## See also
 
 - CB_POL_L2_01-Access-and-Identity — Access control based on classification
@@ -110,6 +124,7 @@ Information owners are responsible for identifying information no longer require
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.007 | 2026-02-11 | CISO | Intellectual property section added (A.5.32) |
 | 00.01.006 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.005 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |
 | 00.01.004 | 2026-02-09 | CISO | Classification (A.5.12-13), transfer (A.5.14), cryptography (A.8.24), data protection lifecycle (A.8.10-12) populated (Batch-D) |
