@@ -1,9 +1,9 @@
 > **Document ID:** HB_MGT_01-Improvement-Roadmap
-> **Version:** 00.00.001
+> **Version:** 00.00.002
 > **Classification:** Confidential
 > **Author:** CISO
 > **ISO Reference:** ISO 27001:2022, 10.1
-> **Last modified:** 2026-02-10
+> **Last modified:** 2026-02-11
 > **Approval:** —
 > **Review cycle:** Quarterly
 
@@ -33,11 +33,43 @@ The roadmap operationalizes the requirements of HB_CLS_10.1 (Continual Improveme
 
 ## Priority Assessment
 
-[Criteria for prioritizing improvement themes]
+Improvement themes are prioritized based on the following criteria to ensure effective resource allocation:
+
+| Criterion | Description | Weight |
+|---|---|---|
+| Risk impact | Severity of the associated risk if the improvement is not implemented, based on HB_REG_06 risk ratings | High |
+| Audit relevance | Whether the theme addresses an audit finding or nonconformity from HB_REG_05 | High |
+| Regulatory urgency | Themes driven by legal or contractual obligations with fixed deadlines | High |
+| Implementation effort | Estimated resources (time, budget, personnel) required for completion | Medium |
+| Dependencies | Whether the theme blocks or is blocked by other improvement activities | Medium |
+| Quick-win potential | Themes with low effort and high visibility that demonstrate continual improvement | Low |
+
+Themes with high risk impact or audit relevance are prioritized first. Where multiple themes share the same priority, regulatory urgency and dependencies determine the sequence. The CISO validates the priority assessment during each quarterly review.
 
 ## Timeline
 
-[Quarterly review schedule and milestone tracking approach]
+The improvement roadmap follows a quarterly review cycle aligned with the management review schedule.
+
+### Quarterly review
+
+The CISO reviews all open improvement themes at minimum once per quarter. The review assesses progress against target dates, adjusts priorities based on new inputs, and identifies blocked themes. Results are documented as part of the management review record (HB_CLS_9.3).
+
+### Milestone tracking
+
+Each improvement theme progresses through the following stages:
+
+| Status | Definition | Transition criterion |
+|---|---|---|
+| Open | Theme identified and logged | Priority and owner assigned |
+| In progress | Implementation work started | First deliverable produced |
+| On hold | Implementation paused due to dependency or resource constraint | Blocking condition documented |
+| Closed | Implementation completed and effectiveness verified | Evidence recorded, verified by CISO |
+
+Status transitions are recorded in the improvement themes table with the date of change.
+
+### Escalation
+
+Themes that exceed their target date by more than one quarter are escalated to top management during the next management review. Themes in "On hold" status for more than two consecutive quarters are reviewed for cancellation or re-prioritization.
 
 ## See also
 
@@ -50,4 +82,5 @@ The roadmap operationalizes the requirements of HB_CLS_10.1 (Continual Improveme
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.00.002 | 2026-02-11 | CISO | Populated priority assessment criteria and timeline with review cycle |
 | 00.00.001 | 2026-02-10 | CISO | Initial skeleton |

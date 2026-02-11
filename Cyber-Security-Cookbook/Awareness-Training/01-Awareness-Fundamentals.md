@@ -1,9 +1,9 @@
 > **Document ID:** CB_AWR_01-Awareness-Fundamentals
-> **Version:** 00.01.004
+> **Version:** 00.01.005
 > **Classification:** Internal
 > **Author:** CISO
-> **ISO Reference:** A.6.3, A.6.8
-> **Last modified:** 2026-02-09
+> **ISO Reference:** A.5.17, A.6.3, A.6.8
+> **Last modified:** 2026-02-11
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -13,7 +13,7 @@
 
 ## Summary
 
-<!-- TODO -->
+Phishing, weak passwords, and unreported incidents cause most security breaches. This guide teaches you to spot threats, protect your accounts, and report incidents. Your security awareness directly protects the organization's information assets. Without this knowledge, everyday mistakes quickly become serious security incidents.
 
 ## Objective and Scope
 
@@ -54,15 +54,82 @@ The organization faces daily risks that may compromise confidentiality, availabi
 
 ## Phishing
 
-<!-- TODO -->
+Phishing is the most common attack method targeting employees (addresses A.6.3). Attackers send forged emails, messages, or links to steal your credentials.
+
+### How to spot phishing
+
+Watch for these warning signs:
+
+- **Wrong sender address** — Display name looks correct, but the email domain is off.
+- **Urgency or threats** — "Act now or your account will be locked."
+- **Suspicious links** — Hover before clicking. The URL does not match the sender.
+- **Unexpected attachments** — You did not request any file.
+- **Generic greeting** — "Dear Customer" instead of your name.
+- **Poor language** — Typos and odd phrasing in an official-looking message.
+
+### What to do
+
+- Never click links or open attachments in suspicious messages.
+- Never enter credentials on unfamiliar websites.
+- Report the message via [reporting channel, e.g. phishing button in email client].
+- Already clicked or entered data? Contact [IT support / IS-Coordinator] immediately.
+- Forward the original message as attachment, then delete it.
 
 ## Password Hygiene
 
-<!-- TODO -->
+Strong passwords and multi-factor authentication protect your accounts (addresses A.5.17). Follow these rules to keep credentials safe.
+
+### Password rules
+
+- Use at least [12 | 16 characters — depending on risk classification].
+- Combine upper case, lower case, numbers, and special characters.
+- Never reuse passwords across different accounts.
+- Use a [password manager, e.g. Bitwarden / 1Password] to generate and store passwords.
+- Change your password immediately if a breach is suspected.
+
+### Multi-factor authentication (MFA)
+
+- Enable MFA on all accounts that support it.
+- Use an authenticator app or hardware token. Avoid SMS-based MFA where possible.
+- Keep backup codes in a secure location.
+
+### What is not allowed
+
+- Writing passwords on sticky notes or in unencrypted files.
+- Sharing passwords with colleagues — not even with IT support.
+- Using personal passwords for work accounts or vice versa.
+- Disabling or bypassing MFA without CISO approval.
 
 ## Incident Reporting
 
-<!-- TODO -->
+Every employee must report security incidents without delay (addresses A.6.8). Fast reporting limits damage and helps the organization respond effectively.
+
+### What to report
+
+- Suspicious emails, messages, or phone calls.
+- Lost or stolen devices (laptop, phone, badge).
+- Unauthorized access to systems or rooms.
+- Accidental disclosure of confidential information.
+- Unusual system behaviour (unexpected pop-ups, locked accounts).
+- Any situation that feels wrong — when in doubt, report it.
+
+### How to report
+
+- Use [primary reporting channel, e.g. email to security@company.com / ITSM ticket].
+- For urgent incidents, call [emergency contact number / IS-Coordinator phone].
+- Provide: what happened, when, which systems or data are affected.
+- Do not try to fix the issue yourself — report first, then follow instructions.
+
+### Time requirements
+
+- Report immediately upon discovery, no later than [timeframe, e.g. 4 hours].
+- Do not wait until you are certain — early reports are more valuable than late ones.
+
+### No-blame principle
+
+- Reporting an incident never leads to disciplinary action.
+- Concealing or delaying a report is a policy violation.
+- The organization values honest reporting over blame assignment.
 
 ## See also
 
@@ -71,6 +138,7 @@ The organization faces daily risks that may compromise confidentiality, availabi
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.005 | 2026-02-11 | CISO | Populated summary, phishing, password hygiene, and incident reporting sections |
 | 00.01.004 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.003 | 2026-02-09 | CISO | Awareness programme (A.6.3) and top risks/event types (A.6.8) populated (REC-414, 423) |
 | 00.01.002 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
