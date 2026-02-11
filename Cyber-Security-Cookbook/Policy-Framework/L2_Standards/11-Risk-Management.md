@@ -1,5 +1,5 @@
 > **Document ID:** CB_POL_L2_11-Risk-Management
-> **Version:** 00.01.010
+> **Version:** 00.01.011
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1, 8.2, 8.3
@@ -18,7 +18,7 @@ Without clear criteria for likelihood, impact, and risk acceptance, risk assessm
 ## Objective and Scope
 
 **Policy reference:** P3
-**Operationalized by:** —
+**Operationalized by:** CB_PRC_13
 
 **Objective:** Without uniform criteria for likelihood, impact, and risk acceptance, risk assessments are not comparable. Subjective estimates lead to inconsistent controls — a serious audit finding.
 
@@ -49,7 +49,7 @@ Risk management follows an asset-based end-to-end approach. Each phase builds on
 | Phase | Normative basis | Process | Register |
 |---|---|---|---|
 | 1 — Asset registration | CB_POL_L2_07 (Asset types, grouping) | CB_PRC_12 (Asset lifecycle) | HB_REG_03 (Asset register) |
-| 2 — Protection requirements | This standard (Protection Requirements Analysis) | CB_PRC_07 (Risk management) | HB_REG_03 (C/I/A columns) |
+| 2 — Protection requirements | This standard (Protection Requirements Analysis) | CB_PRC_13 (Protection requirements) | HB_REG_03 (C/I/A columns) |
 | 3 — Risk identification and analysis | This standard (Risk Criteria, Risk Matrix) | CB_PRC_07 (Risk assessment) | HB_REG_06 (Risk register) |
 | 4 — Risk evaluation | This standard (Risk Appetite and Acceptance Criteria) | CB_PRC_07 (Risk evaluation) | HB_REG_06 (Risk register) |
 | 5 — Risk treatment | This standard (Treatment Options) | CB_PRC_07 (Risk treatment) | HB_REG_07 (Treatment plan), HB_REG_02 (SoA) |
@@ -105,11 +105,11 @@ Yellow risks (Medium) are subject to the ALARP principle (As Low As Reasonably P
 
 ## Protection Requirements Analysis
 
-The protection requirements analysis assesses assets across the three core values: confidentiality (C), integrity (I), and availability (A). It is a prerequisite for risk identification and is conducted on the basis of the assets captured in the asset register (HB_REG_03).
+The protection requirements analysis assesses assets across the three core values: confidentiality (C), integrity (I), and availability (A). It is a prerequisite for risk identification and is conducted on the basis of the assets captured in the asset register (HB_REG_03). The operational assessment process is defined in CB_PRC_13 (Protection Requirements Assessment).
 
 ### Protection Requirement Categories
 
-The categories are aligned with BSI Standard 200-2:
+The three-level scale (Normal / High / Very high) aligned with BSI Standard 200-2 [REF:BSI17, Ch. 8.2.1] is binding for all protection requirements assessments. No additional or alternative scales are permitted.
 
 | Category | Description |
 |---|---|
@@ -119,9 +119,81 @@ The categories are aligned with BSI Standard 200-2:
 
 The protection requirements analysis is performed per asset and per core value (C/I/A) individually. The overall protection requirement of an asset is determined by the highest individual value (maximum principle). Assets with a protection requirement of "High" or "Very high" in at least one core value require an individual risk analysis. Results are documented in the C/I/A columns of the asset register (HB_REG_03).
 
-### Protection Requirement Inheritance
+### Damage Scenarios
 
-Protection requirements can be inherited along dependency chains: an IT system inherits the protection requirement of the information processed on it. Inheritance relationships are traced through the cross-reference registers in the asset register. Where cumulation effects arise (many items of information with normal protection requirements on one system), the aggregated protection requirement may be higher.
+Damage scenarios serve as the basis for assigning protection requirement categories [REF:BSI17, Ch. 8.2.1]. The type and number of scenarios may be adapted to organizational priorities. The following six scenarios are mandatory as a minimum.
+
+#### Normal
+
+| Scenario | Description |
+|---|---|
+| Violation of laws, regulations, or contracts | Violations with minor consequences. Contractual breaches with at most low penalties. |
+| Impairment of informational self-determination | Personal data processing may cause limited disadvantage to data subjects in their social standing or economic situation. |
+| Impairment of personal safety | Impairment appears unlikely. |
+| Impairment of task fulfilment | Impairment is tolerable. Maximum tolerable downtime: [24-72 hours — organization-specific]. |
+| Negative internal or external reputation | Minor or only internal reputational impact. |
+| Financial impact | Financial damage remains tolerable. Threshold: [amount or percentage — calibrated to organization scale]. |
+
+#### High
+
+| Scenario | Description |
+|---|---|
+| Violation of laws, regulations, or contracts | Violations with significant consequences. Contractual breaches with substantial penalties. |
+| Impairment of informational self-determination | Personal data processing may cause significant disadvantage to data subjects in their social standing or economic situation. |
+| Impairment of personal safety | Impairment cannot be ruled out. |
+| Impairment of task fulfilment | Impairment is not tolerable for affected individuals. Maximum tolerable downtime: [1-24 hours — organization-specific]. |
+| Negative internal or external reputation | Broad reputational or trust damage. |
+| Financial impact | Considerable financial losses, but not existentially threatening. Threshold: [amount or percentage — calibrated to organization scale]. |
+
+#### Very high
+
+| Scenario | Description |
+|---|---|
+| Violation of laws, regulations, or contracts | Fundamental violation. Contractual breaches with ruinous liability. |
+| Impairment of informational self-determination | Personal data processing may endanger life, limb, or personal freedom of data subjects. |
+| Impairment of personal safety | Severe impairment is possible. Danger to life and limb. |
+| Impairment of task fulfilment | Impairment is not tolerable for any affected party. Maximum tolerable downtime: [< 1 hour — organization-specific]. |
+| Negative internal or external reputation | Nationwide reputational damage, potentially existence-threatening. |
+| Financial impact | Financial damage is existentially threatening. Threshold: [amount or percentage — calibrated to organization scale]. |
+
+The thresholds (downtime windows, financial amounts) are calibrated to the scale of [Organization] and are reviewed annually as part of the management review. Additional scenarios (e.g. impairment of third-party services, impact on external infrastructure) may be added.
+
+### Assessment Methodology
+
+The methodology follows BSI Standard 200-2 [REF:BSI17, Ch. 8.2.2] and applies to all asset categories in the asset register (HB_REG_03).
+
+**Primary assessment.** Protection requirements are assessed directly for information and business processes using the damage scenarios defined above. The assessment determines the original protection requirement values for C, I, and A.
+
+**Inheritance.** Protection requirements are inherited along the dependency chains documented in the cross-reference tables of the asset register: business processes → applications → IT systems → rooms/buildings → communication links. The direction of inheritance follows the data flow and processing dependencies.
+
+**Maximum principle.** The highest individual damage value across all relevant scenarios determines the protection requirement for each core value. The overall protection requirement of an asset equals the highest value among C, I, and A.
+
+**Cumulation effect.** Where multiple assets with Normal protection requirements are concentrated on a single system or in a single room, the aggregated impact may exceed the Normal category. The cumulated protection requirement is assessed as a whole.
+
+**Distribution effect.** Where redundant infrastructure (e.g. hot standby, clustered systems) already mitigates availability risks, the inherited protection requirement may be relativized. Distribution effects occur primarily for availability, but may also apply to confidentiality where only non-critical subsets are processed. Distribution effects are documented with rationale.
+
+**Iterative character.** The protection requirements analysis is an iterative process. After risk analyses or significant changes, results are reviewed and adjusted as needed.
+
+### Assessment Scope
+
+The protection requirements analysis covers all asset categories in the asset register [REF:BSI17, Ch. 8.2.3-8.2.8]:
+
+| Asset category | Primary or inherited | Key considerations |
+|---|---|---|
+| Information and business processes | Primary (direct damage scenario assessment) | "What if?" analysis with process owners. Complex processes may be decomposed into sub-processes. |
+| Applications | Inherited from business processes | Includes central services (DNS, e-mail, databases). |
+| IT systems (physical and virtual) | Inherited from applications | Includes virtualization hosts. Cumulation and distribution effects to be evaluated per host. |
+| ICS and IoT devices | Inherited from processes/applications | Protection requirement categories may require adapted downtime thresholds. |
+| Rooms and buildings | Inherited from installed IT systems and stored media | Cumulation effects in server rooms, data centres, and archives. |
+| Communication links | Inherited from connected systems | Critical links: external connections, links carrying high/very high information, production network boundaries. |
+
+### Conclusions
+
+The results of the protection requirements analysis determine the further course of the security concept [REF:BSI17, Ch. 8.2.9].
+
+**Security zones.** Where areas of different protection requirements coexist, security zones (physical, technical, personnel) are established to contain the propagation of higher protection requirements through the maximum principle.
+
+**Link to risk analysis.** Assets with a protection requirement of High or Very high in at least one core value require an individual risk analysis as defined in Phase 3 of this standard. Standard controls (IT-Grundschutz baseline) are generally sufficient for assets with Normal protection requirements.
 
 ## Risk Appetite and Acceptance Criteria
 
@@ -154,6 +226,7 @@ The selection of the treatment option is made by the risk owner in coordination 
 - CB_POL_L1_01-Policy — Principle P3 (Risk orientation)
 - CB_POL_L2_07-Organisation — Asset management as foundation for risk assessment
 - CB_PRC_07-Risk-Management — Operational risk management process
+- CB_PRC_13-Protection-Requirements — Protection requirements assessment process
 - HB_REG_06-Risk-Register — Documented risk entries
 - HB_REG_07-Risk-Treatment-Plan — Treatment plan
 - HB_REG_02-Statement-of-Applicability — Control applicability
@@ -163,6 +236,7 @@ The selection of the treatment option is made by the risk owner in coordination 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.011 | 2026-02-11 | Claude (AI) | Expand Protection Requirements Analysis: damage scenarios (BSI 200-2), assessment methodology, scope, conclusions; Phase-Document Matrix: Phase 2 → CB_PRC_13 |
 | 00.01.010 | 2026-02-11 | Claude (AI) | Add Risk Management Framework section with end-to-end phase model and document matrix |
 | 00.01.009 | 2026-02-10 | Claude (AI) | Remove Risk Management Roles section; roles consolidated in CLS 5.3 |
 | 00.01.008 | 2026-02-09 | CISO | Aligned role terminology |
