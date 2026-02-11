@@ -1,5 +1,5 @@
 > **Document ID:** CB_AWR_01-Awareness-Fundamentals
-> **Version:** 00.01.005
+> **Version:** 00.01.006
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.17, A.6.3, A.6.8
@@ -133,11 +133,16 @@ Every employee must report security incidents without delay (addresses A.6.8). F
 
 ## See also
 
+- CB_AWR_02-Onboarding-Checklist — IS onboarding steps for new employees
+- CB_Emergency-Card — Quick-reference card for security emergencies
+- CB_PRC_01-Incident-Management — Full incident management process
+- CB_POL_L2_10-Human-Resources — HR security requirements (awareness section)
 
 ## Changelog
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.006 | 2026-02-11 | CISO | Added see-also cross-references |
 | 00.01.005 | 2026-02-11 | CISO | Populated summary, phishing, password hygiene, and incident reporting sections |
 | 00.01.004 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.003 | 2026-02-09 | CISO | Awareness programme (A.6.3) and top risks/event types (A.6.8) populated (REC-414, 423) |

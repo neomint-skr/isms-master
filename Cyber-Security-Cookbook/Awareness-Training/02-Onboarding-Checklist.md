@@ -1,5 +1,5 @@
 > **Document ID:** CB_AWR_02-Onboarding-Checklist
-> **Version:** 00.01.004
+> **Version:** 00.01.005
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.6.1, A.6.2, A.6.6
@@ -46,11 +46,14 @@ Screening and background verification requirements are defined in the employment
 
 ## See also
 
+- CB_AWR_01-Awareness-Fundamentals — Awareness training content
+- CB_POL_L2_10-Human-Resources — HR security requirements (employment terms)
 
 ## Changelog
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.005 | 2026-02-11 | CISO | Added see-also cross-references |
 | 00.01.004 | 2026-02-11 | CISO | Populated summary and onboarding table with checklist steps |
 | 00.01.003 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.002 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
