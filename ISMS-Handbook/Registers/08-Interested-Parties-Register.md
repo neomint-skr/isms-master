@@ -1,9 +1,9 @@
 > **Document ID:** HB_REG_08-Interested-Parties-Register
-> **Version:** 00.01.007
+> **Version:** 00.01.008
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** Clause 4.2, A.5.31
-> **Last modified:** 2026-02-10
+> **Last modified:** 2026-02-11
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -44,7 +44,7 @@ The interested parties directory lists all parties with a legitimate interest in
 
 | Category | Examples | Typical requirements |
 |---|---|---|
-| Top management | [CEO], [CTO] | Compliance, competitiveness, reputation protection |
+| Top management | [CEO], [CTO] | Compliance, competitiveness, reputation protection, alignment of IS objectives with strategic business goals |
 | Employees | All personnel | Data protection, workplace security |
 | Customers | [Customer segments] | Confidentiality, availability, contractual compliance |
 | Suppliers/Partners | [Cloud providers, service providers] | Clear security requirements, communication |
@@ -66,6 +66,7 @@ The interested parties directory lists all parties with a legitimate interest in
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.008 | 2026-02-11 | CISO | Add strategic business goal alignment to top management requirements |
 | 00.01.007 | 2026-02-10 | Claude (AI) | Remove Responsibilities section; roles consolidated in CLS 5.3 |
 | 00.01.006 | 2026-02-09 | [CISO] | Aligned role terminology |
 | 00.01.005 | 2026-02-09 | [CISO] | Directory structure: 5-field schema for stakeholder documentation (REC-404) |

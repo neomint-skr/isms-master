@@ -1,9 +1,9 @@
 > **Document ID:** HB_REG_09-Context-Register
-> **Version:** 00.01.007
+> **Version:** 00.01.008
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** Clause 4.1
-> **Last modified:** 2026-02-10
+> **Last modified:** 2026-02-11
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -43,11 +43,12 @@ The organizational profile describes the context in which the ISMS operates. It 
 | Organizational units | [Departments/teams in ISMS scope] |
 | Customers | [Customer segments] |
 | Key partners | [Key partners/service providers] |
+| Strategic business objectives | [Growth plans, market expansion, product strategy relevant to IS] |
 
 ## External Issues
 
 - **Market environment:** [Competitive situation, market dynamics]
-- **Regulatory requirements:** [Relevant laws/regulations, e.g. GDPR, NIS-2, industry-specific requirements]
+- **Regulatory requirements:** [Relevant laws/regulations, e.g. GDPR, NIS-2, industry-specific requirements] — detailed legal and contractual obligations are tracked in HB_REG_08 (Interested Parties Register, field "Source")
 - **Threat landscape:** [Relevant cyber threats, e.g. ransomware, phishing, supply chain attacks]
 - **Technological developments:** [Relevant trends, e.g. cloud migration, AI adoption]
 
@@ -73,6 +74,7 @@ The organizational profile describes the context in which the ISMS operates. It 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.008 | 2026-02-11 | CISO | Add strategic business objectives attribute; add legal register cross-reference to REG_08 |
 | 00.01.007 | 2026-02-10 | Claude (AI) | Remove Responsibilities section; roles consolidated in CLS 5.3 |
 | 00.01.006 | 2026-02-09 | [CISO] | Aligned role terminology |
 | 00.01.005 | 2026-02-09 | [CISO] | Organizational profile: context introduction with Clause 4.1 reference (REC-403) |

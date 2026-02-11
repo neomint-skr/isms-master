@@ -1,9 +1,9 @@
 > **Document ID:** CB_PRC_07-Risk-Management
-> **Version:** 00.01.009
+> **Version:** 00.01.010
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1, 8.2, 8.3
-> **Last modified:** 2026-02-10
+> **Last modified:** 2026-02-11
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -43,7 +43,7 @@ For each identified risk, the following are determined: risk title, description 
 
 ### Risk analysis
 
-For each identified risk, the Chief Information Security Officer assesses the likelihood and impact together with the risk owner, using the scales defined in CB_POL_L2_11-Risk-Management. The risk level is derived from the risk matrix (CB_POL_L2_11). The assessment distinguishes:
+For each identified risk, the Chief Information Security Officer assesses the likelihood and impact together with the risk owner, using the scales defined in CB_POL_L2_11-Risk-Management. The rationale for each likelihood and impact rating is documented in the risk register as free-text justification (Cl. 6.1.2). The risk level is derived from the risk matrix (CB_POL_L2_11). The assessment distinguishes:
 
 - **Gross risk:** Risk level without considering implemented controls
 - **Net risk:** Risk level after considering already implemented controls
@@ -93,6 +93,8 @@ An unscheduled risk assessment is triggered by:
 - Findings from internal or external audits requiring action
 - New or changed regulatory requirements
 - Changes to the ISMS scope
+- Design phase of new projects or significant project changes (addresses A.5.8)
+- Planned contracts with suppliers or service providers that process ISMS-relevant information (addresses A.5.19)
 
 ## See also
 
@@ -109,6 +111,7 @@ An unscheduled risk assessment is triggered by:
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.010 | 2026-02-11 | CISO | Add project/supplier triggers (A.5.8, A.5.19); add assessment rationale requirement (Cl. 6.1.2) |
 | 00.01.009 | 2026-02-10 | Claude (AI) | Remove RACI subsection; roles consolidated in CLS 5.3 |
 | 00.01.008 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.007 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/FOR WHAT/WHERE) |

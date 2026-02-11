@@ -1,5 +1,5 @@
 > **Document ID:** CB_POL_L2_08-Document-Control
-> **Version:** 00.04.013
+> **Version:** 00.04.014
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 7.5
@@ -136,6 +136,10 @@ Example: `00.01.000` > `00.01.001` > `00.01.002` > (minor milestone) > `00.02.00
 - **Metadata field** "Last modified": Updated with every content change.
 - Older versions remain traceable through the version history.
 
+## Records Management
+
+All documented information classified as records (evidence of ISMS activities) is listed in a records register with title, storage location, responsible role, retention period and protection measures (Cl. 7.5). The records register ensures that audit evidence is traceable, complete and retrievable on demand.
+
 ## Retention and Disposition
 
 Retention ensures availability and traceability throughout the entire lifecycle (addresses 7.5.3 d, f).
@@ -172,6 +176,7 @@ Documented information of external origin is appropriately identified and contro
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.04.014 | 2026-02-11 | CISO | Add Records Management section with records register requirement (Cl. 7.5) |
 | 00.04.013 | 2026-02-11 | CISO | H1 convention table: added L4 Cheat Sheet pattern |
 | 00.04.012 | 2026-02-10 | Claude (AI) | Remove REG Responsibilities from document structure; consolidate governance in CLS 5.3 |
 | 00.04.011 | 2026-02-10 | CISO | Folder paths updated after prefix removal; pre-existing German path names corrected |
