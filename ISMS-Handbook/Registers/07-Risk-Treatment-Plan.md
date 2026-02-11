@@ -1,5 +1,5 @@
 > **Document ID:** HB_REG_07-Risk-Treatment-Plan
-> **Version:** 00.01.008
+> **Version:** 00.01.009
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** Clause 6.1.3 e
@@ -30,14 +30,16 @@ Treatment decisions are derived from the risk register (HB_REG_06) and developed
 | Term | Definition |
 |---|---|
 | Treatment option | Avoid (eliminate the activity that creates the risk), Reduce (implement controls to reduce likelihood or impact), Transfer (shift risk to third party through insurance or contract), Accept (conscious decision to retain risk). Defined in CB_POL_L2_11 |
+| SM-ID | Reference to security measure(s) in HB_REG_12-Security-Measures-Register |
+| Gap | No gap (adequate measures assigned), Partial gap (measures exist but insufficient coverage), Full gap (no measure assigned — requires immediate treatment planning) |
 | Status | Planned (treatment decision made, implementation pending), In progress (control implementation active), Implemented (control operational, effectiveness not yet verified), Verified (control effective, residual risk confirmed) |
 | Expected residual risk | Anticipated risk level after full implementation of planned controls. Must be below acceptance threshold (CB_POL_L2_11) or formally accepted by top management |
 
 ## Treatment Plan
 
-| Risk ID | Risk description | Treatment option | Control(s) | Annex A ref | Responsible | Target date | Expected residual risk | Status |
-|---|---|---|---|---|---|---|---|---|
-| [R-001] | [Risk description] | [Avoid/Reduce/Transfer/Accept] | [Control description] | [A.x.x] | [Responsible person/role] | [YYYY-MM-DD] | [Low/Medium/High] | [Planned/In progress/Implemented/Verified] |
+| SC-ID | Risk description | Treatment option | SM-ID(s) | Annex A ref | Responsible | Target date | Expected residual risk | Gap | Status |
+|---|---|---|---|---|---|---|---|---|---|
+| [SC-0001] | [Risk description] | [Avoid/Reduce/Transfer/Accept] | [SM-####] | [A.x.x] | [Responsible person/role] | [YYYY-MM-DD] | [Low/Medium/High] | [No gap/Partial gap/Full gap] | [Planned/In progress/Implemented/Verified] |
 
 ## Approval
 
@@ -51,7 +53,8 @@ The risk treatment plan requires formal approval by top management (Clause 6.1.3
 
 - CB_POL_L2_11-Risk-Management — Risk criteria and treatment options
 - CB_PRC_07-Risk-Management — Operational risk management process
-- HB_REG_06-Risk-Register — Risk entries and acceptance decisions
+- HB_REG_06-Risk-Register — Scenario-based risk entries and acceptance decisions
+- HB_REG_12-Security-Measures-Register — Security measures referenced by SM-ID
 - HB_CLS_5.3-Roles-and-Responsibilities — RACI for risk management
 
 
@@ -59,6 +62,7 @@ The risk treatment plan requires formal approval by top management (Clause 6.1.3
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.009 | 2026-02-11 | Claude (AI) | SC-ID replaces Risk ID, SM-ID(s) replaces free-text controls, added Gap column and gap definitions in Key section |
 | 00.01.008 | 2026-02-11 | skr | Renamed risk treatment option "Mitigate" to "Reduce" for ISO/BSI alignment |
 | 00.01.007 | 2026-02-10 | Claude (AI) | Remove Responsibilities section; roles consolidated in CLS 5.3 |
 | 00.01.006 | 2026-02-10 | [CISO] | Key table; removed inline bold definitions |

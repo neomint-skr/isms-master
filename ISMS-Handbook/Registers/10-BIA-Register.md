@@ -1,9 +1,9 @@
 > **Document ID:** HB_REG_10-BIA-Register
-> **Version:** 00.01.002
+> **Version:** 00.01.003
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** A.5.29-5.30
-> **Last modified:** 2026-02-10
+> **Last modified:** 2026-02-11
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -34,6 +34,7 @@ BIA results are derived from the asset inventory (HB_REG_03) and feed into risk 
 |---|---|
 | MTPD | Maximum Tolerable Period of Disruption — the longest time a business activity can be unavailable before causing unacceptable consequences |
 | MBCO | Minimum Business Continuity Objective — the minimum level of service that must be maintained during a disruption (expressed as percentage of normal capacity) |
+| Derived V | Protection requirement derived from BIA tier: Tier 1 = Very high, Tier 2 = High, Tier 3 = Normal, Tier 4 = Normal. Feeds into risk assessment as availability impact baseline |
 
 ## Tier Definitions
 
@@ -50,8 +51,8 @@ The following tier model is derived from CB_POL_L2_06-Business-Continuity. It go
 
 The following table records the BIA evaluation results for each assessed asset. Asset IDs reference the asset register (HB_REG_03). Tier assignments determine applicable recovery and backup requirements per the tier model above.
 
-| Asset ID | Name | Disruption impact | Tier | RTO (h) | RPO (h) | MTD (h) | Recovery priority |
-|---|---|---|---|---|---|---|---|
+| Asset ID | Name | Disruption impact | Tier | RTO (h) | RPO (h) | MTD (h) | Recovery priority | Derived V |
+|---|---|---|---|---|---|---|---|---|
 
 ## Continuity Plan Register
 
@@ -79,6 +80,7 @@ The following table tracks IT continuity plans required by CB_POL_L2_06-Business
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.003 | 2026-02-11 | Claude (AI) | Added Derived V column (Tier-to-protection-requirement mapping) to BIA Assessment table and Key section |
 | 00.01.002 | 2026-02-10 | Claude (AI) | Remove Responsibilities section; roles consolidated in CLS 5.3 |
 | 00.01.001 | 2026-02-10 | [CISO] | Key table (MTPD, MBCO); Test Log section |
 | 00.01.000 | 2026-02-10 | [CISO] | Initial version |
