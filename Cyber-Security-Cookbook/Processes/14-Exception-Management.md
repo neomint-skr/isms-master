@@ -1,5 +1,5 @@
 > **Document ID:** CB_PRC_14-Exception-Management
-> **Version:** 00.01.001
+> **Version:** 00.01.002
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1
@@ -85,19 +85,6 @@ Before an approved exception expires, the Chief Information Security Officer rev
 
 Expired exceptions without renewal trigger verification that compliance has been restored.
 
-## RACI
-
-| Activity | R | A | C | I |
-|---|---|---|---|---|
-| Prepare exception request | Requestor | Requestor | Asset owner | — |
-| Register exception | CISO | CISO | — | ISC |
-| Assess risk impact | CISO | CISO | Risk owner | — |
-| Approve (Low/Medium) | CISO | CISO | — | Requestor, ISC |
-| Approve (High) | CEO, CTO | CEO | CISO | Requestor, ISC |
-| Reject and set deadline | CISO | CISO | — | Requestor |
-| Link to risk register | CISO | CISO | Risk owner | — |
-| Review before expiry | CISO | CISO | Requestor | ISC |
-
 ## See also
 
 - CB_POL_L2_11-Risk-Management — Exception management requirements (normative)
@@ -111,5 +98,6 @@ Expired exceptions without renewal trigger verification that compliance has been
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.002 | 2026-02-11 | CISO | RACI section removed; roles centralized in HB_CLS_5.3 |
 | 00.01.001 | 2026-02-11 | Claude | Renumber Exception Management PRC_13→PRC_14, TPL_19→TPL_20 |
 | 00.01.000 | 2026-02-11 | CISO | Initial version |
