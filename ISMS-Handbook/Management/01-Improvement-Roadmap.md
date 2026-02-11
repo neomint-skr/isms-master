@@ -21,7 +21,7 @@ The improvement roadmap tracks ISMS improvement themes derived from audit findin
 
 The improvement roadmap consolidates improvement themes with priorities and timelines into a single actionable plan. It provides CISO, IS-Coordinator, and top management with a clear view of what needs to improve, by when, and who is responsible.
 
-The roadmap operationalizes the requirements of HB_CLS_10.1 (Continual Improvement) and synthesizes inputs from HB_REG_05 (Audit Findings), HB_REG_06 (Risk Register), and HB_REG_07 (KPI Register) into a tracked execution plan.
+The roadmap operationalizes the requirements of HB_CLS_10.1 (Continual Improvement) and synthesizes inputs from HB_REG_12 (Audit Findings), HB_REG_05 (Risk Register), and HB_REG_06 (KPI Register) into a tracked execution plan.
 
 **Scope:** CISO and IS-Coordinator; covers all ISMS improvement activities regardless of source.
 
@@ -37,8 +37,8 @@ Improvement themes are prioritized based on the following criteria to ensure eff
 
 | Criterion | Description | Weight |
 |---|---|---|
-| Risk impact | Severity of the associated risk if the improvement is not implemented, based on HB_REG_06 risk ratings | High |
-| Audit relevance | Whether the theme addresses an audit finding or nonconformity from HB_REG_05 | High |
+| Risk impact | Severity of the associated risk if the improvement is not implemented, based on HB_REG_05 risk ratings | High |
+| Audit relevance | Whether the theme addresses an audit finding or nonconformity from HB_REG_12 | High |
 | Regulatory urgency | Themes driven by legal or contractual obligations with fixed deadlines | High |
 | Implementation effort | Estimated resources (time, budget, personnel) required for completion | Medium |
 | Dependencies | Whether the theme blocks or is blocked by other improvement activities | Medium |
@@ -74,9 +74,9 @@ Themes that exceed their target date by more than one quarter are escalated to t
 ## See also
 
 - HB_CLS_10.1-Continual-Improvement — Clause requirements for continual improvement
-- HB_REG_05-Nonconformity-Register — Audit findings and nonconformities as improvement input
-- HB_REG_06-Risk-Register — Risk assessment results as improvement input
-- HB_REG_01-IS-Objectives-Register — KPI tracking as improvement input
+- HB_REG_12-Nonconformity-Register — Audit findings and nonconformities as improvement input
+- HB_REG_05-Risk-Register — Risk assessment results as improvement input
+- HB_REG_09-IS-Objectives-Register — KPI tracking as improvement input
 
 ## Changelog
 

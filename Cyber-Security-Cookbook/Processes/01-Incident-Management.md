@@ -21,7 +21,7 @@ Information security incidents can disrupt business operations and compromise se
 
 This process defines the workflow from incident reporting through classification and escalation to post-incident review (lessons learned). It ensures that every incident is documented, assessed, and treated appropriately.
 
-The process operationalizes the requirements from CB_POL_L2_07-Organization (incident section). Relevant incidents are recorded as nonconformities in HB_REG_05 and tracked via CB_PRC_10.
+The process operationalizes the requirements from CB_POL_L2_07-Organization (incident section). Relevant incidents are recorded as nonconformities in HB_REG_12 and tracked via CB_PRC_10.
 
 **Scope:** All IS incidents and suspected incidents within the ISMS scope. Triggers: incident report by employees, automated alerts, or external notifications.
 
@@ -202,7 +202,7 @@ After every exception event is resolved, a post-incident review is conducted to 
 1. **Scheduling:** The CISO schedules a lessons-learned session within [5-10 business days] after incident closure. All IRM team members who participated in the response attend.
 2. **Root cause analysis:** A formal root cause analysis is performed to identify contributing factors — technical vulnerabilities, process deficiencies, or human errors. The analysis method ([5-Whys | fishbone diagram — depending on incident complexity]) is documented.
 3. **Review agenda:** The session covers: incident timeline reconstruction, effectiveness of detection and reporting, adequacy of classification and escalation, appropriateness of response actions, communication effectiveness, and regulatory compliance (notification deadlines met).
-4. **Improvement actions:** Identified improvements are formulated as corrective or preventive actions, assigned to responsible owners with deadlines, and tracked in HB_REG_05-Nonconformity-Register via CB_PRC_10-Nonconformity-Management.
+4. **Improvement actions:** Identified improvements are formulated as corrective or preventive actions, assigned to responsible owners with deadlines, and tracked in HB_REG_12-Nonconformity-Register via CB_PRC_10-Nonconformity-Management.
 
 **Documentation:**
 
@@ -218,7 +218,7 @@ After every exception event is resolved, a post-incident review is conducted to 
 
 ## Results documentation
 
-Relevant incidents are recorded as nonconformities in HB_REG_05-Nonconformity-Register and tracked via CB_PRC_10-Nonconformity-Management.
+Relevant incidents are recorded as nonconformities in HB_REG_12-Nonconformity-Register and tracked via CB_PRC_10-Nonconformity-Management.
 
 ## Evidence collection
 
@@ -243,7 +243,7 @@ The organization establishes procedures for the identification, collection, acqu
 - CB_POL_L2_07-Organization
 - CB_POL_L2_13-Incident-Threat
 - CB_PRC_10-Nonconformity-Management
-- HB_REG_05-Nonconformity-Register
+- HB_REG_12-Nonconformity-Register
 - HB_MGT_02-Management-Review
 - CB_AWR_01-Awareness-Fundamentals
 

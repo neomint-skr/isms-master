@@ -24,7 +24,7 @@ Suppliers and cloud providers frequently process sensitive organizational inform
 
 This handbook translates the requirements from CB_POL_L2_05 (Suppliers and Cloud) into concrete guidance for supplier assessment, contract clauses, supply chain risks, performance reviews, and cloud evaluation. It provides checklists and assessment templates.
 
-The instructions are applied within the supplier management process (CB_PRC_06). Results are documented in HB_REG_04 (Supplier Register).
+The instructions are applied within the supplier management process (CB_PRC_06). Results are documented in HB_REG_10 (Supplier Register).
 
 **Scope:** Chief Information Security Officer, procurement, and business units managing supplier relationships. Covers assessment, contract design, and ongoing monitoring of all third parties.
 
@@ -50,7 +50,7 @@ Before establishing a supplier relationship and at regular intervals thereafter,
 
 **Document assessment results:**
 
-- Record results in HB_REG_04 (Supplier Register).
+- Record results in HB_REG_10 (Supplier Register).
 - Obtain acceptance of identified residual risks from [risk owner / top management].
 - Define assessment intervals: critical suppliers [annually / semi-annually], important [annually], standard [at contract renewal].
 
@@ -81,7 +81,7 @@ Supplier agreements shall contain information security requirements to maintain 
 - Designate communication procedures and a contact person for IS matters.
 - Define training and awareness obligations for the supplier.
 
-All agreements are documented in [contract management system / Supplier Register HB_REG_04].
+All agreements are documented in [contract management system / Supplier Register HB_REG_10].
 
 [REF:DG24-LK, Ch. 4]
 
@@ -138,7 +138,7 @@ Supplier services shall be monitored and evaluated regularly to ensure complianc
 - Document material deviations in writing and agree on an action plan.
 - In case of persistent failure: activate contractual indemnification provisions or evaluate supplier replacement.
 
-Record the results of performance reviews in HB_REG_04 (Supplier Register).
+Record the results of performance reviews in HB_REG_10 (Supplier Register).
 
 [REF:DG24-LK, Ch. 4]
 
@@ -166,7 +166,7 @@ The procurement and use of cloud services requires a systematic security assessm
 3. Conduct a risk assessment and identify residual risks.
 4. Conclude SLA agreements on availability and support.
 5. Conclude a data processing agreement (DPA) for personal data.
-6. Document results in HB_REG_04 (Supplier Register).
+6. Document results in HB_REG_10 (Supplier Register).
 
 **Ongoing monitoring:**
 
@@ -180,7 +180,7 @@ The procurement and use of cloud services requires a systematic security assessm
 
 - CB_POL_L2_05-Suppliers-and-Cloud — Policy for supplier relationships and cloud security
 - CB_PRC_06-Supplier-Management — Process for supplier assessment and monitoring
-- HB_REG_04-Supplier-Register — Documentation of all supplier relationships and assessments
+- HB_REG_10-Supplier-Register — Documentation of all supplier relationships and assessments
 - HB_CLS_8.1-Asset-Management — Asset register with supplier references
 - CB_POL_L2_01-Access-and-Identity — Access rules for supplier personnel
 

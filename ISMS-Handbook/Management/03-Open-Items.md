@@ -32,7 +32,7 @@ The list complements the Meeting Log (HB_MGT_02) and Improvement Roadmap (HB_MGT
 
 ## Usage Guidelines
 
-Items are added as they arise during ISMS work. They are reviewed in governance meetings to ensure progress and escalate where needed. Resolved items remain in the log for audit trail purposes. Items requiring formal corrective action are transferred to the appropriate register (e.g. HB_REG_05 for nonconformities, HB_MGT_01 for improvement themes).
+Items are added as they arise during ISMS work. They are reviewed in governance meetings to ensure progress and escalate where needed. Resolved items remain in the log for audit trail purposes. Items requiring formal corrective action are transferred to the appropriate register (e.g. HB_REG_12 for nonconformities, HB_MGT_01 for improvement themes).
 
 ## See also
 

@@ -35,18 +35,18 @@ These items MUST be documented in a certifiable ISMS:
 | 4.3 | ISMS scope | HB_CLS_4.3 |
 | 5.2 | Information security policy | CB_POL_L1_01 |
 | 6.1.2 | Risk assessment process | CB_POL_L2_11, CB_PRC_07 |
-| 6.1.3 | Risk treatment process | CB_PRC_07, HB_REG_07 |
-| 6.2 | IS objectives | HB_REG_01 |
+| 6.1.3 | Risk treatment process | CB_PRC_07, HB_REG_06 |
+| 6.2 | IS objectives | HB_REG_09 |
 | 6.3 | Planning of changes | HB_CLS_6.3 |
 | 7.2 | Competence evidence | HB_CLS_7.2 |
 | 8.1 | Operational planning | HB_CLS_8.1 |
-| 8.2 | Risk assessment results | HB_REG_06 |
-| 8.3 | Risk treatment results | HB_REG_07 |
+| 8.2 | Risk assessment results | HB_REG_05 |
+| 8.3 | Risk treatment results | HB_REG_06 |
 | 9.1 | Monitoring results | HB_CLS_9.1 |
 | 9.2 | Internal audit programme + results | HB_CLS_9.2 |
 | 9.3 | Management review results | HB_CLS_9.3 |
-| 10.1 | Nonconformities + corrective actions | HB_REG_05 |
-| SoA | Statement of Applicability | HB_REG_02 |
+| 10.1 | Nonconformities + corrective actions | HB_REG_12 |
+| SoA | Statement of Applicability | HB_REG_08 |
 
 ## 5 checks per recommendation
 

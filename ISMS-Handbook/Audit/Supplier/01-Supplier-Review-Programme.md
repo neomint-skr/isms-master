@@ -19,15 +19,15 @@ Supplier reviews verify that IS-relevant suppliers maintain the security posture
 
 **Objective:** Supplier security postures change over time — certifications expire, service levels shift, and contractual commitments may not be maintained. Without periodic verification, the organization relies on outdated assurance that no longer reflects actual security conditions.
 
-This review programme ensures that all critical and important suppliers are reviewed at least once per year, focusing on ISO certification validity, contractual IS requirement adherence, and SLA performance. Findings are tracked in HB_REG_05 and feed into the risk reassessment.
+This review programme ensures that all critical and important suppliers are reviewed at least once per year, focusing on ISO certification validity, contractual IS requirement adherence, and SLA performance. Findings are tracked in HB_REG_12 and feed into the risk reassessment.
 
-The programme operationalizes the monitoring requirements from CB_POL_L2_05 (Supplier and Cloud) and is executed through CB_PRC_06 (Supplier Management). Supplier data is maintained in HB_REG_04.
+The programme operationalizes the monitoring requirements from CB_POL_L2_05 (Supplier and Cloud) and is executed through CB_PRC_06 (Supplier Management). Supplier data is maintained in HB_REG_10.
 
-**Scope:** All Tier 1 (Critical) and Tier 2 (Important) suppliers from HB_REG_04. Target audience: IS-Coordinator (execution), CISO (review), auditors (evidence).
+**Scope:** All Tier 1 (Critical) and Tier 2 (Important) suppliers from HB_REG_10. Target audience: IS-Coordinator (execution), CISO (review), auditors (evidence).
 
 ## In-Scope Suppliers
 
-Derived from HB_REG_04. Tier 1 and Tier 2 suppliers are reviewed annually; Tier 3 every two years.
+Derived from HB_REG_10. Tier 1 and Tier 2 suppliers are reviewed annually; Tier 3 every two years.
 
 | Supplier | Tier | Service | Review frequency |
 |---|---|---|---|
@@ -63,7 +63,7 @@ Individual review records are stored in Audit/Supplier/Records/.
 ## See also
 
 - HB_AUD_INT_01-Internal-Audit-Programme — Internal audit programme
-- HB_REG_04-Supplier-Register — Supplier inventory
+- HB_REG_10-Supplier-Register — Supplier inventory
 - CB_POL_L2_05-Supplier-and-Cloud — Supplier security requirements
 - CB_PRC_06-Supplier-Management — Supplier management process
 - CB_POL_L3_07-Supplier-Management — Supplier management handbook

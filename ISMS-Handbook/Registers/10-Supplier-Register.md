@@ -58,14 +58,14 @@ Supplier assessment is governed through CB_PRC_06 (Supplier Management) and alig
 - CB_POL_L2_05-Supplier-and-Cloud — Requirements for supplier assessment, agreements, monitoring
 - CB_POL_L3_07-Supplier-Management — Operational supplier management handbook
 - CB_PRC_06-Supplier-Management — Supplier management process
-- HB_REG_06-Risk-Register — Supplier-related risk entries
+- HB_REG_05-Risk-Register — Supplier-related risk entries
 
 
 ## Changelog
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 00.01.007 | 2026-02-11 | Claude (AI) | Register renumbered for information-flow order (REG_04 → REG_10) |
+| 00.01.007 | 2026-02-11 | Claude (AI) | Register renumbered for information-flow order (formerly no. 04) |
 | 00.01.006 | 2026-02-10 | Claude (AI) | Remove Responsibilities section; roles consolidated in CLS 5.3 |
 | 00.01.005 | 2026-02-10 | [CISO] | Populated register tables with structure and guidance |
 | 00.01.004 | 2026-02-09 | [CISO] | Aligned role terminology |

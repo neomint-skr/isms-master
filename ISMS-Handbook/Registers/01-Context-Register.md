@@ -48,7 +48,7 @@ The organizational profile describes the context in which the ISMS operates. It 
 ## External Issues
 
 - **Market environment:** [Competitive situation, market dynamics]
-- **Regulatory requirements:** [Relevant laws/regulations, e.g. GDPR, NIS-2, industry-specific requirements] — detailed legal and contractual obligations are tracked in HB_REG_08 (Interested Parties Register, field "Source")
+- **Regulatory requirements:** [Relevant laws/regulations, e.g. GDPR, NIS-2, industry-specific requirements] — detailed legal and contractual obligations are tracked in HB_REG_02 (Interested Parties Register, field "Source")
 - **Threat landscape:** [Relevant cyber threats, e.g. ransomware, phishing, supply chain attacks]
 - **Technological developments:** [Relevant trends, e.g. cloud migration, AI adoption]
 
@@ -74,8 +74,8 @@ The organizational profile describes the context in which the ISMS operates. It 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 00.01.009 | 2026-02-11 | Claude (AI) | Register renumbered for information-flow order (REG_09 → REG_01) |
-| 00.01.008 | 2026-02-11 | CISO | Add strategic business objectives attribute; add legal register cross-reference to REG_08 |
+| 00.01.009 | 2026-02-11 | Claude (AI) | Register renumbered for information-flow order (formerly no. 09) |
+| 00.01.008 | 2026-02-11 | CISO | Add strategic business objectives attribute; add legal register cross-reference to REG_02 |
 | 00.01.007 | 2026-02-10 | Claude (AI) | Remove Responsibilities section; roles consolidated in CLS 5.3 |
 | 00.01.006 | 2026-02-09 | [CISO] | Aligned role terminology |
 | 00.01.005 | 2026-02-09 | [CISO] | Organizational profile: context introduction with Clause 4.1 reference (REC-403) |

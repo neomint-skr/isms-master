@@ -81,7 +81,7 @@ The NC process is defined in CB_PRC_10 (Nonconformity Management); inputs come f
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 00.01.008 | 2026-02-11 | Claude (AI) | Register renumbered for information-flow order (REG_05 → REG_12) |
+| 00.01.008 | 2026-02-11 | Claude (AI) | Register renumbered for information-flow order (formerly no. 05) |
 | 00.01.007 | 2026-02-10 | Claude (AI) | Remove Responsibilities section; roles consolidated in CLS 5.3 |
 | 00.01.006 | 2026-02-10 | [CISO] | Per-audit chapter structure (H2 per audit, H3 per category); Key table; data breach escalation note; removed Effectiveness Review section |
 | 00.01.005 | 2026-02-10 | [CISO] | Populated register tables with structure and guidance |

@@ -59,14 +59,14 @@ Retention periods for backup data shall be defined based on statutory requiremen
 ## See also
 
 - CB_POL_L3_08-Business-Continuity — BIA methodology and continuity planning
-- HB_REG_10-BIA-Register — BIA assessment and tier tracking
+- HB_REG_04-BIA-Register — BIA assessment and tier tracking
 
 ## Changelog
 
 | Version | Date | Author | Change |
 |---|---|---|---|
 | 00.01.008 | 2026-02-10 | CISO | Added L4 traceability field (Condensed by) |
-| 00.01.007 | 2026-02-10 | CISO | Added L3_08 and REG_10 cross-references |
+| 00.01.007 | 2026-02-10 | CISO | Added L3_08 and REG_04 cross-references |
 | 00.01.006 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.005 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |
 | 00.01.004 | 2026-02-09 | CISO | Backup strategy populated: backup plan, storage, cloud, retention (REC-505) |

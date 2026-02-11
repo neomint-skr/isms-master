@@ -66,7 +66,7 @@ The interested parties directory lists all parties with a legitimate interest in
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 00.01.009 | 2026-02-11 | Claude (AI) | Register renumbered for information-flow order (REG_08 → REG_02) |
+| 00.01.009 | 2026-02-11 | Claude (AI) | Register renumbered for information-flow order (formerly no. 08) |
 | 00.01.008 | 2026-02-11 | CISO | Add strategic business goal alignment to top management requirements |
 | 00.01.007 | 2026-02-10 | Claude (AI) | Remove Responsibilities section; roles consolidated in CLS 5.3 |
 | 00.01.006 | 2026-02-09 | [CISO] | Aligned role terminology |

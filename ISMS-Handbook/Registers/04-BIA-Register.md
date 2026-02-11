@@ -24,7 +24,7 @@ Business continuity planning depends on a structured assessment of disruption im
 
 The register captures tier assignments, recovery time and recovery point objectives, and maximum tolerable downtimes for all assessed assets (addresses A.5.29-5.30). It provides the decision basis for backup frequency alignment, redundancy planning, and continuity plan development.
 
-BIA results are derived from the asset inventory (HB_REG_03) and feed into risk treatment decisions (HB_REG_06). The continuity plan section tracks review status and ensures that plans remain current and aligned with the tier model defined in CB_POL_L2_06.
+BIA results are derived from the asset inventory (HB_REG_03) and feed into risk treatment decisions (HB_REG_05). The continuity plan section tracks review status and ensures that plans remain current and aligned with the tier model defined in CB_POL_L2_06.
 
 **Scope:** All business-critical IT services and processes within the ISMS scope. Target audience: CISO (analysis), IT operations (recovery planning), asset owners (impact assessment), auditors (evidence).
 
@@ -74,13 +74,13 @@ The following table tracks IT continuity plans required by CB_POL_L2_06-Business
 - CB_POL_L3_05-Data-Backup — Backup strategy aligned with tier model
 - CB_PRC_03-Backup-and-Recovery — Operational backup and recovery process
 - HB_REG_03-Asset-Register — Asset inventory (BIA Tier reference)
-- HB_REG_06-Risk-Register — Risk assessment input
+- HB_REG_05-Risk-Register — Risk assessment input
 
 ## Changelog
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 00.01.004 | 2026-02-11 | Claude (AI) | Register renumbered for information-flow order (REG_10 → REG_04) |
+| 00.01.004 | 2026-02-11 | Claude (AI) | Register renumbered for information-flow order (formerly no. 10) |
 | 00.01.003 | 2026-02-11 | Claude (AI) | Added Derived V column (Tier-to-protection-requirement mapping) to BIA Assessment table and Key section |
 | 00.01.002 | 2026-02-10 | Claude (AI) | Remove Responsibilities section; roles consolidated in CLS 5.3 |
 | 00.01.001 | 2026-02-10 | [CISO] | Key table (MTPD, MBCO); Test Log section |

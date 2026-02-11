@@ -21,7 +21,7 @@
 
 This process defines the workflow from audit programme planning through individual audit preparation, execution, and reporting to the follow-up of findings. It ensures that all ISMS aspects are reviewed at least once within a two-year period.
 
-The process operationalizes the requirements from HB_CLS_9.2 (Internal Audit). Findings are recorded as nonconformities in HB_REG_05 and tracked via CB_PRC_10.
+The process operationalizes the requirements from HB_CLS_9.2 (Internal Audit). Findings are recorded as nonconformities in HB_REG_12 and tracked via CB_PRC_10.
 
 **Scope:** All ISMS aspects within a two-year cycle. Triggers: annual audit programme planning or extraordinary events.
 
@@ -43,7 +43,7 @@ The process operationalizes the requirements from HB_CLS_9.2 (Internal Audit). F
 
 ## Follow-up
 
-Audit findings are recorded as nonconformities in HB_REG_05-Nonconformity-Register and tracked via CB_PRC_10-Nonconformity-Management.
+Audit findings are recorded as nonconformities in HB_REG_12-Nonconformity-Register and tracked via CB_PRC_10-Nonconformity-Management.
 
 <!-- TODO: Action tracking, effectiveness review -->
 

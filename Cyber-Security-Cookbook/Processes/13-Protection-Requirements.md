@@ -46,7 +46,7 @@ The IS-Coordinator identifies the assets to be assessed from HB_REG_03. The scop
 
 For each information asset and business process, the asset owner assesses confidentiality, integrity, and availability individually using the damage scenarios defined in CB_POL_L2_11 (Protection Requirements Analysis). The assessment uses "What if?" analysis: for each core value, the relevant damage scenario category (Normal / High / Very high) is determined based on the most severe plausible impact. The rationale for each rating is documented.
 
-**Availability derivation for business processes:** For process assets, the availability (V) protection requirement is not assessed via damage scenarios but derived from the Business Impact Analysis (BIA). BIA data is sourced from HB_REG_10 (BIA Register). The BIA Tier maps to the availability protection requirement as follows (mapping table defined in CB_POL_L2_11):
+**Availability derivation for business processes:** For process assets, the availability (V) protection requirement is not assessed via damage scenarios but derived from the Business Impact Analysis (BIA). BIA data is sourced from HB_REG_04 (BIA Register). The BIA Tier maps to the availability protection requirement as follows (mapping table defined in CB_POL_L2_11):
 
 | BIA Tier | Classification | Availability PR |
 |---|---|---|
@@ -133,7 +133,7 @@ Assets with a protection requirement of High or Very high in at least one core v
 - CB_TPL_19-Protection-Requirements-Assessment — Assessment template
 - CB_TPL_21 — Risk assessment record template
 - HB_REG_03-Asset-Register — C/I/A columns and cross-reference tables
-- HB_REG_10-BIA-Register — Business Impact Analysis data (availability derivation)
+- HB_REG_04-BIA-Register — Business Impact Analysis data (availability derivation)
 - HB_CLS_5.3-Roles-and-Responsibilities — RACI matrix
 
 ## Changelog

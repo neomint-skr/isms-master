@@ -188,7 +188,7 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 
 ## Coverage Matrix (93 Controls)
 
-> Derived from HB_REG_02-Statement-of-Applicability (SSOT). Document assignment only, no applicability/status. Short-form IDs without descriptive part.
+> Derived from HB_REG_08-Statement-of-Applicability (SSOT). Document assignment only, no applicability/status. Short-form IDs without descriptive part.
 
 ### A.5 Organizational Controls (37)
 
@@ -222,8 +222,8 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 | 5.26 | CB_POL_L2_13 | CB_PRC_01 |
 | 5.27 | CB_POL_L2_13 | CB_PRC_01 |
 | 5.28 | CB_POL_L2_13 | CB_PRC_01 |
-| 5.29 | CB_POL_L2_06 | CB_POL_L3_05, CB_POL_L3_08, HB_REG_10 |
-| 5.30 | CB_POL_L2_06 | CB_POL_L3_05, CB_POL_L3_08, HB_REG_10 |
+| 5.29 | CB_POL_L2_06 | CB_POL_L3_05, CB_POL_L3_08, HB_REG_04 |
+| 5.30 | CB_POL_L2_06 | CB_POL_L3_05, CB_POL_L3_08, HB_REG_04 |
 | 5.31 | CB_POL_L2_14 | |
 | 5.32 | CB_POL_L2_14 | |
 | 5.33 | CB_POL_L2_14 | |

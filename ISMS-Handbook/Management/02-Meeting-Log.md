@@ -28,7 +28,7 @@ The log complements HB_CLS_9.3 (Management Review) requirements and the CB_PRC_0
 ## Meeting Types
 
 - **Management Review (MR):** Annual (minimum) top management review of ISMS suitability, adequacy, and effectiveness per Clause 9.3. Documented via CB_TPL_01.
-- **Risk Review:** Periodic review of risk register status, treatment progress, and emerging risks. Feeds into HB_REG_06 and HB_REG_07.
+- **Risk Review:** Periodic review of risk register status, treatment progress, and emerging risks. Feeds into HB_REG_05 and HB_REG_06.
 - **IS Steering Committee:** Operational coordination between CISO, IS-Coordinator, and relevant stakeholders on ISMS topics.
 
 ## Meeting Log

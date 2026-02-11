@@ -13,7 +13,7 @@
 
 ## Summary
 
-Nonconformities emerge from audits, incidents, monitoring deviations, and employee reports — each requiring a traceable path from detection to verified resolution. This process defines the four core steps: detection and reporting, root cause analysis, corrective action implementation, and effectiveness review. It operationalizes HB_CLS_10.2 and feeds documented results into HB_REG_05, thereby connecting individual deviations to the continual improvement cycle. Without this process, corrective actions remain ad-hoc, root causes persist, and audit evidence for ISO 27001 Clause 10.2 is incomplete.
+Nonconformities emerge from audits, incidents, monitoring deviations, and employee reports — each requiring a traceable path from detection to verified resolution. This process defines the four core steps: detection and reporting, root cause analysis, corrective action implementation, and effectiveness review. It operationalizes HB_CLS_10.2 and feeds documented results into HB_REG_12, thereby connecting individual deviations to the continual improvement cycle. Without this process, corrective actions remain ad-hoc, root causes persist, and audit evidence for ISO 27001 Clause 10.2 is incomplete.
 
 ## Objective and Scope
 
@@ -21,7 +21,7 @@ Nonconformities emerge from audits, incidents, monitoring deviations, and employ
 
 This process defines the workflow from detection and reporting through root cause analysis and corrective actions to effectiveness review. It ensures that identified deviations are systematically addressed and their resolution is demonstrated.
 
-The process operationalizes the requirements from HB_CLS_10.2 (Nonconformity and Corrective Action). Findings are documented in HB_REG_05 (Nonconformity Register) and tracked to completion.
+The process operationalizes the requirements from HB_CLS_10.2 (Nonconformity and Corrective Action). Findings are documented in HB_REG_12 (Nonconformity Register) and tracked to completion.
 
 **Scope:** All nonconformities within the ISMS scope. Triggers: audit findings (CB_PRC_08), security incidents (CB_PRC_01), monitoring deviations (CB_PRC_11), or external reports.
 
@@ -44,7 +44,7 @@ Any person within the ISMS scope may report a suspected nonconformity. Reports a
 
 **Documentation at intake:**
 
-Each reported nonconformity is registered in HB_REG_05-Nonconformity-Register with at minimum:
+Each reported nonconformity is registered in HB_REG_12-Nonconformity-Register with at minimum:
 
 - Unique finding ID (assigned by CISO)
 - Date of detection
@@ -61,7 +61,7 @@ The CISO includes NC identification activities in the [annual ISMS calendar / au
 
 **Immediate action:**
 
-Upon registration, the CISO assesses whether immediate containment is required. Immediate actions aim to remedy the problem, prevent aggravation, and minimise impact. All containment measures are documented with timestamps in HB_REG_05.
+Upon registration, the CISO assesses whether immediate containment is required. Immediate actions aim to remedy the problem, prevent aggravation, and minimise impact. All containment measures are documented with timestamps in HB_REG_12.
 
 **Root cause analysis (RCA):**
 
@@ -84,7 +84,7 @@ Following root cause identification, the CISO evaluates whether similar nonconfo
 - Whether the finding is systemic (affecting the management system) or isolated
 - Potential consequences if the nonconformity recurs
 
-The results of the analysis — root cause, impact assessment, and systemic evaluation — are documented in HB_REG_05.
+The results of the analysis — root cause, impact assessment, and systemic evaluation — are documented in HB_REG_12.
 
 ## Corrective actions
 
@@ -92,7 +92,7 @@ Based on the root cause analysis, the CISO defines corrective actions for each n
 
 **Action plan:**
 
-Each corrective action is documented in HB_REG_05 with:
+Each corrective action is documented in HB_REG_12 with:
 
 | Field | Content |
 |---|---|
@@ -119,7 +119,7 @@ The responsible person executes the corrective action and provides evidence of c
 
 If the root cause analysis identifies a systemic defect in the management system, the CISO initiates a revision of the affected ISMS documentation through the document control procedure. Changes to policies, standards, or processes follow the established approval workflow (HB_CLS_7.5).
 
-Upon completion, the responsible person updates the status in HB_REG_05 and notifies the CISO.
+Upon completion, the responsible person updates the status in HB_REG_12 and notifies the CISO.
 
 ## Effectiveness review
 
@@ -144,7 +144,7 @@ The CISO evaluates effectiveness based on:
 
 **Documentation:**
 
-The review result (effective / not effective), date, and supporting evidence are recorded in HB_REG_05. Effective actions are closed with the review date.
+The review result (effective / not effective), date, and supporting evidence are recorded in HB_REG_12. Effective actions are closed with the review date.
 
 **Escalation on ineffectiveness:**
 
@@ -161,7 +161,7 @@ Ineffective actions are never closed without one of the above resolutions.
 - HB_CLS_5.3-Roles-and-Responsibilities
 - HB_CLS_10.2-Nonconformity
 - HB_CLS_10.1-Continual-Improvement
-- HB_REG_05-Nonconformity-Register
+- HB_REG_12-Nonconformity-Register
 - CB_PRC_01-Incident-Management
 - CB_PRC_07-Risk-Management
 - CB_PRC_08-Internal-Audit
@@ -175,7 +175,7 @@ Ineffective actions are never closed without one of the above resolutions.
 | 00.01.007 | 2026-02-11 | CISO | Populated TODO sections: Detection and reporting (sources, channels, scheduled detection), Analysis and RCA (immediate action, 5-Why/Ishikawa, impact assessment), Corrective actions (action plan, deadlines, ISMS modification), Effectiveness review (timing, criteria, escalation), Summary |
 | 00.01.006 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.005 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/FOR WHAT/WHERE) |
-| 00.01.004 | 2026-02-08 | CISO | See-also: cross-references to CLS_10.2, REG_05, PRC_08 added |
+| 00.01.004 | 2026-02-08 | CISO | See-also: cross-references to CLS_10.2, REG_12, PRC_08 added |
 | 00.01.003 | 2026-02-08 | CISO | Moved HB->CB, classification Confidential->Internal |
 | 00.01.002 | 2026-02-07 | CISO | Roles section removed, centralized in CLS_5.3 |
 | 00.01.001 | 2026-02-07 | CISO | See-also section added |

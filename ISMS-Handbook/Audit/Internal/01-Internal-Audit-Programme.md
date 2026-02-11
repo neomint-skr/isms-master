@@ -21,7 +21,7 @@ The audit programme is the living document that captures the multi-year audit sc
 
 The audit programme provides auditors and management with a single view of planned and completed audits, including scope rotation to ensure full ISMS coverage over the certification cycle. It links each audit to its evidence (reports, findings) for easy retrieval.
 
-The programme operationalizes the requirements of HB_CLS_9.2 (Internal Audit) and complements the CB_PRC_08 (Internal Audit) process. Findings are tracked in HB_REG_05 (Nonconformity Register) and evidence is stored in Audit/Internal/Records/.
+The programme operationalizes the requirements of HB_CLS_9.2 (Internal Audit) and complements the CB_PRC_08 (Internal Audit) process. Findings are tracked in HB_REG_12 (Nonconformity Register) and evidence is stored in Audit/Internal/Records/.
 
 **Scope:** All internal and external ISMS audits; maintained by CISO, reviewed annually.
 
@@ -39,13 +39,13 @@ The programme operationalizes the requirements of HB_CLS_9.2 (Internal Audit) an
 
 | Audit ID | Date | Type | Scope | Auditor | Status | Report Link | Findings Reference |
 |---|---|---|---|---|---|---|---|
-| [IA-YYYY-MM-Scope] | [YYYY-MM-DD] | [Internal/External] | [Scope description] | [Auditor] | [Completed/In progress] | [Records/IA-YYYY-MM-Scope.md] | [HB_REG_05 reference] |
+| [IA-YYYY-MM-Scope] | [YYYY-MM-DD] | [Internal/External] | [Scope description] | [Auditor] | [Completed/In progress] | [Records/IA-YYYY-MM-Scope.md] | [HB_REG_12 reference] |
 
 ## See also
 
 - HB_CLS_9.2-Internal-Audit — Clause requirements for internal audit
 - CB_PRC_08-Internal-Audit — Operational audit process
-- HB_REG_05-Nonconformity-Register — Audit findings tracking
+- HB_REG_12-Nonconformity-Register — Audit findings tracking
 - Audit/Internal/Records/ — Audit reports and evidence
 
 ## Changelog

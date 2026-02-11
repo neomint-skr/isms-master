@@ -23,21 +23,21 @@ This process defines the workflow from KPI definition and measurement methods th
 
 The process operationalizes the requirements from HB_CLS_9.1 (Monitoring and Measurement) and HB_CLS_6.2 (IS Objectives). Measurement results feed into the management review (CB_PRC_09) as input.
 
-**Scope:** IS processes, controls, and IS objectives (HB_REG_01). Triggers: scheduled measurement cycle or extraordinary information needs.
+**Scope:** IS processes, controls, and IS objectives (HB_REG_09). Triggers: scheduled measurement cycle or extraordinary information needs.
 
 ## KPI definition and measurement methods
 
-KPIs are derived from the IS objectives defined in HB_CLS_6.2 and recorded in HB_REG_01. The CISO defines each KPI according to the six determinations specified in HB_CLS_9.1 (Clause 9.1 a-f). Every KPI satisfies the SMART criteria (specific, measurable, achievable, relevant, time-bound).
+KPIs are derived from the IS objectives defined in HB_CLS_6.2 and recorded in HB_REG_09. The CISO defines each KPI according to the six determinations specified in HB_CLS_9.1 (Clause 9.1 a-f). Every KPI satisfies the SMART criteria (specific, measurable, achievable, relevant, time-bound).
 
 The following table lists the initial KPI catalogue. Additional KPIs are added as IS objectives evolve.
 
 | KPI ID | KPI name | Target | Measurement method | Frequency | Responsible |
 |---|---|---|---|---|---|
 | KPI-01 | Incident response time | Mean time from detection to containment [target value, e.g. ≤ 4 h for critical incidents] | Incident ticket timestamps (addresses A.5.24) | Per incident, aggregated quarterly | [IS-Coordinator] |
-| KPI-02 | Audit finding close-out rate | [target value, e.g. ≥ 90 %] of findings closed within deadline | HB_REG_05 finding status (addresses A.5.35) | Quarterly | CISO |
+| KPI-02 | Audit finding close-out rate | [target value, e.g. ≥ 90 %] of findings closed within deadline | HB_REG_12 finding status (addresses A.5.35) | Quarterly | CISO |
 | KPI-03 | Awareness training completion | [target value, e.g. ≥ 95 %] of employees trained within cycle | [LMS / training records] (addresses A.6.3) | [Annually \| semi-annually — depending on training cycle] | [IS-Coordinator] |
 | KPI-04 | Patch compliance | [target value, e.g. ≥ 95 %] of critical patches applied within SLA | [Vulnerability scanner / patch management tool] (addresses A.8.8) | Monthly | [IT operations lead] |
-| KPI-05 | Risk treatment plan progress | [target value, e.g. ≥ 80 %] of treatment actions on schedule | HB_REG_02 risk register (addresses A.5.7) | Quarterly | CISO |
+| KPI-05 | Risk treatment plan progress | [target value, e.g. ≥ 80 %] of treatment actions on schedule | HB_REG_08 risk register (addresses A.5.7) | Quarterly | CISO |
 | KPI-06 | Access review completion | [target value, e.g. 100 %] of scheduled reviews completed on time | Access review log (addresses A.5.18) | [Annually \| semi-annually] | [IT operations lead] |
 
 Each KPI definition includes the measurement method ensuring comparable and reproducible results as required by Clause 9.1 b. Methods are selected to produce quantitative data wherever possible. Where qualitative assessment is necessary, a documented rating scale is applied.
@@ -49,10 +49,10 @@ Data is collected by the responsible person indicated in the KPI catalogue. The 
 | Source category | Examples | Collection method |
 |---|---|---|
 | Incident management | Incident tickets, post-incident reports | Export from [ticketing system, e.g. Jira / GitLab Issues] |
-| Audit and findings | Internal audit reports, external audit reports | HB_REG_05, audit programme records |
+| Audit and findings | Internal audit reports, external audit reports | HB_REG_12, audit programme records |
 | Training records | Completion certificates, quiz results | Export from [LMS / HR system] |
 | Technical tools | Vulnerability scans, patch reports, SIEM alerts | Automated export from [tool stack] |
-| Risk register | Treatment action status, residual risk levels | HB_REG_02 |
+| Risk register | Treatment action status, residual risk levels | HB_REG_08 |
 | Access management | Access review logs, provisioning records | Export from [IAM system / directory service] |
 
 **Frequency.** Each KPI specifies its collection frequency in the catalogue above. At minimum, all KPIs are collected once per quarter to ensure timely input for the management review (addresses A.5.36).
@@ -122,7 +122,7 @@ Corrective actions resulting from escalation are tracked in the improvement road
 - HB_CLS_5.3-Roles-and-Responsibilities
 - HB_CLS_9.1-Monitoring-Measurement
 - HB_CLS_6.2-IS-Objectives
-- HB_REG_01-IS-Objectives-Register
+- HB_REG_09-IS-Objectives-Register
 - CB_PRC_09-Management-Review
 
 ## Changelog
@@ -132,7 +132,7 @@ Corrective actions resulting from escalation are tracked in the improvement road
 | 00.01.007 | 2026-02-11 | CISO | Skeleton filling: Summary, KPI catalogue, data collection, analysis/reporting, escalation |
 | 00.01.006 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.005 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/FOR WHAT/WHERE) |
-| 00.01.004 | 2026-02-08 | CISO | See-also: cross-references to CLS_9.1, CLS_6.2, REG_01, PRC_09 added |
+| 00.01.004 | 2026-02-08 | CISO | See-also: cross-references to CLS_9.1, CLS_6.2, REG_09, PRC_09 added |
 | 00.01.003 | 2026-02-08 | CISO | Moved HB->CB, classification Confidential->Internal |
 | 00.01.002 | 2026-02-07 | CISO | Roles section removed, centralized in CLS_5.3 |
 | 00.01.001 | 2026-02-07 | CISO | See-also section added |

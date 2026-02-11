@@ -52,7 +52,7 @@
 |---|---|
 | BIA Tier | [1 (Critical) / 2 (Important) / 3 (Normal) / 4 (Low)] |
 | Derived availability (A) | [Very high / High / Normal / Normal] |
-| Source | HB_REG_10-BIA-Register |
+| Source | HB_REG_04-BIA-Register |
 
 ## Override Documentation
 

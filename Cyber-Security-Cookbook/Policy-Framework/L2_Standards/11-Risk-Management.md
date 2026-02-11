@@ -24,7 +24,7 @@ Without clear criteria for likelihood, impact, and risk acceptance, risk assessm
 
 This policy establishes assessment scales, 4x4 risk matrix, protection requirement categories, acceptance criteria, and four treatment options as binding requirements (addresses Clause 6.1.2 a, 6.1.3 a). It creates the normative foundation for consistent and traceable risk decisions.
 
-The standard implements principle P3 (Risk orientation) of the IS policy. The operational risk management process is defined in CB_PRC_07 (Risk Management); results are documented in HB_REG_06 (Risk Register) and HB_REG_07 (Risk Treatment Plan).
+The standard implements principle P3 (Risk orientation) of the IS policy. The operational risk management process is defined in CB_PRC_07 (Risk Management); results are documented in HB_REG_05 (Risk Register) and HB_REG_06 (Risk Treatment Plan).
 
 **Scope:** All IS risks within the ISMS scope (HB_CLS_4.3). Target audience: risk owners, asset owners, Chief Information Security Officer, top management.
 
@@ -40,7 +40,7 @@ Risk management follows an asset-based end-to-end approach. Each phase builds on
 
 **Phase 4 — Risk evaluation:** The resulting risk level is compared against the acceptance criteria defined in this standard. Risks exceeding the acceptance threshold require treatment.
 
-**Phase 5 — Risk treatment:** For each risk requiring treatment, one of the four treatment options is selected. Where reduction is chosen, controls are identified and reconciled against the 93 Annex A controls. The Statement of Applicability (HB_REG_02) is updated accordingly.
+**Phase 5 — Risk treatment:** For each risk requiring treatment, one of the four treatment options is selected. Where reduction is chosen, controls are identified and reconciled against the 93 Annex A controls. The Statement of Applicability (HB_REG_08) is updated accordingly.
 
 **Phase 6 — Approval and acceptance:** The risk treatment plan is approved by top management. Residual risks are formally accepted and documented in the risk register with rationale, approver and reassessment date.
 
@@ -49,11 +49,11 @@ Risk management follows an asset-based end-to-end approach. Each phase builds on
 | Phase | Normative basis | Process | Register |
 |---|---|---|---|
 | 1 — Asset registration | CB_POL_L2_07 (Asset types, grouping) | CB_PRC_12 (Asset lifecycle) | HB_REG_03 (Asset register) |
-| 2 — Protection requirements | This standard (Protection Requirements Analysis) | CB_PRC_13 (Protection requirements) | HB_REG_03 (C/I/A columns), HB_REG_10 (BIA register) |
-| 3 — Risk identification and analysis | This standard (Risk Identification Methodology, Risk Analysis) | CB_PRC_07 (Risk assessment) | HB_REG_06 (Risk register) |
-| 4 — Risk evaluation | This standard (Risk Acceptance and Exceptions) | CB_PRC_07 (Risk evaluation) | HB_REG_06 (Risk register) |
-| 5 — Risk treatment | This standard (Risk Treatment, Security Measures Register) | CB_PRC_07 (Risk treatment) | HB_REG_07 (Treatment plan), HB_REG_12 (SM register), HB_REG_02 (SoA) |
-| 6 — Approval | This standard (Risk Acceptance and Exceptions) | CB_PRC_07 (Approval) | HB_REG_06 (Acceptance records) |
+| 2 — Protection requirements | This standard (Protection Requirements Analysis) | CB_PRC_13 (Protection requirements) | HB_REG_03 (C/I/A columns), HB_REG_04 (BIA register) |
+| 3 — Risk identification and analysis | This standard (Risk Identification Methodology, Risk Analysis) | CB_PRC_07 (Risk assessment) | HB_REG_05 (Risk register) |
+| 4 — Risk evaluation | This standard (Risk Acceptance and Exceptions) | CB_PRC_07 (Risk evaluation) | HB_REG_05 (Risk register) |
+| 5 — Risk treatment | This standard (Risk Treatment, Security Measures Register) | CB_PRC_07 (Risk treatment) | HB_REG_06 (Treatment plan), HB_REG_07 (SM register), HB_REG_08 (SoA) |
+| 6 — Approval | This standard (Risk Acceptance and Exceptions) | CB_PRC_07 (Approval) | HB_REG_05 (Acceptance records) |
 
 ## Asset Input
 
@@ -134,7 +134,7 @@ The methodology follows BSI Standard 200-2 [REF:BSI17, Ch. 8.2.2] and applies to
 
 **Distribution effect.** Where redundant infrastructure (e.g. hot standby, clustered systems) already mitigates availability risks, the inherited protection requirement may be relativized. Distribution effects occur primarily for availability, but may also apply to confidentiality where only non-critical subsets are processed. Distribution effects are documented with rationale.
 
-**BIA-to-availability derivation.** For process assets, the availability (A) protection requirement is deterministically derived from the BIA tier assigned in the BIA register (HB_REG_10). This ensures consistency between business impact assessment and protection requirements.
+**BIA-to-availability derivation.** For process assets, the availability (A) protection requirement is deterministically derived from the BIA tier assigned in the BIA register (HB_REG_04). This ensures consistency between business impact assessment and protection requirements.
 
 | BIA Tier | Derived availability category |
 |---|---|
@@ -238,9 +238,9 @@ The scenario-specific impact is determined as: `Impact(scenario) = max(Baseline_
 
 **Gross risk** is the inherent risk level without considering any existing controls: `Gross risk = Likelihood × Impact`.
 
-**Net risk** accounts for existing security measures (SM-IDs from HB_REG_12) that reduce likelihood and/or impact: `Net risk = Net likelihood × Net impact`. Existing measures are referenced by their SM-ID; their effectiveness determines the reduction applied.
+**Net risk** accounts for existing security measures (SM-IDs from HB_REG_07) that reduce likelihood and/or impact: `Net risk = Net likelihood × Net impact`. Existing measures are referenced by their SM-ID; their effectiveness determines the reduction applied.
 
-The risk register (HB_REG_06) documents both gross and net risk for each scenario.
+The risk register (HB_REG_05) documents both gross and net risk for each scenario.
 
 ## Risk Identification Methodology
 
@@ -304,11 +304,11 @@ For each identified risk, at least one of the following treatment options is sel
 | Transfer | The risk or its financial consequences are transferred to third parties. | Cyber insurance, outsourcing with SLA |
 | Accept | The residual risk is consciously and documentedly accepted. | Low risks with formal acceptance |
 
-The selection of the treatment option is made by the risk owner in coordination with the Chief Information Security Officer. For "Reduce," appropriate security measures are identified from the security measures register (HB_REG_12) or newly created there. The assignment of risks to measures is documented in the risk treatment plan (HB_REG_07). Selected controls are reconciled with Annex A of ISO 27001 (Clause 6.1.3 b, c) and their effectiveness verified within the risk management process (CB_PRC_07).
+The selection of the treatment option is made by the risk owner in coordination with the Chief Information Security Officer. For "Reduce," appropriate security measures are identified from the security measures register (HB_REG_07) or newly created there. The assignment of risks to measures is documented in the risk treatment plan (HB_REG_06). Selected controls are reconciled with Annex A of ISO 27001 (Clause 6.1.3 b, c) and their effectiveness verified within the risk management process (CB_PRC_07).
 
 ## Security Measures Register
 
-Security measures are the organization's operational controls that address identified risks. The security measures register (HB_REG_12) is the single source of truth for all security measures implemented or planned within the ISMS.
+Security measures are the organization's operational controls that address identified risks. The security measures register (HB_REG_07) is the single source of truth for all security measures implemented or planned within the ISMS.
 
 ### Uniqueness Principle
 
@@ -346,11 +346,11 @@ Each security measure entry must document:
 
 ### Gap Logic
 
-When a risk scenario has no matching security measure in the register, or when an existing measure only partially addresses the scenario, this constitutes a gap. Gaps are flagged in the risk treatment plan (HB_REG_07) and must be addressed through one of the treatment options. Unaddressed gaps represent residual risks that require formal acceptance.
+When a risk scenario has no matching security measure in the register, or when an existing measure only partially addresses the scenario, this constitutes a gap. Gaps are flagged in the risk treatment plan (HB_REG_06) and must be addressed through one of the treatment options. Unaddressed gaps represent residual risks that require formal acceptance.
 
 ### Relationship to Risk Treatment Plan
 
-The risk treatment plan (HB_REG_07) documents the assignment of risks to security measures and the approval of treatment decisions. The security measures register (HB_REG_12) is the SSOT for measure details. The treatment plan references SM-IDs; it does not duplicate measure descriptions.
+The risk treatment plan (HB_REG_06) documents the assignment of risks to security measures and the approval of treatment decisions. The security measures register (HB_REG_07) is the SSOT for measure details. The treatment plan references SM-IDs; it does not duplicate measure descriptions.
 
 ## Risk Acceptance and Exceptions
 
@@ -363,7 +363,7 @@ The risk treatment plan (HB_REG_07) documents the assignment of risks to securit
 | Medium (4-6) | Acceptance by risk owner possible, with documentation of rationale and deadline for reassessment. |
 | Low (1-3) | Acceptance by risk owner. Documentation in the risk register is sufficient. |
 
-Every risk acceptance is documented in the risk register (HB_REG_06) with rationale, date, and approving person. Accepted risks are reassessed in the next regular risk assessment cycle.
+Every risk acceptance is documented in the risk register (HB_REG_05) with rationale, date, and approving person. Accepted risks are reassessed in the next regular risk assessment cycle.
 
 ### Exception Management
 
@@ -388,7 +388,7 @@ The impact level is determined by the protection requirement of the affected ass
 | High | 60 days |
 | Normal | 90 days |
 
-**Risk linkage:** Approved exceptions are recorded as risk type "Exception" in the risk register (HB_REG_06) and reassessed within the regular risk review cycle. The full exception lifecycle — including pending, rejected, expired, and renewed entries — is tracked in the exception register (HB_REG_EXC_01-Exception-Index).
+**Risk linkage:** Approved exceptions are recorded as risk type "Exception" in the risk register (HB_REG_05) and reassessed within the regular risk review cycle. The full exception lifecycle — including pending, rejected, expired, and renewed entries — is tracked in the exception register (HB_REG_EXC_01-Exception-Index).
 
 **Review:** Before an exception expires, the Chief Information Security Officer reviews whether the deviation is still necessary. Continuation requires a new exception request. Expired exceptions without renewal are closed.
 
@@ -401,11 +401,11 @@ The operational exception management workflow is defined in CB_PRC_14-Exception-
 - CB_PRC_07-Risk-Management — Operational risk management process
 - CB_PRC_13-Protection-Requirements — Protection requirements assessment process
 - HB_REG_03-Asset-Register — Asset inventory with C/I/A values
-- HB_REG_06-Risk-Register — Scenario-based risk entries
-- HB_REG_07-Risk-Treatment-Plan — Risk-to-measure assignment and approval
-- HB_REG_10-BIA-Register — BIA tiers for availability derivation
-- HB_REG_12-Security-Measures-Register — SSOT for security measures
-- HB_REG_02-Statement-of-Applicability — Control applicability
+- HB_REG_05-Risk-Register — Scenario-based risk entries
+- HB_REG_06-Risk-Treatment-Plan — Risk-to-measure assignment and approval
+- HB_REG_04-BIA-Register — BIA tiers for availability derivation
+- HB_REG_07-Security-Measures-Register — SSOT for security measures
+- HB_REG_08-Statement-of-Applicability — Control applicability
 - HB_CLS_5.3-Roles-and-Responsibilities — RACI matrix
 - CB_PRC_14-Exception-Management — Exception approval workflow
 - HB_REG_EXC_01-Exception-Index — Exception register
@@ -416,7 +416,7 @@ The operational exception management workflow is defined in CB_PRC_14-Exception-
 | Version | Date | Author | Change |
 |---|---|---|---|
 | 00.01.016 | 2026-02-11 | Claude (AI) | Fix traceability: Operationalized by → — (no L3; PRC refs in See also) |
-| 00.01.015 | 2026-02-11 | Claude (AI) | Major extension: catalog-based risk identification methodology, vulnerability assessment, scenario generation rules, impact derivation from PR, gross/net risk, BIA-to-V derivation, override rules, security measures register (REG_12) |
+| 00.01.015 | 2026-02-11 | Claude (AI) | Major extension: catalog-based risk identification methodology, vulnerability assessment, scenario generation rules, impact derivation from PR, gross/net risk, BIA-to-V derivation, override rules, security measures register (REG_07) |
 | 00.01.014 | 2026-02-11 | Claude (AI) | Added Exception Management section with approval authority, remediation deadlines, risk linkage (merge from retorio) |
 | 00.01.013 | 2026-02-11 | skr | Renamed risk treatment option "Mitigate" to "Reduce" for ISO/BSI alignment |
 | 00.01.012 | 2026-02-11 | Claude (AI) | Restructure sections to match process flow (asset input → protection requirements → risk analysis → risk treatment → exceptions) |

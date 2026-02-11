@@ -41,14 +41,14 @@ The process operationalizes the requirements from CB_POL_L2_06-Business-Continui
 
 - HB_CLS_5.3-Roles-and-Responsibilities
 - CB_POL_L3_08-Business-Continuity — BIA methodology and continuity planning
-- HB_REG_10-BIA-Register — BIA assessment and tier tracking
+- HB_REG_04-BIA-Register — BIA assessment and tier tracking
 
 
 ## Changelog
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 00.01.007 | 2026-02-10 | CISO | Added L3_08 and REG_10 cross-references |
+| 00.01.007 | 2026-02-10 | CISO | Added L3_08 and REG_04 cross-references |
 | 00.01.006 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.005 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/FOR WHAT/WHERE) |
 | 00.01.004 | 2026-02-09 | CISO | Objective and scope: bold-label pattern, orphan text removed |

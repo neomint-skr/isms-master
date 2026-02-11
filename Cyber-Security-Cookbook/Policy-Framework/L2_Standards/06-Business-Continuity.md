@@ -108,14 +108,14 @@ The operational backup process including procedures and responsibilities is desc
 - CB_POL_L3_05-Data-Backup — Backup and recovery
 - CB_PRC_03-Backup-and-Recovery — Operational backup process
 - CB_PRC_01-Incident-Management — Transition from incident to emergency
-- HB_REG_10-BIA-Register — BIA assessment and tier tracking
+- HB_REG_04-BIA-Register — BIA assessment and tier tracking
 
 ## Changelog
 
 | Version | Date | Author | Change |
 |---|---|---|---|
 | 00.01.009 | 2026-02-11 | CISO | Added secure deletion of backup data (A.8.13 + GDPR), expanded security-equivalent redundancy (A.8.14) |
-| 00.01.008 | 2026-02-10 | CISO | Added L3_08 traceability and REG_10 cross-reference |
+| 00.01.008 | 2026-02-10 | CISO | Added L3_08 traceability and REG_04 cross-reference |
 | 00.01.007 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.006 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |
 | 00.01.005 | 2026-02-09 | CISO | Backup and recovery (A.8.13-14) populated (Batch-D) |

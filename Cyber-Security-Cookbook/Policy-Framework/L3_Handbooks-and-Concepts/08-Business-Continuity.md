@@ -24,7 +24,7 @@ Business disruptions from cyberattacks, infrastructure failures, or natural even
 
 This handbook translates the BCM requirements from CB_POL_L2_06 into concrete procedures for BIA execution, continuity plan creation, test management, and recovery coordination (addresses A.5.29-5.30). It enables IT operations and security teams to implement and maintain recovery capabilities aligned with defined tier objectives.
 
-The handbook connects upstream to CB_POL_L2_06 (requirements and tier model) and laterally to CB_POL_L3_05 (backup strategy) and CB_PRC_03 (operational backup process). Test results and BIA assessments feed into HB_REG_10 (BIA Register).
+The handbook connects upstream to CB_POL_L2_06 (requirements and tier model) and laterally to CB_POL_L3_05 (backup strategy) and CB_PRC_03 (operational backup process). Test results and BIA assessments feed into HB_REG_04 (BIA Register).
 
 **Scope:** IT administrators, system owners, and the CISO responsible for BCM implementation. Covers all business-critical IT services and systems within the ISMS scope.
 
@@ -71,7 +71,7 @@ Classify each process and its supporting IT services into the tier model defined
 | Tier 3 | 25-96 h | Normal | Medium — recovery within four business days |
 | Tier 4 | > 97 h | Low | Standard — recovery on best-effort basis |
 
-Record all BIA results in HB_REG_10 (BIA Register). Include the assigned tier, RTO, RPO, MTPD, and the date of the last assessment. Review tier assignments when business processes, IT architecture, or risk posture change.
+Record all BIA results in HB_REG_04 (BIA Register). Include the assigned tier, RTO, RPO, MTPD, and the date of the last assessment. Review tier assignments when business processes, IT architecture, or risk posture change.
 
 ## Develop Continuity Plans
 
@@ -212,7 +212,7 @@ Conduct a post-incident review within [5 business days] after recovery is comple
 | Dependencies | Were external dependencies (suppliers, cloud providers) managed effectively? |
 | Gaps | What was missing or insufficient in the plan? |
 
-Document findings and corrective actions. Update the affected continuity plan based on lessons learned. Record the event and outcomes in HB_REG_10 (BIA Register).
+Document findings and corrective actions. Update the affected continuity plan based on lessons learned. Record the event and outcomes in HB_REG_04 (BIA Register).
 
 ## See also
 
@@ -220,7 +220,7 @@ Document findings and corrective actions. Update the affected continuity plan ba
 - CB_POL_L3_05-Data-Backup — Backup strategy and recovery procedures
 - CB_PRC_03-Backup-and-Recovery — Operational backup process
 - CB_PRC_01-Incident-Management — Transition from incident to emergency
-- HB_REG_10-BIA-Register — BIA assessment and tier tracking
+- HB_REG_04-BIA-Register — BIA assessment and tier tracking
 - HB_REG_03-Asset-Register — Asset inventory as BIA input
 
 ## Changelog

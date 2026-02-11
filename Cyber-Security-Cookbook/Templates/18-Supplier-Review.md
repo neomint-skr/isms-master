@@ -8,7 +8,7 @@
 |---|---|
 | Document ID | CB_TPL_18-Supplier-Review |
 | Supplier | |
-| Supplier ID (REG_04) | |
+| Supplier ID (REG_10) | |
 | Tier | |
 | Review date | |
 | Reviewer | |

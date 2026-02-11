@@ -23,7 +23,7 @@ Effective risk treatment requires a structured inventory of all security measure
 
 The register assigns each security measure a unique SM-ID, maps it to Annex A controls, and tracks implementation status from planning through verification. It provides the factual basis for gap analysis, effectiveness reviews and audit evidence.
 
-Measure definitions are derived from the risk treatment plan (HB_REG_07) and aligned with the statement of applicability (HB_REG_02). Effectiveness reviews feed back into the risk management process (CB_PRC_07) and are reported in management reviews (CB_PRC_09).
+Measure definitions are derived from the risk treatment plan (HB_REG_06) and aligned with the statement of applicability (HB_REG_08). Effectiveness reviews feed back into the risk management process (CB_PRC_07) and are reported in management reviews (CB_PRC_09).
 
 **Scope:** All security measures within the ISMS scope. Target audience: CISO (measure tracking), risk owners (implementation), auditors (evidence), top management (effectiveness oversight).
 
@@ -70,13 +70,13 @@ Measure definitions are derived from the risk treatment plan (HB_REG_07) and ali
 
 - CB_POL_L2_11-Risk-Management — Normative basis
 - CB_PRC_07-Risk-Management — Operational process
-- HB_REG_06-Risk-Register — Scenario-based risk entries
-- HB_REG_07-Risk-Treatment-Plan — Risk-to-measure assignment
-- HB_REG_02-Statement-of-Applicability — Control applicability
+- HB_REG_05-Risk-Register — Scenario-based risk entries
+- HB_REG_06-Risk-Treatment-Plan — Risk-to-measure assignment
+- HB_REG_08-Statement-of-Applicability — Control applicability
 
 ## Changelog
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 00.01.001 | 2026-02-11 | Claude (AI) | Register renumbered for information-flow order (REG_12 → REG_07) |
+| 00.01.001 | 2026-02-11 | Claude (AI) | Register renumbered for information-flow order (formerly no. 12) |
 | 00.01.000 | 2026-02-11 | Claude (AI) | Initial version: security measures register structured by Annex A categories |

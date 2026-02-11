@@ -143,7 +143,7 @@ Cloud service agreements must cover the following aspects:
 - CB_POL_L2_06-Business-Continuity — Supplier dependencies in contingency planning
 - CB_POL_L3_07-Supplier-Management — Assessment, agreements, monitoring
 - CB_PRC_06-Supplier-Management — Operational supplier process
-- HB_REG_04-Supplier-Register — Supplier inventory
+- HB_REG_10-Supplier-Register — Supplier inventory
 
 ## Changelog
 

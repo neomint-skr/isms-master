@@ -65,7 +65,7 @@ Measurement frequency is defined per objective; results are reviewed quarterly a
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 00.01.009 | 2026-02-11 | Claude (AI) | Register renumbered for information-flow order (REG_01 → REG_09) |
+| 00.01.009 | 2026-02-11 | Claude (AI) | Register renumbered for information-flow order (formerly no. 01) |
 | 00.01.008 | 2026-02-10 | Claude (AI) | Remove Responsibilities section; roles consolidated in CLS 5.3 |
 | 00.01.007 | 2026-02-10 | [CISO] | Completed register structure: Summary, Monitoring Results table, Responsibilities, See also |
 | 00.01.006 | 2026-02-09 | [CISO] | Aligned role terminology |

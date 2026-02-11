@@ -24,7 +24,7 @@ Protection requires knowledge — only what is inventoried can be assessed and p
 
 The register documents all ISMS-relevant assets in 8 categories with cross-reference tables for dependencies (addresses A.5.9). It provides the data basis for protection requirements analysis, risk analysis and business impact assessment.
 
-Protection requirement values are populated through the protection requirements assessment process (CB_PRC_13) and feed into the risk register (HB_REG_06). The management review (CB_PRC_09) uses the asset inventory as input for the ISMS adequacy assessment.
+Protection requirement values are populated through the protection requirements assessment process (CB_PRC_13) and feed into the risk register (HB_REG_05). The management review (CB_PRC_09) uses the asset inventory as input for the ISMS adequacy assessment.
 
 **Scope:** All organizational units, processes, applications, IT systems, communication links as well as rooms and buildings within the ISMS scope. Target audience: Asset owners (reporting), IS-Coordinator (maintenance), CISO (analysis).
 
@@ -32,7 +32,7 @@ Protection requirement values are populated through the protection requirements 
 
 The cross-reference tables (section below) are the **SSOT for relationships** between assets. The relationship columns in the asset tables are denormalized quick references for a fast overview. In case of conflict, the cross-reference tables prevail.
 
-The Confidentiality (C), Integrity (I) and Availability (A) columns are structural placeholders. They are populated through the protection requirements assessment (CB_PRC_13). BCM-related recovery data (RTO, RPO, MTD, continuity plans) is maintained in the dedicated BIA Register (HB_REG_10).
+The Confidentiality (C), Integrity (I) and Availability (A) columns are structural placeholders. They are populated through the protection requirements assessment (CB_PRC_13). BCM-related recovery data (RTO, RPO, MTD, continuity plans) is maintained in the dedicated BIA Register (HB_REG_04).
 
 Grouped target objects (Zielobjekte) replace individual entries in the ISMS register when assets share an identical security-management profile. The operational detail inventory (serial numbers, licences, individual configurations) is maintained externally in the CMDB. Cross-reference tables provide seamless traceability from information through process, application, IT system, communication link to room and building.
 
@@ -76,7 +76,7 @@ The asset inventory maintains the following fields for each asset (addresses A.5
 
 | Field | Description |
 |---|---|
-| BIA Tier | Recovery tier (1-4) per BIA Register (HB_REG_10). Populated through BIA process (CB_POL_L3_08). |
+| BIA Tier | Recovery tier (1-4) per BIA Register (HB_REG_04). Populated through BIA process (CB_POL_L3_08). |
 
 The mandatory fields are reflected in the category tables below. CIA values are populated through the protection requirements assessment (CB_PRC_13).
 
@@ -157,7 +157,7 @@ The following tables map relationships between assets. They are the SSOT — in 
 ## See also
 
 - CB_PRC_13-Protection-Requirements — Protection requirements assessment process
-- HB_REG_10-BIA-Register — BIA assessment and tier tracking
+- HB_REG_04-BIA-Register — BIA assessment and tier tracking
 
 ## Changelog
 
@@ -167,7 +167,7 @@ The following tables map relationships between assets. They are the SSOT — in 
 | 00.02.011 | 2026-02-11 | Claude (AI) | C/I/A scale aligned to Normal/High/Very high (BSI 200-2); process references CB_PRC_07 → CB_PRC_13 |
 | 00.02.010 | 2026-02-11 | SKR | Asset grouping schema: Count + Includes columns in all 8 tables, Criticality column in Communication Links, data model note for Zielobjekte |
 | 00.02.009 | 2026-02-10 | Claude (AI) | Remove Responsibilities section; roles consolidated in CLS 5.3 |
-| 00.02.008 | 2026-02-10 | [CISO] | BIA fields replaced by BIA Tier reference (REG_10 extraction) |
+| 00.02.008 | 2026-02-10 | [CISO] | BIA fields replaced by BIA Tier reference (REG_04 extraction) |
 | 00.02.007 | 2026-02-09 | [CISO] | Aligned role terminology |
 | 00.02.006 | 2026-02-09 | [CISO] | Inventory fields: 14 mandatory fields + 5 optional BIA fields (REC-410) |
 | 00.02.005 | 2026-02-09 | [CISO] | Objective and Scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |

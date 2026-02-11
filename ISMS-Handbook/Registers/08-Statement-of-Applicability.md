@@ -69,8 +69,8 @@ Control selection takes place during risk treatment (CB_PRC_07, HB_CLS_8.3) and 
 | 5.26 | Response to information security incidents | Yes | Reduces impact of an information security incident | Implemented | CB_POL_L2_13 | Incident response procedures |
 | 5.27 | Learning from information security incidents | Yes | Reduces likelihood of deliberate rule breach | Implemented | CB_POL_L2_13 | Incident response procedures |
 | 5.28 | Collection of evidence | Yes | Reduces impact of an information security incident | Implemented | CB_POL_L2_13 | Evidence collection procedures |
-| 5.29 | Information security during disruption | Yes | Reduces impact of an information security incident | Implemented | CB_POL_L2_06 | CB_POL_L3_08, HB_REG_10 |
-| 5.30 | ICT readiness for business continuity | No | Not proportionate at current org maturity level | — | CB_POL_L2_06 | CB_POL_L3_08, HB_REG_10 |
+| 5.29 | Information security during disruption | Yes | Reduces impact of an information security incident | Implemented | CB_POL_L2_06 | CB_POL_L3_08, HB_REG_04 |
+| 5.30 | ICT readiness for business continuity | No | Not proportionate at current org maturity level | — | CB_POL_L2_06 | CB_POL_L3_08, HB_REG_04 |
 | 5.31 | Identification of applicable legislation and contractual requirements | Yes | Reduces likelihood of deliberate rule breach | Implemented | CB_POL_L2_14 | Legal requirements register |
 | 5.32 | Intellectual property rights | Yes | Reduces likelihood of deliberate rule breach | Implemented | CB_POL_L2_14 | IP protection procedures |
 | 5.33 | Protection of records | Yes | Reduces likelihood of deliberate rule breach | Implemented | CB_POL_L2_14 | Record retention schedule |
@@ -157,12 +157,12 @@ Control selection takes place during risk treatment (CB_PRC_07, HB_CLS_8.3) and 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 00.04.012 | 2026-02-11 | Claude (AI) | Register renumbered for information-flow order (REG_02 → REG_08) |
+| 00.04.012 | 2026-02-11 | Claude (AI) | Register renumbered for information-flow order (formerly no. 02) |
 | 00.04.011 | 2026-02-11 | Claude (AI) | Reroute controls: A.5.24-5.28 to L2_13, A.5.31-5.37 to L2_14, A.5.7 evidence updated (merge from retorio) |
 | 00.04.010 | 2026-02-11 | Claude (AI) | Populate SoA from client instance — 87 Yes, 6 No controls with justifications and status |
 | 00.04.009 | 2026-02-10 | Claude (AI) | Remove Responsibilities section; roles consolidated in CLS 5.3 |
 | 00.04.008 | 2026-02-10 | [CISO] | Renamed Column Legend to Key (register key convention) |
-| 00.04.007 | 2026-02-10 | [CISO] | A.5.29-30: added L3_08 and REG_10 as secondary documents |
+| 00.04.007 | 2026-02-10 | [CISO] | A.5.29-30: added L3_08 and REG_04 as secondary documents |
 | 00.04.006 | 2026-02-09 | [CISO] | Aligned role terminology |
 | 00.04.005 | 2026-02-09 | [CISO] | Objective and Scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |
 | 00.04.004 | 2026-02-09 | [CISO] | Objective and Scope: bold-label pattern (Objective + Scope) |
