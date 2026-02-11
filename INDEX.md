@@ -31,18 +31,18 @@
 
 ### HB -- ISMS-Handbook / Registers
 
-**01-IS-Objectives-Register.md** -- IS objectives with KPIs and monitoring results
-**02-Statement-of-Applicability.md** -- 93 controls, SSOT for applicability
+**01-Context-Register.md** -- Organizational profile, external/internal issues
+**02-Interested-Parties-Register.md** -- Stakeholders + IS requirements
 **03-Asset-Register.md** -- 8 asset inventories, 6 cross-reference tables, data model
-**04-Supplier-Register.md** -- Supplier + cloud services tables
-**05-Nonconformity-Register.md** -- NC tracking with effectiveness review
-**06-Risk-Register.md** -- 4x4 matrix, risk entries, acceptance
-**07-Risk-Treatment-Plan.md** -- Controls per risk, owners, deadlines, effectiveness
-**08-Interested-Parties-Register.md** -- Stakeholders + IS requirements
-**09-Context-Register.md** -- Organizational profile, external/internal issues
-**10-BIA-Register.md** -- BIA assessment, tier assignment, continuity plan tracking
+**04-BIA-Register.md** -- BIA assessment, tier assignment, continuity plan tracking
+**05-Risk-Register.md** -- 4x4 matrix, scenario-based risk entries, acceptance
+**06-Risk-Treatment-Plan.md** -- Controls per risk, owners, deadlines, gap tracking
+**07-Security-Measures-Register.md** -- Security measures per risk, linked to controls and assets
+**08-Statement-of-Applicability.md** -- 93 controls, SSOT for applicability
+**09-IS-Objectives-Register.md** -- IS objectives with KPIs and monitoring results
+**10-Supplier-Register.md** -- Supplier + cloud services tables
 **11-Competence-Records.md** -- SOLL/IST competence matrix per ISMS role (20 dimensions)
-**12-Security-Measures-Register.md** -- Security measures per risk, linked to controls and assets
+**12-Nonconformity-Register.md** -- NC tracking with effectiveness review
 
 **Exception-Register/01-Exception-Index.md** -- Approved policy exceptions with expiry and review tracking
 
@@ -52,14 +52,6 @@
 **Risk-Framework/Vulnerabilities/** -- Vulnerability catalogues per asset class
 `1-Information.md`, `2-Processes.md`, `3-Applications.md`, `4-IT-Systems-Physical.md`, `5-IT-Systems-Virtual.md`, `6-Communication-Links.md`, `7-Rooms.md`, `8-Buildings.md`
 
-### HB -- ISMS-Handbook / Management
-
-**01-Improvement-Roadmap.md** -- Strategic improvement plan (themes, priorities, timeline, status)
-**02-Meeting-Log.md** -- Governance meeting log (MR, risk reviews, decisions, action references)
-**03-Open-Items.md** -- CISO-client open items (questions, clarifications, blockers)
-
-> Records: MR-YYYY-QN.md (minutes), IS-YYYY-MM.md (steering). Evidence files, no formal ISMS IDs.
-
 **Records/Protection-Requirements/** -- Per-asset protection requirement assessments (8 layer folders)
 `1-Information/`, `2-Process/`, `3-Application/`, `4-Physical-IT-System/`, `5-Virtual-IT-System/`, `6-Communication-Connection/`, `7-Room/`, `8-Building/`
 
@@ -67,6 +59,15 @@
 `1-Information/`, `2-Process/`, `3-Application/`, `4-Physical-IT-System/`, `5-Virtual-IT-System/`, `6-Communication-Connection/`, `7-Room/`, `8-Building/`
 
 **Records/Security-Measures/** -- Security measure evidence and implementation records
+
+### HB -- ISMS-Handbook / Management
+
+**01-Improvement-Roadmap.md** -- Strategic improvement plan (themes, priorities, timeline, status)
+**02-Meeting-Log.md** -- Governance meeting log (MR, risk reviews, decisions, action references)
+**03-Open-Items.md** -- CISO-client open items (questions, clarifications, blockers)
+
+> Minutes: MR-YYYY-QN.md (management review), IS-YYYY-MM.md (steering). Evidence files, no formal ISMS IDs.
+
 
 ### HB -- ISMS-Handbook / Audit
 
