@@ -1,9 +1,9 @@
 > **Document ID:** CB_POL_L2_07-Organisation
-> **Version:** 00.03.009
+> **Version:** 00.03.010
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.2-5.7, A.5.9-5.11, A.5.24-5.28, A.5.31-5.37
-> **Last modified:** 2026-02-09
+> **Last modified:** 2026-02-11
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -111,6 +111,39 @@ Assets are classified by the following types and documented in separate register
 **Process:** CB_PRC_12-Asset-Management describes the workflow from identification to maintenance.
 **Register:** HB_REG_03-Asset-Register documents all assets and their relationships.
 
+### Asset Grouping
+
+Assets sharing an identical security-management profile are consolidated into target objects (Zielobjekte). This reduces complexity and focuses resource investment on distinct risk profiles rather than individual items (addresses A.5.9) [REF:BSI17, Cl. 8.1.1].
+
+**General grouping criteria** — objects may be assigned to the same group when they all [REF:BSI17, Cl. 8.1.1]:
+
+1. are of the same type
+2. serve similar tasks
+3. are subject to similar conditions
+4. share the same protection requirement level
+
+**Additional technical grouping criteria** — for technical objects, grouping is additionally indicated when they [REF:BSI17, Cl. 8.1.1]:
+
+1. are similarly configured
+2. are similarly integrated into the network (e.g. same network segment)
+3. are subject to similar administrative and infrastructural conditions
+4. serve similar applications
+5. share the same protection requirement level
+
+**Normative interpretation.** The criteria describe the target state (how assets shall be managed). Deviations of individual assets from the group profile (e.g. missing patch level) are deficiencies to be remediated — not grounds for dissolving the group. Where permanent deviation is unavoidable, an exception approval shall be obtained and tracked as a risk in the risk management process.
+
+**Protection-requirement inheritance.** The maximum principle applies — the most severe potential damage determines the protection requirement [REF:BSI17, Cl. 8.2.2]. Grouping is performed only after the protection-requirement assessment is complete.
+
+**Communication links — special classification** [REF:BSI17, Cl. 8.2.8]. Three categories of critical connections are distinguished:
+
+1. External connections (traversing uncontrolled areas — always critical)
+2. Connections carrying information with high protection requirements
+3. Connections at production boundaries or network perimeters
+
+**Documentation.** Grouped assets are recorded in the asset register with count and included individual objects. The operational detail inventory (serial numbers, licences) is maintained externally (CMDB).
+
+**Traceability chain.** Seamless traceability from information through process, application, IT system, communication link to room and building shall be maintained. Cross-reference tables in the asset register map the inheritance chain.
+
 ## Governance
 
 Information security is governed through a clear organizational structure with defined roles, responsibilities, and authorities (addresses A.5.2).
@@ -141,6 +174,7 @@ The role structure is organized into organizational roles, ISMS roles (Chief Inf
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.03.010 | 2026-02-11 | SKR | Asset grouping (Zielobjekte) methodology added: criteria, inheritance, communication links, documentation |
 | 00.03.009 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.03.008 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |
 | 00.03.007 | 2026-02-09 | CISO | Incidents (A.5.24-28), compliance (A.5.31-33), governance (A.5.2-5.6) populated (Batch-D) |

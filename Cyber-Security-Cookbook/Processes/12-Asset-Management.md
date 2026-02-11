@@ -1,9 +1,9 @@
 > **Document ID:** CB_PRC_12-Asset-Management
-> **Version:** 00.01.007
+> **Version:** 00.01.008
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.9
-> **Last modified:** 2026-02-09
+> **Last modified:** 2026-02-11
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -42,6 +42,8 @@ The process is triggered by:
 
 The asset is identified and assigned to an asset type.
 
+**Grouping evaluation.** When a new asset is identified, evaluate whether it fits an existing group based on the five general grouping criteria defined in the organisation standard (CB_POL_L2_07). If yes: increment the group count and add the asset to the Includes column. If no: record as individual object (Count = 1, Includes = —). During each periodic inventory review, evaluate whether individual objects have become groupable.
+
 ### 2. ID assignment
 
 The asset receives a unique, stable asset ID. The ID does not change over the lifecycle.
@@ -75,6 +77,7 @@ Changes are recorded on an event-driven basis. Decommissioned assets are marked 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.008 | 2026-02-11 | SKR | Grouping evaluation sub-step added to identification phase |
 | 00.01.007 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.006 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/FOR WHAT/WHERE) |
 | 00.01.005 | 2026-02-09 | CISO | Objective and scope: bold-label pattern (Objective + Scope) |
