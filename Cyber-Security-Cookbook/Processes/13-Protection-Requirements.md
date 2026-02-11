@@ -1,5 +1,5 @@
 > **Document ID:** CB_PRC_13-Protection-Requirements
-> **Version:** 00.01.000
+> **Version:** 00.01.001
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1, A.5.9
@@ -46,7 +46,20 @@ The IS-Coordinator identifies the assets to be assessed from HB_REG_03. The scop
 
 For each information asset and business process, the asset owner assesses confidentiality, integrity, and availability individually using the damage scenarios defined in CB_POL_L2_11 (Protection Requirements Analysis). The assessment uses "What if?" analysis: for each core value, the relevant damage scenario category (Normal / High / Very high) is determined based on the most severe plausible impact. The rationale for each rating is documented.
 
+**Availability derivation for business processes:** For process assets, the availability (V) protection requirement is not assessed via damage scenarios but derived from the Business Impact Analysis (BIA). BIA data is sourced from HB_REG_10 (BIA Register). The BIA Tier maps to the availability protection requirement as follows (mapping table defined in CB_POL_L2_11):
+
+| BIA Tier | Classification | Availability PR |
+|---|---|---|
+| 1 | Critical | Very high |
+| 2 | Important | High |
+| 3 | Normal | Normal |
+| 4 | Low | Normal |
+
+Confidentiality and integrity are still assessed via damage scenarios as described above. The BIA-derived availability value takes precedence over a damage-scenario-based availability assessment for process assets.
+
 For complex business processes with High or Very high protection requirements, decomposition into sub-processes is evaluated to limit the scope of elevated requirements.
+
+**Override documentation (cumulation and distribution):** During any assessment or inheritance step, the assessor may invoke cumulation (aggregated risk raises the PR) or distribution (redundancy lowers the PR) effects as defined in CB_POL_L2_11. When an override is applied, the following must be documented in the asset's PR record: justification for the override, list of affected assets contributing to the cumulation or distribution effect, and the resulting adjusted PR value. The override documentation is reviewed and approved in Step 8.
 
 ### 3. Inheritance — applications
 
@@ -81,9 +94,23 @@ The protection requirements of communication links are derived from the connecte
 For each assessed asset or asset group, the IS-Coordinator records:
 
 - C/I/A values in the corresponding columns of HB_REG_03
-- An individual assessment record using CB_TPL_19 (Protection Requirements Assessment), filed in ISMS-Handbook/Management/Records/Protection-Requirements/
+- An individual assessment record using CB_TPL_19 (Protection Requirements Assessment), filed in the layer-specific subdirectory:
+  `Management/Records/Protection-Requirements/<Layer>/PR-<Asset-ID>.md`
 
-The assessment record includes the rationale per core value, inheritance chains, cumulation/distribution effects, and conclusions.
+Layer subdirectories:
+
+| Folder | Asset Layer |
+|---|---|
+| 1-Information | Information assets |
+| 2-Process | Business processes |
+| 3-Application | Applications |
+| 4-Physical-IT-System | Physical IT systems |
+| 5-Virtual-IT-System | Virtual IT systems |
+| 6-Communication-Connection | Communication links |
+| 7-Room | Rooms |
+| 8-Building | Buildings |
+
+The assessment record includes the rationale per core value, inheritance chains, cumulation/distribution effects (including any override documentation from Steps 2–6), and conclusions.
 
 ### 8. Approval
 
@@ -91,19 +118,27 @@ The asset owner reviews and approves the protection requirement values for their
 
 ### 9. Handoff to risk management
 
-Assets with a protection requirement of High or Very high in at least one core value are flagged for individual risk analysis in CB_PRC_07 (Risk Management). The IS-Coordinator communicates the list of flagged assets to the CISO for inclusion in the next risk assessment cycle.
+Assets with a protection requirement of High or Very high in at least one core value are flagged for individual risk analysis in CB_PRC_07 (Risk Management). For each flagged asset, the IS-Coordinator:
+
+1. Creates a risk assessment file from CB_TPL_21, filed in the layer-specific subdirectory:
+   `Management/Records/Risk-Assessments/<Layer>/RA-<Asset-ID>.md`
+   (Layer subdirectories follow the same naming convention as in Step 7.)
+2. Communicates the list of flagged assets and their prepared RA files to the CISO for inclusion in the next risk assessment cycle.
 
 ## See also
 
-- CB_POL_L2_11-Risk-Management — Normative requirements (damage scenarios, categories, methodology)
+- CB_POL_L2_11-Risk-Management — Normative requirements (damage scenarios, categories, methodology, BIA-to-V mapping)
 - CB_PRC_12-Asset-Management — Input: registered assets
 - CB_PRC_07-Risk-Management — Output: risk analysis for High/Very high assets
 - CB_TPL_19-Protection-Requirements-Assessment — Assessment template
+- CB_TPL_21 — Risk assessment record template
 - HB_REG_03-Asset-Register — C/I/A columns and cross-reference tables
+- HB_REG_10-BIA-Register — Business Impact Analysis data (availability derivation)
 - HB_CLS_5.3-Roles-and-Responsibilities — RACI matrix
 
 ## Changelog
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.001 | 2026-02-11 | Claude (AI) | Added BIA-to-V derivation for process assets, override documentation for cumulation/distribution, layer-specific PR record paths, RA file creation in handoff step |
 | 00.01.000 | 2026-02-11 | Claude (AI) | Initial version: 9-step process based on BSI 200-2 Ch. 8.2 |

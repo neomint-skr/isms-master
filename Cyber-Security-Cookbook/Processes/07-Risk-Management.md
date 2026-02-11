@@ -1,5 +1,5 @@
 > **Document ID:** CB_PRC_07-Risk-Management
-> **Version:** 00.01.013
+> **Version:** 00.01.014
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1, 8.2, 8.3
@@ -27,30 +27,61 @@ Results are documented in HB_REG_06 (Risk Register) and HB_REG_07 (Risk Treatmen
 
 ## Risk assessment
 
-The risk assessment comprises three steps (Clause 8.2).
+The risk assessment follows a catalogue-driven, six-step workflow (Clause 8.2). Vulnerability catalogues (HB_REG_03, per asset layer) and the threat catalogue (HB_REG_11) provide the systematic input. Additional event-driven sources (incidents, audits, vulnerability advisories) remain valid triggers for ad-hoc risk identification outside the catalogue workflow.
 
-### Risk identification
+### Step 1 — Scope determination
 
-The Chief Information Security Officer identifies IS risks systematically. Sources include:
+The Chief Information Security Officer identifies the assets requiring individual risk analysis from HB_REG_03. The scope comprises all assets whose protection requirement (PR) is rated **High** or **Very high** in at least one core value (C, I, or A), as flagged by CB_PRC_13 (Protection Requirements). Assets already assessed and unchanged since the last cycle are excluded unless an event-driven trigger applies.
 
-- Asset register (HB_REG_03) with protection requirements (from CB_PRC_13)
+Additional input sources that may expand the scope:
+
 - Security incidents (CB_PRC_01-Incident-Management)
 - Audit findings (CB_PRC_08-Internal-Audit)
 - Vulnerability advisories (CB_PRC_04-Vulnerability-Management)
 - Changes to business processes or the IT landscape
 
-For each identified risk, the following are determined: risk title, description (threat, vulnerability, impact), affected assets, and risk owner. Results are documented in the risk register (HB_REG_06).
+### Step 2 — Vulnerability assessment
 
-### Risk analysis
+For each in-scope asset, the CISO or IS-Coordinator works through the vulnerability catalogue of the asset's layer in HB_REG_03. Each vulnerability entry receives a status:
 
-For each identified risk, the Chief Information Security Officer assesses the likelihood and impact together with the risk owner, using the scales defined in CB_POL_L2_11-Risk-Management. The rationale for each likelihood and impact rating is documented in the risk register as free-text justification (Cl. 6.1.2). The risk level is derived from the risk matrix (CB_POL_L2_11). The assessment distinguishes:
+| Status | Meaning |
+|---|---|
+| present | Vulnerability exists in the current environment |
+| not present | Vulnerability does not apply or has been fully mitigated |
+| unknown | Assessment not yet possible; further investigation required |
+| n/a | Vulnerability is structurally irrelevant for this asset |
 
-- **Gross risk:** Risk level without considering implemented controls
-- **Net risk:** Risk level after considering already implemented controls
+For each assessment, a brief evidence statement or comment is documented (e.g. reference to configuration evidence, scan result, or expert judgement). Vulnerabilities with status "unknown" are treated as "present" for the purpose of scenario generation until resolved.
 
-### Risk evaluation and prioritization
+### Step 3 — Scenario generation
 
-The determined risk levels are compared against the acceptance criteria (CB_POL_L2_11). Risks are prioritized in descending order of risk level. Risks rated "Critical" receive immediate treatment priority. The prioritized list is presented to the risk owner and top management.
+Risk scenarios are generated systematically from the combination of relevant threats (HB_REG_11) and vulnerabilities with status **present** or **unknown**. A threat–vulnerability pair forms a valid scenario only when the aspect tags are compatible (i.e. the threat's aspect tag matches the vulnerability's aspect tag: C, I, A, or combinations).
+
+Each scenario receives a unique identifier: `SC-<Asset-ID>-####` (four-digit sequential number per asset). The scenario description captures the threat, the exploited vulnerability, and the potential impact on the affected core value(s).
+
+### Step 4 — Risk analysis
+
+For each scenario, the Chief Information Security Officer assesses likelihood and impact together with the risk owner:
+
+- **Likelihood (L):** Rated on the 1–4 scale defined in CB_POL_L2_11-Risk-Management. The rationale is documented as free-text justification (Cl. 6.1.2).
+- **Impact (I):** Derived from the asset's protection requirement using the mapping table in CB_POL_L2_11 (PR category → impact level).
+- **Risk Score:** L × I, plotted on the risk matrix (CB_POL_L2_11).
+
+The assessment distinguishes:
+
+- **Gross risk:** Risk score without considering implemented controls.
+- **Net risk:** Existing security measures (referenced by SM-ID from HB_REG_12) are identified per scenario. Their mitigating effect on likelihood and/or impact is assessed, yielding the net risk score.
+
+### Step 5 — Risk evaluation and prioritization
+
+The net risk scores are compared against the acceptance criteria defined in CB_POL_L2_11. Risks are prioritized in descending order of risk score. Risks rated **Critical** receive immediate treatment priority. The prioritized list is presented to the risk owner and top management.
+
+### Step 6 — Documentation
+
+For each in-scope asset, the assessment results are documented:
+
+- An individual risk assessment record is created using CB_TPL_21, filed in `Management/Records/Risk-Assessments/<Layer>/RA-<Asset-ID>.md`.
+- Aggregated results (scenario list, risk scores, treatment status) are entered in the risk register (HB_REG_06).
 
 ## Risk treatment
 
@@ -62,11 +93,16 @@ The risk owner selects a treatment option for each unacceptable risk from the fo
 
 ### Determine controls and reconcile with Annex A
 
-For selected mitigation controls, the Chief Information Security Officer identifies appropriate controls. These are reconciled with Annex A (ISO 27001) to ensure that no relevant controls have been overlooked (Clause 6.1.3 b, c). New or changed control assignments are updated in the SoA (HB_REG_02).
+For treatment option **Reduce**, the Chief Information Security Officer identifies appropriate security measures:
+
+1. **Existing measure lookup:** Check HB_REG_12 (Security Measures Catalogue) for a measure that addresses the scenario's threat–vulnerability combination. If a suitable measure exists, reference it by SM-ID.
+2. **New measure creation:** If no suitable measure exists in HB_REG_12, a new measure is defined and added to the catalogue with a new SM-ID.
+3. **Risk-to-measure mapping:** The assignment of risk scenarios to security measures is documented in HB_REG_07 (Risk Treatment Plan), linking SC-IDs to SM-IDs.
+4. **Annex A reconciliation:** Controls are reconciled with Annex A (ISO 27001) to ensure that no relevant controls have been overlooked (Clause 6.1.3 b, c). New or changed control assignments are updated in the SoA (HB_REG_02).
 
 ### Create risk treatment plan
 
-For each risk requiring treatment, an entry is created in the risk treatment plan (HB_REG_07) containing: risk ID, selected controls, responsible person, deadline, and expected risk level after implementation.
+For each risk requiring treatment, an entry is created in the risk treatment plan (HB_REG_07) containing: risk ID (SC-ID), selected treatment option, assigned security measures (SM-IDs), responsible person, deadline, and expected risk level after implementation.
 
 ### Approval and residual risk acceptance
 
@@ -100,18 +136,23 @@ An unscheduled risk assessment is triggered by:
 
 - CB_POL_L2_11-Risk-Management — Normative requirements (scales, criteria, treatment options)
 - CB_PRC_13-Protection-Requirements — Input: assets with assessed protection requirements
+- CB_TPL_21 — Risk assessment record template
 - HB_CLS_6.1-Risks-and-Opportunities — ISO clause assignment
 - HB_CLS_8.2-Risk-Assessment — ISO clause assignment
 - HB_CLS_8.3-Risk-Treatment — ISO clause assignment
 - HB_REG_02-Statement-of-Applicability — Control applicability (SSOT)
+- HB_REG_03-Asset-Register — Asset data, vulnerability catalogues, cross-reference tables
 - HB_REG_06-Risk-Register — Risk entries
-- HB_REG_07-Risk-Treatment-Plan — Treatment plan
+- HB_REG_07-Risk-Treatment-Plan — Treatment plan (SC-ID → SM-ID mapping)
+- HB_REG_11-Threat-Catalogue — Threat catalogue with aspect tags
+- HB_REG_12-Security-Measures-Catalogue — Security measures (SM-IDs)
 - HB_CLS_5.3-Roles-and-Responsibilities — RACI matrix
 
 ## Changelog
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.014 | 2026-02-11 | Claude (AI) | Restructured risk assessment to 6-step catalogue-driven workflow (vulnerability catalogue, scenario generation, SM-ID linkage); updated risk treatment for HB_REG_12 measure lookup/creation |
 | 00.01.013 | 2026-02-11 | Claude (AI) | Added quarterly Risk Committee review cycle (merge from retorio) |
 | 00.01.012 | 2026-02-11 | skr | Renamed risk treatment option "Mitigate" to "Reduce" for ISO/BSI alignment |
 | 00.01.011 | 2026-02-11 | Claude (AI) | Risk identification input: protection requirements from CB_PRC_13 (was CB_PRC_07 self-reference); add CB_PRC_13 to See also |
