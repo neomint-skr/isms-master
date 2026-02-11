@@ -1,5 +1,5 @@
 > **Document ID:** CB_POL_L1_01-Policy
-> **Version:** 01.00.001
+> **Version:** 01.00.002
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.1
@@ -13,7 +13,7 @@
 
 ## Summary
 
-<!-- TODO -->
+Information security requires strategic commitment from top management to be effective across the organization. This policy defines six principles (P1–P6) and a four-tier framework that guide all security decisions. It establishes the strategic foundation for the ISMS and ensures traceability from principles to operational controls. Without this policy, security measures lack direction, accountability, and organizational alignment.
 
 ## Objective and Scope
 
@@ -39,9 +39,18 @@ Top management commits to establishing, implementing, maintaining, and continual
 
 Top management enables other management functions to demonstrate their leadership within their respective areas of responsibility.
 
-## Objectives
+## Information Security Objectives
 
-<!-- TODO -->
+[Organization] defines measurable information security objectives derived from the principles of this policy. Objectives are reviewed at least annually and updated as part of the management review.
+
+| # | Objective | Principle | Measurement | Target | Responsible |
+|---|---|---|---|---|---|
+| 1 | [Objective description] | P1 | [KPI or metric] | [Target value] | [Role] |
+| 2 | [Objective description] | P2 | [KPI or metric] | [Target value] | [Role] |
+| 3 | [Objective description] | P3 | [KPI or metric] | [Target value] | [Role] |
+| 4 | [Objective description] | P4 | [KPI or metric] | [Target value] | [Role] |
+| 5 | [Objective description] | P5 | [KPI or metric] | [Target value] | [Role] |
+| 6 | [Objective description] | P6 | [KPI or metric] | [Target value] | [Role] |
 
 ## Principles
 
@@ -74,11 +83,11 @@ Each L2 standard serves at least one principle. Each L3 handbook operationalizes
 
 | Principle | Standards (L2) |
 |---|---|
-| P1 Protection | L2_01 Access, L2_02 Information Protection, L2_03 System+Network, L2_04 Secure Development, L2_05 Suppliers, L2_07 Organisation, L2_09 Physical Security, L2_12 AI-Usage |
-| P2 Compliance | L2_01 Access, L2_02 Information Protection, L2_05 Suppliers, L2_07 Organisation, L2_08 Document Control, L2_12 AI-Usage |
-| P3 Risk orientation | L2_11 Risk Management, L2_03 System+Network, L2_04 Secure Development, L2_05 Suppliers, L2_06 Business Continuity, L2_07 Organisation, L2_09 Physical Security |
+| P1 Protection | L2_01 Access, L2_02 Information Protection, L2_03 System+Network, L2_04 Secure Development, L2_05 Suppliers, L2_07 Organisation, L2_09 Physical Security, L2_12 AI-Usage, L2_13 Incident+Threat |
+| P2 Compliance | L2_01 Access, L2_02 Information Protection, L2_05 Suppliers, L2_07 Organisation, L2_08 Document Control, L2_12 AI-Usage, L2_14 Compliance+Operations |
+| P3 Risk orientation | L2_11 Risk Management, L2_03 System+Network, L2_04 Secure Development, L2_05 Suppliers, L2_06 Business Continuity, L2_07 Organisation, L2_09 Physical Security, L2_13 Incident+Threat |
 | P4 Awareness | L2_07 Organisation, L2_10 Human Resources |
-| P5 Continual improvement | L2_07 Organisation, L2_08 Document Control |
+| P5 Continual improvement | L2_07 Organisation, L2_08 Document Control, L2_13 Incident+Threat |
 | P6 Business continuity | L2_06 Business Continuity |
 
 ## Non-Compliance Consequences
@@ -92,6 +101,7 @@ Violations of this policy and its subordinate standards may result in disciplina
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 01.00.002 | 2026-02-11 | CISO | Information Security Objectives section, Summary, Allocation Matrix updated with L2_13/L2_14 |
 | 01.00.001 | 2026-02-11 | CISO | Non-compliance consequences clause added |
 | 01.00.000 | 2026-02-11 | CEO | Formal approval of Information Security Policy |
 | 00.01.008 | 2026-02-11 | CISO | Allocation matrix: L2_12 AI-Usage added to P1 and P2 |
