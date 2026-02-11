@@ -7,7 +7,7 @@
 | Asset-ID | [e.g. PIT-003] |
 | Asset name | [e.g. Production Server Cluster] |
 | Layer | [e.g. Physical IT Systems] |
-| PR record | [Link: Registers/Records/Protection-Requirements/\<Layer\>/PR-\<Asset-ID\>.md] |
+| PR record | [Link: Registers/Protection-Requirements/\<Layer\>/PR-\<Asset-ID\>.md] |
 | Asset owner | [Role] |
 | Assessment date | [YYYY-MM-DD] |
 | Assessor | [Name/Role] |

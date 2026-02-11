@@ -52,13 +52,13 @@
 **Risk-Framework/Vulnerabilities/** -- Vulnerability catalogues per asset class
 `1-Information.md`, `2-Processes.md`, `3-Applications.md`, `4-IT-Systems-Physical.md`, `5-IT-Systems-Virtual.md`, `6-Communication-Links.md`, `7-Rooms.md`, `8-Buildings.md`
 
-**Records/Protection-Requirements/** -- Per-asset protection requirement assessments (8 layer folders)
+**Protection-Requirements/** -- Per-asset protection requirement assessments (8 layer folders)
 `1-Information/`, `2-Process/`, `3-Application/`, `4-Physical-IT-System/`, `5-Virtual-IT-System/`, `6-Communication-Connection/`, `7-Room/`, `8-Building/`
 
-**Records/Risk-Assessments/** -- Per-asset risk assessments (8 layer folders)
+**Risk-Assessments/** -- Per-asset risk assessments (8 layer folders)
 `1-Information/`, `2-Process/`, `3-Application/`, `4-Physical-IT-System/`, `5-Virtual-IT-System/`, `6-Communication-Connection/`, `7-Room/`, `8-Building/`
 
-**Records/Security-Measures/** -- Security measure evidence and implementation records
+**Security-Measures/** -- Security measure evidence and implementation records
 
 ### HB -- ISMS-Handbook / Management
 
@@ -328,7 +328,7 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 | REG | Register | Registers/ |
 | REG_EXC | Exception register | Registers/Exception-Register/ |
 | REG_RF | Risk framework | Registers/Risk-Framework/ |
-| SM | Security Measures | Registers/Records/Security-Measures/ |
+| SM | Security Measures | Registers/Security-Measures/ |
 | PRC | Process | Processes/ |
 | HB_CLS_C05 | (folder) | Definitions/C05_Leadership/ (3 files) |
 | HB_CLS_C09 | (folder) | Definitions/C09_Performance/ (3 files) |

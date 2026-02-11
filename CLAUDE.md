@@ -88,7 +88,7 @@ Every content document (with metadata block) follows this layout:
 | Second-to-last H2 | `## See also` | Cross-references to related documents |
 | Last H2 | `## Changelog` | Table: Version, Date, Author, Change — newest version first |
 
-Excluded: REF extracts (no metadata block), TPL templates (fill-in documents; exceptions: TPL_01, TPL_02, TPL_17, TPL_18 are Markdown), and Records (evidence files in Registers/Records/ and Audit/*/Records/ — no metadata block).
+Excluded: REF extracts (no metadata block), TPL templates (fill-in documents; exceptions: TPL_01, TPL_02, TPL_17, TPL_18 are Markdown), and Records (evidence files in Registers/ and Audit/*/Records/ — no metadata block).
 
 ### Objective and Scope (Layout)
 
