@@ -1,9 +1,9 @@
 > **Document ID:** CB_PRC_01-Incident-Management
-> **Version:** 00.01.006
+> **Version:** 00.01.007
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.24-5.28
-> **Last modified:** 2026-02-09
+> **Last modified:** 2026-02-11
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -13,7 +13,7 @@
 
 ## Summary
 
-<!-- TODO -->
+Information security incidents can disrupt business operations and compromise sensitive data if not handled through a structured workflow. This process defines the end-to-end lifecycle from incident reporting and classification through escalation, response, and post-incident review. It implements the operational controls required by ISO 27001 Annex A (A.5.24 through A.5.28) and ensures that every incident is documented, assessed, contained, and used as input for continuous improvement. Without this process, escalation paths remain undefined, regulatory notification deadlines (including GDPR 72-hour obligations) are at risk of being missed, and lessons learned are not systematically captured.
 
 ## Objective and Scope
 
@@ -46,19 +46,151 @@ IS events are assessed and classified according to the following scheme (address
 
 ## Reporting
 
-<!-- TODO -->
+All employees, contractors, and external parties are obligated to report observed or suspected IS events without delay (addresses A.6.8). The reporting obligation covers confirmed incidents, suspected incidents, and identified vulnerabilities.
+
+**Reporting channels:**
+
+The organization provides the following channels for incident reports (addresses A.5.24):
+
+| Channel | Use case | Target |
+|---|---|---|
+| [Primary reporting channel, e.g. Slack #security-incidents] | Default channel for all IS event reports | CISO / ISC |
+| [Ticketing system, e.g. GitLab issue with incident label] | Structured technical reports from IT/DevOps | CISO |
+| [Email address, e.g. security@company.tld] | Reports from external parties or where other channels are unavailable | CISO |
+| [Phone number — CISO or ISC] | Urgent reports requiring immediate verbal escalation | CISO / ISC |
+
+Reports should include: date/time of observation, description of the event, affected systems or data, and the reporter's contact information. When in doubt whether an observation qualifies as an incident, it must be reported regardless.
+
+**Automated detection:**
+
+The organization supplements manual reports with automated detection through [monitoring and alerting tools, e.g. SIEM, IDS/IPS, Google Cloud Security Command Center, MDM, endpoint protection]. Automated alerts are routed to [alert recipient, e.g. CISO / on-call rotation] for triage.
+
+**PII qualification (GDPR Art. 33):**
+
+For every reported incident, the CISO or delegate assesses whether personal data of living persons is affected. The assessment determines:
+
+1. Whether the incident involves personal data (directly or indirectly identifiable individuals)
+2. Whether a breach of confidentiality, integrity, or availability of personal data has occurred
+3. Whether the breach is likely to result in a risk to the rights and freedoms of natural persons
+
+If criteria 1 and 2 are met, the incident is classified as a personal data breach and the escalation procedure for supervisory authority notification applies. The PII qualification is documented in [incident tracking tool / breach notification form, e.g. TPL_09].
 
 ## Escalation
 
-<!-- TODO -->
+Incidents classified as exception events are assigned a severity level based on impact analysis (addresses A.5.24).
+
+**Severity matrix:**
+
+| Severity | Description | Examples | Response time | Escalation path |
+|---|---|---|---|---|
+| Critical | Significant actual or potential disruption of business operations; large-scale data breach; multiple systems compromised | Active malware spreading across network; unauthorized access to large volumes of confidential data; core services unavailable due to attack | [Immediately — max 1h] | CISO notifies CEO/CTO within [1h]; IRM team activation; [crisis communication initiated] |
+| High | Serious impact on individual business areas; confirmed compromise of single critical system | Single critical system compromised; confirmed exfiltration of limited confidential data; loss of unencrypted device with sensitive data | [Within 4h] | CISO coordinates response; CTO informed; IRM team on standby |
+| Medium | Localized disruption affecting limited business areas; no confirmed data exfiltration | Single non-critical system unavailable; network degradation; loss of encrypted portable device | [Within 24h] | CISO assesses and assigns to ISC or responsible system owner |
+| Low | Localized inconvenience affecting a single user; minor policy violation | Minor IS policy violation; single-device virus alert; password shared for low-sensitivity system | [Within 72h] | ISC resolves; CISO informed via regular reporting |
+
+**Deputy rule:** If the CISO is unavailable, [designated deputy, e.g. ISC or CTO] assumes escalation authority. The deputy designation is documented in HB_CLS_5.3-Roles-and-Responsibilities.
+
+**GDPR supervisory authority notification (Art. 33):**
+
+If the PII qualification (see Reporting) confirms a personal data breach likely to result in a risk to rights and freedoms, the CISO notifies the competent supervisory authority within **72 hours** of becoming aware of the breach. The notification contains at minimum:
+
+1. Nature of the personal data breach (categories and approximate number of data subjects and records)
+2. Name and contact details of the DPO or other contact point
+3. Likely consequences of the breach
+4. Measures taken or proposed to address the breach and mitigate its effects
+
+If not all information is available within 72 hours, a phased notification is submitted. The supervisory authority in Germany is [competent data protection authority, e.g. Bayerisches Landesamt fuer Datenschutzaufsicht (BayLDA)].
+
+**Data subject notification (GDPR Art. 34):**
+
+If the personal data breach is likely to result in a **high risk** to rights and freedoms, affected data subjects are notified without undue delay. The notification is in clear, plain language and includes: nature of the breach, likely consequences, measures taken, DPO contact details, and recommended protective actions (e.g. password reset, monitoring for suspicious activity).
+
+If direct notification is disproportionately burdensome, a public communication or equivalent measure is used.
+
+**Additional notification obligations:**
+
+Depending on the nature of services provided, additional reporting obligations may apply (e.g. NIS2 Directive for operators of essential services, PECR for communication service providers). The CISO verifies applicable notification requirements and ensures compliance with sector-specific deadlines.
 
 ## Response
 
-<!-- TODO -->
+Upon activation, the incident response follows a structured four-phase approach (addresses A.5.26).
+
+**IRM team composition:**
+
+The Incident Response Management (IRM) team is convened by the CISO based on incident severity and type. The team draws from the following roles:
+
+| Role | Responsibility |
+|---|---|
+| CISO (IRM lead) | Overall coordination, decision authority, external communication |
+| ISC | Operational execution, technical containment measures |
+| [CTO or designated IT lead] | Technical infrastructure decisions, system isolation/recovery |
+| [DPO or legal counsel] | GDPR assessment, supervisory authority liaison, legal implications |
+| [Communications lead] | Internal/external stakeholder communication |
+| [HR representative — if personnel involved] | Disciplinary considerations, employee support |
+| [Additional specialists as needed] | Forensics, cloud security, business process expertise |
+
+Team composition varies based on incident type. For critical incidents, the CISO activates the full IRM team. For lower-severity incidents, the CISO and ISC may handle the response directly.
+
+**Phase 1 — Containment:**
+
+Immediate actions to limit the spread and impact of the incident:
+
+- Isolate affected systems, network segments, or accounts
+- Disable compromised credentials or access tokens
+- Activate backup communication channels if primary channels are compromised
+- Preserve volatile evidence before containment changes system state (coordinate with evidence collection)
+- Document all containment actions with timestamps
+
+**Phase 2 — Eradication:**
+
+Remove the root cause and all artifacts of the incident:
+
+- Identify and eliminate malware, unauthorized access points, or exploited vulnerabilities
+- Apply patches or configuration changes to address the exploited weakness
+- Verify eradication through scanning and monitoring
+- Document technical findings for root cause analysis
+
+**Phase 3 — Recovery:**
+
+Restore affected systems and services to normal operation:
+
+- Restore systems from verified clean backups or rebuild as necessary
+- Re-enable services in a controlled, phased manner
+- Implement enhanced monitoring for the recovery period to detect recurrence
+- Verify system integrity before returning to production
+- Confirm with business process owners that operations are restored
+
+**Phase 4 — Communication:**
+
+Throughout the response, communication is managed as follows:
+
+- Internal stakeholders are informed through [internal communication channel, e.g. Slack, email] based on need-to-know
+- External communication (customers, partners, regulators) is coordinated exclusively through the CISO and [communications lead]
+- All communications are documented as part of the incident record
+- Regulatory notifications follow the escalation timelines defined above
 
 ## Lessons Learned
 
-<!-- TODO -->
+After every exception event is resolved, a post-incident review is conducted to extract improvement opportunities (addresses A.5.27).
+
+**Review process:**
+
+1. **Scheduling:** The CISO schedules a lessons-learned session within [5-10 business days] after incident closure. All IRM team members who participated in the response attend.
+2. **Root cause analysis:** A formal root cause analysis is performed to identify contributing factors — technical vulnerabilities, process deficiencies, or human errors. The analysis method ([5-Whys | fishbone diagram — depending on incident complexity]) is documented.
+3. **Review agenda:** The session covers: incident timeline reconstruction, effectiveness of detection and reporting, adequacy of classification and escalation, appropriateness of response actions, communication effectiveness, and regulatory compliance (notification deadlines met).
+4. **Improvement actions:** Identified improvements are formulated as corrective or preventive actions, assigned to responsible owners with deadlines, and tracked in HB_REG_05-Nonconformity-Register via CB_PRC_10-Nonconformity-Management.
+
+**Documentation:**
+
+- A post-incident report is created for every exception event, capturing: incident summary, timeline, root cause, actions taken, lessons learned, and improvement actions
+- Reports are stored in [incident documentation repository]
+- Aggregated findings are included in the management review input (HB_MGT_02-Management-Review) to drive continual ISMS improvement
+
+**Knowledge transfer:**
+
+- Lessons learned are shared with relevant teams through [awareness briefings, team meetings, or dedicated Lessons Learned sessions]
+- Recurring patterns or systemic weaknesses identified across multiple incidents are escalated to the risk management process (CB_PRC_03-Risk-Management)
+- IRM team training is updated to incorporate findings from reviewed incidents
 
 ## Results documentation
 
@@ -84,12 +216,19 @@ The organization establishes procedures for the identification, collection, acqu
 ## See also
 
 - HB_CLS_5.3-Roles-and-Responsibilities
+- CB_POL_L2_07-Organization
+- CB_POL_L2_13-Incident-Threat
+- CB_PRC_10-Nonconformity-Management
+- HB_REG_05-Nonconformity-Register
+- HB_MGT_02-Management-Review
+- CB_AWR_01-Awareness-Fundamentals
 
 
 ## Changelog
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.007 | 2026-02-11 | CISO | Populated TODO sections: Reporting (channels, PII qualification), Escalation (severity matrix, GDPR Art. 33/34), Response (IRM team, 4-phase approach), Lessons Learned (review process, root cause analysis), Summary |
 | 00.01.006 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.005 | 2026-02-09 | CISO | Classification (3-tier, A.5.25) and evidence collection (4 principles, A.5.28) populated (REC-418, 420) |
 | 00.01.004 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/FOR WHAT/WHERE) |
