@@ -45,6 +45,12 @@
 
 **Exception-Register/01-Exception-Index.md** -- Approved policy exceptions with expiry and review tracking
 
+**Risk-Framework/Threats/** -- Threat catalogues per asset class
+`1-Information.md`, `2-Processes.md`, `3-Applications.md`, `4-IT-Systems-Physical.md`, `5-IT-Systems-Virtual.md`, `6-Communication-Links.md`, `7-Rooms.md`, `8-Buildings.md`
+
+**Risk-Framework/Vulnerabilities/** -- Vulnerability catalogues per asset class
+`1-Information.md`, `2-Processes.md`, `3-Applications.md`, `4-IT-Systems-Physical.md`, `5-IT-Systems-Virtual.md`, `6-Communication-Links.md`, `7-Rooms.md`, `8-Buildings.md`
+
 ### HB -- ISMS-Handbook / Management
 
 **01-Improvement-Roadmap.md** -- Strategic improvement plan (themes, priorities, timeline, status)
@@ -310,6 +316,7 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 | MGT | Management | Management/ |
 | REG | Register | Registers/ |
 | REG_EXC | Exception register | Registers/Exception-Register/ |
+| REG_RF | Risk framework | Registers/Risk-Framework/ |
 | PRC | Process | Processes/ |
 | HB_CLS_C05 | (folder) | Definitions/C05_Leadership/ (3 files) |
 | HB_CLS_C09 | (folder) | Definitions/C09_Performance/ (3 files) |
