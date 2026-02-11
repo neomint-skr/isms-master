@@ -42,6 +42,7 @@
 **09-Context-Register.md** -- Organizational profile, external/internal issues
 **10-BIA-Register.md** -- BIA assessment, tier assignment, continuity plan tracking
 **11-Competence-Records.md** -- SOLL/IST competence matrix per ISMS role (20 dimensions)
+**12-Security-Measures-Register.md** -- Security measures per risk, linked to controls and assets
 
 **Exception-Register/01-Exception-Index.md** -- Approved policy exceptions with expiry and review tracking
 
@@ -58,6 +59,14 @@
 **03-Open-Items.md** -- CISO-client open items (questions, clarifications, blockers)
 
 > Records: MR-YYYY-QN.md (minutes), IS-YYYY-MM.md (steering). Evidence files, no formal ISMS IDs.
+
+**Records/Protection-Requirements/** -- Per-asset protection requirement assessments (8 layer folders)
+`1-Information/`, `2-Process/`, `3-Application/`, `4-Physical-IT-System/`, `5-Virtual-IT-System/`, `6-Communication-Connection/`, `7-Room/`, `8-Building/`
+
+**Records/Risk-Assessments/** -- Per-asset risk assessments (8 layer folders)
+`1-Information/`, `2-Process/`, `3-Application/`, `4-Physical-IT-System/`, `5-Virtual-IT-System/`, `6-Communication-Connection/`, `7-Room/`, `8-Building/`
+
+**Records/Security-Measures/** -- Security measure evidence and implementation records
 
 ### HB -- ISMS-Handbook / Audit
 
@@ -147,6 +156,7 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 **18-Supplier-Review.md** -- Supplier review template (certification, SLA, assessment)
 **19-Protection-Requirements-Assessment.md** -- Per-asset protection requirements assessment form (C/I/A, inheritance, approval)
 **20-Exception-Request.md** -- Exception request form (justification, risk, compensating controls, expiry)
+**21-Risk-Assessment.md** -- Risk assessment worksheet per asset (threat/vulnerability pairing, risk scoring)
 
 ### REF -- References / Library / Standards
 
@@ -317,6 +327,7 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 | REG | Register | Registers/ |
 | REG_EXC | Exception register | Registers/Exception-Register/ |
 | REG_RF | Risk framework | Registers/Risk-Framework/ |
+| SM | Security Measures | Management/Records/Security-Measures/ |
 | PRC | Process | Processes/ |
 | HB_CLS_C05 | (folder) | Definitions/C05_Leadership/ (3 files) |
 | HB_CLS_C09 | (folder) | Definitions/C09_Performance/ (3 files) |
