@@ -327,7 +327,7 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 | REG | Register | Registers/ |
 | REG_EXC | Exception register | Registers/Exception-Register/ |
 | REG_RF | Risk framework | Registers/Risk-Framework/ |
-| SM | Security Measures | Management/Records/Security-Measures/ |
+| SM | Security Measures | Registers/Records/Security-Measures/ |
 | PRC | Process | Processes/ |
 | HB_CLS_C05 | (folder) | Definitions/C05_Leadership/ (3 files) |
 | HB_CLS_C09 | (folder) | Definitions/C09_Performance/ (3 files) |

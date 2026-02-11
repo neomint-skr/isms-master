@@ -80,7 +80,7 @@ The net risk scores are compared against the acceptance criteria defined in CB_P
 
 For each in-scope asset, the assessment results are documented:
 
-- An individual risk assessment record is created using CB_TPL_21, filed in `Management/Records/Risk-Assessments/<Layer>/RA-<Asset-ID>.md`.
+- An individual risk assessment record is created using CB_TPL_21, filed in `Registers/Records/Risk-Assessments/<Layer>/RA-<Asset-ID>.md`.
 - Aggregated results (scenario list, risk scores, treatment status) are entered in the risk register (HB_REG_05).
 
 ## Risk treatment

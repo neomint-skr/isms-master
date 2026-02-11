@@ -1,6 +1,6 @@
 # Template: Protection Requirements Assessment
 
-> ISO Reference: Clause 6.1, A.5.9. Copy per asset (group), fill in, and file as evidence in ISMS-Handbook/Management/Records/Protection-Requirements/.
+> ISO Reference: Clause 6.1, A.5.9. Copy per asset (group), fill in, and file as evidence in ISMS-Handbook/Registers/Records/Protection-Requirements/.
 
 ## Metadata
 

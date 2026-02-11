@@ -13,7 +13,7 @@
 
 ## Summary
 
-The meeting log is the central chronological record of all ISMS governance meetings. It provides an audit trail for management reviews, risk reviews, and IS steering committee sessions with references to key decisions and action items. The log ensures that documented evidence of governance activities exists as required by ISO 27001 Clause 9.3. Without a meeting log, the organization cannot demonstrate that governance meetings took place or what was decided. Full minutes are stored in Management/Records/.
+The meeting log is the central chronological record of all ISMS governance meetings. It provides an audit trail for management reviews, risk reviews, and IS steering committee sessions with references to key decisions and action items. The log ensures that documented evidence of governance activities exists as required by ISO 27001 Clause 9.3. Without a meeting log, the organization cannot demonstrate that governance meetings took place or what was decided. Full minutes are stored in Management/Minutes/.
 
 ## Objective and Scope
 
@@ -21,7 +21,7 @@ The meeting log is the central chronological record of all ISMS governance meeti
 
 The meeting log provides a central chronological record of all governance meetings with key decisions, action references, and links to detailed minutes. It enables auditors and management to trace governance activity without searching through individual records.
 
-The log complements HB_CLS_9.3 (Management Review) requirements and the CB_PRC_09 (Management Review) process. Detailed meeting minutes are stored in Management/Records/ and linked from the log.
+The log complements HB_CLS_9.3 (Management Review) requirements and the CB_PRC_09 (Management Review) process. Detailed meeting minutes are stored in Management/Minutes/ and linked from the log.
 
 **Scope:** All ISMS governance meetings (management reviews, risk reviews, IS steering committee); maintained by CISO.
 
@@ -41,7 +41,7 @@ The log complements HB_CLS_9.3 (Management Review) requirements and the CB_PRC_0
 
 - HB_CLS_9.3-Management-Review — Management review requirements
 - CB_PRC_09-Management-Review — Operational review process
-- Management/Records/ — Full meeting minutes
+- Management/Minutes/ — Full meeting minutes
 
 ## Changelog
 

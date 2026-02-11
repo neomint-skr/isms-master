@@ -95,7 +95,7 @@ For each assessed asset or asset group, the IS-Coordinator records:
 
 - C/I/A values in the corresponding columns of HB_REG_03
 - An individual assessment record using CB_TPL_19 (Protection Requirements Assessment), filed in the layer-specific subdirectory:
-  `Management/Records/Protection-Requirements/<Layer>/PR-<Asset-ID>.md`
+  `Registers/Records/Protection-Requirements/<Layer>/PR-<Asset-ID>.md`
 
 Layer subdirectories:
 
@@ -121,7 +121,7 @@ The asset owner reviews and approves the protection requirement values for their
 Assets with a protection requirement of High or Very high in at least one core value are flagged for individual risk analysis in CB_PRC_07 (Risk Management). For each flagged asset, the IS-Coordinator:
 
 1. Creates a risk assessment file from CB_TPL_21, filed in the layer-specific subdirectory:
-   `Management/Records/Risk-Assessments/<Layer>/RA-<Asset-ID>.md`
+   `Registers/Records/Risk-Assessments/<Layer>/RA-<Asset-ID>.md`
    (Layer subdirectories follow the same naming convention as in Step 7.)
 2. Communicates the list of flagged assets and their prepared RA files to the CISO for inclusion in the next risk assessment cycle.
 
