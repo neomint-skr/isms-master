@@ -1,5 +1,5 @@
 > **Document ID:** CB_POL_L2_04-Secure-Development
-> **Version:** 00.01.009
+> **Version:** 00.01.010
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.8, A.8.4, A.8.25-8.34
@@ -62,6 +62,8 @@ Secure coding principles must be followed during software development (addresses
 
 **External components:** External libraries must be updated regularly and reviewed for security issues.
 
+**License management and SCA compliance:** Software composition analysis (SCA) must be integrated into the CI/CD pipeline to identify known vulnerabilities and license violations in third-party dependencies (addresses A.8.28). An approved license whitelist must be maintained; dependencies with non-compliant licenses must be flagged and replaced or approved through a documented exception process. SCA scan results must be reviewed before each release. Components with critical or high-severity vulnerabilities must be remediated or mitigated before production deployment.
+
 ## Secure Architecture
 
 Secure system architecture and engineering principles must be established, documented, maintained, and applied throughout the development lifecycle (addresses A.8.27).
@@ -75,6 +77,8 @@ Secure system architecture and engineering principles must be established, docum
 **Architecture review:** Security-focused design reviews must be conducted to identify and remediate architectural weaknesses. Architecture decisions, including deviations or exceptions, must be documented and formally approved by relevant stakeholders.
 
 **Review cycle:** Security engineering principles must be reviewed [annually | upon significant change — depending on threat landscape] and updated to reflect new threats, technological advances, and organizational changes.
+
+**Multi-tenancy:** Multi-tenant architectures must enforce logical separation between tenants at the data, compute, and network layers (addresses A.5.8). Each tenant's data must be isolated through dedicated schemas, encryption keys, or equivalent mechanisms. Access controls must prevent cross-tenant data access under all circumstances, including failure scenarios. Tenant-specific audit logs must be maintained. Isolation effectiveness must be validated through dedicated security tests before onboarding new tenants.
 
 ## Testing
 
@@ -190,6 +194,7 @@ Outsourced system development must meet requirements for information security, m
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.010 | 2026-02-11 | CISO | Dev/Ops extensions: multi-tenancy (A.5.8), license management and SCA compliance (A.8.28) |
 | 00.01.009 | 2026-02-11 | CISO | Added A.8.27 Secure Architecture and A.8.33 Test Data sections |
 | 00.01.008 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.007 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |

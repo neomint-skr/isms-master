@@ -1,5 +1,5 @@
 > **Document ID:** CB_POL_L2_03-System-and-Network
-> **Version:** 00.01.009
+> **Version:** 00.01.010
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.8.1, A.8.6-8.10, A.8.13-8.17, A.8.19-8.23
@@ -58,6 +58,8 @@ The use of privileged utility programs capable of overriding system or applicati
 
 Software installation on operational systems must be controlled and authorized (addresses A.8.19). Only [authorized personnel, e.g. IT administrators] with documented approval may perform installations or updates on production systems. A formal approval process must be established. Software must be tested in a controlled environment prior to deployment. A list of approved software must be maintained. Rollback procedures must be documented for all installations. All installation activities must be logged with date, software details, and responsible administrator. End-of-life status of deployed software must be monitored.
 
+**Bring-your-own-device (BYOD):** Personal devices used for organizational purposes must be subject to a documented risk assessment before access is granted (addresses A.8.1). Minimum security requirements must be defined, including device encryption, current operating system version, malware protection, and screen lock. Corporate data must be logically separated from personal data through containerization or equivalent measures. Remote wipe capability for organizational data must be ensured. BYOD devices must comply with the same access control policies as organization-owned endpoints. Acceptable use conditions and owner responsibilities must be documented and acknowledged by the device owner.
+
 ## Vulnerabilities
 
 Technical vulnerabilities must be systematically identified, assessed, and remediated (addresses A.8.8).
@@ -72,6 +74,8 @@ Technical vulnerabilities must be systematically identified, assessed, and remed
 
 **Verification:** Effectiveness of remediation measures must be verified through validation testing and system monitoring.
 
+**Penetration testing:** Penetration tests must be conducted at least annually and after major architectural or infrastructure changes (addresses A.8.8). Scope must cover externally reachable systems, critical internal applications, and network boundaries. Tests must be performed by qualified personnel independent of the development and operations teams. Findings must be classified by severity, and remediation must be tracked through CB_PRC_10 (Corrective Actions). Re-testing must confirm closure of critical and high-severity findings before sign-off.
+
 ## Network
 
 Networks must be designed and operated with security considerations (addresses A.8.20, A.8.21, A.8.22).
@@ -83,6 +87,8 @@ Networks must be designed and operated with security considerations (addresses A
 **Network services:** Security requirements for each network service must be determined and documented. Permitted access methods, authentication policies, and network management rules must be defined.
 
 **Documentation:** Current network diagrams, inventory of network devices, and configuration files must be maintained and updated regularly.
+
+**WLAN segmentation:** Wireless networks must be separated into distinct segments for internal use and guest access (addresses A.8.22). Internal WLAN must require enterprise-grade authentication (e.g. WPA3-Enterprise, 802.1X). Guest WLAN must be isolated from internal networks and restricted to internet access only. Authentication methods, bandwidth limits, and session timeouts must be defined per segment. Unauthorized access points must be detected and disabled.
 
 **Monitoring:** Network traffic and system activities must be monitored.
 
@@ -100,11 +106,15 @@ Logs must be created, protected, and analyzed to detect security events and enab
 
 **Centralization:** A centralized logging solution must be implemented to collect and analyze logs from across the entire infrastructure.
 
+**Cloud-specific logging:** In cloud environments, audit logs provided by the platform must be activated and forwarded to the centralized logging solution (addresses A.8.15). Minimum log sources include identity and access management events, resource configuration changes, network flow logs, and administrative API calls. Retention periods must be defined per log category, with a minimum of [90 days online / 1 year archive]. Log export and alerting must be configured to prevent gaps during platform outages.
+
 **Clock synchronization:** Clocks of all information processing systems must be synchronized to approved reference time sources (addresses A.8.17). [Approved time sources, e.g. Google NTP, Cloudflare NTP] must be designated as authoritative references. NTP or PTP must be configured on all systems. Synchronization status must be monitored automatically. Deviations must be investigated and corrected promptly. Consistent time stamps are a prerequisite for log correlation, forensic analysis, and incident investigation.
 
 ## Monitoring
 
 Networks, systems, and applications must be monitored to detect anomalous behavior and potential information security incidents (addresses A.8.16). A baseline of normal behavior must be established using historical data for network traffic, system utilization, and user activity. Monitoring systems must be configured to capture and analyze inbound and outbound network traffic, system logs, and user activities. Automated alerts must be generated based on predefined thresholds. Escalation procedures for alerts requiring immediate attention must be defined. Anomaly detection must cover unusual traffic patterns, connections to suspicious addresses, unauthorized access attempts, and configuration changes. [SIEM solution, e.g. Google Chronicle, Splunk] should be employed for centralized event correlation and analysis. Alert thresholds and detection rules must be refined regularly to minimize false positives without compromising detection capability.
+
+**Alarm management:** Security alerts must be triaged according to a documented severity classification (addresses A.8.16). Escalation rules must define response times, responsible roles, and notification channels per severity level. Recurring false positives must be analyzed, and detection rules adjusted to reduce alert fatigue without lowering detection coverage. Alert handling must be documented to enable trend analysis and continuous improvement of detection capability. Unresolved critical alerts must be escalated to the CISO within the defined timeframe.
 
 ## Data Masking
 
@@ -166,6 +176,7 @@ Redundancies must be provided for critical information processing facilities to 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.010 | 2026-02-11 | CISO | Dev/Ops extensions: penetration testing (A.8.8), cloud logging (A.8.15), WLAN segmentation (A.8.22), alarm management (A.8.16), BYOD (A.8.1) |
 | 00.01.009 | 2026-02-11 | CISO | Added 8 missing controls: A.8.11, A.8.12, A.8.16, A.8.17, A.8.18, A.8.19, A.8.23, A.8.24 |
 | 00.01.008 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.007 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |

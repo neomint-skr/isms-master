@@ -1,9 +1,9 @@
 > **Document ID:** CB_POL_L2_06-Business-Continuity
-> **Version:** 00.01.008
+> **Version:** 00.01.009
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.29-5.30, A.8.13-8.14
-> **Last modified:** 2026-02-10
+> **Last modified:** 2026-02-11
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -94,7 +94,9 @@ Backup copies of information, software, and system configurations must be create
 | 5 | Recovery tests must be conducted [annually &#124; semi-annually — depending on criticality tier]; results must be documented |
 | 6 | Backups must also meet retention period requirements (legal and contractual) |
 
-**Redundancy:** For critical IT services at tier 1, sufficient redundancies of information processing facilities must be maintained to meet the defined availability requirements (addresses A.8.14).
+**Secure deletion:** Backup data must be securely erased when retention periods expire or when data subjects exercise their right to erasure under GDPR (addresses A.8.13). Deletion methods must be proportionate to the classification level of the stored data. Erasure of backup media must be documented, and evidence of deletion must be retained for [audit retention period]. Automated expiry mechanisms are preferred over manual deletion to reduce the risk of orphaned data.
+
+**Redundancy:** For critical IT services at tier 1, sufficient redundancies of information processing facilities must be maintained to meet the defined availability requirements (addresses A.8.14). Redundant systems, networks, and services must implement the same security controls as primary systems. Failover configurations must be tested at [defined intervals — e.g., annually or semi-annually] to verify correct activation and sustained security posture. Deviations between primary and redundant environments must be treated as findings in risk management.
 
 The operational backup process including procedures and responsibilities is described in CB_PRC_03 (Backup and Recovery). The concrete backup plans and tools are defined in CB_POL_L3_05 (Data Backup) [REF:DG24-BK, Kap. 4].
 
@@ -112,6 +114,7 @@ The operational backup process including procedures and responsibilities is desc
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.009 | 2026-02-11 | CISO | Added secure deletion of backup data (A.8.13 + GDPR), expanded security-equivalent redundancy (A.8.14) |
 | 00.01.008 | 2026-02-10 | CISO | Added L3_08 traceability and REG_10 cross-reference |
 | 00.01.007 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.006 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |

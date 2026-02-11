@@ -1,9 +1,9 @@
 > **Document ID:** CB_POL_L2_05-Supplier-and-Cloud
-> **Version:** 00.01.006
+> **Version:** 00.01.007
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.19-5.23, A.8.30
-> **Last modified:** 2026-02-09
+> **Last modified:** 2026-02-11
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -71,6 +71,10 @@ The following items must be addressed in supplier agreements:
 | 6 | IT infrastructure | IS requirements for the supplier's IT infrastructure |
 | 7 | Incident management | Requirements and procedures for IS incident management |
 | 8 | Subcontracting | Provisions for passing IS requirements through to subcontractors |
+
+### Supplier Personnel Screening
+
+Supplier personnel with access to sensitive information or critical systems must undergo background verification proportionate to the granted access level (addresses A.5.20). The scope and depth of verification must be agreed in the supplier contract. Verification requirements must be aligned with the supplier tier classification: Tier 1 suppliers require documented evidence of completed checks prior to granting access. Results of supplier personnel screening must be recorded and reviewed upon contract renewal.
 
 [REF:DG24-LK, Kap. 4.2]
 
@@ -145,6 +149,7 @@ Cloud service agreements must cover the following aspects:
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.007 | 2026-02-11 | CISO | Added supplier personnel screening requirement (A.5.20) |
 | 00.01.006 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.005 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |
 | 00.01.004 | 2026-02-09 | CISO | Summary: 4-element pattern |
