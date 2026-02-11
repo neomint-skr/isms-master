@@ -1,5 +1,5 @@
-> **Document ID:** HB_REG_12-Security-Measures-Register
-> **Version:** 00.01.000
+> **Document ID:** HB_REG_07-Security-Measures-Register
+> **Version:** 00.01.001
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** A.5-A.8, Clause 6.1.3
@@ -78,4 +78,5 @@ Measure definitions are derived from the risk treatment plan (HB_REG_07) and ali
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.001 | 2026-02-11 | Claude (AI) | Register renumbered for information-flow order (REG_12 → REG_07) |
 | 00.01.000 | 2026-02-11 | Claude (AI) | Initial version: security measures register structured by Annex A categories |

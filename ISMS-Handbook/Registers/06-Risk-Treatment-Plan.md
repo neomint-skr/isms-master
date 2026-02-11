@@ -1,5 +1,5 @@
-> **Document ID:** HB_REG_07-Risk-Treatment-Plan
-> **Version:** 00.01.009
+> **Document ID:** HB_REG_06-Risk-Treatment-Plan
+> **Version:** 00.01.010
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** Clause 6.1.3 e
@@ -62,6 +62,7 @@ The risk treatment plan requires formal approval by top management (Clause 6.1.3
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.010 | 2026-02-11 | Claude (AI) | Register renumbered for information-flow order (REG_07 → REG_06) |
 | 00.01.009 | 2026-02-11 | Claude (AI) | SC-ID replaces Risk ID, SM-ID(s) replaces free-text controls, added Gap column and gap definitions in Key section |
 | 00.01.008 | 2026-02-11 | skr | Renamed risk treatment option "Mitigate" to "Reduce" for ISO/BSI alignment |
 | 00.01.007 | 2026-02-10 | Claude (AI) | Remove Responsibilities section; roles consolidated in CLS 5.3 |

@@ -1,5 +1,5 @@
-> **Document ID:** HB_REG_02-Statement-of-Applicability
-> **Version:** 00.04.011
+> **Document ID:** HB_REG_08-Statement-of-Applicability
+> **Version:** 00.04.012
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** Clause 6.1.3 d
@@ -157,6 +157,7 @@ Control selection takes place during risk treatment (CB_PRC_07, HB_CLS_8.3) and 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.04.012 | 2026-02-11 | Claude (AI) | Register renumbered for information-flow order (REG_02 → REG_08) |
 | 00.04.011 | 2026-02-11 | Claude (AI) | Reroute controls: A.5.24-5.28 to L2_13, A.5.31-5.37 to L2_14, A.5.7 evidence updated (merge from retorio) |
 | 00.04.010 | 2026-02-11 | Claude (AI) | Populate SoA from client instance — 87 Yes, 6 No controls with justifications and status |
 | 00.04.009 | 2026-02-10 | Claude (AI) | Remove Responsibilities section; roles consolidated in CLS 5.3 |

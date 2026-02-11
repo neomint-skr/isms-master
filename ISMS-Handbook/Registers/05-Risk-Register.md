@@ -1,5 +1,5 @@
-> **Document ID:** HB_REG_06-Risk-Register
-> **Version:** 00.01.010
+> **Document ID:** HB_REG_05-Risk-Register
+> **Version:** 00.01.011
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** Clause 6.1, 8.2, 8.3
@@ -77,6 +77,7 @@ Acceptance criteria are defined in CB_POL_L2_11. Critical risks (risk level 12-1
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.011 | 2026-02-11 | Claude (AI) | Register renumbered for information-flow order (REG_06 → REG_05) |
 | 00.01.010 | 2026-02-11 | Claude (AI) | Restructured to scenario-based risk entries: SC-ID replaces R-ID, explicit Threat/Vulnerability-ID columns, gross/net risk separation, SM-ID references, new status "To be assessed" |
 | 00.01.009 | 2026-02-11 | Claude (AI) | Added Exception as treatment option type; cross-reference to HB_REG_EXC_01 (merge from retorio) |
 | 00.01.008 | 2026-02-11 | skr | Renamed risk treatment option "Mitigate" to "Reduce" for ISO/BSI alignment |

@@ -1,5 +1,5 @@
-> **Document ID:** HB_REG_10-BIA-Register
-> **Version:** 00.01.003
+> **Document ID:** HB_REG_04-BIA-Register
+> **Version:** 00.01.004
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** A.5.29-5.30
@@ -80,6 +80,7 @@ The following table tracks IT continuity plans required by CB_POL_L2_06-Business
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.004 | 2026-02-11 | Claude (AI) | Register renumbered for information-flow order (REG_10 → REG_04) |
 | 00.01.003 | 2026-02-11 | Claude (AI) | Added Derived V column (Tier-to-protection-requirement mapping) to BIA Assessment table and Key section |
 | 00.01.002 | 2026-02-10 | Claude (AI) | Remove Responsibilities section; roles consolidated in CLS 5.3 |
 | 00.01.001 | 2026-02-10 | [CISO] | Key table (MTPD, MBCO); Test Log section |

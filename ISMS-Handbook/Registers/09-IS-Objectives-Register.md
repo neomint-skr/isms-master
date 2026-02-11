@@ -1,9 +1,9 @@
-> **Document ID:** HB_REG_01-IS-Objectives-Register
-> **Version:** 00.01.008
+> **Document ID:** HB_REG_09-IS-Objectives-Register
+> **Version:** 00.01.009
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** Clause 6.2
-> **Last modified:** 2026-02-10
+> **Last modified:** 2026-02-11
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -65,6 +65,7 @@ Measurement frequency is defined per objective; results are reviewed quarterly a
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.009 | 2026-02-11 | Claude (AI) | Register renumbered for information-flow order (REG_01 → REG_09) |
 | 00.01.008 | 2026-02-10 | Claude (AI) | Remove Responsibilities section; roles consolidated in CLS 5.3 |
 | 00.01.007 | 2026-02-10 | [CISO] | Completed register structure: Summary, Monitoring Results table, Responsibilities, See also |
 | 00.01.006 | 2026-02-09 | [CISO] | Aligned role terminology |

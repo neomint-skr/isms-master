@@ -1,9 +1,9 @@
-> **Document ID:** HB_REG_04-Supplier-Register
-> **Version:** 00.01.006
+> **Document ID:** HB_REG_10-Supplier-Register
+> **Version:** 00.01.007
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** A.5.19-5.23
-> **Last modified:** 2026-02-10
+> **Last modified:** 2026-02-11
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -65,6 +65,7 @@ Supplier assessment is governed through CB_PRC_06 (Supplier Management) and alig
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.007 | 2026-02-11 | Claude (AI) | Register renumbered for information-flow order (REG_04 → REG_10) |
 | 00.01.006 | 2026-02-10 | Claude (AI) | Remove Responsibilities section; roles consolidated in CLS 5.3 |
 | 00.01.005 | 2026-02-10 | [CISO] | Populated register tables with structure and guidance |
 | 00.01.004 | 2026-02-09 | [CISO] | Aligned role terminology |

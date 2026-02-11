@@ -1,5 +1,5 @@
-> **Document ID:** HB_REG_09-Context-Register
-> **Version:** 00.01.008
+> **Document ID:** HB_REG_01-Context-Register
+> **Version:** 00.01.009
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** Clause 4.1
@@ -74,6 +74,7 @@ The organizational profile describes the context in which the ISMS operates. It 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.009 | 2026-02-11 | Claude (AI) | Register renumbered for information-flow order (REG_09 → REG_01) |
 | 00.01.008 | 2026-02-11 | CISO | Add strategic business objectives attribute; add legal register cross-reference to REG_08 |
 | 00.01.007 | 2026-02-10 | Claude (AI) | Remove Responsibilities section; roles consolidated in CLS 5.3 |
 | 00.01.006 | 2026-02-09 | [CISO] | Aligned role terminology |
