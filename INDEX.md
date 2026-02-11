@@ -1,6 +1,6 @@
 # INDEX
 
-> Structural data of the [Organization] ISMS. 99 Markdown files, 93 Annex A controls.
+> Structural data of the [Organization] ISMS. 101 Markdown files, 93 Annex A controls.
 > For working instructions see CLAUDE.md.
 > ID schema: folder abbreviations (see table below) + filename. Separator: `_` between levels, `-` within names.
 
@@ -119,6 +119,7 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 **10-Nonconformity-Management.md** -- Detection, analysis, corrective action, effectiveness review
 **11-Performance-Monitoring.md** -- KPI definition, data collection, evaluation, escalation
 **12-Asset-Management.md** -- Identification, ID assignment, registration, relationships, maintenance
+**13-Protection-Requirements.md** -- Protection requirements assessment (primary, inheritance, documentation, handoff)
 
 ### CB -- Cyber-Security-Cookbook / Awareness-Training
 
@@ -131,6 +132,7 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 **02-Document-Metadata.md** -- Metadata block template (8 fields, field descriptions, rules)
 **17-Internal-Audit-Report.md** -- MD template for CISO-led internal audits
 **18-Supplier-Review.md** -- Supplier review template (certification, SLA, assessment)
+**19-Protection-Requirements-Assessment.md** -- Per-asset protection requirements assessment form (C/I/A, inheritance, approval)
 
 ### REF -- References / Library / Standards
 
