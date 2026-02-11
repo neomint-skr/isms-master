@@ -1,5 +1,5 @@
 > **Document ID:** CB_PRC_01-Incident-Management
-> **Version:** 00.01.007
+> **Version:** 00.01.008
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.24-5.28
@@ -44,6 +44,16 @@ IS events are assessed and classified according to the following scheme (address
 - Actual or potential impact on the organization is significant
 - Indications that a control is not functioning effectively
 
+**Prioritisation of exception events (addresses A.5.25):**
+
+Exception events are assigned a priority based on impact assessment. The following factors are evaluated: affected infrastructure and assets, estimated duration of disruption, number of impacted business areas, root cause category (technical failure, human error, malicious action), and data sensitivity level.
+
+| Priority | Impact | Response guidance |
+|---|---|---|
+| High | Multiple business areas or critical systems affected; confidential or personal data compromised; significant financial or reputational exposure | Immediate IRM team activation; containment within [1h]; parallel regulatory assessment |
+| Medium | Single business area or non-critical system affected; no confirmed data exfiltration; limited operational impact | CISO-led assessment within [4h]; targeted containment measures |
+| Low | Localised inconvenience; single user or device; minor policy deviation without data exposure | ISC resolution within [72h]; documented in regular reporting cycle |
+
 ## Reporting
 
 All employees, contractors, and external parties are obligated to report observed or suspected IS events without delay (addresses A.6.8). The reporting obligation covers confirmed incidents, suspected incidents, and identified vulnerabilities.
@@ -73,7 +83,11 @@ For every reported incident, the CISO or delegate assesses whether personal data
 2. Whether a breach of confidentiality, integrity, or availability of personal data has occurred
 3. Whether the breach is likely to result in a risk to the rights and freedoms of natural persons
 
-If criteria 1 and 2 are met, the incident is classified as a personal data breach and the escalation procedure for supervisory authority notification applies. The PII qualification is documented in [incident tracking tool / breach notification form, e.g. TPL_09].
+If criteria 1 and 2 are met, the incident is classified as a personal data breach and the escalation procedure for supervisory authority notification applies. The PII qualification is documented using the breach notification form (CB_TPL_09-Datenschutzvorfall-Meldung) [REF:DGoJ-DS].
+
+**Risk assessment for data subjects (GDPR Art. 33/34):**
+
+For every confirmed personal data breach, the CISO or delegate evaluates whether the breach is likely to result in a **high risk** to the rights and freedoms of natural persons. The assessment considers: type and sensitivity of data, volume of affected records, likelihood and severity of consequences (identity theft, financial loss, discrimination), and whether protective measures (e.g. encryption) were in place. The risk assessment is recorded in the breach notification form (CB_TPL_09).
 
 ## Escalation
 
@@ -88,7 +102,7 @@ Incidents classified as exception events are assigned a severity level based on 
 | Medium | Localized disruption affecting limited business areas; no confirmed data exfiltration | Single non-critical system unavailable; network degradation; loss of encrypted portable device | [Within 24h] | CISO assesses and assigns to ISC or responsible system owner |
 | Low | Localized inconvenience affecting a single user; minor policy violation | Minor IS policy violation; single-device virus alert; password shared for low-sensitivity system | [Within 72h] | ISC resolves; CISO informed via regular reporting |
 
-**Deputy rule:** If the CISO is unavailable, [designated deputy, e.g. ISC or CTO] assumes escalation authority. The deputy designation is documented in HB_CLS_5.3-Roles-and-Responsibilities.
+**Deputy rule:** If the CISO is unavailable, [designated deputy, e.g. ISC or CTO] assumes escalation authority. The deputy designation is documented in HB_CLS_5.3-Roles-and-Responsibilities. The deputy must be trained in incident classification, regulatory notification procedures, and IRM team activation. Availability of the CISO and deputy is ensured through [on-call schedule or equivalent arrangement].
 
 **GDPR supervisory authority notification (Art. 33):**
 
@@ -103,13 +117,23 @@ If not all information is available within 72 hours, a phased notification is su
 
 **Data subject notification (GDPR Art. 34):**
 
-If the personal data breach is likely to result in a **high risk** to rights and freedoms, affected data subjects are notified without undue delay. The notification is in clear, plain language and includes: nature of the breach, likely consequences, measures taken, DPO contact details, and recommended protective actions (e.g. password reset, monitoring for suspicious activity).
+If the personal data breach is likely to result in a **high risk** to rights and freedoms, affected data subjects are notified without undue delay (GDPR Art. 34). The notification is in clear, plain language and includes: nature of the breach, likely consequences, measures taken, DPO contact details, and recommended protective actions (e.g. password reset, credit monitoring, vigilance against phishing).
 
-If direct notification is disproportionately burdensome, a public communication or equivalent measure is used.
+If direct notification is disproportionately burdensome, a public communication or equivalent measure is used. The data subject notification content is prepared using the breach notification form (CB_TPL_09) [REF:DGoJ-DS].
 
 **Additional notification obligations:**
 
-Depending on the nature of services provided, additional reporting obligations may apply (e.g. NIS2 Directive for operators of essential services, PECR for communication service providers). The CISO verifies applicable notification requirements and ensures compliance with sector-specific deadlines.
+Depending on the nature of services provided, additional reporting obligations may apply. The CISO verifies applicable notification requirements and ensures compliance with sector-specific deadlines.
+
+**NIS2 Directive (if applicable):** For organisations subject to NIS2, the following notification deadlines to the competent national authority (BSI) apply:
+
+| Deadline | Obligation |
+|---|---|
+| 24 hours | Early warning: initial notification of a significant incident, including whether malicious or cross-border impact is suspected |
+| 72 hours | Full notification: incident assessment with severity, impact, indicators of compromise, and initial countermeasures |
+| 1 month | Final report: root cause analysis, mitigation measures applied, and cross-border impact (if any) |
+
+Applicability of NIS2 is determined based on [sector classification and entity size assessment — documented in HB_CLS_4.2 or equivalent]. Where NIS2 obligations overlap with GDPR notification, both timelines run independently.
 
 ## Response
 
@@ -228,6 +252,7 @@ The organization establishes procedures for the identification, collection, acqu
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.008 | 2026-02-11 | CISO | Added: NIS2 notification obligations, GDPR risk assessment for data subjects, breach notification form references (TPL_09), IRM deputy training requirements, incident prioritisation (H/M/L) (gap closure batch-08/13) |
 | 00.01.007 | 2026-02-11 | CISO | Populated TODO sections: Reporting (channels, PII qualification), Escalation (severity matrix, GDPR Art. 33/34), Response (IRM team, 4-phase approach), Lessons Learned (review process, root cause analysis), Summary |
 | 00.01.006 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.005 | 2026-02-09 | CISO | Classification (3-tier, A.5.25) and evidence collection (4 principles, A.5.28) populated (REC-418, 420) |

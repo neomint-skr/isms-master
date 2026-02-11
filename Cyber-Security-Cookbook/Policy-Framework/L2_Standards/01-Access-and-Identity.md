@@ -1,5 +1,5 @@
 > **Document ID:** CB_POL_L2_01-Access-and-Identity
-> **Version:** 00.01.009
+> **Version:** 00.01.010
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.15-5.18, A.8.2-8.3, A.8.5, A.8.18
@@ -54,6 +54,8 @@ Identities must be managed so that every person or system entity is uniquely ide
 
 **Deactivation:** Identities must be deactivated immediately when no longer required — in particular upon termination, role change, or deletion of the associated entity. Recurring reviews are part of the offboarding process.
 
+**Re-verification on identity changes:** When identity-related information changes (e.g. legal name, nationality, or organisational affiliation), the identity must be re-verified before the change is reflected in identity management systems (addresses A.5.16). Re-verification may include inspection of updated identity documents or equivalent authoritative sources [REF:DG24-IAM, Kap. 2.1].
+
 **Uniqueness:** Within a system, each identity may be assigned to only one entity, to avoid duplicates.
 
 **Logging:** All events related to creation, modification, and deletion of identities must be logged.
@@ -70,7 +72,13 @@ Multi-factor authentication (MFA) is mandatory for access to highly sensitive in
 
 **Session management:** Inactive sessions must be terminated automatically after [timeout period, e.g., 15/30 min.]. Upon successful login, the user must be shown details of previous login attempts.
 
+**Brute-force protection:** Authentication systems must implement controls against brute-force attacks (addresses A.8.5). Measures include account lockout after [number, e.g. 5] consecutive failed attempts, rate limiting, progressive delays, and CAPTCHA mechanisms. Lockout events must be logged and reviewed as part of security monitoring [REF:DG24-IAM, Kap. 2.3].
+
 **Passwords:** Passwords must be created, stored, and managed securely (addresses A.5.17). Complexity and minimum length requirements must be defined. Commonly used and easily guessable passwords are prohibited. Passwords must be changed immediately upon suspicion of compromise; routine password changes without concrete cause are not required. Reuse of previous passwords must be prevented. Passwords may only be stored in the approved password vault. Concrete values (minimum length, history, complexity rules) are defined in CB_POL_L3_01-User-Handbook.
+
+**Temporary passwords:** Temporary passwords or PINs issued during initial provisioning or password reset must be unique per user, non-guessable, and must expire after first use (addresses A.5.17). The identity of the requesting user must be verified through a defined procedure before new, replacement, or temporary authentication information is provided [REF:DG24-IAM, Kap. 2.2].
+
+**Password hashing:** Passwords stored in applications and authentication systems must be protected using recognised adaptive hashing algorithms such as bcrypt, scrypt, or Argon2 (addresses A.8.5). Plaintext storage or use of non-salted hash functions is prohibited. Implementation details are defined in CB_POL_L3_04-Cryptography [REF:DG24-IAM, Kap. 2.2].
 
 ## Privileged Access Rights
 
@@ -81,6 +89,8 @@ Privileged access rights must be granted and monitored in a controlled manner to
 **Least privilege:** Privileged rights are to be granted according to the principle of least privilege — only for defined tasks and for a limited duration.
 
 **Separate identities:** Persons with privileged access receive separate identities for administrative activities. Privileged accounts must not be used for routine activities such as email or web browsing.
+
+**Prohibition of generic administrator IDs:** The use of generic administrator user IDs such as "root", "admin", or "administrator" is prohibited for interactive sessions (addresses A.8.2). Each privileged user must operate under an individually assigned administrative identity. Where shared system accounts are technically unavoidable, access must be controlled through a privileged access management solution with individual accountability [REF:DG24-IAM, Kap. 3.3].
 
 **Enhanced authentication:** Privileged access requires MFA or re-authentication before executing critical tasks.
 
@@ -134,6 +144,7 @@ Segregation of duties must be ensured: approval and technical implementation of 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.010 | 2026-02-11 | CISO | Added: temporary passwords, brute-force protection, password hashing, generic admin ID prohibition, identity re-verification (gap closure batch-06) |
 | 00.01.009 | 2026-02-11 | CISO | Source code access section added (A.8.4) |
 | 00.01.008 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.007 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |
