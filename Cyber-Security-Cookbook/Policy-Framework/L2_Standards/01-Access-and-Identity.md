@@ -1,5 +1,5 @@
 > **Document ID:** CB_POL_L2_01-Access-and-Identity
-> **Version:** 00.01.010
+> **Version:** 00.01.011
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.15-5.18, A.8.2-8.3, A.8.5, A.8.18
@@ -48,7 +48,7 @@ The operational access provisioning process is described in CB_PRC_02 (Access Co
 
 Identities must be managed so that every person or system entity is uniquely identifiable and accountable for their actions (addresses A.5.16).
 
-**Individual accountability:** Each identity must be uniquely assigned to a single person. Shared use of accounts is prohibited unless a business necessity exists and specific approval from the asset owner has been obtained.
+**Individual accountability:** Each identity must be uniquely assigned to a single person. Shared use of accounts is prohibited unless a business necessity exists and specific approval from the asset owner has been obtained. Password sharing is permitted only under documented exception (see CB_PRC_14-Exception-Management).
 
 **Non-human entities:** Identities for services, systems, or automations require separate approval and annual recertification. Passwords for such accounts must be rotated automatically or managed through [password manager, e.g., Bitwarden/1Password].
 
@@ -144,6 +144,7 @@ Segregation of duties must be ensured: approval and technical implementation of 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.011 | 2026-02-11 | Claude (AI) | Added password sharing exception reference to CB_PRC_14 (merge from retorio) |
 | 00.01.010 | 2026-02-11 | CISO | Added: temporary passwords, brute-force protection, password hashing, generic admin ID prohibition, identity re-verification (gap closure batch-06) |
 | 00.01.009 | 2026-02-11 | CISO | Source code access section added (A.8.4) |
 | 00.01.008 | 2026-02-09 | CISO | Aligned role terminology |

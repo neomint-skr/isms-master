@@ -1,5 +1,5 @@
 > **Document ID:** CB_POL_L2_09-Physical-Security
-> **Version:** 00.01.009
+> **Version:** 00.01.010
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.7.1-7.14
@@ -48,7 +48,7 @@ Access to areas containing sensitive information must be controlled and document
 
 **Authentication:** Access cards, biometric data, or two-factor authentication must be employed.
 
-**Visitor access:** Visitors must be authenticated, registered (date, time, purpose), and supervised at all times unless an explicit exception is granted. Security requirements and expected behaviour must be communicated upon arrival. A staffed or otherwise monitored reception area must control physical access to the building. Personal belongings (storage media, cameras, recording devices) must be subject to checks upon entry and exit [REF:DG24-PS, Kap. 2.2].
+**Visitor access:** Visitors must be authenticated, registered (date, time, purpose), and supervised at all times unless an explicit exception is granted (see CB_PRC_14-Exception-Management). Security requirements and expected behaviour must be communicated upon arrival. A staffed or otherwise monitored reception area must control physical access to the building. Personal belongings (storage media, cameras, recording devices) must be subject to checks upon entry and exit [REF:DG24-PS, Kap. 2.2].
 
 **Delivery areas:** Access to delivery and loading areas must be restricted to authorized personnel. Deliveries must be checked for hazardous materials, registered upon arrival, and inspected for tampering.
 
@@ -128,6 +128,7 @@ When implementing monitoring controls, data protection requirements must be obse
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.010 | 2026-02-11 | Claude (AI) | Visitor supervision exception reference to CB_PRC_14 (merge from retorio) |
 | 00.01.009 | 2026-02-11 | CISO | Physical security depth: secure areas (A.7.6), lightning (A.7.8/11), cabling (A.7.12), emergency preparedness (A.7.11), maintenance (A.7.13), disposal markings (A.7.14), alarm documentation, fire protection, disposal methodology, visitor details |
 | 00.01.008 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.007 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |

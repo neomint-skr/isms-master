@@ -1,5 +1,5 @@
 > **Document ID:** CB_POL_L3_01-User-Handbook
-> **Version:** 00.01.009
+> **Version:** 00.01.010
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.10, A.5.12-5.13, A.6.7-6.8, A.7.7
@@ -38,6 +38,7 @@ All IT systems, devices, and applications shall be used exclusively for business
 - Keep operating systems and applications up to date — do not defer updates.
 - Do not install software without approval from [IT service desk / IT department].
 - Use removable media (USB drives, external hard disks) only when encrypted.
+- Personal devices (BYOD) used for business purposes require an approved exception (CB_PRC_14-Exception-Management) and must comply with the organization's BYOD requirements: install endpoint protection, enable device encryption, and register the device with [IT operations / IT service desk].
 
 **Internet and email:**
 
@@ -214,6 +215,7 @@ The organization maintains an internal reporting office in accordance with the G
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.010 | 2026-02-11 | Claude (AI) | BYOD exception reference to CB_PRC_14 (merge from retorio) |
 | 00.01.009 | 2026-02-11 | CISO | Added whistleblowing procedure (HinSchG) to incident reporting section |
 | 00.01.008 | 2026-02-10 | CISO | Added L4 traceability field (Condensed by) |
 | 00.01.007 | 2026-02-09 | CISO | Aligned role terminology |

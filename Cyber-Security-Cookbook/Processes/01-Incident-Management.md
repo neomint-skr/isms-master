@@ -1,5 +1,5 @@
 > **Document ID:** CB_PRC_01-Incident-Management
-> **Version:** 00.01.008
+> **Version:** 00.01.009
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.24-5.28
@@ -33,7 +33,7 @@ IS events are assessed and classified according to the following scheme (address
 |---|---|---|
 | Informative events | No action required | Automatically closed, retained for a period per the retention policy. Creates an audit trail for subsequent investigations. |
 | Warning events | Action may be needed soon or immediately | Subject to additional review. Where action is required, the Chief Information Security Officer or an ISMS team member decides on the appropriate course of action. |
-| Exception events | Action must be taken | An impact analysis is performed and an incident is raised, then handled through the incident management procedure with diagnosis, investigation, and escalation. |
+| Exception events | Action must be taken | An impact analysis is performed and an incident is raised, then handled through the incident management procedure with diagnosis, investigation, and escalation. Note: "exception events" in this context refers to security events requiring action — not to policy exceptions, which are managed through CB_PRC_14-Exception-Management. |
 
 **Criteria for incident classification (exception events):**
 - Deliberate human interaction for malicious purposes
@@ -252,6 +252,7 @@ The organization establishes procedures for the identification, collection, acqu
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.009 | 2026-02-11 | Claude (AI) | Clarification: exception events (incident classification) vs. policy exceptions (CB_PRC_14) (merge from retorio) |
 | 00.01.008 | 2026-02-11 | CISO | Added: NIS2 notification obligations, GDPR risk assessment for data subjects, breach notification form references (TPL_09), IRM deputy training requirements, incident prioritisation (H/M/L) (gap closure batch-08/13) |
 | 00.01.007 | 2026-02-11 | CISO | Populated TODO sections: Reporting (channels, PII qualification), Escalation (severity matrix, GDPR Art. 33/34), Response (IRM team, 4-phase approach), Lessons Learned (review process, root cause analysis), Summary |
 | 00.01.006 | 2026-02-09 | CISO | Aligned role terminology |

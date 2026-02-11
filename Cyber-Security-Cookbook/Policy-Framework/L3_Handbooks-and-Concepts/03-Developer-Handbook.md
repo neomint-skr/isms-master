@@ -1,5 +1,5 @@
 > **Document ID:** CB_POL_L3_03-Developer-Handbook
-> **Version:** 00.01.007
+> **Version:** 00.01.008
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.8.25-8.29, A.8.31-8.33
@@ -87,7 +87,7 @@ Integrate security tests into the development workflow at every stage (addresses
 
 ### Run static analysis (SAST)
 
-Execute static application security testing on every merge request. SAST scans source code for vulnerabilities without executing the application. Configure [SAST tool, e.g. Semgrep / SonarQube / GitLab SAST] in the CI pipeline. Fix all findings rated high or critical before merge.
+Execute static application security testing on every merge request. SAST scans source code for vulnerabilities without executing the application. Configure [SAST tool, e.g. Semgrep / SonarQube / GitLab SAST] in the CI pipeline. Fix all findings rated high or critical before merge. Document accepted risk exceptions with justification and CISO approval (see CB_PRC_14-Exception-Management).
 
 ### Run dynamic analysis (DAST)
 
@@ -207,6 +207,7 @@ Maintain strictly separated development, test, and production environments (addr
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.008 | 2026-02-11 | Claude (AI) | SAST risk exception reference to CB_PRC_14 (merge from retorio) |
 | 00.01.007 | 2026-02-11 | CISO | Populated all subject chapters: secure coding, security testing, SDLC, change/deployment management |
 | 00.01.006 | 2026-02-10 | CISO | Added L4 traceability field (Condensed by) |
 | 00.01.005 | 2026-02-09 | CISO | Aligned role terminology |

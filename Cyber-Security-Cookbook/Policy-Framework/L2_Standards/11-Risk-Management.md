@@ -1,5 +1,5 @@
 > **Document ID:** CB_POL_L2_11-Risk-Management
-> **Version:** 00.01.013
+> **Version:** 00.01.014
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1, 8.2, 8.3
@@ -235,6 +235,35 @@ The selection of the treatment option is made by the risk owner in coordination 
 
 Every risk acceptance is documented in the risk register (HB_REG_06) with rationale, date, and approving person. Accepted risks are reassessed in the next regular risk assessment cycle.
 
+### Exception Management
+
+An exception is a planned, time-limited deviation from a policy, standard, or control requirement. Unlike risk acceptance — which is a reactive, potentially permanent decision to retain a residual risk — an exception is a proactive, bounded approval with compensating controls and a defined expiry date.
+
+**Mandatory fields:** Every exception request must document the affected policy or control, the nature of the deviation, a justification, the requested duration, resulting risks, and proposed compensating controls. The exception request template (CB_TPL_20-Exception-Request) defines the required fields.
+
+**Approval authority:**
+
+| Impact level | Approver |
+|---|---|
+| Low / Medium | Chief Information Security Officer |
+| High | CEO and CTO (joint approval required) |
+
+The impact level is determined by the protection requirement of the affected asset (Normal = Low, High = Medium, Very high = High).
+
+**Remediation deadlines on rejection:** Where an exception request is rejected, the requestor must restore compliance within a deadline based on the protection requirement of the affected asset:
+
+| Protection requirement | Remediation deadline |
+|---|---|
+| Very high | 30 days |
+| High | 60 days |
+| Normal | 90 days |
+
+**Risk linkage:** Approved exceptions are recorded as risk type "Exception" in the risk register (HB_REG_06) and reassessed within the regular risk review cycle. The full exception lifecycle — including pending, rejected, expired, and renewed entries — is tracked in the exception register (HB_REG_EXC_01-Exception-Index).
+
+**Review:** Before an exception expires, the Chief Information Security Officer reviews whether the deviation is still necessary. Continuation requires a new exception request. Expired exceptions without renewal are closed.
+
+The operational exception management workflow is defined in CB_PRC_14-Exception-Management.
+
 ## See also
 
 - CB_POL_L1_01-Policy — Principle P3 (Risk orientation)
@@ -245,11 +274,15 @@ Every risk acceptance is documented in the risk register (HB_REG_06) with ration
 - HB_REG_07-Risk-Treatment-Plan — Treatment plan
 - HB_REG_02-Statement-of-Applicability — Control applicability
 - HB_CLS_5.3-Roles-and-Responsibilities — RACI matrix
+- CB_PRC_14-Exception-Management — Exception approval workflow
+- HB_REG_EXC_01-Exception-Index — Exception register
+- CB_TPL_20-Exception-Request — Exception request template
 
 ## Changelog
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.014 | 2026-02-11 | Claude (AI) | Added Exception Management section with approval authority, remediation deadlines, risk linkage (merge from retorio) |
 | 00.01.013 | 2026-02-11 | skr | Renamed risk treatment option "Mitigate" to "Reduce" for ISO/BSI alignment |
 | 00.01.012 | 2026-02-11 | Claude (AI) | Restructure sections to match process flow (asset input → protection requirements → risk analysis → risk treatment → exceptions) |
 | 00.01.011 | 2026-02-11 | Claude (AI) | Expand Protection Requirements Analysis: damage scenarios (BSI 200-2), assessment methodology, scope, conclusions; Phase-Document Matrix: Phase 2 → CB_PRC_13 |

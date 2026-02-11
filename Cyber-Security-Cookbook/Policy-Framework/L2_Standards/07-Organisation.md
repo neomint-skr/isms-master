@@ -1,8 +1,8 @@
 > **Document ID:** CB_POL_L2_07-Organisation
-> **Version:** 00.03.011
+> **Version:** 00.03.012
 > **Classification:** Internal
 > **Author:** CISO
-> **ISO Reference:** A.5.2-5.7, A.5.9-5.11, A.5.24-5.28, A.5.31-5.37
+> **ISO Reference:** A.5.2-5.6, A.5.9-5.11
 > **Last modified:** 2026-02-11
 > **Approval:** —
 > **Review cycle:** Annual
@@ -13,69 +13,20 @@
 
 ## Summary
 
-Information security requires clear organizational frameworks across all disciplines. This policy consolidates the requirements for security organization, asset management, incident reporting, threat intelligence, and compliance monitoring. It ensures that responsibilities, governance mechanisms, and information assets are systematically captured and maintained. Without uniform organizational requirements, IS responsibilities remain unclear and governance gaps go undetected.
+Information security requires clear organizational frameworks for governance and asset management. This standard defines the requirements for security organization, roles, segregation of duties, authority contacts, and the systematic management of information assets. It ensures that responsibilities, governance mechanisms, and information assets are systematically captured and maintained. Without uniform organizational requirements, IS responsibilities remain unclear and governance gaps go undetected.
 
 ## Objective and Scope
 
-**Policy reference:** P1, P2, P3, P4, P5
+**Policy reference:** P1, P4, P5
 **Operationalized by:** CB_POL_L3_01-User-Handbook
 
-**Objective:** Information security requires clear organizational frameworks. Without uniform rules for roles, asset management, incident reporting, and compliance, IS responsibilities remain unclear and governance mechanisms incomplete.
+**Objective:** Information security requires clear organizational frameworks. Without uniform rules for roles, segregation of duties, and asset management, IS responsibilities remain unclear and governance mechanisms incomplete.
 
-This policy consolidates the organizational requirements for security organization, asset management, incident reporting, compliance, and governance (addresses A.5.2-5.6, A.5.9-5.11, A.5.24-5.28, A.5.31-5.37). It establishes criteria for the overarching management and implementation of all IS disciplines.
+This standard defines the organizational requirements for security governance, roles, authority contacts, and asset management (addresses A.5.2-5.6, A.5.9-5.11). It establishes criteria for the overarching management and organizational structure of the ISMS.
 
-The standard implements the principles P1 (Protection), P2 (Compliance), P3 (Risk orientation), P4 (Awareness), and P5 (Continual improvement) of the IS policy. Operational implementation is provided through CB_POL_L3_01 (User Handbook) and the topic-specific processes (CB_PRC_01, CB_PRC_12).
+The standard implements the principles P1 (Protection), P4 (Awareness), and P5 (Continual improvement) of the IS policy. Incident management requirements are defined in CB_POL_L2_13 (Incident and Threat Management). Compliance requirements are defined in CB_POL_L2_14 (Compliance and Legal). Operational implementation is provided through CB_POL_L3_01 (User Handbook) and CB_PRC_12 (Asset Management).
 
-**Scope:** All organizational units and employees within the ISMS scope. Covers organizational governance, asset management, incident management, and compliance monitoring.
-
-## Incidents
-
-A formalized approach to planning, detection, assessment, treatment, and post-incident review of information security incidents must be established (addresses A.5.24). All employees are obligated to report suspected or confirmed security events immediately through the defined reporting channels (addresses A.6.8, see also CB_POL_L2_10, reporting obligation).
-
-**Incident management requirements:**
-
-| # | Requirement | Control |
-|---|---|---|
-| 1 | Processes for automatic and manual reporting of anomalous events are defined and communicated | A.5.24 |
-| 2 | Roles and responsibilities for incident response are assigned (incident response team, incident manager) | A.5.24 |
-| 3 | A classification scheme for assessing and prioritizing events is established | A.5.25 |
-| 4 | Procedures for containment, eradication, recovery, and communication are documented | A.5.26 |
-| 5 | Lessons learned from incidents are systematically evaluated and translated into improvement actions | A.5.27 |
-| 6 | Evidence is collected and documented in a forensically sound manner | A.5.28 |
-
-The operational incident management process is described in CB_PRC_01 (Incident Management) [REF:DG24-AV, Kap. 3].
-
-### Threat Intelligence
-
-The organization collects and analyzes information about potential or existing IS threats to be prepared for, detect, and prevent threats (addresses A.5.7).
-
-**Objectives:**
-
-1. **Early detection:** Recognize early warning signs and take proactive measures
-2. **Risk assessment:** Assess specific risks and understand which threats are most likely
-3. **Vulnerability identification:** Identify vulnerabilities that could be exploited by attackers
-
-**Sources:**
-
-- **External sources:** Contact with authorities (BSI, ENISA) and special interest groups (industry forums, vendor advisories)
-- **Internal sources:** Log data, vulnerability scans, incident reports
-
-The Chief Information Security Officer analyzes collected information and uses the findings to improve security controls. Results feed into risk assessment (CB_POL_L2_11) and vulnerability management (CB_PRC_04) [REF:DG24-AV, Kap. 2.3.2].
-
-## Compliance
-
-The organization ensures that all legal, regulatory, and contractual information security requirements are identified, documented, and fulfilled (addresses A.5.31).
-
-**Requirements:**
-
-| # | Requirement | Control |
-|---|---|---|
-| 1 | Legal, regulatory, and contractual IS requirements are fully identified and documented up to date | A.5.31 |
-| 2 | Intellectual property is protected through defined procedures; licensing terms for software and content are observed | A.5.32 |
-| 3 | Records are protected against loss, destruction, forgery, and unauthorized access, and managed according to statutory retention periods | A.5.33 |
-| 4 | Data protection requirements are implemented in accordance with GDPR and applicable national regulations; a Data Protection Officer is designated | A.5.34 |
-
-Compliance with IS policies is reviewed regularly (addresses A.5.36). Where nonconformity is identified, root causes must be determined, corrective actions implemented, and their effectiveness verified. Results of compliance reviews feed into the management review [REF:DG25-SC, Kap. 4].
+**Scope:** All organizational units and employees within the ISMS scope. Covers organizational governance and asset management.
 
 ## Assets
 
@@ -160,12 +111,36 @@ Information security is governed through a clear organizational structure with d
 
 The role structure is organized into organizational roles, ISMS roles (Chief Information Security Officer, steering committee), and control-specific roles. One person may hold multiple roles provided segregation of duties is maintained [REF:DG25-HB, Kap. 6]. The detailed role description is documented in HB_CLS_5.3-Roles.
 
+### Segregation of Duties
+
+Segregation of duties is a key control for managing risk in critical business processes (addresses A.5.3). The following steps must be followed:
+
+1. Identify critical business processes that require segregation of duties (finance, IT administration, security administration, purchasing, ISMS policy approval)
+2. Identify specific activities within these processes that cannot be performed by the same individual
+3. Assign identified activities to appropriate job roles
+4. Implement mandatory controls to ensure segregation is maintained
+5. Provide training on the new procedures to relevant personnel
+6. Monitor the success of implemented segregation through internal audit and take corrective action where necessary
+
+Where only a few incompatible duties exist and role splitting is impractical, procedural controls must be implemented and documented. Changes to segregation measures are managed through the change control process.
+
+### Contact with Authorities
+
+The procedure for contact with authorities specifies contact points within the company (addresses A.5.5, A.5.6). Maintained contacts include:
+
+- **Law and enforcement:** Police, prosecution authorities
+- **Regulators:** BSI (Bundesamt fuer Sicherheit in der Informationstechnik), [data protection authority]
+- **Special interest groups:** Industry forums, vendor security advisories
+- **Suppliers and partners:** As documented in the supplier register
+- **Utilities:** Emergency services (112), electricity/water suppliers
+
 ## See also
 
+- CB_POL_L2_13-Incident-and-Threat — Incident management and threat intelligence requirements
+- CB_POL_L2_14-Compliance-and-Legal — Legal, regulatory, and compliance requirements
 - CB_POL_L2_11-Risk-Management — Risk criteria and protection requirement categories
 - CB_POL_L2_08-Document-Control — Policy compliance, documented information
-- CB_POL_L3_01-User-Handbook — Acceptable use, incident reporting
-- CB_PRC_01-Incident-Management — Incident management process
+- CB_POL_L3_01-User-Handbook — Acceptable use, governance guidance
 - CB_PRC_12-Asset-Management — Asset capture and maintenance
 - HB_CLS_5.3-Roles-and-Responsibilities — ISMS roles and RACI
 - HB_REG_03-Asset-Register — Asset inventory
@@ -174,6 +149,7 @@ The role structure is organized into organizational roles, ISMS roles (Chief Inf
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.03.012 | 2026-02-11 | Claude (AI) | Split: Incidents → L2_13, Compliance → L2_14; reduced to Governance + Assets; added Segregation of Duties and Contact with Authorities |
 | 00.03.011 | 2026-02-11 | Claude (AI) | Protection requirements process references: CB_PRC_07 → CB_PRC_13 |
 | 00.03.010 | 2026-02-11 | SKR | Asset grouping (Zielobjekte) methodology added: criteria, inheritance, communication links, documentation |
 | 00.03.009 | 2026-02-09 | CISO | Aligned role terminology |

@@ -1,5 +1,5 @@
 > **Document ID:** HB_REG_02-Statement-of-Applicability
-> **Version:** 00.04.010
+> **Version:** 00.04.011
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** Clause 6.1.3 d
@@ -47,7 +47,7 @@ Control selection takes place during risk treatment (CB_PRC_07, HB_CLS_8.3) and 
 | 5.4 | Management responsibilities | Yes | Reduces likelihood of deliberate rule breach | Implemented | HB_CLS_5.1 | Role definition |
 | 5.5 | Contact with authorities | Yes | Reduces impact of an information security incident | Implemented | CB_POL_L2_07 | Interested parties register |
 | 5.6 | Contact with special interest groups | Yes | Reduces likelihood of deliberate rule breach | Implemented | CB_POL_L2_07 | Interested parties register |
-| 5.7 | Threat intelligence | Yes | Required for proactive threat awareness; three-tier model established | Partial | CB_POL_L2_03 | — |
+| 5.7 | Threat intelligence | Yes | Required for proactive threat awareness; three-tier model established | Partial | CB_POL_L2_03 | L2_03, L2_13 threat intelligence sections; PRC_04 |
 | 5.8 | Information security in project management | Yes | Reduces likelihood of deliberate rule breach | Implemented | CB_POL_L2_04 | Project security register |
 | 5.9 | Inventory of information and other associated assets | Yes | Reduces likelihood of unauthorized access | Implemented | HB_REG_03, CB_PRC_12 | Asset register |
 | 5.10 | Acceptable use of information and other associated assets | Yes | Reduces likelihood of unauthorized access | Implemented | CB_POL_L2_07 | Asset handling procedures |
@@ -64,20 +64,20 @@ Control selection takes place during risk treatment (CB_PRC_07, HB_CLS_8.3) and 
 | 5.21 | Managing information security in the ICT supply chain | Yes | Reduces likelihood of deliberate rule breach | Implemented | CB_POL_L2_05 | Supplier agreement requirements |
 | 5.22 | Monitoring, review and change management of supplier services | Yes | Reduces likelihood of deliberate rule breach | Implemented | CB_POL_L2_05 | Supplier monitoring schedule |
 | 5.23 | Information security for use of cloud services | No | Not proportionate at current org maturity level | — | CB_POL_L2_05 | — |
-| 5.24 | Information security incident management planning and preparation | Yes | Reduces impact of an information security incident | Implemented | CB_POL_L2_07 | Role definition |
-| 5.25 | Assessment and decision on information security events | Yes | Reduces impact of an information security incident | Implemented | CB_POL_L2_07 | Incident response procedures |
-| 5.26 | Response to information security incidents | Yes | Reduces impact of an information security incident | Implemented | CB_POL_L2_07 | Incident response procedures |
-| 5.27 | Learning from information security incidents | Yes | Reduces likelihood of deliberate rule breach | Implemented | CB_POL_L2_07 | Incident response procedures |
-| 5.28 | Collection of evidence | Yes | Reduces impact of an information security incident | Implemented | CB_POL_L2_07 | Evidence collection procedures |
+| 5.24 | Information security incident management planning and preparation | Yes | Reduces impact of an information security incident | Implemented | CB_POL_L2_13 | Role definition |
+| 5.25 | Assessment and decision on information security events | Yes | Reduces impact of an information security incident | Implemented | CB_POL_L2_13 | Incident response procedures |
+| 5.26 | Response to information security incidents | Yes | Reduces impact of an information security incident | Implemented | CB_POL_L2_13 | Incident response procedures |
+| 5.27 | Learning from information security incidents | Yes | Reduces likelihood of deliberate rule breach | Implemented | CB_POL_L2_13 | Incident response procedures |
+| 5.28 | Collection of evidence | Yes | Reduces impact of an information security incident | Implemented | CB_POL_L2_13 | Evidence collection procedures |
 | 5.29 | Information security during disruption | Yes | Reduces impact of an information security incident | Implemented | CB_POL_L2_06 | CB_POL_L3_08, HB_REG_10 |
 | 5.30 | ICT readiness for business continuity | No | Not proportionate at current org maturity level | — | CB_POL_L2_06 | CB_POL_L3_08, HB_REG_10 |
-| 5.31 | Identification of applicable legislation and contractual requirements | Yes | Reduces likelihood of deliberate rule breach | Implemented | CB_POL_L2_07 | Legal requirements register |
-| 5.32 | Intellectual property rights | Yes | Reduces likelihood of deliberate rule breach | Implemented | CB_POL_L2_07 | IP protection procedures |
-| 5.33 | Protection of records | Yes | Reduces likelihood of deliberate rule breach | Implemented | CB_POL_L2_07 | Record retention schedule |
-| 5.34 | Privacy and protection of PII | Yes | Reduces likelihood of deliberate rule breach | Implemented | CB_POL_L2_07 | Data protection policy |
+| 5.31 | Identification of applicable legislation and contractual requirements | Yes | Reduces likelihood of deliberate rule breach | Implemented | CB_POL_L2_14 | Legal requirements register |
+| 5.32 | Intellectual property rights | Yes | Reduces likelihood of deliberate rule breach | Implemented | CB_POL_L2_14 | IP protection procedures |
+| 5.33 | Protection of records | Yes | Reduces likelihood of deliberate rule breach | Implemented | CB_POL_L2_14 | Record retention schedule |
+| 5.34 | Privacy and protection of PII | Yes | Reduces likelihood of deliberate rule breach | Implemented | CB_POL_L2_14 | Data protection policy |
 | 5.35 | Independent review of information security | Yes | Reduces likelihood of ineffective security controls | Implemented | HB_CLS_9.2 | External audit schedule |
-| 5.36 | Compliance with policies, rules and standards for information security | Yes | Reduces likelihood of deliberate rule breach | Implemented | CB_POL_L2_07 | Role definition |
-| 5.37 | Documented operating procedures | Yes | Reduces likelihood of deliberate rule breach | Implemented | CB_POL_L2_07 | Operating procedures |
+| 5.36 | Compliance with policies, rules and standards for information security | Yes | Reduces likelihood of deliberate rule breach | Implemented | CB_POL_L2_14 | Role definition |
+| 5.37 | Documented operating procedures | Yes | Reduces likelihood of deliberate rule breach | Implemented | CB_POL_L2_14 | Operating procedures |
 
 ## People Controls (A.6)
 
@@ -157,6 +157,7 @@ Control selection takes place during risk treatment (CB_PRC_07, HB_CLS_8.3) and 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.04.011 | 2026-02-11 | Claude (AI) | Reroute controls: A.5.24-5.28 to L2_13, A.5.31-5.37 to L2_14, A.5.7 evidence updated (merge from retorio) |
 | 00.04.010 | 2026-02-11 | Claude (AI) | Populate SoA from client instance — 87 Yes, 6 No controls with justifications and status |
 | 00.04.009 | 2026-02-10 | Claude (AI) | Remove Responsibilities section; roles consolidated in CLS 5.3 |
 | 00.04.008 | 2026-02-10 | [CISO] | Renamed Column Legend to Key (register key convention) |

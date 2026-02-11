@@ -1,5 +1,5 @@
 > **Document ID:** CB_POL_L2_04-Secure-Development
-> **Version:** 00.01.010
+> **Version:** 00.01.011
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.8, A.8.4, A.8.25-8.34
@@ -62,7 +62,7 @@ Secure coding principles must be followed during software development (addresses
 
 **External components:** External libraries must be updated regularly and reviewed for security issues.
 
-**License management and SCA compliance:** Software composition analysis (SCA) must be integrated into the CI/CD pipeline to identify known vulnerabilities and license violations in third-party dependencies (addresses A.8.28). An approved license whitelist must be maintained; dependencies with non-compliant licenses must be flagged and replaced or approved through a documented exception process. SCA scan results must be reviewed before each release. Components with critical or high-severity vulnerabilities must be remediated or mitigated before production deployment.
+**License management and SCA compliance:** Software composition analysis (SCA) must be integrated into the CI/CD pipeline to identify known vulnerabilities and license violations in third-party dependencies (addresses A.8.28). An approved license whitelist must be maintained; dependencies with non-compliant licenses must be flagged and replaced or approved through the exception management process (CB_PRC_14-Exception-Management). SCA scan results must be reviewed before each release. Components with critical or high-severity vulnerabilities must be remediated or mitigated before production deployment.
 
 ## Secure Architecture
 
@@ -194,6 +194,7 @@ Outsourced system development must meet requirements for information security, m
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.011 | 2026-02-11 | Claude (AI) | License exception reference to CB_PRC_14 (merge from retorio) |
 | 00.01.010 | 2026-02-11 | CISO | Dev/Ops extensions: multi-tenancy (A.5.8), license management and SCA compliance (A.8.28) |
 | 00.01.009 | 2026-02-11 | CISO | Added A.8.27 Secure Architecture and A.8.33 Test Data sections |
 | 00.01.008 | 2026-02-09 | CISO | Aligned role terminology |

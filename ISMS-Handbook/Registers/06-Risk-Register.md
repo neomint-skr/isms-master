@@ -1,5 +1,5 @@
 > **Document ID:** HB_REG_06-Risk-Register
-> **Version:** 00.01.008
+> **Version:** 00.01.009
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** Clause 6.1, 8.2, 8.3
@@ -29,7 +29,7 @@ Risk evaluation follows the criteria in CB_POL_L2_11 (Risk Management) and the w
 
 | Term | Definition |
 |---|---|
-| Treatment option | Avoid (eliminate the activity), Reduce (reduce likelihood or impact through controls), Transfer (shift risk to third party), Accept (conscious decision to retain risk). Defined in CB_POL_L2_11 |
+| Treatment option | Avoid (eliminate the activity), Reduce (reduce likelihood/impact through controls), Transfer (shift risk to third party), Accept (conscious decision to retain risk), Exception (approved time-limited policy deviation — see CB_PRC_14 and HB_REG_EXC_01 for the full exception lifecycle). Defined in CB_POL_L2_11 |
 | Status | Identified (risk documented, evaluation complete), Under treatment (treatment plan active), Accepted (formal acceptance decision documented), Closed (risk no longer applicable or successfully mitigated below threshold) |
 
 ## Risk Matrix
@@ -65,12 +65,14 @@ Acceptance criteria are defined in CB_POL_L2_11. Critical risks (risk level 12-1
 - CB_PRC_07-Risk-Management — Operational risk management process
 - HB_REG_07-Risk-Treatment-Plan — Treatment plan for risks above acceptance threshold
 - HB_REG_03-Asset-Register — Asset inventory as basis for risk identification
+- HB_REG_EXC_01-Exception-Index — Exception register for approved policy deviations
 
 
 ## Changelog
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.009 | 2026-02-11 | Claude (AI) | Added Exception as treatment option type; cross-reference to HB_REG_EXC_01 (merge from retorio) |
 | 00.01.008 | 2026-02-11 | skr | Renamed risk treatment option "Mitigate" to "Reduce" for ISO/BSI alignment |
 | 00.01.007 | 2026-02-10 | Claude (AI) | Remove Responsibilities section; roles consolidated in CLS 5.3 |
 | 00.01.006 | 2026-02-10 | [CISO] | Key table; compact column headers (L, I); removed inline bold definitions |

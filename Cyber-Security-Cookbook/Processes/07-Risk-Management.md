@@ -1,5 +1,5 @@
 > **Document ID:** CB_PRC_07-Risk-Management
-> **Version:** 00.01.012
+> **Version:** 00.01.013
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1, 8.2, 8.3
@@ -82,7 +82,7 @@ The SoA is the SSOT for control applicability. Direction of change: risk treatme
 
 ### Regular assessment
 
-The complete risk assessment cycle is performed annually, timed before the management review (CB_PRC_09). Results feed into the management review as input (Clause 9.3.2 f).
+The complete risk assessment cycle is performed annually, timed before the management review (CB_PRC_09). Results feed into the management review as input (Clause 9.3.2 f). Additionally, the Risk Committee convenes quarterly to review the current risk landscape, assess treatment progress, and adjust priorities where necessary.
 
 ### Event-driven triggers
 
@@ -112,6 +112,7 @@ An unscheduled risk assessment is triggered by:
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.013 | 2026-02-11 | Claude (AI) | Added quarterly Risk Committee review cycle (merge from retorio) |
 | 00.01.012 | 2026-02-11 | skr | Renamed risk treatment option "Mitigate" to "Reduce" for ISO/BSI alignment |
 | 00.01.011 | 2026-02-11 | Claude (AI) | Risk identification input: protection requirements from CB_PRC_13 (was CB_PRC_07 self-reference); add CB_PRC_13 to See also |
 | 00.01.010 | 2026-02-11 | CISO | Add project/supplier triggers (A.5.8, A.5.19); add assessment rationale requirement (Cl. 6.1.2) |

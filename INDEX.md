@@ -1,6 +1,6 @@
 # INDEX
 
-> Structural data of the [Organization] ISMS. 101 Markdown files, 93 Annex A controls.
+> Structural data of the [Organization] ISMS. 108 Markdown files, 93 Annex A controls.
 > For working instructions see CLAUDE.md.
 > ID schema: folder abbreviations (see table below) + filename. Separator: `_` between levels, `-` within names.
 
@@ -43,6 +43,8 @@
 **10-BIA-Register.md** -- BIA assessment, tier assignment, continuity plan tracking
 **11-Competence-Records.md** -- SOLL/IST competence matrix per ISMS role (20 dimensions)
 
+**Exception-Register/01-Exception-Index.md** -- Approved policy exceptions with expiry and review tracking
+
 ### HB -- ISMS-Handbook / Management
 
 **01-Improvement-Roadmap.md** -- Strategic improvement plan (themes, priorities, timeline, status)
@@ -83,12 +85,14 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 **04-Secure-Development.md** -- SDLC, secure coding, testing, change management, projects/external
 **05-Supplier-and-Cloud.md** -- Assessment, agreements, monitoring, cloud
 **06-Business-Continuity.md** -- ICT readiness, backup/recovery
-**07-Organisation.md** -- Incidents, compliance, assets, governance
+**07-Organisation.md** -- Assets, governance
 **08-Document-Control.md** -- Creation, identification, approval, distribution, version control, retention
 **09-Physical-Security.md** -- Entry controls, workplace, infrastructure, monitoring
 **10-Human-Resources.md** -- Screening, employment terms, awareness, disciplinary, termination, remote, reporting
 **11-Risk-Management.md** -- Risk criteria, risk matrix, protection requirement categories, treatment options, roles, acceptance criteria
 **12-AI-Usage.md** -- AI governance, principles, roles, risk management, GenAI acceptable use (BEYOND-ISO)
+**13-Incident-and-Threat.md** -- Incident requirements, threat intelligence, notification obligations
+**14-Compliance-and-Operations.md** -- Legal/regulatory/contractual compliance, documented operating procedures
 
 ### CB -- Cyber-Security-Cookbook / Policy-Framework / L4_Cheat-Sheets
 
@@ -120,6 +124,7 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 **11-Performance-Monitoring.md** -- KPI definition, data collection, evaluation, escalation
 **12-Asset-Management.md** -- Identification, ID assignment, registration, relationships, maintenance
 **13-Protection-Requirements.md** -- Protection requirements assessment (primary, inheritance, documentation, handoff)
+**14-Exception-Management.md** -- Exception request, approval, time-limited deviation tracking
 
 ### CB -- Cyber-Security-Cookbook / Awareness-Training
 
@@ -130,9 +135,12 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 
 **01-Management-Review.md** -- Management review template (inputs 9.3.2, outputs 9.3.3, actions)
 **02-Document-Metadata.md** -- Metadata block template (8 fields, field descriptions, rules)
+**15-MDM-Enrolment.md** -- MDM enrolment template (device registration, compliance check)
+**16-MDM-Policy-Template.md** -- MDM policy configuration template (security baselines, enforcement)
 **17-Internal-Audit-Report.md** -- MD template for CISO-led internal audits
 **18-Supplier-Review.md** -- Supplier review template (certification, SLA, assessment)
 **19-Protection-Requirements-Assessment.md** -- Per-asset protection requirements assessment form (C/I/A, inheritance, approval)
+**20-Exception-Request.md** -- Exception request form (justification, risk, compensating controls, expiry)
 
 ### REF -- References / Library / Standards
 
@@ -176,7 +184,7 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 | 5.4 | HB_CLS_5.1 | CB_POL_L2_07 |
 | 5.5 | CB_POL_L2_07 | |
 | 5.6 | CB_POL_L2_07 | |
-| 5.7 | CB_POL_L2_03 | CB_PRC_04 |
+| 5.7 | CB_POL_L2_03 | CB_POL_L2_13, CB_PRC_04 |
 | 5.8 | CB_POL_L2_04 | |
 | 5.9 | HB_REG_03 | CB_PRC_12, CB_POL_L2_07 |
 | 5.10 | CB_POL_L2_07 | CB_POL_L3_01 |
@@ -193,20 +201,20 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 | 5.21 | CB_POL_L2_05 | CB_POL_L3_07 |
 | 5.22 | CB_POL_L2_05 | CB_PRC_06 |
 | 5.23 | CB_POL_L2_05 | CB_POL_L3_07 |
-| 5.24 | CB_POL_L2_07 | CB_PRC_01, CB_Emergency-Card |
-| 5.25 | CB_POL_L2_07 | CB_PRC_01 |
-| 5.26 | CB_POL_L2_07 | CB_PRC_01 |
-| 5.27 | CB_POL_L2_07 | CB_PRC_01 |
-| 5.28 | CB_POL_L2_07 | CB_PRC_01 |
+| 5.24 | CB_POL_L2_13 | CB_PRC_01, CB_Emergency-Card |
+| 5.25 | CB_POL_L2_13 | CB_PRC_01 |
+| 5.26 | CB_POL_L2_13 | CB_PRC_01 |
+| 5.27 | CB_POL_L2_13 | CB_PRC_01 |
+| 5.28 | CB_POL_L2_13 | CB_PRC_01 |
 | 5.29 | CB_POL_L2_06 | CB_POL_L3_05, CB_POL_L3_08, HB_REG_10 |
 | 5.30 | CB_POL_L2_06 | CB_POL_L3_05, CB_POL_L3_08, HB_REG_10 |
-| 5.31 | CB_POL_L2_07 | |
-| 5.32 | CB_POL_L2_07 | |
-| 5.33 | CB_POL_L2_07 | |
-| 5.34 | CB_POL_L2_07 | |
-| 5.35 | HB_CLS_9.2 | |
-| 5.36 | CB_POL_L2_07 | HB_CLS_9.1 |
-| 5.37 | CB_POL_L2_07 | CB_POL_L2_08 |
+| 5.31 | CB_POL_L2_14 | |
+| 5.32 | CB_POL_L2_14 | |
+| 5.33 | CB_POL_L2_14 | |
+| 5.34 | CB_POL_L2_14 | |
+| 5.35 | HB_CLS_9.2 | CB_POL_L2_14 |
+| 5.36 | CB_POL_L2_14 | HB_CLS_9.1 |
+| 5.37 | CB_POL_L2_14 | CB_POL_L2_08 |
 
 ### A.6 People Controls (8)
 
@@ -301,6 +309,7 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 | C04..C10 | Clause sorting | C04_Context/ .. C10_Improvement/ |
 | MGT | Management | Management/ |
 | REG | Register | Registers/ |
+| REG_EXC | Exception register | Registers/Exception-Register/ |
 | PRC | Process | Processes/ |
 | HB_CLS_C05 | (folder) | Definitions/C05_Leadership/ (3 files) |
 | HB_CLS_C09 | (folder) | Definitions/C09_Performance/ (3 files) |
