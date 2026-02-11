@@ -187,7 +187,7 @@ Documented information of external origin is appropriately identified and contro
 | 00.04.006 | 2026-02-08 | CISO | Document structure table repaired (broken table cell See-also/Changelog) and missing allocation matrix row added |
 | 00.04.005 | 2026-02-08 | CISO | Document structure: ## Roles (PRC) removed — RACI centralized in CLS_5.3 (follow-up from 2026-02-07 decision) |
 | 00.04.004 | 2026-02-08 | CISO | References: HB_TPL->CB_TPL (TPL relocation) |
-| 00.04.003 | 2026-02-07 | CISO | Library storage updated to REF_Referenzen/LIB_Library/ |
+| 00.04.003 | 2026-02-07 | CISO | Library storage updated to References/Library/ |
 | 00.04.002 | 2026-02-07 | CISO | AGENTS.md reference replaced with CLAUDE.md |
 | 00.04.001 | 2026-02-07 | CISO | See-also section added |
 | 00.04.000 | 2026-02-07 | CISO | Version control migrated to Major.Minor.Update scheme |
