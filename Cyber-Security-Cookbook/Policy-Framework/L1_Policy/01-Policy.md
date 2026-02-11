@@ -1,5 +1,5 @@
 > **Document ID:** CB_POL_L1_01-Policy
-> **Version:** 01.00.000
+> **Version:** 01.00.001
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.1
@@ -81,6 +81,10 @@ Each L2 standard serves at least one principle. Each L3 handbook operationalizes
 | P5 Continual improvement | L2_07 Organisation, L2_08 Document Control |
 | P6 Business continuity | L2_06 Business Continuity |
 
+## Non-Compliance Consequences
+
+Violations of this policy and its subordinate standards may result in disciplinary measures up to and including termination of employment, in accordance with applicable labour law. For external parties, non-compliance may lead to contractual consequences including termination of the business relationship. The severity of consequences is determined proportionally based on the nature, impact, and intent of the violation.
+
 ## See also
 
 
@@ -88,6 +92,7 @@ Each L2 standard serves at least one principle. Each L3 handbook operationalizes
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 01.00.001 | 2026-02-11 | CISO | Non-compliance consequences clause added |
 | 01.00.000 | 2026-02-11 | CEO | Formal approval of Information Security Policy |
 | 00.01.008 | 2026-02-11 | CISO | Allocation matrix: L2_12 AI-Usage added to P1 and P2 |
 | 00.01.007 | 2026-02-10 | CISO | Extended policy framework from three to four tiers (L4 Cheat Sheets) |
