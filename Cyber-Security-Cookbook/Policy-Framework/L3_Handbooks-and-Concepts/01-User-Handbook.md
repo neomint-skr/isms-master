@@ -1,9 +1,9 @@
 > **Document ID:** CB_POL_L3_01-User-Handbook
-> **Version:** 00.01.008
+> **Version:** 00.01.009
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.10, A.5.12-5.13, A.6.7-6.8, A.7.7
-> **Last modified:** 2026-02-10
+> **Last modified:** 2026-02-11
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -193,6 +193,10 @@ Report any unusual or risky observation — even when in doubt. Examples:
 
 The organization protects persons who report security events in good faith. No disadvantages or retaliatory measures shall result. The protected reporting procedure is defined in [whistleblower policy / whistleblower protection].
 
+**Whistleblowing procedure (HinSchG):**
+
+The organization maintains an internal reporting office in accordance with the German Whistleblower Protection Act (Hinweisgeberschutzgesetz). Reports on IS violations, compliance breaches, or legal infringements may be submitted confidentially to [internal reporting office / designated contact]. The identity of the reporting person is protected. Retaliation — including demotion, transfer, or termination — against whistleblowers acting in good faith is prohibited. Reports are acknowledged within seven days and processed within three months [REF:DG25-MA, Ch. 11].
+
 [REF:DG24-AV, Ch. 3] [REF:DG25-MA, Ch. 10]
 
 ## See also
@@ -210,6 +214,7 @@ The organization protects persons who report security events in good faith. No d
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.009 | 2026-02-11 | CISO | Added whistleblowing procedure (HinSchG) to incident reporting section |
 | 00.01.008 | 2026-02-10 | CISO | Added L4 traceability field (Condensed by) |
 | 00.01.007 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.006 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |

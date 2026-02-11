@@ -1,9 +1,9 @@
 > **Document ID:** CB_POL_L2_10-Human-Resources
-> **Version:** 00.01.008
+> **Version:** 00.01.011
 > **Classification:** Internal
 > **Author:** CISO
-> **ISO Reference:** A.5.34, A.6.1-6.8
-> **Last modified:** 2026-02-09
+> **ISO Reference:** A.5.11, A.5.34, A.6.1-6.8
+> **Last modified:** 2026-02-11
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -61,6 +61,18 @@ Employment contracts and agreements with contractors must include clauses on inf
 
 Duties and responsibilities in the area of information security must be clearly communicated before contract conclusion [REF:DG25-SC, Kap. 2.2]. Contractual terms must be reviewed regularly and updated when laws, regulations, or IS policies change.
 
+**NDA lifecycle:** Confidentiality and non-disclosure agreements must follow a structured lifecycle (addresses A.6.6):
+
+1. **Identify** — Determine which roles, projects, or third-party relationships require an NDA.
+2. **Select** — Choose the appropriate NDA type (mutual, unilateral, project-specific).
+3. **Tailor** — Adapt scope, duration, and permitted disclosures to the specific context.
+4. **Sign** — Obtain signatures from all parties before access to confidential information is granted.
+5. **Store** — File signed originals in [HR system / contract management system] with retention metadata.
+6. **Review** — Re-evaluate NDAs at contract renewal, role change, or when IS policies change.
+7. **Terminate** — Upon end of relationship, confirm continuing obligations and document acknowledgement.
+
+The NDA template is maintained in CB_TPL_10 [REF:DG25-SC, Kap. 2.4].
+
 ## Awareness
 
 All employees and relevant external parties must receive appropriate IS awareness, education, and training (addresses A.6.3). The programme must be aligned with the IS policy and topic-specific standards.
@@ -83,6 +95,8 @@ All employees and relevant external parties must receive appropriate IS awarenes
 - Points of contact for IS questions and incident reporting
 
 Various formats must be used: e-learning modules, in-person seminars, campaigns, and information materials [REF:DG25-SC, Kap. 3.1]. Lessons learned from security incidents must be integrated into the programme [REF:DG24-AV, Kap. 3.6]. The operational implementation of the awareness programme is described in CB_AWR_01 and CB_AWR_02.
+
+**Training plan for technical teams:** For personnel in technical IS roles (e.g. administrators, developers, security engineers), role-specific training content must be defined that goes beyond general awareness (Cl. 7.2). Training plans must address the specific competence requirements from HB_CLS_7.2, cover relevant technologies and threat landscapes, and be reviewed annually for currency [REF:DG25-SC, Kap. 3.1-VII].
 
 ## Disciplinary
 
@@ -113,6 +127,8 @@ Upon termination or change of employment, IS-related responsibilities must be ha
 | 4 | Deactivate or change access credentials, MFA tokens, and system permissions |
 | 5 | Remove the person from all systems, distribution lists, and databases |
 | 6 | Notify affected internal and external contacts of the changes |
+
+**Return of information assets:** Upon termination or change of employment, all organizational assets must be returned (addresses A.5.11). This includes physical devices (laptops, tokens, access cards), storage media, documents, and any copies of confidential information. The return must be documented and confirmed by the line manager. Access credentials and digital accounts must be revoked upon asset return [REF:DG25-MA, Ch. 5.2].
 
 Continuing obligations — in particular confidentiality and non-disclosure — must be contractually governed and reiterated to the departing person [REF:DG25-SC, Kap. 2.3]. The procedure applies equally to external personnel and service providers. Operational implementation is described in CB_POL_L3_01.
 
@@ -159,6 +175,7 @@ Employees are obligated to report detected or suspected IS events and data prote
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.011 | 2026-02-11 | CISO | Added NDA lifecycle (A.6.6), tech-team training plan (Cl. 7.2), asset return at offboarding (A.5.11) |
 | 00.01.008 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.007 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |
 | 00.01.006 | 2026-02-09 | CISO | Employment terms (A.6.2), awareness (A.6.3), offboarding (A.6.5) populated (Batch-D) |
