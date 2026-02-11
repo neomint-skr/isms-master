@@ -1,5 +1,5 @@
 > **Document ID:** CB_POL_L2_07-Organisation
-> **Version:** 00.03.010
+> **Version:** 00.03.011
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.2-5.7, A.5.9-5.11, A.5.24-5.28, A.5.31-5.37
@@ -81,7 +81,7 @@ Compliance with IS policies is reviewed regularly (addresses A.5.36). Where nonc
 
 Asset management ensures that all assets relevant to the ISMS are systematically identified, uniquely referenced, kept current, and documented in their dependencies in a traceable manner. It forms the structural foundation for the protection requirements analysis and risk assessment (addresses A.5.9).
 
-**Scope delineation:** Asset management covers exclusively the identification, structuring, and relationship mapping of assets. Assessments (protection requirements, risks, controls) are not included and are conducted in accordance with the Risk Management Policy (CB_POL_L2_11-Risk-Management) and the associated process (CB_PRC_07-Risk-Management).
+**Scope delineation:** Asset management covers exclusively the identification, structuring, and relationship mapping of assets. Assessments (protection requirements, risks, controls) are not included and are conducted in accordance with the Risk Management Policy (CB_POL_L2_11-Risk-Management) and the associated processes (CB_PRC_13-Protection-Requirements, CB_PRC_07-Risk-Management).
 
 **Scope:** All organizational units, processes, applications, IT systems, communication links, and rooms and buildings within the ISMS scope.
 
@@ -105,7 +105,7 @@ Assets are classified by the following types and documented in separate register
 - Each asset is assigned to exactly one asset type.
 - Each asset has a unique, stable asset ID. Asset IDs do not change over the lifecycle.
 - Relationships between assets are mapped through explicit cross-reference registers. Additionally, asset tables contain denormalized relationship columns as quick reference. In case of conflict, the cross-reference registers serve as SSOT.
-- Protection requirements are not determined in asset management but according to the protection requirement categories from CB_POL_L2_11-Risk-Management within the risk management process (CB_PRC_07). Results are documented in the C/I/A columns of the asset register.
+- Protection requirements are not determined in asset management but according to the protection requirement categories from CB_POL_L2_11-Risk-Management within the protection requirements assessment process (CB_PRC_13). Results are documented in the C/I/A columns of the asset register.
 - Decommissioned assets are not deleted but marked as out of service and retained in the register for evidentiary purposes.
 
 **Process:** CB_PRC_12-Asset-Management describes the workflow from identification to maintenance.
@@ -174,6 +174,7 @@ The role structure is organized into organizational roles, ISMS roles (Chief Inf
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.03.011 | 2026-02-11 | Claude (AI) | Protection requirements process references: CB_PRC_07 → CB_PRC_13 |
 | 00.03.010 | 2026-02-11 | SKR | Asset grouping (Zielobjekte) methodology added: criteria, inheritance, communication links, documentation |
 | 00.03.009 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.03.008 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |
