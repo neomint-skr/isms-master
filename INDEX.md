@@ -88,7 +88,7 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 **09-Physical-Security.md** -- Entry controls, workplace, infrastructure, monitoring
 **10-Human-Resources.md** -- Screening, employment terms, awareness, disciplinary, termination, remote, reporting
 **11-Risk-Management.md** -- Risk criteria, risk matrix, protection requirement categories, treatment options, roles, acceptance criteria
-**12-AI-Usage.md** -- GenAI approval, input rules, output usage (BEYOND-ISO)
+**12-AI-Usage.md** -- AI governance, principles, roles, risk management, GenAI acceptable use (BEYOND-ISO)
 
 ### CB -- Cyber-Security-Cookbook / Policy-Framework / L4_Cheat-Sheets
 
