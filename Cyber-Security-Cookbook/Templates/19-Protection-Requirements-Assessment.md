@@ -9,7 +9,7 @@
 | Document ID | CB_TPL_19-Protection-Requirements-Assessment |
 | Asset ID (REG_03) | |
 | Asset name | |
-| Asset type | [Information / Process / Application / IT System / ICS-IoT / Room / Communication link] |
+| Asset type | [INF — Information / PRC — Process / APP — Application / PIT — Physical IT System / VIT — Virtual IT System / CON — Communication Connection / ROM — Room / BLD — Building] |
 | Asset owner | |
 | Assessor | |
 | Assessment date | |
@@ -46,6 +46,27 @@
 |---|---|
 | Overall category | [Normal / High / Very high] (= maximum of C, I, A) |
 
+## BIA Derivation (Process Assets Only)
+
+| Field | Value |
+|---|---|
+| BIA Tier | [1 (Critical) / 2 (Important) / 3 (Normal) / 4 (Low)] |
+| Derived availability (A) | [Very high / High / Normal / Normal] |
+| Source | HB_REG_10-BIA-Register |
+
+## Override Documentation
+
+*Complete only if cumulation or distribution effect applies.*
+
+| Field | Value |
+|---|---|
+| Override type | [Cumulation / Distribution] |
+| Affected core value | [C / I / A] |
+| Original value | [Normal / High / Very high] |
+| Adjusted value | [Normal / High / Very high] |
+| Affected parent assets | [Asset-IDs] |
+| Rationale | [Justification for override] |
+
 ## Inheritance and Effects
 
 | Field | Value |
@@ -69,3 +90,9 @@
 |---|---|
 | Asset owner approval | [Name, date] |
 | CISO consistency check | [Name, date] |
+
+## Changelog
+
+| Version | Date | Author | Change |
+|---|---|---|---|
+| 00.00.001 | 2026-02-11 | Claude | Add BIA Derivation block, Override Documentation block; update asset type prefixes (PRC, PIT, VIT, CON, ROM, BLD) |
