@@ -1,10 +1,10 @@
 > **Document ID:** CB_POL_L1_01-Policy
-> **Version:** 00.01.008
+> **Version:** 01.00.000
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.1
 > **Last modified:** 2026-02-11
-> **Approval:** —
+> **Approval:** CEO, 2026-02-11
 > **Review cycle:** Annual
 
 ---
@@ -88,6 +88,7 @@ Each L2 standard serves at least one principle. Each L3 handbook operationalizes
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 01.00.000 | 2026-02-11 | CEO | Formal approval of Information Security Policy |
 | 00.01.008 | 2026-02-11 | CISO | Allocation matrix: L2_12 AI-Usage added to P1 and P2 |
 | 00.01.007 | 2026-02-10 | CISO | Extended policy framework from three to four tiers (L4 Cheat Sheets) |
 | 00.01.006 | 2026-02-09 | CISO | Aligned role terminology |
