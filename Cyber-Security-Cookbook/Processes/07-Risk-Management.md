@@ -1,5 +1,5 @@
 > **Document ID:** CB_PRC_07-Risk-Management
-> **Version:** 00.01.011
+> **Version:** 00.01.012
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1, 8.2, 8.3
@@ -58,7 +58,7 @@ Risk treatment implements the framework defined in Clause 6.1.3 operationally (C
 
 ### Select treatment options
 
-The risk owner selects a treatment option for each unacceptable risk from the four options defined in CB_POL_L2_11-Risk-Management (Avoid, Mitigate, Transfer, Accept).
+The risk owner selects a treatment option for each unacceptable risk from the four options defined in CB_POL_L2_11-Risk-Management (Avoid, Reduce, Transfer, Accept).
 
 ### Determine controls and reconcile with Annex A
 
@@ -112,6 +112,7 @@ An unscheduled risk assessment is triggered by:
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.012 | 2026-02-11 | skr | Renamed risk treatment option "Mitigate" to "Reduce" for ISO/BSI alignment |
 | 00.01.011 | 2026-02-11 | Claude (AI) | Risk identification input: protection requirements from CB_PRC_13 (was CB_PRC_07 self-reference); add CB_PRC_13 to See also |
 | 00.01.010 | 2026-02-11 | CISO | Add project/supplier triggers (A.5.8, A.5.19); add assessment rationale requirement (Cl. 6.1.2) |
 | 00.01.009 | 2026-02-10 | Claude (AI) | Remove RACI subsection; roles consolidated in CLS 5.3 |

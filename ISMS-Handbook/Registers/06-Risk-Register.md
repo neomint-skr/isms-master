@@ -1,9 +1,9 @@
 > **Document ID:** HB_REG_06-Risk-Register
-> **Version:** 00.01.007
+> **Version:** 00.01.008
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** Clause 6.1, 8.2, 8.3
-> **Last modified:** 2026-02-10
+> **Last modified:** 2026-02-11
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -29,7 +29,7 @@ Risk evaluation follows the criteria in CB_POL_L2_11 (Risk Management) and the w
 
 | Term | Definition |
 |---|---|
-| Treatment option | Avoid (eliminate the activity), Mitigate (reduce likelihood or impact through controls), Transfer (shift risk to third party), Accept (conscious decision to retain risk). Defined in CB_POL_L2_11 |
+| Treatment option | Avoid (eliminate the activity), Reduce (reduce likelihood or impact through controls), Transfer (shift risk to third party), Accept (conscious decision to retain risk). Defined in CB_POL_L2_11 |
 | Status | Identified (risk documented, evaluation complete), Under treatment (treatment plan active), Accepted (formal acceptance decision documented), Closed (risk no longer applicable or successfully mitigated below threshold) |
 
 ## Risk Matrix
@@ -49,7 +49,7 @@ Risk level = Likelihood × Impact. Acceptance thresholds are defined in CB_POL_L
 
 | Risk ID | Asset ref | Threat | Vulnerability | L (1-4) | I (1-4) | Risk level | Treatment option | Risk owner | Status |
 |---|---|---|---|---|---|---|---|---|---|
-| [R-001] | [Asset ID] | [Threat description] | [Vulnerability description] | [1-4] | [1-4] | [Low/Medium/High/Critical] | [Avoid/Mitigate/Transfer/Accept] | [Risk owner] | [Identified/Under treatment/Accepted/Closed] |
+| [R-001] | [Asset ID] | [Threat description] | [Vulnerability description] | [1-4] | [1-4] | [Low/Medium/High/Critical] | [Avoid/Reduce/Transfer/Accept] | [Risk owner] | [Identified/Under treatment/Accepted/Closed] |
 
 ## Risk Acceptance
 
@@ -71,6 +71,7 @@ Acceptance criteria are defined in CB_POL_L2_11. Critical risks (risk level 12-1
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.008 | 2026-02-11 | skr | Renamed risk treatment option "Mitigate" to "Reduce" for ISO/BSI alignment |
 | 00.01.007 | 2026-02-10 | Claude (AI) | Remove Responsibilities section; roles consolidated in CLS 5.3 |
 | 00.01.006 | 2026-02-10 | [CISO] | Key table; compact column headers (L, I); removed inline bold definitions |
 | 00.01.005 | 2026-02-10 | [CISO] | Populated Summary, Risk Matrix, Risk Entries, Risk Acceptance, Responsibilities, See also |

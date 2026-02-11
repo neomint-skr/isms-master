@@ -1,9 +1,9 @@
 > **Document ID:** HB_REG_07-Risk-Treatment-Plan
-> **Version:** 00.01.007
+> **Version:** 00.01.008
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** Clause 6.1.3 e
-> **Last modified:** 2026-02-10
+> **Last modified:** 2026-02-11
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -29,7 +29,7 @@ Treatment decisions are derived from the risk register (HB_REG_06) and developed
 
 | Term | Definition |
 |---|---|
-| Treatment option | Avoid (eliminate the activity that creates the risk), Mitigate (implement controls to reduce likelihood or impact), Transfer (shift risk to third party through insurance or contract), Accept (conscious decision to retain risk). Defined in CB_POL_L2_11 |
+| Treatment option | Avoid (eliminate the activity that creates the risk), Reduce (implement controls to reduce likelihood or impact), Transfer (shift risk to third party through insurance or contract), Accept (conscious decision to retain risk). Defined in CB_POL_L2_11 |
 | Status | Planned (treatment decision made, implementation pending), In progress (control implementation active), Implemented (control operational, effectiveness not yet verified), Verified (control effective, residual risk confirmed) |
 | Expected residual risk | Anticipated risk level after full implementation of planned controls. Must be below acceptance threshold (CB_POL_L2_11) or formally accepted by top management |
 
@@ -37,7 +37,7 @@ Treatment decisions are derived from the risk register (HB_REG_06) and developed
 
 | Risk ID | Risk description | Treatment option | Control(s) | Annex A ref | Responsible | Target date | Expected residual risk | Status |
 |---|---|---|---|---|---|---|---|---|
-| [R-001] | [Risk description] | [Avoid/Mitigate/Transfer/Accept] | [Control description] | [A.x.x] | [Responsible person/role] | [YYYY-MM-DD] | [Low/Medium/High] | [Planned/In progress/Implemented/Verified] |
+| [R-001] | [Risk description] | [Avoid/Reduce/Transfer/Accept] | [Control description] | [A.x.x] | [Responsible person/role] | [YYYY-MM-DD] | [Low/Medium/High] | [Planned/In progress/Implemented/Verified] |
 
 ## Approval
 
@@ -59,6 +59,7 @@ The risk treatment plan requires formal approval by top management (Clause 6.1.3
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.008 | 2026-02-11 | skr | Renamed risk treatment option "Mitigate" to "Reduce" for ISO/BSI alignment |
 | 00.01.007 | 2026-02-10 | Claude (AI) | Remove Responsibilities section; roles consolidated in CLS 5.3 |
 | 00.01.006 | 2026-02-10 | [CISO] | Key table; removed inline bold definitions |
 | 00.01.005 | 2026-02-10 | [CISO] | Populated Summary, Treatment Plan, Approval, Responsibilities, See also |

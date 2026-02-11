@@ -1,5 +1,5 @@
 > **Document ID:** CB_POL_L2_11-Risk-Management
-> **Version:** 00.01.012
+> **Version:** 00.01.013
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1, 8.2, 8.3
@@ -40,7 +40,7 @@ Risk management follows an asset-based end-to-end approach. Each phase builds on
 
 **Phase 4 — Risk evaluation:** The resulting risk level is compared against the acceptance criteria defined in this standard. Risks exceeding the acceptance threshold require treatment.
 
-**Phase 5 — Risk treatment:** For each risk requiring treatment, one of the four treatment options is selected. Where mitigation is chosen, controls are identified and reconciled against the 93 Annex A controls. The Statement of Applicability (HB_REG_02) is updated accordingly.
+**Phase 5 — Risk treatment:** For each risk requiring treatment, one of the four treatment options is selected. Where reduction is chosen, controls are identified and reconciled against the 93 Annex A controls. The Statement of Applicability (HB_REG_02) is updated accordingly.
 
 **Phase 6 — Approval and acceptance:** The risk treatment plan is approved by top management. Residual risks are formally accepted and documented in the risk register with rationale, approver and reassessment date.
 
@@ -216,11 +216,11 @@ For each identified risk, at least one of the following treatment options is sel
 | Option | Description | Example |
 |---|---|---|
 | Avoid | The risk-causing activity or technology is discontinued or not introduced. | Refrain from using an insecure cloud service |
-| Mitigate | Controls reduce likelihood and/or impact. | Implement MFA, activate encryption |
+| Reduce | Controls reduce likelihood and/or impact. | Implement MFA, activate encryption |
 | Transfer | The risk or its financial consequences are transferred to third parties. | Cyber insurance, outsourcing with SLA |
 | Accept | The residual risk is consciously and documentedly accepted. | Low risks with formal acceptance |
 
-The selection of the treatment option is made by the risk owner in coordination with the Chief Information Security Officer. For "Mitigate," appropriate controls are determined and reconciled with Annex A of ISO 27001 (Clause 6.1.3 b, c). The selected controls are documented in the risk treatment plan (HB_REG_07) and their effectiveness verified within the risk management process (CB_PRC_07).
+The selection of the treatment option is made by the risk owner in coordination with the Chief Information Security Officer. For "Reduce," appropriate controls are determined and reconciled with Annex A of ISO 27001 (Clause 6.1.3 b, c). The selected controls are documented in the risk treatment plan (HB_REG_07) and their effectiveness verified within the risk management process (CB_PRC_07).
 
 ## Risk Acceptance and Exceptions
 
@@ -250,6 +250,7 @@ Every risk acceptance is documented in the risk register (HB_REG_06) with ration
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.013 | 2026-02-11 | skr | Renamed risk treatment option "Mitigate" to "Reduce" for ISO/BSI alignment |
 | 00.01.012 | 2026-02-11 | Claude (AI) | Restructure sections to match process flow (asset input → protection requirements → risk analysis → risk treatment → exceptions) |
 | 00.01.011 | 2026-02-11 | Claude (AI) | Expand Protection Requirements Analysis: damage scenarios (BSI 200-2), assessment methodology, scope, conclusions; Phase-Document Matrix: Phase 2 → CB_PRC_13 |
 | 00.01.010 | 2026-02-11 | Claude (AI) | Add Risk Management Framework section with end-to-end phase model and document matrix |
