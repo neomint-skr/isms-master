@@ -884,7 +884,7 @@ Um Informationen angemessen schuetzen zu koennen, muss deren Bedeutung klar sein
 Geeignete Rollen einrichten, Aufgaben festlegen. Mindestens: Verantwortlicher fuer Klassifikationsprozess + diejenigen, die Prozess umsetzen.
 
 | Rolle | Wer | Aufgaben |
-|---|---|
+| --- | --- | --- |
 | Data Creator (Ersteller) | Jeder Mitarbeiter | Daten erzeugen; Erst-Klassifikation |
 | Data Owner (Fachverantwortlicher) | Fachverantwortlicher/Linienvorgesetzter | Regelungen konkretisieren; Einstufungsfragen klaeren; Klassifikationsprozess ueberwachen |
 | Data User (Benutzer) | Jeder Mitarbeiter | Daten benutzen; Regeln beachten; Feedback zu Einstufungshoehen |
