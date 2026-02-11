@@ -1,9 +1,9 @@
 > **Document ID:** CB_POL_L2_11-Risk-Management
-> **Version:** 00.01.009
+> **Version:** 00.01.010
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1, 8.2, 8.3
-> **Last modified:** 2026-02-10
+> **Last modified:** 2026-02-11
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -27,6 +27,33 @@ This policy establishes assessment scales, 4x4 risk matrix, protection requireme
 The standard implements principle P3 (Risk orientation) of the IS policy. The operational risk management process is defined in CB_PRC_07 (Risk Management); results are documented in HB_REG_06 (Risk Register) and HB_REG_07 (Risk Treatment Plan).
 
 **Scope:** All IS risks within the ISMS scope (HB_CLS_4.3). Target audience: risk owners, asset owners, Chief Information Security Officer, top management.
+
+## Risk Management Framework
+
+Risk management follows an asset-based end-to-end approach. Each phase builds on the results of the preceding phase.
+
+**Phase 1 — Asset registration:** Assets are identified, classified by category and registered in the asset register (HB_REG_03). The asset management process (CB_PRC_12) governs the lifecycle from identification through disposal.
+
+**Phase 2 — Protection requirements analysis:** For each information asset, the protection requirements for confidentiality, integrity and availability are assessed individually. The overall protection requirement is determined by the highest individual value (maximum principle). Protection requirements are inherited along dependency chains documented in the asset register cross-references. Results are recorded in the C/I/A columns of the asset register.
+
+**Phase 3 — Risk identification and analysis:** For assets with a protection requirement of High or Very high, an individual risk analysis is performed. Risks are identified as threat-vulnerability pairs and assessed using the likelihood × impact matrix. The assessment distinguishes gross risk (without existing controls) and net risk (with existing controls).
+
+**Phase 4 — Risk evaluation:** The resulting risk level is compared against the acceptance criteria defined in this standard. Risks exceeding the acceptance threshold require treatment.
+
+**Phase 5 — Risk treatment:** For each risk requiring treatment, one of the four treatment options is selected. Where mitigation is chosen, controls are identified and reconciled against the 93 Annex A controls. The Statement of Applicability (HB_REG_02) is updated accordingly.
+
+**Phase 6 — Approval and acceptance:** The risk treatment plan is approved by top management. Residual risks are formally accepted and documented in the risk register with rationale, approver and reassessment date.
+
+### Phase–Document Matrix
+
+| Phase | Normative basis | Process | Register |
+|---|---|---|---|
+| 1 — Asset registration | CB_POL_L2_07 (Asset types, grouping) | CB_PRC_12 (Asset lifecycle) | HB_REG_03 (Asset register) |
+| 2 — Protection requirements | This standard (Protection Requirements Analysis) | CB_PRC_07 (Risk management) | HB_REG_03 (C/I/A columns) |
+| 3 — Risk identification and analysis | This standard (Risk Criteria, Risk Matrix) | CB_PRC_07 (Risk assessment) | HB_REG_06 (Risk register) |
+| 4 — Risk evaluation | This standard (Risk Appetite and Acceptance Criteria) | CB_PRC_07 (Risk evaluation) | HB_REG_06 (Risk register) |
+| 5 — Risk treatment | This standard (Treatment Options) | CB_PRC_07 (Risk treatment) | HB_REG_07 (Treatment plan), HB_REG_02 (SoA) |
+| 6 — Approval | This standard (Risk Appetite and Acceptance Criteria) | CB_PRC_07 (Approval) | HB_REG_06 (Acceptance records) |
 
 ## Risk Criteria
 
@@ -136,6 +163,7 @@ The selection of the treatment option is made by the risk owner in coordination 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.010 | 2026-02-11 | Claude (AI) | Add Risk Management Framework section with end-to-end phase model and document matrix |
 | 00.01.009 | 2026-02-10 | Claude (AI) | Remove Risk Management Roles section; roles consolidated in CLS 5.3 |
 | 00.01.008 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.007 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |
