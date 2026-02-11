@@ -1,5 +1,5 @@
 > **Document ID:** HB_REG_03-Asset-Register
-> **Version:** 00.02.011
+> **Version:** 00.02.012
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** A.5.9
@@ -41,13 +41,13 @@ Grouped target objects (Zielobjekte) replace individual entries in the ISMS regi
 | Abbreviation | Type | Description |
 |---|---|---|
 | INF | Information | Datasets, documents, records |
-| GP | Processes | Core processes with critical information |
+| PRC | Processes | Core processes with critical information |
 | APP | Applications | Software, SaaS services, databases |
-| SYS-P | IT Systems (physical) | Servers, endpoints, physical hardware |
-| SYS-V | IT Systems (virtual) | Virtual machines, containers |
-| NET | Communication links | Network connections, segments, communication paths |
-| ROOM | Rooms | Server rooms, offices, technical rooms |
-| BLDG | Buildings | Sites, buildings |
+| PIT | Physical IT Systems | Servers, endpoints, physical hardware |
+| VIT | Virtual IT Systems | Virtual machines, containers |
+| CON | Communication Links | Network connections, segments, communication paths |
+| ROM | Rooms | Server rooms, offices, technical rooms |
+| BLD | Buildings | Sites, buildings |
 
 ## Inventory Fields
 
@@ -95,12 +95,12 @@ The mandatory fields are reflected in the category tables below. CIA values are 
 | ID | Name | Description | Count | Includes | Responsible | Processes | IT Systems | C | I | A |
 |---|---|---|---|---|---|---|---|---|---|---|
 
-## IT Systems — Physical
+## Physical IT Systems
 
 | ID | Name | Description | Count | Includes | Responsible | Applications | Room | C | I | A |
 |---|---|---|---|---|---|---|---|---|---|---|
 
-## IT Systems — Virtual
+## Virtual IT Systems
 
 | ID | Name | Description | Count | Includes | Responsible | Applications | Host system | C | I | A |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -163,6 +163,7 @@ The following tables map relationships between assets. They are the SSOT — in 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.02.012 | 2026-02-11 | Claude (AI) | Asset-ID prefixes aligned to risk methodology: GP→PRC, SYS-P→PIT, SYS-V→VIT, NET→CON, ROOM→ROM, BLDG→BLD |
 | 00.02.011 | 2026-02-11 | Claude (AI) | C/I/A scale aligned to Normal/High/Very high (BSI 200-2); process references CB_PRC_07 → CB_PRC_13 |
 | 00.02.010 | 2026-02-11 | SKR | Asset grouping schema: Count + Includes columns in all 8 tables, Criticality column in Communication Links, data model note for Zielobjekte |
 | 00.02.009 | 2026-02-10 | Claude (AI) | Remove Responsibilities section; roles consolidated in CLS 5.3 |
