@@ -1,9 +1,9 @@
 > **Document ID:** CB_POL_L2_09-Physical-Security
-> **Version:** 00.01.008
+> **Version:** 00.01.009
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.7.1-7.14
-> **Last modified:** 2026-02-09
+> **Last modified:** 2026-02-11
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -36,7 +36,7 @@ Areas containing sensitive information must be protected by physical security pe
 
 **Structural protection:** Doors to security areas must be equipped with appropriate control mechanisms. Windows, ventilation openings, and other potential access points must be secured.
 
-**Alarm systems:** Alarm systems at boundary doors to security areas must be installed, regularly tested, and designed for fail-safe operation.
+**Alarm systems:** Alarm systems at boundary doors to security areas must be installed, regularly tested, and designed for fail-safe operation. All alarm tests and corrective actions taken must be documented. Alarm system configurations and incident responses must be recorded for audit purposes [REF:DG24-PS, Kap. 2.1].
 
 **Access controls:** Personnel must be trained to lock doors and windows when areas are unattended.
 
@@ -48,11 +48,13 @@ Access to areas containing sensitive information must be controlled and document
 
 **Authentication:** Access cards, biometric data, or two-factor authentication must be employed.
 
-**Visitor access:** Visitors must be authenticated, registered (date, time, purpose), and supervised. Security requirements must be communicated.
+**Visitor access:** Visitors must be authenticated, registered (date, time, purpose), and supervised at all times unless an explicit exception is granted. Security requirements and expected behaviour must be communicated upon arrival. A staffed or otherwise monitored reception area must control physical access to the building. Personal belongings (storage media, cameras, recording devices) must be subject to checks upon entry and exit [REF:DG24-PS, Kap. 2.2].
 
 **Delivery areas:** Access to delivery and loading areas must be restricted to authorized personnel. Deliveries must be checked for hazardous materials, registered upon arrival, and inspected for tampering.
 
 **Key management:** Documented key management with logbook and annual review must be established.
+
+**Secure areas:** Information about the existence of or activities within security areas must be disclosed only to personnel with a verified need-to-know (addresses A.7.6). Work activities in security areas must be supervised. Photographic, video, audio, or other recording devices must not be brought into security areas without explicit authorization. User endpoint devices must be checked upon entry for compliance with device control requirements. Security areas must be locked when unoccupied; storage units and cabinets within those areas must be secured [REF:DG24-PS, Kap. 3.1].
 
 ## Workplace
 
@@ -64,7 +66,9 @@ Sensitive information and endpoint devices must be secured when not in use (addr
 
 **Printing:** Printed output must be collected immediately. Printers with authentication features should be used.
 
-**Secure disposal:** Documents and storage media no longer required must be securely disposed of by shredding or electronic erasure.
+**Secure disposal:** Documents and storage media no longer required must be securely disposed of by shredding or electronic erasure (addresses A.7.14). The disposal method must be selected based on information sensitivity: overwriting for reusable media, physical destruction for damaged or highly sensitive media. Only approved tools and methods must be used. Disposal of complete equipment must comply with applicable environmental regulations. All disposal activities must be documented.
+
+**Removal of identification markings:** Before disposal, resale, or donation, all labels and markings indicating the organization, ownership, classification, system, or network affiliation must be removed from equipment (addresses A.7.14). Remaining markings must be rendered illegible [REF:DG24-PS, Kap. 4.6].
 
 **Whiteboards and displays:** Sensitive information must be removed from whiteboards and displays when no longer needed.
 
@@ -85,11 +89,17 @@ Offices, rooms, and technical facilities must be protected against unauthorized 
 
 **Protection against physical and environmental threats:**
 
-Controls against natural disasters, fire, flooding, electrical surge, and other environmental influences must be implemented based on a risk assessment (addresses A.7.5). The risk assessment must be conducted initially and on a recurring basis. Expert advice must be obtained where internal expertise is lacking [REF:DG24-PS, Kap. 2.5].
+Controls against natural disasters, fire, flooding, electrical surge, and other environmental influences must be implemented based on a risk assessment (addresses A.7.5). The risk assessment must be conducted initially and on a recurring basis. Expert advice must be obtained where internal expertise is lacking. Fire detection systems enabling early warning must be installed. Automatic fire suppression systems must be provided where justified by the risk assessment. Fire detection and suppression equipment must be tested and maintained at defined intervals. An alert chain covering detection, notification, and evacuation must be documented and exercised regularly [REF:DG24-PS, Kap. 2.5].
 
-**Supporting utilities:** IT infrastructure must be protected against failure of power supply and other supporting utilities (addresses A.7.11). Uninterruptible power supplies and climate control in technical rooms must be installed and regularly maintained.
+**Supporting utilities:** IT infrastructure must be protected against failure of power supply and other supporting utilities (addresses A.7.11). Uninterruptible power supplies and climate control in technical rooms must be installed and regularly maintained. Emergency lighting and communication systems must be provided to facilitate response during utility failures. Emergency shut-off switches and valves must be installed near emergency exits or equipment rooms to allow rapid disconnection of power, water, gas, or other utilities. Emergency contact details for utility providers must be kept current and accessible to responsible personnel [REF:DG24-PS, Kap. 5.1].
 
 **Equipment siting:** Equipment must be placed stably, protected against moisture and overheating, and provided with adequate space for maintenance (addresses A.7.8). Cable routes must be organized and secured [REF:DG24-PS, Kap. 2.3].
+
+**Lightning protection:** Lightning protection measures including lightning conductors and surge protection devices must be installed on buildings housing equipment (addresses A.7.8, A.7.11). Lightning protection filters must be fitted to incoming power and communication lines. The local risk of lightning occurrence must be considered in the risk assessment [REF:DG24-PS, Kap. 4.1].
+
+**Cabling security:** Power and communication cables must be physically separated to minimize the risk of interference (addresses A.7.12). For sensitive or critical systems, armoured conduits, locked rooms or enclosures, and electromagnetic shielding must be applied. Regular technical and physical inspections must detect unauthorized devices attached to the cabling infrastructure. Access to patch panels and cable rooms must be controlled by mechanical locks or PINs [REF:DG24-PS, Kap. 4.4].
+
+**Equipment maintenance:** Only trained and authorized personnel must perform maintenance on physical equipment (addresses A.7.13). A register of authorized maintenance personnel and their qualifications must be maintained. External maintenance personnel must sign a confidentiality agreement before performing maintenance tasks. A documented maintenance plan covering tasks, frequencies, and responsibilities must be established [REF:DG24-PS, Kap. 4.5].
 
 ## Monitoring
 
@@ -118,6 +128,7 @@ When implementing monitoring controls, data protection requirements must be obse
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.009 | 2026-02-11 | CISO | Physical security depth: secure areas (A.7.6), lightning (A.7.8/11), cabling (A.7.12), emergency preparedness (A.7.11), maintenance (A.7.13), disposal markings (A.7.14), alarm documentation, fire protection, disposal methodology, visitor details |
 | 00.01.008 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.007 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |
 | 00.01.006 | 2026-02-09 | CISO | Infrastructure (A.7.3/5/8/11), monitoring (A.7.4) populated (Batch-D) |
