@@ -1,9 +1,9 @@
 > **Document ID:** HB_REG_03-Asset-Register
-> **Version:** 00.02.009
+> **Version:** 00.02.010
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** A.5.9
-> **Last modified:** 2026-02-10
+> **Last modified:** 2026-02-11
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -33,6 +33,8 @@ Protection requirement values are populated through the risk management process 
 The cross-reference tables (section below) are the **SSOT for relationships** between assets. The relationship columns in the asset tables are denormalized quick references for a fast overview. In case of conflict, the cross-reference tables prevail.
 
 The Confidentiality (C), Integrity (I) and Availability (A) columns are structural placeholders. They are populated through the protection requirements analysis (CB_PRC_07-Risk-Management). BCM-related recovery data (RTO, RPO, MTD, continuity plans) is maintained in the dedicated BIA Register (HB_REG_10).
+
+Grouped target objects (Zielobjekte) replace individual entries in the ISMS register when assets share an identical security-management profile. The operational detail inventory (serial numbers, licences, individual configurations) is maintained externally in the CMDB. Cross-reference tables provide seamless traceability from information through process, application, IT system, communication link to room and building.
 
 ## Asset Categories
 
@@ -80,43 +82,43 @@ The mandatory fields are reflected in the category tables below. CIA values are 
 
 ## Information
 
-| ID | Name | Description | Owner | Process(es) | C | I | A |
-|---|---|---|---|---|---|---|---|
+| ID | Name | Description | Count | Includes | Owner | Process(es) | C | I | A |
+|---|---|---|---|---|---|---|---|---|---|
 
 ## Processes
 
-| ID | Name | Description | Responsible | Information | Applications | C | I | A |
-|---|---|---|---|---|---|---|---|---|
+| ID | Name | Description | Count | Includes | Responsible | Information | Applications | C | I | A |
+|---|---|---|---|---|---|---|---|---|---|---|
 
 ## Applications
 
-| ID | Name | Description | Responsible | Processes | IT Systems | C | I | A |
-|---|---|---|---|---|---|---|---|---|
+| ID | Name | Description | Count | Includes | Responsible | Processes | IT Systems | C | I | A |
+|---|---|---|---|---|---|---|---|---|---|---|
 
 ## IT Systems — Physical
 
-| ID | Name | Description | Responsible | Applications | Room | C | I | A |
-|---|---|---|---|---|---|---|---|---|
+| ID | Name | Description | Count | Includes | Responsible | Applications | Room | C | I | A |
+|---|---|---|---|---|---|---|---|---|---|---|
 
 ## IT Systems — Virtual
 
-| ID | Name | Description | Responsible | Applications | Host system | C | I | A |
-|---|---|---|---|---|---|---|---|---|
+| ID | Name | Description | Count | Includes | Responsible | Applications | Host system | C | I | A |
+|---|---|---|---|---|---|---|---|---|---|---|
 
 ## Communication Links
 
-| ID | Name | Description | Source | Target | Responsible | C | I | A |
-|---|---|---|---|---|---|---|---|---|
+| ID | Name | Description | Count | Includes | Criticality | Source | Target | Responsible | C | I | A |
+|---|---|---|---|---|---|---|---|---|---|---|---|
 
 ## Rooms
 
-| ID | Designation | Description | Building | Responsible | C | I | A |
-|---|---|---|---|---|---|---|---|
+| ID | Designation | Description | Count | Includes | Building | Responsible | C | I | A |
+|---|---|---|---|---|---|---|---|---|---|
 
 ## Buildings
 
-| ID | Name | Description | Responsible | C | I | A |
-|---|---|---|---|---|---|---|
+| ID | Name | Description | Count | Includes | Responsible | C | I | A |
+|---|---|---|---|---|---|---|---|---|
 
 ## Cross-References
 
@@ -160,6 +162,7 @@ The following tables map relationships between assets. They are the SSOT — in 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.02.010 | 2026-02-11 | SKR | Asset grouping schema: Count + Includes columns in all 8 tables, Criticality column in Communication Links, data model note for Zielobjekte |
 | 00.02.009 | 2026-02-10 | Claude (AI) | Remove Responsibilities section; roles consolidated in CLS 5.3 |
 | 00.02.008 | 2026-02-10 | [CISO] | BIA fields replaced by BIA Tier reference (REG_10 extraction) |
 | 00.02.007 | 2026-02-09 | [CISO] | Aligned role terminology |
