@@ -1,9 +1,9 @@
 > **Document ID:** CB_POL_L2_03-System-and-Network
-> **Version:** 00.01.008
+> **Version:** 00.01.009
 > **Classification:** Internal
 > **Author:** CISO
-> **ISO Reference:** A.8.1, A.8.6-8.9, A.8.14-8.23
-> **Last modified:** 2026-02-09
+> **ISO Reference:** A.8.1, A.8.6-8.9, A.8.11-8.24
+> **Last modified:** 2026-02-11
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -13,7 +13,7 @@
 
 ## Summary
 
-IT systems and networks form the technical foundation of all business processes and are a preferred attack target. This policy defines the requirements for hardening, vulnerability management, network segmentation, logging, and capacity planning. It ensures that technical vulnerabilities are systematically detected, assessed, and remediated. Without binding security requirements for systems and networks, attack surfaces remain uncontrolled and incidents difficult to trace.
+IT systems and networks form the technical foundation of all business processes and are a preferred attack target. This standard defines the requirements for hardening, vulnerability management, network segmentation, logging, monitoring, data protection, web filtering, and cryptography. It ensures that technical vulnerabilities are systematically detected, assessed, and remediated. Without binding security requirements for systems and networks, attack surfaces remain uncontrolled and incidents difficult to trace.
 
 ## Objective and Scope
 
@@ -53,6 +53,10 @@ Hardware, software, services, and networks must be configured with hardened secu
 **Monitoring:** Configuration compliance must be reviewed regularly. Deviations must be investigated and corrected.
 
 **Automation:** Configuration management processes should be automated where possible.
+
+The use of privileged utility programs capable of overriding system or application controls must be restricted and monitored (addresses A.8.18). Access to such utilities must be limited to authorized personnel with a documented business need. All usage must be logged, including user identity and actions performed. Privileged utilities must be separated from standard application software. Unnecessary utilities must be removed or disabled. Access must be granted only for the duration of approved changes or maintenance activities.
+
+Software installation on operational systems must be controlled and authorized (addresses A.8.19). Only [authorized personnel, e.g. IT administrators] with documented approval may perform installations or updates on production systems. A formal approval process must be established. Software must be tested in a controlled environment prior to deployment. A list of approved software must be maintained. Rollback procedures must be documented for all installations. All installation activities must be logged with date, software details, and responsible administrator. End-of-life status of deployed software must be monitored.
 
 ## Vulnerabilities
 
@@ -95,6 +99,28 @@ Logs must be created, protected, and analyzed to detect security events and enab
 **Retention:** Logs must be retained in accordance with legal and organizational requirements.
 
 **Centralization:** A centralized logging solution must be implemented to collect and analyze logs from across the entire infrastructure.
+
+**Clock synchronization:** Clocks of all information processing systems must be synchronized to approved reference time sources (addresses A.8.17). [Approved time sources, e.g. Google NTP, Cloudflare NTP] must be designated as authoritative references. NTP or PTP must be configured on all systems. Synchronization status must be monitored automatically. Deviations must be investigated and corrected promptly. Consistent time stamps are a prerequisite for log correlation, forensic analysis, and incident investigation.
+
+## Monitoring
+
+Networks, systems, and applications must be monitored to detect anomalous behavior and potential information security incidents (addresses A.8.16). A baseline of normal behavior must be established using historical data for network traffic, system utilization, and user activity. Monitoring systems must be configured to capture and analyze inbound and outbound network traffic, system logs, and user activities. Automated alerts must be generated based on predefined thresholds. Escalation procedures for alerts requiring immediate attention must be defined. Anomaly detection must cover unusual traffic patterns, connections to suspicious addresses, unauthorized access attempts, and configuration changes. [SIEM solution, e.g. Google Chronicle, Splunk] should be employed for centralized event correlation and analysis. Alert thresholds and detection rules must be refined regularly to minimize false positives without compromising detection capability.
+
+## Data Masking
+
+Sensitive data must be masked in non-production environments and wherever full data exposure is not required (addresses A.8.11). Data owners must identify and classify sensitive data elements in systems, databases, and applications. Appropriate masking techniques must be selected, including anonymization, pseudonymization, or tokenization, based on data classification and regulatory requirements. Masking must be applied before data is transferred to development, testing, or analytics environments. Effectiveness of masking must be validated to ensure that original data cannot be reconstructed or re-identified from masked data. Masking procedures must comply with applicable data protection regulations [REF:DG24-SN, Kap. 6.1].
+
+## Data Leakage Prevention
+
+Measures must be implemented to detect and prevent the unauthorized disclosure or extraction of sensitive information (addresses A.8.12). Channels with data exfiltration risk must be identified, including email, file transfer, cloud storage, and removable media. [DLP solution, e.g. Google Workspace DLP, Microsoft Purview] must be deployed to monitor data flows and enforce transfer policies. DLP rules must be configured to quarantine or block transmissions that match defined sensitive data patterns. User capabilities for copying, transferring, or uploading classified information to unauthorized destinations must be restricted. Alerts on policy violations must be investigated promptly. DLP policies must be reviewed and updated regularly to reflect changes in data classification or threat landscape.
+
+## Web Filtering
+
+Access to websites with potentially malicious or inappropriate content must be controlled (addresses A.8.23). Categories of websites to be blocked must be identified, including known malicious sites, command-and-control servers, and sites hosting illegal content. [Web filtering solution, e.g. DNS-based filtering, proxy-based filtering] must be configured to enforce access restrictions. Filter rules and block lists must be updated regularly to reflect current threat intelligence. Exceptions must be documented and approved through a formal request process. Web filtering effectiveness must be reviewed periodically.
+
+## Cryptography
+
+Cryptographic controls must be applied to protect the confidentiality, integrity, and authenticity of information (addresses A.8.24). Approved cryptographic algorithms and minimum key lengths must be defined in accordance with current industry standards and regulatory requirements. Encryption must be applied to sensitive data at rest and in transit. A key management process must be established covering the full lifecycle: generation, distribution, storage, rotation, revocation, and destruction of cryptographic keys. [Key management responsibility, e.g. CTO, IT Security Lead] must be designated. Cryptographic implementations must be audited regularly for compliance with the defined standards. Algorithms approaching end-of-life or identified as weakened must be replaced in a timely manner.
 
 ## Capacity
 
@@ -140,6 +166,7 @@ Redundancies must be provided for critical information processing facilities to 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.009 | 2026-02-11 | CISO | Added 8 missing controls: A.8.11, A.8.12, A.8.16, A.8.17, A.8.18, A.8.19, A.8.23, A.8.24 |
 | 00.01.008 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.007 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |
 | 00.01.006 | 2026-02-09 | CISO | Summary: 4-element pattern |

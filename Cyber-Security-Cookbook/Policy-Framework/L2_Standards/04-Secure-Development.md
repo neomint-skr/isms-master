@@ -1,9 +1,9 @@
 > **Document ID:** CB_POL_L2_04-Secure-Development
-> **Version:** 00.01.008
+> **Version:** 00.01.009
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.8, A.8.4, A.8.25-8.34
-> **Last modified:** 2026-02-09
+> **Last modified:** 2026-02-11
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -62,6 +62,20 @@ Secure coding principles must be followed during software development (addresses
 
 **External components:** External libraries must be updated regularly and reviewed for security issues.
 
+## Secure Architecture
+
+Secure system architecture and engineering principles must be established, documented, maintained, and applied throughout the development lifecycle (addresses A.8.27).
+
+**Architecture principles:** Security engineering principles must be defined based on industry standards and organizational requirements. Principles must cover all architecture layers including enterprise, data, application, and technology.
+
+**Threat modeling:** Threat modeling must be conducted as a formal exercise to identify potential attack patterns and security weaknesses. Results must inform the design of security controls.
+
+**Security by design:** Defense in depth, security by default, and least privilege must be applied as explicit architecture principles. Security controls must be integrated at every layer of the information system.
+
+**Architecture review:** Security-focused design reviews must be conducted to identify and remediate architectural weaknesses. Architecture decisions, including deviations or exceptions, must be documented and formally approved by relevant stakeholders.
+
+**Review cycle:** Security engineering principles must be reviewed [annually | upon significant change — depending on threat landscape] and updated to reflect new threats, technological advances, and organizational changes.
+
 ## Testing
 
 Security testing must be conducted throughout the entire development cycle (addresses A.8.29).
@@ -77,6 +91,18 @@ Security testing must be conducted throughout the entire development cycle (addr
 **Test environment:** Tests must be conducted in an environment that mirrors the production environment.
 
 **Documentation:** All security tests, including test plans, results, and remediation actions, must be documented.
+
+## Test Data
+
+Test information must be appropriately selected, protected, and managed (addresses A.8.33).
+
+**Selection:** Test data must be selected based on its relevance to testing objectives. Operational data must not be copied into test environments without a documented necessity assessment and explicit approval from the asset owner.
+
+**Anonymization:** Sensitive information — including personally identifiable information — must not be used in test environments. Where operational data is essential for testing, it must be anonymized or pseudonymized before transfer.
+
+**Access control:** Access to test environments and test data must be restricted to authorized personnel. All transfers of operational information into test environments must be logged for audit purposes.
+
+**Compliance monitoring:** Regular audits must be conducted to verify compliance with test data management procedures. Deviations or breaches must be investigated, documented, and remediated promptly.
 
 ## Application Security Requirements
 
@@ -164,6 +190,7 @@ Outsourced system development must meet requirements for information security, m
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.009 | 2026-02-11 | CISO | Added A.8.27 Secure Architecture and A.8.33 Test Data sections |
 | 00.01.008 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.007 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |
 | 00.01.006 | 2026-02-09 | CISO | Change management (A.8.32) populated (Batch-D) |
