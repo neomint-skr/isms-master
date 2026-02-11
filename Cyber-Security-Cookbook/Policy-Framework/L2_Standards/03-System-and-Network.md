@@ -2,7 +2,7 @@
 > **Version:** 00.01.009
 > **Classification:** Internal
 > **Author:** CISO
-> **ISO Reference:** A.8.1, A.8.6-8.9, A.8.11-8.24
+> **ISO Reference:** A.8.1, A.8.6-8.10, A.8.13-8.17, A.8.19-8.23
 > **Last modified:** 2026-02-11
 > **Approval:** —
 > **Review cycle:** Annual
