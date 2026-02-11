@@ -1,5 +1,5 @@
 > **Document ID:** CB_PRC_12-Asset-Management
-> **Version:** 00.01.008
+> **Version:** 00.01.009
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.9
@@ -21,7 +21,7 @@ What is not known as an asset cannot be protected. This process governs the syst
 
 This process governs the lifecycle of all ISMS-relevant assets — from identification and ID assignment through registration and relationship mapping to decommissioning (addresses A.5.9). It ensures that the asset inventory is complete and current at all times.
 
-The process operationalizes the requirements from CB_POL_L2_07-Organization (assets section). Results are documented in HB_REG_03 (Asset Register) and form the basis for the protection requirements analysis (CB_PRC_07).
+The process operationalizes the requirements from CB_POL_L2_07-Organization (assets section). Results are documented in HB_REG_03 (Asset Register) and form the basis for the protection requirements assessment (CB_PRC_13).
 
 **Scope:** All asset types per CB_POL_L2_07 (assets section) and all lifecycle events. Coordinated by the IS-Coordinator with asset owners.
 
@@ -64,19 +64,24 @@ A responsible asset owner is designated and recorded in the register.
 
 The registration is reviewed and approved by the responsible function.
 
-### 7. Maintenance and update
+### 7. Protection requirements trigger
 
-Changes are recorded on an event-driven basis. Decommissioned assets are marked as "retired" and remain in the register.
+After registration and approval, the IS-Coordinator triggers the protection requirements assessment process (CB_PRC_13) for the new or changed asset. This ensures that C/I/A values are assessed before the asset enters the risk management cycle.
+
+### 8. Maintenance and update
+
+Changes are recorded on an event-driven basis. Decommissioned assets are marked as "retired" and remain in the register. Material changes to an existing asset trigger a reassessment of protection requirements (CB_PRC_13).
 
 ## See also
 
+- CB_PRC_13-Protection-Requirements — Protection requirements assessment (triggered after registration)
 - HB_CLS_5.3-Roles-and-Responsibilities
-
 
 ## Changelog
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.009 | 2026-02-11 | Claude (AI) | Add Step 7 (protection requirements trigger to CB_PRC_13), renumber maintenance to Step 8, fix process reference |
 | 00.01.008 | 2026-02-11 | SKR | Grouping evaluation sub-step added to identification phase |
 | 00.01.007 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.006 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/FOR WHAT/WHERE) |
