@@ -29,11 +29,11 @@ Vulnerability catalogue: Per vulnerability catalogue for [Layer] (Risk-Framework
 
 Each scenario combines a threat–vulnerability pair with a risk assessment. The Risk Scenario column captures the conditional risk in subjunctive form per CB_POL_L2_11 Scenario Text Template.
 
-**Treatment rule:** When Net Risk is **Low (1-3)**, Treatment is automatically set to **Accept** (risk acceptance by risk owner per CB_POL_L2_11). When Net Risk is **Medium or higher (>= 4)**, the risk owner selects the treatment option.
+**Treatment rule:** When Net Risk is **Low (1-3)**, Treatment is automatically set to **Accept** (risk acceptance by risk owner per CB_POL_L2_11). When Net Risk is **Medium or higher (>= 4)**, the scenario is forwarded to the risk treatment plan (HB_REG_06) for treatment selection by the risk owner.
 
 | SC-ID | Threat (G 0.x) | Vulnerability-ID | Risk Scenario | L | I | Gross | SM-IDs | Net L | Net I | Net Risk | Treatment |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| [SC-\<Asset-ID\>-0001] | [G 0.x] | [Layer-Vxx] | [If ... occurs and ... exists, this could lead to ... for ...] | [1-4] | [1-4] | [L x I] | [SM-####, SM-####] | [1-4] | [1-4] | [Net L x Net I] | [Avoid/Reduce/Transfer/Accept] |
+| [SC-\<Asset-ID\>-0001] | [G 0.x] | [Layer-Vxx] | [If ... occurs and ... exists, this could lead to ... for ...] | [1-4] | [1-4] | [L x I] | [SM-####, SM-####] | [1-4] | [1-4] | [Net L x Net I] | [Accept/Treat (→ RTP)] |
 
 ## Risk Summary
 

@@ -1,5 +1,5 @@
 > **Document ID:** CB_PRC_07-Risk-Management
-> **Version:** 00.01.015
+> **Version:** 00.01.016
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1, 8.2, 8.3
@@ -74,7 +74,7 @@ The assessment distinguishes:
 - **Gross risk:** Risk score without considering implemented controls.
 - **Net risk:** Existing security measures (referenced by SM-ID from HB_REG_07) are identified per scenario. Their mitigating effect on likelihood and/or impact is assessed, yielding the net risk score.
 
-Scenarios with a net risk of **Low (1-3)** automatically receive treatment **Accept** (risk acceptance by risk owner per CB_POL_L2_11 acceptance criteria). For scenarios with net risk **Medium or higher (>= 4)**, the risk owner selects the treatment option in Step 5.
+Scenarios with a net risk of **Low (1-3)** automatically receive treatment **Accept** (risk acceptance by risk owner per CB_POL_L2_11 acceptance criteria). Scenarios with net risk **Medium or higher (>= 4)** receive treatment **Treat (→ RTP)** and are forwarded to the risk treatment plan (HB_REG_06) for treatment option selection by the risk owner.
 
 ### Step 5 — Risk evaluation and prioritization
 
@@ -156,6 +156,7 @@ An unscheduled risk assessment is triggered by:
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.016 | 2026-02-13 | Claude (AI) | Step 4: Treatment column values changed to binary Accept/Treat (→ RTP); specific treatment selection moved to RTP (HB_REG_06) |
 | 00.01.015 | 2026-02-13 | Claude (AI) | Steps 2-4: vulnerability assessment documented in appendix of RA record; scenario text in subjunctive per L2_11 template; auto-accept for Net Risk ≤ 3 |
 | 00.01.014 | 2026-02-11 | Claude (AI) | Restructured risk assessment to 6-step catalogue-driven workflow (vulnerability catalogue, scenario generation, SM-ID linkage); updated risk treatment for HB_REG_07 measure lookup/creation |
 | 00.01.013 | 2026-02-11 | Claude (AI) | Added quarterly Risk Committee review cycle (merge from retorio) |
