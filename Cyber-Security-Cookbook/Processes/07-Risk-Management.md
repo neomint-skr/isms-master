@@ -1,9 +1,9 @@
 > **Document ID:** CB_PRC_07-Risk-Management
-> **Version:** 00.01.014
+> **Version:** 00.01.015
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1, 8.2, 8.3
-> **Last modified:** 2026-02-11
+> **Last modified:** 2026-02-13
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -53,11 +53,13 @@ For each in-scope asset, the CISO or IS-Coordinator works through the vulnerabil
 
 For each assessment, a brief evidence statement or comment is documented (e.g. reference to configuration evidence, scan result, or expert judgement). Vulnerabilities with status "unknown" are treated as "present" for the purpose of scenario generation until resolved.
 
+The complete vulnerability assessment is documented in the **Appendix: Vulnerability Assessment** of the risk assessment record (CB_TPL_21). This placement ensures the audit trail is preserved while keeping the risk scenario analysis as the document's focal point.
+
 ### Step 3 — Scenario generation
 
 Risk scenarios are generated systematically from the combination of relevant threats (HB_REG_11) and vulnerabilities with status **present** or **unknown**. A threat–vulnerability pair forms a valid scenario only when the aspect tags are compatible (i.e. the threat's aspect tag matches the vulnerability's aspect tag: C, I, A, or combinations).
 
-Each scenario receives a unique identifier: `SC-<Asset-ID>-####` (four-digit sequential number per asset). The scenario description captures the threat, the exploited vulnerability, and the potential impact on the affected core value(s).
+Each scenario receives a unique identifier: `SC-<Asset-ID>-####` (four-digit sequential number per asset). Each scenario includes a two-sentence risk description in subjunctive form per the Scenario Text Template in CB_POL_L2_11: "If [threat] occurs and [vulnerability] exists, this could lead to [impact on affected protection goals] for [asset]." This text is recorded in the Risk Scenario column of the combined risk scenarios table (CB_TPL_21).
 
 ### Step 4 — Risk analysis
 
@@ -71,6 +73,8 @@ The assessment distinguishes:
 
 - **Gross risk:** Risk score without considering implemented controls.
 - **Net risk:** Existing security measures (referenced by SM-ID from HB_REG_07) are identified per scenario. Their mitigating effect on likelihood and/or impact is assessed, yielding the net risk score.
+
+Scenarios with a net risk of **Low (1-3)** automatically receive treatment **Accept** (risk acceptance by risk owner per CB_POL_L2_11 acceptance criteria). For scenarios with net risk **Medium or higher (>= 4)**, the risk owner selects the treatment option in Step 5.
 
 ### Step 5 — Risk evaluation and prioritization
 
@@ -152,6 +156,7 @@ An unscheduled risk assessment is triggered by:
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.015 | 2026-02-13 | Claude (AI) | Steps 2-4: vulnerability assessment documented in appendix of RA record; scenario text in subjunctive per L2_11 template; auto-accept for Net Risk ≤ 3 |
 | 00.01.014 | 2026-02-11 | Claude (AI) | Restructured risk assessment to 6-step catalogue-driven workflow (vulnerability catalogue, scenario generation, SM-ID linkage); updated risk treatment for HB_REG_07 measure lookup/creation |
 | 00.01.013 | 2026-02-11 | Claude (AI) | Added quarterly Risk Committee review cycle (merge from retorio) |
 | 00.01.012 | 2026-02-11 | skr | Renamed risk treatment option "Mitigate" to "Reduce" for ISO/BSI alignment |

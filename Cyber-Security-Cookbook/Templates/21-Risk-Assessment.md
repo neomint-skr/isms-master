@@ -25,26 +25,38 @@ Protection requirements (from asset register HB_REG_03):
 Relevant threats: Per threat catalogue for [Layer] (Risk-Framework/Threats/).
 Vulnerability catalogue: Per vulnerability catalogue for [Layer] (Risk-Framework/Vulnerabilities/).
 
-## Vulnerability Assessment
+## Risk Scenarios
 
-| Vulnerability-ID | Vulnerability | Status | Evidence/Comment |
-|---|---|---|---|
-| [e.g. PIT-V01] | [Vulnerability description] | [present/not present/unknown/n/a] | [Evidence or rationale] |
+Each scenario combines a threat–vulnerability pair with a risk assessment. The Risk Scenario column captures the conditional risk in subjunctive form per CB_POL_L2_11 Scenario Text Template.
 
-## Scenario List
+**Treatment rule:** When Net Risk is **Low (1-3)**, Treatment is automatically set to **Accept** (risk acceptance by risk owner per CB_POL_L2_11). When Net Risk is **Medium or higher (>= 4)**, the risk owner selects the treatment option.
 
-| SC-ID | Threat (G 0.x) | Vulnerability-ID | Scenario text | Affected aspects |
-|---|---|---|---|---|
-| [SC-\<Asset-ID\>-0001] | [G 0.x] | [Layer-Vxx] | [If ... occurs and ... exists, this could lead to ... for ...] | [C, I, A] |
+| SC-ID | Threat (G 0.x) | Vulnerability-ID | Risk Scenario | L | I | Gross | SM-IDs | Net L | Net I | Net Risk | Treatment |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| [SC-\<Asset-ID\>-0001] | [G 0.x] | [Layer-Vxx] | [If ... occurs and ... exists, this could lead to ... for ...] | [1-4] | [1-4] | [L x I] | [SM-####, SM-####] | [1-4] | [1-4] | [Net L x Net I] | [Avoid/Reduce/Transfer/Accept] |
 
-## Risk Assessment
+## Risk Summary
 
-| SC-ID | L (1-4) | I (1-4) | Gross risk | Existing SM | Net L | Net I | Net risk | Treatment | Planned SM |
-|---|---|---|---|---|---|---|---|---|---|
-| [SC-\<Asset-ID\>-0001] | [1-4] | [1-4] | [L×I] | [SM-####, SM-####] | [1-4] | [1-4] | [L×I] | [Avoid/Reduce/Transfer/Accept] | [SM-####] |
+| Metric | Value |
+|---|---|
+| Total scenarios | [count] |
+| Critical (12-16) | [count] |
+| High (8-9) | [count] |
+| Medium (4-6) | [count] |
+| Low (1-3) | [count] |
+| Auto-accepted (Low) | [count] |
+| Requiring treatment | [count] |
 
 ## Exceptions
 
 | Excluded item | Type (Threat/Vulnerability) | Rationale |
 |---|---|---|
 | [ID] | [Threat/Vulnerability] | [Reason for exclusion] |
+
+## Appendix: Vulnerability Assessment
+
+Complete vulnerability status for audit trail. Each entry from the asset's vulnerability catalogue is assessed with evidence or rationale.
+
+| Vulnerability-ID | Vulnerability | Status | Evidence/Comment |
+|---|---|---|---|
+| [e.g. PIT-V01] | [Vulnerability description] | [present/not present/unknown/n/a] | [Evidence or rationale] |
