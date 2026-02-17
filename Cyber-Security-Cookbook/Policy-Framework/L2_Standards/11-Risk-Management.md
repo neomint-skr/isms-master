@@ -1,9 +1,9 @@
 > **Document ID:** CB_POL_L2_11-Risk-Management
-> **Version:** 00.01.016
+> **Version:** 00.01.017
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1, 8.2, 8.3
-> **Last modified:** 2026-02-11
+> **Last modified:** 2026-02-17
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -34,7 +34,7 @@ Risk management follows an asset-based end-to-end approach. Each phase builds on
 
 **Phase 1 — Asset registration:** Assets are identified, classified by category and registered in the asset register (HB_REG_03). The asset management process (CB_PRC_12) governs the lifecycle from identification through disposal.
 
-**Phase 2 — Protection requirements analysis:** For each information asset, the protection requirements for confidentiality, integrity and availability are assessed individually. The overall protection requirement is determined by the highest individual value (maximum principle). Protection requirements are inherited along dependency chains documented in the asset register cross-references. Results are recorded in the C/I/A columns of the asset register.
+**Phase 2 — Protection requirements analysis:** For each business process, the protection requirements for confidentiality, integrity and availability are assessed individually. Information types processed by each business process are considered as attributes in the assessment. The overall protection requirement is determined by the highest individual value (maximum principle). Protection requirements are inherited along dependency chains documented in the asset register cross-references. Results are recorded in the C/I/A columns of the asset register.
 
 **Phase 3 — Risk identification and analysis:** For assets with a protection requirement of High or Very high, an individual risk analysis is performed. Risks are identified as threat-vulnerability pairs and assessed using the likelihood × impact matrix. The assessment distinguishes gross risk (without existing controls) and net risk (with existing controls).
 
@@ -124,7 +124,7 @@ The thresholds (downtime windows, financial amounts) are calibrated to the scale
 
 The methodology follows BSI Standard 200-2 [REF:BSI17, Ch. 8.2.2] and applies to all asset categories in the asset register (HB_REG_03).
 
-**Primary assessment.** Protection requirements are assessed directly for information and business processes using the damage scenarios defined above. The assessment determines the original protection requirement values for C, I, and A.
+**Primary assessment.** Protection requirements are assessed directly for business processes using the damage scenarios defined above. Information types processed by each business process are considered as attributes in the assessment. The assessment determines the original protection requirement values for C, I, and A.
 
 **Inheritance.** Protection requirements are inherited along the dependency chains documented in the cross-reference tables of the asset register: business processes → applications → IT systems → rooms/buildings → communication links. The direction of inheritance follows the data flow and processing dependencies.
 
@@ -155,7 +155,7 @@ The protection requirements analysis covers all asset categories in the asset re
 
 | Asset category | Primary or inherited | Key considerations |
 |---|---|---|
-| Information and business processes | Primary (direct damage scenario assessment) | "What if?" analysis with process owners. Complex processes may be decomposed into sub-processes. |
+| Business processes (incl. processed information types) | Primary (direct damage scenario assessment) | "What if?" analysis with process owners. Complex processes may be decomposed into sub-processes. |
 | Applications | Inherited from business processes | Includes central services (DNS, e-mail, databases). |
 | IT systems (physical and virtual) | Inherited from applications | Includes virtualization hosts. Cumulation and distribution effects to be evaluated per host. |
 | ICS and IoT devices | Inherited from processes/applications | Protection requirement categories may require adapted downtime thresholds. |
@@ -415,6 +415,7 @@ The operational exception management workflow is defined in CB_PRC_14-Exception-
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.017 | 2026-02-17 | Claude (AI) | Process-centric model: PRC as primary assessment layer, INF as process attribute in Phase 2, primary assessment, and assessment scope |
 | 00.01.016 | 2026-02-11 | Claude (AI) | Fix traceability: Operationalized by → — (no L3; PRC refs in See also) |
 | 00.01.015 | 2026-02-11 | Claude (AI) | Major extension: catalog-based risk identification methodology, vulnerability assessment, scenario generation rules, impact derivation from PR, gross/net risk, BIA-to-V derivation, override rules, security measures register (REG_07) |
 | 00.01.014 | 2026-02-11 | Claude (AI) | Added Exception Management section with approval authority, remediation deadlines, risk linkage (merge from retorio) |
