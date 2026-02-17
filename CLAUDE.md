@@ -43,7 +43,7 @@ Active servers: sequential-thinking, basic-memory, context7.
 
 | Level | Type | Key Question | Example |
 |---|---|---|---|
-| L1 | Policy | WHY? Strategic principles | "We protect our information assets" |
+| L1 | Policy | WHY? Strategic principles | "We protect our business processes and information" |
 | L2 | Standard | WHAT? Requirements and rules | "Access is granted based on least privilege" |
 | L3 | Handbook and Concept | HOW? Concrete instructions, checklists, tools | "How to set up MFA: Step 1..." |
 | L4 | Cheat Sheet | AT A GLANCE? Quick reference | "Password: min 12 chars, MFA mandatory, never share" |

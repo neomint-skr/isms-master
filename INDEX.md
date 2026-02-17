@@ -33,7 +33,7 @@
 
 **01-Context-Register.md** -- Organizational profile, external/internal issues
 **02-Interested-Parties-Register.md** -- Stakeholders + IS requirements
-**03-Asset-Register.md** -- 8 asset inventories, 6 cross-reference tables, data model
+**03-Asset-Register.md** -- 8 asset inventories, 5 cross-reference tables, data model
 **04-BIA-Register.md** -- BIA assessment, tier assignment, continuity plan tracking
 **05-Risk-Register.md** -- 4x4 matrix, scenario-based risk entries, acceptance
 **06-Risk-Treatment-Plan.md** -- Controls per risk, owners, deadlines, gap tracking
@@ -47,10 +47,10 @@
 **Exception-Register/01-Exception-Index.md** -- Approved policy exceptions with expiry and review tracking
 
 **Risk-Framework/Threats/** -- Threat catalogues per asset class
-`1-Information.md`, `2-Processes.md`, `3-Applications.md`, `4-IT-Systems-Physical.md`, `5-IT-Systems-Virtual.md`, `6-Communication-Links.md`, `7-Rooms.md`, `8-Buildings.md`
+`1-Processes.md`, `2-Information.md`, `3-Applications.md`, `4-IT-Systems-Physical.md`, `5-IT-Systems-Virtual.md`, `6-Communication-Links.md`, `7-Rooms.md`, `8-Buildings.md`
 
 **Risk-Framework/Vulnerabilities/** -- Vulnerability catalogues per asset class
-`1-Information.md`, `2-Processes.md`, `3-Applications.md`, `4-IT-Systems-Physical.md`, `5-IT-Systems-Virtual.md`, `6-Communication-Links.md`, `7-Rooms.md`, `8-Buildings.md`
+`1-Processes.md`, `2-Information.md`, `3-Applications.md`, `4-IT-Systems-Physical.md`, `5-IT-Systems-Virtual.md`, `6-Communication-Links.md`, `7-Rooms.md`, `8-Buildings.md`
 
 **Protection-Requirements/** -- Per-asset protection requirement assessments (8 layer folders)
 `1-Information/`, `2-Process/`, `3-Application/`, `4-Physical-IT-System/`, `5-Virtual-IT-System/`, `6-Communication-Connection/`, `7-Room/`, `8-Building/`
