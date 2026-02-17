@@ -1,5 +1,5 @@
 > **Document ID:** CB_POL_L2_07-Organisation
-> **Version:** 00.03.013
+> **Version:** 00.03.014
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.2-5.6, A.5.9-5.11
@@ -93,7 +93,7 @@ Assets sharing an identical security-management profile are consolidated into ta
 
 **Documentation.** Grouped assets are recorded in the asset register with count and included individual objects. The operational detail inventory (serial numbers, licences) is maintained externally (CMDB).
 
-**Traceability chain.** Seamless traceability from process through application, IT system, communication link to room and building shall be maintained. Information types are documented as an attribute of each process and serve as a classification reference (addresses A.5.9). Cross-reference tables in the asset register map the inheritance chain.
+**Traceability chain.** Seamless traceability from process through application, IT system, communication link to room and building shall be maintained. Information types are documented as an attribute of each process and serve as a classification reference (addresses A.5.9). The totality of processed information types determines the sensitivity profile of a process and constitutes the input basis for the protection requirements assessment (C/I). Without documented information types, an adequate assessment of confidentiality and integrity is not possible. Cross-reference tables in the asset register map the inheritance chain.
 
 ## Governance
 
@@ -149,6 +149,7 @@ The procedure for contact with authorities specifies contact points within the c
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.03.014 | 2026-02-17 | Claude (AI) | Traceability chain: normative requirement for documented information types as prerequisite for C/I assessment |
 | 00.03.013 | 2026-02-17 | Claude (AI) | Asset types: PRC as primary type, INF as process attribute; abbreviations aligned (GP→PRC, SYS-P→PIT, SYS-V→VIT, NET→CON, RAUM→ROM, GEB→BLD); traceability chain updated |
 | 00.03.012 | 2026-02-11 | Claude (AI) | Split: Incidents → L2_13, Compliance → L2_14; reduced to Governance + Assets; added Segregation of Duties and Contact with Authorities |
 | 00.03.011 | 2026-02-11 | Claude (AI) | Protection requirements process references: CB_PRC_07 → CB_PRC_13 |

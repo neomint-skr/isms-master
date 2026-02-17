@@ -1,5 +1,5 @@
 > **Document ID:** HB_REG_03-Asset-Register
-> **Version:** 00.02.013
+> **Version:** 00.02.014
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** A.5.9
@@ -63,6 +63,7 @@ The asset inventory maintains the following fields for each asset (addresses A.5
 | Asset owner | Business role (not person) |
 | Asset description | Character, location of the directory |
 | Asset category | Grouping (e.g. "Customer data", "Production systems") |
+| Processed information | Information type IDs (PRC assets only — maps to Information Types reference table) |
 | Personal data | Yes/No |
 | Sensitive customer data | Yes/No |
 | Confidentiality | Normal/High/Very high |
@@ -117,7 +118,9 @@ The mandatory fields are reflected in the category tables below. CIA values are 
 
 ## Information Types (Reference)
 
-Information types are documented as an attribute of each process. This reference table provides a classification overview for ISO A.5.9 conformity.
+The totality of information types processed by a business process constitutes the assessment basis for that process's criticality. Each process in the process table references its information types through the "Processed Information" column, linking operational assets to their information profile. During protection requirements assessment (CB_PRC_13, Step 2), the assessor evaluates the sensitivity profile of all referenced information types against the damage scenarios — the most sensitive information type determines the minimum damage scenario category for confidentiality and integrity.
+
+This reference table is the SSOT for information type classification and ensures conformity with ISO A.5.9.
 
 | ID | Name | Description | Classification | Review cycle |
 |---|---|---|---|---|
@@ -160,6 +163,7 @@ The following tables map relationships between assets. They are the SSOT — in 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.02.014 | 2026-02-17 | Claude (AI) | Information types methodology: argumentative section for INF reference table, "Processed information" added to mandatory fields |
 | 00.02.013 | 2026-02-17 | Claude (AI) | Process-centric restructure: PRC as primary asset type, INF as reference table, section reorder, cross-references reduced from 6 to 5 |
 | 00.02.012 | 2026-02-11 | Claude (AI) | Asset-ID prefixes aligned to risk methodology: GP→PRC, SYS-P→PIT, SYS-V→VIT, NET→CON, ROOM→ROM, BLDG→BLD |
 | 00.02.011 | 2026-02-11 | Claude (AI) | C/I/A scale aligned to Normal/High/Very high (BSI 200-2); process references CB_PRC_07 → CB_PRC_13 |

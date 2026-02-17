@@ -1,5 +1,5 @@
 > **Document ID:** CB_POL_L2_11-Risk-Management
-> **Version:** 00.01.017
+> **Version:** 00.01.018
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1, 8.2, 8.3
@@ -124,7 +124,7 @@ The thresholds (downtime windows, financial amounts) are calibrated to the scale
 
 The methodology follows BSI Standard 200-2 [REF:BSI17, Ch. 8.2.2] and applies to all asset categories in the asset register (HB_REG_03).
 
-**Primary assessment.** Protection requirements are assessed directly for business processes using the damage scenarios defined above. Information types processed by each business process are considered as attributes in the assessment. The assessment determines the original protection requirement values for C, I, and A.
+**Primary assessment.** Protection requirements are assessed directly for business processes using the damage scenarios defined above. Information types processed by each business process must be documented in the asset register (HB_REG_03, column "Processed Information") before the primary assessment commences. Their aggregated sensitivity profile determines the assessment basis for confidentiality and integrity: the assessor evaluates each information type against the damage scenarios, and the most sensitive type sets the minimum category. The assessment determines the original protection requirement values for C, I, and A.
 
 **Inheritance.** Protection requirements are inherited along the dependency chains documented in the cross-reference tables of the asset register: business processes → applications → IT systems → rooms/buildings → communication links. The direction of inheritance follows the data flow and processing dependencies.
 
@@ -415,6 +415,7 @@ The operational exception management workflow is defined in CB_PRC_14-Exception-
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.018 | 2026-02-17 | Claude (AI) | Primary assessment: information types must be documented before assessment, aggregated sensitivity profile as C/I basis |
 | 00.01.017 | 2026-02-17 | Claude (AI) | Process-centric model: PRC as primary assessment layer, INF as process attribute in Phase 2, primary assessment, and assessment scope |
 | 00.01.016 | 2026-02-11 | Claude (AI) | Fix traceability: Operationalized by → — (no L3; PRC refs in See also) |
 | 00.01.015 | 2026-02-11 | Claude (AI) | Major extension: catalog-based risk identification methodology, vulnerability assessment, scenario generation rules, impact derivation from PR, gross/net risk, BIA-to-V derivation, override rules, security measures register (REG_07) |

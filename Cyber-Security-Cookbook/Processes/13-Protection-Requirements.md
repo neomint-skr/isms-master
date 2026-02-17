@@ -1,5 +1,5 @@
 > **Document ID:** CB_PRC_13-Protection-Requirements
-> **Version:** 00.01.003
+> **Version:** 00.01.004
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1, A.5.9
@@ -44,7 +44,7 @@ The IS-Coordinator identifies the assets to be assessed from HB_REG_03. The scop
 
 ### 2. Primary assessment — business processes
 
-For each business process, the asset owner assesses confidentiality, integrity, and availability individually using the damage scenarios defined in CB_POL_L2_11 (Protection Requirements Analysis). Information types processed by each business process are considered as attributes in the assessment. The assessment uses "What if?" analysis: for each core value, the relevant damage scenario category (Normal / High / Very high) is determined based on the most severe plausible impact. The rationale for each rating is documented.
+For each business process, the asset owner assesses confidentiality, integrity, and availability individually using the damage scenarios defined in CB_POL_L2_11 (Protection Requirements Analysis). Information types processed by each business process are considered as attributes in the assessment. The assessor reviews the information types documented in the "Processed Information" column of HB_REG_03 and evaluates their aggregated sensitivity profile against the damage scenarios: a process that handles highly sensitive information types (e.g. personal data, trade secrets) achieves at minimum the damage scenario category corresponding to the most sensitive information type. If no information types are documented for a process, the assessment is suspended until delivery through CB_PRC_12 (Step 3). The assessment uses "What if?" analysis: for each core value, the relevant damage scenario category (Normal / High / Very high) is determined based on the most severe plausible impact. The rationale for each rating is documented.
 
 **Availability derivation for business processes:** For process assets, the availability (V) protection requirement is not assessed via damage scenarios but derived from the Business Impact Analysis (BIA). BIA data is sourced from HB_REG_04 (BIA Register). The BIA Tier maps to the availability protection requirement as follows (mapping table defined in CB_POL_L2_11):
 
@@ -139,6 +139,7 @@ Assets with a protection requirement of High or Very high in at least one core v
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.004 | 2026-02-17 | Claude (AI) | Step 2: operational guidance for information type evaluation, sensitivity profile as minimum category, suspension rule for missing INF data |
 | 00.01.003 | 2026-02-17 | Claude (AI) | Information layer removed from result folders, layers renumbered 1-7 |
 | 00.01.002 | 2026-02-17 | Claude (AI) | Process-centric model: PRC as primary assessment, INF as attribute, layer 1-Information marked legacy, cross-ref simplified |
 | 00.01.001 | 2026-02-11 | Claude (AI) | Added BIA-to-V derivation for process assets, override documentation for cumulation/distribution, layer-specific PR record paths, RA file creation in handoff step |

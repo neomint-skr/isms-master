@@ -1,9 +1,9 @@
 > **Document ID:** CB_PRC_12-Asset-Management
-> **Version:** 00.01.009
+> **Version:** 00.01.010
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.9
-> **Last modified:** 2026-02-11
+> **Last modified:** 2026-02-17
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -52,6 +52,8 @@ The asset receives a unique, stable asset ID. The ID does not change over the li
 
 The asset is recorded with the defined mandatory attributes in the appropriate asset register (HB_REG_03).
 
+For process assets (PRC), the asset owner additionally identifies the information types processed by the business process and documents their IDs in the "Processed Information" column of HB_REG_03. The IDs reference the Information Types reference table in HB_REG_03. If a new information type is identified that does not yet exist in the reference table, it is added there first.
+
 ### 4. Relationship mapping
 
 Relevant relationships to other assets are documented through the cross-reference tables in HB_REG_03. Additionally, the denormalized relationship columns in the asset table are updated.
@@ -81,6 +83,7 @@ Changes are recorded on an event-driven basis. Decommissioned assets are marked 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.010 | 2026-02-17 | Claude (AI) | Step 3: sub-step for PRC assets to document information type IDs in "Processed Information" column |
 | 00.01.009 | 2026-02-11 | Claude (AI) | Add Step 7 (protection requirements trigger to CB_PRC_13), renumber maintenance to Step 8, fix process reference |
 | 00.01.008 | 2026-02-11 | SKR | Grouping evaluation sub-step added to identification phase |
 | 00.01.007 | 2026-02-09 | CISO | Aligned role terminology |
