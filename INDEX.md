@@ -52,11 +52,11 @@
 **Risk-Framework/Vulnerabilities/** -- Vulnerability catalogues per asset class
 `1-Processes.md`, `2-Information.md`, `3-Applications.md`, `4-IT-Systems-Physical.md`, `5-IT-Systems-Virtual.md`, `6-Communication-Links.md`, `7-Rooms.md`, `8-Buildings.md`
 
-**Protection-Requirements/** -- Per-asset protection requirement assessments (8 layer folders)
-`1-Information/`, `2-Process/`, `3-Application/`, `4-Physical-IT-System/`, `5-Virtual-IT-System/`, `6-Communication-Connection/`, `7-Room/`, `8-Building/`
+**Protection-Requirements/** -- Per-asset protection requirement assessments (7 layer folders)
+`1-Process/`, `2-Application/`, `3-Physical-IT-System/`, `4-Virtual-IT-System/`, `5-Communication-Connection/`, `6-Room/`, `7-Building/`
 
-**Risk-Assessments/** -- Per-asset risk assessments (8 layer folders)
-`1-Information/`, `2-Process/`, `3-Application/`, `4-Physical-IT-System/`, `5-Virtual-IT-System/`, `6-Communication-Connection/`, `7-Room/`, `8-Building/`
+**Risk-Assessments/** -- Per-asset risk assessments (7 layer folders)
+`1-Process/`, `2-Application/`, `3-Physical-IT-System/`, `4-Virtual-IT-System/`, `5-Communication-Connection/`, `6-Room/`, `7-Building/`
 
 **Security-Measures/** -- Security measure evidence and implementation records
 

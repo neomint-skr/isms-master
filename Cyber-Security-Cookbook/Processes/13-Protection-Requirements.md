@@ -1,5 +1,5 @@
 > **Document ID:** CB_PRC_13-Protection-Requirements
-> **Version:** 00.01.002
+> **Version:** 00.01.003
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1, A.5.9
@@ -101,14 +101,13 @@ Layer subdirectories:
 
 | Folder | Asset Layer |
 |---|---|
-| 1-Information | Information assets (legacy — no new assessments) |
-| 2-Process | Business processes |
-| 3-Application | Applications |
-| 4-Physical-IT-System | Physical IT systems |
-| 5-Virtual-IT-System | Virtual IT systems |
-| 6-Communication-Connection | Communication links |
-| 7-Room | Rooms |
-| 8-Building | Buildings |
+| 1-Process | Business processes |
+| 2-Application | Applications |
+| 3-Physical-IT-System | Physical IT systems |
+| 4-Virtual-IT-System | Virtual IT systems |
+| 5-Communication-Connection | Communication links |
+| 6-Room | Rooms |
+| 7-Building | Buildings |
 
 The assessment record includes the rationale per core value, inheritance chains, cumulation/distribution effects (including any override documentation from Steps 2–6), and conclusions.
 
@@ -140,6 +139,7 @@ Assets with a protection requirement of High or Very high in at least one core v
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.003 | 2026-02-17 | Claude (AI) | Information layer removed from result folders, layers renumbered 1-7 |
 | 00.01.002 | 2026-02-17 | Claude (AI) | Process-centric model: PRC as primary assessment, INF as attribute, layer 1-Information marked legacy, cross-ref simplified |
 | 00.01.001 | 2026-02-11 | Claude (AI) | Added BIA-to-V derivation for process assets, override documentation for cumulation/distribution, layer-specific PR record paths, RA file creation in handoff step |
 | 00.01.000 | 2026-02-11 | Claude (AI) | Initial version: 9-step process based on BSI 200-2 Ch. 8.2 |
