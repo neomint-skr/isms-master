@@ -1,9 +1,9 @@
 > **Document ID:** CB_AWR_01-Awareness-Fundamentals
-> **Version:** 00.01.006
+> **Version:** 00.01.007
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.17, A.6.3, A.6.8
-> **Last modified:** 2026-02-11
+> **Last modified:** 2026-02-17
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -13,7 +13,7 @@
 
 ## Summary
 
-Phishing, weak passwords, and unreported incidents cause most security breaches. This guide teaches you to spot threats, protect your accounts, and report incidents. Your security awareness directly protects the organization's information assets. Without this knowledge, everyday mistakes quickly become serious security incidents.
+Phishing, weak passwords, and unreported incidents cause most security breaches. This guide teaches you to spot threats, protect your accounts, and report incidents. Your security awareness directly protects the organization's business processes and information. Without this knowledge, everyday mistakes quickly become serious security incidents.
 
 ## Objective and Scope
 
@@ -142,6 +142,7 @@ Every employee must report security incidents without delay (addresses A.6.8). F
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.007 | 2026-02-17 | Claude (AI) | Summary: "information assets" → "business processes and information" |
 | 00.01.006 | 2026-02-11 | CISO | Added see-also cross-references |
 | 00.01.005 | 2026-02-11 | CISO | Populated summary, phishing, password hygiene, and incident reporting sections |
 | 00.01.004 | 2026-02-09 | CISO | Aligned role terminology |

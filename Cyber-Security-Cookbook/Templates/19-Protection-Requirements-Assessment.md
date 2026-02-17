@@ -9,7 +9,8 @@
 | Document ID | CB_TPL_19-Protection-Requirements-Assessment |
 | Asset ID (REG_03) | |
 | Asset name | |
-| Asset type | [INF — Information / PRC — Process / APP — Application / PIT — Physical IT System / VIT — Virtual IT System / CON — Communication Connection / ROM — Room / BLD — Building] |
+| Asset type | [PRC — Process / APP — Application / PIT — Physical IT System / VIT — Virtual IT System / CON — Communication Connection / ROM — Room / BLD — Building] |
+| Processed information (PRC only) | [Information type IDs from reference table, or n/a] |
 | Asset owner | |
 | Assessor | |
 | Assessment date | |
@@ -95,4 +96,5 @@
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.00.002 | 2026-02-17 | Claude (AI) | Process-centric: INF removed from asset type list, PRC first, added "Processed information" field |
 | 00.00.001 | 2026-02-11 | Claude | Add BIA Derivation block, Override Documentation block; update asset type prefixes (PRC, PIT, VIT, CON, ROM, BLD) |

@@ -1,9 +1,9 @@
 > **Document ID:** CB_POL_L2_10-Human-Resources
-> **Version:** 00.01.011
+> **Version:** 00.01.012
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.11, A.5.34, A.6.1-6.8
-> **Last modified:** 2026-02-11
+> **Last modified:** 2026-02-17
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -54,7 +54,7 @@ Employment contracts and agreements with contractors must include clauses on inf
 |---|---|
 | 1 | Obligation to sign a confidentiality or non-disclosure agreement before access to confidential information |
 | 2 | Legal duties and rights, in particular copyright and data protection regulations |
-| 3 | Responsibilities for classification and management of information and information assets |
+| 3 | Responsibilities for classification and management of information and associated assets |
 | 4 | Measures for non-compliance with security requirements in accordance with the disciplinary process |
 | 5 | Reference to the IS policy (CB_POL_L1_01) and all topic-specific L2 standards |
 | 6 | Continuing obligations after termination of the relationship, in particular confidentiality for [post-employment period] |
@@ -123,12 +123,12 @@ Upon termination or change of employment, IS-related responsibilities must be ha
 |---|---|
 | 1 | Identify all IS responsibilities and obligations of the departing person |
 | 2 | Transfer open responsibilities to a named successor |
-| 3 | Return all information assets, devices, and storage media; document the return |
+| 3 | Return all organizational assets, devices, and storage media; document the return |
 | 4 | Deactivate or change access credentials, MFA tokens, and system permissions |
 | 5 | Remove the person from all systems, distribution lists, and databases |
 | 6 | Notify affected internal and external contacts of the changes |
 
-**Return of information assets:** Upon termination or change of employment, all organizational assets must be returned (addresses A.5.11). This includes physical devices (laptops, tokens, access cards), storage media, documents, and any copies of confidential information. The return must be documented and confirmed by the line manager. Access credentials and digital accounts must be revoked upon asset return [REF:DG25-MA, Ch. 5.2].
+**Return of organizational assets:** Upon termination or change of employment, all organizational assets must be returned (addresses A.5.11). This includes physical devices (laptops, tokens, access cards), storage media, documents, and any copies of confidential information. The return must be documented and confirmed by the line manager. Access credentials and digital accounts must be revoked upon asset return [REF:DG25-MA, Ch. 5.2].
 
 Continuing obligations — in particular confidentiality and non-disclosure — must be contractually governed and reiterated to the departing person [REF:DG25-SC, Kap. 2.3]. The procedure applies equally to external personnel and service providers. Operational implementation is described in CB_POL_L3_01.
 
@@ -175,6 +175,7 @@ Employees are obligated to report detected or suspected IS events and data prote
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.012 | 2026-02-17 | Claude (AI) | Terminology: "information assets" → "organizational assets" / "associated assets" (ISO-aligned) |
 | 00.01.011 | 2026-02-11 | CISO | Added NDA lifecycle (A.6.6), tech-team training plan (Cl. 7.2), asset return at offboarding (A.5.11) |
 | 00.01.008 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.007 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |
