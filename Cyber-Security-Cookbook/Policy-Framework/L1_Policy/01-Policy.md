@@ -1,9 +1,9 @@
 > **Document ID:** CB_POL_L1_01-Policy
-> **Version:** 01.00.002
+> **Version:** 01.00.003
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.1
-> **Last modified:** 2026-02-11
+> **Last modified:** 2026-02-17
 > **Approval:** CEO, 2026-02-11
 > **Review cycle:** Annual
 
@@ -17,7 +17,7 @@ Information security requires strategic commitment from top management to be eff
 
 ## Objective and Scope
 
-**Objective:** Information constitutes a business-critical asset of [Organization]. Without a strategic commitment by top management to information security, the foundation for all further controls and the ISMS is missing.
+**Objective:** Business processes and the information they handle constitute a business-critical asset of [Organization]. Without a strategic commitment by top management to information security, the foundation for all further controls and the ISMS is missing.
 
 This policy defines six principles (P1-P6) that serve as the strategic framework for all IS decisions. It articulates top management commitment and establishes the four-tier policy framework (L1>L2>L3>L4).
 
@@ -54,7 +54,7 @@ Top management enables other management functions to demonstrate their leadershi
 
 ## Principles
 
-**P1 — Protection:** [Organization] ensures confidentiality, integrity, and availability of all information assets. Controls are aligned with the criticality of the respective information.
+**P1 — Protection:** [Organization] ensures confidentiality, integrity, and availability of all business processes and the information they handle. Controls are aligned with the criticality of the respective assets.
 
 **P2 — Compliance:** Legal, contractual, and normative information security requirements are systematically identified and fulfilled.
 
@@ -101,6 +101,7 @@ Violations of this policy and its subordinate standards may result in disciplina
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 01.00.003 | 2026-02-17 | Claude (AI) | Process-centric asset model: Objective and P1 aligned — processes as primary asset, information as attribute |
 | 01.00.002 | 2026-02-11 | CISO | Information Security Objectives section, Summary, Allocation Matrix updated with L2_13/L2_14 |
 | 01.00.001 | 2026-02-11 | CISO | Non-compliance consequences clause added |
 | 01.00.000 | 2026-02-11 | CEO | Formal approval of Information Security Policy |
