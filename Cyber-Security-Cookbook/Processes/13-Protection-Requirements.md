@@ -1,9 +1,9 @@
 > **Document ID:** CB_PRC_13-Protection-Requirements
-> **Version:** 00.01.001
+> **Version:** 00.01.002
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1, A.5.9
-> **Last modified:** 2026-02-11
+> **Last modified:** 2026-02-17
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -42,9 +42,9 @@ The process is triggered by:
 
 The IS-Coordinator identifies the assets to be assessed from HB_REG_03. The scope includes all newly registered assets, assets flagged for review, and assets affected by material changes. Assets already assessed and unchanged since last review are excluded.
 
-### 2. Primary assessment — information and business processes
+### 2. Primary assessment — business processes
 
-For each information asset and business process, the asset owner assesses confidentiality, integrity, and availability individually using the damage scenarios defined in CB_POL_L2_11 (Protection Requirements Analysis). The assessment uses "What if?" analysis: for each core value, the relevant damage scenario category (Normal / High / Very high) is determined based on the most severe plausible impact. The rationale for each rating is documented.
+For each business process, the asset owner assesses confidentiality, integrity, and availability individually using the damage scenarios defined in CB_POL_L2_11 (Protection Requirements Analysis). Information types processed by each business process are considered as attributes in the assessment. The assessment uses "What if?" analysis: for each core value, the relevant damage scenario category (Normal / High / Very high) is determined based on the most severe plausible impact. The rationale for each rating is documented.
 
 **Availability derivation for business processes:** For process assets, the availability (V) protection requirement is not assessed via damage scenarios but derived from the Business Impact Analysis (BIA). BIA data is sourced from HB_REG_04 (BIA Register). The BIA Tier maps to the availability protection requirement as follows (mapping table defined in CB_POL_L2_11):
 
@@ -63,7 +63,7 @@ For complex business processes with High or Very high protection requirements, d
 
 ### 3. Inheritance — applications
 
-The protection requirements of applications are derived from the business processes and information they support. The cross-reference tables in HB_REG_03 (Information <> Processes, Processes <> Applications) provide the dependency chains. The maximum principle applies: the highest value from any supported process determines the application's protection requirement per core value.
+The protection requirements of applications are derived from the business processes and information they support. The cross-reference table Processes <> Applications in HB_REG_03 provides the dependency chains. The maximum principle applies: the highest value from any supported process determines the application's protection requirement per core value.
 
 Cumulation effects are evaluated where an application supports multiple processes with Normal protection requirements.
 
@@ -101,7 +101,7 @@ Layer subdirectories:
 
 | Folder | Asset Layer |
 |---|---|
-| 1-Information | Information assets |
+| 1-Information | Information assets (legacy — no new assessments) |
 | 2-Process | Business processes |
 | 3-Application | Applications |
 | 4-Physical-IT-System | Physical IT systems |
@@ -140,5 +140,6 @@ Assets with a protection requirement of High or Very high in at least one core v
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.002 | 2026-02-17 | Claude (AI) | Process-centric model: PRC as primary assessment, INF as attribute, layer 1-Information marked legacy, cross-ref simplified |
 | 00.01.001 | 2026-02-11 | Claude (AI) | Added BIA-to-V derivation for process assets, override documentation for cumulation/distribution, layer-specific PR record paths, RA file creation in handoff step |
 | 00.01.000 | 2026-02-11 | Claude (AI) | Initial version: 9-step process based on BSI 200-2 Ch. 8.2 |
