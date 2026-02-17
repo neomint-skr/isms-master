@@ -1,5 +1,7 @@
 # Information — Vulnerability Catalogue
 
+> Supplementary catalogue. Information types are modelled as an attribute of business processes (see 1-Processes). This catalogue is retained for ISO A.5.9 conformity and for vulnerabilities specific to information handling (classification, labelling, transfer).
+
 > Asset-specific vulnerabilities for the **information** asset class, grouped by control domain.
 > Vulnerability IDs: INF-V01–INF-V43. Domain and aspect tags enable cross-referencing with the threat catalogue.
 

@@ -1,5 +1,7 @@
 # Information — Threat Catalogue
 
+> Supplementary catalogue. Information types are modelled as an attribute of business processes (see 1-Processes). This catalogue is retained for ISO A.5.9 conformity and for threats specific to information handling (classification, labelling, transfer).
+
 > BSI elementary threats (G 0.1–G 0.47) assessed for relevance to the **information** asset class.
 > Methodology: [REF:BSI17, Ch. 8]. Only threats with direct control relevance at this asset layer are marked as relevant.
 
