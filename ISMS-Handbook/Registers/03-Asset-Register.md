@@ -1,9 +1,9 @@
 > **Document ID:** HB_REG_03-Asset-Register
-> **Version:** 00.02.012
+> **Version:** 00.02.013
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** A.5.9
-> **Last modified:** 2026-02-11
+> **Last modified:** 2026-02-17
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -13,7 +13,7 @@
 
 ## Summary
 
-Protection requires knowledge — only what is inventoried can be assessed and protected. This register documents all ISMS-relevant assets in 8 categories with 6 cross-reference tables for dependencies. It provides the data basis for protection requirements analysis, risk analysis and business impact assessment. Without a complete asset register, risk management lacks its foundation.
+Protection requires knowledge — only what is inventoried can be assessed and protected. This register documents all ISMS-relevant assets in 8 categories with 5 cross-reference tables for dependencies. It provides the data basis for protection requirements analysis, risk analysis and business impact assessment. Without a complete asset register, risk management lacks its foundation.
 
 ## Objective and Scope
 
@@ -34,20 +34,20 @@ The cross-reference tables (section below) are the **SSOT for relationships** be
 
 The Confidentiality (C), Integrity (I) and Availability (A) columns are structural placeholders. They are populated through the protection requirements assessment (CB_PRC_13). BCM-related recovery data (RTO, RPO, MTD, continuity plans) is maintained in the dedicated BIA Register (HB_REG_04).
 
-Grouped target objects (Zielobjekte) replace individual entries in the ISMS register when assets share an identical security-management profile. The operational detail inventory (serial numbers, licences, individual configurations) is maintained externally in the CMDB. Cross-reference tables provide seamless traceability from information through process, application, IT system, communication link to room and building.
+Grouped target objects (Zielobjekte) replace individual entries in the ISMS register when assets share an identical security-management profile. The operational detail inventory (serial numbers, licences, individual configurations) is maintained externally in the CMDB. Cross-reference tables provide seamless traceability from process through application, IT system, communication link to room and building. Information types are documented as an attribute of each process and serve as a classification reference.
 
 ## Asset Categories
 
 | Abbreviation | Type | Description |
 |---|---|---|
-| INF | Information | Datasets, documents, records |
-| PRC | Processes | Core processes with critical information |
+| PRC | Processes | Business processes — primary asset type |
 | APP | Applications | Software, SaaS services, databases |
 | PIT | Physical IT Systems | Servers, endpoints, physical hardware |
 | VIT | Virtual IT Systems | Virtual machines, containers |
 | CON | Communication Links | Network connections, segments, communication paths |
 | ROM | Rooms | Server rooms, offices, technical rooms |
 | BLD | Buildings | Sites, buildings |
+| INF | Information Types | Attribute of processes — classification reference table |
 
 ## Inventory Fields
 
@@ -57,7 +57,7 @@ The asset inventory maintains the following fields for each asset (addresses A.5
 
 | Field | Description |
 |---|---|
-| Asset type | Primary asset (information) or secondary asset (hardware, software, service, person) |
+| Asset type | Primary asset (process) or secondary asset (hardware, software, service, person) |
 | Asset name | Designation |
 | Asset ID | Unique identifier (abbreviation + sequential number) |
 | Asset owner | Business role (not person) |
@@ -80,14 +80,9 @@ The asset inventory maintains the following fields for each asset (addresses A.5
 
 The mandatory fields are reflected in the category tables below. CIA values are populated through the protection requirements assessment (CB_PRC_13).
 
-## Information
-
-| ID | Name | Description | Count | Includes | Owner | Process(es) | C | I | A |
-|---|---|---|---|---|---|---|---|---|---|
-
 ## Processes
 
-| ID | Name | Description | Count | Includes | Responsible | Information | Applications | C | I | A |
+| ID | Name | Description | Count | Includes | Responsible | Processed Information | Applications | C | I | A |
 |---|---|---|---|---|---|---|---|---|---|---|
 
 ## Applications
@@ -120,14 +115,16 @@ The mandatory fields are reflected in the category tables below. CIA values are 
 | ID | Name | Description | Count | Includes | Responsible | C | I | A |
 |---|---|---|---|---|---|---|---|---|
 
+## Information Types (Reference)
+
+Information types are documented as an attribute of each process. This reference table provides a classification overview for ISO A.5.9 conformity.
+
+| ID | Name | Description | Classification | Review cycle |
+|---|---|---|---|---|
+
 ## Cross-References
 
 The following tables map relationships between assets. They are the SSOT — in case of conflict with the quick-reference columns in the asset tables, these tables prevail.
-
-### Information <> Processes
-
-| Information ID | Process ID | Processing type |
-|---|---|---|
 
 ### Processes <> Applications
 
@@ -163,6 +160,7 @@ The following tables map relationships between assets. They are the SSOT — in 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.02.013 | 2026-02-17 | Claude (AI) | Process-centric restructure: PRC as primary asset type, INF as reference table, section reorder, cross-references reduced from 6 to 5 |
 | 00.02.012 | 2026-02-11 | Claude (AI) | Asset-ID prefixes aligned to risk methodology: GP→PRC, SYS-P→PIT, SYS-V→VIT, NET→CON, ROOM→ROM, BLDG→BLD |
 | 00.02.011 | 2026-02-11 | Claude (AI) | C/I/A scale aligned to Normal/High/Very high (BSI 200-2); process references CB_PRC_07 → CB_PRC_13 |
 | 00.02.010 | 2026-02-11 | SKR | Asset grouping schema: Count + Includes columns in all 8 tables, Criticality column in Communication Links, data model note for Zielobjekte |
