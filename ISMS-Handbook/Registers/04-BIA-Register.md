@@ -1,9 +1,9 @@
 > **Document ID:** HB_REG_04-BIA-Register
-> **Version:** 00.01.004
+> **Version:** 00.01.005
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** A.5.29-5.30
-> **Last modified:** 2026-02-11
+> **Last modified:** 2026-02-18
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -51,8 +51,8 @@ The following tier model is derived from CB_POL_L2_06-Business-Continuity. It go
 
 The following table records the BIA evaluation results for each assessed asset. Asset IDs reference the asset register (HB_REG_03). Tier assignments determine applicable recovery and backup requirements per the tier model above.
 
-| Asset ID | Name | Disruption impact | Tier | RTO (h) | RPO (h) | MTD (h) | Recovery priority | Derived V |
-|---|---|---|---|---|---|---|---|---|
+| Asset ID | Name | Disruption impact | Tier | RTO (h) | RPO (h) | MTD (h) | Recovery priority | Derived V | Rationale | Date | Owner | Approval status |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
 
 ## Continuity Plan Register
 
@@ -80,6 +80,7 @@ The following table tracks IT continuity plans required by CB_POL_L2_06-Business
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.005 | 2026-02-18 | Claude (AI) | Add governance columns (Rationale, Date, Owner, Approval status) to BIA assessment table |
 | 00.01.004 | 2026-02-11 | Claude (AI) | Register renumbered for information-flow order (formerly no. 10) |
 | 00.01.003 | 2026-02-11 | Claude (AI) | Added Derived V column (Tier-to-protection-requirement mapping) to BIA Assessment table and Key section |
 | 00.01.002 | 2026-02-10 | Claude (AI) | Remove Responsibilities section; roles consolidated in CLS 5.3 |

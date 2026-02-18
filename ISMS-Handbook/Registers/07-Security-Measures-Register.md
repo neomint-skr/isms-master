@@ -1,9 +1,9 @@
 > **Document ID:** HB_REG_07-Security-Measures-Register
-> **Version:** 00.01.001
+> **Version:** 00.01.002
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** A.5-A.8, Clause 6.1.3
-> **Last modified:** 2026-02-11
+> **Last modified:** 2026-02-18
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -35,30 +35,36 @@ Measure definitions are derived from the risk treatment plan (HB_REG_06) and ali
 | Type | Preventive (reduces likelihood), detective (enables detection), or corrective (reduces impact after occurrence) |
 | Status | Planned (identified, not yet started), In implementation (deployment active), Implemented (operational), Verified (effectiveness confirmed through review) |
 | Gap | Scenario in the risk register with no or insufficient measure coverage — requires treatment planning |
+| Baseline | `Yes` = measure is part of the baseline control set for assets with Normal PR; `No` = risk-treatment-specific |
+| Mitigates | Risk scenario IDs (SC-xxx) this measure addresses |
+| Reduction_L | Likelihood reduction (integer 0–3) applied when this measure is effective |
+| Reduction_Impact | Impact reduction (integer 0–3) applied when this measure is effective |
+
+The Reduction fields are used for deterministic net risk calculation as defined in CB_POL_L2_11 (Deterministic Net Risk Reduction). The Baseline flag determines whether a measure is included in the baseline control set for assets with Normal protection requirements. Mitigates links measures to specific risk scenarios in HB_REG_05.
 
 ## Organizational Controls (A.5)
 
-| SM-ID | Title | Annex A ref | Type | Description | Owner | Status | Evidence |
-|---|---|---|---|---|---|---|---|
-| [SM-0001] | [Title] | [A.5.x] | [Preventive] | [Description] | [Role] | [Planned] | [Link] |
+| SM-ID | Title | Annex A ref | Type | Description | Owner | Status | Evidence | Baseline | Mitigates | Reduction_L | Reduction_Impact |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| [SM-0001] | [Title] | [A.5.x] | [Preventive] | [Description] | [Role] | [Planned] | [Link] | [Yes/No] | [SC-IDs] | [0-3] | [0-3] |
 
 ## People Controls (A.6)
 
-| SM-ID | Title | Annex A ref | Type | Description | Owner | Status | Evidence |
-|---|---|---|---|---|---|---|---|
-| [SM-0001] | [Title] | [A.6.x] | [Preventive] | [Description] | [Role] | [Planned] | [Link] |
+| SM-ID | Title | Annex A ref | Type | Description | Owner | Status | Evidence | Baseline | Mitigates | Reduction_L | Reduction_Impact |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| [SM-0001] | [Title] | [A.6.x] | [Preventive] | [Description] | [Role] | [Planned] | [Link] | [Yes/No] | [SC-IDs] | [0-3] | [0-3] |
 
 ## Physical Controls (A.7)
 
-| SM-ID | Title | Annex A ref | Type | Description | Owner | Status | Evidence |
-|---|---|---|---|---|---|---|---|
-| [SM-0001] | [Title] | [A.7.x] | [Preventive] | [Description] | [Role] | [Planned] | [Link] |
+| SM-ID | Title | Annex A ref | Type | Description | Owner | Status | Evidence | Baseline | Mitigates | Reduction_L | Reduction_Impact |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| [SM-0001] | [Title] | [A.7.x] | [Preventive] | [Description] | [Role] | [Planned] | [Link] | [Yes/No] | [SC-IDs] | [0-3] | [0-3] |
 
 ## Technological Controls (A.8)
 
-| SM-ID | Title | Annex A ref | Type | Description | Owner | Status | Evidence |
-|---|---|---|---|---|---|---|---|
-| [SM-0001] | [Title] | [A.8.x] | [Preventive] | [Description] | [Role] | [Planned] | [Link] |
+| SM-ID | Title | Annex A ref | Type | Description | Owner | Status | Evidence | Baseline | Mitigates | Reduction_L | Reduction_Impact |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| [SM-0001] | [Title] | [A.8.x] | [Preventive] | [Description] | [Role] | [Planned] | [Link] | [Yes/No] | [SC-IDs] | [0-3] | [0-3] |
 
 ## Measure Effectiveness Review
 
@@ -78,5 +84,6 @@ Measure definitions are derived from the risk treatment plan (HB_REG_06) and ali
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.002 | 2026-02-18 | Claude (AI) | Add Baseline, Mitigates, Reduction_L, Reduction_Impact fields for deterministic net risk calculation |
 | 00.01.001 | 2026-02-11 | Claude (AI) | Register renumbered for information-flow order (formerly no. 12) |
 | 00.01.000 | 2026-02-11 | Claude (AI) | Initial version: security measures register structured by Annex A categories |

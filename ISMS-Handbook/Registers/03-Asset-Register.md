@@ -1,9 +1,9 @@
 > **Document ID:** HB_REG_03-Asset-Register
-> **Version:** 00.02.014
+> **Version:** 00.02.015
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** A.5.9
-> **Last modified:** 2026-02-17
+> **Last modified:** 2026-02-18
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -72,6 +72,7 @@ The asset inventory maintains the following fields for each asset (addresses A.5
 | Review interval | [Monthly / 3 / 6 / 12 months] |
 | Date of last review | Date |
 | Date of next review | Date |
+| PR_Status | Protection requirements status: `complete` / `suspended_missing_INF` / `suspended_missing_BIA` / `pending_approval` |
 
 **Optional field (for assets with availability requirements):**
 
@@ -83,38 +84,38 @@ The mandatory fields are reflected in the category tables below. CIA values are 
 
 ## Processes
 
-| ID | Name | Description | Count | Includes | Responsible | Processed Information | Applications | C | I | A |
-|---|---|---|---|---|---|---|---|---|---|---|
+| ID | Name | Description | Count | Includes | Responsible | Processed Information | Applications | C | I | A | PR_Status |
+|---|---|---|---|---|---|---|---|---|---|---|---|
 
 ## Applications
 
-| ID | Name | Description | Count | Includes | Responsible | Processes | IT Systems | C | I | A |
-|---|---|---|---|---|---|---|---|---|---|---|
+| ID | Name | Description | Count | Includes | Responsible | Processes | IT Systems | C | I | A | PR_Status |
+|---|---|---|---|---|---|---|---|---|---|---|---|
 
 ## Physical IT Systems
 
-| ID | Name | Description | Count | Includes | Responsible | Applications | Room | C | I | A |
-|---|---|---|---|---|---|---|---|---|---|---|
+| ID | Name | Description | Count | Includes | Responsible | Applications | Room | C | I | A | PR_Status |
+|---|---|---|---|---|---|---|---|---|---|---|---|
 
 ## Virtual IT Systems
 
-| ID | Name | Description | Count | Includes | Responsible | Applications | Host system | C | I | A |
-|---|---|---|---|---|---|---|---|---|---|---|
+| ID | Name | Description | Count | Includes | Responsible | Applications | Host system | C | I | A | PR_Status |
+|---|---|---|---|---|---|---|---|---|---|---|---|
 
 ## Communication Links
 
-| ID | Name | Description | Count | Includes | Criticality | Source | Target | Responsible | C | I | A |
-|---|---|---|---|---|---|---|---|---|---|---|---|
+| ID | Name | Description | Count | Includes | Criticality | Source | Target | Responsible | C | I | A | PR_Status |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
 
 ## Rooms
 
-| ID | Designation | Description | Count | Includes | Building | Responsible | C | I | A |
-|---|---|---|---|---|---|---|---|---|---|
+| ID | Designation | Description | Count | Includes | Building | Responsible | C | I | A | PR_Status |
+|---|---|---|---|---|---|---|---|---|---|---|
 
 ## Buildings
 
-| ID | Name | Description | Count | Includes | Responsible | C | I | A |
-|---|---|---|---|---|---|---|---|---|
+| ID | Name | Description | Count | Includes | Responsible | C | I | A | PR_Status |
+|---|---|---|---|---|---|---|---|---|---|
 
 ## Information Types (Reference)
 
@@ -163,6 +164,7 @@ The following tables map relationships between assets. They are the SSOT — in 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.02.015 | 2026-02-18 | Claude (AI) | Add PR_Status field for protection requirements lifecycle tracking |
 | 00.02.014 | 2026-02-17 | Claude (AI) | Information types methodology: argumentative section for INF reference table, "Processed information" added to mandatory fields |
 | 00.02.013 | 2026-02-17 | Claude (AI) | Process-centric restructure: PRC as primary asset type, INF as reference table, section reorder, cross-references reduced from 6 to 5 |
 | 00.02.012 | 2026-02-11 | Claude (AI) | Asset-ID prefixes aligned to risk methodology: GP→PRC, SYS-P→PIT, SYS-V→VIT, NET→CON, ROOM→ROM, BLDG→BLD |
