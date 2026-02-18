@@ -1,9 +1,9 @@
 > **Document ID:** CB_PRC_01-Incident-Management
-> **Version:** 00.01.009
+> **Version:** 00.01.010
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.24-5.28
-> **Last modified:** 2026-02-11
+> **Last modified:** 2026-02-18
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -21,7 +21,7 @@ Information security incidents can disrupt business operations and compromise se
 
 This process defines the workflow from incident reporting through classification and escalation to post-incident review (lessons learned). It ensures that every incident is documented, assessed, and treated appropriately.
 
-The process operationalizes the requirements from CB_POL_L2_07-Organization (incident section). Relevant incidents are recorded as nonconformities in HB_REG_12 and tracked via CB_PRC_10.
+The process operationalizes the requirements from CB_POL_L2_13-Incident-and-Threat. Relevant incidents are recorded as nonconformities in HB_REG_12 and tracked via CB_PRC_10.
 
 **Scope:** All IS incidents and suspected incidents within the ISMS scope. Triggers: incident report by employees, automated alerts, or external notifications.
 
@@ -252,6 +252,7 @@ The organization establishes procedures for the identification, collection, acqu
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.010 | 2026-02-18 | CISO | Driver reference: L2_07 → L2_13 (incidents split to dedicated standard; traceability fix) |
 | 00.01.009 | 2026-02-11 | Claude (AI) | Clarification: exception events (incident classification) vs. policy exceptions (CB_PRC_14) (merge from retorio) |
 | 00.01.008 | 2026-02-11 | CISO | Added: NIS2 notification obligations, GDPR risk assessment for data subjects, breach notification form references (TPL_09), IRM deputy training requirements, incident prioritisation (H/M/L) (gap closure batch-08/13) |
 | 00.01.007 | 2026-02-11 | CISO | Populated TODO sections: Reporting (channels, PII qualification), Escalation (severity matrix, GDPR Art. 33/34), Response (IRM team, 4-phase approach), Lessons Learned (review process, root cause analysis), Summary |
