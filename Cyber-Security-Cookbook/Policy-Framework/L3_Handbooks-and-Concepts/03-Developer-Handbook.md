@@ -1,9 +1,9 @@
 > **Document ID:** CB_POL_L3_03-Developer-Handbook
-> **Version:** 00.01.008
+> **Version:** 00.01.009
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.8.25-8.29, A.8.31-8.33
-> **Last modified:** 2026-02-11
+> **Last modified:** 2026-02-18
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -17,7 +17,7 @@ Insecure code is one of the most frequent root causes of security incidents in s
 
 ## Objective and Scope
 
-**Standard reference:** CB_POL_L2_04-Secure-Development
+**Standard reference:** CB_POL_L2_04, CB_POL_L2_12
 **Condensed by:** —
 
 **Objective:** Security vulnerabilities in software frequently arise from a lack of guidance during the development process. Without practical requirements for secure coding, security testing, and deployment, vulnerabilities only become visible in production.
@@ -207,6 +207,7 @@ Maintain strictly separated development, test, and production environments (addr
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.009 | 2026-02-18 | CISO | Added CB_POL_L2_12 to Standard reference (traceability fix — L2_12 lists L3_03 in Operationalized by) |
 | 00.01.008 | 2026-02-11 | Claude (AI) | SAST risk exception reference to CB_PRC_14 (merge from retorio) |
 | 00.01.007 | 2026-02-11 | CISO | Populated all subject chapters: secure coding, security testing, SDLC, change/deployment management |
 | 00.01.006 | 2026-02-10 | CISO | Added L4 traceability field (Condensed by) |
