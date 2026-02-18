@@ -1,5 +1,5 @@
 > **Document ID:** CB_PRC_13-Protection-Requirements
-> **Version:** 00.01.005
+> **Version:** 00.01.006
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1, A.5.9
@@ -16,8 +16,6 @@
 Assets without assessed protection requirements cannot be prioritized for risk treatment. This process describes the systematic assessment of confidentiality, integrity, and availability requirements for all registered assets — from primary assessment through inheritance to documentation and handoff. It operationalizes the protection requirements analysis defined in CB_POL_L2_11 and feeds assessed values into the asset register. Without this process, risk analysis lacks its input data and control selection remains unsubstantiated.
 
 ## Objective and Scope
-
-**Standard reference:** CB_POL_L2_11
 
 **Objective:** Assets registered in HB_REG_03 require assessed protection requirements before they can enter risk analysis. Without systematic assessment, risk prioritization lacks objective criteria and audit evidence.
 
@@ -143,6 +141,7 @@ Assets with a protection requirement of High or Very high in at least one core v
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.006 | 2026-02-18 | CISO | Removed Standard reference field (L3-only convention; L2_11 link remains in body text) |
 | 00.01.005 | 2026-02-18 | Claude (AI) | BIA-suspend rule and BIA tier reference for availability derivation |
 | 00.01.004 | 2026-02-17 | Claude (AI) | Step 2: operational guidance for information type evaluation, sensitivity profile as minimum category, suspension rule for missing INF data |
 | 00.01.003 | 2026-02-17 | Claude (AI) | Information layer removed from result folders, layers renumbered 1-7 |

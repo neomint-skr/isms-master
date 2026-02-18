@@ -1,5 +1,5 @@
 > **Document ID:** CB_POL_L2_13-Incident-and-Threat
-> **Version:** 00.01.003
+> **Version:** 00.01.004
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.24-5.28, A.5.7
@@ -18,7 +18,7 @@ Information security incidents require a structured approach from detection thro
 ## Objective and Scope
 
 **Policy reference:** P1, P3, P5
-**Operationalized by:** CB_PRC_01-Incident-Management
+**Operationalized by:** —
 
 **Objective:** Information security incidents can cause significant damage if not detected and handled promptly. Without formalized procedures for reporting, assessing, and responding to incidents, the organization cannot minimize impact or learn from events.
 
@@ -87,6 +87,7 @@ The Chief Information Security Officer analyzes collected information and uses t
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.004 | 2026-02-18 | CISO | Reverted Operationalized by to — (PRC is not L3; convention requires L3 IDs only) |
 | 00.01.003 | 2026-02-18 | CISO | Added CB_PRC_01 to Operationalized by (PRC_01 is the primary operationalization; traceability fix) |
 | 00.01.002 | 2026-02-18 | CISO | Added P5 to Policy reference (incidents and lessons-learned drive continual improvement — aligns with L1 allocation matrix) |
 | 00.01.001 | 2026-02-10 | CISO | Added template cross-references |
