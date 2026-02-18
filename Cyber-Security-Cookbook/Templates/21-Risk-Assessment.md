@@ -29,6 +29,8 @@ Vulnerability catalogue: Per vulnerability catalogue for [Layer] (Risk-Framework
 
 Each scenario combines a threat–vulnerability pair with a risk assessment. The Risk Scenario column captures the conditional risk in subjunctive form per CB_POL_L2_11 Scenario Text Template.
 
+**Net risk rule:** Net L and Net I are computed deterministically per CB_POL_L2_11 (Deterministic Net Risk Reduction): `Net_L = max(1, Gross_L − max(Reduction_L))`, `Net_I = max(1, Gross_I − max(Reduction_Impact))`. Reduction values are sourced from HB_REG_07.
+
 **Treatment rule:** When Net Risk is **Low (1-3)**, Treatment is automatically set to **Accept** (risk acceptance by risk owner per CB_POL_L2_11). When Net Risk is **Medium or higher (>= 4)**, the scenario is forwarded to the risk treatment plan (HB_REG_06) for treatment selection by the risk owner.
 
 | SC-ID | Threat (G 0.x) | Vulnerability-ID | Risk Scenario | L | I | Gross | SM-IDs | Net L | Net I | Net Risk | Treatment |
@@ -57,6 +59,6 @@ Each scenario combines a threat–vulnerability pair with a risk assessment. The
 
 Complete vulnerability status for audit trail. Each entry from the asset's vulnerability catalogue is assessed with evidence or rationale.
 
-| Vulnerability-ID | Vulnerability | Status | Evidence/Comment |
-|---|---|---|---|
-| [e.g. PIT-V01] | [Vulnerability description] | [present/not present/unknown/n/a] | [Evidence or rationale] |
+| Vulnerability-ID | Vulnerability | Status | Resolve-by | Evidence/Comment |
+|---|---|---|---|---|
+| [e.g. PIT-V01] | [Vulnerability description] | [present/not present/unknown/n/a] | [YYYY-MM-DD if unknown, else —] | [Evidence or rationale] |

@@ -1,9 +1,9 @@
 > **Document ID:** CB_PRC_13-Protection-Requirements
-> **Version:** 00.01.004
+> **Version:** 00.01.005
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1, A.5.9
-> **Last modified:** 2026-02-17
+> **Last modified:** 2026-02-18
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -56,6 +56,10 @@ For each business process, the asset owner assesses confidentiality, integrity, 
 | 4 | Low | Normal |
 
 Confidentiality and integrity are still assessed via damage scenarios as described above. The BIA-derived availability value takes precedence over a damage-scenario-based availability assessment for process assets.
+
+**BIA-suspend.** If no BIA tier is documented for a process asset in HB_REG_04, the availability (A) assessment is suspended. The `PR_Status` in HB_REG_03 is set to `suspended_missing_BIA`. The assessment resumes once the BIA tier has been assigned. Until then, the availability protection requirement defaults to the inherited value from parent assets — or Normal if no parent provides an availability value.
+
+BIA tier assignment follows the RTO/RPO tier model defined in CB_POL_L2_06 (Business Continuity). The tier-to-availability mapping is defined in CB_POL_L2_11 (Assessment Methodology, BIA-to-availability derivation).
 
 For complex business processes with High or Very high protection requirements, decomposition into sub-processes is evaluated to limit the scope of elevated requirements.
 
@@ -139,6 +143,7 @@ Assets with a protection requirement of High or Very high in at least one core v
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.005 | 2026-02-18 | Claude (AI) | BIA-suspend rule and BIA tier reference for availability derivation |
 | 00.01.004 | 2026-02-17 | Claude (AI) | Step 2: operational guidance for information type evaluation, sensitivity profile as minimum category, suspension rule for missing INF data |
 | 00.01.003 | 2026-02-17 | Claude (AI) | Information layer removed from result folders, layers renumbered 1-7 |
 | 00.01.002 | 2026-02-17 | Claude (AI) | Process-centric model: PRC as primary assessment, INF as attribute, layer 1-Information marked legacy, cross-ref simplified |

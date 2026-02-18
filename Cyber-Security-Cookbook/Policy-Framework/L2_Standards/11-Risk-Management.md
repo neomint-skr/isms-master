@@ -1,9 +1,9 @@
 > **Document ID:** CB_POL_L2_11-Risk-Management
-> **Version:** 00.01.018
+> **Version:** 00.01.019
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1, 8.2, 8.3
-> **Last modified:** 2026-02-17
+> **Last modified:** 2026-02-18
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -170,6 +170,14 @@ The results of the protection requirements analysis determine the further course
 
 **Link to risk analysis.** Assets with a protection requirement of High or Very high in at least one core value require an individual risk analysis as defined in Phase 3 of this standard. Standard controls (IT-Grundschutz baseline) are generally sufficient for assets with Normal protection requirements.
 
+### Baseline Controls for Assets with Normal Protection Requirements
+
+Assets assessed with Normal protection requirements across all core values (C, I, A) do not require an individual risk analysis. Instead, they are protected by the baseline control set defined in the security measures register (HB_REG_07). A security measure qualifies as baseline when its `Baseline` flag is set to `Yes` in HB_REG_07.
+
+The baseline control set corresponds to the IT-Grundschutz basic protection level and covers the minimum security requirements for standard operations. The Statement of Applicability (HB_REG_08) documents the applicability basis for each control as `baseline`, `risk treatment`, or `legal-contractual`.
+
+Baseline controls are reviewed annually as part of the management review cycle. The exception management process (CB_PRC_14) governs deviations from baseline requirements.
+
 ## Risk Analysis
 
 The risk analysis builds on the results of the protection requirements analysis. Assets assessed with a protection requirement of High or Very high in at least one core value (C, I, A) require an individual risk analysis as defined in Phase 3 of this standard (addresses Clause 6.1.2 a).
@@ -238,7 +246,24 @@ The scenario-specific impact is determined as: `Impact(scenario) = max(Baseline_
 
 **Gross risk** is the inherent risk level without considering any existing controls: `Gross risk = Likelihood × Impact`.
 
-**Net risk** accounts for existing security measures (SM-IDs from HB_REG_07) that reduce likelihood and/or impact: `Net risk = Net likelihood × Net impact`. Existing measures are referenced by their SM-ID; their effectiveness determines the reduction applied.
+**Net risk** accounts for existing security measures (SM-IDs from HB_REG_07) that reduce likelihood and/or impact: `Net risk = Net likelihood × Net impact`.
+
+### Deterministic Net Risk Reduction (Binding Rule)
+
+Net risk is computed deterministically from the reduction values recorded in HB_REG_07. Each security measure assigned to a risk scenario specifies two fields:
+
+- **Reduction_L** — Likelihood reduction (integer 0–3)
+- **Reduction_Impact** — Impact reduction (integer 0–3)
+
+The net values are calculated as:
+
+    Net_Likelihood = max(1, Gross_Likelihood − max(Reduction_L of all assigned measures))
+    Net_Impact     = max(1, Gross_Impact − max(Reduction_Impact of all assigned measures))
+    Net_Risk       = Net_Likelihood × Net_Impact
+
+The `max`-based selection (not sum) prevents double counting where multiple measures address the same risk dimension. The floor of 1 ensures that no dimension is reduced below the minimum scale value.
+
+**Gap handling:** When a risk scenario has assigned measures but all reduction values are 0 (e.g. detective-only controls), the net risk equals the gross risk. When a scenario has no assigned measures, it constitutes a gap per the Gap Logic section of the Security Measures Register.
 
 The risk register (HB_REG_05) documents both gross and net risk for each scenario.
 
@@ -270,6 +295,18 @@ For each asset undergoing risk assessment, the vulnerability catalogue of the co
 | not applicable | The vulnerability does not apply to this specific asset | No |
 
 The status `unknown` generates scenarios to prevent false negatives — unassessed vulnerabilities are treated as potential weaknesses until clarified. Evidence or rationale for each status determination is documented.
+
+### Governance for Status Unknown (Binding Rule)
+
+Vulnerabilities with status `unknown` generate risk scenarios (as defined above). To prevent indefinite deferral, each `unknown` status entry must be resolved within a defined timeframe based on the protection requirement of the affected asset:
+
+| Protection requirement | Resolve-by deadline |
+|---|---|
+| Very high | 30 days |
+| High | 60 days |
+| Normal | 90 days |
+
+The resolve-by deadline starts from the date the vulnerability is first assessed as `unknown`. The deadline and target date are documented in the risk assessment record (CB_TPL_21). Upon expiry, the vulnerability status must be updated to `present`, `not present`, or `not applicable` — based on evidence. If the deadline expires without resolution, the vulnerability is escalated to the risk owner and treated as `present` until clarified.
 
 ### Scenario Generation Rules
 
@@ -415,6 +452,7 @@ The operational exception management workflow is defined in CB_PRC_14-Exception-
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.019 | 2026-02-18 | Claude (AI) | Deterministic PR-risk: baseline controls for Normal PR, deterministic net risk reduction formula, unknown-status governance with resolve-by deadlines |
 | 00.01.018 | 2026-02-17 | Claude (AI) | Primary assessment: information types must be documented before assessment, aggregated sensitivity profile as C/I basis |
 | 00.01.017 | 2026-02-17 | Claude (AI) | Process-centric model: PRC as primary assessment layer, INF as process attribute in Phase 2, primary assessment, and assessment scope |
 | 00.01.016 | 2026-02-11 | Claude (AI) | Fix traceability: Operationalized by → — (no L3; PRC refs in See also) |

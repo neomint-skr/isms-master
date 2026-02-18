@@ -1,9 +1,9 @@
 > **Document ID:** CB_PRC_07-Risk-Management
-> **Version:** 00.01.016
+> **Version:** 00.01.017
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1, 8.2, 8.3
-> **Last modified:** 2026-02-13
+> **Last modified:** 2026-02-18
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -27,7 +27,7 @@ Results are documented in HB_REG_05 (Risk Register) and HB_REG_06 (Risk Treatmen
 
 ## Risk assessment
 
-The risk assessment follows a catalogue-driven, six-step workflow (Clause 8.2). Vulnerability catalogues (HB_REG_03, per asset layer) and the threat catalogue (HB_REG_11) provide the systematic input. Additional event-driven sources (incidents, audits, vulnerability advisories) remain valid triggers for ad-hoc risk identification outside the catalogue workflow.
+The risk assessment follows a catalogue-driven, six-step workflow (Clause 8.2). Vulnerability catalogues and threat catalogues are maintained in the risk framework (HB_REG_RF — Risk-Framework/Threats/ and Risk-Framework/Vulnerabilities/). Asset-class-specific catalogues provide threats with relevance flags, vulnerabilities with domain/aspect tags, and threat-relevance matrices. Additional event-driven sources (incidents, audits, vulnerability advisories) remain valid triggers for ad-hoc risk identification outside the catalogue workflow.
 
 ### Step 1 — Scope determination
 
@@ -42,7 +42,7 @@ Additional input sources that may expand the scope:
 
 ### Step 2 — Vulnerability assessment
 
-For each in-scope asset, the CISO or IS-Coordinator works through the vulnerability catalogue of the asset's layer in HB_REG_03. Each vulnerability entry receives a status:
+For each in-scope asset, the CISO or IS-Coordinator works through the vulnerability catalogue of the asset's class in HB_REG_RF. Each vulnerability entry receives a status:
 
 | Status | Meaning |
 |---|---|
@@ -53,11 +53,13 @@ For each in-scope asset, the CISO or IS-Coordinator works through the vulnerabil
 
 For each assessment, a brief evidence statement or comment is documented (e.g. reference to configuration evidence, scan result, or expert judgement). Vulnerabilities with status "unknown" are treated as "present" for the purpose of scenario generation until resolved.
 
+**Resolve-by deadlines.** Each `unknown` vulnerability entry must be resolved within the deadline defined in CB_POL_L2_11 (Governance for Status Unknown): Very high — 30 days, High — 60 days, Normal — 90 days. The resolve-by date is recorded in the risk assessment record (CB_TPL_21). Expired entries without resolution are escalated to the risk owner.
+
 The complete vulnerability assessment is documented in the **Appendix: Vulnerability Assessment** of the risk assessment record (CB_TPL_21). This placement ensures the audit trail is preserved while keeping the risk scenario analysis as the document's focal point.
 
 ### Step 3 — Scenario generation
 
-Risk scenarios are generated systematically from the combination of relevant threats (HB_REG_11) and vulnerabilities with status **present** or **unknown**. A threat–vulnerability pair forms a valid scenario only when the aspect tags are compatible (i.e. the threat's aspect tag matches the vulnerability's aspect tag: C, I, A, or combinations).
+Risk scenarios are generated systematically from the combination of relevant threats (HB_REG_RF) and vulnerabilities with status **present** or **unknown**. The threat-relevance matrix in each catalogue file determines which threats apply to which asset classes. A threat–vulnerability pair forms a valid scenario only when the aspect tags are compatible (i.e. the threat's aspect tag matches the vulnerability's aspect tag: C, I, A, or combinations).
 
 Each scenario receives a unique identifier: `SC-<Asset-ID>-####` (four-digit sequential number per asset). Each scenario includes a two-sentence risk description in subjunctive form per the Scenario Text Template in CB_POL_L2_11: "If [threat] occurs and [vulnerability] exists, this could lead to [impact on affected protection goals] for [asset]." This text is recorded in the Risk Scenario column of the combined risk scenarios table (CB_TPL_21).
 
@@ -72,7 +74,7 @@ For each scenario, the Chief Information Security Officer assesses likelihood an
 The assessment distinguishes:
 
 - **Gross risk:** Risk score without considering implemented controls.
-- **Net risk:** Existing security measures (referenced by SM-ID from HB_REG_07) are identified per scenario. Their mitigating effect on likelihood and/or impact is assessed, yielding the net risk score.
+- **Net risk:** Existing security measures (referenced by SM-ID from HB_REG_07) are identified per scenario. Net risk is computed deterministically per CB_POL_L2_11 (Deterministic Net Risk Reduction): `Net_L = max(1, Gross_L − max(Reduction_L))`, `Net_I = max(1, Gross_I − max(Reduction_Impact))`. Reduction values are sourced from HB_REG_07.
 
 Scenarios with a net risk of **Low (1-3)** automatically receive treatment **Accept** (risk acceptance by risk owner per CB_POL_L2_11 acceptance criteria). Scenarios with net risk **Medium or higher (>= 4)** receive treatment **Treat (→ RTP)** and are forwarded to the risk treatment plan (HB_REG_06) for treatment option selection by the risk owner.
 
@@ -145,10 +147,10 @@ An unscheduled risk assessment is triggered by:
 - HB_CLS_8.2-Risk-Assessment — ISO clause assignment
 - HB_CLS_8.3-Risk-Treatment — ISO clause assignment
 - HB_REG_08-Statement-of-Applicability — Control applicability (SSOT)
-- HB_REG_03-Asset-Register — Asset data, vulnerability catalogues, cross-reference tables
+- HB_REG_03-Asset-Register — Asset data, cross-reference tables
 - HB_REG_05-Risk-Register — Risk entries
 - HB_REG_06-Risk-Treatment-Plan — Treatment plan (SC-ID → SM-ID mapping)
-- HB_REG_11-Threat-Catalogue — Threat catalogue with aspect tags
+- HB_REG_RF — Risk framework (threat and vulnerability catalogues)
 - HB_REG_07-Security-Measures-Catalogue — Security measures (SM-IDs)
 - HB_CLS_5.3-Roles-and-Responsibilities — RACI matrix
 
@@ -156,6 +158,7 @@ An unscheduled risk assessment is triggered by:
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.017 | 2026-02-18 | Claude (AI) | Deterministic PR-risk: HB_REG_11→HB_REG_RF references, unknown resolve-by deadlines, deterministic net risk formula |
 | 00.01.016 | 2026-02-13 | Claude (AI) | Step 4: Treatment column values changed to binary Accept/Treat (→ RTP); specific treatment selection moved to RTP (HB_REG_06) |
 | 00.01.015 | 2026-02-13 | Claude (AI) | Steps 2-4: vulnerability assessment documented in appendix of RA record; scenario text in subjunctive per L2_11 template; auto-accept for Net Risk ≤ 3 |
 | 00.01.014 | 2026-02-11 | Claude (AI) | Restructured risk assessment to 6-step catalogue-driven workflow (vulnerability catalogue, scenario generation, SM-ID linkage); updated risk treatment for HB_REG_07 measure lookup/creation |
