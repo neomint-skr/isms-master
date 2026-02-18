@@ -1,9 +1,9 @@
 > **Document ID:** CB_POL_L3_07-Supplier-Management
-> **Version:** 00.01.006
+> **Version:** 00.01.007
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.19-5.23
-> **Last modified:** 2026-02-10
+> **Last modified:** 2026-02-18
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -13,11 +13,11 @@
 
 ## Summary
 
-Suppliers and cloud providers frequently process sensitive organizational information, directly affecting the security posture. This handbook provides concrete steps for supplier assessment, contract design, supply chain analysis, performance reviews, and cloud evaluation. It operationalizes CB_POL_L2_05-Suppliers-and-Cloud and supports compliance with controls A.5.19 through A.5.23. Without structured assessment and monitoring procedures, third-party risks remain uncontrolled and jeopardize certification.
+Suppliers and cloud providers frequently process sensitive organizational information, directly affecting the security posture. This handbook provides concrete steps for supplier assessment, contract design, supply chain analysis, performance reviews, and cloud evaluation. It operationalizes CB_POL_L2_05-Supplier-and-Cloud and supports compliance with controls A.5.19 through A.5.23. Without structured assessment and monitoring procedures, third-party risks remain uncontrolled and jeopardize certification.
 
 ## Objective and Scope
 
-**Standard reference:** CB_POL_L2_05-Suppliers-and-Cloud
+**Standard reference:** CB_POL_L2_05-Supplier-and-Cloud
 **Condensed by:** —
 
 **Objective:** Collaboration with suppliers and cloud providers requires practical tools for assessment, contract design, and monitoring. Without concrete instructions, the normative requirements of the policy are difficult to implement in day-to-day operations.
@@ -178,7 +178,7 @@ The procurement and use of cloud services requires a systematic security assessm
 
 ## See also
 
-- CB_POL_L2_05-Suppliers-and-Cloud — Policy for supplier relationships and cloud security
+- CB_POL_L2_05-Supplier-and-Cloud — Policy for supplier relationships and cloud security
 - CB_PRC_06-Supplier-Management — Process for supplier assessment and monitoring
 - HB_REG_10-Supplier-Register — Documentation of all supplier relationships and assessments
 - HB_CLS_8.1-Asset-Management — Asset register with supplier references
@@ -188,6 +188,7 @@ The procurement and use of cloud services requires a systematic security assessm
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.007 | 2026-02-18 | CISO | Fixed document ID: Suppliers-and-Cloud → Supplier-and-Cloud (traceability fix) |
 | 00.01.006 | 2026-02-10 | CISO | Added L4 traceability field (Condensed by) |
 | 00.01.005 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.004 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |
