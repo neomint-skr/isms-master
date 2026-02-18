@@ -4,9 +4,6 @@
     "deny": [
       "Read(./.env)",
       "Read(./.env.*)",
-      "Read(./.memory/**)",
-      "Edit(./.memory/**)",
-      "Write(./.memory/**)",
       "Edit(./INDEX.md)",
       "Write(./INDEX.md)"
     ]
@@ -15,18 +12,6 @@
     "SessionStart": [
       {
         "hooks": [
-          {
-            "type": "command",
-            "command": "node scripts/hooks/global-sync.mjs",
-            "timeout": 30,
-            "statusMessage": "Globale Config pruefen..."
-          },
-          {
-            "type": "command",
-            "command": "node scripts/hooks/ensure-prerequisites.mjs",
-            "timeout": 30,
-            "statusMessage": "Prerequisites pruefen..."
-          },
           {
             "type": "command",
             "command": "node scripts/hooks/session-start.mjs",

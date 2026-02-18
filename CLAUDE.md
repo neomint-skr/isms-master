@@ -6,30 +6,24 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Central ISMS blueprint for all clients. Policies, handbooks and controls are developed and maintained here. Improvements propagate across all client deployments.
 
-## Global Config
-
-Global rules and user profile are deployed from `claude-code-master` (`gitlab.com/neomint-skr/claude-code-master`) to `~/.claude/` and apply automatically. Changes go there, not here.
+Rolle: Externer ISB (Beratung). Sprache: Englisch (Dokumente), Deutsch (Kommunikation). Befehle und Code immer erklaeren, nicht voraussetzen.
 
 ## Conventions
 
 ### MCP Servers
 
-`.mcp.json` in the repo root defines active MCP servers.
+All MCP servers run via Docker Desktop MCP Gateway.
+No local servers, no .mcp.json in the repo.
+Available servers: sequentialthinking, memory, context7, brave, kagisearch,
+desktop-commander, github-official, obsidian, playwright, notion-remote.
 
-Active servers: sequential-thinking, basic-memory, context7.
+Mandatory usage:
 
-**Data sovereignty:** When an MCP server provides data access, that data is accessed exclusively through its MCP tools — never via Read, Edit, Write or Grep directly. On server failure: repair the server, do not read data directly. Permission blocks in `settings.json` enforce this for known MCP data paths.
-
-| MCP Server | Managed Directory | Blocked For |
+| Server | Required context | Fallback |
 |---|---|---|
-| basic-memory | `.memory/` | Read, Edit, Write |
-
-**Mandatory usage:** Certain MCP servers must be actively used in defined contexts.
-
-| MCP Server | Required Context | Fallback on Failure |
-|---|---|---|
-| sequential-thinking | Plan mode (any planning activity) | Restart server via `/mcp` |
+| sequentialthinking | Plan mode | Restart via /mcp |
 | context7 | Library/framework research | WebSearch/WebFetch |
+| memory | Persist project knowledge | — |
 
 ### Three-Tier Structure
 
@@ -166,11 +160,11 @@ Four layers, no duplication:
 | Layer | Location | Purpose | Git |
 |---|---|---|---|
 | Session | Auto-Memory (`MEMORY.md`) | Current session: what am I working on | No |
-| Project memory | `.memory/*.md` (MCP) | Decisions, learnings, progress | Yes |
+| Project memory | Docker Knowledge-Graph (memory server) | Decisions, learnings, progress | No |
 | Agent knowledge | `.claude/agents/refs/` | SSOT derivatives, conventions | Yes |
 | ISMS content | `Cyber-Security-Cookbook/`, `ISMS-Handbook/`, `References/` | Certification artifacts | Yes |
 
-**Routing:** Session = ephemeral (overwritten). Persistent knowledge goes to `.memory/`. Agent rules go to `refs/`. ISMS documents go to subject folders. When session content should persist, move it to `.memory/`.
+**Routing:** Session = ephemeral (overwritten). Persistent knowledge goes to Docker Knowledge-Graph (`create_entities`, `add_observations`, `search_nodes`). Agent rules go to `refs/`. ISMS documents go to subject folders.
 
 ### Skeleton Filling
 

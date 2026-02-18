@@ -34,9 +34,3 @@ node_modules/
 
 # Temp directory (one-off scripts, intermediate results)
 .temp/
-
-# Basic Memory - local SQLite index (rebuilt from MD files)
-.memory/.basic-memory/
-*.db
-*.db-shm
-*.db-wal
