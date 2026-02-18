@@ -8,4 +8,4 @@ Wird im Laufe der Entwicklung aufgebaut.
 
 ## Setup
 
-Claude-Code-Projekt mit globaler Config aus [claude-code-master](https://gitlab.com/neomint-skr/claude-code-master).
+Claude-Code-Projekt mit eigenstaendigem Regelwerk (`.claude/`).
