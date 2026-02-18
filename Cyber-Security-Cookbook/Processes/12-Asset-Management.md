@@ -1,9 +1,9 @@
 > **Document ID:** CB_PRC_12-Asset-Management
-> **Version:** 00.01.010
+> **Version:** 00.01.011
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.9
-> **Last modified:** 2026-02-17
+> **Last modified:** 2026-02-18
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -58,13 +58,25 @@ For process assets (PRC), the asset owner additionally identifies the informatio
 
 Relevant relationships to other assets are documented through the cross-reference tables in HB_REG_03. Additionally, the denormalized relationship columns in the asset table are updated.
 
+**Mandatory dependency completeness check (approval gate).** Before an asset proceeds to approval (Step 6), all mandatory upstream dependencies must be registered. The following dependency chains are required:
+
+| Asset type | Required upstream |
+|---|---|
+| APP (Application) | At least one PRC (Business process) |
+| IT (IT system) | At least one APP (Application) |
+| ROM (Room/Building) | At least one IT (IT system) |
+| BLD (Building) | At least one ROM (Room) |
+| CON (Communication link) | At least one IT (IT system) |
+
+Assets without their required upstream dependencies cannot pass the approval gate. The dependency check is performed by the IS-Coordinator during Step 6.
+
 ### 5. Responsibility assignment
 
 A responsible asset owner is designated and recorded in the register.
 
 ### 6. Approval
 
-The registration is reviewed and approved by the responsible function.
+The registration is reviewed and approved by the responsible function. The approval includes verification that all mandatory upstream dependencies (Step 4) are satisfied. Missing dependencies block the approval until resolved.
 
 ### 7. Protection requirements trigger
 
@@ -83,6 +95,7 @@ Changes are recorded on an event-driven basis. Decommissioned assets are marked 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.011 | 2026-02-18 | Claude (AI) | Dependency completeness gate for asset approval |
 | 00.01.010 | 2026-02-17 | Claude (AI) | Step 3: sub-step for PRC assets to document information type IDs in "Processed Information" column |
 | 00.01.009 | 2026-02-11 | Claude (AI) | Add Step 7 (protection requirements trigger to CB_PRC_13), renumber maintenance to Step 8, fix process reference |
 | 00.01.008 | 2026-02-11 | SKR | Grouping evaluation sub-step added to identification phase |
