@@ -1,9 +1,9 @@
 > **Document ID:** CB_POL_L2_07-Organisation
-> **Version:** 00.03.014
+> **Version:** 00.03.015
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.2-5.6, A.5.9-5.11
-> **Last modified:** 2026-02-17
+> **Last modified:** 2026-02-18
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -17,14 +17,14 @@ Information security requires clear organizational frameworks for governance and
 
 ## Objective and Scope
 
-**Policy reference:** P1, P4, P5
+**Policy reference:** P1, P2, P4, P5
 **Operationalized by:** CB_POL_L3_01-User-Handbook
 
 **Objective:** Information security requires clear organizational frameworks. Without uniform rules for roles, segregation of duties, and asset management, IS responsibilities remain unclear and governance mechanisms incomplete.
 
 This standard defines the organizational requirements for security governance, roles, authority contacts, and asset management (addresses A.5.2-5.6, A.5.9-5.11). It establishes criteria for the overarching management and organizational structure of the ISMS.
 
-The standard implements the principles P1 (Protection), P4 (Awareness), and P5 (Continual improvement) of the IS policy. Incident management requirements are defined in CB_POL_L2_13 (Incident and Threat Management). Compliance requirements are defined in CB_POL_L2_14 (Compliance and Legal). Operational implementation is provided through CB_POL_L3_01 (User Handbook) and CB_PRC_12 (Asset Management).
+The standard implements the principles P1 (Protection), P2 (Compliance), P4 (Awareness), and P5 (Continual improvement) of the IS policy. Incident management requirements are defined in CB_POL_L2_13 (Incident and Threat Management). Compliance requirements are defined in CB_POL_L2_14 (Compliance and Legal). Operational implementation is provided through CB_POL_L3_01 (User Handbook) and CB_PRC_12 (Asset Management).
 
 **Scope:** All organizational units and employees within the ISMS scope. Covers organizational governance and asset management.
 
@@ -149,6 +149,7 @@ The procedure for contact with authorities specifies contact points within the c
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.03.015 | 2026-02-18 | CISO | Added P2 to Policy reference (L1 allocation matrix assigns L2_07 to P2 Compliance — traceability fix) |
 | 00.03.014 | 2026-02-17 | Claude (AI) | Traceability chain: normative requirement for documented information types as prerequisite for C/I assessment |
 | 00.03.013 | 2026-02-17 | Claude (AI) | Asset types: PRC as primary type, INF as process attribute; abbreviations aligned (GP→PRC, SYS-P→PIT, SYS-V→VIT, NET→CON, RAUM→ROM, GEB→BLD); traceability chain updated |
 | 00.03.012 | 2026-02-11 | Claude (AI) | Split: Incidents → L2_13, Compliance → L2_14; reduced to Governance + Assets; added Segregation of Duties and Contact with Authorities |

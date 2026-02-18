@@ -1,9 +1,9 @@
 > **Document ID:** CB_POL_L2_12-AI-Usage
-> **Version:** 00.01.003
+> **Version:** 00.01.004
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** BEYOND-ISO
-> **Last modified:** 2026-02-11
+> **Last modified:** 2026-02-18
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -18,7 +18,7 @@ AI systems create significant value but carry risks for data protection, ethics,
 ## Objective and Scope
 
 **Policy reference:** P1, P2
-**Operationalized by:** CB_POL_L3_03-Developer-Handbook, CB_AWR_01-Awareness-Fundamentals
+**Operationalized by:** CB_POL_L3_03-Developer-Handbook
 
 **Objective:** AI technologies are integral to business operations and product offerings. Without a governance framework, risks arising from bias, opacity, data protection violations, and security vulnerabilities remain unaddressed.
 
@@ -269,6 +269,7 @@ GenAI tools can produce inaccurate, biased, or legally problematic content. The 
 - CB_POL_L2_01-Access-and-Identity — Authentication, access control
 - CB_POL_L2_02-Information-Protection — Classification, data protection lifecycle
 - CB_POL_L2_04-Secure-Development — SDLC, secure coding, change management
+- CB_AWR_01-Awareness-Fundamentals — AI awareness training module
 - CB_POL_L2_05-Supplier-and-Cloud — Supplier assessment, agreements
 - CB_POL_L2_10-Human-Resources — Training, awareness, competence
 - CB_PRC_01-Incident-Management — Incident classification, reporting, escalation
@@ -278,6 +279,7 @@ GenAI tools can produce inaccurate, biased, or legally problematic content. The 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.004 | 2026-02-18 | CISO | Moved CB_AWR_01 from Operationalized by to See also (AWR is not L3; traceability fix) |
 | 00.01.003 | 2026-02-11 | CISO | Extended to AI governance framework: definitions, principles, roles, risk management, training, supplier assessment, logging, testing, incident types, EU AI Act classification; added output rules #6 (IP) and #7 (bias) |
 | 00.01.002 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.001 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |

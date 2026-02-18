@@ -1,9 +1,9 @@
 > **Document ID:** CB_PRC_02-Access-Control
-> **Version:** 00.01.007
+> **Version:** 00.01.008
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.15-5.18
-> **Last modified:** 2026-02-11
+> **Last modified:** 2026-02-18
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -21,7 +21,7 @@ Uncontrolled access rights are among the most frequent root causes of security i
 
 This process defines the workflow from access request through approval and privileged access to recertification and revocation. It ensures that the principle of least privilege is enforced consistently.
 
-The process operationalizes the requirements from CB_POL_L2_01-Access-and-Identity. Access decisions are documented and verified through regular recertification cycles.
+The process operationalizes the requirements from CB_POL_L2_01-Access-and-Identity. Access decisions are documented in [IAM tool / ticketing system] and verified through regular recertification cycles.
 
 **Scope:** All logical access rights to IT systems and information within the ISMS scope. Triggers: onboarding, role change, offboarding, or scheduled recertification.
 
@@ -180,6 +180,7 @@ Recertification results — including confirmations, rejections, and any correct
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.008 | 2026-02-18 | CISO | Added tool-based documentation phrase for access decisions (CLS>PRC>REG chain fix) |
 | 00.01.007 | 2026-02-11 | CISO | Skeleton filling: provisioning, privileged access, revocation, recertification, summary |
 | 00.01.006 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.005 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/FOR WHAT/WHERE) |
