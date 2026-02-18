@@ -15,6 +15,17 @@
 | Assessor | |
 | Assessment date | |
 
+## Suspension Documentation
+
+*Complete only if the assessment is suspended due to missing prerequisites.*
+
+| Field | Value |
+|---|---|
+| Suspension reason | [missing_INF / missing_BIA / —] |
+| Missing register reference | [e.g. HB_REG_03 (information types) / HB_REG_04 (BIA tier) / —] |
+| Suspend date | [YYYY-MM-DD / —] |
+| Expected resolution | [YYYY-MM-DD or description / —] |
+
 ## Protection Requirement Assessment
 
 ### Confidentiality
@@ -96,5 +107,6 @@
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.00.003 | 2026-02-18 | Claude (AI) | Add Suspension Documentation section for missing INF/BIA prerequisites |
 | 00.00.002 | 2026-02-17 | Claude (AI) | Process-centric: INF removed from asset type list, PRC first, added "Processed information" field |
 | 00.00.001 | 2026-02-11 | Claude | Add BIA Derivation block, Override Documentation block; update asset type prefixes (PRC, PIT, VIT, CON, ROM, BLD) |
