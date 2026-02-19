@@ -1,5 +1,5 @@
 > **Document ID:** CB_POL_L2_11-Risk-Management
-> **Version:** 00.01.021
+> **Version:** 00.01.022
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1, 8.2, 8.3
@@ -147,7 +147,7 @@ The methodology follows BSI Standard 200-2 [REF:BSI17, Ch. 8.2.2] and applies to
 
 Confidentiality and integrity remain subject to primary assessment via damage scenarios.
 
-**Override documentation.** When the cumulation or distribution effect leads to a protection requirement that deviates from the maximum principle, an override is documented in the protection requirements record (PR record). Each override must include: override type (cumulation or distribution), affected parent assets, rationale, and resulting adjusted value. Overrides are auditable, versioned, and subject to review during reassessment cycles.
+**Override documentation.** When the cumulation or distribution effect leads to a protection requirement that deviates from the maximum principle, the override is documented in the PR Source column of the asset register (HB_REG_03). The PR Source field accepts exactly one of three values: Maximumprinzip (automatic, default inheritance), Verteilungseffekt (manual, distribution effect applied), or Kumulationseffekt (manual, cumulation effect applied). A manual PR Source value is never auto-overwritten by inheritance recalculation — only explicit assessor action may change a manual override.
 
 **Iterative character.** The protection requirements analysis is an iterative process. After risk analyses or significant changes, results are reviewed and adjusted as needed.
 
@@ -454,6 +454,7 @@ The operational exception management workflow is defined in CB_PRC_14-Exception-
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.022 | 2026-02-19 | Claude (AI) | Override documentation: overrides → HB_REG_03 PR Source (3-value enum + priority rule), remove L3 detail from L2 standard |
 | 00.01.021 | 2026-02-19 | Claude (AI) | Cascade order: IT→CON→ROM→BLD (communication links before rooms) |
 | 00.01.020 | 2026-02-19 | Claude (AI) | Process-centric PR model: PR as process property, BIA params in CB_TPL_19, derived categories only, HB_REG_04 → BCM-Register |
 | 00.01.019 | 2026-02-18 | Claude (AI) | Deterministic PR-risk: baseline controls for Normal PR, deterministic net risk reduction formula, unknown-status governance with resolve-by deadlines |

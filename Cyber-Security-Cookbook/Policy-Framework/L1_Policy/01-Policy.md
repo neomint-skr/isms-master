@@ -1,9 +1,9 @@
 > **Document ID:** CB_POL_L1_01-Policy
-> **Version:** 01.00.003
+> **Version:** 01.00.004
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.1
-> **Last modified:** 2026-02-17
+> **Last modified:** 2026-02-19
 > **Approval:** CEO, 2026-02-11
 > **Review cycle:** Annual
 
@@ -87,7 +87,7 @@ Each L2 standard serves at least one principle. Each L3 handbook operationalizes
 | P2 Compliance | L2_01 Access, L2_02 Information Protection, L2_05 Suppliers, L2_07 Organisation, L2_08 Document Control, L2_12 AI-Usage, L2_14 Compliance+Operations |
 | P3 Risk orientation | L2_11 Risk Management, L2_03 System+Network, L2_04 Secure Development, L2_05 Suppliers, L2_06 Business Continuity, L2_07 Organisation, L2_09 Physical Security, L2_13 Incident+Threat |
 | P4 Awareness | L2_07 Organisation, L2_10 Human Resources |
-| P5 Continual improvement | L2_07 Organisation, L2_08 Document Control, L2_13 Incident+Threat |
+| P5 Continual improvement | L2_07 Organisation, L2_08 Document Control, L2_13 Incident+Threat, L2_14 Compliance+Operations |
 | P6 Business continuity | L2_06 Business Continuity |
 
 ## Non-Compliance Consequences
@@ -101,6 +101,7 @@ Violations of this policy and its subordinate standards may result in disciplina
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 01.00.004 | 2026-02-19 | Claude (AI) | Allocation matrix: add L2_14 to P5 row (traceability fix — L2_14 declares P5 in policy reference) |
 | 01.00.003 | 2026-02-17 | Claude (AI) | Process-centric asset model: Objective and P1 aligned — processes as primary asset, information as attribute |
 | 01.00.002 | 2026-02-11 | CISO | Information Security Objectives section, Summary, Allocation Matrix updated with L2_13/L2_14 |
 | 01.00.001 | 2026-02-11 | CISO | Non-compliance consequences clause added |

@@ -1,9 +1,9 @@
 > **Document ID:** CB_POL_L2_07-Organisation
-> **Version:** 00.03.015
+> **Version:** 00.03.016
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.2-5.6, A.5.9-5.11
-> **Last modified:** 2026-02-18
+> **Last modified:** 2026-02-19
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -17,7 +17,7 @@ Information security requires clear organizational frameworks for governance and
 
 ## Objective and Scope
 
-**Policy reference:** P1, P2, P4, P5
+**Policy reference:** P1, P2, P3, P4, P5
 **Operationalized by:** CB_POL_L3_01-User-Handbook
 
 **Objective:** Information security requires clear organizational frameworks. Without uniform rules for roles, segregation of duties, and asset management, IS responsibilities remain unclear and governance mechanisms incomplete.
@@ -149,6 +149,7 @@ The procedure for contact with authorities specifies contact points within the c
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.03.016 | 2026-02-19 | Claude (AI) | Traceability fix: add P3 to Policy reference (L1 allocation matrix assigns L2_07 to P3 Risk orientation) |
 | 00.03.015 | 2026-02-18 | CISO | Added P2 to Policy reference (L1 allocation matrix assigns L2_07 to P2 Compliance — traceability fix) |
 | 00.03.014 | 2026-02-17 | Claude (AI) | Traceability chain: normative requirement for documented information types as prerequisite for C/I assessment |
 | 00.03.013 | 2026-02-17 | Claude (AI) | Asset types: PRC as primary type, INF as process attribute; abbreviations aligned (GP→PRC, SYS-P→PIT, SYS-V→VIT, NET→CON, RAUM→ROM, GEB→BLD); traceability chain updated |
