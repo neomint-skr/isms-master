@@ -47,9 +47,9 @@ L2 headings = WHAT (requirements, nouns). L3 headings = HOW (guidance, verbs/imp
 ### 3. Traceability completeness
 
 **Steps:**
-- Grep `Policy reference` in all L2 files — must yield 10 hits
-- Grep `Standard reference` in all L3 files — must yield 7 hits
-- Grep `Operationalized by` in L2 files — must yield 10 hits
+- Grep `Policy reference` in all L2 files — must yield 14 hits
+- Grep `Standard reference` in all L3 files — must yield 8 hits
+- Grep `Operationalized by` in L2 files — must yield 14 hits
 - Value `—` is valid (deliberate absence of L3 operationalization)
 - For each L2 with L3 IDs in the field: extract the L3 IDs
   - Verify each referenced L3 file exists
