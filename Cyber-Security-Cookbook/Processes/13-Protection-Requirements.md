@@ -1,5 +1,5 @@
 > **Document ID:** CB_PRC_13-Protection-Requirements
-> **Version:** 00.01.008
+> **Version:** 00.01.009
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1, A.5.9
@@ -91,11 +91,11 @@ For each assessed business process, the IS-Coordinator records:
 - C/I/A values in the corresponding columns of HB_REG_03 for the process
 - Derived C/I/A values in HB_REG_03 for all sub-assets inheriting from the process (maximum principle)
 
-The PR record includes the per-scenario ratings for C and I, BIA parameters for A, derived categories, and conclusions. Override documentation is maintained in the PR Source column of HB_REG_03.
+The PR record includes the per-scenario ratings for C and I, BIA parameters for A, and derived categories. Override documentation is maintained in the PR Source column of HB_REG_03.
 
 ### 8. Approval
 
-The asset owner reviews and approves the protection requirement values for their assets. The CISO verifies cross-asset consistency (inheritance chains, cumulation effects, security zone implications). Disagreements are escalated to the responsible management level.
+The asset owner reviews and approves the protection requirement values for their assets. The CISO verifies cross-asset consistency (inheritance chains, cumulation effects). Disagreements are escalated to the responsible management level.
 
 ### 9. Handoff to risk management
 
@@ -120,6 +120,7 @@ Assets with a protection requirement of High or Very high in at least one core v
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.009 | 2026-02-19 | Claude (AI) | Remove conclusions and security zone references from Steps 7/8 |
 | 00.01.008 | 2026-02-19 | Claude (AI) | Override→REG_03 PR Source, priority rule for manual overrides, swap Steps 5↔6 (CON before ROM), rooms inherit from IT+CON, remove 1-Process/ from path |
 | 00.01.007 | 2026-02-19 | Claude (AI) | Process-only scope: 6-scenario grid for C/I, BIA params inline for A, remove per-asset records and layer folders, remove HB_REG_04 dependency |
 | 00.01.006 | 2026-02-18 | CISO | Removed Standard reference field (L3-only convention; L2_11 link remains in body text) |
