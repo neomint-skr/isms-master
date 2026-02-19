@@ -34,7 +34,7 @@
 **01-Context-Register.md** -- Organizational profile, external/internal issues
 **02-Interested-Parties-Register.md** -- Stakeholders + IS requirements
 **03-Asset-Register.md** -- 8 asset inventories, 5 cross-reference tables, data model
-**04-BIA-Register.md** -- BIA assessment, tier assignment, continuity plan tracking
+**04-BCM-Register.md** -- BCM continuity plan tracking
 **05-Risk-Register.md** -- 4x4 matrix, scenario-based risk entries, acceptance
 **06-Risk-Treatment-Plan.md** -- Controls per risk, owners, deadlines, gap tracking
 **07-Security-Measures-Register.md** -- Security measures per risk, linked to controls and assets
@@ -52,11 +52,11 @@
 **Risk-Framework/Vulnerabilities/** -- Vulnerability catalogues per asset class
 `1-Processes.md`, `2-Information.md`, `3-Applications.md`, `4-IT-Systems-Physical.md`, `5-IT-Systems-Virtual.md`, `6-Communication-Links.md`, `7-Rooms.md`, `8-Buildings.md`
 
-**Protection-Requirements/** -- Per-asset protection requirement assessments (7 layer folders)
-`1-Process/`, `2-Application/`, `3-Physical-IT-System/`, `4-Virtual-IT-System/`, `5-Communication-Connection/`, `6-Room/`, `7-Building/`
+**Protection-Requirements/** -- Process protection requirement assessments (SSOT)
+`1-Process/`
 
 **Risk-Assessments/** -- Per-asset risk assessments (7 layer folders)
-`1-Process/`, `2-Application/`, `3-Physical-IT-System/`, `4-Virtual-IT-System/`, `5-Communication-Connection/`, `6-Room/`, `7-Building/`
+`1-Process/`
 
 **Security-Measures/** -- Security measure evidence and implementation records
 
@@ -155,7 +155,7 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 **16-MDM-Policy-Template.md** -- MDM policy configuration template (security baselines, enforcement)
 **17-Internal-Audit-Report.md** -- MD template for CISO-led internal audits
 **18-Supplier-Review.md** -- Supplier review template (certification, SLA, assessment)
-**19-Protection-Requirements-Assessment.md** -- Per-asset protection requirements assessment form (C/I/A, inheritance, approval)
+**19-Protection-Requirements-Assessment.md** -- Process protection requirements assessment (SSOT)
 **20-Exception-Request.md** -- Exception request form (justification, risk, compensating controls, expiry)
 **21-Risk-Assessment.md** -- Risk assessment worksheet per asset (threat/vulnerability pairing, risk scoring)
 
