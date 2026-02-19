@@ -15,18 +15,7 @@
 | Assessor | |
 | Assessment date | |
 
-## Suspension Documentation
-
-*Complete only if the assessment is suspended due to missing prerequisites.*
-
-| Field | Value |
-|---|---|
-| Suspension reason | [missing_INF / —] |
-| Missing register reference | [e.g. HB_REG_03 (information types) / —] |
-| Suspend date | [YYYY-MM-DD / —] |
-| Expected resolution | [YYYY-MM-DD or description / —] |
-
-> **Manual inputs:** Per-scenario damage categories (Confidentiality §1–6, Integrity §1–6) and BIA parameters (RTO, RPO, MTD). **Computed results (do not fill manually):** Derived C, Derived I, Derived BIA Tier, Derived A, Overall category.
+> **Manual inputs:** Per-scenario damage categories (Confidentiality §1–6, Integrity §1–6) and BIA parameters (RTO, RPO, MTD). **Computed results (do not fill manually):** Derived C, Derived I, Derived BIA Tier, Derived A.
 
 ## Protection Requirement Assessment
 
@@ -81,31 +70,19 @@ Tier derivation (strictest condition wins):
 |---|---|
 | Derived A | [Very high / High / Normal — derived from tier, do not select manually] |
 
-### Overall Protection Requirement
+### Protection Requirement Summary
 
-| Field | Value |
+| Core value | Derived category |
 |---|---|
-| Overall category | [= max(Derived C, Derived I, Derived A) — do not select manually] |
-
-## Conclusions
-
-| Field | Value |
-|---|---|
-| Security zone | [Zone assignment if applicable, or n/a] |
-| Special measures | [Measures triggered by High/Very high, or n/a] |
-| Risk analysis required | [Yes / No — Yes if any core value is High or Very high] |
-
-## Approval
-
-| Field | Value |
-|---|---|
-| Process owner approval | [Name, date] |
-| CISO consistency check | [Name, date] |
+| Confidentiality | [= Derived C from assessment above — do not fill manually] |
+| Integrity | [= Derived I from assessment above — do not fill manually] |
+| Availability | [= Derived A from assessment above — do not fill manually] |
 
 ## Changelog
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.00.006 | 2026-02-19 | Claude (AI) | Remove Suspension/Conclusions/Approval sections, replace Overall with C/I/A Protection Requirement Summary |
 | 00.00.005 | 2026-02-19 | Claude (AI) | Remove Override Documentation and Inheritance sections (A2/A6), add manual input/computed results note, remove 1-Process/ from filing path |
 | 00.00.004 | 2026-02-19 | Claude (AI) | Process-centric SSOT redesign: 6-scenario grid for C/I, BIA params for A, derived categories only, remove BIA derivation section |
 | 00.00.003 | 2026-02-18 | Claude (AI) | Add Suspension Documentation section for missing INF/BIA prerequisites |
