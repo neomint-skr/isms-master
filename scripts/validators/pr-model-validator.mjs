@@ -2,7 +2,7 @@
  * PR Model Validator
  *
  * Validates that the ISMS follows the process-centric protection requirements model.
- * 9 rules checked. Exit 0 = all passed. Exit 1 = violations found.
+ * 10 rules checked. Exit 0 = all passed. Exit 1 = violations found.
  *
  * Usage: node scripts/validators/pr-model-validator.mjs
  */
@@ -59,7 +59,7 @@ function rule1() {
 
 // Rule 2: Exactly 2 manual input points
 // CB_TPL_19: Only per-scenario category (6xC + 6xI) and RTO/RPO/MTD as fillable fields.
-// All Overall/Derived fields contain "derived" or "do not select manually".
+// All Derived fields contain "derived" or "do not select/fill manually".
 function rule2() {
   const tplPath = 'Cyber-Security-Cookbook/Templates/19-Protection-Requirements-Assessment.md';
   const lines = readLines(tplPath);
@@ -69,19 +69,19 @@ function rule2() {
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
     // Check that derived fields contain the marker
-    if (/Derived [CIA]|Derived BIA Tier|Overall category/i.test(line)) {
-      if (!/derived|do not select manually/i.test(line)) {
+    if (/Derived [CIA]|Derived BIA Tier/i.test(line)) {
+      if (!/derived|do not (select|fill) manually/i.test(line)) {
         addViolation(2, tplPath, i + 1,
-          `Derived/overall field missing "derived" or "do not select manually" marker: ${line.trim()}`);
+          `Derived field missing "derived" or "do not select/fill manually" marker: ${line.trim()}`);
       } else {
         derivedFieldCount++;
       }
     }
   }
 
-  if (derivedFieldCount < 4) {
+  if (derivedFieldCount < 7) {
     addViolation(2, tplPath, 0,
-      `Expected at least 4 derived fields (C, I, A, Overall), found ${derivedFieldCount}`);
+      `Expected at least 7 derived fields (C, I, BIA Tier, A + 3 Summary), found ${derivedFieldCount}`);
   }
 }
 
@@ -135,11 +135,6 @@ function rule4() {
       // This is a standalone category selection (old format)
       addViolation(4, tplPath, i + 1,
         `Standalone manual category selection found: ${line.trim()}`);
-    }
-    // Check for overall category without "derived" marker
-    if (/Overall category/i.test(line) && /Normal.*High.*Very high/i.test(line) && !/derived|do not select/i.test(line)) {
-      addViolation(4, tplPath, i + 1,
-        `Overall category without derived marker: ${line.trim()}`);
     }
   }
 }
@@ -225,26 +220,69 @@ function rule8() {
   }
 }
 
-// Rule 9: CB_TPL_19 must not contain Override or Inheritance headings
+// Rule 9: CB_TPL_19 must not contain Override, Inheritance, Suspension, Conclusions, or Approval headings
 function rule9() {
   const tplPath = 'Cyber-Security-Cookbook/Templates/19-Protection-Requirements-Assessment.md';
   const lines = readLines(tplPath);
   if (!lines) return;
 
   for (let i = 0; i < lines.length; i++) {
-    if (/^##\s+Override/i.test(lines[i].trim())) {
+    const trimmed = lines[i].trim();
+    if (/^##\s+Override/i.test(trimmed)) {
       addViolation(9, tplPath, i + 1,
         `Override heading found in template — override documentation belongs in HB_REG_03 PR Source`);
     }
-    if (/^##\s+Inheritance/i.test(lines[i].trim())) {
+    if (/^##\s+Inheritance/i.test(trimmed)) {
       addViolation(9, tplPath, i + 1,
         `Inheritance heading found in template — inheritance is documented in HB_REG_03`);
+    }
+    if (/^##\s+Suspension/i.test(trimmed)) {
+      addViolation(9, tplPath, i + 1,
+        `Suspension heading found in template — suspension status belongs in REG_03 PR_Status`);
+    }
+    if (/^##\s+Conclusions/i.test(trimmed)) {
+      addViolation(9, tplPath, i + 1,
+        `Conclusions heading found in template — conclusions belong at standards/process level`);
+    }
+    if (/^##\s+Approval/i.test(trimmed)) {
+      addViolation(9, tplPath, i + 1,
+        `Approval heading found in template — approval is a process step (PRC_13 Step 8)`);
+    }
+  }
+}
+
+// Rule 10: Protection Requirement Summary with C/I/A lines
+function rule10() {
+  const tplPath = 'Cyber-Security-Cookbook/Templates/19-Protection-Requirements-Assessment.md';
+  const lines = readLines(tplPath);
+  if (!lines) { addViolation(10, tplPath, 0, 'Template file not found'); return; }
+
+  let summaryIdx = -1;
+  for (let i = 0; i < lines.length; i++) {
+    if (/^###\s+Protection Requirement Summary/i.test(lines[i].trim())) {
+      summaryIdx = i;
+      break;
+    }
+  }
+
+  if (summaryIdx === -1) {
+    addViolation(10, tplPath, 0, 'Missing ### Protection Requirement Summary heading');
+    return;
+  }
+
+  // Check for C/I/A rows after the heading
+  const sectionLines = lines.slice(summaryIdx, summaryIdx + 15).join('\n');
+  const coreValues = ['Confidentiality', 'Integrity', 'Availability'];
+  for (const cv of coreValues) {
+    if (!new RegExp(cv, 'i').test(sectionLines)) {
+      addViolation(10, tplPath, summaryIdx + 1,
+        `Protection Requirement Summary missing ${cv} row`);
     }
   }
 }
 
 // Run all rules
-console.log('PR Model Validator — 9 Rules\n');
+console.log('PR Model Validator — 10 Rules\n');
 
 rule1();
 rule2();
@@ -255,9 +293,10 @@ rule6();
 rule7();
 rule8();
 rule9();
+rule10();
 
 if (violations.length === 0) {
-  console.log('All 9 rules passed.');
+  console.log('All 10 rules passed.');
   process.exit(0);
 } else {
   console.log(`${violations.length} violation(s) found:\n`);
