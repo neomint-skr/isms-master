@@ -1,9 +1,9 @@
 > **Document ID:** CB_POL_L2_11-Risk-Management
-> **Version:** 00.01.019
+> **Version:** 00.01.020
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1, 8.2, 8.3
-> **Last modified:** 2026-02-18
+> **Last modified:** 2026-02-19
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -49,7 +49,7 @@ Risk management follows an asset-based end-to-end approach. Each phase builds on
 | Phase | Normative basis | Process | Register |
 |---|---|---|---|
 | 1 — Asset registration | CB_POL_L2_07 (Asset types, grouping) | CB_PRC_12 (Asset lifecycle) | HB_REG_03 (Asset register) |
-| 2 — Protection requirements | This standard (Protection Requirements Analysis) | CB_PRC_13 (Protection requirements) | HB_REG_03 (C/I/A columns), HB_REG_04 (BIA register) |
+| 2 — Protection requirements | This standard (Protection Requirements Analysis) | CB_PRC_13 (Protection requirements) | HB_REG_03 (C/I/A columns), CB_TPL_19 records (process PR SSOT) |
 | 3 — Risk identification and analysis | This standard (Risk Identification Methodology, Risk Analysis) | CB_PRC_07 (Risk assessment) | HB_REG_05 (Risk register) |
 | 4 — Risk evaluation | This standard (Risk Acceptance and Exceptions) | CB_PRC_07 (Risk evaluation) | HB_REG_05 (Risk register) |
 | 5 — Risk treatment | This standard (Risk Treatment, Security Measures Register) | CB_PRC_07 (Risk treatment) | HB_REG_06 (Treatment plan), HB_REG_07 (SM register), HB_REG_08 (SoA) |
@@ -67,7 +67,9 @@ Without a complete asset inventory, neither protection requirements analysis nor
 
 ## Protection Requirements Analysis
 
-The protection requirements analysis assesses assets across the three core values: confidentiality (C), integrity (I), and availability (A). It is a prerequisite for risk identification and is conducted on the basis of the assets captured in the asset register (HB_REG_03). The operational assessment process is defined in CB_PRC_13 (Protection Requirements Assessment).
+The protection requirements analysis assesses business processes across the three core values: confidentiality (C), integrity (I), and availability (A). It is a prerequisite for risk identification and is conducted on the basis of the assets captured in the asset register (HB_REG_03). The operational assessment process is defined in CB_PRC_13 (Protection Requirements Assessment).
+
+Protection requirements are a property of business processes. Sub-assets inherit their protection requirements through the dependency chains documented in HB_REG_03 (maximum principle).
 
 ### Protection Requirement Categories
 
@@ -79,7 +81,7 @@ The three-level scale (Normal / High / Very high) aligned with BSI Standard 200-
 | High | The impact can be considerable. Controls beyond the standard level are required. |
 | Very high | The impact can reach existentially threatening or catastrophic proportions. Specific controls and individual risk analysis are mandatory. |
 
-The protection requirements analysis is performed per asset and per core value (C/I/A) individually. The overall protection requirement of an asset is determined by the highest individual value (maximum principle). Assets with a protection requirement of "High" or "Very high" in at least one core value require an individual risk analysis. Results are documented in the C/I/A columns of the asset register (HB_REG_03).
+The protection requirements analysis is performed at process level per core value (C/I/A) individually. No manual category selection is permitted for the overall classification — C and I are derived from the maximum damage scenario rating across all 6 mandatory scenarios; A is derived from BIA parameters through the tier matrix. The overall protection requirement of a process is determined by the highest individual value (maximum principle). Processes with a protection requirement of "High" or "Very high" in at least one core value require an individual risk analysis. Results are documented in the C/I/A columns of the asset register (HB_REG_03).
 
 ### Damage Scenarios
 
@@ -124,7 +126,7 @@ The thresholds (downtime windows, financial amounts) are calibrated to the scale
 
 The methodology follows BSI Standard 200-2 [REF:BSI17, Ch. 8.2.2] and applies to all asset categories in the asset register (HB_REG_03).
 
-**Primary assessment.** Protection requirements are assessed directly for business processes using the damage scenarios defined above. Information types processed by each business process must be documented in the asset register (HB_REG_03, column "Processed Information") before the primary assessment commences. Their aggregated sensitivity profile determines the assessment basis for confidentiality and integrity: the assessor evaluates each information type against the damage scenarios, and the most sensitive type sets the minimum category. The assessment determines the original protection requirement values for C, I, and A.
+**Primary assessment.** Protection requirements are assessed directly for business processes using the damage scenarios defined above. Information types processed by each business process must be documented in the asset register (HB_REG_03, column "Processed Information") before the primary assessment commences. Their aggregated sensitivity profile determines the assessment basis for confidentiality and integrity: the assessor evaluates each information type against the damage scenarios, and the most sensitive type sets the minimum category. No manual category selection is permitted for the overall C and I classification — each is derived as the maximum rating across all 6 mandatory damage scenarios. Availability (A) is derived from BIA parameters (RTO, RPO, MTD) documented in the process PR record (CB_TPL_19). The tier derivation follows: Tier = f(min(RTO, RPO)); A = f(Tier).
 
 **Inheritance.** Protection requirements are inherited along the dependency chains documented in the cross-reference tables of the asset register: business processes → applications → IT systems → rooms/buildings → communication links. The direction of inheritance follows the data flow and processing dependencies.
 
@@ -134,14 +136,14 @@ The methodology follows BSI Standard 200-2 [REF:BSI17, Ch. 8.2.2] and applies to
 
 **Distribution effect.** Where redundant infrastructure (e.g. hot standby, clustered systems) already mitigates availability risks, the inherited protection requirement may be relativized. Distribution effects occur primarily for availability, but may also apply to confidentiality where only non-critical subsets are processed. Distribution effects are documented with rationale.
 
-**BIA-to-availability derivation.** For process assets, the availability (A) protection requirement is deterministically derived from the BIA tier assigned in the BIA register (HB_REG_04). This ensures consistency between business impact assessment and protection requirements.
+**BIA-to-availability derivation.** For business processes, the availability (A) protection requirement is deterministically derived from BIA parameters documented in the process PR record (CB_TPL_19). The BIA tier is determined by the strictest condition across RTO and RPO. This ensures consistency between business impact assessment and protection requirements.
 
-| BIA Tier | Derived availability category |
-|---|---|
-| 1 (Critical) | Very high |
-| 2 (Important) | High |
-| 3 (Normal) | Normal |
-| 4 (Low) | Normal |
+| BIA Tier | RTO | RPO | Criticality | Derived A |
+|---|---|---|---|---|
+| 1 | 0–4 h | 0–4 h | Critical | Very high |
+| 2 | 5–24 h | 5–24 h | Important | High |
+| 3 | 25–96 h | 25–96 h | Normal | Normal |
+| 4 | > 97 h | > 97 h | Low | Normal |
 
 Confidentiality and integrity remain subject to primary assessment via damage scenarios.
 
@@ -155,12 +157,12 @@ The protection requirements analysis covers all asset categories in the asset re
 
 | Asset category | Primary or inherited | Key considerations |
 |---|---|---|
-| Business processes (incl. processed information types) | Primary (direct damage scenario assessment) | "What if?" analysis with process owners. Complex processes may be decomposed into sub-processes. |
-| Applications | Inherited from business processes | Includes central services (DNS, e-mail, databases). |
-| IT systems (physical and virtual) | Inherited from applications | Includes virtualization hosts. Cumulation and distribution effects to be evaluated per host. |
-| ICS and IoT devices | Inherited from processes/applications | Protection requirement categories may require adapted downtime thresholds. |
-| Rooms and buildings | Inherited from installed IT systems and stored media | Cumulation effects in server rooms, data centres, and archives. |
-| Communication links | Inherited from connected systems | Critical links: external connections, links carrying high/very high information, production network boundaries. |
+| Business processes (incl. processed information types) | Primary (SSOT via CB_TPL_19) | "What if?" analysis with process owners. Complex processes may be decomposed into sub-processes. |
+| Applications | Inherited (maximum principle) | Includes central services (DNS, e-mail, databases). |
+| IT systems (physical and virtual) | Inherited (maximum principle) | Includes virtualization hosts. Cumulation and distribution effects to be evaluated per host. |
+| ICS and IoT devices | Inherited (maximum principle) | Protection requirement categories may require adapted downtime thresholds. |
+| Rooms and buildings | Inherited (maximum principle) | Cumulation effects in server rooms, data centres, and archives. |
+| Communication links | Inherited (maximum principle) | Critical links: external connections, links carrying high/very high information, production network boundaries. |
 
 ### Conclusions
 
@@ -440,7 +442,7 @@ The operational exception management workflow is defined in CB_PRC_14-Exception-
 - HB_REG_03-Asset-Register — Asset inventory with C/I/A values
 - HB_REG_05-Risk-Register — Scenario-based risk entries
 - HB_REG_06-Risk-Treatment-Plan — Risk-to-measure assignment and approval
-- HB_REG_04-BIA-Register — BIA tiers for availability derivation
+- HB_REG_04-BCM-Register — BCM continuity plan tracking
 - HB_REG_07-Security-Measures-Register — SSOT for security measures
 - HB_REG_08-Statement-of-Applicability — Control applicability
 - HB_CLS_5.3-Roles-and-Responsibilities — RACI matrix
@@ -452,6 +454,7 @@ The operational exception management workflow is defined in CB_PRC_14-Exception-
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.020 | 2026-02-19 | Claude (AI) | Process-centric PR model: PR as process property, BIA params in CB_TPL_19, derived categories only, HB_REG_04 → BCM-Register |
 | 00.01.019 | 2026-02-18 | Claude (AI) | Deterministic PR-risk: baseline controls for Normal PR, deterministic net risk reduction formula, unknown-status governance with resolve-by deadlines |
 | 00.01.018 | 2026-02-17 | Claude (AI) | Primary assessment: information types must be documented before assessment, aggregated sensitivity profile as C/I basis |
 | 00.01.017 | 2026-02-17 | Claude (AI) | Process-centric model: PRC as primary assessment layer, INF as process attribute in Phase 2, primary assessment, and assessment scope |
