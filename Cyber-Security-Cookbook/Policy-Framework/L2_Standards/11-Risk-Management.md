@@ -1,5 +1,5 @@
 > **Document ID:** CB_POL_L2_11-Risk-Management
-> **Version:** 00.01.020
+> **Version:** 00.01.021
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1, 8.2, 8.3
@@ -61,7 +61,7 @@ Risk management requires a complete and current asset inventory as its foundatio
 
 The normative basis for asset types, grouping, and classification is defined in CB_POL_L2_07 (Asset Management). The operational lifecycle — from identification through disposal — is governed by CB_PRC_12 (Asset Management Process).
 
-Asset register entries must include cross-references documenting dependency chains (business processes → applications → IT systems → rooms/buildings → communication links). These cross-references are essential for protection requirements inheritance in Phase 2.
+Asset register entries must include cross-references documenting dependency chains (business processes → applications → IT systems → communication links → rooms → buildings). These cross-references are essential for protection requirements inheritance in Phase 2.
 
 Without a complete asset inventory, neither protection requirements analysis nor risk identification can produce reliable results.
 
@@ -128,7 +128,7 @@ The methodology follows BSI Standard 200-2 [REF:BSI17, Ch. 8.2.2] and applies to
 
 **Primary assessment.** Protection requirements are assessed directly for business processes using the damage scenarios defined above. Information types processed by each business process must be documented in the asset register (HB_REG_03, column "Processed Information") before the primary assessment commences. Their aggregated sensitivity profile determines the assessment basis for confidentiality and integrity: the assessor evaluates each information type against the damage scenarios, and the most sensitive type sets the minimum category. No manual category selection is permitted for the overall C and I classification — each is derived as the maximum rating across all 6 mandatory damage scenarios. Availability (A) is derived from BIA parameters (RTO, RPO, MTD) documented in the process PR record (CB_TPL_19). The tier derivation follows: Tier = f(min(RTO, RPO)); A = f(Tier).
 
-**Inheritance.** Protection requirements are inherited along the dependency chains documented in the cross-reference tables of the asset register: business processes → applications → IT systems → rooms/buildings → communication links. The direction of inheritance follows the data flow and processing dependencies.
+**Inheritance.** Protection requirements are inherited along the dependency chains documented in the cross-reference tables of the asset register: business processes → applications → IT systems → communication links → rooms → buildings. The direction of inheritance follows the data flow and processing dependencies.
 
 **Maximum principle.** The highest individual damage value across all relevant scenarios determines the protection requirement for each core value. The overall protection requirement of an asset equals the highest value among C, I, and A.
 
@@ -454,6 +454,7 @@ The operational exception management workflow is defined in CB_PRC_14-Exception-
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.021 | 2026-02-19 | Claude (AI) | Cascade order: IT→CON→ROM→BLD (communication links before rooms) |
 | 00.01.020 | 2026-02-19 | Claude (AI) | Process-centric PR model: PR as process property, BIA params in CB_TPL_19, derived categories only, HB_REG_04 → BCM-Register |
 | 00.01.019 | 2026-02-18 | Claude (AI) | Deterministic PR-risk: baseline controls for Normal PR, deterministic net risk reduction formula, unknown-status governance with resolve-by deadlines |
 | 00.01.018 | 2026-02-17 | Claude (AI) | Primary assessment: information types must be documented before assessment, aggregated sensitivity profile as C/I basis |

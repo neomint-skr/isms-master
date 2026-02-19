@@ -1,5 +1,5 @@
 > **Document ID:** CB_PRC_13-Protection-Requirements
-> **Version:** 00.01.007
+> **Version:** 00.01.008
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1, A.5.9
@@ -50,7 +50,7 @@ For each business process, the process owner assesses confidentiality and integr
 
 For complex business processes with High or Very high protection requirements, decomposition into sub-processes is evaluated to limit the scope of elevated requirements.
 
-**Override documentation (cumulation and distribution).** During any assessment or inheritance step, the assessor may invoke cumulation (aggregated risk raises the PR) or distribution (redundancy lowers the PR) effects as defined in CB_POL_L2_11. When an override is applied, the following must be documented in the process PR record: justification for the override, list of affected assets contributing to the cumulation or distribution effect, and the resulting adjusted PR value. The override documentation is reviewed and approved in Step 8.
+**Override documentation (cumulation and distribution).** During any assessment or inheritance step, the assessor may invoke cumulation (aggregated risk raises the PR) or distribution (redundancy lowers the PR) effects as defined in CB_POL_L2_11. When an override is applied, the assessor sets the PR Source column in HB_REG_03 to one of two values: `Verteilungseffekt` (distribution) or `Kumulationseffekt` (cumulation). A manual PR Source value (Verteilungseffekt or Kumulationseffekt) is never auto-overwritten by inheritance recalculation — only explicit assessor action may change a manual override. The override documentation is reviewed and approved in Step 8.
 
 ### 3. Inheritance — applications
 
@@ -68,11 +68,7 @@ For virtualized infrastructure, the protection requirements of the virtualizatio
 
 For cloud-hosted systems (IaaS), the same inheritance logic applies. Where live migration prevents static assignment, protection requirement zones with physical separation are recommended.
 
-### 5. Inheritance — rooms and buildings
-
-The protection requirements of rooms and buildings are derived from the IT systems and media installed within them, using the IT Systems <> Rooms and Rooms <> Buildings cross-reference tables in HB_REG_03. Cumulation effects in server rooms, data centres, and archives are evaluated.
-
-### 6. Inheritance — communication links
+### 5. Inheritance — communication links
 
 Critical communication links are identified based on three criteria:
 
@@ -82,16 +78,20 @@ Critical communication links are identified based on three criteria:
 
 The protection requirements of communication links are derived from the connected systems and the information transmitted. The IT Systems <> Communication Links cross-reference table in HB_REG_03 provides the dependency data.
 
+### 6. Inheritance — rooms and buildings
+
+The protection requirements of rooms and buildings are derived from the IT systems installed within them and from the communication links routed through them, using the IT Systems <> Rooms, Communication Links <> Rooms, and Rooms <> Buildings cross-reference tables in HB_REG_03. The maximum principle applies across both IT systems and communication links. Cumulation effects in server rooms, data centres, and archives are evaluated.
+
 ### 7. Documentation
 
 For each assessed business process, the IS-Coordinator records:
 
 - A process PR record using CB_TPL_19 (SSOT), filed in:
-  `Registers/Protection-Requirements/1-Process/PRA-YYYY-MM-<Process-ID>.md`
+  `Registers/Protection-Requirements/PRA-YYYY-MM-<Process-ID>.md`
 - C/I/A values in the corresponding columns of HB_REG_03 for the process
 - Derived C/I/A values in HB_REG_03 for all sub-assets inheriting from the process (maximum principle)
 
-The PR record includes the per-scenario ratings for C and I, BIA parameters for A, derived categories, override documentation (from Steps 2–6), and conclusions.
+The PR record includes the per-scenario ratings for C and I, BIA parameters for A, derived categories, and conclusions. Override documentation is maintained in the PR Source column of HB_REG_03.
 
 ### 8. Approval
 
@@ -120,6 +120,7 @@ Assets with a protection requirement of High or Very high in at least one core v
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.008 | 2026-02-19 | Claude (AI) | Override→REG_03 PR Source, priority rule for manual overrides, swap Steps 5↔6 (CON before ROM), rooms inherit from IT+CON, remove 1-Process/ from path |
 | 00.01.007 | 2026-02-19 | Claude (AI) | Process-only scope: 6-scenario grid for C/I, BIA params inline for A, remove per-asset records and layer folders, remove HB_REG_04 dependency |
 | 00.01.006 | 2026-02-18 | CISO | Removed Standard reference field (L3-only convention; L2_11 link remains in body text) |
 | 00.01.005 | 2026-02-18 | Claude (AI) | BIA-suspend rule and BIA tier reference for availability derivation |

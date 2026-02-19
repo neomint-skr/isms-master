@@ -1,6 +1,6 @@
 # Template: Protection Requirements Assessment
 
-> ISO Reference: Clause 6.1, A.5.9. Copy per business process, fill in, and file as SSOT evidence in ISMS-Handbook/Registers/Protection-Requirements/1-Process/.
+> ISO Reference: Clause 6.1, A.5.9. Copy per business process, fill in, and file as SSOT evidence in ISMS-Handbook/Registers/Protection-Requirements/.
 
 ## Metadata
 
@@ -25,6 +25,8 @@
 | Missing register reference | [e.g. HB_REG_03 (information types) / —] |
 | Suspend date | [YYYY-MM-DD / —] |
 | Expected resolution | [YYYY-MM-DD or description / —] |
+
+> **Manual inputs:** Per-scenario damage categories (Confidentiality §1–6, Integrity §1–6) and BIA parameters (RTO, RPO, MTD). **Computed results (do not fill manually):** Derived C, Derived I, Derived BIA Tier, Derived A, Overall category.
 
 ## Protection Requirement Assessment
 
@@ -85,28 +87,6 @@ Tier derivation (strictest condition wins):
 |---|---|
 | Overall category | [= max(Derived C, Derived I, Derived A) — do not select manually] |
 
-## Override Documentation
-
-*Complete only if cumulation or distribution effect applies.*
-
-| Field | Value |
-|---|---|
-| Override type | [Cumulation / Distribution] |
-| Affected core value | [C / I / A] |
-| Original value | [Normal / High / Very high] |
-| Adjusted value | [Normal / High / Very high] |
-| Affected parent assets | [Asset-IDs] |
-| Rationale | [Justification for override] |
-
-## Inheritance and Effects
-
-| Field | Value |
-|---|---|
-| Inheritance source(s) | Primary assessment |
-| Inheriting assets | [Sub-asset IDs that inherit from this process] |
-| Cumulation effect | [Yes / No — if yes, describe aggregation rationale] |
-| Distribution effect | [Yes / No — if yes, describe redundancy measure and resulting relativization] |
-
 ## Conclusions
 
 | Field | Value |
@@ -126,6 +106,7 @@ Tier derivation (strictest condition wins):
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.00.005 | 2026-02-19 | Claude (AI) | Remove Override Documentation and Inheritance sections (A2/A6), add manual input/computed results note, remove 1-Process/ from filing path |
 | 00.00.004 | 2026-02-19 | Claude (AI) | Process-centric SSOT redesign: 6-scenario grid for C/I, BIA params for A, derived categories only, remove BIA derivation section |
 | 00.00.003 | 2026-02-18 | Claude (AI) | Add Suspension Documentation section for missing INF/BIA prerequisites |
 | 00.00.002 | 2026-02-17 | Claude (AI) | Process-centric: INF removed from asset type list, PRC first, added "Processed information" field |

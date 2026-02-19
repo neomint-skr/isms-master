@@ -2,7 +2,7 @@
  * PR Model Validator
  *
  * Validates that the ISMS follows the process-centric protection requirements model.
- * 7 rules checked. Exit 0 = all passed. Exit 1 = violations found.
+ * 9 rules checked. Exit 0 = all passed. Exit 1 = violations found.
  *
  * Usage: node scripts/validators/pr-model-validator.mjs
  */
@@ -37,35 +37,19 @@ function changelogStart(lines) {
 }
 
 // Rule 1: PR is exclusively a process property
-// No PR record files in folders 2-7. All PR records in 1-Process/ have Asset type = PRC.
+// No PR record files in layer folders. All PR records in Protection-Requirements/ have Asset type = PRC.
 function rule1() {
   const prBase = join(ROOT, 'ISMS-Handbook', 'Registers', 'Protection-Requirements');
-  const layerFolders = ['2-Application', '3-Physical-IT-System', '4-Virtual-IT-System',
-    '5-Communication-Connection', '6-Room', '7-Building'];
 
-  for (const folder of layerFolders) {
-    const folderPath = join(prBase, folder);
-    if (existsSync(folderPath)) {
-      try {
-        const files = readdirSync(folderPath).filter(f => f !== '.gitkeep');
-        if (files.length > 0) {
-          addViolation(1, `ISMS-Handbook/Registers/Protection-Requirements/${folder}/`, 0,
-            `Layer folder contains PR records: ${files.join(', ')}`);
-        }
-      } catch { /* folder doesn't exist */ }
-    }
-  }
-
-  // Check PR records in 1-Process/ have Asset type = PRC
-  const processFolder = join(prBase, '1-Process');
-  if (existsSync(processFolder)) {
-    const files = readdirSync(processFolder).filter(f => f.endsWith('.md') && f !== '.gitkeep');
+  // Check PR records directly in Protection-Requirements/ have Asset type = PRC
+  if (existsSync(prBase)) {
+    const files = readdirSync(prBase).filter(f => f.endsWith('.md') && f !== 'README.md' && f !== '.gitkeep');
     for (const file of files) {
-      const content = readFileSync(join(processFolder, file), 'utf-8');
+      const content = readFileSync(join(prBase, file), 'utf-8');
       const lines = content.split(/\r?\n/);
       for (let i = 0; i < lines.length; i++) {
         if (/Asset type/i.test(lines[i]) && !/PRC/i.test(lines[i])) {
-          addViolation(1, `ISMS-Handbook/Registers/Protection-Requirements/1-Process/${file}`, i + 1,
+          addViolation(1, `ISMS-Handbook/Registers/Protection-Requirements/${file}`, i + 1,
             'PR record has non-PRC asset type');
         }
       }
@@ -193,41 +177,74 @@ function rule5() {
   }
 }
 
-// Rule 6: Override only Distribution/Cumulation
-// Override sections have Type = Cumulation or Distribution + non-empty rationale
+// Rule 6: Override documentation in HB_REG_03 PR Source
+// PR Source for sub-assets must use the 3-value enum, not "Inherited from"
 function rule6() {
-  const tplPath = 'Cyber-Security-Cookbook/Templates/19-Protection-Requirements-Assessment.md';
-  const lines = readLines(tplPath);
+  const regPath = 'ISMS-Handbook/Registers/03-Asset-Register.md';
+  const lines = readLines(regPath);
   if (!lines) return;
 
-  for (let i = 0; i < lines.length; i++) {
-    if (/Override type/i.test(lines[i])) {
-      if (!/Cumulation|Distribution/i.test(lines[i])) {
-        addViolation(6, tplPath, i + 1,
-          'Override type must be Cumulation or Distribution');
-      }
+  const clStart = changelogStart(lines);
+  for (let i = 0; i < clStart; i++) {
+    if (/Inherited from/i.test(lines[i]) && /PR Source/i.test(lines[i])) {
+      addViolation(6, regPath, i + 1,
+        `PR Source uses deprecated "Inherited from" format: ${lines[i].trim().substring(0, 100)}`);
     }
   }
 }
 
 // Rule 7: No layer PR folders
-// Folders 2-Application through 7-Building do not exist under Protection-Requirements/
+// Folders 1-Process through 7-Building do not exist under Protection-Requirements/
 function rule7() {
   const prBase = join(ROOT, 'ISMS-Handbook', 'Registers', 'Protection-Requirements');
-  const layerFolders = ['2-Application', '3-Physical-IT-System', '4-Virtual-IT-System',
+  const forbiddenFolders = ['1-Process', '2-Application', '3-Physical-IT-System', '4-Virtual-IT-System',
     '5-Communication-Connection', '6-Room', '7-Building'];
 
-  for (const folder of layerFolders) {
+  for (const folder of forbiddenFolders) {
     const folderPath = join(prBase, folder);
     if (existsSync(folderPath)) {
       addViolation(7, `ISMS-Handbook/Registers/Protection-Requirements/${folder}/`, 0,
-        `Layer folder still exists`);
+        `Subfolder still exists — PR records belong directly in Protection-Requirements/`);
+    }
+  }
+}
+
+// Rule 8: PR Source format validation
+// PR Source field definition in HB_REG_03 must not contain "Inherited from"
+function rule8() {
+  const regPath = 'ISMS-Handbook/Registers/03-Asset-Register.md';
+  const lines = readLines(regPath);
+  if (!lines) return;
+
+  const clStart = changelogStart(lines);
+  for (let i = 0; i < clStart; i++) {
+    if (/Inherited from \[/i.test(lines[i])) {
+      addViolation(8, regPath, i + 1,
+        `Deprecated "Inherited from [...]" pattern found: ${lines[i].trim().substring(0, 100)}`);
+    }
+  }
+}
+
+// Rule 9: CB_TPL_19 must not contain Override or Inheritance headings
+function rule9() {
+  const tplPath = 'Cyber-Security-Cookbook/Templates/19-Protection-Requirements-Assessment.md';
+  const lines = readLines(tplPath);
+  if (!lines) return;
+
+  for (let i = 0; i < lines.length; i++) {
+    if (/^##\s+Override/i.test(lines[i].trim())) {
+      addViolation(9, tplPath, i + 1,
+        `Override heading found in template — override documentation belongs in HB_REG_03 PR Source`);
+    }
+    if (/^##\s+Inheritance/i.test(lines[i].trim())) {
+      addViolation(9, tplPath, i + 1,
+        `Inheritance heading found in template — inheritance is documented in HB_REG_03`);
     }
   }
 }
 
 // Run all rules
-console.log('PR Model Validator — 7 Rules\n');
+console.log('PR Model Validator — 9 Rules\n');
 
 rule1();
 rule2();
@@ -236,9 +253,11 @@ rule4();
 rule5();
 rule6();
 rule7();
+rule8();
+rule9();
 
 if (violations.length === 0) {
-  console.log('All 7 rules passed.');
+  console.log('All 9 rules passed.');
   process.exit(0);
 } else {
   console.log(`${violations.length} violation(s) found:\n`);
