@@ -1,9 +1,9 @@
 > **Document ID:** CB_POL_L3_05-Data-Backup
-> **Version:** 00.01.008
+> **Version:** 00.01.009
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.29-5.30, A.8.10, A.8.13
-> **Last modified:** 2026-02-10
+> **Last modified:** 2026-02-19
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -59,12 +59,13 @@ Retention periods for backup data shall be defined based on statutory requiremen
 ## See also
 
 - CB_POL_L3_08-Business-Continuity — BIA methodology and continuity planning
-- HB_REG_04-BIA-Register — BIA assessment and tier tracking
+- HB_REG_04-BCM-Register — BCM continuity plan tracking
 
 ## Changelog
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.009 | 2026-02-19 | Claude (AI) | HB_REG_04 reference updated: BIA-Register → BCM-Register |
 | 00.01.008 | 2026-02-10 | CISO | Added L4 traceability field (Condensed by) |
 | 00.01.007 | 2026-02-10 | CISO | Added L3_08 and REG_04 cross-references |
 | 00.01.006 | 2026-02-09 | CISO | Aligned role terminology |
