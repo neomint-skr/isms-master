@@ -1,5 +1,5 @@
 > **Document ID:** CB_POL_L2_11-Risk-Management
-> **Version:** 00.01.022
+> **Version:** 00.01.023
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1, 8.2, 8.3
@@ -167,8 +167,6 @@ The protection requirements analysis covers all asset categories in the asset re
 ### Conclusions
 
 The results of the protection requirements analysis determine the further course of the security concept [REF:BSI17, Ch. 8.2.9].
-
-**Security zones.** Where areas of different protection requirements coexist, security zones (physical, technical, personnel) are established to contain the propagation of higher protection requirements through the maximum principle.
 
 **Link to risk analysis.** Assets with a protection requirement of High or Very high in at least one core value require an individual risk analysis as defined in Phase 3 of this standard. Standard controls (IT-Grundschutz baseline) are generally sufficient for assets with Normal protection requirements.
 
@@ -454,6 +452,7 @@ The operational exception management workflow is defined in CB_PRC_14-Exception-
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.023 | 2026-02-19 | Claude (AI) | Remove Security zones paragraph from Conclusions (belongs in Physical Security L2_09) |
 | 00.01.022 | 2026-02-19 | Claude (AI) | Override documentation: overrides → HB_REG_03 PR Source (3-value enum + priority rule), remove L3 detail from L2 standard |
 | 00.01.021 | 2026-02-19 | Claude (AI) | Cascade order: IT→CON→ROM→BLD (communication links before rooms) |
 | 00.01.020 | 2026-02-19 | Claude (AI) | Process-centric PR model: PR as process property, BIA params in CB_TPL_19, derived categories only, HB_REG_04 → BCM-Register |
