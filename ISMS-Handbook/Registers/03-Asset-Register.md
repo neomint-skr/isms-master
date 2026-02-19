@@ -1,9 +1,9 @@
 > **Document ID:** HB_REG_03-Asset-Register
-> **Version:** 00.02.015
+> **Version:** 00.02.016
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** A.5.9
-> **Last modified:** 2026-02-18
+> **Last modified:** 2026-02-19
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -32,7 +32,7 @@ Protection requirement values are populated through the protection requirements 
 
 The cross-reference tables (section below) are the **SSOT for relationships** between assets. The relationship columns in the asset tables are denormalized quick references for a fast overview. In case of conflict, the cross-reference tables prevail.
 
-The Confidentiality (C), Integrity (I) and Availability (A) columns are structural placeholders. They are populated through the protection requirements assessment (CB_PRC_13). BCM-related recovery data (RTO, RPO, MTD, continuity plans) is maintained in the dedicated BIA Register (HB_REG_04).
+The Confidentiality (C), Integrity (I) and Availability (A) columns are structural placeholders. They are populated through the protection requirements assessment (CB_PRC_13). For process assets (PRC), C/I/A values are primary (from CB_TPL_19). For all other asset types, C/I/A values are inherited from parent processes (maximum principle). BIA parameters are documented in process PR records (CB_TPL_19). BCM recovery data (continuity plans, test logs) is maintained in HB_REG_04 (BCM Register).
 
 Grouped target objects (Zielobjekte) replace individual entries in the ISMS register when assets share an identical security-management profile. The operational detail inventory (serial numbers, licences, individual configurations) is maintained externally in the CMDB. Cross-reference tables provide seamless traceability from process through application, IT system, communication link to room and building. Information types are documented as an attribute of each process and serve as a classification reference.
 
@@ -66,56 +66,57 @@ The asset inventory maintains the following fields for each asset (addresses A.5
 | Processed information | Information type IDs (PRC assets only — maps to Information Types reference table) |
 | Personal data | Yes/No |
 | Sensitive customer data | Yes/No |
-| Confidentiality | Normal/High/Very high |
-| Integrity | Normal/High/Very high |
-| Availability | Normal/High/Very high |
+| Confidentiality | Normal/High/Very high — Primary (from CB_TPL_19) for PRC; Inherited (maximum principle) for all others |
+| Integrity | Normal/High/Very high — Primary (from CB_TPL_19) for PRC; Inherited (maximum principle) for all others |
+| Availability | Normal/High/Very high — Primary (from CB_TPL_19) for PRC; Inherited (maximum principle) for all others |
+| PR Source | Process PR record ID for PRC assets; "Inherited from [Process-ID(s)]" for sub-assets |
 | Review interval | [Monthly / 3 / 6 / 12 months] |
 | Date of last review | Date |
 | Date of next review | Date |
-| PR_Status | Protection requirements status: `complete` / `suspended_missing_INF` / `suspended_missing_BIA` / `pending_approval` |
+| PR_Status | Protection requirements status: `complete` / `suspended_missing_INF` / `pending_approval` |
 
 **Optional field (for assets with availability requirements):**
 
 | Field | Description |
 |---|---|
-| BIA Tier | Recovery tier (1-4) per BIA Register (HB_REG_04). Populated through BIA process (CB_POL_L3_08). |
+| BIA Tier | Recovery tier (1-4) derived from BIA parameters in process PR record (CB_TPL_19). Populated through protection requirements process (CB_PRC_13). |
 
 The mandatory fields are reflected in the category tables below. CIA values are populated through the protection requirements assessment (CB_PRC_13).
 
 ## Processes
 
-| ID | Name | Description | Count | Includes | Responsible | Processed Information | Applications | C | I | A | PR_Status |
-|---|---|---|---|---|---|---|---|---|---|---|---|
+| ID | Name | Description | Count | Includes | Responsible | Processed Information | Applications | C | I | A | PR Source | PR_Status |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
 
 ## Applications
 
-| ID | Name | Description | Count | Includes | Responsible | Processes | IT Systems | C | I | A | PR_Status |
-|---|---|---|---|---|---|---|---|---|---|---|---|
+| ID | Name | Description | Count | Includes | Responsible | Processes | IT Systems | C | I | A | PR Source | PR_Status |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
 
 ## Physical IT Systems
 
-| ID | Name | Description | Count | Includes | Responsible | Applications | Room | C | I | A | PR_Status |
-|---|---|---|---|---|---|---|---|---|---|---|---|
+| ID | Name | Description | Count | Includes | Responsible | Applications | Room | C | I | A | PR Source | PR_Status |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
 
 ## Virtual IT Systems
 
-| ID | Name | Description | Count | Includes | Responsible | Applications | Host system | C | I | A | PR_Status |
-|---|---|---|---|---|---|---|---|---|---|---|---|
+| ID | Name | Description | Count | Includes | Responsible | Applications | Host system | C | I | A | PR Source | PR_Status |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
 
 ## Communication Links
 
-| ID | Name | Description | Count | Includes | Criticality | Source | Target | Responsible | C | I | A | PR_Status |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| ID | Name | Description | Count | Includes | Criticality | Source | Target | Responsible | C | I | A | PR Source | PR_Status |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 
 ## Rooms
 
-| ID | Designation | Description | Count | Includes | Building | Responsible | C | I | A | PR_Status |
-|---|---|---|---|---|---|---|---|---|---|---|
+| ID | Designation | Description | Count | Includes | Building | Responsible | C | I | A | PR Source | PR_Status |
+|---|---|---|---|---|---|---|---|---|---|---|---|
 
 ## Buildings
 
-| ID | Name | Description | Count | Includes | Responsible | C | I | A | PR_Status |
-|---|---|---|---|---|---|---|---|---|---|
+| ID | Name | Description | Count | Includes | Responsible | C | I | A | PR Source | PR_Status |
+|---|---|---|---|---|---|---|---|---|---|---|
 
 ## Information Types (Reference)
 
@@ -158,12 +159,13 @@ The following tables map relationships between assets. They are the SSOT — in 
 ## See also
 
 - CB_PRC_13-Protection-Requirements — Protection requirements assessment process
-- HB_REG_04-BIA-Register — BIA assessment and tier tracking
+- HB_REG_04-BCM-Register — BCM continuity plan tracking
 
 ## Changelog
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.02.016 | 2026-02-19 | Claude (AI) | Inherited PR model: PR Source field, primary/inherited annotations for C/I/A, remove suspended_missing_BIA, BIA Tier source → CB_TPL_19 |
 | 00.02.015 | 2026-02-18 | Claude (AI) | Add PR_Status field for protection requirements lifecycle tracking |
 | 00.02.014 | 2026-02-17 | Claude (AI) | Information types methodology: argumentative section for INF reference table, "Processed information" added to mandatory fields |
 | 00.02.013 | 2026-02-17 | Claude (AI) | Process-centric restructure: PRC as primary asset type, INF as reference table, section reorder, cross-references reduced from 6 to 5 |

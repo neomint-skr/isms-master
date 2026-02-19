@@ -1,17 +1,17 @@
 # Template: Protection Requirements Assessment
 
-> ISO Reference: Clause 6.1, A.5.9. Copy per asset (group), fill in, and file as evidence in ISMS-Handbook/Registers/Protection-Requirements/.
+> ISO Reference: Clause 6.1, A.5.9. Copy per business process, fill in, and file as SSOT evidence in ISMS-Handbook/Registers/Protection-Requirements/1-Process/.
 
 ## Metadata
 
 | Field | Value |
 |---|---|
 | Document ID | CB_TPL_19-Protection-Requirements-Assessment |
-| Asset ID (REG_03) | |
-| Asset name | |
-| Asset type | [PRC — Process / APP — Application / PIT — Physical IT System / VIT — Virtual IT System / CON — Communication Connection / ROM — Room / BLD — Building] |
-| Processed information (PRC only) | [Information type IDs from reference table, or n/a] |
-| Asset owner | |
+| Process ID (REG_03) | |
+| Process name | |
+| Asset type | PRC — Process |
+| Processed information | [Information type IDs from reference table] |
+| Process owner | |
 | Assessor | |
 | Assessment date | |
 
@@ -21,8 +21,8 @@
 
 | Field | Value |
 |---|---|
-| Suspension reason | [missing_INF / missing_BIA / —] |
-| Missing register reference | [e.g. HB_REG_03 (information types) / HB_REG_04 (BIA tier) / —] |
+| Suspension reason | [missing_INF / —] |
+| Missing register reference | [e.g. HB_REG_03 (information types) / —] |
 | Suspend date | [YYYY-MM-DD / —] |
 | Expected resolution | [YYYY-MM-DD or description / —] |
 
@@ -30,41 +30,60 @@
 
 ### Confidentiality
 
-| Field | Value |
+| # | Damage scenario | Category | Rationale |
+|---|---|---|---|
+| 1 | Violation of laws, regulations, or contracts | [Normal / High / Very high] | [rationale] |
+| 2 | Impairment of informational self-determination | [Normal / High / Very high] | [rationale] |
+| 3 | Impairment of personal safety | [Normal / High / Very high] | [rationale] |
+| 4 | Impairment of task fulfilment | [Normal / High / Very high] | [rationale] |
+| 5 | Negative reputation effects | [Normal / High / Very high] | [rationale] |
+| 6 | Financial impact | [Normal / High / Very high] | [rationale] |
+
+| Derived C | [= max(scenarios 1–6) — do not select manually] |
 |---|---|
-| Category | [Normal / High / Very high] |
-| Damage scenario(s) | |
-| Rationale | |
 
 ### Integrity
 
-| Field | Value |
+| # | Damage scenario | Category | Rationale |
+|---|---|---|---|
+| 1 | Violation of laws, regulations, or contracts | [Normal / High / Very high] | [rationale] |
+| 2 | Impairment of informational self-determination | [Normal / High / Very high] | [rationale] |
+| 3 | Impairment of personal safety | [Normal / High / Very high] | [rationale] |
+| 4 | Impairment of task fulfilment | [Normal / High / Very high] | [rationale] |
+| 5 | Negative reputation effects | [Normal / High / Very high] | [rationale] |
+| 6 | Financial impact | [Normal / High / Very high] | [rationale] |
+
+| Derived I | [= max(scenarios 1–6) — do not select manually] |
 |---|---|
-| Category | [Normal / High / Very high] |
-| Damage scenario(s) | |
-| Rationale | |
 
 ### Availability
 
+Availability is derived from BIA parameters, not from damage scenarios.
+
 | Field | Value |
 |---|---|
-| Category | [Normal / High / Very high] |
-| Damage scenario(s) | |
-| Rationale | |
+| RTO (hours) | [maximum acceptable downtime] |
+| RPO (hours) | [maximum acceptable data loss] |
+| MTD (hours) | [maximum tolerable downtime] |
+
+Tier derivation (strictest condition wins):
+
+| Tier | RTO | RPO | Criticality | Derived A |
+|---|---|---|---|---|
+| 1 | 0–4 h | 0–4 h | Critical | Very high |
+| 2 | 5–24 h | 5–24 h | Important | High |
+| 3 | 25–96 h | 25–96 h | Normal | Normal |
+| 4 | > 97 h | > 97 h | Low | Normal |
+
+| Derived BIA Tier | [1/2/3/4 — derived from strictest RTO/RPO, do not select manually] |
+|---|---|
+| Derived A | [Very high / High / Normal — derived from tier, do not select manually] |
 
 ### Overall Protection Requirement
 
 | Field | Value |
 |---|---|
-| Overall category | [Normal / High / Very high] (= maximum of C, I, A) |
-
-## BIA Derivation (Process Assets Only)
-
-| Field | Value |
-|---|---|
-| BIA Tier | [1 (Critical) / 2 (Important) / 3 (Normal) / 4 (Low)] |
-| Derived availability (A) | [Very high / High / Normal / Normal] |
-| Source | HB_REG_04-BIA-Register |
+| Overall category | [= max(Derived C, Derived I, Derived A) — do not select manually] |
 
 ## Override Documentation
 
@@ -83,8 +102,8 @@
 
 | Field | Value |
 |---|---|
-| Inheritance source(s) | [Asset IDs from which protection requirements are inherited, or "Primary assessment" if directly assessed] |
-| Maximum principle chain | [Describe the highest-value path if inherited] |
+| Inheritance source(s) | Primary assessment |
+| Inheriting assets | [Sub-asset IDs that inherit from this process] |
 | Cumulation effect | [Yes / No — if yes, describe aggregation rationale] |
 | Distribution effect | [Yes / No — if yes, describe redundancy measure and resulting relativization] |
 
@@ -100,13 +119,14 @@
 
 | Field | Value |
 |---|---|
-| Asset owner approval | [Name, date] |
+| Process owner approval | [Name, date] |
 | CISO consistency check | [Name, date] |
 
 ## Changelog
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.00.004 | 2026-02-19 | Claude (AI) | Process-centric SSOT redesign: 6-scenario grid for C/I, BIA params for A, derived categories only, remove BIA derivation section |
 | 00.00.003 | 2026-02-18 | Claude (AI) | Add Suspension Documentation section for missing INF/BIA prerequisites |
 | 00.00.002 | 2026-02-17 | Claude (AI) | Process-centric: INF removed from asset type list, PRC first, added "Processed information" field |
 | 00.00.001 | 2026-02-11 | Claude | Add BIA Derivation block, Override Documentation block; update asset type prefixes (PRC, PIT, VIT, CON, ROM, BLD) |
