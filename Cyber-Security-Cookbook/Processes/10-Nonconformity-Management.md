@@ -1,9 +1,9 @@
 > **Document ID:** CB_PRC_10-Nonconformity-Management
-> **Version:** 00.01.007
+> **Version:** 00.01.008
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 10.2
-> **Last modified:** 2026-02-11
+> **Last modified:** 2026-02-20
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -21,7 +21,7 @@ Nonconformities emerge from audits, incidents, monitoring deviations, and employ
 
 This process defines the workflow from detection and reporting through root cause analysis and corrective actions to effectiveness review. It ensures that identified deviations are systematically addressed and their resolution is demonstrated.
 
-The process operationalizes the requirements from HB_CLS_10.2 (Nonconformity and Corrective Action). Findings are documented in HB_REG_12 (Nonconformity Register) and tracked to completion.
+The process operationalizes the requirements from HB_CLS_10.2 (Nonconformity and Corrective Action). Findings are documented in HB_REG_NC (Nonconformity Register) and tracked to completion.
 
 **Scope:** All nonconformities within the ISMS scope. Triggers: audit findings (CB_PRC_08), security incidents (CB_PRC_01), monitoring deviations (CB_PRC_11), or external reports.
 
@@ -44,7 +44,7 @@ Any person within the ISMS scope may report a suspected nonconformity. Reports a
 
 **Documentation at intake:**
 
-Each reported nonconformity is registered in HB_REG_12-Nonconformity-Register with at minimum:
+Each reported nonconformity is registered in HB_REG_NC_01-Nonconformity-Register with at minimum:
 
 - Unique finding ID (assigned by CISO)
 - Date of detection
@@ -61,7 +61,7 @@ The CISO includes NC identification activities in the [annual ISMS calendar / au
 
 **Immediate action:**
 
-Upon registration, the CISO assesses whether immediate containment is required. Immediate actions aim to remedy the problem, prevent aggravation, and minimise impact. All containment measures are documented with timestamps in HB_REG_12.
+Upon registration, the CISO assesses whether immediate containment is required. Immediate actions aim to remedy the problem, prevent aggravation, and minimise impact. All containment measures are documented with timestamps in HB_REG_NC.
 
 **Root cause analysis (RCA):**
 
@@ -84,7 +84,7 @@ Following root cause identification, the CISO evaluates whether similar nonconfo
 - Whether the finding is systemic (affecting the management system) or isolated
 - Potential consequences if the nonconformity recurs
 
-The results of the analysis — root cause, impact assessment, and systemic evaluation — are documented in HB_REG_12.
+The results of the analysis — root cause, impact assessment, and systemic evaluation — are documented in HB_REG_NC.
 
 ## Corrective actions
 
@@ -92,7 +92,7 @@ Based on the root cause analysis, the CISO defines corrective actions for each n
 
 **Action plan:**
 
-Each corrective action is documented in HB_REG_12 with:
+Each corrective action is documented in HB_REG_NC with:
 
 | Field | Content |
 |---|---|
@@ -144,7 +144,7 @@ The CISO evaluates effectiveness based on:
 
 **Documentation:**
 
-The review result (effective / not effective), date, and supporting evidence are recorded in HB_REG_12. Effective actions are closed with the review date.
+The review result (effective / not effective), date, and supporting evidence are recorded in HB_REG_NC. Effective actions are closed with the review date.
 
 **Escalation on ineffectiveness:**
 
@@ -161,7 +161,7 @@ Ineffective actions are never closed without one of the above resolutions.
 - HB_CLS_5.3-Roles-and-Responsibilities
 - HB_CLS_10.2-Nonconformity
 - HB_CLS_10.1-Continual-Improvement
-- HB_REG_12-Nonconformity-Register
+- HB_REG_NC_01-Nonconformity-Register
 - CB_PRC_01-Incident-Management
 - CB_PRC_07-Risk-Management
 - CB_PRC_08-Internal-Audit
@@ -172,6 +172,7 @@ Ineffective actions are never closed without one of the above resolutions.
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.008 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.007 | 2026-02-11 | CISO | Populated TODO sections: Detection and reporting (sources, channels, scheduled detection), Analysis and RCA (immediate action, 5-Why/Ishikawa, impact assessment), Corrective actions (action plan, deadlines, ISMS modification), Effectiveness review (timing, criteria, escalation), Summary |
 | 00.01.006 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.005 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/FOR WHAT/WHERE) |

@@ -1,9 +1,9 @@
-> **Document ID:** HB_REG_08-Statement-of-Applicability
-> **Version:** 00.04.014
+> **Document ID:** HB_REG_SOA_01-Statement-of-Applicability
+> **Version:** 00.04.015
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** Clause 6.1.3 d
-> **Last modified:** 2026-02-19
+> **Last modified:** 2026-02-20
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -50,7 +50,7 @@ Control selection takes place during risk treatment (CB_PRC_07, HB_CLS_8.3) and 
 | 5.6 | Contact with special interest groups | Yes | [baseline/risk treatment/legal-contractual] | Reduces likelihood of deliberate rule breach | Implemented | CB_POL_L2_07 | Interested parties register |
 | 5.7 | Threat intelligence | Yes | [baseline/risk treatment/legal-contractual] | Required for proactive threat awareness; three-tier model established | Partial | CB_POL_L2_03 | L2_03, L2_13 threat intelligence sections; PRC_04 |
 | 5.8 | Information security in project management | Yes | [baseline/risk treatment/legal-contractual] | Reduces likelihood of deliberate rule breach | Implemented | CB_POL_L2_04 | Project security register |
-| 5.9 | Inventory of information and other associated assets | Yes | [baseline/risk treatment/legal-contractual] | Reduces likelihood of unauthorized access | Implemented | HB_REG_03, CB_PRC_12 | Asset register |
+| 5.9 | Inventory of information and other associated assets | Yes | [baseline/risk treatment/legal-contractual] | Reduces likelihood of unauthorized access | Implemented | HB_REG_AM, CB_PRC_12 | Asset register |
 | 5.10 | Acceptable use of information and other associated assets | Yes | [baseline/risk treatment/legal-contractual] | Reduces likelihood of unauthorized access | Implemented | CB_POL_L2_07 | Asset handling procedures |
 | 5.11 | Return of assets | Yes | [baseline/risk treatment/legal-contractual] | Reduces likelihood of unauthorized access | Implemented | CB_POL_L2_07 | Role definition |
 | 5.12 | Classification of information | Yes | [baseline/risk treatment/legal-contractual] | Reduces likelihood of unauthorized access | Implemented | CB_POL_L2_02 | Classification scheme |
@@ -70,8 +70,8 @@ Control selection takes place during risk treatment (CB_PRC_07, HB_CLS_8.3) and 
 | 5.26 | Response to information security incidents | Yes | [baseline/risk treatment/legal-contractual] | Reduces impact of an information security incident | Implemented | CB_POL_L2_13 | Incident response procedures |
 | 5.27 | Learning from information security incidents | Yes | [baseline/risk treatment/legal-contractual] | Reduces likelihood of deliberate rule breach | Implemented | CB_POL_L2_13 | Incident response procedures |
 | 5.28 | Collection of evidence | Yes | [baseline/risk treatment/legal-contractual] | Reduces impact of an information security incident | Implemented | CB_POL_L2_13 | Evidence collection procedures |
-| 5.29 | Information security during disruption | Yes | [baseline/risk treatment/legal-contractual] | Reduces impact of an information security incident | Implemented | CB_POL_L2_06 | CB_POL_L3_08, HB_REG_04-BCM-Register |
-| 5.30 | ICT readiness for business continuity | No | — | Not proportionate at current org maturity level | — | CB_POL_L2_06 | CB_POL_L3_08, HB_REG_04-BCM-Register |
+| 5.29 | Information security during disruption | Yes | [baseline/risk treatment/legal-contractual] | Reduces impact of an information security incident | Implemented | CB_POL_L2_06 | CB_POL_L3_08, HB_REG_BCM_01-BCM-Register |
+| 5.30 | ICT readiness for business continuity | No | — | Not proportionate at current org maturity level | — | CB_POL_L2_06 | CB_POL_L3_08, HB_REG_BCM_01-BCM-Register |
 | 5.31 | Identification of applicable legislation and contractual requirements | Yes | [baseline/risk treatment/legal-contractual] | Reduces likelihood of deliberate rule breach | Implemented | CB_POL_L2_14 | Legal requirements register |
 | 5.32 | Intellectual property rights | Yes | [baseline/risk treatment/legal-contractual] | Reduces likelihood of deliberate rule breach | Implemented | CB_POL_L2_14 | IP protection procedures |
 | 5.33 | Protection of records | Yes | [baseline/risk treatment/legal-contractual] | Reduces likelihood of deliberate rule breach | Implemented | CB_POL_L2_14 | Record retention schedule |
@@ -158,6 +158,7 @@ Control selection takes place during risk treatment (CB_PRC_07, HB_CLS_8.3) and 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.04.015 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.04.014 | 2026-02-19 | Claude (AI) | Controls 5.29/5.30: HB_REG_04 reference updated to BCM-Register |
 | 00.04.013 | 2026-02-18 | Claude (AI) | Add Basis column for applicability classification (baseline/risk treatment/legal-contractual) |
 | 00.04.012 | 2026-02-11 | Claude (AI) | Register renumbered for information-flow order (formerly no. 02) |

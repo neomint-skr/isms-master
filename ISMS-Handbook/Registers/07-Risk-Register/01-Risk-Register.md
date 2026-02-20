@@ -1,9 +1,9 @@
-> **Document ID:** HB_REG_05-Risk-Register
-> **Version:** 00.01.011
+> **Document ID:** HB_REG_RR_01-Risk-Register
+> **Version:** 00.01.012
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** Clause 6.1, 8.2, 8.3
-> **Last modified:** 2026-02-11
+> **Last modified:** 2026-02-20
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -21,7 +21,7 @@ The risk register captures all identified information security risks to ensure s
 
 The register documents all identified IS risks with asset reference, threat, vulnerability, evaluation (likelihood x impact) and treatment status. It provides the decision basis for the prioritization of controls.
 
-Risk evaluation follows the criteria in CB_POL_L2_11 (Risk Management) and the workflow in CB_PRC_07 (Risk Management). Risks above the acceptance threshold are addressed in the risk treatment plan (HB_REG_06) and tracked through the management review (CB_PRC_09).
+Risk evaluation follows the criteria in CB_POL_L2_11 (Risk Management) and the workflow in CB_PRC_07 (Risk Management). Risks above the acceptance threshold are addressed in the risk treatment plan (HB_REG_RT) and tracked through the management review (CB_PRC_09).
 
 **Scope:** All IS risks within the ISMS scope. Target audience: Risk owners (evaluation), CISO (analysis), top management (acceptance decision), auditors (evidence).
 
@@ -33,7 +33,7 @@ Risk evaluation follows the criteria in CB_POL_L2_11 (Risk Management) and the w
 | Treatment option | Avoid (eliminate the activity), Reduce (reduce likelihood/impact through controls), Transfer (shift risk to third party), Accept (conscious decision to retain risk), Exception (approved time-limited policy deviation — see CB_PRC_14 and HB_REG_EXC_01 for the full exception lifecycle). Defined in CB_POL_L2_11 |
 | Gross risk | Risk level before any controls are applied (inherent risk) |
 | Net risk | Risk level after existing controls are considered (residual risk) |
-| SM-ID | Reference to security measure(s) in HB_REG_07. Existing SM = currently operational; Planned SM = identified for implementation |
+| SM-ID | Reference to security measure(s) in HB_REG_SM. Existing SM = currently operational; Planned SM = identified for implementation |
 | Status | To be assessed (scenario generated, not yet evaluated), Identified (evaluation complete), Under treatment (treatment plan active), Accepted (formal acceptance decision documented), Closed (risk no longer applicable or successfully mitigated below threshold) |
 
 ## Risk Matrix
@@ -67,9 +67,9 @@ Acceptance criteria are defined in CB_POL_L2_11. Critical risks (risk level 12-1
 
 - CB_POL_L2_11-Risk-Management — Risk criteria, matrix, acceptance thresholds
 - CB_PRC_07-Risk-Management — Operational risk management process
-- HB_REG_06-Risk-Treatment-Plan — Treatment plan for risks above acceptance threshold
-- HB_REG_03-Asset-Register — Asset inventory as basis for risk identification
-- HB_REG_07-Security-Measures-Register — Security measures referenced by SM-ID
+- HB_REG_RT_01-Risk-Treatment-Plan — Treatment plan for risks above acceptance threshold
+- HB_REG_AM_01-Asset-Register — Asset inventory as basis for risk identification
+- HB_REG_SM_01-Security-Measures-Register — Security measures referenced by SM-ID
 - HB_REG_EXC_01-Exception-Index — Exception register for approved policy deviations
 
 
@@ -77,6 +77,7 @@ Acceptance criteria are defined in CB_POL_L2_11. Critical risks (risk level 12-1
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.012 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.011 | 2026-02-11 | Claude (AI) | Register renumbered for information-flow order (formerly no. 06) |
 | 00.01.010 | 2026-02-11 | Claude (AI) | Restructured to scenario-based risk entries: SC-ID replaces R-ID, explicit Threat/Vulnerability-ID columns, gross/net risk separation, SM-ID references, new status "To be assessed" |
 | 00.01.009 | 2026-02-11 | Claude (AI) | Added Exception as treatment option type; cross-reference to HB_REG_EXC_01 (merge from retorio) |

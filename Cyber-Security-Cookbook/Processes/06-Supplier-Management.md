@@ -1,9 +1,9 @@
 > **Document ID:** CB_PRC_06-Supplier-Management
-> **Version:** 00.01.006
+> **Version:** 00.01.007
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.19-5.23
-> **Last modified:** 2026-02-11
+> **Last modified:** 2026-02-20
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -21,13 +21,13 @@ New or changing supplier relationships require a structured workflow to ensure t
 
 This process defines the workflow from supplier assessment through contractual security requirements to ongoing monitoring. It ensures that IS requirements are consistently addressed in supplier relationships.
 
-The process operationalizes the requirements from CB_POL_L2_05-Suppliers-and-Cloud. Assessment results are documented in HB_REG_10 (Supplier Register) and reviewed regularly.
+The process operationalizes the requirements from CB_POL_L2_05-Suppliers-and-Cloud. Assessment results are documented in HB_REG_SUP (Supplier Register) and reviewed regularly.
 
 **Scope:** All external service providers and cloud providers that process information within the ISMS scope. Triggers: new supplier relationship, contract amendment, or annual review.
 
 ## Assessment
 
-Assessment results are documented in HB_REG_10-Supplier-Register.
+Assessment results are documented in HB_REG_SUP_01-Supplier-Register.
 
 ### Trigger
 
@@ -42,7 +42,7 @@ A supplier assessment is initiated when a new supplier relationship is proposed,
 | 3 | Review responses and evaluate certifications, TOMs, and data protection compliance | CISO | Questionnaire, supplier documentation | Assessment report |
 | 4 | Conduct risk assessment per CB_PRC_07 and determine residual risk | CISO | Assessment report, risk criteria | Risk rating, residual risk |
 | 5 | Obtain residual risk acceptance from [risk owner / top management] | CISO | Residual risk documentation | Signed risk acceptance |
-| 6 | Record assessment results in HB_REG_10-Supplier-Register | CISO | Assessment report, risk acceptance | Updated register entry |
+| 6 | Record assessment results in HB_REG_SUP_01-Supplier-Register | CISO | Assessment report, risk acceptance | Updated register entry |
 
 For cloud service providers, additional evaluation criteria from CB_POL_L3_07 (Evaluate cloud services) apply (addresses A.5.23).
 
@@ -67,7 +67,7 @@ Supplier agreements must include information security requirements proportional 
 | 3 | Ensure a data processing agreement (DPA) is in place where personal data is processed | [Data Protection Officer / CISO] | Processing activities record | Signed DPA |
 | 4 | Verify that SLA terms cover availability, response times, and incident reporting deadlines | CISO, Requesting business unit | Service requirements | SLA appendix |
 | 5 | Obtain contract approval from [authorized signatory] | [Legal / Procurement] | Finalized contract | Signed agreement |
-| 6 | Store signed agreement and link to the supplier entry in HB_REG_10 | CISO | Signed agreement | Updated register entry |
+| 6 | Store signed agreement and link to the supplier entry in HB_REG_SUP | CISO | Signed agreement | Updated register entry |
 
 ### SLA minimum content
 
@@ -106,7 +106,7 @@ Supplier compliance with agreed IS requirements must be monitored, reviewed, and
 | 2 | Evaluate KPIs against agreed targets | CISO | Monitoring data set, SLA thresholds | Performance summary |
 | 3 | Track supplier-side changes (policy updates, sub-contractor changes, location changes) | CISO | Supplier notifications, market intelligence | Change log |
 | 4 | Conduct or review audit reports (internal audit or independent auditor) | CISO | Audit rights clause, audit programme HB_AUD_SUP_01 | Audit findings |
-| 5 | Consolidate results and update HB_REG_10-Supplier-Register | CISO | Performance summary, audit findings, change log | Updated register entry |
+| 5 | Consolidate results and update HB_REG_SUP_01-Supplier-Register | CISO | Performance summary, audit findings, change log | Updated register entry |
 | 6 | Escalate non-compliance or material deviations | CISO | Updated register entry | Escalation record, action plan |
 
 ### KPIs
@@ -127,7 +127,7 @@ Non-compliance is documented in writing and an action plan with deadlines is agr
 
 - CB_POL_L2_05-Supplier-and-Cloud — Normative requirements for supplier relationships
 - CB_POL_L3_07-Supplier-Management — Assessment, contract design, and monitoring guidance
-- HB_REG_10-Supplier-Register — Supplier inventory and assessment results
+- HB_REG_SUP_01-Supplier-Register — Supplier inventory and assessment results
 - HB_AUD_SUP_01 — Supplier review programme
 - HB_CLS_5.3-Roles-and-Responsibilities
 
@@ -136,6 +136,7 @@ Non-compliance is documented in writing and an action plan with deadlines is agr
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.007 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.006 | 2026-02-11 | CISO | Populated Assessment, Contracts, Monitoring, Summary sections |
 | 00.01.005 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.004 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/FOR WHAT/WHERE) |

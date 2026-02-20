@@ -1,9 +1,9 @@
-> **Document ID:** HB_REG_11-Competence-Records
-> **Version:** 00.01.000
+> **Document ID:** HB_REG_COMP_01-Competence-Records
+> **Version:** 00.01.001
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** Clause 7.2
-> **Last modified:** 2026-02-11
+> **Last modified:** 2026-02-20
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -166,4 +166,5 @@ Assessment date: [YYYY-MM-DD]
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.001 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.000 | 2026-02-11 | CISO | Initial version: SOLL/IST matrix for 4 ISMS roles, 20 competence dimensions |

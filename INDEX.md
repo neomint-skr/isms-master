@@ -31,33 +31,27 @@
 
 ### HB -- ISMS-Handbook / Registers
 
-**01-Context-Register.md** -- Organizational profile, external/internal issues
-**02-Interested-Parties-Register.md** -- Stakeholders + IS requirements
-**03-Asset-Register.md** -- 8 asset inventories, 6 cross-reference tables, data model
-**04-BCM-Register.md** -- BCM continuity plan tracking
-**05-Risk-Register.md** -- 4x4 matrix, scenario-based risk entries, acceptance
-**06-Risk-Treatment-Plan.md** -- Controls per risk, owners, deadlines, gap tracking
-**07-Security-Measures-Register.md** -- Security measures per risk, linked to controls and assets
-**08-Statement-of-Applicability.md** -- 93 controls, SSOT for applicability
-**09-IS-Objectives-Register.md** -- IS objectives with KPIs and monitoring results
-**10-Supplier-Register.md** -- Supplier + cloud services tables
-**11-Competence-Records.md** -- SOLL/IST competence matrix per ISMS role (20 dimensions)
-**12-Nonconformity-Register.md** -- NC tracking with effectiveness review
-
-**Exception-Register/01-Exception-Index.md** -- Approved policy exceptions with expiry and review tracking
-
-**Risk-Framework/Threats/** -- Threat catalogues per asset class
+**01-Context/01-Context-Register.md** -- Organizational profile, external/internal issues
+**02-Interested-Parties/01-Interested-Parties-Register.md** -- Stakeholders + IS requirements
+**03-Asset-Management/01-Asset-Register.md** -- 8 asset inventories, 6 cross-reference tables, data model
+**04-Protection-Requirements/** -- Process protection requirement assessments (SSOT)
+**05-Risk-Framework/Threats/** -- Threat catalogues per asset class
 `1-Processes.md`, `2-Information.md`, `3-Applications.md`, `4-IT-Systems-Physical.md`, `5-IT-Systems-Virtual.md`, `6-Communication-Links.md`, `7-Rooms.md`, `8-Buildings.md`
-
-**Risk-Framework/Vulnerabilities/** -- Vulnerability catalogues per asset class
+**05-Risk-Framework/Vulnerabilities/** -- Vulnerability catalogues per asset class
 `1-Processes.md`, `2-Information.md`, `3-Applications.md`, `4-IT-Systems-Physical.md`, `5-IT-Systems-Virtual.md`, `6-Communication-Links.md`, `7-Rooms.md`, `8-Buildings.md`
-
-**Protection-Requirements/** -- Process protection requirement assessments (SSOT)
-
-**Risk-Assessments/** -- Per-asset risk assessments (7 layer folders)
+**06-Risk-Assessments/** -- Per-asset risk assessments (7 layer folders)
 `1-Process/`
-
-**Security-Measures/** -- Security measure evidence and implementation records
+**07-Risk-Register/01-Risk-Register.md** -- 4x4 matrix, scenario-based risk entries, acceptance
+**08-Risk-Treatment/01-Risk-Treatment-Plan.md** -- Controls per risk, owners, deadlines, gap tracking
+**09-Statement-of-Applicability/01-Statement-of-Applicability.md** -- 93 controls, SSOT for applicability
+**10-Security-Measures/01-Security-Measures-Register.md** -- Security measures per risk, linked to controls and assets
+**10-Security-Measures/** -- Security measure evidence and implementation records
+**11-Business-Continuity/01-BCM-Register.md** -- BCM continuity plan tracking
+**12-Supplier-and-Cloud/01-Supplier-Register.md** -- Supplier + cloud services tables
+**13-IS-Objectives-and-KPIs/01-IS-Objectives-Register.md** -- IS objectives with KPIs and monitoring results
+**14-Competence-Records/01-Competence-Records.md** -- SOLL/IST competence matrix per ISMS role (20 dimensions)
+**15-Nonconformities-and-Corrective-Actions/01-Nonconformity-Register.md** -- NC tracking with effectiveness review
+**16-Exceptions/01-Exception-Index.md** -- Approved policy exceptions with expiry and review tracking
 
 ### HB -- ISMS-Handbook / Management
 
@@ -188,7 +182,7 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 
 ## Coverage Matrix (93 Controls)
 
-> Derived from HB_REG_08-Statement-of-Applicability (SSOT). Document assignment only, no applicability/status. Short-form IDs without descriptive part.
+> Derived from HB_REG_SOA_01-Statement-of-Applicability (SSOT). Document assignment only, no applicability/status. Short-form IDs without descriptive part.
 
 ### A.5 Organizational Controls (37)
 
@@ -202,7 +196,7 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 | 5.6 | CB_POL_L2_07 | |
 | 5.7 | CB_POL_L2_03 | CB_POL_L2_13, CB_PRC_04 |
 | 5.8 | CB_POL_L2_04 | |
-| 5.9 | HB_REG_03 | CB_PRC_12, CB_POL_L2_07 |
+| 5.9 | HB_REG_AM | CB_PRC_12, CB_POL_L2_07 |
 | 5.10 | CB_POL_L2_07 | CB_POL_L3_01 |
 | 5.11 | CB_POL_L2_07 | |
 | 5.12 | CB_POL_L2_02 | CB_POL_L3_01 |
@@ -222,8 +216,8 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 | 5.26 | CB_POL_L2_13 | CB_PRC_01 |
 | 5.27 | CB_POL_L2_13 | CB_PRC_01 |
 | 5.28 | CB_POL_L2_13 | CB_PRC_01 |
-| 5.29 | CB_POL_L2_06 | CB_POL_L3_05, CB_POL_L3_08, HB_REG_04 |
-| 5.30 | CB_POL_L2_06 | CB_POL_L3_05, CB_POL_L3_08, HB_REG_04 |
+| 5.29 | CB_POL_L2_06 | CB_POL_L3_05, CB_POL_L3_08, HB_REG_BCM |
+| 5.30 | CB_POL_L2_06 | CB_POL_L3_05, CB_POL_L3_08, HB_REG_BCM |
 | 5.31 | CB_POL_L2_14 | |
 | 5.32 | CB_POL_L2_14 | |
 | 5.33 | CB_POL_L2_14 | |
@@ -325,9 +319,22 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 | C04..C10 | Clause sorting | C04_Context/ .. C10_Improvement/ |
 | MGT | Management | Management/ |
 | REG | Register | Registers/ |
-| REG_EXC | Exception register | Registers/Exception-Register/ |
-| REG_RF | Risk framework | Registers/Risk-Framework/ |
-| SM | Security Measures | Registers/Security-Measures/ |
+| REG_CTX | Context | Registers/01-Context/ |
+| REG_IP | Interested parties | Registers/02-Interested-Parties/ |
+| REG_AM | Asset management | Registers/03-Asset-Management/ |
+| REG_PR | Protection requirements | Registers/04-Protection-Requirements/ |
+| REG_RF | Risk framework | Registers/05-Risk-Framework/ |
+| REG_RA | Risk assessments | Registers/06-Risk-Assessments/ |
+| REG_RR | Risk register | Registers/07-Risk-Register/ |
+| REG_RT | Risk treatment | Registers/08-Risk-Treatment/ |
+| REG_SOA | Statement of applicability | Registers/09-Statement-of-Applicability/ |
+| REG_SM | Security measures | Registers/10-Security-Measures/ |
+| REG_BCM | Business continuity | Registers/11-Business-Continuity/ |
+| REG_SUP | Supplier and cloud | Registers/12-Supplier-and-Cloud/ |
+| REG_OBJ | IS objectives | Registers/13-IS-Objectives-and-KPIs/ |
+| REG_COMP | Competence records | Registers/14-Competence-Records/ |
+| REG_NC | Nonconformities | Registers/15-Nonconformities-and-Corrective-Actions/ |
+| REG_EXC | Exceptions | Registers/16-Exceptions/ |
 | PRC | Process | Processes/ |
 | HB_CLS_C05 | (folder) | Definitions/C05_Leadership/ (3 files) |
 | HB_CLS_C09 | (folder) | Definitions/C09_Performance/ (3 files) |

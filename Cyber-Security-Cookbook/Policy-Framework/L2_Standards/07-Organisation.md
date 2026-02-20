@@ -1,9 +1,9 @@
 > **Document ID:** CB_POL_L2_07-Organisation
-> **Version:** 00.03.016
+> **Version:** 00.03.017
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.2-5.6, A.5.9-5.11
-> **Last modified:** 2026-02-19
+> **Last modified:** 2026-02-20
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -60,7 +60,7 @@ Assets are classified by the following types and documented in separate register
 - Decommissioned assets are not deleted but marked as out of service and retained in the register for evidentiary purposes.
 
 **Process:** CB_PRC_12-Asset-Management describes the workflow from identification to maintenance.
-**Register:** HB_REG_03-Asset-Register documents all assets and their relationships.
+**Register:** HB_REG_AM_01-Asset-Register documents all assets and their relationships.
 
 ### Asset Grouping
 
@@ -143,12 +143,13 @@ The procedure for contact with authorities specifies contact points within the c
 - CB_POL_L3_01-User-Handbook — Acceptable use, governance guidance
 - CB_PRC_12-Asset-Management — Asset capture and maintenance
 - HB_CLS_5.3-Roles-and-Responsibilities — ISMS roles and RACI
-- HB_REG_03-Asset-Register — Asset inventory
+- HB_REG_AM_01-Asset-Register — Asset inventory
 
 ## Changelog
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.03.017 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.03.016 | 2026-02-19 | Claude (AI) | Traceability fix: add P3 to Policy reference (L1 allocation matrix assigns L2_07 to P3 Risk orientation) |
 | 00.03.015 | 2026-02-18 | CISO | Added P2 to Policy reference (L1 allocation matrix assigns L2_07 to P2 Compliance — traceability fix) |
 | 00.03.014 | 2026-02-17 | Claude (AI) | Traceability chain: normative requirement for documented information types as prerequisite for C/I assessment |

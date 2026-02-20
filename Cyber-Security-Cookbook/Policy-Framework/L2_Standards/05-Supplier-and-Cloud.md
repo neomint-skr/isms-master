@@ -1,9 +1,9 @@
 > **Document ID:** CB_POL_L2_05-Supplier-and-Cloud
-> **Version:** 00.01.007
+> **Version:** 00.01.008
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.19-5.23, A.8.30
-> **Last modified:** 2026-02-11
+> **Last modified:** 2026-02-20
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -143,12 +143,13 @@ Cloud service agreements must cover the following aspects:
 - CB_POL_L2_06-Business-Continuity — Supplier dependencies in contingency planning
 - CB_POL_L3_07-Supplier-Management — Assessment, agreements, monitoring
 - CB_PRC_06-Supplier-Management — Operational supplier process
-- HB_REG_10-Supplier-Register — Supplier inventory
+- HB_REG_SUP_01-Supplier-Register — Supplier inventory
 
 ## Changelog
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.008 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.007 | 2026-02-11 | CISO | Added supplier personnel screening requirement (A.5.20) |
 | 00.01.006 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.005 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |

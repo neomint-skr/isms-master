@@ -22,7 +22,7 @@ You receive recommendation lists from the analyst teammates via SendMessage. You
    - Clauses 4-10 with documentation obligations (DokI requirement markers)
    - Annex A (93 controls)
 2. `References/Library/Standards/ISO_2022_27002-Extract.md` — control guidance (guidance per control)
-3. `ISMS-Handbook/Registers/02-Statement-of-Applicability.md` — SoA
+3. `ISMS-Handbook/Registers/09-Statement-of-Applicability/01-Statement-of-Applicability.md` — SoA
 4. `INDEX.md` — coverage matrix
 5. `refs/isms-conventions.md` — repository conventions
 
@@ -35,18 +35,18 @@ These items MUST be documented in a certifiable ISMS:
 | 4.3 | ISMS scope | HB_CLS_4.3 |
 | 5.2 | Information security policy | CB_POL_L1_01 |
 | 6.1.2 | Risk assessment process | CB_POL_L2_11, CB_PRC_07 |
-| 6.1.3 | Risk treatment process | CB_PRC_07, HB_REG_06 |
-| 6.2 | IS objectives | HB_REG_09 |
+| 6.1.3 | Risk treatment process | CB_PRC_07, HB_REG_RT |
+| 6.2 | IS objectives | HB_REG_OBJ |
 | 6.3 | Planning of changes | HB_CLS_6.3 |
 | 7.2 | Competence evidence | HB_CLS_7.2 |
 | 8.1 | Operational planning | HB_CLS_8.1 |
-| 8.2 | Risk assessment results | HB_REG_05 |
-| 8.3 | Risk treatment results | HB_REG_06 |
+| 8.2 | Risk assessment results | HB_REG_RR |
+| 8.3 | Risk treatment results | HB_REG_RT |
 | 9.1 | Monitoring results | HB_CLS_9.1 |
 | 9.2 | Internal audit programme + results | HB_CLS_9.2 |
 | 9.3 | Management review results | HB_CLS_9.3 |
-| 10.1 | Nonconformities + corrective actions | HB_REG_12 |
-| SoA | Statement of Applicability | HB_REG_08 |
+| 10.1 | Nonconformities + corrective actions | HB_REG_NC |
+| SoA | Statement of Applicability | HB_REG_SOA |
 
 ## 5 checks per recommendation
 

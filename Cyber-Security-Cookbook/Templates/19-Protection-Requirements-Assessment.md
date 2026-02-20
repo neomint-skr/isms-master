@@ -1,6 +1,6 @@
 # Template: Protection Requirements Assessment
 
-> ISO Reference: Clause 6.1, A.5.9. Copy per business process, fill in, and file as SSOT evidence in ISMS-Handbook/Registers/Protection-Requirements/.
+> ISO Reference: Clause 6.1, A.5.9. Copy per business process, fill in, and file as SSOT evidence in ISMS-Handbook/Registers/04-Protection-Requirements/.
 
 ## Metadata
 

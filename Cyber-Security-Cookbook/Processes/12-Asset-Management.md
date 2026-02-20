@@ -1,9 +1,9 @@
 > **Document ID:** CB_PRC_12-Asset-Management
-> **Version:** 00.01.012
+> **Version:** 00.01.013
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.9
-> **Last modified:** 2026-02-19
+> **Last modified:** 2026-02-20
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -21,7 +21,7 @@ What is not known as an asset cannot be protected. This process governs the syst
 
 This process governs the lifecycle of all ISMS-relevant assets — from identification and ID assignment through registration and relationship mapping to decommissioning (addresses A.5.9). It ensures that the asset inventory is complete and current at all times.
 
-The process operationalizes the requirements from CB_POL_L2_07-Organization (assets section). Results are documented in HB_REG_03 (Asset Register) and form the basis for the protection requirements assessment (CB_PRC_13).
+The process operationalizes the requirements from CB_POL_L2_07-Organization (assets section). Results are documented in HB_REG_AM (Asset Register) and form the basis for the protection requirements assessment (CB_PRC_13).
 
 **Scope:** All asset types per CB_POL_L2_07 (assets section) and all lifecycle events. Coordinated by the IS-Coordinator with asset owners.
 
@@ -50,13 +50,13 @@ The asset receives a unique, stable asset ID. The ID does not change over the li
 
 ### 3. Registration
 
-The asset is recorded with the defined mandatory attributes in the appropriate asset register (HB_REG_03).
+The asset is recorded with the defined mandatory attributes in the appropriate asset register (HB_REG_AM).
 
-For process assets (PRC), the asset owner additionally identifies the information types processed by the business process and documents their IDs in the "Processed Information" column of HB_REG_03. The IDs reference the Information Types reference table in HB_REG_03. If a new information type is identified that does not yet exist in the reference table, it is added there first.
+For process assets (PRC), the asset owner additionally identifies the information types processed by the business process and documents their IDs in the "Processed Information" column of HB_REG_AM. The IDs reference the Information Types reference table in HB_REG_AM. If a new information type is identified that does not yet exist in the reference table, it is added there first.
 
 ### 4. Relationship mapping
 
-Relevant relationships to other assets are documented through the cross-reference tables in HB_REG_03. Additionally, the denormalized relationship columns in the asset table are updated.
+Relevant relationships to other assets are documented through the cross-reference tables in HB_REG_AM. Additionally, the denormalized relationship columns in the asset table are updated.
 
 **Mandatory dependency completeness check (approval gate).** Before an asset proceeds to approval (Step 6), all mandatory upstream dependencies must be registered. The following dependency chains are required:
 
@@ -95,6 +95,7 @@ Changes are recorded on an event-driven basis. Decommissioned assets are marked 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.013 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.012 | 2026-02-19 | Claude (AI) | ROM upstream: add CON as alternative dependency for CON↔ROM cascade traceability |
 | 00.01.011 | 2026-02-18 | Claude (AI) | Dependency completeness gate for asset approval |
 | 00.01.010 | 2026-02-17 | Claude (AI) | Step 3: sub-step for PRC assets to document information type IDs in "Processed Information" column |

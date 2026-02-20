@@ -1,9 +1,9 @@
-> **Document ID:** HB_REG_03-Asset-Register
-> **Version:** 00.02.017
+> **Document ID:** HB_REG_AM_01-Asset-Register
+> **Version:** 00.02.018
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** A.5.9
-> **Last modified:** 2026-02-19
+> **Last modified:** 2026-02-20
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -24,7 +24,7 @@ Protection requires knowledge — only what is inventoried can be assessed and p
 
 The register documents all ISMS-relevant assets in 8 categories with 6 cross-reference tables for dependencies (addresses A.5.9). It provides the data basis for protection requirements analysis, risk analysis and business impact assessment.
 
-Protection requirement values are populated through the protection requirements assessment process (CB_PRC_13) and feed into the risk register (HB_REG_05). The management review (CB_PRC_09) uses the asset inventory as input for the ISMS adequacy assessment.
+Protection requirement values are populated through the protection requirements assessment process (CB_PRC_13) and feed into the risk register (HB_REG_RR). The management review (CB_PRC_09) uses the asset inventory as input for the ISMS adequacy assessment.
 
 **Scope:** All organizational units, processes, applications, IT systems, communication links as well as rooms and buildings within the ISMS scope. Target audience: Asset owners (reporting), IS-Coordinator (maintenance), CISO (analysis).
 
@@ -32,7 +32,7 @@ Protection requirement values are populated through the protection requirements 
 
 The cross-reference tables (section below) are the **SSOT for relationships** between assets. The relationship columns in the asset tables are denormalized quick references for a fast overview. In case of conflict, the cross-reference tables prevail.
 
-The Confidentiality (C), Integrity (I) and Availability (A) columns are structural placeholders. They are populated through the protection requirements assessment (CB_PRC_13). For process assets (PRC), C/I/A values are primary (from CB_TPL_19). For all other asset types, C/I/A values are inherited from parent processes (maximum principle). BIA parameters are documented in process PR records (CB_TPL_19). BCM recovery data (continuity plans, test logs) is maintained in HB_REG_04 (BCM Register).
+The Confidentiality (C), Integrity (I) and Availability (A) columns are structural placeholders. They are populated through the protection requirements assessment (CB_PRC_13). For process assets (PRC), C/I/A values are primary (from CB_TPL_19). For all other asset types, C/I/A values are inherited from parent processes (maximum principle). BIA parameters are documented in process PR records (CB_TPL_19). BCM recovery data (continuity plans, test logs) is maintained in HB_REG_BCM (BCM Register).
 
 **Priority rule:** A manual PR Source value (Verteilungseffekt or Kumulationseffekt) is never auto-overwritten by inheritance recalculation. Only explicit assessor action may change a manual override.
 
@@ -166,12 +166,13 @@ The following tables map relationships between assets. They are the SSOT — in 
 ## See also
 
 - CB_PRC_13-Protection-Requirements — Protection requirements assessment process
-- HB_REG_04-BCM-Register — BCM continuity plan tracking
+- HB_REG_BCM_01-BCM-Register — BCM continuity plan tracking
 
 ## Changelog
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.02.018 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.02.017 | 2026-02-19 | Claude (AI) | PR Source format (3-value enum for sub-assets), priority rule for manual overrides, new Communication Links <> Rooms cross-ref table (5→6 tables) |
 | 00.02.016 | 2026-02-19 | Claude (AI) | Inherited PR model: PR Source field, primary/inherited annotations for C/I/A, remove suspended_missing_BIA, BIA Tier source → CB_TPL_19 |
 | 00.02.015 | 2026-02-18 | Claude (AI) | Add PR_Status field for protection requirements lifecycle tracking |

@@ -1,9 +1,9 @@
-> **Document ID:** HB_REG_04-BCM-Register
-> **Version:** 00.01.006
+> **Document ID:** HB_REG_BCM_01-BCM-Register
+> **Version:** 00.01.007
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** A.5.29-5.30
-> **Last modified:** 2026-02-19
+> **Last modified:** 2026-02-20
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -74,13 +74,14 @@ The following table tracks IT continuity plans required by CB_POL_L2_06-Business
 - CB_POL_L3_08-Business-Continuity — BIA methodology and continuity planning
 - CB_POL_L3_05-Data-Backup — Backup strategy aligned with tier model
 - CB_PRC_03-Backup-and-Recovery — Operational backup and recovery process
-- HB_REG_03-Asset-Register — Asset inventory
-- HB_REG_05-Risk-Register — Risk assessment input
+- HB_REG_AM_01-Asset-Register — Asset inventory
+- HB_REG_RR_01-Risk-Register — Risk assessment input
 
 ## Changelog
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.007 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.006 | 2026-02-19 | Claude (AI) | Rename to BCM Register, rescope: remove BIA assessment table and Derived V, add Findings/Actions and Review/Approval sections, retain Recovery Priority Tiers for BCM planning |
 | 00.01.005 | 2026-02-18 | Claude (AI) | Add governance columns (Rationale, Date, Owner, Approval status) to BIA assessment table |
 | 00.01.004 | 2026-02-11 | Claude (AI) | Register renumbered for information-flow order (formerly no. 10) |

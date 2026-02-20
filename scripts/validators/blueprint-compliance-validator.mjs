@@ -25,6 +25,7 @@ if (!existsSync(CLIENT_ROOT)) {
 
 const ANTIPATTERNS = [
   { pattern: /HB_REG_04-BIA-Register/i, label: 'Old register name HB_REG_04-BIA-Register' },
+  { pattern: /HB_REG_\d{2}-/i, label: 'Old numeric register ID format HB_REG_NN-' },
   { pattern: /suspended_missing_BIA/i, label: 'Old PR_Status value suspended_missing_BIA' },
   { pattern: /Inherited from \[/i, label: 'Old PR Source format "Inherited from ["' },
   { pattern: /rooms\/buildings\s*→\s*communication links/i, label: 'Old cascade order rooms/buildings → communication links' },

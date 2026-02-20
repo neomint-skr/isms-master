@@ -1,9 +1,9 @@
 > **Document ID:** HB_REG_EXC_01-Exception-Index
-> **Version:** 00.01.001
+> **Version:** 00.01.002
 > **Classification:** Confidential
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1
-> **Last modified:** 2026-02-11
+> **Last modified:** 2026-02-20
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -50,5 +50,6 @@ The register is maintained by the Chief Information Security Officer and reviewe
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.002 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.001 | 2026-02-11 | Claude | Renumber Exception Management PRC_13→PRC_14, TPL_19→TPL_20 |
 | 00.01.000 | 2026-02-11 | CISO | Initial version |

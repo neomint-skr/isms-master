@@ -1,9 +1,9 @@
 > **Document ID:** CB_POL_L2_11-Risk-Management
-> **Version:** 00.01.023
+> **Version:** 00.01.024
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1, 8.2, 8.3
-> **Last modified:** 2026-02-19
+> **Last modified:** 2026-02-20
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -24,7 +24,7 @@ Without clear criteria for likelihood, impact, and risk acceptance, risk assessm
 
 This policy establishes assessment scales, 4x4 risk matrix, protection requirement categories, acceptance criteria, and four treatment options as binding requirements (addresses Clause 6.1.2 a, 6.1.3 a). It creates the normative foundation for consistent and traceable risk decisions.
 
-The standard implements principle P3 (Risk orientation) of the IS policy. The operational risk management process is defined in CB_PRC_07 (Risk Management); results are documented in HB_REG_05 (Risk Register) and HB_REG_06 (Risk Treatment Plan).
+The standard implements principle P3 (Risk orientation) of the IS policy. The operational risk management process is defined in CB_PRC_07 (Risk Management); results are documented in HB_REG_RR (Risk Register) and HB_REG_RT (Risk Treatment Plan).
 
 **Scope:** All IS risks within the ISMS scope (HB_CLS_4.3). Target audience: risk owners, asset owners, Chief Information Security Officer, top management.
 
@@ -32,7 +32,7 @@ The standard implements principle P3 (Risk orientation) of the IS policy. The op
 
 Risk management follows an asset-based end-to-end approach. Each phase builds on the results of the preceding phase.
 
-**Phase 1 — Asset registration:** Assets are identified, classified by category and registered in the asset register (HB_REG_03). The asset management process (CB_PRC_12) governs the lifecycle from identification through disposal.
+**Phase 1 — Asset registration:** Assets are identified, classified by category and registered in the asset register (HB_REG_AM). The asset management process (CB_PRC_12) governs the lifecycle from identification through disposal.
 
 **Phase 2 — Protection requirements analysis:** For each business process, the protection requirements for confidentiality, integrity and availability are assessed individually. Information types processed by each business process are considered as attributes in the assessment. The overall protection requirement is determined by the highest individual value (maximum principle). Protection requirements are inherited along dependency chains documented in the asset register cross-references. Results are recorded in the C/I/A columns of the asset register.
 
@@ -40,7 +40,7 @@ Risk management follows an asset-based end-to-end approach. Each phase builds on
 
 **Phase 4 — Risk evaluation:** The resulting risk level is compared against the acceptance criteria defined in this standard. Risks exceeding the acceptance threshold require treatment.
 
-**Phase 5 — Risk treatment:** For each risk requiring treatment, one of the four treatment options is selected. Where reduction is chosen, controls are identified and reconciled against the 93 Annex A controls. The Statement of Applicability (HB_REG_08) is updated accordingly.
+**Phase 5 — Risk treatment:** For each risk requiring treatment, one of the four treatment options is selected. Where reduction is chosen, controls are identified and reconciled against the 93 Annex A controls. The Statement of Applicability (HB_REG_SOA) is updated accordingly.
 
 **Phase 6 — Approval and acceptance:** The risk treatment plan is approved by top management. Residual risks are formally accepted and documented in the risk register with rationale, approver and reassessment date.
 
@@ -48,16 +48,16 @@ Risk management follows an asset-based end-to-end approach. Each phase builds on
 
 | Phase | Normative basis | Process | Register |
 |---|---|---|---|
-| 1 — Asset registration | CB_POL_L2_07 (Asset types, grouping) | CB_PRC_12 (Asset lifecycle) | HB_REG_03 (Asset register) |
-| 2 — Protection requirements | This standard (Protection Requirements Analysis) | CB_PRC_13 (Protection requirements) | HB_REG_03 (C/I/A columns), CB_TPL_19 records (process PR SSOT) |
-| 3 — Risk identification and analysis | This standard (Risk Identification Methodology, Risk Analysis) | CB_PRC_07 (Risk assessment) | HB_REG_05 (Risk register) |
-| 4 — Risk evaluation | This standard (Risk Acceptance and Exceptions) | CB_PRC_07 (Risk evaluation) | HB_REG_05 (Risk register) |
-| 5 — Risk treatment | This standard (Risk Treatment, Security Measures Register) | CB_PRC_07 (Risk treatment) | HB_REG_06 (Treatment plan), HB_REG_07 (SM register), HB_REG_08 (SoA) |
-| 6 — Approval | This standard (Risk Acceptance and Exceptions) | CB_PRC_07 (Approval) | HB_REG_05 (Acceptance records) |
+| 1 — Asset registration | CB_POL_L2_07 (Asset types, grouping) | CB_PRC_12 (Asset lifecycle) | HB_REG_AM (Asset register) |
+| 2 — Protection requirements | This standard (Protection Requirements Analysis) | CB_PRC_13 (Protection requirements) | HB_REG_AM (C/I/A columns), CB_TPL_19 records (process PR SSOT) |
+| 3 — Risk identification and analysis | This standard (Risk Identification Methodology, Risk Analysis) | CB_PRC_07 (Risk assessment) | HB_REG_RR (Risk register) |
+| 4 — Risk evaluation | This standard (Risk Acceptance and Exceptions) | CB_PRC_07 (Risk evaluation) | HB_REG_RR (Risk register) |
+| 5 — Risk treatment | This standard (Risk Treatment, Security Measures Register) | CB_PRC_07 (Risk treatment) | HB_REG_RT (Treatment plan), HB_REG_SM (SM register), HB_REG_SOA (SoA) |
+| 6 — Approval | This standard (Risk Acceptance and Exceptions) | CB_PRC_07 (Approval) | HB_REG_RR (Acceptance records) |
 
 ## Asset Input
 
-Risk management requires a complete and current asset inventory as its foundation. Assets must be identified, categorised by type and registered in the asset register (HB_REG_03) before any protection requirements analysis or risk assessment can commence.
+Risk management requires a complete and current asset inventory as its foundation. Assets must be identified, categorised by type and registered in the asset register (HB_REG_AM) before any protection requirements analysis or risk assessment can commence.
 
 The normative basis for asset types, grouping, and classification is defined in CB_POL_L2_07 (Asset Management). The operational lifecycle — from identification through disposal — is governed by CB_PRC_12 (Asset Management Process).
 
@@ -67,9 +67,9 @@ Without a complete asset inventory, neither protection requirements analysis nor
 
 ## Protection Requirements Analysis
 
-The protection requirements analysis assesses business processes across the three core values: confidentiality (C), integrity (I), and availability (A). It is a prerequisite for risk identification and is conducted on the basis of the assets captured in the asset register (HB_REG_03). The operational assessment process is defined in CB_PRC_13 (Protection Requirements Assessment).
+The protection requirements analysis assesses business processes across the three core values: confidentiality (C), integrity (I), and availability (A). It is a prerequisite for risk identification and is conducted on the basis of the assets captured in the asset register (HB_REG_AM). The operational assessment process is defined in CB_PRC_13 (Protection Requirements Assessment).
 
-Protection requirements are a property of business processes. Sub-assets inherit their protection requirements through the dependency chains documented in HB_REG_03 (maximum principle).
+Protection requirements are a property of business processes. Sub-assets inherit their protection requirements through the dependency chains documented in HB_REG_AM (maximum principle).
 
 ### Protection Requirement Categories
 
@@ -81,7 +81,7 @@ The three-level scale (Normal / High / Very high) aligned with BSI Standard 200-
 | High | The impact can be considerable. Controls beyond the standard level are required. |
 | Very high | The impact can reach existentially threatening or catastrophic proportions. Specific controls and individual risk analysis are mandatory. |
 
-The protection requirements analysis is performed at process level per core value (C/I/A) individually. No manual category selection is permitted for the overall classification — C and I are derived from the maximum damage scenario rating across all 6 mandatory scenarios; A is derived from BIA parameters through the tier matrix. The overall protection requirement of a process is determined by the highest individual value (maximum principle). Processes with a protection requirement of "High" or "Very high" in at least one core value require an individual risk analysis. Results are documented in the C/I/A columns of the asset register (HB_REG_03).
+The protection requirements analysis is performed at process level per core value (C/I/A) individually. No manual category selection is permitted for the overall classification — C and I are derived from the maximum damage scenario rating across all 6 mandatory scenarios; A is derived from BIA parameters through the tier matrix. The overall protection requirement of a process is determined by the highest individual value (maximum principle). Processes with a protection requirement of "High" or "Very high" in at least one core value require an individual risk analysis. Results are documented in the C/I/A columns of the asset register (HB_REG_AM).
 
 ### Damage Scenarios
 
@@ -124,9 +124,9 @@ The thresholds (downtime windows, financial amounts) are calibrated to the scale
 
 ### Assessment Methodology
 
-The methodology follows BSI Standard 200-2 [REF:BSI17, Ch. 8.2.2] and applies to all asset categories in the asset register (HB_REG_03).
+The methodology follows BSI Standard 200-2 [REF:BSI17, Ch. 8.2.2] and applies to all asset categories in the asset register (HB_REG_AM).
 
-**Primary assessment.** Protection requirements are assessed directly for business processes using the damage scenarios defined above. Information types processed by each business process must be documented in the asset register (HB_REG_03, column "Processed Information") before the primary assessment commences. Their aggregated sensitivity profile determines the assessment basis for confidentiality and integrity: the assessor evaluates each information type against the damage scenarios, and the most sensitive type sets the minimum category. No manual category selection is permitted for the overall C and I classification — each is derived as the maximum rating across all 6 mandatory damage scenarios. Availability (A) is derived from BIA parameters (RTO, RPO, MTD) documented in the process PR record (CB_TPL_19). The tier derivation follows: Tier = f(min(RTO, RPO)); A = f(Tier).
+**Primary assessment.** Protection requirements are assessed directly for business processes using the damage scenarios defined above. Information types processed by each business process must be documented in the asset register (HB_REG_AM, column "Processed Information") before the primary assessment commences. Their aggregated sensitivity profile determines the assessment basis for confidentiality and integrity: the assessor evaluates each information type against the damage scenarios, and the most sensitive type sets the minimum category. No manual category selection is permitted for the overall C and I classification — each is derived as the maximum rating across all 6 mandatory damage scenarios. Availability (A) is derived from BIA parameters (RTO, RPO, MTD) documented in the process PR record (CB_TPL_19). The tier derivation follows: Tier = f(min(RTO, RPO)); A = f(Tier).
 
 **Inheritance.** Protection requirements are inherited along the dependency chains documented in the cross-reference tables of the asset register: business processes → applications → IT systems → communication links → rooms → buildings. The direction of inheritance follows the data flow and processing dependencies.
 
@@ -147,7 +147,7 @@ The methodology follows BSI Standard 200-2 [REF:BSI17, Ch. 8.2.2] and applies to
 
 Confidentiality and integrity remain subject to primary assessment via damage scenarios.
 
-**Override documentation.** When the cumulation or distribution effect leads to a protection requirement that deviates from the maximum principle, the override is documented in the PR Source column of the asset register (HB_REG_03). The PR Source field accepts exactly one of three values: Maximumprinzip (automatic, default inheritance), Verteilungseffekt (manual, distribution effect applied), or Kumulationseffekt (manual, cumulation effect applied). A manual PR Source value is never auto-overwritten by inheritance recalculation — only explicit assessor action may change a manual override.
+**Override documentation.** When the cumulation or distribution effect leads to a protection requirement that deviates from the maximum principle, the override is documented in the PR Source column of the asset register (HB_REG_AM). The PR Source field accepts exactly one of three values: Maximumprinzip (automatic, default inheritance), Verteilungseffekt (manual, distribution effect applied), or Kumulationseffekt (manual, cumulation effect applied). A manual PR Source value is never auto-overwritten by inheritance recalculation — only explicit assessor action may change a manual override.
 
 **Iterative character.** The protection requirements analysis is an iterative process. After risk analyses or significant changes, results are reviewed and adjusted as needed.
 
@@ -172,9 +172,9 @@ The results of the protection requirements analysis determine the further course
 
 ### Baseline Controls for Assets with Normal Protection Requirements
 
-Assets assessed with Normal protection requirements across all core values (C, I, A) do not require an individual risk analysis. Instead, they are protected by the baseline control set defined in the security measures register (HB_REG_07). A security measure qualifies as baseline when its `Baseline` flag is set to `Yes` in HB_REG_07.
+Assets assessed with Normal protection requirements across all core values (C, I, A) do not require an individual risk analysis. Instead, they are protected by the baseline control set defined in the security measures register (HB_REG_SM). A security measure qualifies as baseline when its `Baseline` flag is set to `Yes` in HB_REG_SM.
 
-The baseline control set corresponds to the IT-Grundschutz basic protection level and covers the minimum security requirements for standard operations. The Statement of Applicability (HB_REG_08) documents the applicability basis for each control as `baseline`, `risk treatment`, or `legal-contractual`.
+The baseline control set corresponds to the IT-Grundschutz basic protection level and covers the minimum security requirements for standard operations. The Statement of Applicability (HB_REG_SOA) documents the applicability basis for each control as `baseline`, `risk treatment`, or `legal-contractual`.
 
 Baseline controls are reviewed annually as part of the management review cycle. The exception management process (CB_PRC_14) governs deviations from baseline requirements.
 
@@ -246,11 +246,11 @@ The scenario-specific impact is determined as: `Impact(scenario) = max(Baseline_
 
 **Gross risk** is the inherent risk level without considering any existing controls: `Gross risk = Likelihood × Impact`.
 
-**Net risk** accounts for existing security measures (SM-IDs from HB_REG_07) that reduce likelihood and/or impact: `Net risk = Net likelihood × Net impact`.
+**Net risk** accounts for existing security measures (SM-IDs from HB_REG_SM) that reduce likelihood and/or impact: `Net risk = Net likelihood × Net impact`.
 
 ### Deterministic Net Risk Reduction (Binding Rule)
 
-Net risk is computed deterministically from the reduction values recorded in HB_REG_07. Each security measure assigned to a risk scenario specifies two fields:
+Net risk is computed deterministically from the reduction values recorded in HB_REG_SM. Each security measure assigned to a risk scenario specifies two fields:
 
 - **Reduction_L** — Likelihood reduction (integer 0–3)
 - **Reduction_Impact** — Impact reduction (integer 0–3)
@@ -265,7 +265,7 @@ The `max`-based selection (not sum) prevents double counting where multiple meas
 
 **Gap handling:** When a risk scenario has assigned measures but all reduction values are 0 (e.g. detective-only controls), the net risk equals the gross risk. When a scenario has no assigned measures, it constitutes a gap per the Gap Logic section of the Security Measures Register.
 
-The risk register (HB_REG_05) documents both gross and net risk for each scenario.
+The risk register (HB_REG_RR) documents both gross and net risk for each scenario.
 
 ## Risk Identification Methodology
 
@@ -341,11 +341,11 @@ For each identified risk, at least one of the following treatment options is sel
 | Transfer | The risk or its financial consequences are transferred to third parties. | Cyber insurance, outsourcing with SLA |
 | Accept | The residual risk is consciously and documentedly accepted. | Low risks with formal acceptance |
 
-The selection of the treatment option is made by the risk owner in coordination with the Chief Information Security Officer. For "Reduce," appropriate security measures are identified from the security measures register (HB_REG_07) or newly created there. The assignment of risks to measures is documented in the risk treatment plan (HB_REG_06). Selected controls are reconciled with Annex A of ISO 27001 (Clause 6.1.3 b, c) and their effectiveness verified within the risk management process (CB_PRC_07).
+The selection of the treatment option is made by the risk owner in coordination with the Chief Information Security Officer. For "Reduce," appropriate security measures are identified from the security measures register (HB_REG_SM) or newly created there. The assignment of risks to measures is documented in the risk treatment plan (HB_REG_RT). Selected controls are reconciled with Annex A of ISO 27001 (Clause 6.1.3 b, c) and their effectiveness verified within the risk management process (CB_PRC_07).
 
 ## Security Measures Register
 
-Security measures are the organization's operational controls that address identified risks. The security measures register (HB_REG_07) is the single source of truth for all security measures implemented or planned within the ISMS.
+Security measures are the organization's operational controls that address identified risks. The security measures register (HB_REG_SM) is the single source of truth for all security measures implemented or planned within the ISMS.
 
 ### Uniqueness Principle
 
@@ -383,11 +383,11 @@ Each security measure entry must document:
 
 ### Gap Logic
 
-When a risk scenario has no matching security measure in the register, or when an existing measure only partially addresses the scenario, this constitutes a gap. Gaps are flagged in the risk treatment plan (HB_REG_06) and must be addressed through one of the treatment options. Unaddressed gaps represent residual risks that require formal acceptance.
+When a risk scenario has no matching security measure in the register, or when an existing measure only partially addresses the scenario, this constitutes a gap. Gaps are flagged in the risk treatment plan (HB_REG_RT) and must be addressed through one of the treatment options. Unaddressed gaps represent residual risks that require formal acceptance.
 
 ### Relationship to Risk Treatment Plan
 
-The risk treatment plan (HB_REG_06) documents the assignment of risks to security measures and the approval of treatment decisions. The security measures register (HB_REG_07) is the SSOT for measure details. The treatment plan references SM-IDs; it does not duplicate measure descriptions.
+The risk treatment plan (HB_REG_RT) documents the assignment of risks to security measures and the approval of treatment decisions. The security measures register (HB_REG_SM) is the SSOT for measure details. The treatment plan references SM-IDs; it does not duplicate measure descriptions.
 
 ## Risk Acceptance and Exceptions
 
@@ -400,7 +400,7 @@ The risk treatment plan (HB_REG_06) documents the assignment of risks to securit
 | Medium (4-6) | Acceptance by risk owner possible, with documentation of rationale and deadline for reassessment. |
 | Low (1-3) | Acceptance by risk owner. Documentation in the risk register is sufficient. |
 
-Every risk acceptance is documented in the risk register (HB_REG_05) with rationale, date, and approving person. Accepted risks are reassessed in the next regular risk assessment cycle.
+Every risk acceptance is documented in the risk register (HB_REG_RR) with rationale, date, and approving person. Accepted risks are reassessed in the next regular risk assessment cycle.
 
 ### Exception Management
 
@@ -425,7 +425,7 @@ The impact level is determined by the protection requirement of the affected ass
 | High | 60 days |
 | Normal | 90 days |
 
-**Risk linkage:** Approved exceptions are recorded as risk type "Exception" in the risk register (HB_REG_05) and reassessed within the regular risk review cycle. The full exception lifecycle — including pending, rejected, expired, and renewed entries — is tracked in the exception register (HB_REG_EXC_01-Exception-Index).
+**Risk linkage:** Approved exceptions are recorded as risk type "Exception" in the risk register (HB_REG_RR) and reassessed within the regular risk review cycle. The full exception lifecycle — including pending, rejected, expired, and renewed entries — is tracked in the exception register (HB_REG_EXC_01-Exception-Index).
 
 **Review:** Before an exception expires, the Chief Information Security Officer reviews whether the deviation is still necessary. Continuation requires a new exception request. Expired exceptions without renewal are closed.
 
@@ -437,12 +437,12 @@ The operational exception management workflow is defined in CB_PRC_14-Exception-
 - CB_POL_L2_07-Organisation — Asset management as foundation for risk assessment
 - CB_PRC_07-Risk-Management — Operational risk management process
 - CB_PRC_13-Protection-Requirements — Protection requirements assessment process
-- HB_REG_03-Asset-Register — Asset inventory with C/I/A values
-- HB_REG_05-Risk-Register — Scenario-based risk entries
-- HB_REG_06-Risk-Treatment-Plan — Risk-to-measure assignment and approval
-- HB_REG_04-BCM-Register — BCM continuity plan tracking
-- HB_REG_07-Security-Measures-Register — SSOT for security measures
-- HB_REG_08-Statement-of-Applicability — Control applicability
+- HB_REG_AM_01-Asset-Register — Asset inventory with C/I/A values
+- HB_REG_RR_01-Risk-Register — Scenario-based risk entries
+- HB_REG_RT_01-Risk-Treatment-Plan — Risk-to-measure assignment and approval
+- HB_REG_BCM_01-BCM-Register — BCM continuity plan tracking
+- HB_REG_SM_01-Security-Measures-Register — SSOT for security measures
+- HB_REG_SOA_01-Statement-of-Applicability — Control applicability
 - HB_CLS_5.3-Roles-and-Responsibilities — RACI matrix
 - CB_PRC_14-Exception-Management — Exception approval workflow
 - HB_REG_EXC_01-Exception-Index — Exception register
@@ -452,6 +452,7 @@ The operational exception management workflow is defined in CB_PRC_14-Exception-
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.024 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.023 | 2026-02-19 | Claude (AI) | Remove Security zones paragraph from Conclusions (belongs in Physical Security L2_09) |
 | 00.01.022 | 2026-02-19 | Claude (AI) | Override documentation: overrides → HB_REG_03 PR Source (3-value enum + priority rule), remove L3 detail from L2 standard |
 | 00.01.021 | 2026-02-19 | Claude (AI) | Cascade order: IT→CON→ROM→BLD (communication links before rooms) |

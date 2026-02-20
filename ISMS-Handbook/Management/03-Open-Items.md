@@ -1,9 +1,9 @@
 > **Document ID:** HB_MGT_03-Open-Items
-> **Version:** 00.00.001
+> **Version:** 00.00.002
 > **Classification:** Confidential
 > **Author:** CISO
 > **ISO Reference:** —
-> **Last modified:** 2026-02-10
+> **Last modified:** 2026-02-20
 > **Approval:** —
 > **Review cycle:** As needed
 
@@ -32,7 +32,7 @@ The list complements the Meeting Log (HB_MGT_02) and Improvement Roadmap (HB_MGT
 
 ## Usage Guidelines
 
-Items are added as they arise during ISMS work. They are reviewed in governance meetings to ensure progress and escalate where needed. Resolved items remain in the log for audit trail purposes. Items requiring formal corrective action are transferred to the appropriate register (e.g. HB_REG_12 for nonconformities, HB_MGT_01 for improvement themes).
+Items are added as they arise during ISMS work. They are reviewed in governance meetings to ensure progress and escalate where needed. Resolved items remain in the log for audit trail purposes. Items requiring formal corrective action are transferred to the appropriate register (e.g. HB_REG_NC for nonconformities, HB_MGT_01 for improvement themes).
 
 ## See also
 
@@ -43,4 +43,5 @@ Items are added as they arise during ISMS work. They are reviewed in governance 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.00.002 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.00.001 | 2026-02-10 | CISO | Initial skeleton |

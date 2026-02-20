@@ -7,14 +7,14 @@
 | Asset-ID | [e.g. PIT-003] |
 | Asset name | [e.g. Production Server Cluster] |
 | Layer | [e.g. Physical IT Systems] |
-| PR record | [Link: Registers/Protection-Requirements/\<Layer\>/PR-\<Asset-ID\>.md] |
+| PR record | [Link: Registers/04-Protection-Requirements/\<Layer\>/PR-\<Asset-ID\>.md] |
 | Asset owner | [Role] |
 | Assessment date | [YYYY-MM-DD] |
 | Assessor | [Name/Role] |
 
 ## Imported Context
 
-Protection requirements (from asset register HB_REG_03):
+Protection requirements (from asset register HB_REG_AM):
 
 | Core value | Category |
 |---|---|
@@ -29,9 +29,9 @@ Vulnerability catalogue: Per vulnerability catalogue for [Layer] (Risk-Framework
 
 Each scenario combines a threat–vulnerability pair with a risk assessment. The Risk Scenario column captures the conditional risk in subjunctive form per CB_POL_L2_11 Scenario Text Template.
 
-**Net risk rule:** Net L and Net I are computed deterministically per CB_POL_L2_11 (Deterministic Net Risk Reduction): `Net_L = max(1, Gross_L − max(Reduction_L))`, `Net_I = max(1, Gross_I − max(Reduction_Impact))`. Reduction values are sourced from HB_REG_07.
+**Net risk rule:** Net L and Net I are computed deterministically per CB_POL_L2_11 (Deterministic Net Risk Reduction): `Net_L = max(1, Gross_L − max(Reduction_L))`, `Net_I = max(1, Gross_I − max(Reduction_Impact))`. Reduction values are sourced from HB_REG_SM.
 
-**Treatment rule:** When Net Risk is **Low (1-3)**, Treatment is automatically set to **Accept** (risk acceptance by risk owner per CB_POL_L2_11). When Net Risk is **Medium or higher (>= 4)**, the scenario is forwarded to the risk treatment plan (HB_REG_06) for treatment selection by the risk owner.
+**Treatment rule:** When Net Risk is **Low (1-3)**, Treatment is automatically set to **Accept** (risk acceptance by risk owner per CB_POL_L2_11). When Net Risk is **Medium or higher (>= 4)**, the scenario is forwarded to the risk treatment plan (HB_REG_RT) for treatment selection by the risk owner.
 
 | SC-ID | Threat (G 0.x) | Vulnerability-ID | Risk Scenario | L | I | Gross | SM-IDs | Net L | Net I | Net Risk | Treatment |
 |---|---|---|---|---|---|---|---|---|---|---|---|

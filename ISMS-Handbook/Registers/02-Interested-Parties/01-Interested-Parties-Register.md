@@ -1,9 +1,9 @@
-> **Document ID:** HB_REG_02-Interested-Parties-Register
-> **Version:** 00.01.009
+> **Document ID:** HB_REG_IP_01-Interested-Parties-Register
+> **Version:** 00.01.010
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** Clause 4.2, A.5.31
-> **Last modified:** 2026-02-11
+> **Last modified:** 2026-02-20
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -66,6 +66,7 @@ The interested parties directory lists all parties with a legitimate interest in
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.010 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.009 | 2026-02-11 | Claude (AI) | Register renumbered for information-flow order (formerly no. 08) |
 | 00.01.008 | 2026-02-11 | CISO | Add strategic business goal alignment to top management requirements |
 | 00.01.007 | 2026-02-10 | Claude (AI) | Remove Responsibilities section; roles consolidated in CLS 5.3 |

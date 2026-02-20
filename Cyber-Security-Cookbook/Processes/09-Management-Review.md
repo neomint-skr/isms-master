@@ -1,9 +1,9 @@
 > **Document ID:** CB_PRC_09-Management-Review
-> **Version:** 00.01.008
+> **Version:** 00.01.009
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 9.3
-> **Last modified:** 2026-02-10
+> **Last modified:** 2026-02-20
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -21,7 +21,7 @@
 
 This process defines the workflow from scheduling and preparation (seven inputs per Clause 9.3.2) through the conduct of the review to outputs and action tracking. It ensures that top management makes informed decisions on ISMS governance.
 
-The process operationalizes the requirements from HB_CLS_9.3 (Management Review). Documentation is produced using CB_TPL_01 (Management Review Template), and actions feed into HB_REG_09 (IS Objectives Register).
+The process operationalizes the requirements from HB_CLS_9.3 (Management Review). Documentation is produced using CB_TPL_01 (Management Review Template), and actions feed into HB_REG_OBJ (IS Objectives Register).
 
 **Scope:** Overall ISMS review (at least annually). Triggers: annual scheduled date or extraordinary events.
 
@@ -46,7 +46,7 @@ The process operationalizes the requirements from HB_CLS_9.3 (Management Review)
 - HB_CLS_5.3-Roles-and-Responsibilities
 - HB_CLS_9.3-Management-Review
 - CB_TPL_01-Management-Review
-- HB_REG_09-IS-Objectives-Register
+- HB_REG_OBJ_01-IS-Objectives-Register
 - CB_PRC_11-Performance-Monitoring
 - HB_MGT_02-Meeting-Log — Governance meeting log
 
@@ -54,6 +54,7 @@ The process operationalizes the requirements from HB_CLS_9.3 (Management Review)
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.009 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.008 | 2026-02-10 | CISO | Cross-reference to HB_MGT_02-Meeting-Log |
 | 00.01.007 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.006 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/FOR WHAT/WHERE) |

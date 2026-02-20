@@ -39,9 +39,9 @@ function changelogStart(lines) {
 // Rule 1: PR is exclusively a process property
 // No PR record files in layer folders. All PR records in Protection-Requirements/ have Asset type = PRC.
 function rule1() {
-  const prBase = join(ROOT, 'ISMS-Handbook', 'Registers', 'Protection-Requirements');
+  const prBase = join(ROOT, 'ISMS-Handbook', 'Registers', '04-Protection-Requirements');
 
-  // Check PR records directly in Protection-Requirements/ have Asset type = PRC
+  // Check PR records directly in 04-Protection-Requirements/ have Asset type = PRC
   if (existsSync(prBase)) {
     const files = readdirSync(prBase).filter(f => f.endsWith('.md') && f !== 'README.md' && f !== '.gitkeep');
     for (const file of files) {
@@ -49,7 +49,7 @@ function rule1() {
       const lines = content.split(/\r?\n/);
       for (let i = 0; i < lines.length; i++) {
         if (/Asset type/i.test(lines[i]) && !/PRC/i.test(lines[i])) {
-          addViolation(1, `ISMS-Handbook/Registers/Protection-Requirements/${file}`, i + 1,
+          addViolation(1, `ISMS-Handbook/Registers/04-Protection-Requirements/${file}`, i + 1,
             'PR record has non-PRC asset type');
         }
       }
@@ -86,10 +86,10 @@ function rule2() {
 }
 
 // Rule 3: No separate BIA register as PR input
-// No document references HB_REG_04 in PR context.
+// No document references HB_REG_BCM in PR context.
 // BCM Register contains no "Derived V" or PR classification fields.
 function rule3() {
-  const bcmPath = 'ISMS-Handbook/Registers/04-BCM-Register.md';
+  const bcmPath = 'ISMS-Handbook/Registers/11-Business-Continuity/01-BCM-Register.md';
   const bcmLines = readLines(bcmPath);
   if (bcmLines) {
     const clStart = changelogStart(bcmLines);
@@ -100,7 +100,7 @@ function rule3() {
     }
   }
 
-  // Check no document references HB_REG_04 in PR context (exclude changelog)
+  // Check no document references HB_REG_BCM in PR context (exclude changelog)
   const docsToCheck = [
     'Cyber-Security-Cookbook/Policy-Framework/L2_Standards/11-Risk-Management.md',
     'Cyber-Security-Cookbook/Processes/13-Protection-Requirements.md',
@@ -112,9 +112,9 @@ function rule3() {
     if (!lines) continue;
     const clStart = changelogStart(lines);
     for (let i = 0; i < clStart; i++) {
-      if (/HB_REG_04/i.test(lines[i]) && /BIA/i.test(lines[i]) && /protection|PR|availab/i.test(lines[i])) {
+      if (/HB_REG_BCM|HB_REG_04/i.test(lines[i]) && /BIA/i.test(lines[i]) && /protection|PR|availab/i.test(lines[i])) {
         addViolation(3, doc, i + 1,
-          `HB_REG_04 referenced in PR context: ${lines[i].trim().substring(0, 100)}`);
+          `HB_REG_BCM referenced in PR context: ${lines[i].trim().substring(0, 100)}`);
       }
     }
   }
@@ -140,9 +140,9 @@ function rule4() {
 }
 
 // Rule 5: Every asset has a process anchor
-// In HB_REG_03: PR Source field exists in asset tables
+// In HB_REG_AM: PR Source field exists in asset tables
 function rule5() {
-  const regPath = 'ISMS-Handbook/Registers/03-Asset-Register.md';
+  const regPath = 'ISMS-Handbook/Registers/03-Asset-Management/01-Asset-Register.md';
   const lines = readLines(regPath);
   if (!lines) { addViolation(5, regPath, 0, 'Asset register not found'); return; }
 
@@ -172,10 +172,10 @@ function rule5() {
   }
 }
 
-// Rule 6: Override documentation in HB_REG_03 PR Source
+// Rule 6: Override documentation in HB_REG_AM PR Source
 // PR Source for sub-assets must use the 3-value enum, not "Inherited from"
 function rule6() {
-  const regPath = 'ISMS-Handbook/Registers/03-Asset-Register.md';
+  const regPath = 'ISMS-Handbook/Registers/03-Asset-Management/01-Asset-Register.md';
   const lines = readLines(regPath);
   if (!lines) return;
 
@@ -191,23 +191,23 @@ function rule6() {
 // Rule 7: No layer PR folders
 // Folders 1-Process through 7-Building do not exist under Protection-Requirements/
 function rule7() {
-  const prBase = join(ROOT, 'ISMS-Handbook', 'Registers', 'Protection-Requirements');
+  const prBase = join(ROOT, 'ISMS-Handbook', 'Registers', '04-Protection-Requirements');
   const forbiddenFolders = ['1-Process', '2-Application', '3-Physical-IT-System', '4-Virtual-IT-System',
     '5-Communication-Connection', '6-Room', '7-Building'];
 
   for (const folder of forbiddenFolders) {
     const folderPath = join(prBase, folder);
     if (existsSync(folderPath)) {
-      addViolation(7, `ISMS-Handbook/Registers/Protection-Requirements/${folder}/`, 0,
+      addViolation(7, `ISMS-Handbook/Registers/04-Protection-Requirements/${folder}/`, 0,
         `Subfolder still exists — PR records belong directly in Protection-Requirements/`);
     }
   }
 }
 
 // Rule 8: PR Source format validation
-// PR Source field definition in HB_REG_03 must not contain "Inherited from"
+// PR Source field definition in HB_REG_AM must not contain "Inherited from"
 function rule8() {
-  const regPath = 'ISMS-Handbook/Registers/03-Asset-Register.md';
+  const regPath = 'ISMS-Handbook/Registers/03-Asset-Management/01-Asset-Register.md';
   const lines = readLines(regPath);
   if (!lines) return;
 
@@ -230,15 +230,15 @@ function rule9() {
     const trimmed = lines[i].trim();
     if (/^##\s+Override/i.test(trimmed)) {
       addViolation(9, tplPath, i + 1,
-        `Override heading found in template — override documentation belongs in HB_REG_03 PR Source`);
+        `Override heading found in template — override documentation belongs in HB_REG_AM PR Source`);
     }
     if (/^##\s+Inheritance/i.test(trimmed)) {
       addViolation(9, tplPath, i + 1,
-        `Inheritance heading found in template — inheritance is documented in HB_REG_03`);
+        `Inheritance heading found in template — inheritance is documented in HB_REG_AM`);
     }
     if (/^##\s+Suspension/i.test(trimmed)) {
       addViolation(9, tplPath, i + 1,
-        `Suspension heading found in template — suspension status belongs in REG_03 PR_Status`);
+        `Suspension heading found in template — suspension status belongs in REG_AM PR_Status`);
     }
     if (/^##\s+Conclusions/i.test(trimmed)) {
       addViolation(9, tplPath, i + 1,

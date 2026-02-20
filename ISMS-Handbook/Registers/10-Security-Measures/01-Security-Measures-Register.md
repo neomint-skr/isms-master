@@ -1,9 +1,9 @@
-> **Document ID:** HB_REG_07-Security-Measures-Register
-> **Version:** 00.01.002
+> **Document ID:** HB_REG_SM_01-Security-Measures-Register
+> **Version:** 00.01.003
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** A.5-A.8, Clause 6.1.3
-> **Last modified:** 2026-02-18
+> **Last modified:** 2026-02-20
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -23,7 +23,7 @@ Effective risk treatment requires a structured inventory of all security measure
 
 The register assigns each security measure a unique SM-ID, maps it to Annex A controls, and tracks implementation status from planning through verification. It provides the factual basis for gap analysis, effectiveness reviews and audit evidence.
 
-Measure definitions are derived from the risk treatment plan (HB_REG_06) and aligned with the statement of applicability (HB_REG_08). Effectiveness reviews feed back into the risk management process (CB_PRC_07) and are reported in management reviews (CB_PRC_09).
+Measure definitions are derived from the risk treatment plan (HB_REG_RT) and aligned with the statement of applicability (HB_REG_SOA). Effectiveness reviews feed back into the risk management process (CB_PRC_07) and are reported in management reviews (CB_PRC_09).
 
 **Scope:** All security measures within the ISMS scope. Target audience: CISO (measure tracking), risk owners (implementation), auditors (evidence), top management (effectiveness oversight).
 
@@ -40,7 +40,7 @@ Measure definitions are derived from the risk treatment plan (HB_REG_06) and ali
 | Reduction_L | Likelihood reduction (integer 0–3) applied when this measure is effective |
 | Reduction_Impact | Impact reduction (integer 0–3) applied when this measure is effective |
 
-The Reduction fields are used for deterministic net risk calculation as defined in CB_POL_L2_11 (Deterministic Net Risk Reduction). The Baseline flag determines whether a measure is included in the baseline control set for assets with Normal protection requirements. Mitigates links measures to specific risk scenarios in HB_REG_05.
+The Reduction fields are used for deterministic net risk calculation as defined in CB_POL_L2_11 (Deterministic Net Risk Reduction). The Baseline flag determines whether a measure is included in the baseline control set for assets with Normal protection requirements. Mitigates links measures to specific risk scenarios in HB_REG_RR.
 
 ## Organizational Controls (A.5)
 
@@ -76,14 +76,15 @@ The Reduction fields are used for deterministic net risk calculation as defined 
 
 - CB_POL_L2_11-Risk-Management — Normative basis
 - CB_PRC_07-Risk-Management — Operational process
-- HB_REG_05-Risk-Register — Scenario-based risk entries
-- HB_REG_06-Risk-Treatment-Plan — Risk-to-measure assignment
-- HB_REG_08-Statement-of-Applicability — Control applicability
+- HB_REG_RR_01-Risk-Register — Scenario-based risk entries
+- HB_REG_RT_01-Risk-Treatment-Plan — Risk-to-measure assignment
+- HB_REG_SOA_01-Statement-of-Applicability — Control applicability
 
 ## Changelog
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.003 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.002 | 2026-02-18 | Claude (AI) | Add Baseline, Mitigates, Reduction_L, Reduction_Impact fields for deterministic net risk calculation |
 | 00.01.001 | 2026-02-11 | Claude (AI) | Register renumbered for information-flow order (formerly no. 12) |
 | 00.01.000 | 2026-02-11 | Claude (AI) | Initial version: security measures register structured by Annex A categories |

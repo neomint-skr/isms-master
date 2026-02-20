@@ -1,9 +1,9 @@
 > **Document ID:** CB_POL_L2_06-Business-Continuity
-> **Version:** 00.01.010
+> **Version:** 00.01.011
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.29-5.30, A.8.13-8.14
-> **Last modified:** 2026-02-19
+> **Last modified:** 2026-02-20
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -108,12 +108,13 @@ The operational backup process including procedures and responsibilities is desc
 - CB_POL_L3_05-Data-Backup — Backup and recovery
 - CB_PRC_03-Backup-and-Recovery — Operational backup process
 - CB_PRC_01-Incident-Management — Transition from incident to emergency
-- HB_REG_04-BCM-Register — BCM continuity plan tracking
+- HB_REG_BCM_01-BCM-Register — BCM continuity plan tracking
 
 ## Changelog
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.011 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.010 | 2026-02-19 | Claude (AI) | HB_REG_04 reference updated: BIA-Register → BCM-Register |
 | 00.01.009 | 2026-02-11 | CISO | Added secure deletion of backup data (A.8.13 + GDPR), expanded security-equivalent redundancy (A.8.14) |
 | 00.01.008 | 2026-02-10 | CISO | Added L3_08 traceability and REG_04 cross-reference |

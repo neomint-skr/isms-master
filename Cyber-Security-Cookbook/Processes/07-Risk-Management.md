@@ -1,9 +1,9 @@
 > **Document ID:** CB_PRC_07-Risk-Management
-> **Version:** 00.01.017
+> **Version:** 00.01.018
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1, 8.2, 8.3
-> **Last modified:** 2026-02-18
+> **Last modified:** 2026-02-20
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -21,7 +21,7 @@ Risks must not only be identified but systematically assessed and treated. This 
 
 This process describes the operational workflow from asset-based risk identification through analysis, evaluation, and prioritization to treatment, control selection, SoA maintenance, and residual risk acceptance (Clauses 6.1.2, 6.1.3, 8.2, 8.3). It ensures that the normatively defined criteria from CB_POL_L2_11-Risk-Management are applied consistently.
 
-Results are documented in HB_REG_05 (Risk Register) and HB_REG_06 (Risk Treatment Plan). The process is triggered annually before the management review (CB_PRC_09) and on an event-driven basis.
+Results are documented in HB_REG_RR (Risk Register) and HB_REG_RT (Risk Treatment Plan). The process is triggered annually before the management review (CB_PRC_09) and on an event-driven basis.
 
 **Scope:** All IS risks within the ISMS scope. Coordinated by the Chief Information Security Officer with risk owners. Triggered annually (before management review) or event-driven.
 
@@ -31,7 +31,7 @@ The risk assessment follows a catalogue-driven, six-step workflow (Clause 8.2). 
 
 ### Step 1 — Scope determination
 
-The Chief Information Security Officer identifies the assets requiring individual risk analysis from HB_REG_03. The scope comprises all assets whose protection requirement (PR) is rated **High** or **Very high** in at least one core value (C, I, or A), as flagged by CB_PRC_13 (Protection Requirements). Assets already assessed and unchanged since the last cycle are excluded unless an event-driven trigger applies.
+The Chief Information Security Officer identifies the assets requiring individual risk analysis from HB_REG_AM. The scope comprises all assets whose protection requirement (PR) is rated **High** or **Very high** in at least one core value (C, I, or A), as flagged by CB_PRC_13 (Protection Requirements). Assets already assessed and unchanged since the last cycle are excluded unless an event-driven trigger applies.
 
 Additional input sources that may expand the scope:
 
@@ -74,9 +74,9 @@ For each scenario, the Chief Information Security Officer assesses likelihood an
 The assessment distinguishes:
 
 - **Gross risk:** Risk score without considering implemented controls.
-- **Net risk:** Existing security measures (referenced by SM-ID from HB_REG_07) are identified per scenario. Net risk is computed deterministically per CB_POL_L2_11 (Deterministic Net Risk Reduction): `Net_L = max(1, Gross_L − max(Reduction_L))`, `Net_I = max(1, Gross_I − max(Reduction_Impact))`. Reduction values are sourced from HB_REG_07.
+- **Net risk:** Existing security measures (referenced by SM-ID from HB_REG_SM) are identified per scenario. Net risk is computed deterministically per CB_POL_L2_11 (Deterministic Net Risk Reduction): `Net_L = max(1, Gross_L − max(Reduction_L))`, `Net_I = max(1, Gross_I − max(Reduction_Impact))`. Reduction values are sourced from HB_REG_SM.
 
-Scenarios with a net risk of **Low (1-3)** automatically receive treatment **Accept** (risk acceptance by risk owner per CB_POL_L2_11 acceptance criteria). Scenarios with net risk **Medium or higher (>= 4)** receive treatment **Treat (→ RTP)** and are forwarded to the risk treatment plan (HB_REG_06) for treatment option selection by the risk owner.
+Scenarios with a net risk of **Low (1-3)** automatically receive treatment **Accept** (risk acceptance by risk owner per CB_POL_L2_11 acceptance criteria). Scenarios with net risk **Medium or higher (>= 4)** receive treatment **Treat (→ RTP)** and are forwarded to the risk treatment plan (HB_REG_RT) for treatment option selection by the risk owner.
 
 ### Step 5 — Risk evaluation and prioritization
 
@@ -86,8 +86,8 @@ The net risk scores are compared against the acceptance criteria defined in CB_P
 
 For each in-scope asset, the assessment results are documented:
 
-- An individual risk assessment record is created using CB_TPL_21, filed in `Registers/Risk-Assessments/<Layer>/RA-<Asset-ID>.md`.
-- Aggregated results (scenario list, risk scores, treatment status) are entered in the risk register (HB_REG_05).
+- An individual risk assessment record is created using CB_TPL_21, filed in `Registers/06-Risk-Assessments/<Layer>/RA-<Asset-ID>.md`.
+- Aggregated results (scenario list, risk scores, treatment status) are entered in the risk register (HB_REG_RR).
 
 ## Risk treatment
 
@@ -101,14 +101,14 @@ The risk owner selects a treatment option for each unacceptable risk from the fo
 
 For treatment option **Reduce**, the Chief Information Security Officer identifies appropriate security measures:
 
-1. **Existing measure lookup:** Check HB_REG_07 (Security Measures Catalogue) for a measure that addresses the scenario's threat–vulnerability combination. If a suitable measure exists, reference it by SM-ID.
-2. **New measure creation:** If no suitable measure exists in HB_REG_07, a new measure is defined and added to the catalogue with a new SM-ID.
-3. **Risk-to-measure mapping:** The assignment of risk scenarios to security measures is documented in HB_REG_06 (Risk Treatment Plan), linking SC-IDs to SM-IDs.
-4. **Annex A reconciliation:** Controls are reconciled with Annex A (ISO 27001) to ensure that no relevant controls have been overlooked (Clause 6.1.3 b, c). New or changed control assignments are updated in the SoA (HB_REG_08).
+1. **Existing measure lookup:** Check HB_REG_SM (Security Measures Catalogue) for a measure that addresses the scenario's threat–vulnerability combination. If a suitable measure exists, reference it by SM-ID.
+2. **New measure creation:** If no suitable measure exists in HB_REG_SM, a new measure is defined and added to the catalogue with a new SM-ID.
+3. **Risk-to-measure mapping:** The assignment of risk scenarios to security measures is documented in HB_REG_RT (Risk Treatment Plan), linking SC-IDs to SM-IDs.
+4. **Annex A reconciliation:** Controls are reconciled with Annex A (ISO 27001) to ensure that no relevant controls have been overlooked (Clause 6.1.3 b, c). New or changed control assignments are updated in the SoA (HB_REG_SOA).
 
 ### Create risk treatment plan
 
-For each risk requiring treatment, an entry is created in the risk treatment plan (HB_REG_06) containing: risk ID (SC-ID), selected treatment option, assigned security measures (SM-IDs), responsible person, deadline, and expected risk level after implementation.
+For each risk requiring treatment, an entry is created in the risk treatment plan (HB_REG_RT) containing: risk ID (SC-ID), selected treatment option, assigned security measures (SM-IDs), responsible person, deadline, and expected risk level after implementation.
 
 ### Approval and residual risk acceptance
 
@@ -116,9 +116,9 @@ The risk treatment plan is submitted to top management (CEO/CTO) for approval (C
 
 ## SoA maintenance
 
-The Statement of Applicability (HB_REG_08-Statement-of-Applicability) is updated as a result of risk treatment (Clause 6.1.3 d). With every risk treatment, the Chief Information Security Officer checks whether new controls need to be added or existing justifications adjusted.
+The Statement of Applicability (HB_REG_SOA_01-Statement-of-Applicability) is updated as a result of risk treatment (Clause 6.1.3 d). With every risk treatment, the Chief Information Security Officer checks whether new controls need to be added or existing justifications adjusted.
 
-The SoA is the SSOT for control applicability. Direction of change: risk treatment -> SoA (HB_REG_08) -> coverage matrix (INDEX.md). Never the reverse.
+The SoA is the SSOT for control applicability. Direction of change: risk treatment -> SoA (HB_REG_SOA) -> coverage matrix (INDEX.md). Never the reverse.
 
 ## Cycles and triggers
 
@@ -146,18 +146,19 @@ An unscheduled risk assessment is triggered by:
 - HB_CLS_6.1-Risks-and-Opportunities — ISO clause assignment
 - HB_CLS_8.2-Risk-Assessment — ISO clause assignment
 - HB_CLS_8.3-Risk-Treatment — ISO clause assignment
-- HB_REG_08-Statement-of-Applicability — Control applicability (SSOT)
-- HB_REG_03-Asset-Register — Asset data, cross-reference tables
-- HB_REG_05-Risk-Register — Risk entries
-- HB_REG_06-Risk-Treatment-Plan — Treatment plan (SC-ID → SM-ID mapping)
+- HB_REG_SOA_01-Statement-of-Applicability — Control applicability (SSOT)
+- HB_REG_AM_01-Asset-Register — Asset data, cross-reference tables
+- HB_REG_RR_01-Risk-Register — Risk entries
+- HB_REG_RT_01-Risk-Treatment-Plan — Treatment plan (SC-ID → SM-ID mapping)
 - HB_REG_RF — Risk framework (threat and vulnerability catalogues)
-- HB_REG_07-Security-Measures-Catalogue — Security measures (SM-IDs)
+- HB_REG_SM_01-Security-Measures-Catalogue — Security measures (SM-IDs)
 - HB_CLS_5.3-Roles-and-Responsibilities — RACI matrix
 
 ## Changelog
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.018 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.017 | 2026-02-18 | Claude (AI) | Deterministic PR-risk: HB_REG_11→HB_REG_RF references, unknown resolve-by deadlines, deterministic net risk formula |
 | 00.01.016 | 2026-02-13 | Claude (AI) | Step 4: Treatment column values changed to binary Accept/Treat (→ RTP); specific treatment selection moved to RTP (HB_REG_06) |
 | 00.01.015 | 2026-02-13 | Claude (AI) | Steps 2-4: vulnerability assessment documented in appendix of RA record; scenario text in subjunctive per L2_11 template; auto-accept for Net Risk ≤ 3 |

@@ -1,9 +1,9 @@
 > **Document ID:** CB_PRC_03-Backup-and-Recovery
-> **Version:** 00.01.008
+> **Version:** 00.01.009
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.8.13-8.14, A.5.29-5.30
-> **Last modified:** 2026-02-19
+> **Last modified:** 2026-02-20
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -41,13 +41,14 @@ The process operationalizes the requirements from CB_POL_L2_06-Business-Continui
 
 - HB_CLS_5.3-Roles-and-Responsibilities
 - CB_POL_L3_08-Business-Continuity — BIA methodology and continuity planning
-- HB_REG_04-BCM-Register — BCM continuity plan tracking
+- HB_REG_BCM_01-BCM-Register — BCM continuity plan tracking
 
 
 ## Changelog
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.009 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.008 | 2026-02-19 | Claude (AI) | HB_REG_04 reference updated: BIA-Register → BCM-Register |
 | 00.01.007 | 2026-02-10 | CISO | Added L3_08 and REG_04 cross-references |
 | 00.01.006 | 2026-02-09 | CISO | Aligned role terminology |

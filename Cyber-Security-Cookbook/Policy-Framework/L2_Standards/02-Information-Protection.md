@@ -1,9 +1,9 @@
 > **Document ID:** CB_POL_L2_02-Information-Protection
-> **Version:** 00.01.009
+> **Version:** 00.01.010
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.12-5.14, A.5.32, A.5.34, A.8.10-8.12, A.8.24
-> **Last modified:** 2026-02-17
+> **Last modified:** 2026-02-20
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -120,12 +120,13 @@ The organization's own intellectual property and that of third parties must be i
 - CB_POL_L3_01-User-Handbook — Classification rules for end users
 - CB_POL_L3_04-Cryptography — Encryption standards
 - CB_POL_L3_05-Data-Backup — Backup of classified data
-- HB_REG_03-Asset-Register — Asset classification
+- HB_REG_AM_01-Asset-Register — Asset classification
 
 ## Changelog
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.010 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.009 | 2026-02-17 | Claude (AI) | Process-centric context: information as attribute of business processes in Summary and Objective |
 | 00.01.008 | 2026-02-11 | CISO | Personal data lifecycle added (A.5.34) |
 | 00.01.007 | 2026-02-11 | CISO | Intellectual property section added (A.5.32) |

@@ -1,9 +1,9 @@
 > **Document ID:** HB_MGT_02-Meeting-Log
-> **Version:** 00.00.001
+> **Version:** 00.00.002
 > **Classification:** Confidential
 > **Author:** CISO
 > **ISO Reference:** ISO 27001:2022, 9.3, 7.4
-> **Last modified:** 2026-02-10
+> **Last modified:** 2026-02-20
 > **Approval:** —
 > **Review cycle:** Per meeting
 
@@ -28,7 +28,7 @@ The log complements HB_CLS_9.3 (Management Review) requirements and the CB_PRC_0
 ## Meeting Types
 
 - **Management Review (MR):** Annual (minimum) top management review of ISMS suitability, adequacy, and effectiveness per Clause 9.3. Documented via CB_TPL_01.
-- **Risk Review:** Periodic review of risk register status, treatment progress, and emerging risks. Feeds into HB_REG_05 and HB_REG_06.
+- **Risk Review:** Periodic review of risk register status, treatment progress, and emerging risks. Feeds into HB_REG_RR and HB_REG_RT.
 - **IS Steering Committee:** Operational coordination between CISO, IS-Coordinator, and relevant stakeholders on ISMS topics.
 
 ## Meeting Log
@@ -47,4 +47,5 @@ The log complements HB_CLS_9.3 (Management Review) requirements and the CB_PRC_0
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.00.002 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.00.001 | 2026-02-10 | CISO | Initial skeleton |

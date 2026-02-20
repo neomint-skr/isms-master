@@ -1,9 +1,9 @@
 > **Document ID:** CB_PRC_08-Internal-Audit
-> **Version:** 00.01.007
+> **Version:** 00.01.008
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 9.2
-> **Last modified:** 2026-02-10
+> **Last modified:** 2026-02-20
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -21,7 +21,7 @@
 
 This process defines the workflow from audit programme planning through individual audit preparation, execution, and reporting to the follow-up of findings. It ensures that all ISMS aspects are reviewed at least once within a two-year period.
 
-The process operationalizes the requirements from HB_CLS_9.2 (Internal Audit). Findings are recorded as nonconformities in HB_REG_12 and tracked via CB_PRC_10.
+The process operationalizes the requirements from HB_CLS_9.2 (Internal Audit). Findings are recorded as nonconformities in HB_REG_NC and tracked via CB_PRC_10.
 
 **Scope:** All ISMS aspects within a two-year cycle. Triggers: annual audit programme planning or extraordinary events.
 
@@ -43,7 +43,7 @@ The process operationalizes the requirements from HB_CLS_9.2 (Internal Audit). F
 
 ## Follow-up
 
-Audit findings are recorded as nonconformities in HB_REG_12-Nonconformity-Register and tracked via CB_PRC_10-Nonconformity-Management.
+Audit findings are recorded as nonconformities in HB_REG_NC_01-Nonconformity-Register and tracked via CB_PRC_10-Nonconformity-Management.
 
 <!-- TODO: Action tracking, effectiveness review -->
 
@@ -58,6 +58,7 @@ Audit findings are recorded as nonconformities in HB_REG_12-Nonconformity-Regist
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.008 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.007 | 2026-02-10 | CISO | Cross-reference to HB_AUD_INT_01-Internal-Audit-Programme |
 | 00.01.006 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.005 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/FOR WHAT/WHERE) |
