@@ -71,7 +71,7 @@ Each principle P1-P6 must be referenced by at least one L2.
 Every PRC should have a driver (CLS or L2) and a results register (REG).
 
 **Steps:**
-- Glob `Cyber-Security-Cookbook/Processes/*.md`
+- Glob `Cyber-Security-Cookbook/Processes/*/Process_*.md`
 - For each PRC: read the full content
 - Search for references to `HB_CLS_` (driver) and `HB_REG_` (result)
 - Tool-based documentation counts as valid: sentences like "are documented/managed/captured in [tool] system"

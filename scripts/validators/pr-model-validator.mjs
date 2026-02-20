@@ -103,7 +103,7 @@ function rule3() {
   // Check no document references HB_REG_BCM in PR context (exclude changelog)
   const docsToCheck = [
     'Cyber-Security-Cookbook/Policy-Framework/L2_Standards/11-Risk-Management.md',
-    'Cyber-Security-Cookbook/Processes/13-Protection-Requirements.md',
+    'Cyber-Security-Cookbook/Processes/02-Protection-Requirements/Process_Protection-Requirements.md',
     'Cyber-Security-Cookbook/Templates/19-Protection-Requirements-Assessment.md',
   ];
 

@@ -118,6 +118,9 @@ function deriveDocIdFromPath(relPath) {
   const parts = relPath.replace(/\.md$/, '').split('/');
   if (parts.length < 3) return null;
 
+  // Process files in numbered subfolders use preserved legacy IDs
+  if (parts.includes('Processes') && parts.length > 3) return null;
+
   const segments = [];
   for (let i = 0; i < parts.length - 1; i++) {
     const abbrev = PATH_ABBREV[parts[i]];

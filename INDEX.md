@@ -120,20 +120,20 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 
 ### CB -- Cyber-Security-Cookbook / Processes
 
-**01-Incident-Management.md** -- Classification, reporting, escalation, response, lessons learned, evidence collection
-**02-Access-Control.md** -- Provisioning, privileges, revocation, recertification
-**03-Backup-and-Recovery.md** -- Strategy (types/cycles), recovery (RTO/RPO), tests
-**04-Vulnerability-Management.md** -- Identification, evaluation, patching
-**05-Change-Management.md** -- Request, impact, approval, implementation/rollback
-**06-Supplier-Management.md** -- Assessment, agreements, monitoring
-**07-Risk-Management.md** -- Risk assessment, risk treatment, SoA maintenance, cycles/triggers
-**08-Internal-Audit.md** -- Audit programme, planning, execution, report, follow-up
-**09-Management-Review.md** -- Scheduling, inputs (9.3.2), execution, outputs (9.3.3)
-**10-Nonconformity-Management.md** -- Detection, analysis, corrective action, effectiveness review
-**11-Performance-Monitoring.md** -- KPI definition, data collection, evaluation, escalation
-**12-Asset-Management.md** -- Identification, ID assignment, registration, relationships, maintenance
-**13-Protection-Requirements.md** -- Protection requirements assessment (primary, inheritance, documentation, handoff)
-**14-Exception-Management.md** -- Exception request, approval, time-limited deviation tracking
+**01-Asset-Management/Process_Asset-Management.md** -- Identification, ID assignment, registration, relationships, maintenance
+**02-Protection-Requirements/Process_Protection-Requirements.md** -- Protection requirements assessment (primary, inheritance, documentation, handoff)
+**03-Risk-Management/Process_Risk-Management.md** -- Risk assessment, risk treatment, SoA maintenance, cycles/triggers
+**04-Supplier-Management/Process_Supplier-Management.md** -- Assessment, agreements, monitoring
+**05-Access-Control/Process_Access-Control.md** -- Provisioning, privileges, revocation, recertification
+**06-Change-Management/Process_Change-Management.md** -- Request, impact, approval, implementation/rollback
+**07-Vulnerability-Management/Process_Vulnerability-Management.md** -- Identification, evaluation, patching
+**08-Backup-and-Recovery/Process_Backup-and-Recovery.md** -- Strategy (types/cycles), recovery (RTO/RPO), tests
+**09-Incident-Management/Process_Incident-Management.md** -- Classification, reporting, escalation, response, lessons learned, evidence collection
+**10-Exception-Management/Process_Exception-Management.md** -- Exception request, approval, time-limited deviation tracking
+**11-Performance-Monitoring/Process_Performance-Monitoring.md** -- KPI definition, data collection, evaluation, escalation
+**12-Internal-Audit/Process_Internal-Audit.md** -- Audit programme, planning, execution, report, follow-up
+**13-Management-Review/Process_Management-Review.md** -- Scheduling, inputs (9.3.2), execution, outputs (9.3.3)
+**14-Nonconformity-Management/Process_Nonconformity-Management.md** -- Detection, analysis, corrective action, effectiveness review
 
 ### CB -- Cyber-Security-Cookbook / Awareness-Training
 
