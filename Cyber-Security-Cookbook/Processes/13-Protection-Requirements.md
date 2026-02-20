@@ -1,5 +1,5 @@
 > **Document ID:** CB_PRC_13-Protection-Requirements
-> **Version:** 00.01.010
+> **Version:** 00.01.011
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1, A.5.9
@@ -50,7 +50,7 @@ For each business process, the process owner assesses confidentiality and integr
 
 For complex business processes with High or Very high protection requirements, decomposition into sub-processes is evaluated to limit the scope of elevated requirements.
 
-**Override documentation (cumulation and distribution).** During any assessment or inheritance step, the assessor may invoke cumulation (aggregated risk raises the PR) or distribution (redundancy lowers the PR) effects as defined in CB_POL_L2_11. When an override is applied, the assessor sets the PR Source column in HB_REG_03 to one of two values: `Verteilungseffekt` (distribution) or `Kumulationseffekt` (cumulation). A manual PR Source value (Verteilungseffekt or Kumulationseffekt) is never auto-overwritten by inheritance recalculation — only explicit assessor action may change a manual override. The override documentation is reviewed and approved in Step 8.
+**Override documentation (cumulation and distribution).** During any assessment or inheritance step, the assessor may invoke cumulation (aggregated risk raises the PR) or distribution (redundancy lowers the PR) effects as defined in CB_POL_L2_11. When an override is applied, the assessor sets the PR Source column in HB_REG_AM to one of two values: `Verteilungseffekt` (distribution) or `Kumulationseffekt` (cumulation). A manual PR Source value (Verteilungseffekt or Kumulationseffekt) is never auto-overwritten by inheritance recalculation — only explicit assessor action may change a manual override. The override documentation is reviewed and approved in Step 8.
 
 ### 3. Inheritance — applications
 
@@ -120,6 +120,7 @@ Assets with a protection requirement of High or Very high in at least one core v
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.011 | 2026-02-20 | Claude (AI) | Fix missed shorthand register reference HB_REG_03 → HB_REG_AM |
 | 00.01.010 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.009 | 2026-02-19 | Claude (AI) | Remove conclusions and security zone references from Steps 7/8 |
 | 00.01.008 | 2026-02-19 | Claude (AI) | Override→REG_03 PR Source, priority rule for manual overrides, swap Steps 5↔6 (CON before ROM), rooms inherit from IT+CON, remove 1-Process/ from path |

@@ -1,5 +1,5 @@
 > **Document ID:** CB_POL_L3_07-Supplier-Management
-> **Version:** 00.01.008
+> **Version:** 00.01.009
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.19-5.23
@@ -81,7 +81,7 @@ Supplier agreements shall contain information security requirements to maintain 
 - Designate communication procedures and a contact person for IS matters.
 - Define training and awareness obligations for the supplier.
 
-All agreements are documented in [contract management system / Supplier Register HB_REG_10].
+All agreements are documented in [contract management system / Supplier Register HB_REG_SUP].
 
 [REF:DG24-LK, Ch. 4]
 
@@ -188,6 +188,7 @@ The procurement and use of cloud services requires a systematic security assessm
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.009 | 2026-02-20 | Claude (AI) | Fix missed shorthand register reference HB_REG_10 → HB_REG_SUP |
 | 00.01.008 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.007 | 2026-02-18 | CISO | Fixed document ID: Suppliers-and-Cloud → Supplier-and-Cloud (traceability fix) |
 | 00.01.006 | 2026-02-10 | CISO | Added L4 traceability field (Condensed by) |

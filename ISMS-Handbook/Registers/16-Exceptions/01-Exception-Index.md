@@ -1,5 +1,5 @@
 > **Document ID:** HB_REG_EXC_01-Exception-Index
-> **Version:** 00.01.002
+> **Version:** 00.01.003
 > **Classification:** Confidential
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1
@@ -19,7 +19,7 @@ Policy exceptions that are not centrally tracked create hidden risk exposure and
 
 **Objective:** Exceptions to IS requirements must be tracked centrally to maintain visibility and control. Without a register, deviations accumulate unmonitored and cannot be presented as audit evidence.
 
-This register indexes all exception requests processed through CB_PRC_14 (Exception Management). It records the request metadata, decision status, and expiry information. Approved exceptions are additionally reflected in the risk register (HB_REG_05) as risk type "Exception."
+This register indexes all exception requests processed through CB_PRC_14 (Exception Management). It records the request metadata, decision status, and expiry information. Approved exceptions are additionally reflected in the risk register (HB_REG_RR) as risk type "Exception."
 
 The register is maintained by the Chief Information Security Officer and reviewed before each management review cycle.
 
@@ -44,12 +44,13 @@ The register is maintained by the Chief Information Security Officer and reviewe
 - CB_PRC_14-Exception-Management — Exception approval workflow
 - CB_TPL_20-Exception-Request — Exception request template
 - CB_POL_L2_11-Risk-Management — Exception management requirements (normative)
-- HB_REG_05-Risk-Register — Risk entries for approved exceptions
+- HB_REG_RR_01-Risk-Register — Risk entries for approved exceptions
 
 ## Changelog
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.003 | 2026-02-20 | Claude (AI) | Fix missed shorthand/full register references HB_REG_05 → HB_REG_RR |
 | 00.01.002 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.001 | 2026-02-11 | Claude | Renumber Exception Management PRC_13→PRC_14, TPL_19→TPL_20 |
 | 00.01.000 | 2026-02-11 | CISO | Initial version |
