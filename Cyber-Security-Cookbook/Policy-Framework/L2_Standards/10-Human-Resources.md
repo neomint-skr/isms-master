@@ -1,9 +1,9 @@
 > **Document ID:** CB_POL_L2_10-Human-Resources
-> **Version:** 00.01.012
+> **Version:** 00.01.013
 > **Classification:** Internal
 > **Author:** CISO
-> **ISO Reference:** A.5.11, A.5.34, A.6.1-6.8
-> **Last modified:** 2026-02-17
+> **ISO Reference:** A.5.11, A.6.1-6.8
+> **Last modified:** 2026-02-20
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -154,7 +154,7 @@ Special security requirements apply for remote working to protect information ou
 
 ## Reporting Obligation
 
-Employees are obligated to report detected or suspected IS events and data protection breaches (addresses A.6.8, A.5.34).
+Employees are obligated to report detected or suspected IS events and data protection breaches (addresses A.6.8; see CB_POL_L2_14 for A.5.34).
 
 **IS events:** Every employee must report security incidents, suspected incidents, and vulnerabilities immediately through the defined reporting channel. The reporting process is described in CB_PRC_01 (Incident Management).
 
@@ -175,6 +175,7 @@ Employees are obligated to report detected or suspected IS events and data prote
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.013 | 2026-02-20 | Claude (AI) | Removed A.5.34 from ISO Reference; updated A.5.34 content tag to cross-ref (primary: L2_14) |
 | 00.01.012 | 2026-02-17 | Claude (AI) | Terminology: "information assets" → "organizational assets" / "associated assets" (ISO-aligned) |
 | 00.01.011 | 2026-02-11 | CISO | Added NDA lifecycle (A.6.6), tech-team training plan (Cl. 7.2), asset return at offboarding (A.5.11) |
 | 00.01.008 | 2026-02-09 | CISO | Aligned role terminology |

@@ -198,7 +198,7 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 | 5.8 | CB_POL_L2_04 | |
 | 5.9 | HB_REG_AM | CB_PRC_12, CB_POL_L2_07 |
 | 5.10 | CB_POL_L2_07 | CB_POL_L3_01 |
-| 5.11 | CB_POL_L2_07 | |
+| 5.11 | CB_POL_L2_10 | |
 | 5.12 | CB_POL_L2_02 | CB_POL_L3_01 |
 | 5.13 | CB_POL_L2_02 | CB_POL_L3_01 |
 | 5.14 | CB_POL_L2_02 | |
@@ -275,7 +275,7 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 | 8.11 | CB_POL_L2_02 | |
 | 8.12 | CB_POL_L2_02 | CB_POL_L2_03 |
 | 8.13 | CB_POL_L2_06 | CB_POL_L3_02, CB_PRC_03 |
-| 8.14 | CB_POL_L2_06 | CB_PRC_03 |
+| 8.14 | CB_POL_L2_03 | CB_PRC_03 |
 | 8.15 | CB_POL_L2_03 | CB_POL_L3_02 |
 | 8.16 | CB_POL_L2_03 | CB_POL_L3_02 |
 | 8.17 | CB_POL_L2_03 | |

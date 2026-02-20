@@ -1,8 +1,8 @@
 > **Document ID:** CB_POL_L2_07-Organisation
-> **Version:** 00.03.017
+> **Version:** 00.03.018
 > **Classification:** Internal
 > **Author:** CISO
-> **ISO Reference:** A.5.2-5.6, A.5.9-5.11
+> **ISO Reference:** A.5.2-5.6, A.5.9-5.10
 > **Last modified:** 2026-02-20
 > **Approval:** —
 > **Review cycle:** Annual
@@ -149,6 +149,7 @@ The procedure for contact with authorities specifies contact points within the c
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.03.018 | 2026-02-20 | Claude (AI) | Removed A.5.11 from ISO Reference (primary: L2_10) |
 | 00.03.017 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.03.016 | 2026-02-19 | Claude (AI) | Traceability fix: add P3 to Policy reference (L1 allocation matrix assigns L2_07 to P3 Risk orientation) |
 | 00.03.015 | 2026-02-18 | CISO | Added P2 to Policy reference (L1 allocation matrix assigns L2_07 to P2 Compliance — traceability fix) |

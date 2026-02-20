@@ -1,9 +1,9 @@
 > **Document ID:** CB_POL_L2_03-System-and-Network
-> **Version:** 00.01.010
+> **Version:** 00.01.011
 > **Classification:** Internal
 > **Author:** CISO
-> **ISO Reference:** A.8.1, A.8.6-8.10, A.8.13-8.17, A.8.19-8.23
-> **Last modified:** 2026-02-11
+> **ISO Reference:** A.8.1, A.8.6-8.9, A.8.13-8.17, A.8.19-8.23
+> **Last modified:** 2026-02-20
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -118,11 +118,11 @@ Networks, systems, and applications must be monitored to detect anomalous behavi
 
 ## Data Masking
 
-Sensitive data must be masked in non-production environments and wherever full data exposure is not required (addresses A.8.11). Data owners must identify and classify sensitive data elements in systems, databases, and applications. Appropriate masking techniques must be selected, including anonymization, pseudonymization, or tokenization, based on data classification and regulatory requirements. Masking must be applied before data is transferred to development, testing, or analytics environments. Effectiveness of masking must be validated to ensure that original data cannot be reconstructed or re-identified from masked data. Masking procedures must comply with applicable data protection regulations [REF:DG24-SN, Kap. 6.1].
+Sensitive data must be masked in non-production environments and wherever full data exposure is not required (see CB_POL_L2_02 for A.8.11). Data owners must identify and classify sensitive data elements in systems, databases, and applications. Appropriate masking techniques must be selected, including anonymization, pseudonymization, or tokenization, based on data classification and regulatory requirements. Masking must be applied before data is transferred to development, testing, or analytics environments. Effectiveness of masking must be validated to ensure that original data cannot be reconstructed or re-identified from masked data. Masking procedures must comply with applicable data protection regulations [REF:DG24-SN, Kap. 6.1].
 
 ## Data Leakage Prevention
 
-Measures must be implemented to detect and prevent the unauthorized disclosure or extraction of sensitive information (addresses A.8.12). Channels with data exfiltration risk must be identified, including email, file transfer, cloud storage, and removable media. [DLP solution, e.g. Google Workspace DLP, Microsoft Purview] must be deployed to monitor data flows and enforce transfer policies. DLP rules must be configured to quarantine or block transmissions that match defined sensitive data patterns. User capabilities for copying, transferring, or uploading classified information to unauthorized destinations must be restricted. Alerts on policy violations must be investigated promptly. DLP policies must be reviewed and updated regularly to reflect changes in data classification or threat landscape.
+Measures must be implemented to detect and prevent the unauthorized disclosure or extraction of sensitive information (see CB_POL_L2_02 for A.8.12). Channels with data exfiltration risk must be identified, including email, file transfer, cloud storage, and removable media. [DLP solution, e.g. Google Workspace DLP, Microsoft Purview] must be deployed to monitor data flows and enforce transfer policies. DLP rules must be configured to quarantine or block transmissions that match defined sensitive data patterns. User capabilities for copying, transferring, or uploading classified information to unauthorized destinations must be restricted. Alerts on policy violations must be investigated promptly. DLP policies must be reviewed and updated regularly to reflect changes in data classification or threat landscape.
 
 ## Web Filtering
 
@@ -176,6 +176,7 @@ Redundancies must be provided for critical information processing facilities to 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.011 | 2026-02-20 | Claude (AI) | Removed A.8.10 from ISO Reference; demoted A.8.11/A.8.12 tags to cross-refs (primary: L2_02) |
 | 00.01.010 | 2026-02-11 | CISO | Dev/Ops extensions: penetration testing (A.8.8), cloud logging (A.8.15), WLAN segmentation (A.8.22), alarm management (A.8.16), BYOD (A.8.1) |
 | 00.01.009 | 2026-02-11 | CISO | Added 8 missing controls: A.8.11, A.8.12, A.8.16, A.8.17, A.8.18, A.8.19, A.8.23, A.8.24 |
 | 00.01.008 | 2026-02-09 | CISO | Aligned role terminology |

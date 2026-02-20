@@ -1,5 +1,5 @@
 > **Document ID:** HB_REG_SOA_01-Statement-of-Applicability
-> **Version:** 00.04.015
+> **Version:** 00.04.016
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** Clause 6.1.3 d
@@ -52,7 +52,7 @@ Control selection takes place during risk treatment (CB_PRC_07, HB_CLS_8.3) and 
 | 5.8 | Information security in project management | Yes | [baseline/risk treatment/legal-contractual] | Reduces likelihood of deliberate rule breach | Implemented | CB_POL_L2_04 | Project security register |
 | 5.9 | Inventory of information and other associated assets | Yes | [baseline/risk treatment/legal-contractual] | Reduces likelihood of unauthorized access | Implemented | HB_REG_AM, CB_PRC_12 | Asset register |
 | 5.10 | Acceptable use of information and other associated assets | Yes | [baseline/risk treatment/legal-contractual] | Reduces likelihood of unauthorized access | Implemented | CB_POL_L2_07 | Asset handling procedures |
-| 5.11 | Return of assets | Yes | [baseline/risk treatment/legal-contractual] | Reduces likelihood of unauthorized access | Implemented | CB_POL_L2_07 | Role definition |
+| 5.11 | Return of assets | Yes | [baseline/risk treatment/legal-contractual] | Reduces likelihood of unauthorized access | Implemented | CB_POL_L2_10 | Role definition |
 | 5.12 | Classification of information | Yes | [baseline/risk treatment/legal-contractual] | Reduces likelihood of unauthorized access | Implemented | CB_POL_L2_02 | Classification scheme |
 | 5.13 | Labelling of information | Yes | [baseline/risk treatment/legal-contractual] | Reduces likelihood of unauthorized access | Implemented | CB_POL_L2_02 | Labelling procedures |
 | 5.14 | Information transfer | Yes | [baseline/risk treatment/legal-contractual] | Reduces likelihood of unauthorized access | Implemented | CB_POL_L2_02 | Information transfer policies |
@@ -127,9 +127,9 @@ Control selection takes place during risk treatment (CB_PRC_07, HB_CLS_8.3) and 
 | 8.9 | Configuration management | Yes | [baseline/risk treatment/legal-contractual] | Required for endpoint and infrastructure hardening; baselines defined | Partial | CB_POL_L2_03 | — |
 | 8.10 | Information deletion | No | — | Not proportionate at current org maturity level | — | CB_POL_L2_02 | — |
 | 8.11 | Data masking | Yes | [baseline/risk treatment/legal-contractual] | Required for non-production data protection; implemented in monitoring tools | Partial | CB_POL_L2_02 | — |
-| 8.12 | Data leakage prevention | No | — | Not proportionate at current org maturity level | — | CB_POL_L2_02, CB_POL_L2_03 | — |
+| 8.12 | Data leakage prevention | No | — | Not proportionate at current org maturity level | — | CB_POL_L2_02 | — |
 | 8.13 | Information backup | Yes | [baseline/risk treatment/legal-contractual] | Reduces impact of an information security incident | Implemented | CB_POL_L2_06 | Backup policy |
-| 8.14 | Redundancy of information processing facilities | Yes | [baseline/risk treatment/legal-contractual] | Reduces impact of an information security incident | Implemented | CB_POL_L2_06 | Redundancy architecture plan |
+| 8.14 | Redundancy of information processing facilities | Yes | [baseline/risk treatment/legal-contractual] | Reduces impact of an information security incident | Implemented | CB_POL_L2_03 | Redundancy architecture plan |
 | 8.15 | Logging | Yes | [baseline/risk treatment/legal-contractual] | Reduces impact of an information security incident | Implemented | CB_POL_L2_03 | Event log review schedule |
 | 8.16 | Monitoring activities | No | — | Not proportionate at current org maturity level | — | CB_POL_L2_03 | — |
 | 8.17 | Clock synchronization | Yes | [baseline/risk treatment/legal-contractual] | Reduces impact of an information security incident | Implemented | CB_POL_L2_03 | NTP configuration records |
@@ -158,6 +158,7 @@ Control selection takes place during risk treatment (CB_PRC_07, HB_CLS_8.3) and 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.04.016 | 2026-02-20 | Claude (AI) | Reassigned A.5.11 to L2_10, A.8.14 to L2_03; removed L2_03 from A.8.12 |
 | 00.04.015 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.04.014 | 2026-02-19 | Claude (AI) | Controls 5.29/5.30: HB_REG_04 reference updated to BCM-Register |
 | 00.04.013 | 2026-02-18 | Claude (AI) | Add Basis column for applicability classification (baseline/risk treatment/legal-contractual) |

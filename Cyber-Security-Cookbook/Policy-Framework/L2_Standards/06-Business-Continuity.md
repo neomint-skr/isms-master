@@ -1,8 +1,8 @@
 > **Document ID:** CB_POL_L2_06-Business-Continuity
-> **Version:** 00.01.011
+> **Version:** 00.01.012
 > **Classification:** Internal
 > **Author:** CISO
-> **ISO Reference:** A.5.29-5.30, A.8.13-8.14
+> **ISO Reference:** A.5.29-5.30, A.8.13
 > **Last modified:** 2026-02-20
 > **Approval:** —
 > **Review cycle:** Annual
@@ -96,7 +96,7 @@ Backup copies of information, software, and system configurations must be create
 
 **Secure deletion:** Backup data must be securely erased when retention periods expire or when data subjects exercise their right to erasure under GDPR (addresses A.8.13). Deletion methods must be proportionate to the classification level of the stored data. Erasure of backup media must be documented, and evidence of deletion must be retained for [audit retention period]. Automated expiry mechanisms are preferred over manual deletion to reduce the risk of orphaned data.
 
-**Redundancy:** For critical IT services at tier 1, sufficient redundancies of information processing facilities must be maintained to meet the defined availability requirements (addresses A.8.14). Redundant systems, networks, and services must implement the same security controls as primary systems. Failover configurations must be tested at [defined intervals — e.g., annually or semi-annually] to verify correct activation and sustained security posture. Deviations between primary and redundant environments must be treated as findings in risk management.
+**Redundancy:** For critical IT services at tier 1, sufficient redundancies of information processing facilities must be maintained to meet the defined availability requirements (see CB_POL_L2_03 for A.8.14). Redundant systems, networks, and services must implement the same security controls as primary systems. Failover configurations must be tested at [defined intervals — e.g., annually or semi-annually] to verify correct activation and sustained security posture. Deviations between primary and redundant environments must be treated as findings in risk management.
 
 The operational backup process including procedures and responsibilities is described in CB_PRC_03 (Backup and Recovery). The concrete backup plans and tools are defined in CB_POL_L3_05 (Data Backup) [REF:DG24-BK, Kap. 4].
 
@@ -114,6 +114,7 @@ The operational backup process including procedures and responsibilities is desc
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.012 | 2026-02-20 | Claude (AI) | Removed A.8.14 from ISO Reference; demoted content tag to cross-ref (primary: L2_03) |
 | 00.01.011 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.010 | 2026-02-19 | Claude (AI) | HB_REG_04 reference updated: BIA-Register → BCM-Register |
 | 00.01.009 | 2026-02-11 | CISO | Added secure deletion of backup data (A.8.13 + GDPR), expanded security-equivalent redundancy (A.8.14) |

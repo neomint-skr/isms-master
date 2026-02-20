@@ -1,8 +1,8 @@
 > **Document ID:** CB_POL_L2_02-Information-Protection
-> **Version:** 00.01.010
+> **Version:** 00.01.011
 > **Classification:** Internal
 > **Author:** CISO
-> **ISO Reference:** A.5.12-5.14, A.5.32, A.5.34, A.8.10-8.12, A.8.24
+> **ISO Reference:** A.5.12-5.14, A.5.32, A.8.10-8.12, A.8.24
 > **Last modified:** 2026-02-20
 > **Approval:** —
 > **Review cycle:** Annual
@@ -97,7 +97,7 @@ Information must be appropriately protected throughout its entire lifecycle — 
 
 Information owners are responsible for identifying information no longer required for deletion and informing the responsible units [REF:DG25-MA, Kap. 5].
 
-**Personal data lifecycle:** Personal data must be managed through a defined lifecycle covering collection, processing, storage, transfer, and deletion (addresses A.5.34). Purpose limitation and data minimisation principles must be applied at each phase. Retention periods must be defined per data category based on legal requirements and contractual obligations. Secure deletion must be performed when retention periods expire or upon legitimate data subject request. Processing activities involving personal data must be recorded in the register of processing activities maintained in accordance with applicable data protection legislation.
+**Personal data lifecycle:** Personal data must be managed through a defined lifecycle covering collection, processing, storage, transfer, and deletion (see CB_POL_L2_14 for A.5.34). Purpose limitation and data minimisation principles must be applied at each phase. Retention periods must be defined per data category based on legal requirements and contractual obligations. Secure deletion must be performed when retention periods expire or upon legitimate data subject request. Processing activities involving personal data must be recorded in the register of processing activities maintained in accordance with applicable data protection legislation.
 
 ## Intellectual Property
 
@@ -126,6 +126,7 @@ The organization's own intellectual property and that of third parties must be i
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.011 | 2026-02-20 | Claude (AI) | Removed A.5.34 from ISO Reference (primary: L2_14); demoted content tag to cross-ref |
 | 00.01.010 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.009 | 2026-02-17 | Claude (AI) | Process-centric context: information as attribute of business processes in Summary and Objective |
 | 00.01.008 | 2026-02-11 | CISO | Personal data lifecycle added (A.5.34) |
