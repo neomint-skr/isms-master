@@ -90,7 +90,7 @@ Excluded: REF extracts (no metadata block), TPL templates (fill-in documents; ex
 
 | Location | Allowed types | Content |
 |---|---|---|
-| `Templates/` | `.md`, `.pdf`, `.docx`, `.xlsx` | Operational fill-in forms for daily use |
+| `Templates/` | `.md`, `.pdf`, `.doc`, `.docx`, `.xlsx` | Operational fill-in forms for daily use |
 | `References/Library/` | `.pdf` + `.md` (extracts) | External reference material (standards, vendor templates, guidelines) |
 | All other CB/HB paths | `.md` | ISMS content documents |
 | `.claude/`, `scripts/` | `.json`, `.md`, `.mjs` | Agent definitions, hooks, configuration |

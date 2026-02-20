@@ -132,8 +132,8 @@ Verify the repository is free of runtime artifacts, unexpected file types and or
 
 **Steps:**
 - Glob `**/*` at the repo root and capture all tracked file types (extensions)
-- Allowed file types: `.md`, `.pdf`, `.docx`, `.xlsx`, `.json`, `.sh`, `.mjs`, `.gitkeep`, `.gitignore`, `.gitattributes`, `LICENSE` (no extension)
-- Binary formats (`.pdf`, `.docx`, `.xlsx`) are allowed only in `Templates/` (operational forms) and `References/Library/` (external sources) — binaries elsewhere are a finding
+- Allowed file types: `.md`, `.pdf`, `.doc`, `.docx`, `.xlsx`, `.json`, `.sh`, `.mjs`, `.gitkeep`, `.gitignore`, `.gitattributes`, `LICENSE` (no extension)
+- Binary formats (`.pdf`, `.doc`, `.docx`, `.xlsx`) are allowed only in `Templates/` (operational forms) and `References/Library/` (external sources) — binaries elsewhere are a finding
 - Report every file with an unexpected extension (e.g. `.tmp`, `.bak`, `.log`, `.pyc`, `.DS_Store`, binaries outside allowed locations)
 - Verify that `.gitkeep` files exist only in empty directories — if the directory contains other files, `.gitkeep` is a relic
 - Verify that no files reside in the repo root that do not belong (allowed at root: `INDEX.md`, `CLAUDE.md`, `LICENSE`, `.gitignore`, `.gitattributes`, `CHANGELOG.md`)
