@@ -86,6 +86,17 @@ Excluded: REF extracts (no metadata block), TPL templates (fill-in documents; ex
 
 **Register scalability:** Registers with >100 entries MAY use a Risk Overview summary table + severity-based H2 sections (Critical/High/Medium/Low) instead of a single flat table.
 
+### File Types per Location
+
+| Location | Allowed types | Content |
+|---|---|---|
+| `Templates/` | `.md`, `.pdf`, `.docx`, `.xlsx` | Operational fill-in forms for daily use |
+| `References/Library/` | `.pdf` + `.md` (extracts) | External reference material (standards, vendor templates, guidelines) |
+| All other CB/HB paths | `.md` | ISMS content documents |
+| `.claude/`, `scripts/` | `.json`, `.md`, `.mjs` | Agent definitions, hooks, configuration |
+
+PDFs in Templates/ are operational forms (e.g. data breach notification). PDFs in References/Library/ are external sources with corresponding MD extracts. Do not confuse the two.
+
 ### Objective and Scope (Layout)
 
 Every `## Objective and Scope` section follows this layout:
