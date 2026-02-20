@@ -1,8 +1,8 @@
 > **Document ID:** CB_POL_L2_05-Supplier-and-Cloud
-> **Version:** 00.01.008
+> **Version:** 00.01.009
 > **Classification:** Internal
 > **Author:** CISO
-> **ISO Reference:** A.5.19-5.23, A.8.30
+> **ISO Reference:** A.5.19-5.23
 > **Last modified:** 2026-02-20
 > **Approval:** —
 > **Review cycle:** Annual
@@ -22,7 +22,7 @@ External service providers and cloud vendors process information outside the org
 
 **Objective:** External service providers and cloud vendors process information outside the organization's direct control. Without binding requirements for assessment, contractual terms, and monitoring of third parties, supplier risk remains opaque and unmanaged.
 
-This policy defines the normative requirements for supplier assessment, contractual security requirements, ongoing monitoring, and cloud-specific controls (addresses A.5.19-5.23, A.8.30). It establishes criteria for managing third-party risks.
+This policy defines the normative requirements for supplier assessment, contractual security requirements, ongoing monitoring, and cloud-specific controls (addresses A.5.19-5.23; see CB_POL_L2_04 for A.8.30). It establishes criteria for managing third-party risks.
 
 The standard implements the principles P1 (Protection), P2 (Compliance), and P3 (Risk orientation) of the IS policy. Operational implementation is provided through CB_POL_L3_07 (Supplier Management); the management process through CB_PRC_06 (Supplier Management).
 
@@ -149,6 +149,7 @@ Cloud service agreements must cover the following aspects:
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.009 | 2026-02-20 | Claude (AI) | MECE fix: remove A.8.30 dual assignment, primary home is L2_04 |
 | 00.01.008 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.007 | 2026-02-11 | CISO | Added supplier personnel screening requirement (A.5.20) |
 | 00.01.006 | 2026-02-09 | CISO | Aligned role terminology |
