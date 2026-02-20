@@ -207,6 +207,7 @@ Available agents (`.claude/agents/`):
 | `library-lean-checker` | Team agent (sonnet) | Lean review: minimality, necessity, elegance, redundancy |
 | `library-certification-checker` | Team agent (sonnet) | ISO certification review: documented information obligations, audit trail, coverage |
 | `library-standards-check` | Team agent (haiku) | ISO/BSI cross-check + gap analysis |
+| `blueprint-compliance-checker` | Agent (sonnet) | 10 phases: file inventory, metadata, structure, content alignment, register schema, cross-refs, traceability, data completeness, legacy detection, skeleton completion |
 
 **Workflows:**
 - **Subject-matter question** — Two-step: `librarian` (source search) then `researcher` (synthesis + recommendation). Librarian also usable standalone.
