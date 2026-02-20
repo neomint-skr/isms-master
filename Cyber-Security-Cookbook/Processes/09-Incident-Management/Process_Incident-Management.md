@@ -1,5 +1,5 @@
 > **Document ID:** CB_PRC_01-Incident-Management
-> **Version:** 00.01.011
+> **Version:** 00.01.012
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.24-5.28
@@ -252,6 +252,7 @@ The organization establishes procedures for the identification, collection, acqu
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.012 | 2026-02-20 | CISO | Reorganized into numbered subfolder; file renamed to Process_ prefix |
 | 00.01.011 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.010 | 2026-02-18 | CISO | Driver reference: L2_07 → L2_13 (incidents split to dedicated standard; traceability fix) |
 | 00.01.009 | 2026-02-11 | Claude (AI) | Clarification: exception events (incident classification) vs. policy exceptions (CB_PRC_14) (merge from retorio) |

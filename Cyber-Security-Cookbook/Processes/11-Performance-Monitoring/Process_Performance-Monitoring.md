@@ -1,5 +1,5 @@
 > **Document ID:** CB_PRC_11-Performance-Monitoring
-> **Version:** 00.01.008
+> **Version:** 00.01.009
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 9.1, 6.2
@@ -129,6 +129,7 @@ Corrective actions resulting from escalation are tracked in the improvement road
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.009 | 2026-02-20 | CISO | Reorganized into numbered subfolder; file renamed to Process_ prefix |
 | 00.01.008 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.007 | 2026-02-11 | CISO | Skeleton filling: Summary, KPI catalogue, data collection, analysis/reporting, escalation |
 | 00.01.006 | 2026-02-09 | CISO | Aligned role terminology |

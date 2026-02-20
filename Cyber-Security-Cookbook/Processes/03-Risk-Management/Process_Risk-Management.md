@@ -1,5 +1,5 @@
 > **Document ID:** CB_PRC_07-Risk-Management
-> **Version:** 00.01.018
+> **Version:** 00.01.019
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1, 8.2, 8.3
@@ -158,6 +158,7 @@ An unscheduled risk assessment is triggered by:
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.019 | 2026-02-20 | CISO | Reorganized into numbered subfolder; file renamed to Process_ prefix |
 | 00.01.018 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.017 | 2026-02-18 | Claude (AI) | Deterministic PR-risk: HB_REG_11→HB_REG_RF references, unknown resolve-by deadlines, deterministic net risk formula |
 | 00.01.016 | 2026-02-13 | Claude (AI) | Step 4: Treatment column values changed to binary Accept/Treat (→ RTP); specific treatment selection moved to RTP (HB_REG_06) |

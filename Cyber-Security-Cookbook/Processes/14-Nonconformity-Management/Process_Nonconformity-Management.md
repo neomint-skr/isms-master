@@ -1,5 +1,5 @@
 > **Document ID:** CB_PRC_10-Nonconformity-Management
-> **Version:** 00.01.009
+> **Version:** 00.01.010
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 10.2
@@ -172,6 +172,7 @@ Ineffective actions are never closed without one of the above resolutions.
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.010 | 2026-02-20 | CISO | Reorganized into numbered subfolder; file renamed to Process_ prefix |
 | 00.01.009 | 2026-02-20 | Claude (AI) | Fix missed shorthand register references HB_REG_12 → HB_REG_NC |
 | 00.01.008 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.007 | 2026-02-11 | CISO | Populated TODO sections: Detection and reporting (sources, channels, scheduled detection), Analysis and RCA (immediate action, 5-Why/Ishikawa, impact assessment), Corrective actions (action plan, deadlines, ISMS modification), Effectiveness review (timing, criteria, escalation), Summary |

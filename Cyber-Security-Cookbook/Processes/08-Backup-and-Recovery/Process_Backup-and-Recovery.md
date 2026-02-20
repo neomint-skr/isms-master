@@ -1,5 +1,5 @@
 > **Document ID:** CB_PRC_03-Backup-and-Recovery
-> **Version:** 00.01.009
+> **Version:** 00.01.010
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.8.13-8.14, A.5.29-5.30
@@ -48,6 +48,7 @@ The process operationalizes the requirements from CB_POL_L2_06-Business-Continui
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.010 | 2026-02-20 | CISO | Reorganized into numbered subfolder; file renamed to Process_ prefix |
 | 00.01.009 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.008 | 2026-02-19 | Claude (AI) | HB_REG_04 reference updated: BIA-Register → BCM-Register |
 | 00.01.007 | 2026-02-10 | CISO | Added L3_08 and REG_04 cross-references |

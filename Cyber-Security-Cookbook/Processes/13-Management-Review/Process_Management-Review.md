@@ -1,5 +1,5 @@
 > **Document ID:** CB_PRC_09-Management-Review
-> **Version:** 00.01.009
+> **Version:** 00.01.010
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 9.3
@@ -54,6 +54,7 @@ The process operationalizes the requirements from HB_CLS_9.3 (Management Review)
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.010 | 2026-02-20 | CISO | Reorganized into numbered subfolder; file renamed to Process_ prefix |
 | 00.01.009 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.008 | 2026-02-10 | CISO | Cross-reference to HB_MGT_02-Meeting-Log |
 | 00.01.007 | 2026-02-09 | CISO | Aligned role terminology |

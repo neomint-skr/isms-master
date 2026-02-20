@@ -1,5 +1,5 @@
 > **Document ID:** CB_PRC_06-Supplier-Management
-> **Version:** 00.01.007
+> **Version:** 00.01.008
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.19-5.23
@@ -136,6 +136,7 @@ Non-compliance is documented in writing and an action plan with deadlines is agr
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.008 | 2026-02-20 | CISO | Reorganized into numbered subfolder; file renamed to Process_ prefix |
 | 00.01.007 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.006 | 2026-02-11 | CISO | Populated Assessment, Contracts, Monitoring, Summary sections |
 | 00.01.005 | 2026-02-09 | CISO | Aligned role terminology |

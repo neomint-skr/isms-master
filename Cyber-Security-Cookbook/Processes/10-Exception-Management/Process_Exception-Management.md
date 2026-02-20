@@ -1,5 +1,5 @@
 > **Document ID:** CB_PRC_14-Exception-Management
-> **Version:** 00.01.003
+> **Version:** 00.01.004
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1
@@ -98,6 +98,7 @@ Expired exceptions without renewal trigger verification that compliance has been
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.004 | 2026-02-20 | CISO | Reorganized into numbered subfolder; file renamed to Process_ prefix |
 | 00.01.003 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.002 | 2026-02-11 | CISO | RACI section removed; roles centralized in HB_CLS_5.3 |
 | 00.01.001 | 2026-02-11 | Claude | Renumber Exception Management PRC_13→PRC_14, TPL_19→TPL_20 |
