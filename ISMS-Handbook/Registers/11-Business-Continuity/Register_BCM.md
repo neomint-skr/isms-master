@@ -1,11 +1,11 @@
 > **Document ID:** HB_REG_BCM_01-BCM-Register
-> **Version:** 00.01.007
+> **Version:** 00.01.009
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** A.5.29-5.30
 > **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -41,10 +41,10 @@ The following tier model is derived from CB_POL_L2_06-Business-Continuity. It go
 
 | Tier | RTO | RPO | Criticality | Backup frequency | Test frequency | Examples |
 |---|---|---|---|---|---|---|
-| 1 | 0-4 h | 0-4 h | Critical | [at least hourly] | Semi-annual | [Production systems, payment processing] |
-| 2 | 5-24 h | 5-24 h | Important | [at least daily] | Annual | [Email, CRM] |
-| 3 | 25-96 h | 25-96 h | Normal | [at least weekly] | Annual | [Archiving, reporting] |
-| 4 | > 97 h | > 97 h | Low | [as needed] | — | [Test environments] |
+| 1 | [RTO/MTD Tier 1, e.g. 0-4 h] | [RTO/MTD Tier 1, e.g. 0-4 h] | Critical | [at least hourly] | [frequency, e.g. Semi-annual] | [Production systems, payment processing] |
+| 2 | [RTO/MTD Tier 2, e.g. 5-24 h] | [RTO/MTD Tier 2, e.g. 5-24 h] | Important | [at least daily] | [frequency, e.g. Annual] | [Email, CRM] |
+| 3 | [RTO/MTD Tier 3, e.g. 25-96 h] | [RTO/MTD Tier 3, e.g. 25-96 h] | Normal | [at least weekly] | [frequency, e.g. Annual] | [Archiving, reporting] |
+| 4 | [RTO/MTD Tier 4, e.g. > 97 h] | [RTO/MTD Tier 4, e.g. > 97 h] | Low | [as needed] | — | [Test environments] |
 
 ## Continuity Plans
 
@@ -81,6 +81,8 @@ The following table tracks IT continuity plans required by CB_POL_L2_06-Business
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.009 | 2026-02-20 | Claude (AI) | Replace hardcoded parameter values with placeholders |
+| 00.01.008 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.01.007 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.006 | 2026-02-19 | Claude (AI) | Rename to BCM Register, rescope: remove BIA assessment table and Derived V, add Findings/Actions and Review/Approval sections, retain Recovery Priority Tiers for BCM planning |
 | 00.01.005 | 2026-02-18 | Claude (AI) | Add governance columns (Rationale, Date, Owner, Approval status) to BIA assessment table |

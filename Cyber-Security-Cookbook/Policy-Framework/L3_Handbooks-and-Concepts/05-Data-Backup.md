@@ -1,11 +1,11 @@
 > **Document ID:** CB_POL_L3_05-Data-Backup
-> **Version:** 00.01.010
+> **Version:** 00.01.011
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.29-5.30, A.8.10, A.8.13
 > **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -65,6 +65,7 @@ Retention periods for backup data shall be defined based on statutory requiremen
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.011 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.01.010 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.009 | 2026-02-19 | Claude (AI) | HB_REG_04 reference updated: BIA-Register → BCM-Register |
 | 00.01.008 | 2026-02-10 | CISO | Added L4 traceability field (Condensed by) |

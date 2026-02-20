@@ -1,11 +1,11 @@
 > **Document ID:** CB_PRC_14-Exception-Management
-> **Version:** 00.01.004
+> **Version:** 00.01.006
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1
 > **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -66,7 +66,7 @@ The Chief Information Security Officer evaluates the risk impact of the requeste
 **Rejected:** The Chief Information Security Officer:
 
 - Updates the exception register status to "Rejected"
-- Sets a remediation deadline based on the protection requirement of the affected asset (Very high: 30 days, High: 60 days, Normal: 90 days)
+- Sets a remediation deadline based on the protection requirement of the affected asset (Very high: [remediation deadline — Very high, e.g. 30 days], High: [remediation deadline — High, e.g. 60 days], Normal: [remediation deadline — Normal, e.g. 90 days])
 - Notifies the requestor with the requirement to restore compliance within the deadline
 
 **Approval authority:**
@@ -98,6 +98,8 @@ Expired exceptions without renewal trigger verification that compliance has been
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.006 | 2026-02-20 | Claude (AI) | Replace hardcoded parameter values with placeholders |
+| 00.01.005 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.01.004 | 2026-02-20 | CISO | Reorganized into numbered subfolder; file renamed to Process_ prefix |
 | 00.01.003 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.002 | 2026-02-11 | CISO | RACI section removed; roles centralized in HB_CLS_5.3 |

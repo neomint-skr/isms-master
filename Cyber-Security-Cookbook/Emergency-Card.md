@@ -1,11 +1,11 @@
 > **Document ID:** CB_Emergency-Card
-> **Version:** 00.01.005
+> **Version:** 00.01.006
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.24, A.6.8
-> **Last modified:** 2026-02-10
+> **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -73,6 +73,7 @@ The emergency card complements the incident management process (CB_PRC_01) as a 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.006 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.01.005 | 2026-02-10 | CISO | Populated body sections |
 | 00.01.004 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.003 | 2026-02-09 | CISO | Objective and scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |

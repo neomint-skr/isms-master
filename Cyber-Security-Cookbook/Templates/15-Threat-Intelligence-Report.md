@@ -1,11 +1,11 @@
 > **Document ID:** CB_TPL_15-Threat-Intelligence-Report
-> **Version:** 00.00.001
+> **Version:** 00.00.002
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** ISO 27001:2022 A.5.7
-> **Last modified:** 2026-02-10
+> **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -77,4 +77,5 @@
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.00.002 | 2026-02-20 | Claude (AI) | Replace hardcoded parameter values with placeholders |
 | 00.00.001 | 2026-02-10 | CISO | Initial template created from migration source |

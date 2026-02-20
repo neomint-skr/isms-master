@@ -1,11 +1,11 @@
 > **Document ID:** CB_POL_L2_06-Business-Continuity
-> **Version:** 00.01.013
+> **Version:** 00.01.015
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.29-5.30, A.8.13
 > **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -62,10 +62,10 @@ Business processes and IT services are categorized according to the following ti
 
 | Tier | RTO/RPO | Criticality | Application examples |
 |---|---|---|---|
-| Tier 1 | 0-4 h | Critical | [Production systems, payment processing, customer systems] |
-| Tier 2 | 5-24 h | Important | [Email, intranet, CRM] |
-| Tier 3 | 25-96 h | Normal | [Archiving, reporting] |
-| Tier 4 | > 97 h | Low | [Test environments, internal documentation] |
+| Tier 1 | [RTO/MTD Tier 1, e.g. 0-4 h] | Critical | [Production systems, payment processing, customer systems] |
+| Tier 2 | [RTO/MTD Tier 2, e.g. 5-24 h] | Important | [Email, intranet, CRM] |
+| Tier 3 | [RTO/MTD Tier 3, e.g. 25-96 h] | Normal | [Archiving, reporting] |
+| Tier 4 | [RTO/MTD Tier 4, e.g. > 97 h] | Low | [Test environments, internal documentation] |
 
 The organization focuses primarily on tiers 1 and 2 to ensure the continuity of business-critical services.
 
@@ -114,6 +114,8 @@ The operational backup process including procedures and responsibilities is desc
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.015 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
+| 00.01.014 | 2026-02-20 | Claude (AI) | Replace hardcoded parameter values with placeholders |
 | 00.01.013 | 2026-02-20 | Claude (AI) | Aligned Objective text: removed A.8.14 from addresses range (primary: L2_03) |
 | 00.01.012 | 2026-02-20 | Claude (AI) | Removed A.8.14 from ISO Reference; demoted content tag to cross-ref (primary: L2_03) |
 | 00.01.011 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |

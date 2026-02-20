@@ -1,11 +1,11 @@
 > **Document ID:** CB_TPL_16-Configuration-Standard
-> **Version:** 00.00.001
+> **Version:** 00.00.002
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** ISO 27001:2022 A.8.9
-> **Last modified:** 2026-02-10
+> **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -108,7 +108,7 @@ Only authorized applications may be installed on corporate devices.
 | Field | Value |
 |---|---|
 | Backup solution | {Software name} |
-| Backup frequency | {Daily / Continuous} |
+| Backup frequency | {[backup frequency, e.g. Daily] / Continuous} |
 | Scope | {All company data / Specific folders} |
 
 ### Business applications
@@ -195,4 +195,5 @@ Only authorized applications may be installed on corporate devices.
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.00.002 | 2026-02-20 | Claude (AI) | Replace hardcoded parameter values with placeholders |
 | 00.00.001 | 2026-02-10 | CISO | Initial template created from migration source |

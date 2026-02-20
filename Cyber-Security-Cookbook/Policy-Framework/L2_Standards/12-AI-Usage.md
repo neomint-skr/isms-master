@@ -1,11 +1,11 @@
 > **Document ID:** CB_POL_L2_12-AI-Usage
-> **Version:** 00.01.004
+> **Version:** 00.01.005
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** BEYOND-ISO
-> **Last modified:** 2026-02-18
+> **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -279,6 +279,7 @@ GenAI tools can produce inaccurate, biased, or legally problematic content. The 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.005 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.01.004 | 2026-02-18 | CISO | Moved CB_AWR_01 from Operationalized by to See also (AWR is not L3; traceability fix) |
 | 00.01.003 | 2026-02-11 | CISO | Extended to AI governance framework: definitions, principles, roles, risk management, training, supplier assessment, logging, testing, incident types, EU AI Act classification; added output rules #6 (IP) and #7 (bias) |
 | 00.01.002 | 2026-02-09 | CISO | Aligned role terminology |

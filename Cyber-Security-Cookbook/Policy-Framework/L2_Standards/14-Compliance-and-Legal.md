@@ -1,11 +1,11 @@
 > **Document ID:** CB_POL_L2_14-Compliance-and-Legal
-> **Version:** 00.01.000
+> **Version:** 00.01.001
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.31-5.37
-> **Last modified:** 2026-02-10
+> **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -74,4 +74,5 @@ An independent review of the organization's approach to managing information sec
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.001 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.01.000 | 2026-02-10 | CISO | Initial version (split from L2_07 Compliance section + A.5.36/5.37 references) |

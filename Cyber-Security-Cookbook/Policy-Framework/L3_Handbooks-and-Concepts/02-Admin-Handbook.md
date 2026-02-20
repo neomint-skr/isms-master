@@ -1,11 +1,11 @@
 > **Document ID:** CB_POL_L3_02-Admin-Handbook
-> **Version:** 00.01.006
+> **Version:** 00.01.007
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.15, A.8.2, A.8.8-8.9, A.8.15-8.16
-> **Last modified:** 2026-02-10
+> **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -55,6 +55,7 @@ The instructions reference the deployed IT systems and tools. The associated pro
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.007 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.01.006 | 2026-02-10 | CISO | Added L4 traceability field (Condensed by) |
 | 00.01.005 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.004 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |

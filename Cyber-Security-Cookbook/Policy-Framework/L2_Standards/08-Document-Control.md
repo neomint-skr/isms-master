@@ -1,11 +1,11 @@
 > **Document ID:** CB_POL_L2_08-Document-Control
-> **Version:** 00.04.014
+> **Version:** 00.04.017
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 7.5
-> **Last modified:** 2026-02-11
+> **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -97,7 +97,7 @@ Every document undergoes a review and approval before initial publication (addre
 
 - **Review criteria:** Content is factually correct, ISO reference verified, consistency with parent documents ensured.
 - **Approval:** Major version increment (e.g., `00.02.003` > `01.00.000`) and approval field in the metadata block populated with name and date.
-- **Review cycle:** As specified in the metadata field (default: annual). Additional review upon significant changes to the ISMS or referenced standards.
+- **Review cycle:** As specified in the metadata field (default: [review cycle, e.g. annual]). Additional review upon significant changes to the ISMS or referenced standards.
 
 ## Distribution and Access
 
@@ -147,7 +147,7 @@ Retention ensures availability and traceability throughout the entire lifecycle 
 - **Retention:** All document versions are permanently retained in the version history.
 - **Readability:** Markdown as document format ensures long-term readability (no proprietary format).
 - **Disposition:** Documents that are no longer valid are marked as "withdrawn" (changelog entry + version increment). Documents are not deleted.
-- **Retention period:** At least until the next recertification audit (3 years).
+- **Retention period:** At least until the next recertification audit ([retention period, e.g. 3 years]).
 
 ## Protection
 
@@ -171,11 +171,15 @@ Documented information of external origin is appropriately identified and contro
 - HB_CLS_7.5-Documented-Information — ISO requirement for documented information
 - CB_POL_L2_07-Organisation — Governance, policy compliance
 - CB_TPL_02-Document-Metadata — Metadata block template
+- HB_REG_VAR_01-Variable-Parameters — Variable parameters register (client survey questionnaire)
 
 ## Changelog
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.04.017 | 2026-02-20 | Claude (AI) | Add HB_REG_VAR_01 cross-reference to See also (MECE orphan fix) |
+| 00.04.016 | 2026-02-20 | Claude (AI) | Replace hardcoded parameter values with placeholders |
+| 00.04.015 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.04.014 | 2026-02-11 | CISO | Add Records Management section with records register requirement (Cl. 7.5) |
 | 00.04.013 | 2026-02-11 | CISO | H1 convention table: added L4 Cheat Sheet pattern |
 | 00.04.012 | 2026-02-10 | Claude (AI) | Remove REG Responsibilities from document structure; consolidate governance in CLS 5.3 |

@@ -1,11 +1,11 @@
 > **Document ID:** CB_PRC_10-Nonconformity-Management
-> **Version:** 00.01.010
+> **Version:** 00.01.011
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 10.2
 > **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -172,6 +172,7 @@ Ineffective actions are never closed without one of the above resolutions.
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.011 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.01.010 | 2026-02-20 | CISO | Reorganized into numbered subfolder; file renamed to Process_ prefix |
 | 00.01.009 | 2026-02-20 | Claude (AI) | Fix missed shorthand register references HB_REG_12 → HB_REG_NC |
 | 00.01.008 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |

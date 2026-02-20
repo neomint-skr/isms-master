@@ -1,11 +1,11 @@
 > **Document ID:** CB_PRC_13-Protection-Requirements
-> **Version:** 00.01.012
+> **Version:** 00.01.013
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1, A.5.9
 > **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -120,6 +120,7 @@ Assets with a protection requirement of High or Very high in at least one core v
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.013 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.01.012 | 2026-02-20 | CISO | Reorganized into numbered subfolder; file renamed to Process_ prefix |
 | 00.01.011 | 2026-02-20 | Claude (AI) | Fix missed shorthand register reference HB_REG_03 → HB_REG_AM |
 | 00.01.010 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |

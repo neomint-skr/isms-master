@@ -1,11 +1,11 @@
 > **Document ID:** HB_AUD_SUP_01-Supplier-Review-Programme
-> **Version:** 00.00.002
+> **Version:** 00.00.003
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** A.5.19, A.5.22
 > **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -73,5 +73,6 @@ Individual review records are stored in Audit/Supplier/Records/.
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.00.003 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.00.002 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.00.001 | 2026-02-11 | CISO | Initial skeleton: review programme structure, criteria, schedule template |

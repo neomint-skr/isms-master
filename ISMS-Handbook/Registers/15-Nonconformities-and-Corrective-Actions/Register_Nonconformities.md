@@ -1,11 +1,11 @@
 > **Document ID:** HB_REG_NC_01-Nonconformity-Register
-> **Version:** 00.01.009
+> **Version:** 00.01.010
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** Clause 10.2
 > **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -81,6 +81,7 @@ The NC process is defined in CB_PRC_10 (Nonconformity Management); inputs come f
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.010 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.01.009 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.008 | 2026-02-11 | Claude (AI) | Register renumbered for information-flow order (formerly no. 05) |
 | 00.01.007 | 2026-02-10 | Claude (AI) | Remove Responsibilities section; roles consolidated in CLS 5.3 |

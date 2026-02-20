@@ -1,11 +1,11 @@
 > **Document ID:** CB_POL_L2_07-Organisation
-> **Version:** 00.03.019
+> **Version:** 00.03.020
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.2-5.6, A.5.9-5.10
 > **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -149,6 +149,7 @@ The procedure for contact with authorities specifies contact points within the c
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.03.020 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.03.019 | 2026-02-20 | Claude (AI) | Aligned Objective text: removed A.5.11 from addresses range; added P3 to body narrative |
 | 00.03.018 | 2026-02-20 | Claude (AI) | Removed A.5.11 from ISO Reference (primary: L2_10) |
 | 00.03.017 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |

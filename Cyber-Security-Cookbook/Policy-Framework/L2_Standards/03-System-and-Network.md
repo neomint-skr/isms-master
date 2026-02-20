@@ -1,11 +1,11 @@
 > **Document ID:** CB_POL_L2_03-System-and-Network
-> **Version:** 00.01.012
+> **Version:** 00.01.013
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.8.1, A.8.6-8.9, A.8.14-8.17, A.8.19-8.23
 > **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -176,6 +176,7 @@ Redundancies must be provided for critical information processing facilities to 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.013 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.01.012 | 2026-02-20 | Claude (AI) | Removed A.8.13 from ISO Reference (primary: L2_06); range now A.8.14-8.17 |
 | 00.01.011 | 2026-02-20 | Claude (AI) | Removed A.8.10 from ISO Reference; demoted A.8.11/A.8.12 tags to cross-refs (primary: L2_02) |
 | 00.01.010 | 2026-02-11 | CISO | Dev/Ops extensions: penetration testing (A.8.8), cloud logging (A.8.15), WLAN segmentation (A.8.22), alarm management (A.8.16), BYOD (A.8.1) |

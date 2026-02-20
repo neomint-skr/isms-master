@@ -1,11 +1,11 @@
 > **Document ID:** CB_POL_L2_02-Information-Protection
-> **Version:** 00.01.012
+> **Version:** 00.01.013
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.12-5.14, A.8.10-8.12, A.8.24
 > **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -126,6 +126,7 @@ The organization's own intellectual property and that of third parties must be i
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.013 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.01.012 | 2026-02-20 | Claude (AI) | MECE fix: remove A.5.32 dual assignment, primary home is L2_14 |
 | 00.01.011 | 2026-02-20 | Claude (AI) | Removed A.5.34 from ISO Reference (primary: L2_14); demoted content tag to cross-ref |
 | 00.01.010 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |

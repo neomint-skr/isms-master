@@ -1,11 +1,11 @@
 > **Document ID:** CB_PRC_08-Internal-Audit
-> **Version:** 00.01.009
+> **Version:** 00.01.010
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 9.2
 > **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -58,6 +58,7 @@ Audit findings are recorded as nonconformities in HB_REG_NC_01-Nonconformity-Reg
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.010 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.01.009 | 2026-02-20 | CISO | Reorganized into numbered subfolder; file renamed to Process_ prefix |
 | 00.01.008 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.007 | 2026-02-10 | CISO | Cross-reference to HB_AUD_INT_01-Internal-Audit-Programme |

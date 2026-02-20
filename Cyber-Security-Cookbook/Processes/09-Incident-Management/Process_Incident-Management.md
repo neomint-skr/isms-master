@@ -1,11 +1,11 @@
 > **Document ID:** CB_PRC_01-Incident-Management
-> **Version:** 00.01.012
+> **Version:** 00.01.014
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.24-5.28
 > **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -129,9 +129,9 @@ Depending on the nature of services provided, additional reporting obligations m
 
 | Deadline | Obligation |
 |---|---|
-| 24 hours | Early warning: initial notification of a significant incident, including whether malicious or cross-border impact is suspected |
-| 72 hours | Full notification: incident assessment with severity, impact, indicators of compromise, and initial countermeasures |
-| 1 month | Final report: root cause analysis, mitigation measures applied, and cross-border impact (if any) |
+| [notification deadline — early warning, e.g. 24 hours] | Early warning: initial notification of a significant incident, including whether malicious or cross-border impact is suspected |
+| [notification deadline — full notification, e.g. 72 hours] | Full notification: incident assessment with severity, impact, indicators of compromise, and initial countermeasures |
+| [notification deadline — final report, e.g. 1 month] | Final report: root cause analysis, mitigation measures applied, and cross-border impact (if any) |
 
 Applicability of NIS2 is determined based on [sector classification and entity size assessment — documented in HB_CLS_4.2 or equivalent]. Where NIS2 obligations overlap with GDPR notification, both timelines run independently.
 
@@ -252,6 +252,8 @@ The organization establishes procedures for the identification, collection, acqu
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.014 | 2026-02-20 | Claude (AI) | Replace hardcoded parameter values with placeholders |
+| 00.01.013 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.01.012 | 2026-02-20 | CISO | Reorganized into numbered subfolder; file renamed to Process_ prefix |
 | 00.01.011 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.010 | 2026-02-18 | CISO | Driver reference: L2_07 → L2_13 (incidents split to dedicated standard; traceability fix) |

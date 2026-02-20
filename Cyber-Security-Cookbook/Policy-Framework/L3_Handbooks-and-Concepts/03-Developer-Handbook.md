@@ -1,11 +1,11 @@
 > **Document ID:** CB_POL_L3_03-Developer-Handbook
-> **Version:** 00.01.009
+> **Version:** 00.01.010
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.8.25-8.29, A.8.31-8.33
-> **Last modified:** 2026-02-18
+> **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -207,6 +207,7 @@ Maintain strictly separated development, test, and production environments (addr
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.010 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.01.009 | 2026-02-18 | CISO | Added CB_POL_L2_12 to Standard reference (traceability fix — L2_12 lists L3_03 in Operationalized by) |
 | 00.01.008 | 2026-02-11 | Claude (AI) | SAST risk exception reference to CB_PRC_14 (merge from retorio) |
 | 00.01.007 | 2026-02-11 | CISO | Populated all subject chapters: secure coding, security testing, SDLC, change/deployment management |

@@ -1,11 +1,11 @@
 > **Document ID:** CB_AWR_01-Awareness-Fundamentals
-> **Version:** 00.01.007
+> **Version:** 00.01.008
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.17, A.6.3, A.6.8
-> **Last modified:** 2026-02-17
+> **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -142,6 +142,7 @@ Every employee must report security incidents without delay (addresses A.6.8). F
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.008 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.01.007 | 2026-02-17 | Claude (AI) | Summary: "information assets" → "business processes and information" |
 | 00.01.006 | 2026-02-11 | CISO | Added see-also cross-references |
 | 00.01.005 | 2026-02-11 | CISO | Populated summary, phishing, password hygiene, and incident reporting sections |

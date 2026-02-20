@@ -1,11 +1,11 @@
 > **Document ID:** CB_POL_L2_10-Human-Resources
-> **Version:** 00.01.013
+> **Version:** 00.01.014
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.11, A.6.1-6.8
 > **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -175,6 +175,7 @@ Employees are obligated to report detected or suspected IS events and data prote
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.014 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.01.013 | 2026-02-20 | Claude (AI) | Removed A.5.34 from ISO Reference; updated A.5.34 content tag to cross-ref (primary: L2_14) |
 | 00.01.012 | 2026-02-17 | Claude (AI) | Terminology: "information assets" → "organizational assets" / "associated assets" (ISO-aligned) |
 | 00.01.011 | 2026-02-11 | CISO | Added NDA lifecycle (A.6.6), tech-team training plan (Cl. 7.2), asset return at offboarding (A.5.11) |

@@ -1,11 +1,11 @@
 > **Document ID:** HB_REG_EXC_01-Exception-Index
-> **Version:** 00.01.003
+> **Version:** 00.01.004
 > **Classification:** Confidential
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1
 > **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -50,6 +50,7 @@ The register is maintained by the Chief Information Security Officer and reviewe
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.004 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.01.003 | 2026-02-20 | Claude (AI) | Fix missed shorthand/full register references HB_REG_05 → HB_REG_RR |
 | 00.01.002 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.001 | 2026-02-11 | Claude | Renumber Exception Management PRC_13→PRC_14, TPL_19→TPL_20 |

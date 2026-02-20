@@ -1,11 +1,11 @@
 > **Document ID:** HB_REG_RR_01-Risk-Register
-> **Version:** 00.01.012
+> **Version:** 00.01.013
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** Clause 6.1, 8.2, 8.3
 > **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -77,6 +77,7 @@ Acceptance criteria are defined in CB_POL_L2_11. Critical risks (risk level 12-1
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.013 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.01.012 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.011 | 2026-02-11 | Claude (AI) | Register renumbered for information-flow order (formerly no. 06) |
 | 00.01.010 | 2026-02-11 | Claude (AI) | Restructured to scenario-based risk entries: SC-ID replaces R-ID, explicit Threat/Vulnerability-ID columns, gross/net risk separation, SM-ID references, new status "To be assessed" |

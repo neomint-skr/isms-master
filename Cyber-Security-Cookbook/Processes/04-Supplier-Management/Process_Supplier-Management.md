@@ -1,11 +1,11 @@
 > **Document ID:** CB_PRC_06-Supplier-Management
-> **Version:** 00.01.008
+> **Version:** 00.01.009
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.19-5.23
 > **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -136,6 +136,7 @@ Non-compliance is documented in writing and an action plan with deadlines is agr
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.009 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.01.008 | 2026-02-20 | CISO | Reorganized into numbered subfolder; file renamed to Process_ prefix |
 | 00.01.007 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.006 | 2026-02-11 | CISO | Populated Assessment, Contracts, Monitoring, Summary sections |

@@ -1,11 +1,11 @@
 > **Document ID:** CB_POL_L2_13-Incident-and-Threat
-> **Version:** 00.01.005
+> **Version:** 00.01.006
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.24-5.28, A.5.7
 > **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -86,6 +86,7 @@ The Chief Information Security Officer analyzes collected information and uses t
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.006 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.01.005 | 2026-02-20 | Claude (AI) | Remove dangling CB_TPL_09 reference (template not in master) |
 | 00.01.004 | 2026-02-18 | CISO | Reverted Operationalized by to — (PRC is not L3; convention requires L3 IDs only) |
 | 00.01.003 | 2026-02-18 | CISO | Added CB_PRC_01 to Operationalized by (PRC_01 is the primary operationalization; traceability fix) |

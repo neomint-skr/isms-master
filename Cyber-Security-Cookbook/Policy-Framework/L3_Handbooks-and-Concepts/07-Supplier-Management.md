@@ -1,11 +1,11 @@
 > **Document ID:** CB_POL_L3_07-Supplier-Management
-> **Version:** 00.01.009
+> **Version:** 00.01.010
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.19-5.23
 > **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -188,6 +188,7 @@ The procurement and use of cloud services requires a systematic security assessm
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.010 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.01.009 | 2026-02-20 | Claude (AI) | Fix missed shorthand register reference HB_REG_10 → HB_REG_SUP |
 | 00.01.008 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.007 | 2026-02-18 | CISO | Fixed document ID: Suppliers-and-Cloud → Supplier-and-Cloud (traceability fix) |

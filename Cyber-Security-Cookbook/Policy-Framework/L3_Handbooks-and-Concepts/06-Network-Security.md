@@ -1,11 +1,11 @@
 > **Document ID:** CB_POL_L3_06-Network-Security
-> **Version:** 00.01.007
+> **Version:** 00.01.008
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.8.20-8.22
-> **Last modified:** 2026-02-11
+> **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -110,6 +110,7 @@ Evaluate every network service for security requirements before deployment (addr
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.008 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.01.007 | 2026-02-11 | CISO | Filled TODO sections: architecture, segmentation, services, summary, see also |
 | 00.01.006 | 2026-02-10 | CISO | Added L4 traceability field (Condensed by) |
 | 00.01.005 | 2026-02-09 | CISO | Aligned role terminology |

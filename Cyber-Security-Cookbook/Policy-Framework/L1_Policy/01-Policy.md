@@ -1,11 +1,11 @@
 > **Document ID:** CB_POL_L1_01-Policy
-> **Version:** 01.00.004
+> **Version:** 01.00.005
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.1
-> **Last modified:** 2026-02-19
+> **Last modified:** 2026-02-20
 > **Approval:** CEO, 2026-02-11
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -101,6 +101,7 @@ Violations of this policy and its subordinate standards may result in disciplina
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 01.00.005 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 01.00.004 | 2026-02-19 | Claude (AI) | Allocation matrix: add L2_14 to P5 row (traceability fix — L2_14 declares P5 in policy reference) |
 | 01.00.003 | 2026-02-17 | Claude (AI) | Process-centric asset model: Objective and P1 aligned — processes as primary asset, information as attribute |
 | 01.00.002 | 2026-02-11 | CISO | Information Security Objectives section, Summary, Allocation Matrix updated with L2_13/L2_14 |

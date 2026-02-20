@@ -1,11 +1,11 @@
 > **Document ID:** CB_AWR_02-Onboarding-Checklist
-> **Version:** 00.01.006
+> **Version:** 00.01.007
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.6.1, A.6.2, A.6.5, A.6.6
 > **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -69,6 +69,7 @@ The line manager and HR confirm all offboarding steps are completed. The complet
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.007 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.01.006 | 2026-02-20 | Claude (AI) | Backport: +Offboarding Reference section (A.6.5), +ISO ref A.6.5 |
 | 00.01.005 | 2026-02-11 | CISO | Added see-also cross-references |
 | 00.01.004 | 2026-02-11 | CISO | Populated summary and onboarding table with checklist steps |

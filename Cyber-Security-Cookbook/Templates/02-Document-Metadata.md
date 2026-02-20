@@ -13,7 +13,7 @@
 > **ISO Reference:** {Clause or A.x.x}
 > **Last modified:** {YYYY-MM-DD}
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 ```
@@ -29,7 +29,7 @@
 | ISO Reference | Associated clause or Annex A controls | A.5.15-5.18 |
 | Last modified | Date of last substantive change (ISO 8601) | 2026-02-06 |
 | Approval | Name + date after review, until then `—` | [CEO] 2026-03-15 |
-| Review cycle | Next scheduled review | Annual |
+| Review cycle | Next scheduled review | [review cycle, e.g. Annual] |
 
 ## Rules
 

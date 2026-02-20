@@ -61,10 +61,10 @@ Tier derivation (strictest condition wins):
 
 | Tier | RTO | RPO | Criticality | Derived A |
 |---|---|---|---|---|
-| 1 | 0–4 h | 0–4 h | Critical | Very high |
-| 2 | 5–24 h | 5–24 h | Important | High |
-| 3 | 25–96 h | 25–96 h | Normal | Normal |
-| 4 | > 97 h | > 97 h | Low | Normal |
+| 1 | [RTO/MTD Tier 1, e.g. 0–4 h] | [RTO/MTD Tier 1, e.g. 0–4 h] | Critical | Very high |
+| 2 | [RTO/MTD Tier 2, e.g. 5–24 h] | [RTO/MTD Tier 2, e.g. 5–24 h] | Important | High |
+| 3 | [RTO/MTD Tier 3, e.g. 25–96 h] | [RTO/MTD Tier 3, e.g. 25–96 h] | Normal | Normal |
+| 4 | [RTO/MTD Tier 4, e.g. > 97 h] | [RTO/MTD Tier 4, e.g. > 97 h] | Low | Normal |
 
 | Derived BIA Tier | [1/2/3/4 — derived from strictest RTO/RPO, do not select manually] |
 |---|---|
@@ -82,6 +82,7 @@ Tier derivation (strictest condition wins):
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.00.007 | 2026-02-20 | Claude (AI) | Replace hardcoded parameter values with placeholders |
 | 00.00.006 | 2026-02-19 | Claude (AI) | Remove Suspension/Conclusions/Approval sections, replace Overall with C/I/A Protection Requirement Summary |
 | 00.00.005 | 2026-02-19 | Claude (AI) | Remove Override Documentation and Inheritance sections (A2/A6), add manual input/computed results note, remove 1-Process/ from filing path |
 | 00.00.004 | 2026-02-19 | Claude (AI) | Process-centric SSOT redesign: 6-scenario grid for C/I, BIA params for A, derived categories only, remove BIA derivation section |

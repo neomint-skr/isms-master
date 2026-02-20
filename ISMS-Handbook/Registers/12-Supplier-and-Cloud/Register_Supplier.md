@@ -1,11 +1,11 @@
 > **Document ID:** HB_REG_SUP_01-Supplier-Register
-> **Version:** 00.01.009
+> **Version:** 00.01.010
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** A.5.19-5.23
 > **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -65,6 +65,7 @@ Supplier assessment is governed through CB_PRC_06 (Supplier Management) and alig
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.010 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.01.009 | 2026-02-20 | Claude (AI) | Backport: +Supplier/Certification/Valid until in Assessment Status, +Category in Suppliers table |
 | 00.01.008 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.007 | 2026-02-11 | Claude (AI) | Register renumbered for information-flow order (formerly no. 04) |

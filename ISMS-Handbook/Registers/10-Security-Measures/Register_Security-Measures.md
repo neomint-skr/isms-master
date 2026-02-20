@@ -1,11 +1,11 @@
 > **Document ID:** HB_REG_SM_01-Security-Measures-Register
-> **Version:** 00.01.003
+> **Version:** 00.01.004
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** A.5-A.8, Clause 6.1.3
 > **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -84,6 +84,7 @@ The Reduction fields are used for deterministic net risk calculation as defined 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.004 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.01.003 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.002 | 2026-02-18 | Claude (AI) | Add Baseline, Mitigates, Reduction_L, Reduction_Impact fields for deterministic net risk calculation |
 | 00.01.001 | 2026-02-11 | Claude (AI) | Register renumbered for information-flow order (formerly no. 12) |

@@ -1,11 +1,11 @@
 > **Document ID:** CB_PRC_07-Risk-Management
-> **Version:** 00.01.019
+> **Version:** 00.01.021
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1, 8.2, 8.3
 > **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -53,7 +53,7 @@ For each in-scope asset, the CISO or IS-Coordinator works through the vulnerabil
 
 For each assessment, a brief evidence statement or comment is documented (e.g. reference to configuration evidence, scan result, or expert judgement). Vulnerabilities with status "unknown" are treated as "present" for the purpose of scenario generation until resolved.
 
-**Resolve-by deadlines.** Each `unknown` vulnerability entry must be resolved within the deadline defined in CB_POL_L2_11 (Governance for Status Unknown): Very high — 30 days, High — 60 days, Normal — 90 days. The resolve-by date is recorded in the risk assessment record (CB_TPL_21). Expired entries without resolution are escalated to the risk owner.
+**Resolve-by deadlines.** Each `unknown` vulnerability entry must be resolved within the deadline defined in CB_POL_L2_11 (Governance for Status Unknown): Very high — [remediation deadline — Very high, e.g. 30 days], High — [remediation deadline — High, e.g. 60 days], Normal — [remediation deadline — Normal, e.g. 90 days]. The resolve-by date is recorded in the risk assessment record (CB_TPL_21). Expired entries without resolution are escalated to the risk owner.
 
 The complete vulnerability assessment is documented in the **Appendix: Vulnerability Assessment** of the risk assessment record (CB_TPL_21). This placement ensures the audit trail is preserved while keeping the risk scenario analysis as the document's focal point.
 
@@ -124,7 +124,7 @@ The SoA is the SSOT for control applicability. Direction of change: risk treatme
 
 ### Regular assessment
 
-The complete risk assessment cycle is performed annually, timed before the management review (CB_PRC_09). Results feed into the management review as input (Clause 9.3.2 f). Additionally, the Risk Committee convenes quarterly to review the current risk landscape, assess treatment progress, and adjust priorities where necessary.
+The complete risk assessment cycle is performed annually, timed before the management review (CB_PRC_09). Results feed into the management review as input (Clause 9.3.2 f). Additionally, the Risk Committee convenes [frequency, e.g. quarterly] to review the current risk landscape, assess treatment progress, and adjust priorities where necessary.
 
 ### Event-driven triggers
 
@@ -158,6 +158,8 @@ An unscheduled risk assessment is triggered by:
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.021 | 2026-02-20 | Claude (AI) | Replace hardcoded parameter values with placeholders |
+| 00.01.020 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.01.019 | 2026-02-20 | CISO | Reorganized into numbered subfolder; file renamed to Process_ prefix |
 | 00.01.018 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.017 | 2026-02-18 | Claude (AI) | Deterministic PR-risk: HB_REG_11→HB_REG_RF references, unknown resolve-by deadlines, deterministic net risk formula |

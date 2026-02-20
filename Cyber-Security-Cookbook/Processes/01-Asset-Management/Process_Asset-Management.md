@@ -1,11 +1,11 @@
 > **Document ID:** CB_PRC_12-Asset-Management
-> **Version:** 00.01.014
+> **Version:** 00.01.015
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.9
 > **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -95,6 +95,7 @@ Changes are recorded on an event-driven basis. Decommissioned assets are marked 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.015 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.01.014 | 2026-02-20 | CISO | Reorganized into numbered subfolder; file renamed to Process_ prefix |
 | 00.01.013 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.012 | 2026-02-19 | Claude (AI) | ROM upstream: add CON as alternative dependency for CON↔ROM cascade traceability |

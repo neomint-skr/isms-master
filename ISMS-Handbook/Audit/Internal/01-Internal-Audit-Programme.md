@@ -1,11 +1,11 @@
 > **Document ID:** HB_AUD_INT_01-Internal-Audit-Programme
-> **Version:** 00.00.003
+> **Version:** 00.00.004
 > **Classification:** Confidential
 > **Author:** CISO
 > **ISO Reference:** ISO 27001:2022, 9.2
 > **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -52,6 +52,7 @@ The programme operationalizes the requirements of HB_CLS_9.2 (Internal Audit) an
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.00.004 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.00.003 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.00.002 | 2026-02-11 | CISO | Restructured: Audit-Programme → Audit/Internal, Document ID updated to HB_AUD_INT_01 |
 | 00.00.001 | 2026-02-10 | CISO | Initial skeleton |

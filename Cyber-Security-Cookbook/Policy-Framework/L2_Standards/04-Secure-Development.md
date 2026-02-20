@@ -1,11 +1,11 @@
 > **Document ID:** CB_POL_L2_04-Secure-Development
-> **Version:** 00.01.011
+> **Version:** 00.01.012
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.8, A.8.4, A.8.25-8.34
-> **Last modified:** 2026-02-11
+> **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -194,6 +194,7 @@ Outsourced system development must meet requirements for information security, m
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.012 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.01.011 | 2026-02-11 | Claude (AI) | License exception reference to CB_PRC_14 (merge from retorio) |
 | 00.01.010 | 2026-02-11 | CISO | Dev/Ops extensions: multi-tenancy (A.5.8), license management and SCA compliance (A.8.28) |
 | 00.01.009 | 2026-02-11 | CISO | Added A.8.27 Secure Architecture and A.8.33 Test Data sections |

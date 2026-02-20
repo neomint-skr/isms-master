@@ -1,11 +1,11 @@
 > **Document ID:** HB_REG_SOA_01-Statement-of-Applicability
-> **Version:** 00.04.016
+> **Version:** 00.04.017
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** Clause 6.1.3 d
 > **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -158,6 +158,7 @@ Control selection takes place during risk treatment (CB_PRC_07, HB_CLS_8.3) and 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.04.017 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.04.016 | 2026-02-20 | Claude (AI) | Reassigned A.5.11 to L2_10, A.8.14 to L2_03; removed L2_03 from A.8.12 |
 | 00.04.015 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.04.014 | 2026-02-19 | Claude (AI) | Controls 5.29/5.30: HB_REG_04 reference updated to BCM-Register |

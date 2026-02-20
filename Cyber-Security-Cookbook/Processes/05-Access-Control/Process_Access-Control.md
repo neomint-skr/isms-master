@@ -1,11 +1,11 @@
 > **Document ID:** CB_PRC_02-Access-Control
-> **Version:** 00.01.009
+> **Version:** 00.01.010
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.15-5.18
 > **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -180,6 +180,7 @@ Recertification results — including confirmations, rejections, and any correct
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.010 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.01.009 | 2026-02-20 | CISO | Reorganized into numbered subfolder; file renamed to Process_ prefix |
 | 00.01.008 | 2026-02-18 | CISO | Added tool-based documentation phrase for access decisions (CLS>PRC>REG chain fix) |
 | 00.01.007 | 2026-02-11 | CISO | Skeleton filling: provisioning, privileged access, revocation, recertification, summary |

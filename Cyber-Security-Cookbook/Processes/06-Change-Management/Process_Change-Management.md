@@ -1,11 +1,11 @@
 > **Document ID:** CB_PRC_05-Change-Management
-> **Version:** 00.01.008
+> **Version:** 00.01.009
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.8.32
 > **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -162,6 +162,7 @@ Results are documented in the change record. Recurring issues are escalated to t
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.009 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.01.008 | 2026-02-20 | CISO | Reorganized into numbered subfolder; file renamed to Process_ prefix |
 | 00.01.007 | 2026-02-11 | CISO | Populated all TODO sections: Request, Impact analysis, Approval, Implementation and rollback, Summary |
 | 00.01.006 | 2026-02-09 | CISO | Aligned role terminology |

@@ -1,11 +1,11 @@
 > **Document ID:** CB_POL_L3_04-Cryptography
-> **Version:** 00.01.006
+> **Version:** 00.01.007
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.17, A.8.5, A.8.24
-> **Last modified:** 2026-02-10
+> **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -47,6 +47,7 @@ The requirements apply to all IT systems and applications that use cryptographic
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.007 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.01.006 | 2026-02-10 | CISO | Added L4 traceability field (Condensed by) |
 | 00.01.005 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.004 | 2026-02-09 | CISO | Aligned policy hierarchy terminology |

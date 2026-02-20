@@ -1,11 +1,11 @@
 > **Document ID:** CB_PRC_11-Performance-Monitoring
-> **Version:** 00.01.009
+> **Version:** 00.01.011
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 9.1, 6.2
 > **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -33,11 +33,11 @@ The following table lists the initial KPI catalogue. Additional KPIs are added a
 
 | KPI ID | KPI name | Target | Measurement method | Frequency | Responsible |
 |---|---|---|---|---|---|
-| KPI-01 | Incident response time | Mean time from detection to containment [target value, e.g. ≤ 4 h for critical incidents] | Incident ticket timestamps (addresses A.5.24) | Per incident, aggregated quarterly | [IS-Coordinator] |
-| KPI-02 | Audit finding close-out rate | [target value, e.g. ≥ 90 %] of findings closed within deadline | HB_REG_NC finding status (addresses A.5.35) | Quarterly | CISO |
+| KPI-01 | Incident response time | Mean time from detection to containment [target value, e.g. ≤ 4 h for critical incidents] | Incident ticket timestamps (addresses A.5.24) | Per incident, aggregated [frequency, e.g. quarterly] | [IS-Coordinator] |
+| KPI-02 | Audit finding close-out rate | [target value, e.g. ≥ 90 %] of findings closed within deadline | HB_REG_NC finding status (addresses A.5.35) | [frequency, e.g. Quarterly] | CISO |
 | KPI-03 | Awareness training completion | [target value, e.g. ≥ 95 %] of employees trained within cycle | [LMS / training records] (addresses A.6.3) | [Annually \| semi-annually — depending on training cycle] | [IS-Coordinator] |
-| KPI-04 | Patch compliance | [target value, e.g. ≥ 95 %] of critical patches applied within SLA | [Vulnerability scanner / patch management tool] (addresses A.8.8) | Monthly | [IT operations lead] |
-| KPI-05 | Risk treatment plan progress | [target value, e.g. ≥ 80 %] of treatment actions on schedule | HB_REG_SOA risk register (addresses A.5.7) | Quarterly | CISO |
+| KPI-04 | Patch compliance | [target value, e.g. ≥ 95 %] of critical patches applied within SLA | [Vulnerability scanner / patch management tool] (addresses A.8.8) | [security cadence, e.g. Monthly] | [IT operations lead] |
+| KPI-05 | Risk treatment plan progress | [target value, e.g. ≥ 80 %] of treatment actions on schedule | HB_REG_SOA risk register (addresses A.5.7) | [frequency, e.g. Quarterly] | CISO |
 | KPI-06 | Access review completion | [target value, e.g. 100 %] of scheduled reviews completed on time | Access review log (addresses A.5.18) | [Annually \| semi-annually] | [IT operations lead] |
 
 Each KPI definition includes the measurement method ensuring comparable and reproducible results as required by Clause 9.1 b. Methods are selected to produce quantitative data wherever possible. Where qualitative assessment is necessary, a documented rating scale is applied.
@@ -90,8 +90,8 @@ The report is prepared by the CISO using [reporting tool / template, e.g. TPL_01
 
 | Report type | Frequency | Recipients |
 |---|---|---|
-| Operational KPI summary | Monthly | CISO, [IS-Coordinator] |
-| Quarterly performance report | Quarterly | CISO, [IS-Coordinator], [CTO] |
+| Operational KPI summary | [frequency, e.g. Monthly] | CISO, [IS-Coordinator] |
+| [frequency, e.g. Quarterly] performance report | [frequency, e.g. Quarterly] | CISO, [IS-Coordinator], [CTO] |
 | Management review input | Before each management review (CB_PRC_09) | Top management, CISO |
 | Ad-hoc report | On significant deviation | Top management, affected process owners |
 
@@ -129,6 +129,8 @@ Corrective actions resulting from escalation are tracked in the improvement road
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.011 | 2026-02-20 | Claude (AI) | Replace hardcoded parameter values with placeholders |
+| 00.01.010 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.01.009 | 2026-02-20 | CISO | Reorganized into numbered subfolder; file renamed to Process_ prefix |
 | 00.01.008 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.007 | 2026-02-11 | CISO | Skeleton filling: Summary, KPI catalogue, data collection, analysis/reporting, escalation |

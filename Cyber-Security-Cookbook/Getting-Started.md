@@ -1,11 +1,11 @@
 > **Document ID:** CB_Getting-Started
-> **Version:** 00.01.005
+> **Version:** 00.01.006
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 7.3, A.6.3
-> **Last modified:** 2026-02-10
+> **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -76,6 +76,7 @@ These steps take less than one hour. They give you the foundation for secure dai
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.006 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.01.005 | 2026-02-10 | CISO | Populated body sections |
 | 00.01.004 | 2026-02-09 | CISO | Aligned role terminology |
 | 00.01.003 | 2026-02-09 | [CISO] | Objective and scope: 3x2 pattern (WHY/WHAT FOR/WHERE) |

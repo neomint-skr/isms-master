@@ -1,11 +1,11 @@
 > **Document ID:** HB_REG_RT_01-Risk-Treatment-Plan
-> **Version:** 00.01.011
+> **Version:** 00.01.012
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** Clause 6.1.3 e
 > **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -62,6 +62,7 @@ The risk treatment plan requires formal approval by top management (Clause 6.1.3
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.012 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.01.011 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.010 | 2026-02-11 | Claude (AI) | Register renumbered for information-flow order (formerly no. 07) |
 | 00.01.009 | 2026-02-11 | Claude (AI) | SC-ID replaces Risk ID, SM-ID(s) replaces free-text controls, added Gap column and gap definitions in Key section |

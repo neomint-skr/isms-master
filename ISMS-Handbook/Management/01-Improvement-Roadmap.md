@@ -1,11 +1,11 @@
 > **Document ID:** HB_MGT_01-Improvement-Roadmap
-> **Version:** 00.00.003
+> **Version:** 00.00.005
 > **Classification:** Confidential
 > **Author:** CISO
 > **ISO Reference:** ISO 27001:2022, 10.1
 > **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Quarterly
+> **Review cycle:** [review cycle, e.g. Quarterly]
 
 ---
 
@@ -13,7 +13,7 @@
 
 ## Summary
 
-The improvement roadmap tracks ISMS improvement themes derived from audit findings, risk assessments, and management reviews. It consolidates improvement opportunities into a prioritized plan with timelines, owners, and status tracking. The roadmap ensures that continual improvement per Clause 10.1 is not aspirational but actionable and measurable. Without a central improvement plan, improvement impulses from multiple sources remain uncoordinated and untraceable. The roadmap is maintained by the CISO and reviewed quarterly.
+The improvement roadmap tracks ISMS improvement themes derived from audit findings, risk assessments, and management reviews. It consolidates improvement opportunities into a prioritized plan with timelines, owners, and status tracking. The roadmap ensures that continual improvement per Clause 10.1 is not aspirational but actionable and measurable. Without a central improvement plan, improvement impulses from multiple sources remain uncoordinated and untraceable. The roadmap is maintained by the CISO and reviewed [frequency, e.g. quarterly].
 
 ## Objective and Scope
 
@@ -44,11 +44,11 @@ Improvement themes are prioritized based on the following criteria to ensure eff
 | Dependencies | Whether the theme blocks or is blocked by other improvement activities | Medium |
 | Quick-win potential | Themes with low effort and high visibility that demonstrate continual improvement | Low |
 
-Themes with high risk impact or audit relevance are prioritized first. Where multiple themes share the same priority, regulatory urgency and dependencies determine the sequence. The CISO validates the priority assessment during each quarterly review.
+Themes with high risk impact or audit relevance are prioritized first. Where multiple themes share the same priority, regulatory urgency and dependencies determine the sequence. The CISO validates the priority assessment during each [frequency, e.g. quarterly] review.
 
 ## Timeline
 
-The improvement roadmap follows a quarterly review cycle aligned with the management review schedule.
+The improvement roadmap follows a [frequency, e.g. quarterly] review cycle aligned with the management review schedule.
 
 ### Quarterly review
 
@@ -82,6 +82,8 @@ Themes that exceed their target date by more than one quarter are escalated to t
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.00.005 | 2026-02-20 | Claude (AI) | Replace hardcoded parameter values with placeholders |
+| 00.00.004 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.00.003 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.00.002 | 2026-02-11 | CISO | Populated priority assessment criteria and timeline with review cycle |
 | 00.00.001 | 2026-02-10 | CISO | Initial skeleton |

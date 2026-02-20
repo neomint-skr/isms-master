@@ -1,11 +1,11 @@
 > **Document ID:** CB_POL_L2_11-Risk-Management
-> **Version:** 00.01.024
+> **Version:** 00.01.026
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1, 8.2, 8.3
 > **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -140,10 +140,10 @@ The methodology follows BSI Standard 200-2 [REF:BSI17, Ch. 8.2.2] and applies to
 
 | BIA Tier | RTO | RPO | Criticality | Derived A |
 |---|---|---|---|---|
-| 1 | 0–4 h | 0–4 h | Critical | Very high |
-| 2 | 5–24 h | 5–24 h | Important | High |
-| 3 | 25–96 h | 25–96 h | Normal | Normal |
-| 4 | > 97 h | > 97 h | Low | Normal |
+| 1 | [RTO/MTD Tier 1, e.g. 0–4 h] | [RTO/MTD Tier 1, e.g. 0–4 h] | Critical | Very high |
+| 2 | [RTO/MTD Tier 2, e.g. 5–24 h] | [RTO/MTD Tier 2, e.g. 5–24 h] | Important | High |
+| 3 | [RTO/MTD Tier 3, e.g. 25–96 h] | [RTO/MTD Tier 3, e.g. 25–96 h] | Normal | Normal |
+| 4 | [RTO/MTD Tier 4, e.g. > 97 h] | [RTO/MTD Tier 4, e.g. > 97 h] | Low | Normal |
 
 Confidentiality and integrity remain subject to primary assessment via damage scenarios.
 
@@ -201,10 +201,10 @@ Assessment is based on the highest damage across the dimensions: business proces
 
 | Level | Label | Description |
 |---|---|---|
-| 1 | Low | Short-term impairment, damage below 5,000 EUR, no external impact |
-| 2 | Moderate | Temporary disruption of a business process, damage 5,000-50,000 EUR, limited reputational loss |
-| 3 | High | Outage of a critical process >24h, damage 50,000-250,000 EUR, significant reputational damage or regulatory reporting obligation |
-| 4 | Critical | Existentially threatening impact, damage >250,000 EUR, lasting loss of trust or substantial penalties |
+| 1 | Low | Short-term impairment, damage below [financial impact threshold — Low, e.g. 5,000 EUR], no external impact |
+| 2 | Moderate | Temporary disruption of a business process, damage [financial impact threshold — Moderate, e.g. 5,000-50,000 EUR], limited reputational loss |
+| 3 | High | Outage of a critical process >[RTO/MTD threshold, e.g. 24h], damage [financial impact threshold — High, e.g. 50,000-250,000 EUR], significant reputational damage or regulatory reporting obligation |
+| 4 | Critical | Existentially threatening impact, damage >[financial impact threshold — Critical, e.g. 250,000 EUR], lasting loss of trust or substantial penalties |
 
 The EUR thresholds are calibrated to the scale of [Organization] and are reviewed annually as part of the management review.
 
@@ -452,6 +452,8 @@ The operational exception management workflow is defined in CB_PRC_14-Exception-
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.026 | 2026-02-20 | Claude (AI) | Replace hardcoded parameter values with placeholders |
+| 00.01.025 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.01.024 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.023 | 2026-02-19 | Claude (AI) | Remove Security zones paragraph from Conclusions (belongs in Physical Security L2_09) |
 | 00.01.022 | 2026-02-19 | Claude (AI) | Override documentation: overrides → HB_REG_03 PR Source (3-value enum + priority rule), remove L3 detail from L2 standard |

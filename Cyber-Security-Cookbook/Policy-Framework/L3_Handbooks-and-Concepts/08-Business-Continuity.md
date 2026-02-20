@@ -1,11 +1,11 @@
 > **Document ID:** CB_POL_L3_08-Business-Continuity
-> **Version:** 00.01.003
+> **Version:** 00.01.005
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.29-5.30
 > **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -66,10 +66,10 @@ Classify each process and its supporting IT services into the tier model defined
 
 | Tier | RTO/RPO | Criticality | Recovery priority |
 |---|---|---|---|
-| Tier 1 | 0-4 h | Critical | Immediate — automated failover where possible |
-| Tier 2 | 5-24 h | Important | High — manual recovery within one business day |
-| Tier 3 | 25-96 h | Normal | Medium — recovery within four business days |
-| Tier 4 | > 97 h | Low | Standard — recovery on best-effort basis |
+| Tier 1 | [RTO/MTD Tier 1, e.g. 0-4 h] | Critical | Immediate — automated failover where possible |
+| Tier 2 | [RTO/MTD Tier 2, e.g. 5-24 h] | Important | High — manual recovery within one business day |
+| Tier 3 | [RTO/MTD Tier 3, e.g. 25-96 h] | Normal | Medium — recovery within four business days |
+| Tier 4 | [RTO/MTD Tier 4, e.g. > 97 h] | Low | Standard — recovery on best-effort basis |
 
 Record continuity plan references, test results, and recovery priority tiers in HB_REG_BCM (BCM Register). BIA parameters (RTO, RPO, MTD) for protection requirements derivation are documented in process PR records (CB_TPL_19). Review tier assignments when business processes, IT architecture, or risk posture change.
 
@@ -112,7 +112,7 @@ Document infrastructure requirements for each strategy, including [failover loca
 
 ### Document emergency procedures
 
-Create emergency procedure cards for the first 60 minutes after an incident is escalated to a business continuity event. Each card contains:
+Create emergency procedure cards for the first [initial response window, e.g. 60 minutes] after an incident is escalated to a business continuity event. Each card contains:
 
 - **Immediate actions:** Isolate affected systems, activate standby resources, notify [on-call personnel]
 - **Assessment checklist:** Confirm scope of impact, identify affected tiers, estimate recovery duration
@@ -227,6 +227,8 @@ Document findings and corrective actions. Update the affected continuity plan ba
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.005 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
+| 00.01.004 | 2026-02-20 | Claude (AI) | Replace hardcoded parameter values with placeholders |
 | 00.01.003 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.002 | 2026-02-19 | Claude (AI) | HB_REG_04 references updated: BIA-Register → BCM-Register, BIA params now in CB_TPL_19 |
 | 00.01.001 | 2026-02-10 | CISO | Added L4 traceability field (Condensed by) |

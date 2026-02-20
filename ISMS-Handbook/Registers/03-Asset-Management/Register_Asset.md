@@ -1,11 +1,11 @@
 > **Document ID:** HB_REG_AM_01-Asset-Register
-> **Version:** 00.02.018
+> **Version:** 00.02.019
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** A.5.9
 > **Last modified:** 2026-02-20
 > **Approval:** —
-> **Review cycle:** Annual
+> **Review cycle:** [review cycle, e.g. Annual]
 
 ---
 
@@ -172,6 +172,7 @@ The following tables map relationships between assets. They are the SSOT — in 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.02.019 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.02.018 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.02.017 | 2026-02-19 | Claude (AI) | PR Source format (3-value enum for sub-assets), priority rule for manual overrides, new Communication Links <> Rooms cross-ref table (5→6 tables) |
 | 00.02.016 | 2026-02-19 | Claude (AI) | Inherited PR model: PR Source field, primary/inherited annotations for C/I/A, remove suspended_missing_BIA, BIA Tier source → CB_TPL_19 |
