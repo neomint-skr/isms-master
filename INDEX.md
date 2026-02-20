@@ -52,7 +52,7 @@
 **14-Competence-Records/Register_Competence.md** -- SOLL/IST competence matrix per ISMS role (20 dimensions)
 **15-Nonconformities-and-Corrective-Actions/Register_Nonconformities.md** -- NC tracking with effectiveness review
 **16-Exceptions/Register_Exceptions.md** -- Approved policy exceptions with expiry and review tracking
-**17-Variable-Parameters/Register_Variable-Parameters.md** -- Variable parameters register (284 variables, 12 domains, client survey questionnaire)
+**17-Variable-Parameters/Register_Variable-Parameters.md** -- Variable parameters register (126 variables, 10 domains, SSOT for variable values)
 
 ### HB -- ISMS-Handbook / Management
 
