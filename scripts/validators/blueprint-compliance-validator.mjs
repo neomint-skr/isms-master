@@ -787,10 +787,15 @@ function phase3_structure() {
       }
     }
 
-    // Client extra H2s that are not in master → warning
+    // Client extra H2s that are not in master → warning (unless excepted)
     for (const cH2 of clientH2s) {
       if (!masterH2s.includes(cH2)) {
-        phase.warnings.push(`${relPath}: extra H2 "## ${cH2}" not in master`);
+        const exc = isExcepted(relPath, cH2);
+        if (exc) {
+          exceptedCount++;
+        } else {
+          phase.warnings.push(`${relPath}: extra H2 "## ${cH2}" not in master`);
+        }
       }
     }
   }
