@@ -37,6 +37,7 @@ Text derivable from ISO standards, BSI standards or general best practices is wr
 | 9 | Observe TRIM/CAVEAT notes from checker feedback (provided in task description) |
 | 10 | One variable per fact — do not nest multiple variables in a single sentence |
 | 11 | **Objective:** is the primary definition (1-2 sentences), **Scope:** defines space/audience (1-2 sentences). Summary is a distillation, written last. Objective must be more informative than Summary. |
+| 12 | Variables must use canonical forms from HB_REG_VAR_01. New variables not in the register require register update first. |
 
 ## Example: L2 paragraph with variables
 
