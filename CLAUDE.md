@@ -199,7 +199,7 @@ Available agents (`.claude/agents/`):
 
 | Name | Type | Purpose |
 |---|---|---|
-| `consistency-checker` | Agent (haiku) | 10 checks: metadata ID, INDEX, coverage, paths, SoA, structure, version, citation keys, ref derivative, repo hygiene |
+| `consistency-checker` | Agent (haiku) | 11 checks: metadata ID, INDEX, coverage, paths, SoA, structure, version, citation keys, ref derivative, repo hygiene, variable alignment |
 | `mece-checker` | Agent (sonnet) | 6 checks: control distribution, L2/L3 separation, traceability, principles, CLS>PRC>REG, orphaned REG |
 | `document-writer` | Agent (sonnet) | Create new documents or align existing ones to conventions |
 | `markdown-converter` | Agent (sonnet) | PDF to verified lean Markdown extract (7-phase workflow) |
