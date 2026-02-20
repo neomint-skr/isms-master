@@ -1,5 +1,5 @@
 > **Document ID:** HB_REG_VAR_01-Variable-Parameters
-> **Version:** 00.01.000
+> **Version:** 00.01.001
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** ISO 27001:2022 Clause 7.5
@@ -13,7 +13,7 @@
 
 ## Summary
 
-Blueprint ISMS documents use bracketed placeholders for organization-specific values that must be resolved before certification. This register catalogues all 284 variable parameters across 12 domains with descriptions, best-practice guidance, example values, and usage locations. It serves as the central survey questionnaire for client onboarding — every placeholder is traced to its definition and all documents where it appears. Without completing this register, deployed documents contain unresolved placeholders that fail audit evidence requirements.
+Blueprint ISMS documents use bracketed placeholders for organization-specific values that must be resolved before certification. This register catalogues all 126 variable parameters across 10 domains with descriptions, best-practice guidance, example values, and usage locations. It serves as the central survey questionnaire for client onboarding — every placeholder is traced to its definition and all documents where it appears. Without completing this register, deployed documents contain unresolved placeholders that fail audit evidence requirements.
 
 ## Objective and Scope
 
@@ -34,9 +34,8 @@ The register is referenced by all ISMS documents that contain variable placehold
 |---|---|
 | Variable | A bracketed placeholder `[...]` in ISMS documents representing an organization-specific value |
 | Canonical form | The standardized placeholder text used consistently across all documents |
-| Domain | Thematic grouping of related variables (12 domains defined) |
+| Domain | Thematic grouping of related variables (10 domains defined) |
 | Usage | Document locations where the variable appears, format: `Path/File:Line` |
-| Register row field | A per-entry variable in a register table (e.g., risk description) — filled per row, not once globally |
 
 ## 1 Organization Identity
 
@@ -63,7 +62,7 @@ The register is referenced by all ISMS documents that contain variable placehold
 
 ## 2 Roles and Contacts
 
-36 variables, 406 occurrences across the ISMS.
+28 variables, 385 occurrences across the ISMS.
 
 | Variable | Description | Best Practice | Example | Usage |
 |---|---|---|---|---|
@@ -71,7 +70,6 @@ The register is referenced by all ISMS documents that contain variable placehold
 | `[CEO]` | Top management role | Use the actual title from the org chart | Chief Executive Officer | HB/CLS_5.1:L26, CB/L2_08:L94 (6 files, 12x) |
 | `[CTO]` | Technical management role | Use the actual title from the org chart | Chief Technology Officer | HB/CLS_5.3:L34, CB/L2_08:L95 (7 files, 11x) |
 | `[IS-Coordinator]` | Operational IS implementation role | One person per site/unit | IS-Koordinator | HB/CLS_5.3:L71, CB/L2_07:L42 (5 files, 11x) |
-| `[Role]` | Generic role placeholder in allocation tables | Use role names from org chart | IT Operations Manager | CB/L1_01:L48, HB/MGT_01:L32 (4 files, 13x) |
 | `[contact channel]` | IS reporting email/channel | Use role mailbox, not personal | isms@company.tld | CB/Emergency:L25, CB/L3_01:L45 (11 files, 20x) |
 | `[Communications lead]` | Crisis communications coordinator | Designate before incidents occur | Head of Communications | CB/L3_08 (1 file, 2x) |
 | `[IT operations lead]` | IT operations management role | Align with IT org chart | Head of IT Operations | CB/L3_08 (1 file, 2x) |
@@ -86,28 +84,20 @@ The register is referenced by all ISMS documents that contain variable placehold
 | `[authorized roles, e.g. DevOps engineers with deploy rights]` | Deployment-authorized roles | Principle of least privilege | DevOps engineers with deploy rights | CB/L3_03 (1 file, 1x) |
 | `[lead architect]` | Architecture decision authority | Single accountable person | Lead Software Architect | CB/L3_03 (1 file, 1x) |
 | `[Change approver per CB_PRC_05]` | Change approval authority | Per change management process | CAB / CISO | CB/PRC_06 (1 file, 1x) |
-| `[Change owner]` | Change request owner | Requester or assigned owner | Application Owner | CB/PRC_06 (1 file, 1x) |
 | `[on-call personnel]` | After-hours availability | Define rotation schedule | On-call IT engineer | CB/L3_08 (1 file, 1x) |
 | `[designated BCM coordinator]` | BCM process owner | Named individual with authority | BCM Coordinator | CB/L3_08 (1 file, 1x) |
 | `[designated spokesperson]` | External crisis communications | Pre-authorized by management | CEO or Communications Lead | CB/L3_08 (1 file, 1x) |
 | `[authorized signatory]` | Contract signing authority | Per corporate governance rules | CEO / Managing Director | CB/L3_08 (1 file, 1x) |
-| `[Affected asset owners]` | Owners of impacted assets | Per asset register | Application Owner, Data Owner | CB/PRC_06 (1 file, 1x) |
 | `[CAB chair or CISO]` | Change advisory board chair | Defined in change management | CISO | CB/PRC_06 (1 file, 1x) |
 | `[designated deputy, e.g. ISC or CTO]` | CISO deputy for incidents | Pre-designated, trained | IS-Coordinator | CB/PRC_09 (1 file, 1x) |
 | `[CTO or designated IT lead]` | IT incident lead | Align with IT org chart | CTO | CB/PRC_09 (1 file, 1x) |
 | `[DPO or legal counsel]` | Data breach legal advisor | Pre-identified contact | Data Protection Officer | CB/PRC_09 (1 file, 1x) |
 | `[HR representative — if personnel involved]` | HR escalation contact | Named HR contact | Head of HR | CB/PRC_09 (1 file, 1x) |
-| `[Additional specialists as needed]` | Ad-hoc incident team members | Define criteria for activation | Forensics expert, external counsel | CB/PRC_09 (1 file, 1x) |
-| `[Named owner for each corrective action]` | Corrective action assignee | Named individual, not team | IS-Coordinator | CB/PRC_14 (1 file, 1x) |
-| `[Name, role]` | Individual identification with role | Use for audit evidence | Dr. Mueller, CISO | HB/AUD_INT (1 file, 1x) |
-| `[Names, roles]` | Team member identification | List all team members | Mueller (CISO), Schmidt (ISC) | HB/AUD_INT (1 file, 1x) |
-| `[Auditor]` | Internal audit responsible | Must be independent of audited area | External ISB | HB/AUD_INT (1 file, 1x) |
 | `[Other parties]` | Additional interested parties | Identify per stakeholder analysis | Insurance providers, shareholders | HB/REG_IP (1 file, 1x) |
-| `[Responsible role]` | Role accountable for an objective | Per RACI matrix | CISO | HB/REG_OBJ (1 file, 1x) |
 
 ## 3 Governance Frequencies
 
-14 variables, 279 occurrences across the ISMS.
+13 variables, 278 occurrences across the ISMS.
 
 | Variable | Description | Best Practice | Example | Usage |
 |---|---|---|---|---|
@@ -124,11 +114,10 @@ The register is referenced by all ISMS documents that contain variable placehold
 | `[2 consecutive periods]` | Escalation threshold count | Define per KPI governance | 2 consecutive periods | CB/PRC_11 (1 file, 1x) |
 | `[3+ consecutive periods]` | Critical escalation threshold | Higher than standard threshold | 3+ consecutive periods | CB/PRC_11 (1 file, 1x) |
 | `[number of periods, e.g. 2 consecutive quarters]` | Configurable escalation window | Align with reporting frequency | 2 consecutive quarters | CB/PRC_11 (1 file, 1x) |
-| `[month]` | Calendar month reference | Use for scheduling | March (before Q1 MR) | HB/REG_OBJ (1 file, 1x) |
 
 ## 4 Time Thresholds
 
-34 variables, 94 occurrences across the ISMS.
+31 variables, 91 occurrences across the ISMS.
 
 | Variable | Description | Best Practice | Example | Usage |
 |---|---|---|---|---|
@@ -158,14 +147,11 @@ The register is referenced by all ISMS documents that contain variable placehold
 | `[every 30 minutes for Tier 1, every 2 hours for Tier 2]` | Crisis status update frequency | Per incident severity | Every 30 minutes for critical | CB/L3_08 (1 file, 1x) |
 | `[4 hours]` | Four-hour response threshold | For significant incidents | 4 hours | CB/PRC_06 (1 file, 1x) |
 | `[10 business days]` | Extended processing deadline | For complex changes | 10 business days | CB/PRC_06 (1 file, 1x) |
-| `[4h]` | Four-hour shorthand | For incident timelines | 4h | CB/PRC_09 (1 file, 1x) |
-| `[72h]` | Seventy-two-hour shorthand | NIS-2 full notification deadline | 72h | CB/PRC_09 (1 file, 1x) |
 | `[Immediately — max 1h]` | Immediate response requirement | For critical security incidents | Immediately — max 1h | CB/PRC_09 (1 file, 1x) |
 | `[Within 4h]` | Four-hour escalation deadline | For high-severity incidents | Within 4h | CB/PRC_09 (1 file, 1x) |
 | `[Within 24h]` | Twenty-four-hour reporting deadline | For significant incidents | Within 24h | CB/PRC_09 (1 file, 1x) |
 | `[Within 72h]` | Seventy-two-hour reporting deadline | For standard incidents | Within 72h | CB/PRC_09 (1 file, 1x) |
 | `[maximum acceptable data loss]` | RPO per criticality tier | Define per BIA, validate in tests | 1h (Tier 1), 24h (Tier 2) | HB/REG_BCM (1 file, 1x) |
-| `[e.g. patch rate >= 95% within 30 days]` | Patch compliance KPI with timeline | Align with vulnerability management SLA | Patch rate >= 95% within 30 days | HB/REG_OBJ (1 file, 1x) |
 
 ## 5 Risk and Financial Thresholds
 
@@ -184,21 +170,19 @@ The register is referenced by all ISMS documents that contain variable placehold
 
 ## 6 Communication and Channels
 
-7 variables, 10 occurrences across the ISMS.
+5 variables, 8 occurrences across the ISMS.
 
 | Variable | Description | Best Practice | Example | Usage |
 |---|---|---|---|---|
 | `[reporting channel or SLA detail]` | IS reporting channel or SLA specification | Document and test regularly | isms@company.tld / Jira Service Desk | CB/L2_05, CB/PRC_11, HB/CLS_7.4 (3 files, 4x) |
 | `[incident reporting channel]` | Dedicated incident intake channel | 24/7 accessible, monitored | incidents@company.tld | CB/L2_13 (1 file, 1x) |
 | `[crisis communication channel, e.g. dedicated conference bridge or messaging group]` | Crisis team communication | Pre-configured, tested quarterly | Signal group "Crisis Team" | CB/L3_08 (1 file, 1x) |
-| `[crisis communication initiated]` | Crisis comms activation trigger | Define activation criteria | BCM coordinator activates crisis bridge | CB/PRC_09 (1 file, 1x) |
 | `[on-call schedule or equivalent arrangement]` | After-hours contact procedure | Documented and maintained | On-call rotation via PagerDuty | CB/PRC_09 (1 file, 1x) |
 | `[incident documentation repository]` | Incident record storage location | Centralized, access-controlled | GitLab incident issues | CB/PRC_09 (1 file, 1x) |
-| `[awareness briefings, team meetings, or dedicated Lessons Learned sessions]` | Knowledge dissemination channels | Multiple channels for reach | Team meetings + quarterly awareness sessions | CB/PRC_09 (1 file, 1x) |
 
 ## 7 Tooling and Technology
 
-17 variables, 18 occurrences across the ISMS.
+16 variables, 17 occurrences across the ISMS.
 
 | Variable | Description | Best Practice | Example | Usage |
 |---|---|---|---|---|
@@ -218,195 +202,36 @@ The register is referenced by all ISMS documents that contain variable placehold
 | `[CERT advisories, e.g. BSI, ENISA]` | Threat intelligence sources | Subscribe to relevant CERTs | BSI CERT-Bund, ENISA | CB/PRC_07 (1 file, 1x) |
 | `[Technical tools and systems for ISMS operation]` | ISMS tool stack overview | Document all IS-relevant tools | GitLab, Google Workspace, Cloudflare | HB/CLS_7.1 (1 file, 1x) |
 | `[tool stack]` | Monitoring tool inventory | List all operational monitoring tools | Prometheus, Grafana, PagerDuty | CB/PRC_11 (1 file, 1x) |
-| `[e.g. reduction of mean incident response time]` | KPI improvement goal description | Specific, measurable | Reduce MTTR from 8h to 4h | HB/REG_OBJ (1 file, 1x) |
 
 ## 8 Supplier and Cloud
 
-7 variables, 7 occurrences across the ISMS.
+3 variables, 3 occurrences across the ISMS.
 
 | Variable | Description | Best Practice | Example | Usage |
 |---|---|---|---|---|
-| `[Cloud infrastructure provider, payment service provider]` | Critical supplier category examples | Identify by data access and criticality | AWS, Stripe | CB/L2_05 (1 file, 1x) |
-| `[Office supplier, general service providers]` | Standard supplier category examples | Low-risk, no sensitive data access | Office supplies, cleaning service | CB/L2_05 (1 file, 1x) |
 | `[failover locations, network connectivity, and cloud region assignments]` | Cloud DR topology | Document per provider | eu-west-1 (primary), eu-central-1 (failover) | CB/L3_08 (1 file, 1x) |
 | `[Provider and services, e.g. AWS, Microsoft 365]` | Cloud service inventory summary | List all IS-relevant services | AWS (IaaS), Microsoft 365 (SaaS) | HB/REG_CTX (1 file, 1x) |
 | `[provider]` | Generic provider reference | Specify per context | AWS | HB/REG_CTX (1 file, 1x) |
-| `[Cloud providers, service providers]` | Supplier type grouping | Use for stakeholder mapping | AWS, Google, Salesforce | HB/REG_IP (1 file, 1x) |
-| `[Provider name]` | Specific provider identification | Match contract name | Amazon Web Services EMEA SARL | HB/REG_SUP (1 file, 1x) |
 
 ## 9 BCM / Assets / Processes
 
-16 variables, 18 occurrences across the ISMS.
+3 variables, 3 occurrences across the ISMS.
 
 | Variable | Description | Best Practice | Example | Usage |
 |---|---|---|---|---|
-| `[Archiving, reporting]` | Low-criticality process examples | Tier 3/4 classification | Archiving, internal reporting | CB/L2_06, HB/REG_BCM (2 files, 2x) |
-| `[asset]` | Generic asset reference | Use asset register ID | SRV-PROD-01 | HB/REG_RR (2 files, 2x) |
-| `[Production systems, payment processing, customer systems]` | Tier 1 critical system examples | Per BIA results | Production database, payment gateway | CB/L2_06 (1 file, 1x) |
-| `[Test environments, internal documentation]` | Tier 4 low-priority examples | Non-critical systems | Staging environment, internal wiki | CB/L2_06 (1 file, 1x) |
 | `[annually \| semi-annually — depending on criticality tier]` | Tiered DR test frequency | Per BIA criticality | Semi-annually for Tier 1 | CB/L3_08 (1 file, 1x) |
 | `[Annually for Tier 1 — if feasible]` | Full DR exercise frequency | Resource-dependent | Annually for critical systems | CB/L3_08 (1 file, 1x) |
-| `[Web application frontends, load balancers, reverse proxies]` | Network perimeter assets | Per network architecture | Web application firewall, CDN | CB/L3_06 (1 file, 1x) |
-| `[Application servers, database clusters]` | Core infrastructure assets | Per IT asset inventory | Kubernetes cluster, PostgreSQL | CB/L3_06 (1 file, 1x) |
-| `[SC-\<Asset-ID\>-0001]` | Security control ID format | Sequential per asset | SC-SRV-001-0001 | HB/REG_SM (1 file, 1x) |
 | `[Core application, e.g. SaaS platform]` | Primary business application | Central revenue-generating system | SaaS project management platform | HB/REG_CTX (1 file, 1x) |
-| `[Production systems, payment processing]` | Tier 1 BCM system examples | Per BIA tier 1 | Payment gateway, production DB | HB/REG_BCM (1 file, 1x) |
-| `[Test environments]` | Low-priority BCM systems | Per BIA tier 4 | QA environment | HB/REG_BCM (1 file, 1x) |
-| `[Service name]` | Service identification in registers | Match service catalogue | Customer Portal | HB/REG_BCM (1 file, 1x) |
-| `[Tier]` | BCM criticality tier designation | Per BIA assessment | 1 (Critical) | HB/REG_BCM (1 file, 1x) |
-| `[Q]` | Quarter reference for BCM testing | Calendar quarter | Q2 | HB/REG_BCM (1 file, 1x) |
-| `[N]` | Numeric count placeholder | Context-dependent | 12 | HB/REG_BCM (1 file, 1x) |
 
 ## 10 Regulatory and Legal
 
-4 variables, 4 occurrences across the ISMS.
+3 variables, 3 occurrences across the ISMS.
 
 | Variable | Description | Best Practice | Example | Usage |
 |---|---|---|---|---|
 | `[data protection authority]` | Applicable DPA identification | Per GDPR Article 51 | Bayerisches Landesamt fuer Datenschutzaufsicht | CB/L2_14 (1 file, 1x) |
 | `[competent data protection authority, e.g. Bayerisches Landesamt fuer Datenschutzaufsicht (BayLDA)]` | DPA with example | Verify jurisdiction | BayLDA | CB/PRC_09 (1 file, 1x) |
-| `[The organization's AI products shall be classified according to the EU AI Act risk categories. The classification shall be documented and reviewed annually or upon significant changes to the AI system.]` | AI Act classification requirement | Classify per EU AI Act Annex III | High-risk AI system (hiring decisions) | CB/L2_12 (1 file, 1x) |
 | `[Data protection authority, BSI, tax authorities]` | Regulatory authority list | Identify all applicable authorities | BayLDA, BSI, Finanzamt | HB/REG_IP (1 file, 1x) |
-
-## 11 Audit
-
-8 variables, 11 occurrences across the ISMS.
-
-| Variable | Description | Best Practice | Example | Usage |
-|---|---|---|---|---|
-| `[YYYY]` | Audit year reference | Current calendar year | 2026 | HB/AUD_INT, HB/AUD_SUP (3 files, 4x) |
-| `[YYYY-MM]` | Audit month reference | Planned audit period | 2026-06 | HB/AUD_INT (1 file, 1x) |
-| `[YYYY-Q]` | Audit quarter reference | Quarterly cycle designation | 2026-Q2 | HB/AUD_SUP (1 file, 1x) |
-| `[2-3 sentence summary of overall ISMS maturity and key themes.]` | Audit executive summary | Concise, actionable | ISMS shows improving maturity with strong access controls. Key gaps in BCM testing. | HB/AUD_INT (1 file, 1x) |
-| `[Areas where the ISMS performs well or has improved since the last audit]` | Audit positive findings | Evidence-based observations | Access management fully implemented, awareness training 95% completion | HB/AUD_INT (1 file, 1x) |
-| `[Prioritized strategic recommendations beyond individual findings]` | Audit strategic recommendations | Actionable, prioritized | 1. Automate vulnerability scanning, 2. Establish SOC capability | HB/AUD_INT (1 file, 1x) |
-| `[reference to HB_AUD_INT_01-Audit-Programme]` | Audit programme cross-reference | Link to current programme | HB_AUD_INT_01, Audit cycle 2026 | HB/AUD_INT (1 file, 1x) |
-| `[date or reference to next audit cycle]` | Next audit scheduling | Align with audit programme | 2026-Q4 per HB_AUD_INT_01 | HB/AUD_INT (1 file, 1x) |
-
-## 12 Register Row Fields
-
-This domain covers per-row fill-in fields in ISMS registers. Unlike global variables (filled once per organization), these are completed for each register entry individually.
-
-117 variables, 689 occurrences across the ISMS.
-
-| Variable | Description | Register | Rows |
-|---|---|---|---|
-| `[option]` | Decision option (baseline/risk treatment/legal-contractual) | SoA (HB_REG_SOA) | 87 |
-| `[gap]` | Competence gap description | Competence (HB_REG_COMP) | 80 |
-| `[value]` | Current evidence/state | Competence (HB_REG_COMP) | 80 |
-| `[YYYY-MM-DD]` | Date field (generic) | Multiple registers | 27 |
-| `[rationale]` | Justification for decision | SoA (HB_REG_SOA) | 12 |
-| `[0-3]` | Maturity scale rating | Competence (HB_REG_COMP) | 8 |
-| `[Target value]` | Target state or metric | Competence (HB_REG_COMP), IS Objectives (HB_REG_OBJ) | 7 |
-| `[count]` | Numeric count field | Competence (HB_REG_COMP) | 7 |
-| `[Objective description]` | IS objective text | IS Objectives (HB_REG_OBJ) | 6 |
-| `[KPI or metric]` | Measurement indicator | IS Objectives (HB_REG_OBJ) | 6 |
-| `[1-4]` | Four-level scale rating | Risk Register (HB_REG_RR), Protection Requirements | 6 |
-| `[approval authority or approved list]` | Approval reference | SoA (HB_REG_SOA), Multiple | 5 |
-| `[Finding description]` | Audit finding text | NC Register (HB_REG_NC), Audit | 5 |
-| `[Topic]` | Meeting or training topic | Meeting Log (HB_MGT_02) | 4 |
-| `[Supplier name]` | Supplier identification | Supplier Register (HB_REG_SUP) | 4 |
-| `[SM-####]` | Security measure ID | Security Measures (HB_REG_SM) | 4 |
-| `[SM-0001]` | First security measure reference | Security Measures (HB_REG_SM) | 4 |
-| `[Title]` | Generic title field | Meeting Log (HB_MGT_02) | 4 |
-| `[Preventive]` | Control type classification | Security Measures (HB_REG_SM) | 4 |
-| `[Description]` | Generic description field | Security Measures (HB_REG_SM) | 4 |
-| `[Planned]` | Implementation status | Security Measures (HB_REG_SM) | 4 |
-| `[Link]` | Reference link | Security Measures (HB_REG_SM) | 4 |
-| `[SC-IDs]` | Security control ID references | Security Measures (HB_REG_SM) | 4 |
-| `[Name]` | Generic name field | Security Measures (HB_REG_SM) | 4 |
-| `[certifications, training records]` | Evidence documentation | Competence (HB_REG_COMP) | 4 |
-| `[SC-0001]` | First security control reference | Security Measures (HB_REG_SM) | 3 |
-| `[threat]` | Threat description | Risk Register (HB_REG_RR) | 2 |
-| `[vulnerability]` | Vulnerability description | Risk Register (HB_REG_RR) | 2 |
-| `[impact on affected protection goals]` | CIA impact assessment | Risk Register (HB_REG_RR) | 2 |
-| `[Additional KPIs depending on supplier type and criticality]` | Supplier-specific KPIs | Supplier Register (HB_REG_SUP), IS Objectives | 2 |
-| `[= max(scenarios 1-6) — do not select manually]` | Calculated maximum risk | Risk Register (HB_REG_RR) | 2 |
-| `[Asset-ID]` | Asset identification code | Asset Register (HB_REG_AST) | 2 |
-| `[Asset Name]` | Asset human-readable name | Asset Register (HB_REG_AST) | 2 |
-| `[Layer]` | Asset architecture layer | Asset Register (HB_REG_AST) | 2 |
-| `[Service description]` | Service detail text | Supplier Register (HB_REG_SUP) | 2 |
-| `[Customer segments]` | Customer group classification | Context Register (HB_REG_CTX) | 2 |
-| `[Result]` | Assessment or review result | Multiple registers | 2 |
-| `[Abbreviation]` | Short form identifier | Multiple registers | 2 |
-| `[domain responsible]` | Domain accountability assignment | Supplier Register (HB_REG_SUP) | 2 |
-| `[Audit Body]` | External audit organization | Audit Programme (HB_AUD_INT) | 2 |
-| `[Audit Type]` | Audit classification | Audit Programme (HB_AUD_INT) | 2 |
-| `[NC-001]` | Nonconformity ID | NC Register (HB_REG_NC) | 2 |
-| `[Corrective action or implemented measure]` | Corrective action description | NC Register (HB_REG_NC) | 2 |
-| `[ISO clause or Annex A reference]` | ISO reference for findings | NC Register (HB_REG_NC) | 2 |
-| `[Key management responsibility, e.g. CTO, IT Security Lead]` | Crypto key custodian | Security Measures (HB_REG_SM) | 1 |
-| `[< 1 hour — organization-specific]` | Sub-hour response tier | BCM Register (HB_REG_BCM) | 1 |
-| `[Conduct risk assessment per risk management process CB_PRC_07]` | Risk assessment reference action | Supplier Register (HB_REG_SUP) | 1 |
-| `[at contract renewal]` | Supplier review trigger | Supplier Register (HB_REG_SUP) | 1 |
-| `[number, e.g. 5]` | Configurable numeric field | Competence (HB_REG_COMP) | 1 |
-| `[Document name]` | Document reference in registers | NC Register (HB_REG_NC) | 1 |
-| `[Recommended action]` | Suggested remediation | NC Register (HB_REG_NC) | 1 |
-| `[date or reference to next audit cycle]` | Next review scheduling | Audit Programme (HB_AUD_INT) | 1 |
-| `[information type IDs from reference table]` | Data classification reference | Asset Register (HB_REG_AST) | 1 |
-| `[= Derived C from assessment above — do not fill manually]` | Calculated confidentiality | Protection Requirements | 1 |
-| `[= Derived I from assessment above — do not fill manually]` | Calculated integrity | Protection Requirements | 1 |
-| `[= Derived A from assessment above — do not fill manually]` | Calculated availability | Protection Requirements | 1 |
-| `[What exactly deviates from the requirement]` | Exception deviation description | Exceptions (HB_REG_EXC) | 1 |
-| `[Why the deviation is unavoidable]` | Exception justification | Exceptions (HB_REG_EXC) | 1 |
-| `[Start date]` | Exception validity start | Exceptions (HB_REG_EXC) | 1 |
-| `[End date]` | Exception validity end | Exceptions (HB_REG_EXC) | 1 |
-| `[What could happen as a consequence of the deviation]` | Exception risk description | Exceptions (HB_REG_EXC) | 1 |
-| `[Measures to reduce the risk during the exception period]` | Exception compensating controls | Exceptions (HB_REG_EXC) | 1 |
-| `[e.g. PIT-003]` | Protection requirement assessment ID | Asset Register (HB_REG_AST) | 1 |
-| `[e.g. Production Server Cluster]` | Asset name example | Asset Register (HB_REG_AST) | 1 |
-| `[e.g. Physical IT Systems]` | Asset layer example | Asset Register (HB_REG_AST) | 1 |
-| `[G 0.x]` | BSI threat catalogue reference | Risk Register (HB_REG_RR) | 1 |
-| `[Layer-Vxx]` | Layer-specific vulnerability ID | Risk Register (HB_REG_RR) | 1 |
-| `[If ... occurs and ... exists, this could lead to ... for ...]` | Risk scenario sentence template | Risk Register (HB_REG_RR) | 1 |
-| `[L x I]` | Gross risk calculation (Likelihood x Impact) | Risk Register (HB_REG_RR) | 1 |
-| `[SM-####, SM-####]` | Multiple security measure references | Risk Register (HB_REG_RR) | 1 |
-| `[Net L x Net I]` | Net risk calculation | Risk Register (HB_REG_RR) | 1 |
-| `[ID]` | Generic identifier field | Multiple registers | 1 |
-| `[Reason for exclusion]` | SoA exclusion rationale | SoA (HB_REG_SOA) | 1 |
-| `[e.g. PIT-V01]` | Vulnerability assessment ID | Risk Register (HB_REG_RR) | 1 |
-| `[Vulnerability description]` | Technical vulnerability detail | Risk Register (HB_REG_RR) | 1 |
-| `[YYYY-MM-DD if unknown, else —]` | Conditional date field | Risk Register (HB_REG_RR) | 1 |
-| `[Evidence or rationale]` | Supporting evidence reference | Multiple registers | 1 |
-| `[HB_REG_NC reference]` | NC register cross-reference | Audit Programme (HB_AUD_INT) | 1 |
-| `[risk owner]` | Risk accountability assignment | Risk Register (HB_REG_RR) | 1 |
-| `[rationale for acceptance]` | Risk acceptance justification | Risk Register (HB_REG_RR) | 1 |
-| `[risk description]` | Risk narrative text | Risk Register (HB_REG_RR) | 1 |
-| `[A.x.x]` | Annex A control reference | SoA (HB_REG_SOA) | 1 |
-| `[00.01.000]` | Version number field | SoA (HB_REG_SOA) | 1 |
-| `[Yes — residual risks documented in REG_RR]` | Risk acceptance confirmation | SoA (HB_REG_SOA) | 1 |
-| `[A.5.x]` | Annex A section 5 reference | SoA (HB_REG_SOA) | 1 |
-| `[A.6.x]` | Annex A section 6 reference | SoA (HB_REG_SOA) | 1 |
-| `[A.7.x]` | Annex A section 7 reference | SoA (HB_REG_SOA) | 1 |
-| `[A.8.x]` | Annex A section 8 reference | SoA (HB_REG_SOA) | 1 |
-| `[Summary]` | Summary text field | SoA (HB_REG_SOA) | 1 |
-| `[at least hourly]` | Minimum backup frequency tier 1 | BCM Register (HB_REG_BCM) | 1 |
-| `[at least daily]` | Minimum backup frequency tier 2 | BCM Register (HB_REG_BCM) | 1 |
-| `[at least weekly]` | Minimum backup frequency tier 3 | BCM Register (HB_REG_BCM) | 1 |
-| `[as needed]` | On-demand backup frequency tier 4 | BCM Register (HB_REG_BCM) | 1 |
-| `[SUP-001]` | First supplier register entry ID | Supplier Register (HB_REG_SUP) | 1 |
-| `[CLD-001]` | First cloud service entry ID | Supplier Register (HB_REG_SUP) | 1 |
-| `[YYYY-MM-DD or —]` | Optional date field | Supplier Register (HB_REG_SUP) | 1 |
-| `[Summary of findings or —]` | Optional findings summary | Supplier Register (HB_REG_SUP) | 1 |
-| `[OBJ-S01]` | Strategic objective ID | IS Objectives (HB_REG_OBJ) | 1 |
-| `[Strategic objective]` | Strategic objective description | IS Objectives (HB_REG_OBJ) | 1 |
-| `[KPI description]` | KPI detail text | IS Objectives (HB_REG_OBJ) | 1 |
-| `[Actual value]` | Current measured value | IS Objectives (HB_REG_OBJ) | 1 |
-| `[actions with target dates]` | Planned improvement actions | IS Objectives (HB_REG_OBJ) | 1 |
-| `[OFI-001]` | Opportunity for improvement ID | Improvement Roadmap (HB_MGT_01) | 1 |
-| `[Improvement measure or implemented change]` | Improvement action description | Improvement Roadmap (HB_MGT_01) | 1 |
-| `[OBS-001]` | Observation ID | Audit Programme (HB_AUD_INT) | 1 |
-| `[Response or implemented measure]` | Observation response | Audit Programme (HB_AUD_INT) | 1 |
-| `[G 0.x — threat title]` | BSI threat with title | Risk Register (HB_REG_RR) | 1 |
-| `[V-ID]` | Vulnerability identifier | Risk Register (HB_REG_RR) | 1 |
-| `[IMP-001]` | Improvement theme ID | Improvement Roadmap (HB_MGT_01) | 1 |
-| `[Theme description]` | Improvement theme text | Improvement Roadmap (HB_MGT_01) | 1 |
-| `[participant list]` | Meeting attendee list | Meeting Log (HB_MGT_02) | 1 |
-| `[key decisions]` | Meeting decision record | Meeting Log (HB_MGT_02) | 1 |
-| `[action references]` | Meeting action item references | Meeting Log (HB_MGT_02) | 1 |
-| `[e.g. shareholders, insurers]` | Interested party examples | Interested Parties (HB_REG_IP) | 1 |
-| `[Specific requirements]` | Stakeholder requirements detail | Interested Parties (HB_REG_IP) | 1 |
-| `[Notes]` | Free-text annotation field | Multiple registers | 1 |
 
 ## See also
 
@@ -418,4 +243,5 @@ This domain covers per-row fill-in fields in ISMS registers. Unlike global varia
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.001 | 2026-02-20 | Claude (AI) | Quality cleanup — removed 158 non-core variables (register row fields, audit-cycle fields, illustrative examples, process descriptions, duplicates); reduced from 284 to 126 variables across 10 domains |
 | 00.01.000 | 2026-02-20 | Claude (AI) | Initial creation — 284 variables across 12 domains |
