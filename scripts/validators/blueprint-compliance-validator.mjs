@@ -92,6 +92,37 @@ function normalizeText(text) {
     .trim();
 }
 
+/** Derive a Document ID from a relative file path using abbreviation conventions */
+const PATH_ABBREV = {
+  'Cyber-Security-Cookbook': 'CB', 'ISMS-Handbook': 'HB',
+  'Templates': 'TPL', 'Processes': 'PRC', 'Policy-Framework': 'POL',
+  'Awareness-Training': 'AWR', 'Definitions': 'CLS', 'Registers': 'REG',
+  'Management': 'MGT', 'Audit': 'AUD',
+  'L1_Policy': 'L1', 'L2_Standards': 'L2', 'L3_Handbooks-and-Concepts': 'L3',
+  'L4_Cheat-Sheets': 'L4', 'Internal': 'INT', 'Supplier': 'SUP',
+  'Risk-Framework': 'RF', 'Exception-Register': 'EXC',
+};
+
+const DIRECTORY_IDS = [
+  ['ISMS-Handbook/Registers/Risk-Framework', 'HB_REG_RF'],
+];
+
+function deriveDocIdFromPath(relPath) {
+  const parts = relPath.replace(/\.md$/, '').split('/');
+  if (parts.length < 3) return null;
+
+  const segments = [];
+  for (let i = 0; i < parts.length - 1; i++) {
+    const abbrev = PATH_ABBREV[parts[i]];
+    if (abbrev) segments.push(abbrev);
+  }
+  if (segments.length < 2) return null;
+
+  // Skip clause sort-folders (C04_Context, C05_Leadership, etc.)
+  const filename = parts[parts.length - 1];
+  return segments.join('_') + '_' + filename;
+}
+
 /** Parse markdown into metadata + H2 sections */
 function parseMarkdown(text) {
   const lines = text.replace(/\r\n/g, '\n').split('\n');
@@ -706,6 +737,7 @@ function phase3_structure() {
   const masterHB = collectMdFiles(join(MASTER_ROOT, 'ISMS-Handbook'));
   const masterFiles = [...masterCB, ...masterHB];
   let checked = 0;
+  let exceptedCount = 0;
 
   for (const mFile of masterFiles) {
     const relPath = toForwardSlash(relative(MASTER_ROOT, mFile));
@@ -739,7 +771,14 @@ function phase3_structure() {
     for (const mH2 of masterH2s) {
       const found = clientH2s.indexOf(mH2, clientIdx);
       if (found === -1) {
-        phase.errors.push(`${relPath}: missing H2 "## ${mH2}"`);
+        // Check exception file before counting as error
+        const exc = isExcepted(relPath, mH2);
+        if (exc) {
+          exceptedCount++;
+          phase.warnings.push(`[EXCEPTED] ${relPath}: ## ${mH2} — ${exc.reason} (${exc.type})`);
+        } else {
+          phase.errors.push(`${relPath}: missing H2 "## ${mH2}"`);
+        }
       } else {
         if (found < clientIdx) {
           phase.errors.push(`${relPath}: H2 "## ${mH2}" out of order`);
@@ -756,7 +795,9 @@ function phase3_structure() {
     }
   }
 
-  phase.detail = `${checked} checked`;
+  const detailParts = [`${checked} checked`];
+  if (exceptedCount > 0) detailParts.push(`${exceptedCount} excepted`);
+  phase.detail = detailParts.join(', ');
   if (phase.errors.length > 0) phase.status = 'ERROR';
   else if (phase.warnings.length > 0) phase.status = 'WARNING';
 }
@@ -877,6 +918,7 @@ function checkChangelogFormat(section) {
 function phase5_registerSchema() {
   const phase = results.phase5;
   let checked = 0;
+  let exceptedCount = 0;
 
   const registers = [
     { name: 'REG_03', path: 'ISMS-Handbook/Registers/03-Asset-Register.md' },
@@ -899,21 +941,39 @@ function phase5_registerSchema() {
     const masterContent = readF(masterPath);
     const clientContent = readF(clientPath);
 
+    // Parse to find which section each table belongs to
+    const masterParsed = parseMarkdown(masterContent);
+
     const mTables = extractTables(masterContent);
     const cTables = extractTables(clientContent);
 
-    // Check table headers match
+    // Schema-superset check: master columns must exist in client (case-insensitive)
     for (let t = 0; t < mTables.length; t++) {
       if (t >= cTables.length) {
         phase.errors.push(`${reg.name}: master has ${mTables.length} tables, client has ${cTables.length}`);
         break;
       }
-      const mHeader = normalizeText(mTables[t][0] || '');
-      const cHeader = normalizeText(cTables[t][0] || '');
-      if (mHeader && cHeader && mHeader !== cHeader) {
-        phase.errors.push(`${reg.name}: table ${t + 1} header mismatch`);
-        phase.errors.push(`  Master: ${mHeader.substring(0, 120)}`);
-        phase.errors.push(`  Client: ${cHeader.substring(0, 120)}`);
+      const mCells = parseHeaderCells(mTables[t][0] || '');
+      const cCells = parseHeaderCells(cTables[t][0] || '');
+      const cCellsLower = cCells.map(c => c.toLowerCase());
+
+      const missing = mCells.filter(mc =>
+        !cCellsLower.some(cc => cc.includes(mc.toLowerCase()))
+      );
+
+      if (missing.length > 0) {
+        // Find which H2 section this table belongs to for exception matching
+        const sectionName = findTableSection(masterParsed, mTables[t][0]);
+        const exc = sectionName ? isExcepted(reg.path, sectionName) : null;
+
+        if (exc) {
+          exceptedCount++;
+          phase.warnings.push(`[EXCEPTED] ${reg.name}: table ${t + 1} — ${exc.reason} (${exc.type})`);
+        } else {
+          phase.errors.push(`${reg.name}: table ${t + 1} missing column(s): ${missing.join(', ')}`);
+          phase.errors.push(`  Master: ${(mTables[t][0] || '').substring(0, 120)}`);
+          phase.errors.push(`  Client: ${(cTables[t][0] || '').substring(0, 120)}`);
+        }
       }
     }
 
@@ -929,9 +989,21 @@ function phase5_registerSchema() {
     }
   }
 
-  phase.detail = `${checked} registers`;
+  const detailParts = [`${checked} registers`];
+  if (exceptedCount > 0) detailParts.push(`${exceptedCount} excepted`);
+  phase.detail = detailParts.join(', ');
   if (phase.errors.length > 0) phase.status = 'ERROR';
   else if (phase.warnings.length > 0) phase.status = 'WARNING';
+}
+
+/** Find which H2 section a table header belongs to */
+function findTableSection(parsed, tableHeader) {
+  for (const section of parsed.sections) {
+    if (section.heading === '__H1__') continue;
+    const sectionText = section.lines.join('\n');
+    if (sectionText.includes(tableHeader)) return section.heading;
+  }
+  return null;
 }
 
 // ── Phase 6: Cross-Reference Integrity ─────────────────────────────────
@@ -941,7 +1013,7 @@ function phase6_crossReferences() {
   let validRefs = 0;
   let brokenRefs = 0;
 
-  // Collect all client document IDs
+  // Collect all client document IDs (metadata, table cells, and path-derived)
   const clientFiles = [
     ...collectMdFiles(join(CLIENT_ROOT, 'Cyber-Security-Cookbook')),
     ...collectMdFiles(join(CLIENT_ROOT, 'ISMS-Handbook')),
@@ -950,9 +1022,38 @@ function phase6_crossReferences() {
   for (const f of clientFiles) {
     const content = readF(f);
     if (!content) continue;
+    const relPath = toForwardSlash(relative(CLIENT_ROOT, f));
+
+    // 1. Standard blockquote metadata
     const { metadata } = parseMarkdown(content);
     if (metadata['Document ID']) {
       clientDocIds.add(metadata['Document ID']);
+    }
+
+    // 2. Document ID in table cells (templates use this format)
+    const tableIdMatch = content.match(/\|\s*Document ID\s*\|\s*(.+?)\s*\|/);
+    if (tableIdMatch) {
+      clientDocIds.add(tableIdMatch[1].trim());
+    }
+
+    // 3. Path-derived ID as fallback (covers files without any Document ID)
+    const derivedId = deriveDocIdFromPath(relPath);
+    if (derivedId) clientDocIds.add(derivedId);
+  }
+
+  // 4. Directory-based synthetic IDs (e.g. HB_REG_RF for Risk-Framework/)
+  for (const [dir, id] of DIRECTORY_IDS) {
+    if (existsSync(join(CLIENT_ROOT, dir))) clientDocIds.add(id);
+  }
+
+  // 5. PDF-only templates (no .md counterpart) — derive IDs from .pdf filenames
+  const tplDir = join(CLIENT_ROOT, 'Cyber-Security-Cookbook', 'Templates');
+  if (existsSync(tplDir)) {
+    for (const entry of readdirSync(tplDir)) {
+      if (entry.endsWith('.pdf')) {
+        const id = 'CB_TPL_' + entry.replace('.pdf', '');
+        clientDocIds.add(id);
+      }
     }
   }
 
