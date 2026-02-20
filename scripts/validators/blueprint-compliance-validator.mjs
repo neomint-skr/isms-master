@@ -43,6 +43,20 @@ const METADATA_FIELDS = [
   'ISO Reference', 'Last modified', 'Approval', 'Review cycle'
 ];
 
+// ── Exception File ───────────────────────────────────────────────────
+
+const EXCEPTIONS_PATH = join(CLIENT_ROOT, '.blueprint-exceptions.json');
+const exceptions = existsSync(EXCEPTIONS_PATH)
+  ? JSON.parse(readFileSync(EXCEPTIONS_PATH, 'utf-8')).exceptions || []
+  : [];
+
+function isExcepted(relPath, sectionHeading) {
+  return exceptions.find(e =>
+    toForwardSlash(e.file) === toForwardSlash(relPath) &&
+    e.section === sectionHeading
+  );
+}
+
 // ── Result collection ──────────────────────────────────────────────────
 
 const results = {
@@ -158,18 +172,21 @@ function getStrategy(sectionHeading, docType) {
 
   if (docType === 'REC' || docType === 'REF') return 'skip';
 
-  // Standard sections
-  if (h === 'summary') {
-    return docType === 'REC' ? 'skip' : 'text-match';
-  }
-  if (h === 'objective and scope') {
-    return docType === 'REC' ? 'skip' : 'text-match';
-  }
+  // Universal sections first
   if (h === 'see also') return 'superset';
   if (h === 'changelog') return 'format-only';
 
+  // AUD and MGT: structure-match for all content sections
+  if (docType === 'AUD' || docType === 'MGT') {
+    return 'structure-match';
+  }
+
+  // Standard sections
+  if (h === 'summary') return 'text-match';
+  if (h === 'objective and scope') return 'text-match';
+
   // Subject H2s
-  if (docType === 'REG') return 'schema-match';
+  if (docType === 'REG') return 'schema-superset';
   if (docType === 'TPL') return 'text-match';
   return 'text-match';
 }
@@ -320,6 +337,132 @@ function schemaMatch(masterSection, clientSection) {
   }
 
   return { ok: true };
+}
+
+/** Structure match for AUD/MGT documents — checks structural elements, not prose */
+function structureMatch(masterSection, clientSection) {
+  const mText = masterSection.lines.join('\n');
+  const cText = clientSection.lines.join('\n');
+
+  // 1. Bold-Labels: extract from master, check each exists in client
+  const masterLabels = [...mText.matchAll(/\*\*(.+?):\*\*/g)].map(m => m[1]);
+  for (const label of masterLabels) {
+    if (!cText.includes(`**${label}:**`)) {
+      return {
+        ok: false,
+        line: clientSection.startLine,
+        detail: `missing bold label "**${label}:**"`,
+        masterSnippet: `**${label}:**`,
+        clientSnippet: '(not found)',
+      };
+    }
+  }
+
+  // 2. Table count: master tables must exist in client
+  const mTables = extractTables(mText);
+  const cTables = extractTables(cText);
+  if (mTables.length > 0 && cTables.length < mTables.length) {
+    return {
+      ok: false,
+      line: clientSection.startLine,
+      detail: `expected ${mTables.length} table(s), found ${cTables.length}`,
+    };
+  }
+
+  // 3. Reference IDs (CB_*, HB_*): master refs must appear in client
+  const masterRefs = [...mText.matchAll(/\b(CB_[A-Z0-9_]+|HB_[A-Z0-9_]+)/g)].map(m => m[1]);
+  for (const ref of masterRefs) {
+    if (ref.includes('[') || ref.includes(']')) continue; // placeholder
+    if (!cText.includes(ref)) {
+      return {
+        ok: false,
+        line: clientSection.startLine,
+        detail: `missing reference ID "${ref}"`,
+        masterSnippet: ref,
+        clientSnippet: '(not found)',
+      };
+    }
+  }
+
+  return { ok: true };
+}
+
+/** Schema-superset match for REG tables — master columns must exist, extra client columns OK */
+function schemaSupersetMatch(masterSection, clientSection) {
+  const mText = masterSection.lines.join('\n');
+  const cText = clientSection.lines.join('\n');
+
+  // Check non-table text via text-match approach (methodology text)
+  const mNonTable = extractNonTableText(mText);
+  const cNonTable = extractNonTableText(cText);
+
+  if (mNonTable.trim() && cNonTable.trim()) {
+    const mNorm = normalizeText(mNonTable);
+    const cNorm = normalizeText(cNonTable);
+    if (/\[[^\]]+\]/.test(mNorm)) {
+      const regex = buildPlaceholderRegex(mNorm);
+      if (!regex.test(cNorm)) {
+        return {
+          ok: false,
+          line: clientSection.startLine,
+          detail: 'methodology text between tables differs',
+          masterSnippet: mNorm.substring(0, 120),
+          clientSnippet: cNorm.substring(0, 120),
+        };
+      }
+    } else if (mNorm !== cNorm) {
+      return {
+        ok: false,
+        line: clientSection.startLine,
+        detail: 'methodology text between tables differs',
+        masterSnippet: mNorm.substring(0, 120),
+        clientSnippet: cNorm.substring(0, 120),
+      };
+    }
+  }
+
+  // Extract tables and check column superset
+  const mTables = extractTables(mText);
+  const cTables = extractTables(cText);
+
+  for (let t = 0; t < mTables.length; t++) {
+    if (t >= cTables.length) {
+      return {
+        ok: false,
+        line: clientSection.startLine,
+        detail: `master has ${mTables.length} tables, client has ${cTables.length}`,
+      };
+    }
+
+    // Parse header cells
+    const mCells = parseHeaderCells(mTables[t][0] || '');
+    const cCells = parseHeaderCells(cTables[t][0] || '');
+    const cCellsLower = cCells.map(c => c.toLowerCase());
+
+    const missing = mCells.filter(mc =>
+      !cCellsLower.some(cc => cc.includes(mc.toLowerCase()))
+    );
+
+    if (missing.length > 0) {
+      return {
+        ok: false,
+        line: clientSection.startLine,
+        detail: `table ${t + 1} missing column(s): ${missing.join(', ')}`,
+        masterSnippet: mTables[t][0]?.substring(0, 120) || '',
+        clientSnippet: cTables[t][0]?.substring(0, 120) || '',
+      };
+    }
+  }
+
+  return { ok: true };
+}
+
+/** Parse table header row into individual cell values */
+function parseHeaderCells(headerRow) {
+  return headerRow
+    .split('|')
+    .map(c => c.trim())
+    .filter(c => c.length > 0);
 }
 
 /** Superset match for See also */
@@ -627,6 +770,7 @@ function phase4_contentAlignment() {
   const masterFiles = [...masterCB, ...masterHB];
   let checked = 0;
   let mismatches = 0;
+  let exceptedCount = 0;
 
   for (const mFile of masterFiles) {
     const relPath = toForwardSlash(relative(MASTER_ROOT, mFile));
@@ -668,6 +812,12 @@ function phase4_contentAlignment() {
         case 'schema-match':
           result = schemaMatch(mSection, cSection);
           break;
+        case 'schema-superset':
+          result = schemaSupersetMatch(mSection, cSection);
+          break;
+        case 'structure-match':
+          result = structureMatch(mSection, cSection);
+          break;
         case 'superset':
           result = supersetMatch(mSection, cSection);
           break;
@@ -679,21 +829,35 @@ function phase4_contentAlignment() {
       }
 
       if (!result.ok) {
-        mismatches++;
-        const loc = result.line ? `:${result.line}` : '';
-        const entry = `${relPath}${loc} ## ${mSection.heading} — ${result.detail}`;
-        if (result.masterSnippet) {
-          phase.errors.push(entry);
-          phase.errors.push(`  Master: ${result.masterSnippet}`);
-          phase.errors.push(`  Client: ${result.clientSnippet || '(empty)'}`);
+        // Check exception file before counting as error
+        const exc = isExcepted(relPath, mSection.heading);
+        if (exc) {
+          exceptedCount++;
+          // Check for expired exception
+          if (exc.expires && new Date(exc.expires) < new Date()) {
+            phase.warnings.push(`[EXPIRED] ${relPath} ## ${mSection.heading} — exception expired ${exc.expires}`);
+          } else {
+            phase.warnings.push(`[EXCEPTED] ${relPath} ## ${mSection.heading} — ${exc.reason} (${exc.type})`);
+          }
         } else {
-          phase.errors.push(entry);
+          mismatches++;
+          const loc = result.line ? `:${result.line}` : '';
+          const entry = `${relPath}${loc} ## ${mSection.heading} — ${result.detail}`;
+          if (result.masterSnippet) {
+            phase.errors.push(entry);
+            phase.errors.push(`  Master: ${result.masterSnippet}`);
+            phase.errors.push(`  Client: ${result.clientSnippet || '(empty)'}`);
+          } else {
+            phase.errors.push(entry);
+          }
         }
       }
     }
   }
 
-  phase.detail = `${checked} sections, ${mismatches} mismatches`;
+  const detailParts = [`${checked} sections`, `${mismatches} mismatches`];
+  if (exceptedCount > 0) detailParts.push(`${exceptedCount} excepted`);
+  phase.detail = detailParts.join(', ');
   if (mismatches > 0) phase.status = 'WARNING';
 }
 
