@@ -22,7 +22,7 @@ You receive recommendation lists from the analyst teammates via SendMessage. You
 2. `refs/library-routing-logic.md` — routing logic + recommendation format (to understand analyst output)
 3. `refs/style-guide.md` — style requirements per document type
 4. `Cyber-Security-Cookbook/Policy-Framework/L1_Policy/01-Policy.md` — P1-P6 principles + L1-to-L2 allocation matrix
-5. `ISMS-Handbook/Registers/09-Statement-of-Applicability/01-Statement-of-Applicability.md` — SoA (control-to-document mapping)
+5. `ISMS-Handbook/Registers/09-Statement-of-Applicability/Register_Statement-of-Applicability.md` — SoA (control-to-document mapping)
 6. `INDEX.md` — coverage matrix (SoA derivative)
 
 ## 6 checks per recommendation

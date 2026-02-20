@@ -60,7 +60,7 @@ No stale paths in governance documents.
 
 ### 5. SoA consistency
 
-Verify that the SoA (ISMS-Handbook/Registers/09-Statement-of-Applicability/01-Statement-of-Applicability.md) is complete and consistent.
+Verify that the SoA (ISMS-Handbook/Registers/09-Statement-of-Applicability/Register_Statement-of-Applicability.md) is complete and consistent.
 
 **Steps:**
 - Count controls in the SoA (should be 93, A.5.1 through A.8.34)

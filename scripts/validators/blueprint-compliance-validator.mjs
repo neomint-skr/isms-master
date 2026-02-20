@@ -559,7 +559,7 @@ function parseIndex(indexText) {
   let currentDir = '';
 
   for (const line of lines) {
-    // Directory patterns like **C04_Context/** or **01-Context-Register.md**
+    // Directory patterns like **C04_Context/** or **Register_Context.md**
     const dirMatch = line.match(/^\*\*(.+?)\/?\*\*/);
     if (dirMatch) {
       const val = dirMatch[1];

@@ -22,7 +22,7 @@ You receive recommendation lists from the analyst teammates via SendMessage. You
    - Clauses 4-10 with documentation obligations (DokI requirement markers)
    - Annex A (93 controls)
 2. `References/Library/Standards/ISO_2022_27002-Extract.md` — control guidance (guidance per control)
-3. `ISMS-Handbook/Registers/09-Statement-of-Applicability/01-Statement-of-Applicability.md` — SoA
+3. `ISMS-Handbook/Registers/09-Statement-of-Applicability/Register_Statement-of-Applicability.md` — SoA
 4. `INDEX.md` — coverage matrix
 5. `refs/isms-conventions.md` — repository conventions
 

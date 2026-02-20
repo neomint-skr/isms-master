@@ -31,27 +31,27 @@
 
 ### HB -- ISMS-Handbook / Registers
 
-**01-Context/01-Context-Register.md** -- Organizational profile, external/internal issues
-**02-Interested-Parties/01-Interested-Parties-Register.md** -- Stakeholders + IS requirements
-**03-Asset-Management/01-Asset-Register.md** -- 8 asset inventories, 6 cross-reference tables, data model
-**04-Protection-Requirements/** -- Process protection requirement assessments (SSOT)
+**01-Context/Register_Context.md** -- Organizational profile, external/internal issues
+**02-Interested-Parties/Register_Interested-Parties.md** -- Stakeholders + IS requirements
+**03-Asset-Management/Register_Asset.md** -- 8 asset inventories, 6 cross-reference tables, data model
+**04-Protection-Requirements/Register_Protection-Requirements.md** -- Process protection requirement assessments (SSOT)
 **05-Risk-Framework/Threats/** -- Threat catalogues per asset class
 `1-Processes.md`, `2-Information.md`, `3-Applications.md`, `4-IT-Systems-Physical.md`, `5-IT-Systems-Virtual.md`, `6-Communication-Links.md`, `7-Rooms.md`, `8-Buildings.md`
 **05-Risk-Framework/Vulnerabilities/** -- Vulnerability catalogues per asset class
 `1-Processes.md`, `2-Information.md`, `3-Applications.md`, `4-IT-Systems-Physical.md`, `5-IT-Systems-Virtual.md`, `6-Communication-Links.md`, `7-Rooms.md`, `8-Buildings.md`
 **06-Risk-Assessments/** -- Per-asset risk assessments (7 layer folders)
 `1-Process/`
-**07-Risk-Register/01-Risk-Register.md** -- 4x4 matrix, scenario-based risk entries, acceptance
-**08-Risk-Treatment/01-Risk-Treatment-Plan.md** -- Controls per risk, owners, deadlines, gap tracking
-**09-Statement-of-Applicability/01-Statement-of-Applicability.md** -- 93 controls, SSOT for applicability
-**10-Security-Measures/01-Security-Measures-Register.md** -- Security measures per risk, linked to controls and assets
+**07-Risk-Register/Register_Risk.md** -- 4x4 matrix, scenario-based risk entries, acceptance
+**08-Risk-Treatment/Register_Risk-Treatment-Plan.md** -- Controls per risk, owners, deadlines, gap tracking
+**09-Statement-of-Applicability/Register_Statement-of-Applicability.md** -- 93 controls, SSOT for applicability
+**10-Security-Measures/Register_Security-Measures.md** -- Security measures per risk, linked to controls and assets
 **10-Security-Measures/** -- Security measure evidence and implementation records
-**11-Business-Continuity/01-BCM-Register.md** -- BCM continuity plan tracking
-**12-Supplier-and-Cloud/01-Supplier-Register.md** -- Supplier + cloud services tables
-**13-IS-Objectives-and-KPIs/01-IS-Objectives-Register.md** -- IS objectives with KPIs and monitoring results
-**14-Competence-Records/01-Competence-Records.md** -- SOLL/IST competence matrix per ISMS role (20 dimensions)
-**15-Nonconformities-and-Corrective-Actions/01-Nonconformity-Register.md** -- NC tracking with effectiveness review
-**16-Exceptions/01-Exception-Index.md** -- Approved policy exceptions with expiry and review tracking
+**11-Business-Continuity/Register_BCM.md** -- BCM continuity plan tracking
+**12-Supplier-and-Cloud/Register_Supplier.md** -- Supplier + cloud services tables
+**13-IS-Objectives-and-KPIs/Register_IS-Objectives.md** -- IS objectives with KPIs and monitoring results
+**14-Competence-Records/Register_Competence.md** -- SOLL/IST competence matrix per ISMS role (20 dimensions)
+**15-Nonconformities-and-Corrective-Actions/Register_Nonconformities.md** -- NC tracking with effectiveness review
+**16-Exceptions/Register_Exceptions.md** -- Approved policy exceptions with expiry and review tracking
 
 ### HB -- ISMS-Handbook / Management
 

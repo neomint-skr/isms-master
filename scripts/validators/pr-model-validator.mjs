@@ -89,7 +89,7 @@ function rule2() {
 // No document references HB_REG_BCM in PR context.
 // BCM Register contains no "Derived V" or PR classification fields.
 function rule3() {
-  const bcmPath = 'ISMS-Handbook/Registers/11-Business-Continuity/01-BCM-Register.md';
+  const bcmPath = 'ISMS-Handbook/Registers/11-Business-Continuity/Register_BCM.md';
   const bcmLines = readLines(bcmPath);
   if (bcmLines) {
     const clStart = changelogStart(bcmLines);
@@ -142,7 +142,7 @@ function rule4() {
 // Rule 5: Every asset has a process anchor
 // In HB_REG_AM: PR Source field exists in asset tables
 function rule5() {
-  const regPath = 'ISMS-Handbook/Registers/03-Asset-Management/01-Asset-Register.md';
+  const regPath = 'ISMS-Handbook/Registers/03-Asset-Management/Register_Asset.md';
   const lines = readLines(regPath);
   if (!lines) { addViolation(5, regPath, 0, 'Asset register not found'); return; }
 
@@ -175,7 +175,7 @@ function rule5() {
 // Rule 6: Override documentation in HB_REG_AM PR Source
 // PR Source for sub-assets must use the 3-value enum, not "Inherited from"
 function rule6() {
-  const regPath = 'ISMS-Handbook/Registers/03-Asset-Management/01-Asset-Register.md';
+  const regPath = 'ISMS-Handbook/Registers/03-Asset-Management/Register_Asset.md';
   const lines = readLines(regPath);
   if (!lines) return;
 
@@ -207,7 +207,7 @@ function rule7() {
 // Rule 8: PR Source format validation
 // PR Source field definition in HB_REG_AM must not contain "Inherited from"
 function rule8() {
-  const regPath = 'ISMS-Handbook/Registers/03-Asset-Management/01-Asset-Register.md';
+  const regPath = 'ISMS-Handbook/Registers/03-Asset-Management/Register_Asset.md';
   const lines = readLines(regPath);
   if (!lines) return;
 
