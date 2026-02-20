@@ -1,8 +1,8 @@
 > **Document ID:** CB_POL_L2_02-Information-Protection
-> **Version:** 00.01.011
+> **Version:** 00.01.012
 > **Classification:** Internal
 > **Author:** CISO
-> **ISO Reference:** A.5.12-5.14, A.5.32, A.8.10-8.12, A.8.24
+> **ISO Reference:** A.5.12-5.14, A.8.10-8.12, A.8.24
 > **Last modified:** 2026-02-20
 > **Approval:** —
 > **Review cycle:** Annual
@@ -101,7 +101,7 @@ Information owners are responsible for identifying information no longer require
 
 ## Intellectual Property
 
-The organization's own intellectual property and that of third parties must be identified and protected against unauthorized disclosure, modification, or misuse (addresses A.5.32).
+The organization's own intellectual property and that of third parties must be identified and protected against unauthorized disclosure, modification, or misuse (see CB_POL_L2_14 for A.5.32).
 
 **Requirements:**
 
@@ -126,6 +126,7 @@ The organization's own intellectual property and that of third parties must be i
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.012 | 2026-02-20 | Claude (AI) | MECE fix: remove A.5.32 dual assignment, primary home is L2_14 |
 | 00.01.011 | 2026-02-20 | Claude (AI) | Removed A.5.34 from ISO Reference (primary: L2_14); demoted content tag to cross-ref |
 | 00.01.010 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.009 | 2026-02-17 | Claude (AI) | Process-centric context: information as attribute of business processes in Summary and Objective |
