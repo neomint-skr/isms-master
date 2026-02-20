@@ -1,5 +1,5 @@
 > **Document ID:** CB_POL_L2_06-Business-Continuity
-> **Version:** 00.01.012
+> **Version:** 00.01.013
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.29-5.30, A.8.13
@@ -22,7 +22,7 @@ Business disruptions caused by IT outages, cyberattacks, or natural events can b
 
 **Objective:** Business disruptions caused by IT outages, cyberattacks, or natural events can be existentially threatening. Without binding requirements for ICT readiness and data backup, the foundation for planned recovery of business operations is missing.
 
-This policy defines the normative requirements for ICT readiness for business continuity, backup strategies, and recovery objectives (addresses A.5.29-5.30, A.8.13-8.14). It establishes criteria for recovery times and backup intervals.
+This policy defines the normative requirements for ICT readiness for business continuity, backup strategies, and recovery objectives (addresses A.5.29-5.30, A.8.13). It establishes criteria for recovery times and backup intervals.
 
 The standard implements the principles P3 (Risk orientation) and P6 (Business continuity) of the IS policy. Operational implementation is provided through CB_POL_L3_05 (Data Backup); the recovery process through CB_PRC_03 (Backup and Recovery).
 
@@ -114,6 +114,7 @@ The operational backup process including procedures and responsibilities is desc
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.013 | 2026-02-20 | Claude (AI) | Aligned Objective text: removed A.8.14 from addresses range (primary: L2_03) |
 | 00.01.012 | 2026-02-20 | Claude (AI) | Removed A.8.14 from ISO Reference; demoted content tag to cross-ref (primary: L2_03) |
 | 00.01.011 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.010 | 2026-02-19 | Claude (AI) | HB_REG_04 reference updated: BIA-Register → BCM-Register |

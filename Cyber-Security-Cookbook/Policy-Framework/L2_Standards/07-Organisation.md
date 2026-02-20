@@ -1,5 +1,5 @@
 > **Document ID:** CB_POL_L2_07-Organisation
-> **Version:** 00.03.018
+> **Version:** 00.03.019
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.2-5.6, A.5.9-5.10
@@ -22,9 +22,9 @@ Information security requires clear organizational frameworks for governance and
 
 **Objective:** Information security requires clear organizational frameworks. Without uniform rules for roles, segregation of duties, and asset management, IS responsibilities remain unclear and governance mechanisms incomplete.
 
-This standard defines the organizational requirements for security governance, roles, authority contacts, and asset management (addresses A.5.2-5.6, A.5.9-5.11). It establishes criteria for the overarching management and organizational structure of the ISMS.
+This standard defines the organizational requirements for security governance, roles, authority contacts, and asset management (addresses A.5.2-5.6, A.5.9-5.10). It establishes criteria for the overarching management and organizational structure of the ISMS.
 
-The standard implements the principles P1 (Protection), P2 (Compliance), P4 (Awareness), and P5 (Continual improvement) of the IS policy. Incident management requirements are defined in CB_POL_L2_13 (Incident and Threat Management). Compliance requirements are defined in CB_POL_L2_14 (Compliance and Legal). Operational implementation is provided through CB_POL_L3_01 (User Handbook) and CB_PRC_12 (Asset Management).
+The standard implements the principles P1 (Protection), P2 (Compliance), P3 (Risk orientation), P4 (Awareness), and P5 (Continual improvement) of the IS policy. Incident management requirements are defined in CB_POL_L2_13 (Incident and Threat Management). Compliance requirements are defined in CB_POL_L2_14 (Compliance and Legal). Operational implementation is provided through CB_POL_L3_01 (User Handbook) and CB_PRC_12 (Asset Management).
 
 **Scope:** All organizational units and employees within the ISMS scope. Covers organizational governance and asset management.
 
@@ -149,6 +149,7 @@ The procedure for contact with authorities specifies contact points within the c
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.03.019 | 2026-02-20 | Claude (AI) | Aligned Objective text: removed A.5.11 from addresses range; added P3 to body narrative |
 | 00.03.018 | 2026-02-20 | Claude (AI) | Removed A.5.11 from ISO Reference (primary: L2_10) |
 | 00.03.017 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.03.016 | 2026-02-19 | Claude (AI) | Traceability fix: add P3 to Policy reference (L1 allocation matrix assigns L2_07 to P3 Risk orientation) |
