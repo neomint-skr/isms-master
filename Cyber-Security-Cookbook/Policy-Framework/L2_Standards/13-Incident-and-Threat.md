@@ -68,7 +68,7 @@ The organization collects and analyzes information about potential or existing I
 
 **Sources:**
 
-- **External sources:** Contact with authorities (BSI, ENISA) and special interest groups (industry forums, vendor advisories)
+- **External sources:** Contact with authorities (BSI, [Authority]) and special interest groups (industry forums, vendor advisories)
 - **Internal sources:** Log data, vulnerability scans, incident reports
 
 The Chief Information Security Officer analyzes collected information and uses the findings to improve security controls. Results feed into risk assessment (CB_POL_L2_11) and vulnerability management (CB_PRC_04).
