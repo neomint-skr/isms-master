@@ -1,9 +1,9 @@
 > **Document ID:** CB_AWR_02-Onboarding-Checklist
-> **Version:** 00.01.005
+> **Version:** 00.01.006
 > **Classification:** Internal
 > **Author:** CISO
-> **ISO Reference:** A.6.1, A.6.2, A.6.6
-> **Last modified:** 2026-02-11
+> **ISO Reference:** A.6.1, A.6.2, A.6.5, A.6.6
+> **Last modified:** 2026-02-20
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -44,6 +44,22 @@ Upon completion, the line manager and HR confirm all steps are done. The complet
 
 Screening and background verification requirements are defined in the employment terms (addresses A.6.1). The scope of screening depends on the role's access to sensitive information.
 
+## Offboarding Reference
+
+The following steps are completed when an employee or external worker leaves the organization (addresses A.6.5).
+
+| # | Task | Responsible | Evidence |
+|---|---|---|---|
+| 1 | Revoke all logical access (accounts, VPN, cloud services) | [IT / system administrator] | Access deprovisioning log |
+| 2 | Collect IT equipment and employee badge | [IT / facility management] | Equipment return form |
+| 3 | Transfer knowledge and handover of responsibilities | Line manager | Handover documentation |
+| 4 | Remove physical access rights | [Facility management / HR] | Access deprovisioning record |
+| 5 | Update distribution lists and shared mailboxes | [IT / system administrator] | Configuration change log |
+| 6 | Remind departing employee of ongoing confidentiality obligations (NDA) | HR | NDA acknowledgement on file |
+| 7 | Archive user data and close accounts after retention period | [IT / system administrator] | Account closure record |
+
+The line manager and HR confirm all offboarding steps are completed. The completed checklist is stored as evidence in the employee file.
+
 ## See also
 
 - CB_AWR_01-Awareness-Fundamentals — Awareness training content
@@ -53,6 +69,7 @@ Screening and background verification requirements are defined in the employment
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.006 | 2026-02-20 | Claude (AI) | Backport: +Offboarding Reference section (A.6.5), +ISO ref A.6.5 |
 | 00.01.005 | 2026-02-11 | CISO | Added see-also cross-references |
 | 00.01.004 | 2026-02-11 | CISO | Populated summary and onboarding table with checklist steps |
 | 00.01.003 | 2026-02-09 | CISO | Aligned role terminology |

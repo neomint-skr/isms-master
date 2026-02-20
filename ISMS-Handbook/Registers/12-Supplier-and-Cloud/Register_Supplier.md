@@ -1,5 +1,5 @@
 > **Document ID:** HB_REG_SUP_01-Supplier-Register
-> **Version:** 00.01.008
+> **Version:** 00.01.009
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** A.5.19-5.23
@@ -27,9 +27,9 @@ Supplier assessment is governed through CB_PRC_06 (Supplier Management) and alig
 
 ## Suppliers
 
-| ID | Name | Service description | Tier | Personal data | Data classification | Contract status | Agreement date | Renewal date | Responsible |
-|---|---|---|---|---|---|---|---|---|---|
-| [SUP-001] | [Supplier name] | [Service description] | [1-Critical/2-Important/3-Standard] | [Yes/No] | [Confidential/Internal/Public] | [Active/Pending/Terminated] | [YYYY-MM-DD] | [YYYY-MM-DD] | [Domain responsible] |
+| ID | Name | Service description | Category | Tier | Personal data | Data classification | Contract status | Agreement date | Renewal date | Responsible |
+|---|---|---|---|---|---|---|---|---|---|---|
+| [SUP-001] | [Supplier name] | [Service description] | [R&D/Operations/G&A/...] | [1-Critical/2-Important/3-Standard] | [Yes/No] | [Confidential/Internal/Public] | [Active/Pending/Terminated] | [YYYY-MM-DD] | [YYYY-MM-DD] | [Domain responsible] |
 
 **Tier classification:** Per CB_POL_L2_05, suppliers are categorized into three tiers: 1-Critical (processing personal data, financial data, or business-critical information), 2-Important (limited personal data processing or business support functions), 3-Standard (no sensitive data processing).
 
@@ -45,9 +45,9 @@ Supplier assessment is governed through CB_PRC_06 (Supplier Management) and alig
 
 ## Assessment Status
 
-| Supplier/Service ID | Assessment date | Method | Result | Findings | Next assessment | Assessor |
-|---|---|---|---|---|---|---|
-| [SUP-001/CLD-001] | [YYYY-MM-DD] | [Questionnaire/Certification review/Audit/Self-declaration] | [Passed/Conditional/Failed] | [Summary of findings or —] | [YYYY-MM-DD] | [Assessor name/role] |
+| Supplier/Service ID | Supplier | Certification | Valid until | Assessment date | Method | Result | Findings | Next assessment | Assessor |
+|---|---|---|---|---|---|---|---|---|---|
+| [SUP-001/CLD-001] | [Supplier/service name] | [ISO 27001/SOC 2/None/...] | [YYYY-MM-DD or —] | [YYYY-MM-DD] | [Questionnaire/Certification review/Audit/Self-declaration] | [Passed/Conditional/Failed] | [Summary of findings or —] | [YYYY-MM-DD] | [Assessor name/role] |
 
 **Assessment method:** Questionnaire (standardized security questionnaire), Certification review (evaluation of existing certifications such as ISO 27001, SOC 2), Audit (on-site or remote audit), Self-declaration (supplier-provided security statement).
 
@@ -65,6 +65,7 @@ Supplier assessment is governed through CB_PRC_06 (Supplier Management) and alig
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.009 | 2026-02-20 | Claude (AI) | Backport: +Supplier/Certification/Valid until in Assessment Status, +Category in Suppliers table |
 | 00.01.008 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.007 | 2026-02-11 | Claude (AI) | Register renumbered for information-flow order (formerly no. 04) |
 | 00.01.006 | 2026-02-10 | Claude (AI) | Remove Responsibilities section; roles consolidated in CLS 5.3 |

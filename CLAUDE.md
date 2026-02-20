@@ -84,6 +84,8 @@ Every content document (with metadata block) follows this layout:
 
 Excluded: REF extracts (no metadata block), TPL templates (fill-in documents; exceptions: TPL_01, TPL_02, TPL_17, TPL_18 are Markdown), and Records (evidence files in Registers/ and Audit/*/Records/ — no metadata block).
 
+**Register scalability:** Registers with >100 entries MAY use a Risk Overview summary table + severity-based H2 sections (Critical/High/Medium/Low) instead of a single flat table.
+
 ### Objective and Scope (Layout)
 
 Every `## Objective and Scope` section follows this layout:
