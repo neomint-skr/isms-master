@@ -1,5 +1,5 @@
 > **Document ID:** CB_FAQ
-> **Version:** 00.01.006
+> **Version:** 00.01.007
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 7.3, 7.4
@@ -45,7 +45,7 @@ Only if approved by [Organization]. Personal devices must meet security requirem
 
 ### Who is the CISO and what do they do?
 
-The CISO is responsible for information security strategy and policy. They advise management and coordinate all security measures. They are your contact for policy questions. Contact: [Name, email].
+The CISO is responsible for information security strategy and policy. They advise management and coordinate all security measures. They are your contact for policy questions. Contact: [contact channel].
 
 ### Where do I report what?
 
@@ -86,6 +86,7 @@ No, use only corporate email for work communication. Private email lacks securit
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.007 | 2026-02-20 | Claude (AI) | Replace unregistered `[Name, email]` with canonical `[contact channel]` |
 | 00.01.006 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.01.005 | 2026-02-10 | CISO | Populated body sections |
 | 00.01.004 | 2026-02-09 | CISO | Aligned role terminology |
