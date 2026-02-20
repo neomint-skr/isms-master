@@ -1,9 +1,9 @@
 > **Document ID:** CB_POL_L2_13-Incident-and-Threat
-> **Version:** 00.01.004
+> **Version:** 00.01.005
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.24-5.28, A.5.7
-> **Last modified:** 2026-02-18
+> **Last modified:** 2026-02-20
 > **Approval:** —
 > **Review cycle:** Annual
 
@@ -80,13 +80,13 @@ The Chief Information Security Officer analyzes collected information and uses t
 - CB_Emergency-Card — Immediate-action guidance for employees
 - CB_POL_L2_10-Human-Resources — Reporting obligation (A.6.8)
 - CB_POL_L2_11-Risk-Management — Risk criteria and threat context
-- CB_TPL_09-Datenschutzvorfall-Meldeformular — Data protection incident notification form
 - CB_TPL_15-Threat-Intelligence-Report — Threat intelligence report template
 
 ## Changelog
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.005 | 2026-02-20 | Claude (AI) | Remove dangling CB_TPL_09 reference (template not in master) |
 | 00.01.004 | 2026-02-18 | CISO | Reverted Operationalized by to — (PRC is not L3; convention requires L3 IDs only) |
 | 00.01.003 | 2026-02-18 | CISO | Added CB_PRC_01 to Operationalized by (PRC_01 is the primary operationalization; traceability fix) |
 | 00.01.002 | 2026-02-18 | CISO | Added P5 to Policy reference (incidents and lessons-learned drive continual improvement — aligns with L1 allocation matrix) |
