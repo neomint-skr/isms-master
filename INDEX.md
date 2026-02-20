@@ -187,7 +187,7 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 
 ### A.5 Organizational Controls (37)
 
-| # | Doc | Secondary |
+| # | Design | Secondary |
 |---|---|---|
 | 5.1 | CB_POL_L1_01 | HB_CLS_5.2 |
 | 5.2 | HB_CLS_5.3 | CB_POL_L2_07 |
@@ -229,7 +229,7 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 
 ### A.6 People Controls (8)
 
-| # | Doc | Secondary |
+| # | Design | Secondary |
 |---|---|---|
 | 6.1 | CB_POL_L2_10 | |
 | 6.2 | CB_POL_L2_10 | CB_AWR_02 |
@@ -242,7 +242,7 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 
 ### A.7 Physical Controls (14)
 
-| # | Doc | Secondary |
+| # | Design | Secondary |
 |---|---|---|
 | 7.1 | CB_POL_L2_09 | |
 | 7.2 | CB_POL_L2_09 | |
@@ -261,7 +261,7 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 
 ### A.8 Technological Controls (34)
 
-| # | Doc | Secondary |
+| # | Design | Secondary |
 |---|---|---|
 | 8.1 | CB_POL_L2_03 | |
 | 8.2 | CB_POL_L2_01 | CB_POL_L3_02 |

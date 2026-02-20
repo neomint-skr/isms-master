@@ -1,5 +1,5 @@
 > **Document ID:** CB_POL_L2_11-Risk-Management
-> **Version:** 00.01.026
+> **Version:** 00.01.027
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1, 8.2, 8.3
@@ -174,7 +174,7 @@ The results of the protection requirements analysis determine the further course
 
 Assets assessed with Normal protection requirements across all core values (C, I, A) do not require an individual risk analysis. Instead, they are protected by the baseline control set defined in the security measures register (HB_REG_SM). A security measure qualifies as baseline when its `Baseline` flag is set to `Yes` in HB_REG_SM.
 
-The baseline control set corresponds to the IT-Grundschutz basic protection level and covers the minimum security requirements for standard operations. The Statement of Applicability (HB_REG_SOA) documents the applicability basis for each control as `baseline`, `risk treatment`, or `legal-contractual`.
+The baseline control set corresponds to the IT-Grundschutz basic protection level and covers the minimum security requirements for standard operations. The Statement of Applicability (HB_REG_SOA) documents the applicability origin for each control in structured format: `BL:<Doc-ID>` (baseline control set for Normal PR), `RT:<Doc-ID> (SC-xxxx)` (derived from individual risk analysis), or `LC:<Doc-ID>` (required by legal or contractual obligations).
 
 Baseline controls are reviewed annually as part of the management review cycle. The exception management process (CB_PRC_14) governs deviations from baseline requirements.
 
@@ -452,6 +452,7 @@ The operational exception management workflow is defined in CB_PRC_14-Exception-
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.027 | 2026-02-20 | Claude (AI) | SoA terminology: applicability basis→origin with structured format (BL/RT/LC) |
 | 00.01.026 | 2026-02-20 | Claude (AI) | Replace hardcoded parameter values with placeholders |
 | 00.01.025 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.01.024 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |

@@ -65,7 +65,7 @@ Verify that the SoA (ISMS-Handbook/Registers/09-Statement-of-Applicability/Regis
 **Steps:**
 - Count controls in the SoA (should be 93, A.5.1 through A.8.34)
 - Verify no control is missing (gap in numbering)
-- Extract all Doc values from the SoA (column 6 of each control row, format `| # | Control | Appl | Justification | Status | Doc | Evidence |`)
+- Extract all Design values from the SoA (column 8 of each control row, format `| # | Control | Appl | Origin | Justification | Status | Gap | Design | Evidence Source |`)
 - For each Doc value (except `—`): verify that a file exists whose document ID starts with this value
   - Method: Grep in INDEX.md for the short-form ID value as prefix of a document ID
   - Example: `CB_POL_L2_07` must resolve to `CB_POL_L2_07-...` in INDEX.md
