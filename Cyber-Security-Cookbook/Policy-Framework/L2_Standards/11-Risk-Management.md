@@ -105,17 +105,16 @@ The method, rubrics and acceptance criteria MUST be reviewed per the defined rev
 
 ## See also
 
-- CB_POL_L1_01-Policy — Principle P3 (Risk orientation)
 - CB_PRC_07-Risk-Management — Operational risk management process
-- HB_REG_RL_01-Risk-Log — Unified risk log (SSOT for risk entries)
-- HB_REG_RLB_01-Risk-Library — Risk criteria, rubrics, scenario library
+- HB_REG_RL_01-Risk-Log — Risk entries and treatment view
+- HB_REG_RLB_01-Risk-Library — Assessment logic (matrix, rubrics, scenarios)
 - HB_CLS_6.1-Risks-and-Opportunities — ISO clause definition
-- HB_CLS_8.2-Risk-Assessment — ISO clause definition
-- HB_CLS_8.3-Risk-Treatment — ISO clause definition
+- HB_CLS_8.2-Risk-Assessment — Operational risk assessment definition
+- HB_CLS_8.3-Risk-Treatment — Operational risk treatment definition
 
 ## Changelog
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 00.01.029 | 2026-02-21 | Claude (AI) | Add traceability fields, See also, Changelog |
-| 00.01.028 | 2026-02-21 | Claude (AI) | LRM-44 rewrite: deterministic 4x4, scenario-based, unified Risk Log |
+| 00.01.029 | 2026-02-21 | Claude (AI) | Add traceability fields (Policy reference, Operationalized by), See also, Changelog |
+| 00.01.028 | 2026-02-21 | Claude (AI) | LRM-44 migration: complete rewrite to lean risk method |

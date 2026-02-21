@@ -76,7 +76,7 @@ The Reduction fields are used for deterministic net risk calculation as defined 
 
 - CB_POL_L2_11-Risk-Management — Normative basis
 - CB_PRC_07-Risk-Management — Operational process
-- HB_REG_RL_01-Risk-Log — Scenario-based risk entries and treatment assignments
+- HB_REG_RL_01-Risk-Log — Scenario-based risk entries and treatment view
 - HB_REG_SOA_01-Statement-of-Applicability — Control applicability
 
 ## Changelog
