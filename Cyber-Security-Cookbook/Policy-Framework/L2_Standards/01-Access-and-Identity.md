@@ -1,9 +1,9 @@
 > **Document ID:** CB_POL_L2_01-Access-and-Identity
-> **Version:** 00.01.012
+> **Version:** 00.01.013
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.15-5.18, A.8.2-8.3, A.8.5, A.8.18
-> **Last modified:** 2026-02-20
+> **Last modified:** 2026-02-21
 > **Approval:** —
 > **Review cycle:** [review cycle, e.g. Annual]
 
@@ -50,7 +50,7 @@ Identities must be managed so that every person or system entity is uniquely ide
 
 **Individual accountability:** Each identity must be uniquely assigned to a single person. Shared use of accounts is prohibited unless a business necessity exists and specific approval from the asset owner has been obtained. Password sharing is permitted only under documented exception (see CB_PRC_14-Exception-Management).
 
-**Non-human entities:** Identities for services, systems, or automations require separate approval and annual recertification. Passwords for such accounts must be rotated automatically or managed through [password manager, e.g., Bitwarden/1Password].
+**Non-human entities:** Identities for services, systems, or automations require separate approval and annual recertification. Passwords for such accounts must be rotated automatically or managed through [password manager, e.g. Bitwarden/1Password].
 
 **Deactivation:** Identities must be deactivated immediately when no longer required — in particular upon termination, role change, or deletion of the associated entity. Recurring reviews are part of the offboarding process.
 
@@ -70,9 +70,9 @@ Multi-factor authentication (MFA) is mandatory for access to highly sensitive in
 
 **Remote access:** All access from outside the corporate network requires MFA.
 
-**Session management:** Inactive sessions must be terminated automatically after [timeout period, e.g., 15/30 min.]. Upon successful login, the user must be shown details of previous login attempts.
+**Session management:** Inactive sessions must be terminated automatically after [session timeout, e.g. 15 min.]. Upon successful login, the user must be shown details of previous login attempts.
 
-**Brute-force protection:** Authentication systems must implement controls against brute-force attacks (addresses A.8.5). Measures include account lockout after [number, e.g. 5] consecutive failed attempts, rate limiting, progressive delays, and CAPTCHA mechanisms. Lockout events must be logged and reviewed as part of security monitoring [REF:DG24-IAM, Kap. 2.3].
+**Brute-force protection:** Authentication systems must implement controls against brute-force attacks (addresses A.8.5). Measures include account lockout after [lockout threshold, e.g. 5 attempts] consecutive failed attempts, rate limiting, progressive delays, and CAPTCHA mechanisms. Lockout events must be logged and reviewed as part of security monitoring [REF:DG24-IAM, Kap. 2.3].
 
 **Passwords:** Passwords must be created, stored, and managed securely (addresses A.5.17). Complexity and minimum length requirements must be defined. Commonly used and easily guessable passwords are prohibited. Passwords must be changed immediately upon suspicion of compromise; routine password changes without concrete cause are not required. Reuse of previous passwords must be prevented. Passwords may only be stored in the approved password vault. Concrete values (minimum length, history, complexity rules) are defined in CB_POL_L3_01-User-Handbook.
 
@@ -96,7 +96,7 @@ Privileged access rights must be granted and monitored in a controlled manner to
 
 **Logging:** All activities with privileged rights must be logged and monitored for anomalies.
 
-**Recertification:** Privileged rights are to be reviewed [annually | semi-annually — depending on risk classification], particularly after role changes or terminations.
+**Recertification:** Privileged rights are to be reviewed [annual | semi-annual — depending on risk classification], particularly after role changes or terminations.
 
 ## Source Code Access
 
@@ -144,6 +144,7 @@ Segregation of duties must be ensured: approval and technical implementation of 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.013 | 2026-02-21 | Claude (AI) | Normalize 4 placeholders to register canonical forms (session timeout, lockout threshold, password manager, risk-based review) |
 | 00.01.012 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.01.011 | 2026-02-11 | Claude (AI) | Added password sharing exception reference to CB_PRC_14 (merge from retorio) |
 | 00.01.010 | 2026-02-11 | CISO | Added: temporary passwords, brute-force protection, password hashing, generic admin ID prohibition, identity re-verification (gap closure batch-06) |

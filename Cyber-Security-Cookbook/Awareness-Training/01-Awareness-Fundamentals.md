@@ -1,9 +1,9 @@
 > **Document ID:** CB_AWR_01-Awareness-Fundamentals
-> **Version:** 00.01.008
+> **Version:** 00.01.009
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** A.5.17, A.6.3, A.6.8
-> **Last modified:** 2026-02-20
+> **Last modified:** 2026-02-21
 > **Approval:** —
 > **Review cycle:** [review cycle, e.g. Annual]
 
@@ -84,7 +84,7 @@ Strong passwords and multi-factor authentication protect your accounts (addresse
 - Use at least [12 | 16 characters — depending on risk classification].
 - Combine upper case, lower case, numbers, and special characters.
 - Never reuse passwords across different accounts.
-- Use a [password manager, e.g. Bitwarden / 1Password] to generate and store passwords.
+- Use a [password manager, e.g. Bitwarden/1Password] to generate and store passwords.
 - Change your password immediately if a breach is suspected.
 
 ### Multi-factor authentication (MFA)
@@ -142,6 +142,7 @@ Every employee must report security incidents without delay (addresses A.6.8). F
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.009 | 2026-02-21 | Claude (AI) | Normalize password manager placeholder to canonical form |
 | 00.01.008 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.01.007 | 2026-02-17 | Claude (AI) | Summary: "information assets" → "business processes and information" |
 | 00.01.006 | 2026-02-11 | CISO | Added see-also cross-references |
