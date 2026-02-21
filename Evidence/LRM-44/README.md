@@ -63,6 +63,20 @@ node scripts/validators/pr-model-validator.mjs             # 10 rules
 | 15 | CHANGELOG_EVIDENCE_CLOSURE.md | Changes in this pass |
 | 16 | evidence-manifest.sha256 | SHA-256 hashes of all reports |
 
+## Integrity
+
+| Item | Value |
+|---|---|
+| ZIP archive | `.temp/lrm44-evidence-closure-execution/lrm44-evidence-pack.zip` |
+| SHA-256 | `b9bbc67d411a6e68f14dfe9089760810127f80a60a349ed941c51415ce8569cd` |
+| Manifest | `.temp/lrm44-evidence-closure-execution/evidence-manifest.sha256` |
+
+```bash
+# Verify ZIP integrity
+sha256sum .temp/lrm44-evidence-closure-execution/lrm44-evidence-pack.zip
+# Expected: b9bbc67d411a6e68f14dfe9089760810127f80a60a349ed941c51415ce8569cd
+```
+
 ## Metadata
 
 - **Date:** 2026-02-21
