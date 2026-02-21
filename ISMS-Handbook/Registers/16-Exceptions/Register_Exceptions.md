@@ -1,9 +1,9 @@
 > **Document ID:** HB_REG_EXC_01-Exception-Index
-> **Version:** 00.01.004
+> **Version:** 00.01.005
 > **Classification:** Confidential
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1
-> **Last modified:** 2026-02-20
+> **Last modified:** 2026-02-21
 > **Approval:** —
 > **Review cycle:** [review cycle, e.g. Annual]
 
@@ -19,7 +19,7 @@ Policy exceptions that are not centrally tracked create hidden risk exposure and
 
 **Objective:** Exceptions to IS requirements must be tracked centrally to maintain visibility and control. Without a register, deviations accumulate unmonitored and cannot be presented as audit evidence.
 
-This register indexes all exception requests processed through CB_PRC_14 (Exception Management). It records the request metadata, decision status, and expiry information. Approved exceptions are additionally reflected in the risk register (HB_REG_RR) as risk type "Exception."
+This register indexes all exception requests processed through CB_PRC_14 (Exception Management). It records the request metadata, decision status, and expiry information. Approved exceptions are additionally reflected in the Risk Log (HB_REG_RL) as risk type "Exception."
 
 The register is maintained by the Chief Information Security Officer and reviewed before each management review cycle.
 
@@ -51,7 +51,7 @@ The register is maintained by the Chief Information Security Officer and reviewe
 | Version | Date | Author | Change |
 |---|---|---|---|
 | 00.01.004 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
-| 00.01.003 | 2026-02-20 | Claude (AI) | Fix missed shorthand/full register references HB_REG_05 → HB_REG_RR |
+| 00.01.003 | 2026-02-20 | Claude (AI) | Fix missed shorthand/full register references HB_REG_05 → HB_REG_RL |
 | 00.01.002 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
 | 00.01.001 | 2026-02-11 | Claude | Renumber Exception Management PRC_13→PRC_14, TPL_19→TPL_20 |
 | 00.01.000 | 2026-02-11 | CISO | Initial version |

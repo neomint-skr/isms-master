@@ -1,9 +1,9 @@
 > **Document ID:** HB_REG_BCM_01-BCM-Register
-> **Version:** 00.01.009
+> **Version:** 00.01.010
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** A.5.29-5.30
-> **Last modified:** 2026-02-20
+> **Last modified:** 2026-02-21
 > **Approval:** —
 > **Review cycle:** [review cycle, e.g. Annual]
 
