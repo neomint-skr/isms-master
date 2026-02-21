@@ -1,5 +1,5 @@
 > **Document ID:** CB_PRC_11-Performance-Monitoring
-> **Version:** 00.01.012
+> **Version:** 00.01.013
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 9.1, 6.2
@@ -37,7 +37,7 @@ The following table lists the initial KPI catalogue. Additional KPIs are added a
 | KPI-02 | Audit finding close-out rate | [target value, e.g. ≥ 90 %] of findings closed within deadline | HB_REG_NC finding status (addresses A.5.35) | [frequency, e.g. Quarterly] | CISO |
 | KPI-03 | Awareness training completion | [target value, e.g. ≥ 95 %] of employees trained within cycle | [LMS / training records] (addresses A.6.3) | [Annually \| semi-annually — depending on training cycle] | [IS-Coordinator] |
 | KPI-04 | Patch compliance | [target value, e.g. ≥ 95 %] of critical patches applied within SLA | [Vulnerability scanner / patch management tool] (addresses A.8.8) | [security cadence, e.g. Monthly] | [IT operations lead] |
-| KPI-05 | Risk treatment plan progress | [target value, e.g. ≥ 80 %] of treatment actions on schedule | HB_REG_SOA risk register (addresses A.5.7) | [frequency, e.g. Quarterly] | CISO |
+| KPI-05 | Risk Log (treatment view) progress | [target value, e.g. ≥ 80 %] of treatment actions on schedule | HB_REG_SOA Risk Log (addresses A.5.7) | [frequency, e.g. Quarterly] | CISO |
 | KPI-06 | Access review completion | [target value, e.g. 100 %] of scheduled reviews completed on time | Access review log (addresses A.5.18) | [Annually \| semi-annually] | [IT operations lead] |
 
 Each KPI definition includes the measurement method ensuring comparable and reproducible results as required by Clause 9.1 b. Methods are selected to produce quantitative data wherever possible. Where qualitative assessment is necessary, a documented rating scale is applied.
@@ -52,7 +52,7 @@ Data is collected by the responsible person indicated in the KPI catalogue. The 
 | Audit and findings | Internal audit reports, external audit reports | HB_REG_NC, audit programme records |
 | Training records | Completion certificates, quiz results | Export from [LMS / HR system] |
 | Technical tools | Vulnerability scans, patch reports, SIEM alerts | Automated export from [tool stack] |
-| Risk register | Treatment action status, residual risk levels | HB_REG_SOA |
+| Risk Log | Treatment action status, residual risk levels | HB_REG_SOA |
 | Access management | Access review logs, provisioning records | Export from [IAM system / directory service] |
 
 **Frequency.** Each KPI specifies its collection frequency in the catalogue above. At minimum, all KPIs are collected once per quarter to ensure timely input for the management review (addresses A.5.36).

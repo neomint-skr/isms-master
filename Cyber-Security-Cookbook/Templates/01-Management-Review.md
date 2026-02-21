@@ -24,7 +24,7 @@
 | d.3 | Trends: audit results | |
 | d.4 | Trends: achievement of IS objectives | |
 | e | Feedback from interested parties | |
-| f | Results of risk assessment / status of risk treatment plan | |
+| f | Results of risk assessment / status of Risk Log (treatment view) | |
 | g | Opportunities for continual improvement | |
 
 ## Outputs and decisions (9.3.3)

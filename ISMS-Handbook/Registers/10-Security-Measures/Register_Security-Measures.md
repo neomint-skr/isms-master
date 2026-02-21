@@ -1,9 +1,9 @@
 > **Document ID:** HB_REG_SM_01-Security-Measures-Register
-> **Version:** 00.01.004
+> **Version:** 00.01.005
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** A.5-A.8, Clause 6.1.3
-> **Last modified:** 2026-02-20
+> **Last modified:** 2026-02-21
 > **Approval:** —
 > **Review cycle:** [review cycle, e.g. Annual]
 
@@ -13,17 +13,17 @@
 
 ## Summary
 
-Effective risk treatment requires a structured inventory of all security measures with clear ownership, implementation status and evidence references. This register documents all organizational, people, physical and technological controls within the ISMS scope, structured by Annex A categories, and tracks their type, status and effectiveness. It provides the authoritative reference for SM-IDs used in the risk register, risk treatment plan and statement of applicability. Without a maintained security measures register, measure coverage remains unverifiable, gap analysis lacks a factual basis, and auditors cannot trace risk treatment decisions to implemented controls.
+Effective risk treatment requires a structured inventory of all security measures with clear ownership, implementation status and evidence references. This register documents all organizational, people, physical and technological controls within the ISMS scope, structured by Annex A categories, and tracks their type, status and effectiveness. It provides the authoritative reference for SM-IDs used in the Risk Log, Risk Log (treatment view) and statement of applicability. Without a maintained security measures register, measure coverage remains unverifiable, gap analysis lacks a factual basis, and auditors cannot trace risk treatment decisions to implemented controls.
 
 ## Objective and Scope
 
 **Standard reference:** CB_POL_L2_11-Risk-Management
 
-**Objective:** Risk treatment decisions documented in the risk treatment plan require traceable implementation through concrete security measures. Without a central register, there is no authoritative source linking treatment intentions to operational controls.
+**Objective:** Risk treatment decisions documented in the Risk Log (treatment view) require traceable implementation through concrete security measures. Without a central register, there is no authoritative source linking treatment intentions to operational controls.
 
 The register assigns each security measure a unique SM-ID, maps it to Annex A controls, and tracks implementation status from planning through verification. It provides the factual basis for gap analysis, effectiveness reviews and audit evidence.
 
-Measure definitions are derived from the risk treatment plan (HB_REG_RT) and aligned with the statement of applicability (HB_REG_SOA). Effectiveness reviews feed back into the risk management process (CB_PRC_07) and are reported in management reviews (CB_PRC_09).
+Measure definitions are derived from the Risk Log (treatment view) (HB_REG_RL) and aligned with the statement of applicability (HB_REG_SOA). Effectiveness reviews feed back into the risk management process (CB_PRC_07) and are reported in management reviews (CB_PRC_09).
 
 **Scope:** All security measures within the ISMS scope. Target audience: CISO (measure tracking), risk owners (implementation), auditors (evidence), top management (effectiveness oversight).
 
@@ -34,13 +34,13 @@ Measure definitions are derived from the risk treatment plan (HB_REG_RT) and ali
 | SM-ID | Unique measure identifier (SM-####) |
 | Type | Preventive (reduces likelihood), detective (enables detection), or corrective (reduces impact after occurrence) |
 | Status | Planned (identified, not yet started), In implementation (deployment active), Implemented (operational), Verified (effectiveness confirmed through review) |
-| Gap | Scenario in the risk register with no or insufficient measure coverage — requires treatment planning |
+| Gap | Scenario in the Risk Log with no or insufficient measure coverage — requires treatment planning |
 | Baseline | `Yes` = measure is part of the baseline control set for assets with Normal PR; `No` = risk-treatment-specific |
 | Mitigates | Risk scenario IDs (SC-xxx) this measure addresses |
 | Reduction_L | Likelihood reduction (integer 0–3) applied when this measure is effective |
 | Reduction_Impact | Impact reduction (integer 0–3) applied when this measure is effective |
 
-The Reduction fields are used for deterministic net risk calculation as defined in CB_POL_L2_11 (Deterministic Net Risk Reduction). The Baseline flag determines whether a measure is included in the baseline control set for assets with Normal protection requirements. Mitigates links measures to specific risk scenarios in HB_REG_RR.
+The Reduction fields are used for deterministic net risk calculation as defined in CB_POL_L2_11 (Deterministic Net Risk Reduction). The Baseline flag determines whether a measure is included in the baseline control set for assets with Normal protection requirements. Mitigates links measures to specific risk scenarios in HB_REG_RL.
 
 ## Organizational Controls (A.5)
 
@@ -76,8 +76,7 @@ The Reduction fields are used for deterministic net risk calculation as defined 
 
 - CB_POL_L2_11-Risk-Management — Normative basis
 - CB_PRC_07-Risk-Management — Operational process
-- HB_REG_RR_01-Risk-Register — Scenario-based risk entries
-- HB_REG_RT_01-Risk-Treatment-Plan — Risk-to-measure assignment
+- HB_REG_RL_01-Risk-Log — Scenario-based risk entries and treatment assignments
 - HB_REG_SOA_01-Statement-of-Applicability — Control applicability
 
 ## Changelog

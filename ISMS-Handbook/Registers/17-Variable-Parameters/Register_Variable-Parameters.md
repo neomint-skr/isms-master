@@ -1,5 +1,5 @@
 > **Document ID:** HB_REG_VAR_01-Variable-Parameters
-> **Version:** 00.01.004
+> **Version:** 00.01.005
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** ISO 27001:2022 Clause 7.5
@@ -113,7 +113,7 @@ The register is referenced by all ISMS documents that contain organization param
 | GOV.BackupFrequency | Backup execution schedule | Per BIA and data criticality | Daily | — | CISO | Management decision | CB/TPL_16:L111 (1 file, 2x) |
 | GOV.SemiAnnual | Explicit semi-annual frequency | Use for higher-risk items | Semi-annually | — | CISO | Management decision | HB/REG_BCM (1 file, 1x) |
 | GOV.RiskBasedReviewCycle | Risk-based review frequency | Determine per risk classification | Annual for standard, semi-annual for high-risk | — | CISO | Management decision | CB/L2_05 (1 file, 1x) |
-| GOV.RiskLevelReviewCycle | Risk-level-based review frequency | Align with risk register ratings | Semi-annual for critical suppliers | — | CISO | Management decision | CB/L3_07 (1 file, 1x) |
+| GOV.RiskLevelReviewCycle | Risk-level-based review frequency | Align with Risk Log ratings | Semi-annual for critical suppliers | — | CISO | Management decision | CB/L3_07 (1 file, 1x) |
 | GOV.ConfigurableInterval | Configurable review interval | Document rationale for chosen interval | Annually | — | CISO | Management decision | CB/L2_07 (1 file, 1x) |
 | GOV.EscalationThreshold | Escalation threshold count | Define per KPI governance | 2 consecutive periods | — | CISO | Management decision | CB/PRC_11 (1 file, 1x) |
 | GOV.CriticalEscalationThreshold | Critical escalation threshold | Higher than standard threshold | 3+ consecutive periods | — | CISO | Management decision | CB/PRC_11 (1 file, 1x) |

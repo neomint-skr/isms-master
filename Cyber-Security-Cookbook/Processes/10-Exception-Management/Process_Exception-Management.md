@@ -1,9 +1,9 @@
 > **Document ID:** CB_PRC_14-Exception-Management
-> **Version:** 00.01.006
+> **Version:** 00.01.007
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1
-> **Last modified:** 2026-02-20
+> **Last modified:** 2026-02-21
 > **Approval:** —
 > **Review cycle:** [review cycle, e.g. Annual]
 
@@ -19,9 +19,9 @@ Policy deviations that are not formally approved create uncontrolled risk exposu
 
 **Objective:** Operational reality sometimes requires temporary deviations from IS requirements. Without a formal process, such deviations remain undocumented, unassessed, and uncontrolled — creating blind spots in the risk landscape.
 
-This process defines the lifecycle of exceptions from request through approval or rejection to periodic review and expiry. It links each approved exception to the risk register and enforces remediation deadlines for rejected requests.
+This process defines the lifecycle of exceptions from request through approval or rejection to periodic review and expiry. It links each approved exception to the Risk Log and enforces remediation deadlines for rejected requests.
 
-The process operationalizes the exception management requirements from CB_POL_L2_11-Risk-Management (Exception Management section). Exception records are tracked in HB_REG_EXC_01 (Exception Index) and approved exceptions are reflected in HB_REG_RR (Risk Register).
+The process operationalizes the exception management requirements from CB_POL_L2_11-Risk-Management (Exception Management section). Exception records are tracked in HB_REG_EXC_01 (Exception Index) and approved exceptions are reflected in HB_REG_RL (Risk Log).
 
 **Scope:** All planned deviations from IS policies, standards, or Annex A controls within the ISMS scope. Triggers: a requestor identifies that compliance with a specific requirement is not feasible within the current constraints.
 
@@ -60,7 +60,7 @@ The Chief Information Security Officer evaluates the risk impact of the requeste
 
 - Updates the exception register status to "Approved"
 - Records the conditions, expiry date, and approver in the exception record
-- Creates a corresponding entry in the risk register (HB_REG_RR) with risk type "Exception"
+- Creates a corresponding entry in the Risk Log (HB_REG_RL) with risk type "Exception"
 - Notifies the requestor of the approval and conditions
 
 **Rejected:** The Chief Information Security Officer:
@@ -90,7 +90,7 @@ Expired exceptions without renewal trigger verification that compliance has been
 - CB_POL_L2_11-Risk-Management — Exception management requirements (normative)
 - CB_TPL_20-Exception-Request — Exception request template
 - HB_REG_EXC_01-Exception-Index — Exception register
-- HB_REG_RR_01-Risk-Register — Risk entries for approved exceptions
+- HB_REG_RL_01-Risk-Log — Risk entries for approved exceptions
 - CB_PRC_07-Risk-Management — Risk assessment and treatment process
 - HB_CLS_5.3-Roles-and-Responsibilities — RACI matrix
 

@@ -1,9 +1,9 @@
 > **Document ID:** HB_REG_BCM_01-BCM-Register
-> **Version:** 00.01.009
+> **Version:** 00.01.010
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** A.5.29-5.30
-> **Last modified:** 2026-02-20
+> **Last modified:** 2026-02-21
 > **Approval:** —
 > **Review cycle:** [review cycle, e.g. Annual]
 
@@ -75,7 +75,7 @@ The following table tracks IT continuity plans required by CB_POL_L2_06-Business
 - CB_POL_L3_05-Data-Backup — Backup strategy aligned with tier model
 - CB_PRC_03-Backup-and-Recovery — Operational backup and recovery process
 - HB_REG_AM_01-Asset-Register — Asset inventory
-- HB_REG_RR_01-Risk-Register — Risk assessment input
+- HB_REG_RL_01-Risk-Log — Risk assessment input
 
 ## Changelog
 

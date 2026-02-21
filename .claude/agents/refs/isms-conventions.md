@@ -84,7 +84,7 @@ No technical prefix (Policy:, Process: etc.), no clause numbers in H1.
 |---|---|---|
 | CLS | Topic only | `# Risks and Opportunities` |
 | PRC | [Topic] Process | `# Incident Management Process` |
-| REG | Type embedded in word | `# Risk Register` |
+| REG | Type embedded in word | `# Risk Log` |
 | L1 | Information Security Policy | `# Information Security Policy` |
 | L2 | [Topic] Standard | `# Access and Identity Standard` |
 | L3 | [Topic] Handbook/Concept | `# User Handbook` |

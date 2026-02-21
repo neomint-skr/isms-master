@@ -1,13 +1,24 @@
 > **Document ID:** HB_REG_RT_01-Risk-Treatment-Plan
-> **Version:** 00.01.012
+> **Version:** 00.01.013
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** Clause 6.1.3 e
-> **Last modified:** 2026-02-20
+> **Last modified:** 2026-02-21
 > **Approval:** —
 > **Review cycle:** [review cycle, e.g. Annual]
 
 ---
+
+# Deprecated Notice
+
+This document is kept for legacy reference only. The active method is **LRM-44** and the active register is:
+
+- `ISMS-Handbook/Registers/07-Risk-Log/Register_Risk-Log.md`
+
+For treatment planning, use the treatment view of the Risk Log.
+
+---
+
 
 # Risk Treatment Plan
 
