@@ -53,7 +53,7 @@ Privileged access rights are handled restrictively and limited to
 [personnel with privileged access, e.g. IT admins, DevOps]
 (addresses A.8.2). Provisioning follows
 [approval workflow for privileged rights].
-Privileged accounts are reviewed [annually | semi-annually — depending
+Privileged accounts are reviewed [annual | semi-annual — depending
 on risk classification].
 ```
 
