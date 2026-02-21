@@ -155,7 +155,7 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 **18-Supplier-Review.md** -- Supplier review template (certification, SLA, assessment)
 **19-Protection-Requirements-Assessment.md** -- Process protection requirements assessment (SSOT)
 **20-Exception-Request.md** -- Exception request form (justification, risk, compensating controls, expiry)
-**21-Risk-Assessment.md** -- Risk assessment worksheet per asset (threat/vulnerability pairing, risk scoring)
+**21-Risk-Assessment.md** -- Risk assessment worksheet per scope unit (scenario-based, 4x4 scoring)
 **22-Risk-Log.md** -- Risk log entry template (scenario, scoring, treatment, acceptance)
 **23-Scenario-Library.md** -- Scenario library contribution template
 **24-Risk-Workshop-Minutes.md** -- Risk workshop minutes template (attendees, decisions, actions)
@@ -333,6 +333,7 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 | REG_PR | Protection requirements | Registers/04-Protection-Requirements/ |
 | REG_RF | Risk framework | Registers/05-Risk-Framework/ |
 | REG_RLB | Risk library | Registers/05-Risk-Library/ |
+| REG_RL | Risk log | Registers/07-Risk-Log/ |
 | REG_RA | Risk assessments | Registers/06-Risk-Assessments/ |
 | REG_RR | Risk Log | Registers/07-Risk-Log/ |
 | REG_RT | Risk treatment | Registers/07-Risk-Log/ |
