@@ -1,9 +1,9 @@
 > **Document ID:** CB_PRC_09-Management-Review
-> **Version:** 00.01.012
+> **Version:** 00.01.013
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 9.3
-> **Last modified:** 2026-02-20
+> **Last modified:** 2026-02-21
 > **Approval:** —
 > **Review cycle:** [review cycle, e.g. Annual]
 
@@ -49,12 +49,13 @@ The process operationalizes the requirements from HB_CLS_9.3 (Management Review)
 - HB_REG_OBJ_01-IS-Objectives-Register
 - CB_PRC_11-Performance-Monitoring
 - HB_MGT_02-Meeting-Log — Governance meeting log
-- HB_REG_VAR_01-Variable-Parameters — Variable parameters register (client survey questionnaire)
+- HB_REG_VAR_01-Variable-Parameters — Organization Parameters Register (client survey questionnaire)
 
 ## Changelog
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.013 | 2026-02-21 | Claude (AI) | Update HB_REG_VAR_01 cross-reference to Organization Parameters Register |
 | 00.01.012 | 2026-02-20 | Claude (AI) | Add HB_REG_VAR_01 cross-reference to See also (MECE orphan fix) |
 | 00.01.011 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.01.010 | 2026-02-20 | CISO | Reorganized into numbered subfolder; file renamed to Process_ prefix |
