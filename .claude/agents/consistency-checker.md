@@ -140,17 +140,17 @@ Verify the repository is free of runtime artifacts, unexpected file types and or
 - Verify that no empty `.md` files exist (only a metadata block with no content after H1 does not count as empty; completely empty files or whitespace-only files are a finding)
 - Report every finding with file path and category (unexpected type / misplaced PDF / orphaned .gitkeep / root relic / empty file)
 
-### 11. Variable parameter alignment
+### 11. Parameter alignment
 
-Every bracketed placeholder in ISMS documents should correspond to a canonical variable in HB_REG_VAR_01.
+Every bracketed placeholder in ISMS documents should correspond to a canonical parameter in HB_REG_VAR_01 (Organization Parameters Register).
 
 **Steps:**
-- Read HB_REG_VAR_01 and extract all canonical variable names from the Variable column
+- Read HB_REG_VAR_01 and extract all canonical parameter names from the Alias Map (Legacy Placeholder column) and domain tables (Meta Key column)
 - Grep `\[[^\]]+\]` in all `.md` under `Cyber-Security-Cookbook/` and `ISMS-Handbook/`
 - Exclude: changelog entries, metadata blocks, citation keys `[REF:...]`, control references `(addresses A.x.x)`, the register itself, Key tables, and allocation matrices
-- For each placeholder found: check whether it matches a canonical form in the register
+- For each placeholder found: check whether it matches a canonical form in the register's Alias Map
 - Report unregistered placeholders as WARNING
-- Report register variables with 0 document occurrences as INFO (potential orphan)
+- Report register parameters with 0 document occurrences as INFO (potential orphan)
 
 ## Output format
 
@@ -185,7 +185,7 @@ Comparing N filesystem files with INDEX.md...
 | Citation keys | OK/WARNING | [Orphaned keys, missing files, missing citation key lines] |
 | Ref derivative | OK/WARNING | [Deviations ref vs. SSOT] |
 | Repo hygiene | OK/WARNING | [Unexpected files, relics] |
-| Variable alignment | OK/WARNING | [Unregistered placeholders, orphaned variables] |
+| Parameter alignment | OK/WARNING | [Unregistered placeholders, orphaned parameters] |
 ```
 
 If all 11 checks pass, report: "Consistency check passed (11/11)."
