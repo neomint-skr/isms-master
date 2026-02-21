@@ -34,8 +34,8 @@ These items MUST be documented in a certifiable ISMS:
 |---|---|---|
 | 4.3 | ISMS scope | HB_CLS_4.3 |
 | 5.2 | Information security policy | CB_POL_L1_01 |
-| 6.1.2 | Risk assessment process | CB_POL_L2_11, CB_PRC_03 |
-| 6.1.3 | Risk treatment process | CB_PRC_03, HB_REG_RR |
+| 6.1.2 | Risk assessment process | CB_POL_L2_11, CB_PRC_07 |
+| 6.1.3 | Risk treatment process | CB_PRC_07, HB_REG_RR |
 | 6.2 | IS objectives | HB_REG_OBJ |
 | 6.3 | Planning of changes | HB_CLS_6.3 |
 | 7.2 | Competence evidence | HB_CLS_7.2 |
