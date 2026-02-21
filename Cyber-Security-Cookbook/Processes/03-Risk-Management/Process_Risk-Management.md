@@ -1,9 +1,9 @@
 > **Document ID:** CB_PRC_07-Risk-Management
-> **Version:** 00.01.021
+> **Version:** 00.01.022
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1, 8.2, 8.3
-> **Last modified:** 2026-02-20
+> **Last modified:** 2026-02-21
 > **Approval:** —
 > **Review cycle:** [review cycle, e.g. Annual]
 
@@ -124,7 +124,7 @@ The SoA is the SSOT for control applicability. Direction of change: risk treatme
 
 ### Regular assessment
 
-The complete risk assessment cycle is performed annually, timed before the management review (CB_PRC_09). Results feed into the management review as input (Clause 9.3.2 f). Additionally, the Risk Committee convenes [frequency, e.g. quarterly] to review the current risk landscape, assess treatment progress, and adjust priorities where necessary.
+The complete risk assessment cycle is performed annually, timed before the management review (CB_PRC_09). Results feed into the management review as input (Clause 9.3.2 f). Additionally, the Risk Committee convenes [frequency, e.g. Annual] to review the current risk landscape, assess treatment progress, and adjust priorities where necessary.
 
 ### Event-driven triggers
 
@@ -158,6 +158,7 @@ An unscheduled risk assessment is triggered by:
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.022 | 2026-02-21 | Claude (AI) | Normalize frequency placeholder to canonical form |
 | 00.01.021 | 2026-02-20 | Claude (AI) | Replace hardcoded parameter values with placeholders |
 | 00.01.020 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.01.019 | 2026-02-20 | CISO | Reorganized into numbered subfolder; file renamed to Process_ prefix |

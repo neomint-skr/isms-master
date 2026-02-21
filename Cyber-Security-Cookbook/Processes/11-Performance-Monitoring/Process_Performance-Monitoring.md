@@ -1,9 +1,9 @@
 > **Document ID:** CB_PRC_11-Performance-Monitoring
-> **Version:** 00.01.011
+> **Version:** 00.01.012
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 9.1, 6.2
-> **Last modified:** 2026-02-20
+> **Last modified:** 2026-02-21
 > **Approval:** —
 > **Review cycle:** [review cycle, e.g. Annual]
 
@@ -33,7 +33,7 @@ The following table lists the initial KPI catalogue. Additional KPIs are added a
 
 | KPI ID | KPI name | Target | Measurement method | Frequency | Responsible |
 |---|---|---|---|---|---|
-| KPI-01 | Incident response time | Mean time from detection to containment [target value, e.g. ≤ 4 h for critical incidents] | Incident ticket timestamps (addresses A.5.24) | Per incident, aggregated [frequency, e.g. quarterly] | [IS-Coordinator] |
+| KPI-01 | Incident response time | Mean time from detection to containment [target value, e.g. ≤ 4 h for critical incidents] | Incident ticket timestamps (addresses A.5.24) | Per incident, aggregated [frequency, e.g. Annual] | [IS-Coordinator] |
 | KPI-02 | Audit finding close-out rate | [target value, e.g. ≥ 90 %] of findings closed within deadline | HB_REG_NC finding status (addresses A.5.35) | [frequency, e.g. Quarterly] | CISO |
 | KPI-03 | Awareness training completion | [target value, e.g. ≥ 95 %] of employees trained within cycle | [LMS / training records] (addresses A.6.3) | [Annually \| semi-annually — depending on training cycle] | [IS-Coordinator] |
 | KPI-04 | Patch compliance | [target value, e.g. ≥ 95 %] of critical patches applied within SLA | [Vulnerability scanner / patch management tool] (addresses A.8.8) | [security cadence, e.g. Monthly] | [IT operations lead] |
@@ -129,6 +129,7 @@ Corrective actions resulting from escalation are tracked in the improvement road
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.012 | 2026-02-21 | Claude (AI) | Normalize frequency placeholder to canonical form |
 | 00.01.011 | 2026-02-20 | Claude (AI) | Replace hardcoded parameter values with placeholders |
 | 00.01.010 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.01.009 | 2026-02-20 | CISO | Reorganized into numbered subfolder; file renamed to Process_ prefix |

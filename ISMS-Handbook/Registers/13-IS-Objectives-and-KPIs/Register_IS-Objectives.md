@@ -1,9 +1,9 @@
 > **Document ID:** HB_REG_OBJ_01-IS-Objectives-Register
-> **Version:** 00.01.012
+> **Version:** 00.01.013
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** Clause 6.2
-> **Last modified:** 2026-02-20
+> **Last modified:** 2026-02-21
 > **Approval:** —
 > **Review cycle:** [review cycle, e.g. Annual]
 
@@ -51,7 +51,7 @@ Objective achievement is measured against defined KPIs and tracked over time:
 - **Not achieved:** Target missed; requires management attention
 - **Achieved:** Objective completed successfully
 
-Measurement frequency is defined per objective; results are reviewed [frequency, e.g. quarterly] and reported in the management review (CB_PRC_09).
+Measurement frequency is defined per objective; results are reviewed [frequency, e.g. Annual] and reported in the management review (CB_PRC_09).
 
 ## See also
 
@@ -65,6 +65,7 @@ Measurement frequency is defined per objective; results are reviewed [frequency,
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.013 | 2026-02-21 | Claude (AI) | Normalize frequency placeholder to canonical form |
 | 00.01.012 | 2026-02-20 | Claude (AI) | Replace hardcoded parameter values with placeholders |
 | 00.01.011 | 2026-02-20 | Claude (AI) | Normalize review cycle metadata to placeholder |
 | 00.01.010 | 2026-02-20 | Claude (AI) | Registers reorganized into numbered lifecycle folders; path and ID updated |
