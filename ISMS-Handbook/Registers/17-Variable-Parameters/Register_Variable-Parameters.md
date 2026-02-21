@@ -1,5 +1,5 @@
 > **Document ID:** HB_REG_VAR_01-Variable-Parameters
-> **Version:** 00.01.003
+> **Version:** 00.01.004
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** ISO 27001:2022 Clause 7.5
@@ -13,7 +13,7 @@
 
 ## Summary
 
-Blueprint ISMS documents use bracketed placeholders for organization-specific values that must be resolved before certification. This register catalogues 125 unique organization parameters across 10 domains, each identified by a canonical Meta Key providing structured dot-notation taxonomy for programmatic access and cross-referencing. It serves as the single source of truth for all parameter values and as the central questionnaire for client onboarding — every parameter is traced to its owner, source, and all consuming documents. Without completing this register, deployed documents contain unresolved placeholders that fail audit evidence requirements.
+Blueprint ISMS documents use bracketed placeholders for organization-specific values that must be resolved before certification. This register catalogues 128 unique organization parameters across 10 domains, each identified by a canonical Meta Key providing structured dot-notation taxonomy for programmatic access and cross-referencing. It serves as the single source of truth for all parameter values and as the central questionnaire for client onboarding — every parameter is traced to its owner, source, and all consuming documents. Without completing this register, deployed documents contain unresolved placeholders that fail audit evidence requirements.
 
 ## Objective and Scope
 
@@ -121,7 +121,7 @@ The register is referenced by all ISMS documents that contain organization param
 
 ## 4 Time Thresholds
 
-30 parameters, 91 occurrences across the ISMS.
+31 parameters, 91 occurrences across the ISMS.
 
 | Meta Key | Description | Guidance | Example | Value | Owner | Source | Consumers |
 |---|---|---|---|---|---|---|---|
@@ -155,6 +155,7 @@ The register is referenced by all ISMS documents that contain organization param
 | TIME.Reporting24h | Twenty-four-hour reporting deadline | For significant incidents | Within 24h | — | CISO | Regulatory | CB/PRC_09 (1 file, 1x) |
 | TIME.Reporting72h | Seventy-two-hour reporting deadline | For standard incidents | Within 72h | — | CISO | Regulatory | CB/PRC_09 (1 file, 1x) |
 | TIME.RPO | RPO per criticality tier | Define per BIA, validate in tests | 1h (Tier 1), 24h (Tier 2) | — | CISO | BIA | HB/REG_BCM (1 file, 1x) |
+| TIME.SessionTimeout | Inactivity timeout for application sessions | Align with risk classification and data sensitivity | 15 min. | — | CISO | Risk assessment | CB/L2_01:L73 (1 file, 1x) |
 
 ## 5 Risk and Financial Thresholds
 
@@ -185,7 +186,7 @@ The register is referenced by all ISMS documents that contain organization param
 
 ## 7 Tooling and Technology
 
-16 parameters, 17 occurrences across the ISMS.
+18 parameters, 17 occurrences across the ISMS.
 
 | Meta Key | Description | Guidance | Example | Value | Owner | Source | Consumers |
 |---|---|---|---|---|---|---|---|
@@ -205,6 +206,8 @@ The register is referenced by all ISMS documents that contain organization param
 | TOOL.ThreatIntelSources | Threat intelligence sources | Subscribe to relevant CERTs | BSI CERT-Bund, ENISA | — | CTO | IT architecture | CB/PRC_07 (1 file, 1x) |
 | TOOL.ISMSToolStack | ISMS tool stack overview | Document all IS-relevant tools | GitLab, Google Workspace, Cloudflare | — | CTO | IT architecture | HB/CLS_7.1 (1 file, 1x) |
 | TOOL.MonitoringStack | Monitoring tool inventory | List all operational monitoring tools | Prometheus, Grafana, PagerDuty | — | CTO | IT architecture | CB/PRC_11 (1 file, 1x) |
+| TOOL.PasswordManager | Enterprise password management solution | Centralized credential vault for all accounts | Bitwarden/1Password | — | CTO | IT architecture | CB/L2_01:L53, CB/AWR_01:L87 (2 files, 2x) |
+| TOOL.LockoutThreshold | Failed authentication attempts before account lockout | Balance security with usability; align with NIST guidelines | 5 attempts | — | CTO | IT architecture | CB/L2_01:L75 (1 file, 1x) |
 
 ## 8 Supplier and Cloud
 
@@ -368,6 +371,9 @@ Legacy placeholder-to-Meta Key mapping for backward compatibility and migration 
 | 124 | `[data protection authority]` | LEGAL.DPA | LEGAL |
 | 125 | `[competent data protection authority, e.g. Bayerisches Landesamt fuer Datenschutzaufsicht (BayLDA)]` | LEGAL.DPADetailed | LEGAL |
 | 126 | `[Data protection authority, BSI, tax authorities]` | LEGAL.RegulatoryAuthorities | LEGAL |
+| 127 | `[session timeout, e.g. 15 min.]` | TIME.SessionTimeout | TIME |
+| 128 | `[password manager, e.g. Bitwarden/1Password]` | TOOL.PasswordManager | TOOL |
+| 129 | `[lockout threshold, e.g. 5 attempts]` | TOOL.LockoutThreshold | TOOL |
 
 ## Quality Rules
 
@@ -391,6 +397,7 @@ Legacy placeholder-to-Meta Key mapping for backward compatibility and migration 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.004 | 2026-02-21 | Claude (AI) | Add 3 new parameters (TIME.SessionTimeout, TOOL.PasswordManager, TOOL.LockoutThreshold); extend Alias Map to 129 entries |
 | 00.01.003 | 2026-02-21 | Claude (AI) | Rename to Organization Parameters Register; add Meta Key taxonomy (10 domains), Owner, Source columns; add Alias Map and Quality Rules sections; consolidate duplicate retention period entry |
 | 00.01.002 | 2026-02-20 | Claude (AI) | Add Value column to all 10 domain tables (126 rows, default `—`); establish register as SSOT for variable values; add Value definition to Key table |
 | 00.01.001 | 2026-02-20 | Claude (AI) | Quality cleanup — removed 158 non-core variables (register row fields, audit-cycle fields, illustrative examples, process descriptions, duplicates); reduced from 284 to 126 variables across 10 domains |
