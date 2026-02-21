@@ -1,9 +1,9 @@
 > **Document ID:** CB_POL_L2_08-Document-Control
-> **Version:** 00.04.018
+> **Version:** 00.04.019
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 7.5
-> **Last modified:** 2026-02-20
+> **Last modified:** 2026-02-21
 > **Approval:** —
 > **Review cycle:** [review cycle, e.g. Annual]
 
@@ -85,12 +85,14 @@ The document name (H1) integrates the document type in natural language. No tech
 - **REF extracts** (References/): No metadata block, no standard document structure — external sources are not versioned.
 - **Templates** (Templates/): Fill-in templates with their own structure, not bound by the standard document structure.
 
-### Variable Parameters
+### Organization Parameters
 
-Organization-specific values that cannot be derived from standards or best practices are represented as bracketed placeholders (e.g. `[Organization]`, `[CISO]`) throughout ISMS documents. The Variable Parameters Register (HB_REG_VAR_01) is the single source of truth for:
+Organization-specific values that cannot be derived from standards or best practices are represented as bracketed placeholders (e.g. `[Organization]`, `[CISO]`) throughout ISMS documents. The Organization Parameters Register (HB_REG_VAR_01) is the single source of truth for:
 
 - **Canonical form:** The standardized placeholder text used consistently across all documents.
-- **Resolved values:** The Value column of the register holds the authoritative value for each variable. Documents derive their values from this register exclusively.
+- **Meta Key:** Each parameter carries a canonical dot-notation identifier (e.g. `ORG.LegalName`, `ROLE.CISO.Title`) for structured taxonomy and traceability.
+- **Resolved values:** The Value column of the register holds the authoritative value for each parameter. Documents derive their values from this register exclusively.
+- **Ownership:** Every parameter has a designated owner responsible for accuracy and currency.
 
 In the blueprint, all values default to `—` (unresolved). During client onboarding, values are completed in HB_REG_VAR_01 and propagated to all consuming documents. No document may contain a resolved value that contradicts its register entry.
 
@@ -180,12 +182,13 @@ Documented information of external origin is appropriately identified and contro
 - HB_CLS_7.5-Documented-Information — ISO requirement for documented information
 - CB_POL_L2_07-Organisation — Governance, policy compliance
 - CB_TPL_02-Document-Metadata — Metadata block template
-- HB_REG_VAR_01-Variable-Parameters — Variable parameters register (client survey questionnaire)
+- HB_REG_VAR_01-Variable-Parameters — Organization Parameters Register (client survey questionnaire)
 
 ## Changelog
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.04.019 | 2026-02-21 | Claude (AI) | Rename Variable Parameters to Organization Parameters; add Meta Key concept and ownership |
 | 00.04.018 | 2026-02-20 | Claude (AI) | Add Variable Parameters subsection — SSOT principle for HB_REG_VAR_01 |
 | 00.04.017 | 2026-02-20 | Claude (AI) | Add HB_REG_VAR_01 cross-reference to See also (MECE orphan fix) |
 | 00.04.016 | 2026-02-20 | Claude (AI) | Replace hardcoded parameter values with placeholders |
