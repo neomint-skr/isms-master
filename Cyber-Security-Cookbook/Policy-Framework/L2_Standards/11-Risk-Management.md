@@ -1,5 +1,5 @@
 > **Document ID:** CB_POL_L2_11-Risk-Management
-> **Version:** 00.01.029
+> **Version:** 00.01.030
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1, 8.2, 8.3
@@ -24,7 +24,7 @@ This standard defines a lean, deterministic and audit-ready risk method for the 
 
 **Scope:** Applies to all ISMS scope units (systems, services and business processes) and to event-driven risk reassessments.
 
-## Method Overview (LRM-44)
+## Risk Method (LRM-44)
 
 ### Primary object: Risk scenario
 
@@ -77,7 +77,7 @@ Likelihood MUST be assessed using the binding rubric:
 
 Rule: Likelihood is derived from a small set of yes/no factors with a fixed mapping to the 4 levels. No probability estimates are used.
 
-## Treatment and control selection
+## Treatment and Controls
 
 Treatment options:
 
@@ -91,7 +91,7 @@ Controls selection MUST be traceable:
 - For each treated risk, selected controls MUST be referenced in the Risk Log.
 - Implementation status and evidence MUST be maintained in the SoA (SSOT).
 
-## Mandatory records (documented information)
+## Documented Information
 
 The following records MUST exist and be maintained:
 
@@ -99,7 +99,7 @@ The following records MUST exist and be maintained:
 - SoA (controls applicability, status, justification, evidence): `ISMS-Handbook/Registers/09-Statement-of-Applicability/Register_Statement-of-Applicability.md`
 - Scope unit assessments and workshop minutes: `ISMS-Handbook/Registers/06-Risk-Assessments/Scope-Units/`
 
-## Review cycle
+## Review Cycle
 
 The method, rubrics and acceptance criteria MUST be reviewed per the defined review cycle, and whenever significant changes occur (scope changes, major incidents, new regulatory requirements).
 
@@ -116,5 +116,6 @@ The method, rubrics and acceptance criteria MUST be reviewed per the defined rev
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.01.030 | 2026-02-21 | Claude (AI) | Rename HOW-style headings to noun-form topics (MECE compliance) |
 | 00.01.029 | 2026-02-21 | Claude (AI) | Add traceability fields (Policy reference, Operationalized by), See also, Changelog |
 | 00.01.028 | 2026-02-21 | Claude (AI) | LRM-44 migration: complete rewrite to lean risk method |

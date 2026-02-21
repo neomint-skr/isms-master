@@ -1,5 +1,5 @@
 > **Document ID:** CB_PRC_07-Risk-Management
-> **Version:** 00.01.023
+> **Version:** 00.01.024
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1, 8.2, 8.3
@@ -44,6 +44,7 @@ References:
 - **Risk Log (SSOT):** `ISMS-Handbook/Registers/07-Risk-Log/Register_Risk-Log.md`
 - **Scope unit assessment record(s):** `ISMS-Handbook/Registers/06-Risk-Assessments/Scope-Units/`
 - **SoA updates:** `ISMS-Handbook/Registers/09-Statement-of-Applicability/Register_Statement-of-Applicability.md`
+- **Security Measures Register:** `ISMS-Handbook/Registers/10-Security-Measures/Register_Security-Measures.md` — operational control details and effectiveness tracking
 
 Note: The “Risk Treatment Plan” is implemented as a **filter view** of the Risk Log (all entries where `Decision` is Treat/Avoid/Transfer).
 
@@ -111,3 +112,10 @@ After implementation:
 - Scope unit assessment template: `Cyber-Security-Cookbook/Templates/21-Risk-Assessment.md`
 - Risk Log template: `Cyber-Security-Cookbook/Templates/22-Risk-Log.md`
 - Workshop minutes template: `Cyber-Security-Cookbook/Templates/24-Risk-Workshop-Minutes.md`
+
+## Changelog
+
+| Version | Date | Author | Change |
+|---|---|---|---|
+| 00.01.024 | 2026-02-21 | Claude (AI) | Add Security Measures Register to Outputs (resolve SM_01 orphan) |
+| 00.01.023 | 2026-02-21 | Claude (AI) | LRM-44 migration: complete rewrite to lean risk method |
