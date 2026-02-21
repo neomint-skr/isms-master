@@ -1,5 +1,5 @@
 > **Document ID:** CB_GDE_03-Risk-Workshop-LRM-44
-> **Version:** 00.01.001
+> **Version:** 00.01.002
 > **Classification:** Internal
 > **Author:** [CISO]
 > **ISO Reference:** Clause 8.2, 8.3
@@ -11,7 +11,7 @@
 
 # Risk Workshop Guide (LRM-44)
 
-## Purpose
+## Summary
 
 This guide enables human-executable, deterministic risk workshops using LRM-44 (4×4). It standardizes preparation, facilitation and documentation.
 
