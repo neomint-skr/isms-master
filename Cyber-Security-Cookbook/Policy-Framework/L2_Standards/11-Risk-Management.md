@@ -1,5 +1,5 @@
 > **Document ID:** CB_POL_L2_11-Risk-Management
-> **Version:** 00.01.028
+> **Version:** 00.01.029
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 6.1, 8.2, 8.3
@@ -16,6 +16,9 @@
 This standard defines a lean, deterministic and audit-ready risk method for the ISMS: **LRM-44** (Lean Risk Method, 4×4 matrix). It provides binding criteria for risk identification, likelihood and impact assessment, risk acceptance, and treatment decisions. The method is designed to be executable by humans in workshops while remaining consistent, repeatable and traceable.
 
 ## Objective and Scope
+
+**Policy reference:** P3
+**Operationalized by:** —
 
 **Objective:** Ensure consistent, comparable and traceable risk decisions across the ISMS.
 
@@ -99,3 +102,19 @@ The following records MUST exist and be maintained:
 ## Review cycle
 
 The method, rubrics and acceptance criteria MUST be reviewed per the defined review cycle, and whenever significant changes occur (scope changes, major incidents, new regulatory requirements).
+
+## See also
+
+- CB_PRC_07-Risk-Management — Operational risk management process
+- HB_REG_RL_01-Risk-Log — Risk entries and treatment view
+- HB_REG_RLB_01-Risk-Library — Assessment logic (matrix, rubrics, scenarios)
+- HB_CLS_6.1-Risks-and-Opportunities — ISO clause definition
+- HB_CLS_8.2-Risk-Assessment — Operational risk assessment definition
+- HB_CLS_8.3-Risk-Treatment — Operational risk treatment definition
+
+## Changelog
+
+| Version | Date | Author | Change |
+|---|---|---|---|
+| 00.01.029 | 2026-02-21 | Claude (AI) | Add traceability fields (Policy reference, Operationalized by), See also, Changelog |
+| 00.01.028 | 2026-02-21 | Claude (AI) | LRM-44 migration: complete rewrite to lean risk method |
