@@ -1,9 +1,9 @@
 > **Document ID:** HB_REG_SUP_01-Supplier-Register
-> **Version:** 00.01.010
+> **Version:** 00.01.011
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** A.5.19-5.23
-> **Last modified:** 2026-02-20
+> **Last modified:** 2026-02-21
 > **Approval:** —
 > **Review cycle:** [review cycle, e.g. Annual]
 

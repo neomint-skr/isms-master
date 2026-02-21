@@ -1,9 +1,9 @@
 > **Document ID:** HB_REG_AM_01-Asset-Register
-> **Version:** 00.02.019
+> **Version:** 00.02.020
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** A.5.9
-> **Last modified:** 2026-02-20
+> **Last modified:** 2026-02-21
 > **Approval:** —
 > **Review cycle:** [review cycle, e.g. Annual]
 
@@ -24,7 +24,7 @@ Protection requires knowledge — only what is inventoried can be assessed and p
 
 The register documents all ISMS-relevant assets in 8 categories with 6 cross-reference tables for dependencies (addresses A.5.9). It provides the data basis for protection requirements analysis, risk analysis and business impact assessment.
 
-Protection requirement values are populated through the protection requirements assessment process (CB_PRC_13) and feed into the risk register (HB_REG_RR). The management review (CB_PRC_09) uses the asset inventory as input for the ISMS adequacy assessment.
+Protection requirement values are populated through the protection requirements assessment process (CB_PRC_13) and feed into the Risk Log (HB_REG_RL). The management review (CB_PRC_09) uses the asset inventory as input for the ISMS adequacy assessment.
 
 **Scope:** All organizational units, processes, applications, IT systems, communication links as well as rooms and buildings within the ISMS scope. Target audience: Asset owners (reporting), IS-Coordinator (maintenance), CISO (analysis).
 

@@ -30,7 +30,7 @@
 | Conditions (if approved) | [Conditions attached to the approval] |
 | Expiry date (if approved) | YYYY-MM-DD |
 | Remediation deadline (if rejected) | YYYY-MM-DD |
-| Risk register reference (if approved) | R-___ |
+| Risk Log reference (if approved) | R-___ |
 
 ## Review Log
 
