@@ -159,7 +159,6 @@ BIBLIOGRAPHY.md in `References/Library/` is SSOT for citation keys.
 |---|---|---|
 | PR model | `node scripts/validators/pr-model-validator.mjs` | Protection requirements model consistency |
 | Blueprint compliance | `node scripts/validators/blueprint-compliance-validator.mjs <client-path>` | Client repo vs master blueprint |
-| LRM-44 perfectness | `node scripts/validators/lrm44-perfectness-validator.mjs` | LRM-44 migration completeness (9 checks) |
 
 ## Three-tier structure
 
