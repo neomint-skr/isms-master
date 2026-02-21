@@ -75,7 +75,7 @@ The following table tracks IT continuity plans required by CB_POL_L2_06-Business
 - CB_POL_L3_05-Data-Backup — Backup strategy aligned with tier model
 - CB_PRC_03-Backup-and-Recovery — Operational backup and recovery process
 - HB_REG_AM_01-Asset-Register — Asset inventory
-- HB_REG_RR_01-Risk-Register — Risk assessment input
+- HB_REG_RL_01-Risk-Log — Risk assessment input
 
 ## Changelog
 

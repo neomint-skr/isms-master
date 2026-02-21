@@ -44,7 +44,7 @@ The register is maintained by the Chief Information Security Officer and reviewe
 - CB_PRC_14-Exception-Management — Exception approval workflow
 - CB_TPL_20-Exception-Request — Exception request template
 - CB_POL_L2_11-Risk-Management — Exception management requirements (normative)
-- HB_REG_RR_01-Risk-Register — Risk entries for approved exceptions
+- HB_REG_RL_01-Risk-Log — Risk entries for approved exceptions
 
 ## Changelog
 

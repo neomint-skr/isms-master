@@ -90,7 +90,7 @@ Expired exceptions without renewal trigger verification that compliance has been
 - CB_POL_L2_11-Risk-Management — Exception management requirements (normative)
 - CB_TPL_20-Exception-Request — Exception request template
 - HB_REG_EXC_01-Exception-Index — Exception register
-- HB_REG_RR_01-Risk-Register — Risk entries for approved exceptions
+- HB_REG_RL_01-Risk-Log — Risk entries for approved exceptions
 - CB_PRC_07-Risk-Management — Risk assessment and treatment process
 - HB_CLS_5.3-Roles-and-Responsibilities — RACI matrix
 

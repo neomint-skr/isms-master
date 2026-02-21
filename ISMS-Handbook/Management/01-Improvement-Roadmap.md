@@ -75,7 +75,7 @@ Themes that exceed their target date by more than one quarter are escalated to t
 
 - HB_CLS_10.1-Continual-Improvement — Clause requirements for continual improvement
 - HB_REG_NC_01-Nonconformity-Register — Audit findings and nonconformities as improvement input
-- HB_REG_RR_01-Risk-Register — Risk assessment results as improvement input
+- HB_REG_RL_01-Risk-Log — Risk assessment results as improvement input
 - HB_REG_OBJ_01-IS-Objectives-Register — KPI tracking as improvement input
 
 ## Changelog

@@ -58,7 +58,7 @@ Supplier assessment is governed through CB_PRC_06 (Supplier Management) and alig
 - CB_POL_L2_05-Supplier-and-Cloud — Requirements for supplier assessment, agreements, monitoring
 - CB_POL_L3_07-Supplier-Management — Operational supplier management handbook
 - CB_PRC_06-Supplier-Management — Supplier management process
-- HB_REG_RR_01-Risk-Register — Supplier-related risk entries
+- HB_REG_RL_01-Risk-Log — Supplier-related risk entries
 
 
 ## Changelog
