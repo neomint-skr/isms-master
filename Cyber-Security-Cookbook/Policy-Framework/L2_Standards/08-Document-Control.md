@@ -1,5 +1,5 @@
 > **Document ID:** CB_POL_L2_08-Document-Control
-> **Version:** 00.04.019
+> **Version:** 00.04.020
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 7.5
@@ -72,7 +72,7 @@ The document name (H1) integrates the document type in natural language. No tech
 |---|---|---|
 | CLS | Topic only | `# Risks and Opportunities` |
 | PRC | [Topic] Process | `# Incident Management Process` |
-| REG | Type in the word | `# Risk Register` |
+| REG | Type in the word | `# Risk Log` |
 | L1 | Information Security Policy | `# Information Security Policy` |
 | L2 | [Topic] Standard | `# Access and Identity Standard` |
 | L3 | [Topic] Handbook | `# User Handbook` |

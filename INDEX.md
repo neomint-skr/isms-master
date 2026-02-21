@@ -35,14 +35,17 @@
 **02-Interested-Parties/Register_Interested-Parties.md** -- Stakeholders + IS requirements
 **03-Asset-Management/Register_Asset.md** -- 8 asset inventories, 6 cross-reference tables, data model
 **04-Protection-Requirements/Register_Protection-Requirements.md** -- Process protection requirement assessments (SSOT)
-**05-Risk-Framework/Threats/** -- Threat catalogues per asset class
+**05-Risk-Library/** -- LRM-44 matrix, rubrics, scenario library, playbooks (SSOT for criteria)
+`Register_Risk-Library.md`, `Matrix_4x4.md`, `Rubric_Impact.md`, `Rubric_Likelihood.md`, `Library_Scenarios.md`, `Playbooks_Treatment.md`
+
+**05-Risk-Framework/Threats/** -- (Legacy) Threat catalogues per asset class
 `1-Processes.md`, `2-Information.md`, `3-Applications.md`, `4-IT-Systems-Physical.md`, `5-IT-Systems-Virtual.md`, `6-Communication-Links.md`, `7-Rooms.md`, `8-Buildings.md`
-**05-Risk-Framework/Vulnerabilities/** -- Vulnerability catalogues per asset class
+**05-Risk-Framework/Vulnerabilities/** -- (Legacy) Vulnerability catalogues per asset class
 `1-Processes.md`, `2-Information.md`, `3-Applications.md`, `4-IT-Systems-Physical.md`, `5-IT-Systems-Virtual.md`, `6-Communication-Links.md`, `7-Rooms.md`, `8-Buildings.md`
 **06-Risk-Assessments/** -- Per-asset risk assessments (7 layer folders)
 `1-Process/`
-**07-Risk-Register/Register_Risk.md** -- 4x4 matrix, scenario-based risk entries, acceptance
-**08-Risk-Treatment/Register_Risk-Treatment-Plan.md** -- Controls per risk, owners, deadlines, gap tracking
+- 4x4 matrix, scenario-based risk entries, acceptance
+**07-Risk-Log/Register_Risk-Log.md** -- Unified risk log (scenario-based entries, 4x4 scoring, treatment, acceptance)
 **09-Statement-of-Applicability/Register_Statement-of-Applicability.md** -- 93 controls, SSOT for applicability
 **10-Security-Measures/Register_Security-Measures.md** -- Security measures per risk, linked to controls and assets
 **10-Security-Measures/** -- Security measure evidence and implementation records
@@ -124,6 +127,7 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 **01-Asset-Management/Process_Asset-Management.md** -- Identification, ID assignment, registration, relationships, maintenance
 **02-Protection-Requirements/Process_Protection-Requirements.md** -- Protection requirements assessment (primary, inheritance, documentation, handoff)
 **03-Risk-Management/Process_Risk-Management.md** -- Risk assessment, risk treatment, SoA maintenance, cycles/triggers
+**03-Risk-Management/LRM-44/Guide_Risk-Workshop.md** -- Facilitation guide for LRM-44 risk workshops
 **04-Supplier-Management/Process_Supplier-Management.md** -- Assessment, agreements, monitoring
 **05-Access-Control/Process_Access-Control.md** -- Provisioning, privileges, revocation, recertification
 **06-Change-Management/Process_Change-Management.md** -- Request, impact, approval, implementation/rollback
@@ -152,6 +156,9 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 **19-Protection-Requirements-Assessment.md** -- Process protection requirements assessment (SSOT)
 **20-Exception-Request.md** -- Exception request form (justification, risk, compensating controls, expiry)
 **21-Risk-Assessment.md** -- Risk assessment worksheet per asset (threat/vulnerability pairing, risk scoring)
+**22-Risk-Log.md** -- Risk log entry template (scenario, scoring, treatment, acceptance)
+**23-Scenario-Library.md** -- Scenario library contribution template
+**24-Risk-Workshop-Minutes.md** -- Risk workshop minutes template (attendees, decisions, actions)
 
 ### REF -- References / Library / Standards
 
@@ -325,9 +332,10 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 | REG_AM | Asset management | Registers/03-Asset-Management/ |
 | REG_PR | Protection requirements | Registers/04-Protection-Requirements/ |
 | REG_RF | Risk framework | Registers/05-Risk-Framework/ |
+| REG_RLB | Risk library | Registers/05-Risk-Library/ |
 | REG_RA | Risk assessments | Registers/06-Risk-Assessments/ |
-| REG_RR | Risk register | Registers/07-Risk-Register/ |
-| REG_RT | Risk treatment | Registers/08-Risk-Treatment/ |
+| REG_RR | Risk Log | Registers/07-Risk-Log/ |
+| REG_RT | Risk treatment | Registers/07-Risk-Log/ |
 | REG_SOA | Statement of applicability | Registers/09-Statement-of-Applicability/ |
 | REG_SM | Security measures | Registers/10-Security-Measures/ |
 | REG_BCM | Business continuity | Registers/11-Business-Continuity/ |
