@@ -52,7 +52,7 @@
 **14-Competence-Records/Register_Competence.md** -- SOLL/IST competence matrix per ISMS role (20 dimensions)
 **15-Nonconformities-and-Corrective-Actions/Register_Nonconformities.md** -- NC tracking with effectiveness review
 **16-Exceptions/Register_Exceptions.md** -- Approved policy exceptions with expiry and review tracking
-**17-Variable-Parameters/Register_Variable-Parameters.md** -- Variable parameters register (126 variables, 10 domains, SSOT for variable values)
+**17-Variable-Parameters/Register_Variable-Parameters.md** -- Organization Parameters Register (126 parameters, 10 domains, SSOT for parameter values)
 
 ### HB -- ISMS-Handbook / Management
 
@@ -336,7 +336,7 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 | REG_COMP | Competence records | Registers/14-Competence-Records/ |
 | REG_NC | Nonconformities | Registers/15-Nonconformities-and-Corrective-Actions/ |
 | REG_EXC | Exceptions | Registers/16-Exceptions/ |
-| REG_VAR | Variable parameters | Registers/17-Variable-Parameters/ |
+| REG_VAR | Organization parameters | Registers/17-Variable-Parameters/ |
 | PRC | Process | Processes/ |
 | HB_CLS_C05 | (folder) | Definitions/C05_Leadership/ (3 files) |
 | HB_CLS_C09 | (folder) | Definitions/C09_Performance/ (3 files) |

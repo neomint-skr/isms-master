@@ -163,7 +163,7 @@ External sources reside in `References/Library/` as PDF originals + MD extracts.
 
 - **Vertical:** Policy > Standards > Handbooks/Concepts > Cheat Sheets > Processes. Changes propagate top-down.
 - **Horizontal:** SoA (SSOT) > Coverage Matrix (INDEX.md) > Documents. Never the reverse.
-- **Variable resolution:** HB_REG_VAR_01 (SSOT) > Documents. Placeholders resolved from register, never ad-hoc.
+- **Parameter resolution:** HB_REG_VAR_01 (Organization Parameters Register, SSOT) > Documents. Placeholders resolved from register, never ad-hoc.
 - **Control coverage:** Each of the 93 Annex A controls must be addressed in at least one document.
 - **Terminology:** Consistent terms across all files.
 
@@ -182,7 +182,7 @@ Four layers, no duplication:
 
 ### Skeleton Filling
 
-When populating skeleton documents with draft text: standard/best-practice content is written as final text, organization-specific values as `[description]` in square brackets. Placeholders must use canonical forms from HB_REG_VAR_01. Detailed rules and examples in `.claude/agents/refs/skeleton-filling.md`.
+When populating skeleton documents with draft text: standard/best-practice content is written as final text, organization-specific values as `[description]` in square brackets. Placeholders must use canonical forms from HB_REG_VAR_01 (Organization Parameters Register). Detailed rules and examples in `.claude/agents/refs/skeleton-filling.md`.
 
 ### Changes
 
@@ -210,7 +210,7 @@ Available agents (`.claude/agents/`):
 
 | Name | Type | Purpose |
 |---|---|---|
-| `consistency-checker` | Agent (haiku) | 11 checks: metadata ID, INDEX, coverage, paths, SoA, structure, version, citation keys, ref derivative, repo hygiene, variable alignment |
+| `consistency-checker` | Agent (haiku) | 11 checks: metadata ID, INDEX, coverage, paths, SoA, structure, version, citation keys, ref derivative, repo hygiene, parameter alignment |
 | `mece-checker` | Agent (sonnet) | 6 checks: control distribution, L2/L3 separation, traceability, principles, CLS>PRC>REG, orphaned REG |
 | `document-writer` | Agent (sonnet) | Create new documents or align existing ones to conventions |
 | `markdown-converter` | Agent (sonnet) | PDF to verified lean Markdown extract (7-phase workflow) |
