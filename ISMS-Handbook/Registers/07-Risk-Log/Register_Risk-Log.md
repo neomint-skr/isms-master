@@ -1,5 +1,5 @@
 > **Document ID:** HB_REG_RL_01-Risk-Log
-> **Version:** 00.01.001
+> **Version:** 00.01.002
 > **Classification:** Confidential
 > **Author:** [CISO]
 > **ISO Reference:** Clause 6.1, 8.2, 8.3
@@ -46,8 +46,8 @@ The “Risk Treatment Plan” is implemented as a **view** of the Risk Log:
 | Scope Unit | System/Service/Process reference |
 | Risk scenario | One-sentence scenario |
 | CIA focus | C / I / A |
-| Impact | Minor(1) / Moderate(2) / Major(3) / Severe(4) |
-| Likelihood | Rare(1) / Unlikely(2) / Possible(3) / Likely(4) |
+| Impact | Minor (1) / Moderate (2) / Major (3) / Severe (4) |
+| Likelihood | Rare (1) / Unlikely (2) / Possible (3) / Likely (4) |
 | Score | I×L (1..16) |
 | Band | Low / Medium / High / Critical |
 | Decision | Accept / Treat / Transfer / Avoid |
@@ -68,3 +68,28 @@ Use:
 
 - Controls applicability/status/evidence: `HB_REG_SOA_01-Statement-of-Applicability` (SSOT)
 - Optional implementation backlog: `HB_REG_SM_01-Security-Measures-Register`
+
+## SSOT Boundaries
+
+| Domain | SSOT artefact | Scope |
+|---|---|---|
+| Risk scenarios, scoring, decisions | Risk Log (this register) | All identified IS risks, treatment decisions, approvals |
+| Assessment criteria (matrix, rubrics) | Risk Library (HB_REG_RLB_01) | 4×4 matrix, impact/likelihood scales, scenario catalogue |
+| Annex A applicability, justification, status | SoA (HB_REG_SOA_01) | 93 controls: applicable/not, origin, implementation status |
+| Internal control inventory (SM-IDs) | Security Measures Register (HB_REG_SM_01) | Operational control details, effectiveness tracking |
+
+## See also
+
+- CB_POL_L2_11-Risk-Management — Risk management standard (binding criteria)
+- HB_REG_RLB_01-Risk-Library — Assessment criteria (4×4 matrix, rubrics, scenarios)
+- HB_REG_SOA_01-Statement-of-Applicability — Annex A control applicability
+- HB_REG_SM_01-Security-Measures-Register — Implementation backlog
+- CB_PRC_07-Risk-Management — Risk management process (RACI, workflow)
+
+## Changelog
+
+| Version | Date | Author | Change |
+|---|---|---|---|
+| 00.01.002 | 2026-02-21 | Claude (AI) | Normalize notation Label(Value) to Label (Value); add SSOT Boundaries table; add See also and Changelog |
+| 00.01.001 | 2026-02-21 | Claude (AI) | Add traceability fields, See also and Changelog |
+| 00.01.000 | 2026-02-21 | Claude (AI) | Initial version (LRM-44 migration) |

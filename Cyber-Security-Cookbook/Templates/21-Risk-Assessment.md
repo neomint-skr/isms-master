@@ -32,9 +32,9 @@ Each entry MUST be a one-sentence risk scenario. Use label+value for Impact and 
 | Scenario ID | [RISK-###] |
 | Risk scenario (one sentence) | [If X happens, then Y impact occurs] |
 | CIA focus | [C/I/A] |
-| Impact | [Minor(1)/Moderate(2)/Major(3)/Severe(4)] |
+| Impact | [Minor (1) / Moderate (2) / Major (3) / Severe (4)] |
 | Impact notes (rationale) | [One line: why this impact level] |
-| Likelihood | [Rare(1)/Unlikely(2)/Possible(3)/Likely(4)] |
+| Likelihood | [Rare (1) / Unlikely (2) / Possible (3) / Likely (4)] |
 | Likelihood notes (rationale) | [One line: why this likelihood level] |
 | Score (I×L) | [1..16] |
 | Band | [Low/Medium/High/Critical] |

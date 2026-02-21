@@ -10,9 +10,9 @@ This template defines the Risk Log structure (LRM-44, 4×4). The Risk Log is the
 | Scope Unit | [SU-### — Name] |
 | Risk scenario | [One sentence] |
 | CIA focus | [C/I/A] |
-| Impact | [Minor(1)/Moderate(2)/Major(3)/Severe(4)] |
+| Impact | [Minor (1) / Moderate (2) / Major (3) / Severe (4)] |
 | Impact notes | [One line] |
-| Likelihood | [Rare(1)/Unlikely(2)/Possible(3)/Likely(4)] |
+| Likelihood | [Rare (1) / Unlikely (2) / Possible (3) / Likely (4)] |
 | Likelihood notes | [One line] |
 | Score | [I×L] |
 | Band | [Low/Medium/High/Critical] |

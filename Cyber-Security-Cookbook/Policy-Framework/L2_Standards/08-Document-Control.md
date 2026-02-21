@@ -1,5 +1,5 @@
 > **Document ID:** CB_POL_L2_08-Document-Control
-> **Version:** 00.04.020
+> **Version:** 00.04.021
 > **Classification:** Internal
 > **Author:** CISO
 > **ISO Reference:** Clause 7.5
@@ -157,7 +157,7 @@ Retention ensures availability and traceability throughout the entire lifecycle 
 
 - **Retention:** All document versions are permanently retained in the version history.
 - **Readability:** Markdown as document format ensures long-term readability (no proprietary format).
-- **Disposition:** Documents that are no longer valid are marked as "withdrawn" (changelog entry + version increment). Documents are not deleted.
+- **Disposition:** Documents that are no longer valid are marked as "withdrawn" (changelog entry + version increment). Withdrawn documents may be removed from the active document tree when a successor document exists; version history serves as the retention mechanism.
 - **Retention period:** At least until the next recertification audit ([retention period, e.g. 3 years]).
 
 ## Protection
@@ -188,6 +188,7 @@ Documented information of external origin is appropriately identified and contro
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 00.04.021 | 2026-02-21 | Claude (AI) | Disposition clause: allow removal of withdrawn documents when successor exists (LRM-44 legacy purge) |
 | 00.04.019 | 2026-02-21 | Claude (AI) | Rename Variable Parameters to Organization Parameters; add Meta Key concept and ownership |
 | 00.04.018 | 2026-02-20 | Claude (AI) | Add Variable Parameters subsection — SSOT principle for HB_REG_VAR_01 |
 | 00.04.017 | 2026-02-20 | Claude (AI) | Add HB_REG_VAR_01 cross-reference to See also (MECE orphan fix) |

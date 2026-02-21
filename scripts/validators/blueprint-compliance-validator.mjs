@@ -101,18 +101,16 @@ const PATH_ABBREV = {
   'Management': 'MGT', 'Audit': 'AUD',
   'L1_Policy': 'L1', 'L2_Standards': 'L2', 'L3_Handbooks-and-Concepts': 'L3',
   'L4_Cheat-Sheets': 'L4', 'Internal': 'INT', 'Supplier': 'SUP',
-  '05-Risk-Framework': 'RF', '16-Exceptions': 'EXC',
+  '16-Exceptions': 'EXC',
   '01-Context': 'CTX', '02-Interested-Parties': 'IP', '03-Asset-Management': 'AM',
-  '04-Protection-Requirements': 'PR', '07-Risk-Register': 'RR', '08-Risk-Treatment': 'RT',
+  '04-Protection-Requirements': 'PR',
   '09-Statement-of-Applicability': 'SOA', '10-Security-Measures': 'SM',
   '11-Business-Continuity': 'BCM', '12-Supplier-and-Cloud': 'SUP',
   '13-IS-Objectives-and-KPIs': 'OBJ', '14-Competence-Records': 'COMP',
   '15-Nonconformities-and-Corrective-Actions': 'NC',
 };
 
-const DIRECTORY_IDS = [
-  ['ISMS-Handbook/Registers/05-Risk-Framework', 'HB_REG_RF'],
-];
+const DIRECTORY_IDS = [];
 
 function deriveDocIdFromPath(relPath) {
   const parts = relPath.replace(/\.md$/, '').split('/');
@@ -938,7 +936,6 @@ function phase5_registerSchema() {
   const registers = [
     { name: 'REG_AM', path: 'ISMS-Handbook/Registers/03-Asset-Management/Register_Asset.md' },
     { name: 'REG_BCM', path: 'ISMS-Handbook/Registers/11-Business-Continuity/Register_BCM.md' },
-    { name: 'REG_RR', path: 'ISMS-Handbook/Registers/07-Risk-Register/Register_Risk.md' },
     { name: 'REG_SOA', path: 'ISMS-Handbook/Registers/09-Statement-of-Applicability/Register_Statement-of-Applicability.md' },
   ];
 

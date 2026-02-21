@@ -38,14 +38,8 @@
 **05-Risk-Library/** -- LRM-44 matrix, rubrics, scenario library, playbooks (SSOT for criteria)
 `Register_Risk-Library.md`, `Matrix_4x4.md`, `Rubric_Impact.md`, `Rubric_Likelihood.md`, `Library_Scenarios.md`, `Playbooks_Treatment.md`
 
-**05-Risk-Framework/Threats/** -- (Legacy) Threat catalogues per asset class
-`1-Processes.md`, `2-Information.md`, `3-Applications.md`, `4-IT-Systems-Physical.md`, `5-IT-Systems-Virtual.md`, `6-Communication-Links.md`, `7-Rooms.md`, `8-Buildings.md`
-**05-Risk-Framework/Vulnerabilities/** -- (Legacy) Vulnerability catalogues per asset class
-`1-Processes.md`, `2-Information.md`, `3-Applications.md`, `4-IT-Systems-Physical.md`, `5-IT-Systems-Virtual.md`, `6-Communication-Links.md`, `7-Rooms.md`, `8-Buildings.md`
-**06-Risk-Assessments/** -- Per-asset risk assessments (7 layer folders)
-`1-Process/`
-- 4x4 matrix, scenario-based risk entries, acceptance
-**07-Risk-Log/Register_Risk-Treatment-Plan.md** -- Controls per risk, owners, deadlines, gap tracking
+**06-Risk-Assessments/Scope-Units/** -- Per scope-unit risk assessments (LRM-44, 4x4 matrix, scenario-based)
+**07-Risk-Log/Register_Risk-Log.md** -- Risk Log (SSOT for risks, treatment view, LRM-44)
 **09-Statement-of-Applicability/Register_Statement-of-Applicability.md** -- 93 controls, SSOT for applicability
 **10-Security-Measures/Register_Security-Measures.md** -- Security measures per risk, linked to controls and assets
 **10-Security-Measures/** -- Security measure evidence and implementation records
@@ -154,7 +148,10 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 **18-Supplier-Review.md** -- Supplier review template (certification, SLA, assessment)
 **19-Protection-Requirements-Assessment.md** -- Process protection requirements assessment (SSOT)
 **20-Exception-Request.md** -- Exception request form (justification, risk, compensating controls, expiry)
-**21-Risk-Assessment.md** -- Risk assessment worksheet per asset (threat/vulnerability pairing, risk scoring)
+**21-Risk-Assessment.md** -- Risk assessment worksheet per scope unit (LRM-44, 4x4 matrix, scenario-based)
+**22-Risk-Log.md** -- Risk Log template (LRM-44, columns, example row)
+**23-Scenario-Library.md** -- Scenario Library template (scenario ID, title, description)
+**24-Risk-Workshop-Minutes.md** -- Risk workshop minutes template (decisions, actions)
 
 ### REF -- References / Library / Standards
 
@@ -327,10 +324,9 @@ H2: Security incident -- what to do?, Who to contact?, Common incidents, What NO
 | REG_IP | Interested parties | Registers/02-Interested-Parties/ |
 | REG_AM | Asset management | Registers/03-Asset-Management/ |
 | REG_PR | Protection requirements | Registers/04-Protection-Requirements/ |
-| REG_RF | Risk framework | Registers/05-Risk-Framework/ |
+| REG_RLB | Risk library | Registers/05-Risk-Library/ |
+| REG_RL | Risk log | Registers/07-Risk-Log/ |
 | REG_RA | Risk assessments | Registers/06-Risk-Assessments/ |
-| REG_RR | Risk Log | Registers/07-Risk-Log/ |
-| REG_RT | Risk treatment | Registers/07-Risk-Log/ |
 | REG_SOA | Statement of applicability | Registers/09-Statement-of-Applicability/ |
 | REG_SM | Security measures | Registers/10-Security-Measures/ |
 | REG_BCM | Business continuity | Registers/11-Business-Continuity/ |
